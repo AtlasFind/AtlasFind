@@ -52,7 +52,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 2,
@@ -105,7 +109,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 3,
@@ -158,7 +166,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 4,
@@ -211,7 +223,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 5,
@@ -265,7 +281,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 6,
@@ -319,7 +339,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 7,
@@ -373,7 +397,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 8,
@@ -428,7 +456,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 9,
@@ -482,7 +514,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 10,
@@ -533,7 +569,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 11,
@@ -587,7 +627,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 12,
@@ -640,7 +684,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 13,
@@ -693,7 +741,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 14,
@@ -745,7 +797,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 15,
@@ -799,7 +855,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 16,
@@ -853,7 +913,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 17,
@@ -907,7 +971,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 18,
@@ -960,7 +1028,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 19,
@@ -1013,7 +1085,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 20,
@@ -1067,7 +1143,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 21,
@@ -1121,7 +1201,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 22,
@@ -1175,7 +1259,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 23,
@@ -1230,7 +1318,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 24,
@@ -1281,7 +1373,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 25,
@@ -1334,7 +1430,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 26,
@@ -1385,7 +1485,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 27,
@@ -1440,7 +1544,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 28,
@@ -1494,7 +1602,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 29,
@@ -1548,7 +1660,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 30,
@@ -1602,7 +1718,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 31,
@@ -1656,7 +1776,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 32,
@@ -1709,7 +1833,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 33,
@@ -1763,7 +1891,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 34,
@@ -1817,7 +1949,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 35,
@@ -1871,7 +2007,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 36,
@@ -1927,7 +2067,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 37,
@@ -1981,7 +2125,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 38,
@@ -2035,7 +2183,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 39,
@@ -2089,7 +2241,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 40,
@@ -2141,7 +2297,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": []
   },
   {
     "id": 41,
@@ -2195,7 +2355,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 42,
@@ -2249,7 +2413,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 43,
@@ -2302,7 +2470,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 44,
@@ -2355,7 +2527,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 45,
@@ -2409,7 +2585,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 46,
@@ -2463,7 +2643,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 47,
@@ -2517,7 +2701,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 48,
@@ -2574,7 +2762,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 49,
@@ -2626,7 +2818,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 50,
@@ -2681,7 +2877,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 51,
@@ -2736,7 +2936,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 52,
@@ -2789,7 +2993,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 53,
@@ -2845,7 +3053,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 54,
@@ -2898,7 +3110,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 55,
@@ -2953,7 +3169,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 56,
@@ -3008,7 +3228,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 57,
@@ -3063,7 +3287,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 58,
@@ -3119,7 +3347,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 59,
@@ -3174,7 +3406,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 60,
@@ -3229,7 +3465,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 61,
@@ -3284,7 +3524,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 62,
@@ -3339,7 +3583,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 63,
@@ -3394,7 +3642,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 64,
@@ -3449,7 +3701,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 65,
@@ -3504,7 +3760,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 66,
@@ -3558,7 +3818,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 67,
@@ -3611,7 +3875,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 68,
@@ -3664,7 +3932,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 69,
@@ -3717,7 +3989,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 70,
@@ -3770,7 +4046,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 71,
@@ -3825,7 +4105,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 72,
@@ -3881,7 +4165,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 73,
@@ -3936,7 +4224,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 74,
@@ -3991,7 +4283,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 75,
@@ -4047,7 +4343,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 76,
@@ -4101,7 +4401,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 77,
@@ -4157,7 +4461,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 78,
@@ -4213,7 +4521,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 79,
@@ -4269,7 +4581,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 80,
@@ -4325,7 +4641,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 81,
@@ -4381,7 +4701,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 82,
@@ -4434,7 +4758,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 83,
@@ -4490,7 +4818,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 84,
@@ -4544,7 +4876,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 85,
@@ -4597,7 +4933,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 86,
@@ -4650,7 +4990,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 87,
@@ -4703,7 +5047,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 88,
@@ -4758,7 +5106,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 89,
@@ -4813,7 +5165,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 90,
@@ -4864,7 +5220,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 91,
@@ -4917,7 +5277,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 92,
@@ -4970,7 +5334,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 93,
@@ -5025,7 +5393,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": []
   },
   {
     "id": 94,
@@ -5079,7 +5451,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 95,
@@ -5132,7 +5508,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 96,
@@ -5185,7 +5565,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 97,
@@ -5239,7 +5623,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 98,
@@ -5293,7 +5681,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 99,
@@ -5347,7 +5739,11 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   },
   {
     "id": 100,
@@ -5402,6 +5798,10 @@
       "status": "Editorial dataset review",
       "date": "2026-07-24",
       "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
-    }
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": []
   }
 ]

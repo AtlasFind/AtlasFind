@@ -59,13 +59,6 @@ document.addEventListener("click", event => {
     if (!primaryNavigation.contains(event.target) && !menuButton?.contains(event.target)) closeMenu();
 });
 
-document.querySelectorAll(".quick-filters button").forEach(button => {
-    button.addEventListener("click", () => {
-        const filter = button.getAttribute("data-filter");
-        window.location.href = "/?q=" + encodeURIComponent(filter || "");
-    });
-});
-
 if (heroVisual && !reducedMotion.matches) {
     heroVisual.addEventListener("mousemove", event => {
         if (window.innerWidth < 900) return;
@@ -102,4 +95,12 @@ window.addEventListener("pageshow", () => {
         button.removeAttribute("aria-busy");
         if (button.dataset.originalText) button.innerHTML = button.dataset.originalText;
     });
+});
+
+
+const filterToggle = document.getElementById("filterToggle");
+const filterPanel = document.getElementById("filterPanel");
+filterToggle?.addEventListener("click", () => {
+    const isOpen = filterPanel?.classList.toggle("is-open") ?? false;
+    filterToggle.setAttribute("aria-expanded", String(isOpen));
 });
