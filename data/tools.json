@@ -1,0 +1,2663 @@
+[
+  {
+    "id": 1,
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "description": "General-purpose AI assistant for writing, research, coding and everyday tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Writing",
+      "Coding",
+      "Research"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://chatgpt.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 2,
+    "slug": "claude",
+    "name": "Claude",
+    "description": "AI assistant focused on long documents, reasoning, writing and coding.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Writing",
+      "Coding",
+      "Documents"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://claude.ai",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 3,
+    "slug": "gemini",
+    "name": "Gemini",
+    "description": "Google's AI assistant for text, images, research and productivity.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Google",
+      "Research",
+      "Multimodal"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://gemini.google.com",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 4,
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "description": "AI-powered search and research assistant with source-oriented answers.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Search",
+      "Research",
+      "Sources",
+      "Assistant"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.perplexity.ai",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 5,
+    "slug": "ollama",
+    "name": "Ollama",
+    "description": "Run and manage large language models locally from a simple command-line interface.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "LLM",
+      "Privacy",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://ollama.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 6,
+    "slug": "lm-studio",
+    "name": "LM Studio",
+    "description": "Desktop application for downloading, running and testing local language models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "LLM",
+      "Desktop",
+      "Privacy"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://lmstudio.ai",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 7,
+    "slug": "jan",
+    "name": "Jan",
+    "description": "Open-source desktop assistant for running AI models locally.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "Open Source",
+      "Privacy",
+      "Desktop"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://jan.ai",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 8,
+    "slug": "open-webui",
+    "name": "Open WebUI",
+    "description": "Self-hosted web interface for local and remote AI models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Self Hosted",
+      "Local AI",
+      "Open Source",
+      "Web UI"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://openwebui.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 9,
+    "slug": "anythingllm",
+    "name": "AnythingLLM",
+    "description": "Private AI workspace for chatting with documents and local models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Documents",
+      "RAG",
+      "Local AI",
+      "Privacy"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://anythingllm.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 10,
+    "slug": "hugging-face",
+    "name": "Hugging Face",
+    "description": "Platform for discovering, sharing and deploying machine learning models and datasets.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Models",
+      "Datasets",
+      "Developer",
+      "Machine Learning"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://huggingface.co",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 11,
+    "slug": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "description": "Extensible code editor with debugging, Git integration and a large extension ecosystem.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "Developer",
+      "Extensions",
+      "Git",
+      "Lightweight"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://code.visualstudio.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 12,
+    "slug": "cursor",
+    "name": "Cursor",
+    "description": "AI-first code editor designed for code generation, editing and repository understanding.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "AI",
+      "Coding",
+      "Developer",
+      "Productivity"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.cursor.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 13,
+    "slug": "zed",
+    "name": "Zed",
+    "description": "Fast collaborative code editor built for modern software development.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "Fast",
+      "Collaboration",
+      "Developer",
+      "Lightweight"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://zed.dev",
+    "platforms": [
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 14,
+    "slug": "notepad-plus-plus",
+    "name": "Notepad++",
+    "description": "Lightweight Windows text and source-code editor with plugin support.",
+    "category": "Development",
+    "tags": [
+      "Text Editor",
+      "Code Editor",
+      "Lightweight",
+      "Plugins",
+      "Windows"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://notepad-plus-plus.org",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 15,
+    "slug": "sublime-text",
+    "name": "Sublime Text",
+    "description": "Fast and polished text editor for code, markup and prose.",
+    "category": "Development",
+    "tags": [
+      "Text Editor",
+      "Code Editor",
+      "Fast",
+      "Developer",
+      "Lightweight"
+    ],
+    "pricing": "Paid",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.sublimetext.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 16,
+    "slug": "pycharm",
+    "name": "PyCharm",
+    "description": "Python IDE with intelligent coding assistance, debugging and project tools.",
+    "category": "Development",
+    "tags": [
+      "Python",
+      "IDE",
+      "Developer",
+      "Debugger",
+      "JetBrains"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.jetbrains.com/pycharm/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 17,
+    "slug": "intellij-idea",
+    "name": "IntelliJ IDEA",
+    "description": "Powerful JVM-focused IDE for Java, Kotlin and enterprise development.",
+    "category": "Development",
+    "tags": [
+      "Java",
+      "Kotlin",
+      "IDE",
+      "Developer",
+      "JetBrains"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.jetbrains.com/idea/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 18,
+    "slug": "visual-studio",
+    "name": "Visual Studio",
+    "description": "Full-featured IDE for .NET, C++, cloud and Windows development.",
+    "category": "Development",
+    "tags": [
+      "IDE",
+      ".NET",
+      "C++",
+      "Windows",
+      "Developer"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://visualstudio.microsoft.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 19,
+    "slug": "github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Graphical Git client for managing repositories and common Git workflows.",
+    "category": "Development",
+    "tags": [
+      "Git",
+      "GitHub",
+      "Version Control",
+      "Desktop",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://desktop.github.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 20,
+    "slug": "gitkraken",
+    "name": "GitKraken",
+    "description": "Visual Git client with repository management and collaboration features.",
+    "category": "Development",
+    "tags": [
+      "Git",
+      "Version Control",
+      "Developer",
+      "Collaboration",
+      "Desktop"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.gitkraken.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 21,
+    "slug": "adobe-photoshop",
+    "name": "Adobe Photoshop",
+    "description": "Professional raster graphics editor for photography, design and digital art.",
+    "category": "Design",
+    "tags": [
+      "Photo Editing",
+      "Raster",
+      "Design",
+      "Creative",
+      "Professional"
+    ],
+    "pricing": "Subscription",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.adobe.com/products/photoshop.html",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iPadOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 22,
+    "slug": "gimp",
+    "name": "GIMP",
+    "description": "Free and open-source image editor for photo manipulation and graphic design.",
+    "category": "Design",
+    "tags": [
+      "Photo Editing",
+      "Raster",
+      "Open Source",
+      "Design",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.gimp.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 23,
+    "slug": "krita",
+    "name": "Krita",
+    "description": "Open-source painting and illustration application for digital artists.",
+    "category": "Design",
+    "tags": [
+      "Digital Painting",
+      "Illustration",
+      "Open Source",
+      "Art",
+      "Drawing"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://krita.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 24,
+    "slug": "photopea",
+    "name": "Photopea",
+    "description": "Browser-based image editor compatible with common professional file formats.",
+    "category": "Design",
+    "tags": [
+      "Photo Editing",
+      "Browser",
+      "PSD",
+      "Design",
+      "Free"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.photopea.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 25,
+    "slug": "figma",
+    "name": "Figma",
+    "description": "Collaborative interface design and prototyping platform.",
+    "category": "Design",
+    "tags": [
+      "UI Design",
+      "UX",
+      "Prototyping",
+      "Collaboration",
+      "Web"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.figma.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 26,
+    "slug": "penpot",
+    "name": "Penpot",
+    "description": "Open-source web-based design and prototyping platform.",
+    "category": "Design",
+    "tags": [
+      "UI Design",
+      "UX",
+      "Prototyping",
+      "Open Source",
+      "Collaboration"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://penpot.app",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 27,
+    "slug": "canva",
+    "name": "Canva",
+    "description": "Template-driven design platform for social media, presentations and marketing content.",
+    "category": "Design",
+    "tags": [
+      "Templates",
+      "Social Media",
+      "Presentations",
+      "Design",
+      "Marketing"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.canva.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 28,
+    "slug": "inkscape",
+    "name": "Inkscape",
+    "description": "Free and open-source vector graphics editor.",
+    "category": "Design",
+    "tags": [
+      "Vector",
+      "Illustration",
+      "SVG",
+      "Open Source",
+      "Design"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://inkscape.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 29,
+    "slug": "affinity-photo",
+    "name": "Affinity Photo",
+    "description": "Professional photo editing software with a one-time purchase model.",
+    "category": "Design",
+    "tags": [
+      "Photo Editing",
+      "Raster",
+      "Professional",
+      "Design",
+      "Creative"
+    ],
+    "pricing": "Paid",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://affinity.serif.com/photo/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iPadOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 30,
+    "slug": "blender",
+    "name": "Blender",
+    "description": "Open-source suite for 3D modeling, animation, rendering and visual effects.",
+    "category": "Design",
+    "tags": [
+      "3D",
+      "Animation",
+      "Rendering",
+      "Open Source",
+      "VFX"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.blender.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 31,
+    "slug": "davinci-resolve",
+    "name": "DaVinci Resolve",
+    "description": "Professional video editing, color grading, visual effects and audio production suite.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Color Grading",
+      "VFX",
+      "Audio",
+      "Professional"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 32,
+    "slug": "adobe-premiere-pro",
+    "name": "Adobe Premiere Pro",
+    "description": "Professional nonlinear video editor for film, web and broadcast work.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Professional",
+      "Adobe",
+      "Film",
+      "Creative"
+    ],
+    "pricing": "Subscription",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.adobe.com/products/premiere.html",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 33,
+    "slug": "kdenlive",
+    "name": "Kdenlive",
+    "description": "Free and open-source nonlinear video editor.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Open Source",
+      "Timeline",
+      "Free",
+      "Linux"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://kdenlive.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 34,
+    "slug": "shotcut",
+    "name": "Shotcut",
+    "description": "Cross-platform open-source video editor with broad format support.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Open Source",
+      "Cross Platform",
+      "Free",
+      "Timeline"
+    ],
+    "pricing": "Free",
+    "rating": 4.4,
+    "rating_source": "editorial_seed",
+    "website": "https://shotcut.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 35,
+    "slug": "openshot",
+    "name": "OpenShot",
+    "description": "Beginner-friendly open-source video editor.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Beginner",
+      "Open Source",
+      "Free",
+      "Simple"
+    ],
+    "pricing": "Free",
+    "rating": 4.2,
+    "rating_source": "editorial_seed",
+    "website": "https://www.openshot.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 36,
+    "slug": "capcut",
+    "name": "CapCut",
+    "description": "Accessible video editor with templates, effects and AI-assisted tools.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Social Media",
+      "Templates",
+      "AI",
+      "Mobile"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.capcut.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 37,
+    "slug": "obs-studio",
+    "name": "OBS Studio",
+    "description": "Open-source software for live streaming and screen recording.",
+    "category": "Video",
+    "tags": [
+      "Streaming",
+      "Recording",
+      "Open Source",
+      "Screen Capture",
+      "Live"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://obsproject.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 38,
+    "slug": "handbrake",
+    "name": "HandBrake",
+    "description": "Open-source video transcoder for converting and compressing media files.",
+    "category": "Video",
+    "tags": [
+      "Video Converter",
+      "Compression",
+      "Open Source",
+      "Encoding",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://handbrake.fr",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 39,
+    "slug": "losslesscut",
+    "name": "LosslessCut",
+    "description": "Fast tool for lossless video and audio trimming.",
+    "category": "Video",
+    "tags": [
+      "Video Cutting",
+      "Lossless",
+      "Open Source",
+      "Fast",
+      "Lightweight"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://github.com/mifi/lossless-cut",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 40,
+    "slug": "vegas-pro",
+    "name": "VEGAS Pro",
+    "description": "Professional video editing and post-production software for Windows.",
+    "category": "Video",
+    "tags": [
+      "Video Editing",
+      "Professional",
+      "Windows",
+      "Effects",
+      "Timeline"
+    ],
+    "pricing": "Paid",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.vegascreativesoftware.com",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 41,
+    "slug": "audacity",
+    "name": "Audacity",
+    "description": "Free and open-source audio editor and recorder.",
+    "category": "Audio",
+    "tags": [
+      "Audio Editing",
+      "Recording",
+      "Open Source",
+      "Podcast",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.audacityteam.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 42,
+    "slug": "reaper",
+    "name": "REAPER",
+    "description": "Flexible digital audio workstation for recording, editing and mixing.",
+    "category": "Audio",
+    "tags": [
+      "DAW",
+      "Audio Editing",
+      "Recording",
+      "Mixing",
+      "Professional"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.reaper.fm",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 43,
+    "slug": "ableton-live",
+    "name": "Ableton Live",
+    "description": "Digital audio workstation for music production and live performance.",
+    "category": "Audio",
+    "tags": [
+      "DAW",
+      "Music Production",
+      "Live Performance",
+      "MIDI",
+      "Professional"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.ableton.com/live/",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 44,
+    "slug": "fl-studio",
+    "name": "FL Studio",
+    "description": "Music production environment with sequencing, recording and mixing tools.",
+    "category": "Audio",
+    "tags": [
+      "DAW",
+      "Music Production",
+      "Beat Making",
+      "MIDI",
+      "Mixing"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.image-line.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 45,
+    "slug": "ardour",
+    "name": "Ardour",
+    "description": "Open-source digital audio workstation for recording and mixing.",
+    "category": "Audio",
+    "tags": [
+      "DAW",
+      "Open Source",
+      "Recording",
+      "Mixing",
+      "Linux"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://ardour.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 46,
+    "slug": "lmms",
+    "name": "LMMS",
+    "description": "Free and open-source music production application.",
+    "category": "Audio",
+    "tags": [
+      "Music Production",
+      "DAW",
+      "Open Source",
+      "Beat Making",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.3,
+    "rating_source": "editorial_seed",
+    "website": "https://lmms.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 47,
+    "slug": "ocenaudio",
+    "name": "Ocenaudio",
+    "description": "Simple cross-platform audio editor for quick editing tasks.",
+    "category": "Audio",
+    "tags": [
+      "Audio Editing",
+      "Simple",
+      "Cross Platform",
+      "Recording",
+      "Lightweight"
+    ],
+    "pricing": "Free",
+    "rating": 4.4,
+    "rating_source": "editorial_seed",
+    "website": "https://www.ocenaudio.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 48,
+    "slug": "spotify",
+    "name": "Spotify",
+    "description": "Music and podcast streaming service with personalized recommendations.",
+    "category": "Audio",
+    "tags": [
+      "Music",
+      "Streaming",
+      "Podcasts",
+      "Discovery",
+      "Mobile"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.spotify.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 49,
+    "slug": "musicbee",
+    "name": "MusicBee",
+    "description": "Feature-rich music library manager and player for Windows.",
+    "category": "Audio",
+    "tags": [
+      "Music Player",
+      "Library",
+      "Windows",
+      "Offline",
+      "Customization"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.getmusicbee.com",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 50,
+    "slug": "foobar2000",
+    "name": "foobar2000",
+    "description": "Lightweight and customizable audio player for advanced users.",
+    "category": "Audio",
+    "tags": [
+      "Music Player",
+      "Lightweight",
+      "Customization",
+      "Offline",
+      "Windows"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.foobar2000.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 51,
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "description": "Productivity suite with Word, Excel, PowerPoint and cloud collaboration.",
+    "category": "Office",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Cloud",
+      "Collaboration"
+    ],
+    "pricing": "Subscription",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.microsoft.com/microsoft-365",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 52,
+    "slug": "libreoffice",
+    "name": "LibreOffice",
+    "description": "Free and open-source office suite for documents, spreadsheets and presentations.",
+    "category": "Office",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Open Source",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.libreoffice.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 53,
+    "slug": "onlyoffice",
+    "name": "ONLYOFFICE",
+    "description": "Office suite for documents, spreadsheets and presentations with collaboration support.",
+    "category": "Office",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Collaboration",
+      "Self Hosted"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.onlyoffice.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 54,
+    "slug": "google-workspace",
+    "name": "Google Workspace",
+    "description": "Cloud productivity suite with Docs, Sheets, Slides and team collaboration.",
+    "category": "Office",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Cloud",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://workspace.google.com",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 55,
+    "slug": "notion",
+    "name": "Notion",
+    "description": "All-in-one workspace for notes, documents, databases and project planning.",
+    "category": "Office",
+    "tags": [
+      "Notes",
+      "Documents",
+      "Database",
+      "Projects",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.notion.so",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 56,
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "description": "Local-first knowledge base and Markdown note-taking application.",
+    "category": "Office",
+    "tags": [
+      "Notes",
+      "Markdown",
+      "Knowledge Base",
+      "Local First",
+      "Plugins"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://obsidian.md",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 57,
+    "slug": "joplin",
+    "name": "Joplin",
+    "description": "Open-source note-taking and to-do application with synchronization support.",
+    "category": "Office",
+    "tags": [
+      "Notes",
+      "Markdown",
+      "Open Source",
+      "Privacy",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://joplinapp.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 58,
+    "slug": "todoist",
+    "name": "Todoist",
+    "description": "Task manager for organizing personal and team work.",
+    "category": "Office",
+    "tags": [
+      "Tasks",
+      "Productivity",
+      "Projects",
+      "Collaboration",
+      "Mobile"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://todoist.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 59,
+    "slug": "trello",
+    "name": "Trello",
+    "description": "Visual Kanban-style project and task management platform.",
+    "category": "Office",
+    "tags": [
+      "Kanban",
+      "Projects",
+      "Tasks",
+      "Collaboration",
+      "Teams"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://trello.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true
+  },
+  {
+    "id": 60,
+    "slug": "logseq",
+    "name": "Logseq",
+    "description": "Open-source local-first knowledge management and outlining tool.",
+    "category": "Office",
+    "tags": [
+      "Notes",
+      "Knowledge Base",
+      "Open Source",
+      "Local First",
+      "Outliner"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://logseq.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 61,
+    "slug": "google-chrome",
+    "name": "Google Chrome",
+    "description": "Widely used web browser with strong compatibility and extension support.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Extensions",
+      "Google",
+      "Sync",
+      "Web"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.google.com/chrome/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 62,
+    "slug": "mozilla-firefox",
+    "name": "Mozilla Firefox",
+    "description": "Open-source browser focused on user choice, standards and privacy.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Open Source",
+      "Extensions",
+      "Web"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.mozilla.org/firefox/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 63,
+    "slug": "brave",
+    "name": "Brave",
+    "description": "Privacy-focused Chromium browser with built-in blocking features.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Ad Blocking",
+      "Chromium",
+      "Security"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://brave.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 64,
+    "slug": "microsoft-edge",
+    "name": "Microsoft Edge",
+    "description": "Chromium-based browser integrated with Windows and Microsoft services.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Chromium",
+      "Microsoft",
+      "Windows",
+      "AI"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.microsoft.com/edge",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 65,
+    "slug": "vivaldi",
+    "name": "Vivaldi",
+    "description": "Highly customizable Chromium browser for power users.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Customization",
+      "Privacy",
+      "Chromium",
+      "Power User"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://vivaldi.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 66,
+    "slug": "tor-browser",
+    "name": "Tor Browser",
+    "description": "Privacy-oriented browser that routes traffic through the Tor network.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Anonymity",
+      "Security",
+      "Tor"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.torproject.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 67,
+    "slug": "librewolf",
+    "name": "LibreWolf",
+    "description": "Privacy-focused Firefox fork with hardened defaults.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Open Source",
+      "Firefox",
+      "Security"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://librewolf.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 68,
+    "slug": "floorp",
+    "name": "Floorp",
+    "description": "Customizable Firefox-based browser with productivity features.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Firefox",
+      "Customization",
+      "Open Source",
+      "Productivity"
+    ],
+    "pricing": "Free",
+    "rating": 4.4,
+    "rating_source": "editorial_seed",
+    "website": "https://floorp.app",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 69,
+    "slug": "ungoogled-chromium",
+    "name": "Ungoogled Chromium",
+    "description": "Chromium browser variant with Google web service integration removed.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Privacy",
+      "Chromium",
+      "Open Source",
+      "Minimal"
+    ],
+    "pricing": "Free",
+    "rating": 4.4,
+    "rating_source": "editorial_seed",
+    "website": "https://github.com/ungoogled-software/ungoogled-chromium",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 70,
+    "slug": "arc-browser",
+    "name": "Arc Browser",
+    "description": "Modern browser focused on workspaces, tabs and a redesigned browsing interface.",
+    "category": "Browser",
+    "tags": [
+      "Browser",
+      "Productivity",
+      "Workspaces",
+      "Modern",
+      "Tabs"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://arc.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 71,
+    "slug": "google-drive",
+    "name": "Google Drive",
+    "description": "Cloud storage and file collaboration service integrated with Google Workspace.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Files",
+      "Collaboration",
+      "Google",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://drive.google.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 72,
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "description": "Cloud file storage, synchronization and sharing platform.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Sync",
+      "Files",
+      "Sharing",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.dropbox.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 73,
+    "slug": "microsoft-onedrive",
+    "name": "Microsoft OneDrive",
+    "description": "Cloud storage integrated with Windows and Microsoft 365.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Microsoft",
+      "Sync",
+      "Files",
+      "Windows"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 74,
+    "slug": "proton-drive",
+    "name": "Proton Drive",
+    "description": "Privacy-focused encrypted cloud storage service.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Privacy",
+      "Encryption",
+      "Security",
+      "Files"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://proton.me/drive",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 75,
+    "slug": "nextcloud",
+    "name": "Nextcloud",
+    "description": "Open-source self-hosted platform for files, collaboration and communication.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Self Hosted",
+      "Open Source",
+      "Privacy",
+      "Collaboration"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://nextcloud.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 76,
+    "slug": "syncthing",
+    "name": "Syncthing",
+    "description": "Open-source peer-to-peer file synchronization without a central cloud.",
+    "category": "Cloud",
+    "tags": [
+      "File Sync",
+      "Peer to Peer",
+      "Open Source",
+      "Privacy",
+      "Self Hosted"
+    ],
+    "pricing": "Free",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://syncthing.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 77,
+    "slug": "mega",
+    "name": "MEGA",
+    "description": "Cloud storage service with encrypted file sharing and synchronization.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Encryption",
+      "Files",
+      "Sharing",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://mega.io",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 78,
+    "slug": "pcloud",
+    "name": "pCloud",
+    "description": "Cloud storage and file sharing service with desktop and mobile clients.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Files",
+      "Sync",
+      "Sharing",
+      "Backup"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.pcloud.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 79,
+    "slug": "filen",
+    "name": "Filen",
+    "description": "Encrypted cloud storage service focused on privacy.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Privacy",
+      "Encryption",
+      "Files",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://filen.io",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 80,
+    "slug": "seafile",
+    "name": "Seafile",
+    "description": "Self-hosted file synchronization and sharing platform.",
+    "category": "Cloud",
+    "tags": [
+      "Cloud Storage",
+      "Self Hosted",
+      "File Sync",
+      "Open Source",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.seafile.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 81,
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "description": "Open-source password manager with cross-platform synchronization.",
+    "category": "Security",
+    "tags": [
+      "Password Manager",
+      "Open Source",
+      "Privacy",
+      "Encryption",
+      "Security"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://bitwarden.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 82,
+    "slug": "keepassxc",
+    "name": "KeePassXC",
+    "description": "Offline open-source password manager using encrypted local databases.",
+    "category": "Security",
+    "tags": [
+      "Password Manager",
+      "Offline",
+      "Open Source",
+      "Privacy",
+      "Encryption"
+    ],
+    "pricing": "Free",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://keepassxc.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 83,
+    "slug": "proton-pass",
+    "name": "Proton Pass",
+    "description": "Privacy-focused password manager with encrypted vaults and aliases.",
+    "category": "Security",
+    "tags": [
+      "Password Manager",
+      "Privacy",
+      "Encryption",
+      "Aliases",
+      "Security"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://proton.me/pass",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 84,
+    "slug": "malwarebytes",
+    "name": "Malwarebytes",
+    "description": "Security software for detecting malware, ransomware and potentially unwanted programs.",
+    "category": "Security",
+    "tags": [
+      "Antivirus",
+      "Malware",
+      "Security",
+      "Ransomware",
+      "Protection"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.malwarebytes.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 85,
+    "slug": "wireshark",
+    "name": "Wireshark",
+    "description": "Open-source network protocol analyzer for inspection and troubleshooting.",
+    "category": "Security",
+    "tags": [
+      "Network",
+      "Packet Analysis",
+      "Open Source",
+      "Troubleshooting",
+      "Security"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.wireshark.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 86,
+    "slug": "nmap",
+    "name": "Nmap",
+    "description": "Open-source utility for network discovery and security auditing.",
+    "category": "Security",
+    "tags": [
+      "Network",
+      "Scanner",
+      "Open Source",
+      "Security Audit",
+      "Command Line"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://nmap.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 87,
+    "slug": "veracrypt",
+    "name": "VeraCrypt",
+    "description": "Open-source disk encryption software for files, partitions and drives.",
+    "category": "Security",
+    "tags": [
+      "Encryption",
+      "Disk",
+      "Privacy",
+      "Open Source",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.veracrypt.fr",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 88,
+    "slug": "proton-vpn",
+    "name": "Proton VPN",
+    "description": "Privacy-focused VPN service with open-source applications.",
+    "category": "Security",
+    "tags": [
+      "VPN",
+      "Privacy",
+      "Open Source",
+      "Encryption",
+      "Security"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://protonvpn.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 89,
+    "slug": "mullvad-vpn",
+    "name": "Mullvad VPN",
+    "description": "Privacy-focused VPN service designed to minimize personal data collection.",
+    "category": "Security",
+    "tags": [
+      "VPN",
+      "Privacy",
+      "Open Source",
+      "Security",
+      "Anonymous"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://mullvad.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 90,
+    "slug": "tails",
+    "name": "Tails",
+    "description": "Privacy-focused live operating system designed to leave minimal traces.",
+    "category": "Security",
+    "tags": [
+      "Privacy",
+      "Linux",
+      "Live USB",
+      "Open Source",
+      "Anonymity"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://tails.net",
+    "platforms": [
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false
+  },
+  {
+    "id": 91,
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "description": "Powerful open-source relational database known for reliability and extensibility.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "SQL",
+      "Open Source",
+      "Backend",
+      "Server"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.postgresql.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 92,
+    "slug": "mysql",
+    "name": "MySQL",
+    "description": "Widely used relational database for web and application development.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "SQL",
+      "Backend",
+      "Server",
+      "Open Source"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.mysql.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 93,
+    "slug": "sqlite",
+    "name": "SQLite",
+    "description": "Small embedded relational database stored in a single file.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "SQL",
+      "Embedded",
+      "Lightweight",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.sqlite.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 94,
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "description": "Document-oriented database designed for flexible application data.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "NoSQL",
+      "Documents",
+      "Backend",
+      "Cloud"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.mongodb.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Web"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 95,
+    "slug": "redis",
+    "name": "Redis",
+    "description": "In-memory data store used for caching, queues and real-time applications.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "Cache",
+      "In Memory",
+      "Backend",
+      "Server"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://redis.io",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 96,
+    "slug": "dbeaver",
+    "name": "DBeaver",
+    "description": "Universal database management tool supporting many database systems.",
+    "category": "Database",
+    "tags": [
+      "Database",
+      "SQL",
+      "Client",
+      "Developer",
+      "Open Source"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://dbeaver.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 97,
+    "slug": "docker",
+    "name": "Docker",
+    "description": "Platform for building, packaging and running applications in containers.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "DevOps",
+      "Developer",
+      "Deployment",
+      "Backend"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.docker.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 98,
+    "slug": "podman",
+    "name": "Podman",
+    "description": "Daemonless open-source container engine compatible with common container workflows.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "DevOps",
+      "Open Source",
+      "Linux",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://podman.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false
+  },
+  {
+    "id": 99,
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "description": "API client for designing, debugging and testing HTTP and GraphQL APIs.",
+    "category": "Development",
+    "tags": [
+      "API",
+      "Testing",
+      "Developer",
+      "HTTP",
+      "GraphQL"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://insomnia.rest",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true
+  },
+  {
+    "id": 100,
+    "slug": "postman",
+    "name": "Postman",
+    "description": "API platform for building, testing, documenting and collaborating on APIs.",
+    "category": "Development",
+    "tags": [
+      "API",
+      "Testing",
+      "Developer",
+      "Documentation",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.postman.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true
+  }
+]

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {{ tool.name }} Alternatives | AtlasFind
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+    <div class="background-noise"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <header class="navbar">
+
+        <a href="/" class="logo">
+
+            <span class="logo-icon">
+                A
+            </span>
+
+            <span class="logo-text">
+                Atlas<span>Find</span>
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+            <a href="/">Discover</a>
+            <a href="#overview">Overview</a>
+            <a href="#alternatives">Alternatives</a>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="/"
+                class="nav-cta"
+            >
+                Back to search
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section
+            class="tool-detail-hero"
+            id="overview"
+        >
+
+            <div class="tool-detail-main">
+
+                <div class="tool-detail-logo">
+                    {{ tool.name[0] }}
+                </div>
+
+
+                <div class="tool-detail-title">
+
+                    <span class="section-label">
+                        {{ tool.category }}
+                    </span>
+
+                    <h1>
+                        {{ tool.name }}
+                    </h1>
+
+                    <p>
+                        {{ tool.description }}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tool-detail-rating">
+
+                <span>★</span>
+
+                <strong>
+                    {{ tool.rating }}
+                </strong>
+
+                <small>
+                    AtlasFind rating
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <section class="tool-detail-layout">
+
+            <div class="tool-information-panel">
+
+                <div class="tool-detail-actions">
+
+                    <a
+                        href="{{ tool.website }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="primary-button"
+                    >
+                        Visit official website
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#alternatives"
+                        class="secondary-button"
+                    >
+                        View alternatives
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+
+                <div class="tool-detail-tags">
+
+                    <span class="detail-tag">
+                        {{ tool.pricing }}
+                    </span>
+
+                    {% if tool.open_source %}
+                        <span class="detail-tag">
+                            Open Source
+                        </span>
+                    {% endif %}
+
+                    {% if tool.offline %}
+                        <span class="detail-tag">
+                            Offline
+                        </span>
+                    {% endif %}
+
+                    {% if tool.ai_powered %}
+                        <span class="detail-tag">
+                            AI-powered
+                        </span>
+                    {% endif %}
+
+                </div>
+
+
+                <div class="detail-section">
+
+                    <span class="section-label">
+                        Available on
+                    </span>
+
+                    <div class="detail-platform-list">
+
+                        {% for platform in tool.platforms %}
+                            <span>
+                                {{ platform }}
+                            </span>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-section">
+
+                    <span class="section-label">
+                        Features and uses
+                    </span>
+
+                    <div class="detail-platform-list">
+
+                        {% for tag in tool.tags %}
+                            <span>
+                                {{ tag }}
+                            </span>
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <aside class="tool-score-panel">
+
+                <span class="section-label">
+                    Quick summary
+                </span>
+
+                <div class="score-row">
+                    <span>Pricing</span>
+                    <strong>{{ tool.pricing }}</strong>
+                </div>
+
+                <div class="score-row">
+                    <span>Open source</span>
+
+                    <strong>
+                        {% if tool.open_source %}
+                            Yes
+                        {% else %}
+                            No
+                        {% endif %}
+                    </strong>
+                </div>
+
+                <div class="score-row">
+                    <span>Offline support</span>
+
+                    <strong>
+                        {% if tool.offline %}
+                            Yes
+                        {% else %}
+                            No
+                        {% endif %}
+                    </strong>
+                </div>
+
+                <div class="score-row">
+                    <span>AI features</span>
+
+                    <strong>
+                        {% if tool.ai_powered %}
+                            Yes
+                        {% else %}
+                            No
+                        {% endif %}
+                    </strong>
+                </div>
+
+                <div class="score-row">
+                    <span>Rating</span>
+
+                    <strong>
+                        {{ tool.rating }} / 5
+                    </strong>
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <section
+            class="alternatives-section"
+            id="alternatives"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        Recommended alternatives
+                    </span>
+
+                    <h2>
+                        Alternatives to {{ tool.name }}
+                    </h2>
+
+                    <p>
+                        These tools are ranked using category,
+                        features, platforms and user rating.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            {% if alternatives %}
+
+                <div class="alternative-grid">
+
+                    {% for alternative in alternatives %}
+
+                        <article class="alternative-card">
+
+                            <div class="alternative-header">
+
+                                <div class="tool-logo">
+                                    {{ alternative.name[0] }}
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        {{ alternative.name }}
+                                    </h3>
+
+                                    <span>
+                                        {{ alternative.category }}
+                                    </span>
+
+                                </div>
+
+                                <strong class="alternative-rating">
+                                    ★ {{ alternative.rating }}
+                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                {{ alternative.description }}
+                            </p>
+
+
+                            <div class="tool-tags">
+
+                                <span class="tag featured-tag">
+                                    {{ alternative.pricing }}
+                                </span>
+
+                                {% if alternative.open_source %}
+                                    <span class="tag">
+                                        Open Source
+                                    </span>
+                                {% endif %}
+
+                                {% if alternative.offline %}
+                                    <span class="tag">
+                                        Offline
+                                    </span>
+                                {% endif %}
+
+                            </div>
+
+
+                            <div class="alternative-actions">
+
+                                <a
+                                    href="{{ url_for('tool_detail', slug=alternative.slug) }}"
+                                    class="secondary-button"
+                                >
+                                    Explore
+                                </a>
+
+                                <a
+                                    href="{{ url_for(
+                                        'compare_tools',
+                                        left=tool.slug,
+                                        right=alternative.slug
+                                    ) }}"
+                                    class="primary-button"
+                                >
+                                    Compare
+                                    <span>⇄</span>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    {% endfor %}
+
+                </div>
+
+            {% else %}
+
+                <div class="empty-results">
+
+                    <h3>
+                        No alternatives found yet
+                    </h3>
+
+                    <p>
+                        More tools must be added to this category.
+                    </p>
+
+                </div>
+
+            {% endif %}
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div>
+
+            <a href="/" class="logo">
+
+                <span class="logo-icon">
+                    A
+                </span>
+
+                <span class="logo-text">
+                    Atlas<span>Find</span>
+                </span>
+
+            </a>
+
+            <p>
+                Find software that fits the way you work.
+            </p>
+
+        </div>
+
+        <span class="copyright">
+            © 2026 AtlasFind
+        </span>
+
+    </footer>
+
+</body>
+</html>
