@@ -2,10 +2,12 @@ from flask import Flask, render_template, request, abort
 import json
 from pathlib import Path
 
+from tool_schema import validate_tools
+
 
 app = Flask(__name__)
 
-APP_VERSION = "0.1.1"
+APP_VERSION = "0.1.2"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -16,7 +18,17 @@ def load_tools():
     """
     try:
         with open(DATA_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
+            tools = json.load(file)
+
+        validation_errors = validate_tools(tools)
+        if validation_errors:
+            error_text = "\n".join(f"- {error}" for error in validation_errors)
+            raise ValueError(
+                "tools.json does not satisfy the AtlasFind tool schema:\n"
+                f"{error_text}"
+            )
+
+        return tools
 
     except FileNotFoundError:
         print("tools.json dosyası bulunamadı.")
@@ -24,6 +36,10 @@ def load_tools():
 
     except json.JSONDecodeError:
         print("tools.json dosyasının biçimi bozuk.")
+        return []
+
+    except ValueError as error:
+        print(error)
         return []
 
 

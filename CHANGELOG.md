@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.1.2 - Professional Tool Pages
+
+### Added
+- Pros and cons for every tool
+- Pricing detail notes
+- Target user profiles
+- System requirement summaries
+- Dataset review metadata
+
+### Changed
+- Professional tool detail page layout
+- Improved platform, feature and alternative presentation
+
+# Changelog
+
 All notable changes to AtlasFind are documented here.
 
 ## [v0.1.1] - 2026-07-24
@@ -34,4 +49,4 @@ All notable changes to AtlasFind are documented here.
 - Comparison page
 - Dark and light theme
 - Responsive design
-- 100-tool JSON dataset
+- expandable JSON tool dataset

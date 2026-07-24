@@ -26,7 +26,7 @@ Yani roadmap bize yolu gösteriyor. Hepsini bugün yapmak gibi insanlık dışı
 - Comparison page
 - Theme system
 - Responsive design
-- 100-tool JSON dataset
+- Expandable JSON tool dataset
 
 ## v0.1.1 - Premium Appearance ✅
 - Navbar redesign
@@ -40,7 +40,7 @@ Yani roadmap bize yolu gösteriyor. Hepsini bugün yapmak gibi insanlık dışı
 - Loading states
 - Accessibility improvements
 
-## v0.1.2 - Professional Tool Pages
+## v0.1.2 - Professional Tool Pages ✅
 - Pros and cons
 - Pricing
 - Platforms
