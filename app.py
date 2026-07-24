@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, abort
 import json
 from pathlib import Path
+from urllib.parse import urlencode
 
 from tool_schema import validate_tools
 
 
 app = Flask(__name__)
 
-APP_VERSION = "0.1.2"
+APP_VERSION = "0.1.3"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -421,6 +422,150 @@ def calculate_search_score(tool, search_query, detected_needs):
     return score
 
 
+PLATFORM_ALIASES = {
+    "windows": "windows",
+    "macos": "macos",
+    "mac": "macos",
+    "linux": "linux",
+    "android": "android",
+    "ios": "ios",
+    "ipados": "ios",
+    "web": "web",
+}
+
+
+def normalize_platform(value):
+    return PLATFORM_ALIASES.get(normalize_text(value).replace(" ", ""), "")
+
+
+def parse_filters(args):
+    pricing = [
+        normalize_text(value)
+        for value in args.getlist("pricing")
+        if normalize_text(value) in {"free", "freemium", "paid"}
+    ]
+    platforms = [
+        normalize_platform(value)
+        for value in args.getlist("platform")
+        if normalize_platform(value)
+    ]
+    system_levels = [
+        normalize_text(value)
+        for value in args.getlist("system_level")
+        if normalize_text(value) in {"light", "medium", "heavy", "unknown"}
+    ]
+
+    max_ram_raw = args.get("max_ram", "").strip()
+    try:
+        max_ram = float(max_ram_raw) if max_ram_raw else None
+        if max_ram is not None and max_ram <= 0:
+            max_ram = None
+    except ValueError:
+        max_ram = None
+
+    return {
+        "pricing": pricing,
+        "platforms": platforms,
+        "system_levels": system_levels,
+        "open_source": args.get("open_source") == "1",
+        "offline": args.get("offline") == "1",
+        "ai": args.get("ai") == "1",
+        "turkish": args.get("turkish") == "1",
+        "max_ram": max_ram,
+    }
+
+
+def tool_matches_filters(tool, filters):
+    if filters["pricing"]:
+        pricing_type = normalize_text(tool.get("pricing_type", tool.get("pricing", "")))
+        if pricing_type not in filters["pricing"]:
+            return False
+
+    if filters["platforms"]:
+        tool_platforms = {normalize_platform(value) for value in tool.get("platforms", [])}
+        if not tool_platforms.intersection(filters["platforms"]):
+            return False
+
+    if filters["system_levels"]:
+        if normalize_text(tool.get("system_level", "unknown")) not in filters["system_levels"]:
+            return False
+
+    if filters["open_source"] and not bool(tool.get("open_source", False)):
+        return False
+    if filters["offline"] and not bool(tool.get("offline", False)):
+        return False
+    if filters["ai"] and not bool(tool.get("ai_powered", False)):
+        return False
+    if filters["turkish"]:
+        languages = {normalize_text(value) for value in tool.get("languages", [])}
+        if "tr" not in languages:
+            return False
+
+    if filters["max_ram"] is not None:
+        minimum_ram = tool.get("minimum_ram_gb")
+        if not isinstance(minimum_ram, (int, float)) or isinstance(minimum_ram, bool):
+            return False
+        if minimum_ram > filters["max_ram"]:
+            return False
+
+    return True
+
+
+def filter_tools(tools, filters):
+    return [tool for tool in tools if tool_matches_filters(tool, filters)]
+
+
+def build_query_url(search_query, filters, remove=None):
+    params = []
+    if search_query:
+        params.append(("q", search_query))
+
+    for value in filters["pricing"]:
+        if remove != ("pricing", value):
+            params.append(("pricing", value))
+    for value in filters["platforms"]:
+        if remove != ("platform", value):
+            params.append(("platform", value))
+    for value in filters["system_levels"]:
+        if remove != ("system_level", value):
+            params.append(("system_level", value))
+
+    for key in ("open_source", "offline", "ai", "turkish"):
+        if filters[key] and remove != (key, "1"):
+            params.append((key, "1"))
+
+    if filters["max_ram"] is not None and remove != ("max_ram", str(filters["max_ram"])):
+        value = int(filters["max_ram"]) if filters["max_ram"].is_integer() else filters["max_ram"]
+        params.append(("max_ram", str(value)))
+
+    query = urlencode(params, doseq=True)
+    return f"/?{query}" if query else "/"
+
+
+def build_active_filters(search_query, filters):
+    labels = {
+        "free": "Free", "freemium": "Freemium", "paid": "Paid",
+        "windows": "Windows", "macos": "macOS", "linux": "Linux",
+        "android": "Android", "ios": "iOS", "web": "Web",
+        "light": "Light system", "medium": "Medium system",
+        "heavy": "Heavy system", "unknown": "Unknown system",
+    }
+    active = []
+    for value in filters["pricing"]:
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("pricing", value))})
+    for value in filters["platforms"]:
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("platform", value))})
+    for value in filters["system_levels"]:
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("system_level", value))})
+    for key, label in (("open_source", "Open source"), ("offline", "Offline"), ("ai", "AI-powered"), ("turkish", "Turkish support")):
+        if filters[key]:
+            active.append({"label": label, "url": build_query_url(search_query, filters, (key, "1"))})
+    if filters["max_ram"] is not None:
+        value = int(filters["max_ram"]) if filters["max_ram"].is_integer() else filters["max_ram"]
+        active.append({"label": f"Up to {value} GB RAM", "url": build_query_url(search_query, filters, ("max_ram", str(filters["max_ram"])))})
+    return active
+
+
 def calculate_match_percentage(score, highest_score):
     """
     Sonuçları 0-100 arasında yüzdelik değere dönüştürür.
@@ -443,78 +588,49 @@ def inject_app_metadata():
 @app.route("/")
 def home():
     all_tools = load_tools()
-
-    search_query = request.args.get(
-        "q",
-        ""
-    ).strip()
-
+    search_query = request.args.get("q", "").strip()
+    filters = parse_filters(request.args)
     detected_needs = []
     ranked_tools = []
 
     if search_query:
-        detected_needs = detect_search_needs(
-            search_query
-        )
-
+        detected_needs = detect_search_needs(search_query)
         for tool in all_tools:
-            score = calculate_search_score(
-                tool,
-                search_query,
-                detected_needs
-            )
-
+            score = calculate_search_score(tool, search_query, detected_needs)
             if score > 0:
-                ranked_tools.append({
-                    "tool": tool,
-                    "score": score,
-                    "match": 0
-                })
-
+                ranked_tools.append({"tool": tool, "score": score, "match": 0})
         ranked_tools.sort(
-            key=lambda item: (
-                item["score"],
-                item["tool"].get("rating", 0)
-            ),
-            reverse=True
+            key=lambda item: (item["score"], item["tool"].get("rating", 0)),
+            reverse=True,
         )
-
         if ranked_tools:
             highest_score = ranked_tools[0]["score"]
-
             for item in ranked_tools:
-                item["match"] = calculate_match_percentage(
-                    item["score"],
-                    highest_score
-                )
-
-        tools = [
-            item["tool"]
-            for item in ranked_tools
-        ]
-
+                item["match"] = calculate_match_percentage(item["score"], highest_score)
     else:
-        tools = sorted(
-            all_tools,
-            key=lambda tool: tool.get("rating", 0),
-            reverse=True
-        )
-
         ranked_tools = [
-            {
-                "tool": tool,
-                "score": 0,
-                "match": None
-            }
-            for tool in tools
+            {"tool": tool, "score": 0, "match": None}
+            for tool in sorted(all_tools, key=lambda tool: tool.get("rating", 0), reverse=True)
         ]
+
+    ranked_tools = [
+        item for item in ranked_tools
+        if tool_matches_filters(item["tool"], filters)
+    ]
+    tools = [item["tool"] for item in ranked_tools]
+    active_filters = build_active_filters(search_query, filters)
 
     return render_template(
         "index.html",
         tools=tools,
         ranked_tools=ranked_tools,
         search_query=search_query,
-        detected_needs=detected_needs
+        detected_needs=detected_needs,
+        filters=filters,
+        active_filters=active_filters,
+        clear_filters_url=f"/?{urlencode({'q': search_query})}" if search_query else "/",
+        total_tool_count=len(all_tools),
+        result_count=len(tools),
     )
 
 @app.route("/tools/<slug>")

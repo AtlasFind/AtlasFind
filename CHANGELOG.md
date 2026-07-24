@@ -1,52 +1,37 @@
 # Changelog
 
-## v0.1.2 - Professional Tool Pages
+## [v0.1.3] - Advanced Filtering and Data Infrastructure
 
 ### Added
-- Pros and cons for every tool
-- Pricing detail notes
-- Target user profiles
-- System requirement summaries
-- Dataset review metadata
+- Server-side multi-filter engine
+- Pricing, open-source, offline, AI and platform filters
+- RAM, system-level and Turkish-support filters
+- URL-preserved filter state and removable active-filter chips
+- Dynamic result count and filter reset controls
+- Expanded dataset validation for every current and future tool
 
 ### Changed
-- Professional tool detail page layout
-- Improved platform, feature and alternative presentation
+- Quick filters now use real filter parameters instead of search keywords
+- Tool data schema now includes normalized pricing, RAM, system level and language fields
+- Missing optional filter data is handled safely without crashing the application
 
-# Changelog
-
-All notable changes to AtlasFind are documented here.
-
-## [v0.1.1] - 2026-07-24
+## [v0.1.2] - Professional Tool Pages
 
 ### Added
-- Shared base template for navigation, footer and page metadata
-- Responsive mobile navigation menu
-- Software selection form on the comparison page
-- Empty comparison state and form loading states
-- Skip link, improved focus styles and reduced-motion support
-- Central application version displayed in the footer
+- Pros and cons, pricing details, target users, system requirements and verification metadata
 
 ### Changed
-- Navbar, hero, tool cards and footer received a premium visual pass
-- Dark and light themes now use a more consistent surface system
-- Comparison page now supports zero, one or two selected tools
-- Theme and interface JavaScript is more defensive and accessible
+- Professional tool detail page layout and alternative presentation
 
-### Fixed
-- Theme state is applied before page rendering to reduce flashing
-- Mobile navigation, keyboard controls and focus visibility
-- Repeated navbar and footer markup across templates
-
-## [v0.1.0]
+## [v0.1.1] - Premium Appearance
 
 ### Added
-- Flask project structure
-- Homepage
-- Search system
-- Tool cards
-- Tool detail pages
-- Comparison page
-- Dark and light theme
-- Responsive design
-- expandable JSON tool dataset
+- Shared base template, responsive navigation, footer and accessible interface states
+
+### Changed
+- Premium navbar, hero, tool cards, themes and mobile layout
+
+## [v0.1.0] - Foundation
+
+### Added
+- Flask application, search, cards, details, comparison, themes, responsive design and JSON dataset

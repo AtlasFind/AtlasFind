@@ -2,32 +2,21 @@
 
 **Find the right software. Faster.**
 
-AtlasFind is a software discovery and comparison platform built with Flask.
+AtlasFind is a Flask-based software discovery and comparison platform.
 
 ## Current Version
 
-v0.1.2
+v0.1.3
 
 ## Current Features
 
-- Software search
-- Premium responsive interface
-- Tool cards and detail pages
+- Search with relevance scoring
+- Multi-filter discovery using pricing, license, offline support, AI, platform, RAM, system level and Turkish support
+- Shareable URL-based filter state
+- Tool cards and professional detail pages
 - Side-by-side comparison
-- Dark and light themes
-- Mobile navigation
-- Empty and loading states
-- JSON-based tool dataset with schema validation
-- Accessibility improvements
-
-## Technology
-
-- Python
-- Flask
-- HTML and Jinja
-- CSS
-- JavaScript
-- JSON
+- Dark/light themes and responsive navigation
+- JSON dataset with dynamic schema validation
 
 ## Run Locally
 
@@ -36,30 +25,25 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open `http://127.0.0.1:5000`.
-
-## Development Status
-
-v0.1.2 - Premium Appearance completed. Later versions require separate approval before development begins.
+Open `http://127.0.0.1:5000`.
 
 ## Adding a new tool
 
-Every current and future entry in `data/tools.json` must include the full professional detail-page schema. Required professional fields are:
+Every entry in `data/tools.json` must satisfy the full schema. Filter-related fields are:
 
-- `pros`
-- `cons`
-- `target_users`
-- `system_requirements`
-- `pricing_details.model`
-- `pricing_details.note`
-- `verification.status`
-- `verification.date`
-- `verification.note`
+- `pricing_type`: `free`, `freemium` or `paid`
+- `open_source`: boolean
+- `offline`: boolean
+- `ai_powered`: boolean
+- `platforms`: one or more supported platform names
+- `minimum_ram_gb`: positive number or `null` when unknown
+- `system_level`: `light`, `medium`, `heavy` or `unknown`
+- `languages`: ISO-like codes currently supported by the schema (`en`, `tr`)
 
-The application validates the complete dataset whenever it loads. Before committing a new tool, run:
+Validate every current and future entry with:
 
 ```powershell
 python scripts/validate_tools.py
 ```
 
-The command checks every entry dynamically. There is no hard-coded tool-count limit, so the same rules apply whether AtlasFind contains 100 tools or several thousand.
+The validation and filter logic are not tied to a fixed tool count.

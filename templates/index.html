@@ -59,6 +59,15 @@
                             </svg>
                         </div>
 
+                        {% for value in filters.pricing %}<input type="hidden" name="pricing" value="{{ value }}">{% endfor %}
+                        {% for value in filters.platforms %}<input type="hidden" name="platform" value="{{ value }}">{% endfor %}
+                        {% for value in filters.system_levels %}<input type="hidden" name="system_level" value="{{ value }}">{% endfor %}
+                        {% if filters.open_source %}<input type="hidden" name="open_source" value="1">{% endif %}
+                        {% if filters.offline %}<input type="hidden" name="offline" value="1">{% endif %}
+                        {% if filters.ai %}<input type="hidden" name="ai" value="1">{% endif %}
+                        {% if filters.turkish %}<input type="hidden" name="turkish" value="1">{% endif %}
+                        {% if filters.max_ram is not none %}<input type="hidden" name="max_ram" value="{{ filters.max_ram|int if filters.max_ram == filters.max_ram|int else filters.max_ram }}">{% endif %}
+
                         <input
                             type="search"
                             name="q"
@@ -102,32 +111,12 @@
                 </div>
 
 
-                <div class="quick-filters">
-
-                    <button type="button" data-filter="Free">
-                        Free
-                    </button>
-
-                    <button type="button" data-filter="Open Source">
-                        Open Source
-                    </button>
-
-                    <button type="button" data-filter="Offline">
-                        Offline
-                    </button>
-
-                    <button type="button" data-filter="AI">
-                        AI-powered
-                    </button>
-
-                    <button type="button" data-filter="Privacy">
-                        Privacy
-                    </button>
-
-                    <button type="button" data-filter="Lightweight">
-                        Lightweight
-                    </button>
-
+                <div class="quick-filters" aria-label="Quick filters">
+                    <a href="/?pricing=free">Free</a>
+                    <a href="/?open_source=1">Open Source</a>
+                    <a href="/?offline=1">Offline</a>
+                    <a href="/?ai=1">AI-powered</a>
+                    <a href="/?system_level=light">Lightweight</a>
                 </div>
 
             </div>
@@ -302,6 +291,62 @@
             </div>
 
 
+            <div class="filter-toolbar">
+                <button type="button" class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+                    Filters <span>⚙</span>
+                </button>
+                <div class="result-count" aria-live="polite">
+                    <strong>{{ result_count }}</strong> of {{ total_tool_count }} tools
+                    {% if search_query %} for “{{ search_query }}”{% endif %}
+                </div>
+            </div>
+
+            <form class="filter-panel" id="filterPanel" method="GET" action="/">
+                {% if search_query %}<input type="hidden" name="q" value="{{ search_query }}">{% endif %}
+                <fieldset>
+                    <legend>Pricing</legend>
+                    {% for value, label in [('free','Free'),('freemium','Freemium'),('paid','Paid')] %}
+                    <label><input type="checkbox" name="pricing" value="{{ value }}" {% if value in filters.pricing %}checked{% endif %}> {{ label }}</label>
+                    {% endfor %}
+                </fieldset>
+                <fieldset>
+                    <legend>Features</legend>
+                    <label><input type="checkbox" name="open_source" value="1" {% if filters.open_source %}checked{% endif %}> Open source</label>
+                    <label><input type="checkbox" name="offline" value="1" {% if filters.offline %}checked{% endif %}> Offline</label>
+                    <label><input type="checkbox" name="ai" value="1" {% if filters.ai %}checked{% endif %}> AI-powered</label>
+                    <label><input type="checkbox" name="turkish" value="1" {% if filters.turkish %}checked{% endif %}> Turkish support</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Platforms</legend>
+                    {% for value, label in [('windows','Windows'),('macos','macOS'),('linux','Linux'),('android','Android'),('ios','iOS'),('web','Web')] %}
+                    <label><input type="checkbox" name="platform" value="{{ value }}" {% if value in filters.platforms %}checked{% endif %}> {{ label }}</label>
+                    {% endfor %}
+                </fieldset>
+                <fieldset>
+                    <legend>System</legend>
+                    <label>Maximum RAM
+                        <select name="max_ram">
+                            <option value="">Any</option>
+                            {% for value in [2,4,8,16] %}<option value="{{ value }}" {% if filters.max_ram == value %}selected{% endif %}>{{ value }} GB</option>{% endfor %}
+                        </select>
+                    </label>
+                    {% for value, label in [('light','Light'),('medium','Medium'),('heavy','Heavy')] %}
+                    <label><input type="checkbox" name="system_level" value="{{ value }}" {% if value in filters.system_levels %}checked{% endif %}> {{ label }}</label>
+                    {% endfor %}
+                </fieldset>
+                <div class="filter-actions">
+                    <button type="submit">Apply filters</button>
+                    <a href="{{ clear_filters_url }}">Clear filters</a>
+                </div>
+            </form>
+
+            {% if active_filters %}
+            <div class="active-filters" aria-label="Active filters">
+                {% for item in active_filters %}<a href="{{ item.url }}">{{ item.label }} <span aria-hidden="true">×</span></a>{% endfor %}
+                <a href="{{ clear_filters_url }}" class="clear-all">Clear all</a>
+            </div>
+            {% endif %}
+
             {% if tools %}
 
                 <div class="tools-grid">
@@ -457,8 +502,8 @@
                         Try another product, category or feature.
                     </p>
 
-                    <a href="/">
-                        Clear search
+                    <a href="{{ clear_filters_url }}">
+                        Clear filters
                     </a>
 
                 </div>
