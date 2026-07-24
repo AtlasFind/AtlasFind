@@ -1,322 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends "base.html" %}
+{% set active_page = "compare" %}
+{% block title %}{% if left_tool and right_tool %}{{ left_tool.name }} vs {{ right_tool.name }} | AtlasFind{% else %}Compare Software | AtlasFind{% endif %}{% endblock %}
+{% block content %}
+<section class="comparison-page">
+    <div class="comparison-title">
+        <span class="section-label">Software comparison</span>
+        {% if left_tool and right_tool %}
+            <h1>{{ left_tool.name }} <span>vs</span> {{ right_tool.name }}</h1>
+            <p>Compare pricing, features, platforms and availability side by side.</p>
+        {% else %}
+            <h1>Compare software side by side.</h1>
+            <p>Select two tools to see the differences that actually matter.</p>
+        {% endif %}
+    </div>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <form class="compare-picker" method="GET" action="{{ url_for('compare_tools') }}" data-loading-form>
+        <label>
+            <span>First tool</span>
+            <select name="left" required>
+                <option value="">Choose a tool</option>
+                {% for item in all_tools %}<option value="{{ item.slug }}" {% if left_tool and item.slug == left_tool.slug %}selected{% endif %}>{{ item.name }}</option>{% endfor %}
+            </select>
+        </label>
+        <span class="compare-picker-vs" aria-hidden="true">VS</span>
+        <label>
+            <span>Second tool</span>
+            <select name="right" required>
+                <option value="">Choose a tool</option>
+                {% for item in all_tools %}<option value="{{ item.slug }}" {% if right_tool and item.slug == right_tool.slug %}selected{% endif %}>{{ item.name }}</option>{% endfor %}
+            </select>
+        </label>
+        <button type="submit" class="primary-button" data-loading-text="Comparing…">Compare tools <span>→</span></button>
+    </form>
 
-    <title>
-        {{ left_tool.name }} vs {{ right_tool.name }}
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
-    >
-</head>
-
-<body>
-
-    <div class="background-grid"></div>
-    <div class="background-noise"></div>
-
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-
-
-    <header class="navbar">
-
-        <a href="/" class="logo">
-
-            <span class="logo-icon">
-                A
-            </span>
-
-            <span class="logo-text">
-                Atlas<span>Find</span>
-            </span>
-
-        </a>
-
-
-        <nav class="nav-links">
-            <a href="/">Discover</a>
-
-            <a
-                href="{{ url_for(
-                    'tool_detail',
-                    slug=left_tool.slug
-                ) }}"
-            >
-                {{ left_tool.name }}
-            </a>
-
-            <a
-                href="{{ url_for(
-                    'tool_detail',
-                    slug=right_tool.slug
-                ) }}"
-            >
-                {{ right_tool.name }}
-            </a>
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <section class="comparison-page">
-
-            <div class="comparison-title">
-
-                <span class="section-label">
-                    Software comparison
-                </span>
-
-                <h1>
-                    {{ left_tool.name }}
-                    <span>vs</span>
-                    {{ right_tool.name }}
-                </h1>
-
-                <p>
-                    Compare pricing, features, platforms
-                    and availability side by side.
-                </p>
-
+    {% if left_tool and right_tool %}
+    <div class="comparison-table" role="region" aria-label="Software comparison table" tabindex="0">
+        <div class="comparison-table-header">
+            <div class="comparison-property">Feature</div>
+            {% for item in [left_tool, right_tool] %}
+            <div class="comparison-product">
+                <div class="tool-logo">{{ item.name[0] }}</div>
+                <h2>{{ item.name }}</h2>
+                <span>★ {{ item.rating }}</span>
             </div>
-
-
-            <div class="comparison-table">
-
-                <div class="comparison-table-header">
-
-                    <div class="comparison-property">
-                        Feature
-                    </div>
-
-
-                    <div class="comparison-product">
-
-                        <div class="tool-logo">
-                            {{ left_tool.name[0] }}
-                        </div>
-
-                        <h2>
-                            {{ left_tool.name }}
-                        </h2>
-
-                        <span>
-                            ★ {{ left_tool.rating }}
-                        </span>
-
-                    </div>
-
-
-                    <div class="comparison-product">
-
-                        <div class="tool-logo">
-                            {{ right_tool.name[0] }}
-                        </div>
-
-                        <h2>
-                            {{ right_tool.name }}
-                        </h2>
-
-                        <span>
-                            ★ {{ right_tool.rating }}
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Category</span>
-
-                    <strong>
-                        {{ left_tool.category }}
-                    </strong>
-
-                    <strong>
-                        {{ right_tool.category }}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Pricing</span>
-
-                    <strong>
-                        {{ left_tool.pricing }}
-                    </strong>
-
-                    <strong>
-                        {{ right_tool.pricing }}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Open source</span>
-
-                    <strong>
-                        {% if left_tool.open_source %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                    <strong>
-                        {% if right_tool.open_source %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Offline support</span>
-
-                    <strong>
-                        {% if left_tool.offline %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                    <strong>
-                        {% if right_tool.offline %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>AI features</span>
-
-                    <strong>
-                        {% if left_tool.ai_powered %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                    <strong>
-                        {% if right_tool.ai_powered %}
-                            ✓ Yes
-                        {% else %}
-                            ✕ No
-                        {% endif %}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Platforms</span>
-
-                    <strong>
-                        {{ left_tool.platforms | join(", ") }}
-                    </strong>
-
-                    <strong>
-                        {{ right_tool.platforms | join(", ") }}
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-row">
-
-                    <span>Rating</span>
-
-                    <strong>
-                        {{ left_tool.rating }} / 5
-                    </strong>
-
-                    <strong>
-                        {{ right_tool.rating }} / 5
-                    </strong>
-
-                </div>
-
-
-                <div class="comparison-table-actions">
-
-                    <span></span>
-
-                    <a
-                        href="{{ left_tool.website }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="primary-button"
-                    >
-                        Visit {{ left_tool.name }}
-                        <span>↗</span>
-                    </a>
-
-                    <a
-                        href="{{ right_tool.website }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="primary-button"
-                    >
-                        Visit {{ right_tool.name }}
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-
-        <a href="/" class="logo">
-
-            <span class="logo-icon">
-                A
-            </span>
-
-            <span class="logo-text">
-                Atlas<span>Find</span>
-            </span>
-
-        </a>
-
-        <span class="copyright">
-            © 2026 AtlasFind
-        </span>
-
-    </footer>
-
-</body>
-</html>
+            {% endfor %}
+        </div>
+        {% set rows = [
+            ('Category', left_tool.category, right_tool.category),
+            ('Pricing', left_tool.pricing, right_tool.pricing),
+            ('Open source', '✓ Yes' if left_tool.open_source else '✕ No', '✓ Yes' if right_tool.open_source else '✕ No'),
+            ('Offline support', '✓ Yes' if left_tool.offline else '✕ No', '✓ Yes' if right_tool.offline else '✕ No'),
+            ('AI features', '✓ Yes' if left_tool.ai_powered else '✕ No', '✓ Yes' if right_tool.ai_powered else '✕ No'),
+            ('Platforms', left_tool.platforms | join(', '), right_tool.platforms | join(', ')),
+            ('Rating', left_tool.rating|string + ' / 5', right_tool.rating|string + ' / 5')
+        ] %}
+        {% for label, left_value, right_value in rows %}
+        <div class="comparison-table-row"><span>{{ label }}</span><strong>{{ left_value }}</strong><strong>{{ right_value }}</strong></div>
+        {% endfor %}
+        <div class="comparison-table-actions">
+            <span></span>
+            <a href="{{ left_tool.website }}" target="_blank" rel="noopener noreferrer" class="primary-button">Visit {{ left_tool.name }} <span>↗</span></a>
+            <a href="{{ right_tool.website }}" target="_blank" rel="noopener noreferrer" class="primary-button">Visit {{ right_tool.name }} <span>↗</span></a>
+        </div>
+    </div>
+    {% else %}
+    <div class="empty-results premium-empty-state">
+        <div class="empty-icon" aria-hidden="true">⇄</div>
+        <h2>Two tools make a comparison</h2>
+        <p>Choose both fields above. One tool arguing with itself is not especially informative.</p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

@@ -28,7 +28,7 @@ Yani roadmap bize yolu gösteriyor. Hepsini bugün yapmak gibi insanlık dışı
 - Responsive design
 - 100-tool JSON dataset
 
-## v0.1.1 - Premium Appearance
+## v0.1.1 - Premium Appearance ✅
 - Navbar redesign
 - Hero section improvements
 - Tool card redesign

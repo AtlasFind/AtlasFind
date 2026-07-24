@@ -1,71 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        {{ tool.name }} Alternatives | AtlasFind
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
-    >
-</head>
-
-<body>
-
-    <div class="background-grid"></div>
-    <div class="background-noise"></div>
-
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-
-
-    <header class="navbar">
-
-        <a href="/" class="logo">
-
-            <span class="logo-icon">
-                A
-            </span>
-
-            <span class="logo-text">
-                Atlas<span>Find</span>
-            </span>
-
-        </a>
-
-
-        <nav class="nav-links">
-            <a href="/">Discover</a>
-            <a href="#overview">Overview</a>
-            <a href="#alternatives">Alternatives</a>
-        </nav>
-
-
-        <div class="nav-actions">
-
-            <a
-                href="/"
-                class="nav-cta"
-            >
-                Back to search
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <section
+{% extends "base.html" %}
+{% set active_page = "tool" %}
+{% block title %}{{ tool.name }} Alternatives | AtlasFind{% endblock %}
+{% block description %}Explore {{ tool.name }}, its features, platforms and recommended alternatives.{% endblock %}
+{% block content %}
+<section
             class="tool-detail-hero"
             id="overview"
         >
@@ -399,37 +337,4 @@
             {% endif %}
 
         </section>
-
-    </main>
-
-
-    <footer class="footer">
-
-        <div>
-
-            <a href="/" class="logo">
-
-                <span class="logo-icon">
-                    A
-                </span>
-
-                <span class="logo-text">
-                    Atlas<span>Find</span>
-                </span>
-
-            </a>
-
-            <p>
-                Find software that fits the way you work.
-            </p>
-
-        </div>
-
-        <span class="copyright">
-            © 2026 AtlasFind
-        </span>
-
-    </footer>
-
-</body>
-</html>
+{% endblock %}

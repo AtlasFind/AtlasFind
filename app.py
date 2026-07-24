@@ -5,6 +5,8 @@ from pathlib import Path
 
 app = Flask(__name__)
 
+APP_VERSION = "0.1.1"
+
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
 
@@ -417,6 +419,11 @@ def calculate_match_percentage(score, highest_score):
 
     return min(percentage, 100)
 
+
+@app.context_processor
+def inject_app_metadata():
+    return {"app_version": APP_VERSION}
+
 @app.route("/")
 def home():
     all_tools = load_tools()
@@ -515,19 +522,20 @@ def tool_detail(slug):
 
 @app.route("/compare")
 def compare_tools():
-    left_slug = request.args.get("left", "")
-    right_slug = request.args.get("right", "")
+    left_slug = request.args.get("left", "").strip()
+    right_slug = request.args.get("right", "").strip()
 
-    left_tool = find_tool_by_slug(left_slug)
-    right_tool = find_tool_by_slug(right_slug)
+    left_tool = find_tool_by_slug(left_slug) if left_slug else None
+    right_tool = find_tool_by_slug(right_slug) if right_slug else None
 
-    if left_tool is None or right_tool is None:
+    if (left_slug and left_tool is None) or (right_slug and right_tool is None):
         abort(404)
 
     return render_template(
         "compare.html",
         left_tool=left_tool,
-        right_tool=right_tool
+        right_tool=right_tool,
+        all_tools=sorted(load_tools(), key=lambda tool: tool.get("name", ""))
     )
 
 

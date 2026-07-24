@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}Discover, compare and find software that fits your workflow.{% endblock %}">
+    <script>
+        (() => {
+            const saved = localStorage.getItem("atlas-theme");
+            const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+            if (saved === "light" || (!saved && prefersLight)) {
+                document.documentElement.classList.add("light-theme");
+            }
+        })();
+    </script>
+    <title>{% block title %}AtlasFind{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-noise" aria-hidden="true"></div>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
+    <div class="glow glow-three" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="navbar">
+            <a href="{{ url_for('home') }}" class="logo" aria-label="AtlasFind home">
+                <span class="logo-icon" aria-hidden="true">A</span>
+                <span class="logo-text">Atlas<span>Find</span></span>
+            </a>
+
+            <nav class="nav-links" id="primaryNavigation" aria-label="Primary navigation">
+                <a href="{{ url_for('home') }}#discover" {% if active_page == 'home' %}aria-current="page"{% endif %}>Discover</a>
+                <a href="{{ url_for('home') }}#tools">Tools</a>
+                <a href="{{ url_for('home') }}#categories">Categories</a>
+                <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>Compare</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button" class="theme-button" id="themeButton" aria-label="Switch to light theme" aria-pressed="false">
+                    <span id="themeIcon" aria-hidden="true">☾</span>
+                </button>
+                <a href="{{ url_for('home') }}#tools" class="nav-cta">Explore tools</a>
+                <button type="button" class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNavigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer premium-footer">
+        <div class="footer-brand">
+            <a href="{{ url_for('home') }}" class="logo">
+                <span class="logo-icon" aria-hidden="true">A</span>
+                <span class="logo-text">Atlas<span>Find</span></span>
+            </a>
+            <p>Find software that fits the way you work.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer navigation">
+            <a href="{{ url_for('home') }}#discover">Discover</a>
+            <a href="{{ url_for('home') }}#tools">Tools</a>
+            <a href="{{ url_for('home') }}#categories">Categories</a>
+            <a href="{{ url_for('compare_tools') }}">Compare</a>
+            <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <span class="copyright">© 2026 AtlasFind · v{{ app_version }}</span>
+    </footer>
+
+    <div class="sr-only" id="liveStatus" aria-live="polite"></div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

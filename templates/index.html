@@ -1,85 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Discover, compare and find the best software alternatives."
-    >
-
-    <title>AtlasFind | Find Better Software</title>
-
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
-    >
-</head>
-
-<body>
-
-    <div class="background-grid"></div>
-    <div class="background-noise"></div>
-
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-    <div class="glow glow-three"></div>
-
-
-    <header class="navbar">
-
-        <a href="/" class="logo">
-            <span class="logo-icon">A</span>
-
-            <span class="logo-text">
-                Atlas<span>Find</span>
-            </span>
-        </a>
-
-
-        <nav class="nav-links">
-            <a href="#discover">Discover</a>
-            <a href="#tools">Tools</a>
-            <a href="#categories">Categories</a>
-            <a href="#compare">Compare</a>
-        </nav>
-
-
-        <div class="nav-actions">
-
-            <button
-                type="button"
-                class="theme-button"
-                id="themeButton"
-                aria-label="Change theme"
-            >
-                <span id="themeIcon">☾</span>
-            </button>
-
-            <button
-                type="button"
-                class="language-button"
-            >
-                EN
-            </button>
-
-            <a href="#tools" class="nav-cta">
-                Explore tools
-            </a>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <section class="hero" id="discover">
+{% extends "base.html" %}
+{% set active_page = "home" %}
+{% block title %}AtlasFind | Find Better Software{% endblock %}
+{% block content %}
+<section class="hero" id="discover">
 
             <div class="hero-content">
 
@@ -105,6 +28,7 @@
 
                 <form
                     class="search-form"
+                    data-loading-form
                     method="GET"
                     action="/"
                 >
@@ -138,6 +62,7 @@
                         <input
                             type="search"
                             name="q"
+                            aria-label="Search software"
                             id="searchInput"
                             value="{{ search_query }}"
                             placeholder="I need a free Photoshop alternative..."
@@ -148,7 +73,7 @@
                             Ctrl K
                         </div>
 
-                        <button type="submit">
+                        <button type="submit" data-loading-text="Searching…">
                             Search
                             <span>→</span>
                         </button>
@@ -503,7 +428,7 @@
                                 </a>
 
                                 <a
-                                     href="{{ url_for('tool_detail', slug=tool.slug) }}#alternatives"
+                                     href="{{ url_for('compare_tools', left=tool.slug) }}"
                                     class="compare-button"
                                 >
                                     <span>⇄</span>
@@ -756,7 +681,7 @@
                         offline support and ease of use in one place.
                     </p>
 
-                    <a href="#" class="primary-button">
+                    <a href="{{ url_for('compare_tools') }}" class="primary-button">
                         Start comparing
                         <span>→</span>
                     </a>
@@ -819,47 +744,4 @@
             </div>
 
         </section>
-
-    </main>
-
-
-    <footer class="footer">
-
-        <div>
-
-            <a href="/" class="logo">
-                <span class="logo-icon">A</span>
-
-                <span class="logo-text">
-                    Atlas<span>Find</span>
-                </span>
-            </a>
-
-            <p>
-                Find software that fits the way you work.
-            </p>
-
-        </div>
-
-
-        <div class="footer-links">
-            <a href="#discover">Discover</a>
-            <a href="#tools">Tools</a>
-            <a href="#categories">Categories</a>
-            <a href="#compare">Compare</a>
-        </div>
-
-
-        <span class="copyright">
-            © 2026 AtlasFind
-        </span>
-
-    </footer>
-
-
-    <script
-        src="{{ url_for('static', filename='js/main.js') }}"
-    ></script>
-
-</body>
-</html>
+{% endblock %}
