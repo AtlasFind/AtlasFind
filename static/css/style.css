@@ -2674,3 +2674,89 @@ button:disabled { cursor: wait; opacity: .7; }
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     .tool-card:hover, .alternative-card:hover { transform: none; }
 }
+
+/* v0.1.2 Professional Tool Pages */
+.professional-detail-grid,
+.pros-cons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4, 1rem);
+    margin-top: var(--space-5, 1.5rem);
+}
+
+.detail-card {
+    margin: 0;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg, 18px);
+    background: color-mix(in srgb, var(--card-bg) 94%, transparent);
+}
+
+.detail-card h2 {
+    margin: .45rem 0 .55rem;
+    font-size: 1.2rem;
+}
+
+.detail-card p,
+.verification-box p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+.detail-list {
+    display: grid;
+    gap: .7rem;
+    margin: .8rem 0 0;
+    padding-left: 1.15rem;
+    color: var(--text-color);
+}
+
+.status-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.status-list li {
+    display: flex;
+    gap: .7rem;
+    align-items: flex-start;
+}
+
+.status-list li > span {
+    flex: 0 0 auto;
+    width: 1.45rem;
+    height: 1.45rem;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 999px;
+    font-weight: 800;
+}
+
+.pros-card .status-list li > span {
+    background: rgba(34, 197, 94, .14);
+    color: #22c55e;
+}
+
+.cons-card .status-list li > span {
+    background: rgba(245, 158, 11, .14);
+    color: #f59e0b;
+}
+
+.verification-box {
+    margin-top: 1.15rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.verification-box strong {
+    display: block;
+    margin: .4rem 0 .55rem;
+}
+
+@media (max-width: 760px) {
+    .professional-detail-grid,
+    .pros-cons-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,340 +1,138 @@
 {% extends "base.html" %}
 {% set active_page = "tool" %}
-{% block title %}{{ tool.name }} Alternatives | AtlasFind{% endblock %}
-{% block description %}Explore {{ tool.name }}, its features, platforms and recommended alternatives.{% endblock %}
+{% block title %}{{ tool.name }} Review, Pricing & Alternatives | AtlasFind{% endblock %}
+{% block description %}Explore {{ tool.name }} pricing, pros and cons, supported platforms, system requirements and recommended alternatives.{% endblock %}
 {% block content %}
-<section
-            class="tool-detail-hero"
-            id="overview"
-        >
-
-            <div class="tool-detail-main">
-
-                <div class="tool-detail-logo">
-                    {{ tool.name[0] }}
-                </div>
-
-
-                <div class="tool-detail-title">
-
-                    <span class="section-label">
-                        {{ tool.category }}
-                    </span>
-
-                    <h1>
-                        {{ tool.name }}
-                    </h1>
-
-                    <p>
-                        {{ tool.description }}
-                    </p>
-
-                </div>
-
+<section class="tool-detail-hero" id="overview">
+    <div class="tool-detail-main">
+        <div class="tool-detail-logo" aria-hidden="true">{{ tool.name[0] }}</div>
+        <div class="tool-detail-title">
+            <span class="section-label">{{ tool.category }}</span>
+            <h1>{{ tool.name }}</h1>
+            <p>{{ tool.description }}</p>
+            <div class="tool-detail-tags" aria-label="Tool highlights">
+                <span class="detail-tag">{{ tool.pricing }}</span>
+                {% if tool.open_source %}<span class="detail-tag">Open Source</span>{% endif %}
+                {% if tool.offline %}<span class="detail-tag">Offline</span>{% endif %}
+                {% if tool.ai_powered %}<span class="detail-tag">AI-powered</span>{% endif %}
             </div>
+        </div>
+    </div>
+    <div class="tool-detail-rating" aria-label="AtlasFind rating {{ tool.rating }} out of 5">
+        <span aria-hidden="true">★</span>
+        <strong>{{ tool.rating }}</strong>
+        <small>AtlasFind rating</small>
+    </div>
+</section>
 
+<section class="tool-detail-layout">
+    <div class="tool-information-panel">
+        <div class="tool-detail-actions">
+            <a href="{{ tool.website }}" target="_blank" rel="noopener noreferrer" class="primary-button">Visit official website <span aria-hidden="true">↗</span></a>
+            <a href="#alternatives" class="secondary-button">View alternatives <span aria-hidden="true">↓</span></a>
+        </div>
 
-            <div class="tool-detail-rating">
+        <div class="professional-detail-grid">
+            <section class="detail-section detail-card">
+                <span class="section-label">Pricing</span>
+                <h2>{{ tool.pricing_details.model }}</h2>
+                <p>{{ tool.pricing_details.note }}</p>
+            </section>
 
-                <span>★</span>
+            <section class="detail-section detail-card">
+                <span class="section-label">Available on</span>
+                <div class="detail-platform-list">
+                    {% for platform in tool.platforms %}<span>{{ platform }}</span>{% endfor %}
+                </div>
+            </section>
 
-                <strong>
-                    {{ tool.rating }}
-                </strong>
+            <section class="detail-section detail-card">
+                <span class="section-label">Best for</span>
+                <ul class="detail-list">
+                    {% for user in tool.target_users %}<li>{{ user }}</li>{% endfor %}
+                </ul>
+            </section>
 
-                <small>
-                    AtlasFind rating
-                </small>
+            <section class="detail-section detail-card">
+                <span class="section-label">System requirements</span>
+                <ul class="detail-list">
+                    {% for requirement in tool.system_requirements %}<li>{{ requirement }}</li>{% endfor %}
+                </ul>
+            </section>
+        </div>
 
+        <div class="pros-cons-grid">
+            <section class="detail-section detail-card pros-card">
+                <span class="section-label">Pros</span>
+                <ul class="detail-list status-list">
+                    {% for pro in tool.pros %}<li><span aria-hidden="true">✓</span>{{ pro }}</li>{% endfor %}
+                </ul>
+            </section>
+
+            <section class="detail-section detail-card cons-card">
+                <span class="section-label">Cons</span>
+                <ul class="detail-list status-list">
+                    {% for con in tool.cons %}<li><span aria-hidden="true">−</span>{{ con }}</li>{% endfor %}
+                </ul>
+            </section>
+        </div>
+
+        <section class="detail-section detail-card">
+            <span class="section-label">Features and uses</span>
+            <div class="detail-platform-list">
+                {% for tag in tool.tags %}<span>{{ tag }}</span>{% endfor %}
             </div>
-
         </section>
+    </div>
 
+    <aside class="tool-score-panel">
+        <span class="section-label">Quick summary</span>
+        <div class="score-row"><span>Pricing</span><strong>{{ tool.pricing }}</strong></div>
+        <div class="score-row"><span>Open source</span><strong>{{ "Yes" if tool.open_source else "No" }}</strong></div>
+        <div class="score-row"><span>Offline support</span><strong>{{ "Yes" if tool.offline else "No" }}</strong></div>
+        <div class="score-row"><span>AI features</span><strong>{{ "Yes" if tool.ai_powered else "No" }}</strong></div>
+        <div class="score-row"><span>Rating</span><strong>{{ tool.rating }} / 5</strong></div>
+        <div class="verification-box">
+            <span class="section-label">Data review</span>
+            <strong>{{ tool.verification.date }}</strong>
+            <p>{{ tool.verification.note }}</p>
+        </div>
+    </aside>
+</section>
 
-        <section class="tool-detail-layout">
+<section class="alternatives-section" id="alternatives">
+    <div class="section-heading">
+        <div>
+            <span class="section-label">Recommended alternatives</span>
+            <h2>Alternatives to {{ tool.name }}</h2>
+            <p>Ranked using category, features, platforms and user rating.</p>
+        </div>
+    </div>
 
-            <div class="tool-information-panel">
-
-                <div class="tool-detail-actions">
-
-                    <a
-                        href="{{ tool.website }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="primary-button"
-                    >
-                        Visit official website
-                        <span>↗</span>
-                    </a>
-
-                    <a
-                        href="#alternatives"
-                        class="secondary-button"
-                    >
-                        View alternatives
-                        <span>↓</span>
-                    </a>
-
-                </div>
-
-
-                <div class="tool-detail-tags">
-
-                    <span class="detail-tag">
-                        {{ tool.pricing }}
-                    </span>
-
-                    {% if tool.open_source %}
-                        <span class="detail-tag">
-                            Open Source
-                        </span>
-                    {% endif %}
-
-                    {% if tool.offline %}
-                        <span class="detail-tag">
-                            Offline
-                        </span>
-                    {% endif %}
-
-                    {% if tool.ai_powered %}
-                        <span class="detail-tag">
-                            AI-powered
-                        </span>
-                    {% endif %}
-
-                </div>
-
-
-                <div class="detail-section">
-
-                    <span class="section-label">
-                        Available on
-                    </span>
-
-                    <div class="detail-platform-list">
-
-                        {% for platform in tool.platforms %}
-                            <span>
-                                {{ platform }}
-                            </span>
-                        {% endfor %}
-
-                    </div>
-
-                </div>
-
-
-                <div class="detail-section">
-
-                    <span class="section-label">
-                        Features and uses
-                    </span>
-
-                    <div class="detail-platform-list">
-
-                        {% for tag in tool.tags %}
-                            <span>
-                                {{ tag }}
-                            </span>
-                        {% endfor %}
-
-                    </div>
-
-                </div>
-
+    {% if alternatives %}
+    <div class="alternative-grid">
+        {% for alternative in alternatives %}
+        <article class="alternative-card">
+            <div class="alternative-header">
+                <div class="tool-logo" aria-hidden="true">{{ alternative.name[0] }}</div>
+                <div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div>
+                <strong class="alternative-rating">★ {{ alternative.rating }}</strong>
             </div>
-
-
-            <aside class="tool-score-panel">
-
-                <span class="section-label">
-                    Quick summary
-                </span>
-
-                <div class="score-row">
-                    <span>Pricing</span>
-                    <strong>{{ tool.pricing }}</strong>
-                </div>
-
-                <div class="score-row">
-                    <span>Open source</span>
-
-                    <strong>
-                        {% if tool.open_source %}
-                            Yes
-                        {% else %}
-                            No
-                        {% endif %}
-                    </strong>
-                </div>
-
-                <div class="score-row">
-                    <span>Offline support</span>
-
-                    <strong>
-                        {% if tool.offline %}
-                            Yes
-                        {% else %}
-                            No
-                        {% endif %}
-                    </strong>
-                </div>
-
-                <div class="score-row">
-                    <span>AI features</span>
-
-                    <strong>
-                        {% if tool.ai_powered %}
-                            Yes
-                        {% else %}
-                            No
-                        {% endif %}
-                    </strong>
-                </div>
-
-                <div class="score-row">
-                    <span>Rating</span>
-
-                    <strong>
-                        {{ tool.rating }} / 5
-                    </strong>
-                </div>
-
-            </aside>
-
-        </section>
-
-
-        <section
-            class="alternatives-section"
-            id="alternatives"
-        >
-
-            <div class="section-heading">
-
-                <div>
-
-                    <span class="section-label">
-                        Recommended alternatives
-                    </span>
-
-                    <h2>
-                        Alternatives to {{ tool.name }}
-                    </h2>
-
-                    <p>
-                        These tools are ranked using category,
-                        features, platforms and user rating.
-                    </p>
-
-                </div>
-
+            <p>{{ alternative.description }}</p>
+            <div class="tool-tags">
+                <span class="tag featured-tag">{{ alternative.pricing }}</span>
+                {% if alternative.open_source %}<span class="tag">Open Source</span>{% endif %}
+                {% if alternative.offline %}<span class="tag">Offline</span>{% endif %}
             </div>
-
-
-            {% if alternatives %}
-
-                <div class="alternative-grid">
-
-                    {% for alternative in alternatives %}
-
-                        <article class="alternative-card">
-
-                            <div class="alternative-header">
-
-                                <div class="tool-logo">
-                                    {{ alternative.name[0] }}
-                                </div>
-
-                                <div>
-
-                                    <h3>
-                                        {{ alternative.name }}
-                                    </h3>
-
-                                    <span>
-                                        {{ alternative.category }}
-                                    </span>
-
-                                </div>
-
-                                <strong class="alternative-rating">
-                                    ★ {{ alternative.rating }}
-                                </strong>
-
-                            </div>
-
-
-                            <p>
-                                {{ alternative.description }}
-                            </p>
-
-
-                            <div class="tool-tags">
-
-                                <span class="tag featured-tag">
-                                    {{ alternative.pricing }}
-                                </span>
-
-                                {% if alternative.open_source %}
-                                    <span class="tag">
-                                        Open Source
-                                    </span>
-                                {% endif %}
-
-                                {% if alternative.offline %}
-                                    <span class="tag">
-                                        Offline
-                                    </span>
-                                {% endif %}
-
-                            </div>
-
-
-                            <div class="alternative-actions">
-
-                                <a
-                                    href="{{ url_for('tool_detail', slug=alternative.slug) }}"
-                                    class="secondary-button"
-                                >
-                                    Explore
-                                </a>
-
-                                <a
-                                    href="{{ url_for(
-                                        'compare_tools',
-                                        left=tool.slug,
-                                        right=alternative.slug
-                                    ) }}"
-                                    class="primary-button"
-                                >
-                                    Compare
-                                    <span>⇄</span>
-                                </a>
-
-                            </div>
-
-                        </article>
-
-                    {% endfor %}
-
-                </div>
-
-            {% else %}
-
-                <div class="empty-results">
-
-                    <h3>
-                        No alternatives found yet
-                    </h3>
-
-                    <p>
-                        More tools must be added to this category.
-                    </p>
-
-                </div>
-
-            {% endif %}
-
-        </section>
+            <div class="alternative-actions">
+                <a href="{{ url_for('tool_detail', slug=alternative.slug) }}" class="secondary-button">Explore</a>
+                <a href="{{ url_for('compare_tools', left=tool.slug, right=alternative.slug) }}" class="primary-button">Compare <span aria-hidden="true">⇄</span></a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-results"><h3>No alternatives found yet</h3><p>More tools must be added to this category.</p></div>
+    {% endif %}
+</section>
 {% endblock %}
