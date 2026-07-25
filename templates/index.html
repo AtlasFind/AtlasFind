@@ -411,6 +411,18 @@
     </div>
 
 {% endif %}
+{% set match_reasons = result.get("reasons", []) %}
+{% if search_query and match_reasons %}
+    <details class="search-match-reasons" aria-label="Why this result matched">
+        <summary title="Why this result was recommended">Why?</summary>
+        <div class="search-match-reasons-panel">
+            <strong>Why this result</strong>
+            <ul>
+                {% for reason in match_reasons %}<li>{{ reason }}</li>{% endfor %}
+            </ul>
+        </div>
+    </details>
+{% endif %}
                                 <div class="tool-logo">
                                     {{ tool.name[0] }}
                                 </div>

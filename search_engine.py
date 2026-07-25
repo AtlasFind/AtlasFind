@@ -17,7 +17,7 @@ SYNONYM_GROUPS = {
     "privacy": {"privacy", "private", "gizlilik", "mahremiyet"},
     "lightweight": {"lightweight", "hafif", "eski bilgisayar", "düşük sistem", "dusuk sistem", "low end", "az ram"},
     "turkish": {"turkish", "türkçe", "turkce", "türkçe destekli", "turkce destekli"},
-    "alternative": {"alternative", "alternatif", "yerine"},
+    "alternative": {"alternative", "alternatif", "alternatifi", "yerine"},
 }
 
 INTENT_KEYWORDS = {
@@ -33,37 +33,47 @@ INTENT_KEYWORDS = {
     "code_editor": SYNONYM_GROUPS["code"] | {"code editor", "ide", "text editor", "vscode", "visual studio code"},
     "browser": SYNONYM_GROUPS["browser"] | {"chrome", "firefox"},
     "local_ai": {"local ai", "yerel ai", "yerel yapay zeka", "bilgisayarımda çalışan ai", "bilgisayarimda calisan ai"},
+    "alternative": SYNONYM_GROUPS["alternative"],
 }
 
 STOP_WORDS = {
     "bir", "ve", "veya", "ile", "için", "icin", "en", "iyi", "olan", "gibi", "aracı", "araci",
-    "tool", "tools", "software", "uygulama", "program", "alternatifi", "alternative", "alternatif",
+    "tool", "tools", "software", "uygulama", "program", "alternatifi", "alternative", "alternatif", "no",
+}
+
+FIELD_LABELS = {
+    "name": "tool name",
+    "tags": "tags",
+    "subcategory": "subcategory",
+    "category": "category",
+    "target_users": "target audience",
+    "description": "description",
 }
 
 
 def normalize_text(value: object) -> str:
-    text = unicodedata.normalize("NFKC", str(value or "")).casefold()
-    text = text.replace("ı", "i")
+    text = unicodedata.normalize("NFKC", str(value or "")).casefold().replace("ı", "i")
     text = "".join(char for char in unicodedata.normalize("NFKD", text) if not unicodedata.combining(char))
     text = re.sub(r"[^a-z0-9+.#\s-]", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
 def tokenize(value: object) -> list[str]:
+    if isinstance(value, (list, tuple, set)):
+        value = " ".join(str(item) for item in value)
     return [token for token in normalize_text(value).split() if len(token) > 1 and token not in STOP_WORDS]
 
 
 def contains_phrase(query: str, phrase: str) -> bool:
-    return normalize_text(phrase) in query
+    normalized_phrase = normalize_text(phrase)
+    if not normalized_phrase:
+        return False
+    return re.search(r"(?:^|\s)" + re.escape(normalized_phrase) + r"(?:$|\s)", query) is not None
 
 
 def detect_search_needs(search_query: str) -> list[str]:
     query = normalize_text(search_query)
-    needs = []
-    for name, phrases in INTENT_KEYWORDS.items():
-        if any(contains_phrase(query, phrase) for phrase in phrases):
-            needs.append(name)
-    return needs
+    return [name for name, phrases in INTENT_KEYWORDS.items() if any(contains_phrase(query, phrase) for phrase in phrases)]
 
 
 def build_vocabulary(tools: Iterable[dict]) -> set[str]:
@@ -72,8 +82,7 @@ def build_vocabulary(tools: Iterable[dict]) -> set[str]:
         for value in [tool.get("name"), tool.get("category"), tool.get("subcategory")]:
             vocabulary.update(tokenize(value))
         for field in ("tags", "target_users", "platforms"):
-            for value in tool.get(field, []) or []:
-                vocabulary.update(tokenize(value))
+            vocabulary.update(tokenize(tool.get(field, [])))
     for phrases in SYNONYM_GROUPS.values():
         for phrase in phrases:
             vocabulary.update(tokenize(phrase))
@@ -85,13 +94,13 @@ def correct_query(search_query: str, tools: Iterable[dict]) -> str:
     if not original_tokens:
         return normalize_text(search_query)
     vocabulary = build_vocabulary(tools)
-    corrected = []
+    corrected: list[str] = []
     changed = False
     for token in original_tokens:
         if token in vocabulary or len(token) < 4:
             corrected.append(token)
             continue
-        match = get_close_matches(token, vocabulary, n=1, cutoff=0.78)
+        match = get_close_matches(token, vocabulary, n=1, cutoff=0.79)
         if match:
             corrected.append(match[0])
             changed = changed or match[0] != token
@@ -120,92 +129,155 @@ def _field_text(tool: dict, field: str) -> str:
     return normalize_text(value)
 
 
-def calculate_search_score(tool: dict, search_query: str, detected_needs: list[str] | None = None) -> int:
-    query = normalize_text(search_query)
-    if not query:
-        return 0
-    detected_needs = detected_needs or detect_search_needs(query)
-    corrected = query
-    tokens = expand_tokens(corrected)
-
-    name = _field_text(tool, "name")
-    slug = _field_text(tool, "slug").replace("-", " ")
-    category = _field_text(tool, "category")
-    subcategory = _field_text(tool, "subcategory")
-    tags = _field_text(tool, "tags")
-    description = _field_text(tool, "description")
-    target_users = _field_text(tool, "target_users")
-    pros = _field_text(tool, "pros")
-    platforms = _field_text(tool, "platforms")
-
+def _intent_score(tool: dict, needs: list[str]) -> tuple[int, list[str], int]:
     score = 0
-    if query == name or query == slug:
-        score += 220
-    elif name.startswith(query) or slug.startswith(query):
-        score += 150
-    elif query in name or query in slug or name in query:
-        score += 105
-
-    field_weights = {
-        name: 34,
-        slug: 30,
-        tags: 22,
-        subcategory: 18,
-        category: 16,
-        target_users: 12,
-        pros: 8,
-        description: 6,
-        platforms: 5,
-    }
-    for token in tokens:
-        for field_text, weight in field_weights.items():
-            if token in field_text:
-                score += weight
-        if len(token) >= 4:
-            best_similarity = max((SequenceMatcher(None, token, candidate).ratio() for candidate in tokenize(name)), default=0)
-            if best_similarity >= 0.86:
-                score += round(24 * best_similarity)
-
+    reasons: list[str] = []
+    penalties = 0
+    category = _field_text(tool, "category")
+    tags = _field_text(tool, "tags")
     pricing = normalize_text(tool.get("pricing_type") or tool.get("pricing"))
-    tool_tags = set(tokenize(tool.get("tags", [])))
     languages = {normalize_text(value) for value in tool.get("languages", []) or []}
 
-    if "free" in detected_needs:
-        score += 45 if pricing == "free" else 22 if pricing == "freemium" else -18
-    if "open_source" in detected_needs:
-        score += 48 if tool.get("open_source") else -12
-    if "offline" in detected_needs:
-        score += 42 if tool.get("offline") else -14
-    if "privacy" in detected_needs:
-        score += 20 if tool.get("offline") else 0
-        score += 18 if tool.get("open_source") else 0
-        score += 18 if any(tag in tool_tags for tag in {"privacy", "encryption", "local", "self", "hosted"}) else 0
-    if "lightweight" in detected_needs:
+    if "free" in needs:
+        if pricing == "free": score += 45; reasons.append("Free pricing matches the query")
+        elif pricing == "freemium": score += 20; reasons.append("A free tier is available")
+        else: penalties += 24
+    if "open_source" in needs:
+        if tool.get("open_source"): score += 52; reasons.append("Open-source availability matches the query")
+        else: penalties += 18
+    if "offline" in needs:
+        if tool.get("offline"): score += 46; reasons.append("Offline use matches the query")
+        else: penalties += 20
+    if "privacy" in needs:
+        privacy_hits = int(bool(tool.get("offline"))) + int(bool(tool.get("open_source"))) + int("privacy" in tags)
+        score += privacy_hits * 15
+        if privacy_hits: reasons.append("Privacy-friendly traits match the query")
+    if "lightweight" in needs:
         level = normalize_text(tool.get("system_level", "unknown"))
         ram = tool.get("minimum_ram_gb")
-        score += 38 if level == "light" else 15 if level == "medium" else -10
-        if isinstance(ram, (int, float)) and ram <= 4:
+        if level == "light": score += 42; reasons.append("Its light system profile suits older hardware")
+        elif level == "medium": score += 12
+        else: penalties += 16
+        if isinstance(ram, (int, float)) and not isinstance(ram, bool) and ram <= 4:
             score += 20
-    if "ai" in detected_needs:
-        score += 30 if tool.get("ai_powered") else -8
-    if "turkish" in detected_needs:
-        score += 35 if "tr" in languages or "turkish" in languages else -8
-    if "photo_editing" in detected_needs:
-        score += 42 if category == "design" else 0
-        score += 30 if any(term in tags for term in ("photo", "image", "raster", "painting")) else 0
-    if "video_editing" in detected_needs:
-        score += 48 if category == "video" else 0
-        score += 28 if "video" in tags else 0
-    if "code_editor" in detected_needs:
-        score += 42 if category == "development" else 0
-        score += 30 if any(term in tags for term in ("code", "ide", "editor", "developer")) else 0
-    if "browser" in detected_needs:
-        score += 58 if category == "browser" else 0
-    if "local_ai" in detected_needs:
-        score += 45 if tool.get("offline") else -10
-        score += 35 if "local" in tags or "local ai" in tags else 0
+    if "ai" in needs:
+        if tool.get("ai_powered"): score += 32; reasons.append("AI features match the query")
+        else: penalties += 10
+    if "turkish" in needs:
+        if "tr" in languages or "turkish" in languages: score += 38; reasons.append("Turkish language support matches the query")
+        else: penalties += 12
+    if "photo_editing" in needs:
+        photo_match = any(term in tags for term in ("photo", "image", "raster", "painting")) or any(term in _field_text(tool, "subcategory") for term in ("photo", "image", "raster"))
+        if category == "design" and photo_match: score += 52
+        elif category == "design": score += 10
+        if photo_match: score += 34; reasons.append("Photo-editing focus matches the query")
+        else: penalties += 32
+    if "video_editing" in needs:
+        if category == "video": score += 52; reasons.append("Video-editing focus matches the query")
+        elif "video" in tags: score += 28
+        else: penalties += 30
+    if "code_editor" in needs:
+        if category == "development": score += 46
+        if any(term in tags for term in ("code", "ide", "editor", "developer")): score += 34
+        if category == "development" or any(term in tags for term in ("code", "ide", "editor")):
+            reasons.append("Development features match the query")
+        else: penalties += 28
+    if "browser" in needs:
+        if category == "browser": score += 70; reasons.append("Browser category matches the query")
+        else: penalties += 120
+    if "local_ai" in needs:
+        if tool.get("offline"): score += 48
+        else: penalties += 18
+        if "local" in tags or "local ai" in tags: score += 38
+        if tool.get("offline") or "local" in tags: reasons.append("Local/offline AI capabilities match the query")
+    if "alternative" in needs:
+        tool_name = _field_text(tool, "name")
+        if tool_name and tool_name in normalize_text(" ".join(tokenize(tool_name))):
+            pass
 
-    return max(0, score)
+    return score, reasons, penalties
+
+
+def score_tool(tool: dict, search_query: str, detected_needs: list[str] | None = None) -> dict:
+    query = normalize_text(search_query)
+    if not query:
+        return {"score": 0, "reasons": [], "coverage": 0}
+    needs = detected_needs or detect_search_needs(query)
+    query_tokens = set(tokenize(query))
+    expanded_tokens = expand_tokens(query)
+
+    fields = {
+        "name": _field_text(tool, "name"),
+        "slug": _field_text(tool, "slug").replace("-", " "),
+        "tags": _field_text(tool, "tags"),
+        "subcategory": _field_text(tool, "subcategory"),
+        "category": _field_text(tool, "category"),
+        "target_users": _field_text(tool, "target_users"),
+        "description": _field_text(tool, "description"),
+        "pros": _field_text(tool, "pros"),
+        "platforms": _field_text(tool, "platforms"),
+    }
+    score = 0
+    reasons: list[str] = []
+    name = fields["name"]
+    slug = fields["slug"]
+
+    if query == name or query == slug:
+        score += 260; reasons.append("Exact tool-name match")
+    elif name.startswith(query) or slug.startswith(query):
+        score += 175; reasons.append("Tool name starts with the query")
+    elif query in name or query in slug or name in query:
+        score += 120; reasons.append("Tool name closely matches the query")
+
+    weights = {"name": 40, "slug": 35, "tags": 28, "subcategory": 23, "category": 20, "target_users": 13, "pros": 8, "description": 6, "platforms": 5}
+    matched_original: set[str] = set()
+    field_hits: dict[str, set[str]] = {}
+    for token in expanded_tokens:
+        for field, field_text in fields.items():
+            if token in field_text:
+                score += weights[field]
+                field_hits.setdefault(field, set()).add(token)
+                if token in query_tokens:
+                    matched_original.add(token)
+        if len(token) >= 4:
+            similarity = max((SequenceMatcher(None, token, candidate).ratio() for candidate in tokenize(name)), default=0)
+            if similarity >= 0.88:
+                score += round(18 * similarity)
+
+    for field in ("name", "tags", "subcategory", "category", "target_users", "description"):
+        hits = field_hits.get(field, set())
+        if hits and field != "name":
+            reasons.append(f"Matched {FIELD_LABELS[field]}: " + ", ".join(sorted(hits)[:3]))
+
+    intent_score, intent_reasons, penalties = _intent_score(tool, needs)
+    score += intent_score - penalties
+    reasons.extend(intent_reasons)
+    if "alternative" in needs:
+        referenced_name = any(token in query_tokens for token in tokenize(name) if len(token) >= 4)
+        if referenced_name:
+            score -= 190
+            reasons = [reason for reason in reasons if "Tool name" not in reason]
+
+    coverage = len(matched_original) / max(1, len(query_tokens))
+    if len(query_tokens) >= 2:
+        if coverage >= 0.75: score += 32
+        elif coverage >= 0.5: score += 12
+        elif not needs: score -= 28
+    semantic_hits = bool(field_hits) or bool(intent_reasons)
+    if not semantic_hits and not reasons:
+        score = 0
+    if score < 18 and query != name and query != slug:
+        score = 0
+
+    unique_reasons = []
+    for reason in reasons:
+        if reason not in unique_reasons:
+            unique_reasons.append(reason)
+    return {"score": max(0, score), "reasons": unique_reasons[:3], "coverage": coverage}
+
+
+def calculate_search_score(tool: dict, search_query: str, detected_needs: list[str] | None = None) -> int:
+    return score_tool(tool, search_query, detected_needs)["score"]
 
 
 def rank_tools(tools: list[dict], search_query: str) -> tuple[list[dict], dict]:
@@ -213,25 +285,15 @@ def rank_tools(tools: list[dict], search_query: str) -> tuple[list[dict], dict]:
     needs = detect_search_needs(corrected_query)
     ranked = []
     for tool in tools:
-        score = calculate_search_score(tool, corrected_query, needs)
-        if score > 0:
-            ranked.append({"tool": tool, "score": score, "match": 0})
-    ranked.sort(
-        key=lambda item: (
-            item["score"],
-            float(item["tool"].get("rating", 0) or 0),
-            int(item["tool"].get("popularity_score", 0) or 0),
-        ),
-        reverse=True,
-    )
+        result = score_tool(tool, corrected_query, needs)
+        if result["score"] > 0:
+            ranked.append({"tool": tool, "score": result["score"], "match": 0, "reasons": result["reasons"]})
+    # Popularity is deliberately the final tie-breaker, never the primary relevance signal.
+    ranked.sort(key=lambda item: (item["score"], float(item["tool"].get("rating", 0) or 0), int(item["tool"].get("popularity_score", 0) or 0)), reverse=True)
     highest = ranked[0]["score"] if ranked else 0
     for item in ranked:
         item["match"] = max(1, min(100, round((item["score"] / highest) * 100))) if highest else 0
-    return ranked, {
-        "detected_needs": needs,
-        "corrected_query": corrected_query,
-        "did_correct": corrected_query != normalize_text(search_query),
-    }
+    return ranked, {"detected_needs": needs, "corrected_query": corrected_query, "did_correct": corrected_query != normalize_text(search_query)}
 
 
 def search_suggestions(tools: list[dict], query: str, limit: int = 8) -> list[dict]:
@@ -241,50 +303,29 @@ def search_suggestions(tools: list[dict], query: str, limit: int = 8) -> list[di
     suggestions = []
     for tool in tools:
         name = normalize_text(tool.get("name"))
-        score = 0
-        if name.startswith(normalized):
-            score = 100
-        elif normalized in name:
-            score = 70
-        else:
-            score = round(SequenceMatcher(None, normalized, name).ratio() * 45)
+        score = 100 if name.startswith(normalized) else 70 if normalized in name else round(SequenceMatcher(None, normalized, name).ratio() * 45)
         if score >= 28:
             suggestions.append({"label": tool.get("name", ""), "value": tool.get("name", ""), "type": "tool", "score": score})
-    intent_labels = [
-        "Free photo editor", "Offline AI assistant", "Open source browser",
-        "Lightweight code editor", "Free video editor", "Turkish supported AI",
-    ]
+    intent_labels = ["Free photo editor", "Offline AI assistant", "Open source browser", "Lightweight code editor", "Free video editor", "Turkish supported AI"]
     for label in intent_labels:
         label_norm = normalize_text(label)
         if normalized in label_norm or SequenceMatcher(None, normalized, label_norm).ratio() >= 0.45:
             suggestions.append({"label": label, "value": label, "type": "query", "score": 55})
     suggestions.sort(key=lambda item: (item["score"], item["label"]), reverse=True)
-    seen = set()
-    output = []
+    seen, output = set(), []
     for item in suggestions:
         key = item["value"].casefold()
-        if key in seen:
-            continue
+        if key in seen: continue
         seen.add(key)
         output.append({k: v for k, v in item.items() if k != "score"})
-        if len(output) >= limit:
-            break
+        if len(output) >= limit: break
     return output
 
 
 def alternative_queries(search_query: str, corrected_query: str, needs: list[str]) -> list[str]:
     alternatives = []
-    if corrected_query and corrected_query != normalize_text(search_query):
-        alternatives.append(corrected_query)
-    labels = {
-        "photo_editing": "free photo editor",
-        "video_editing": "free video editor",
-        "code_editor": "lightweight code editor",
-        "browser": "privacy focused browser",
-        "local_ai": "offline local AI",
-        "ai": "AI tools",
-    }
+    if corrected_query and corrected_query != normalize_text(search_query): alternatives.append(corrected_query)
+    labels = {"photo_editing": "free photo editor", "video_editing": "free video editor", "code_editor": "lightweight code editor", "browser": "privacy focused browser", "local_ai": "offline local AI", "ai": "AI tools"}
     for need in needs:
-        if need in labels and labels[need] not in alternatives:
-            alternatives.append(labels[need])
+        if need in labels and labels[need] not in alternatives: alternatives.append(labels[need])
     return alternatives[:4]

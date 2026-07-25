@@ -1,3 +1,19 @@
+## [0.3.1] - 2026-07-25
+
+### Added
+- Search quality dataset with expected and forbidden results.
+- Recommendation quality test profiles.
+- Human-readable search match explanations.
+
+### Changed
+- Tightened relevance scoring and reduced unrelated matches.
+- Limited popularity to a final tie-breaker.
+- Improved recommendation reasons and mismatch explanations.
+
+### Fixed
+- Prevented search-result cards from failing when explanation data is absent.
+- Moved search result explanations into a compact top-right popover.
+
 ## [0.3.0] - 2026-07-25
 
 ### Added
