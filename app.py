@@ -8,7 +8,7 @@ from tool_schema import validate_tools
 
 app = Flask(__name__)
 
-APP_VERSION = "0.2.0"
+APP_VERSION = "0.2.1"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -637,6 +637,211 @@ def discovery_context(items, title, description, page_type):
     subcategories=sorted({t.get("subcategory") for t in items if t.get("subcategory")})
     return dict(tools=page_items,title=title,description=description,page_type=page_type,filters=filters,sort_key=sort_key,subcategory=subcategory,subcategories=subcategories,pagination=pagination,query_args=request.args)
 
+
+RECOMMENDATION_PURPOSES = {
+    "writing": {
+        "label": "Writing and research",
+        "categories": {"artificial intelligence", "productivity", "office"},
+        "keywords": {"writing", "research", "notes", "assistant", "documents"},
+    },
+    "coding": {
+        "label": "Coding and software development",
+        "categories": {"development", "artificial intelligence"},
+        "keywords": {"code editor", "ide", "coding", "developer", "database", "local ai"},
+    },
+    "design": {
+        "label": "Design and image creation",
+        "categories": {"design", "artificial intelligence"},
+        "keywords": {"design", "photo editing", "illustration", "graphics", "ui", "image"},
+    },
+    "video": {
+        "label": "Video and audio production",
+        "categories": {"video", "audio"},
+        "keywords": {"video editing", "recording", "audio", "animation", "production"},
+    },
+    "productivity": {
+        "label": "Productivity and organization",
+        "categories": {"productivity", "office", "communication"},
+        "keywords": {"productivity", "tasks", "notes", "calendar", "collaboration", "workflow"},
+    },
+    "privacy": {
+        "label": "Privacy and local-first work",
+        "categories": {"security", "browser", "artificial intelligence"},
+        "keywords": {"privacy", "encryption", "local ai", "self hosted", "offline", "security"},
+    },
+}
+
+RECOMMENDATION_WEIGHTS = {
+    "purpose": 38,
+    "platform": 18,
+    "budget": 14,
+    "hardware": 12,
+    "experience": 8,
+    "privacy": 6,
+    "offline": 4,
+}
+
+
+def parse_recommendation_preferences(args):
+    purpose = normalize_text(args.get("purpose", ""))
+    platform = normalize_platform(args.get("platform", ""))
+    budget = normalize_text(args.get("budget", ""))
+    hardware = normalize_text(args.get("hardware", ""))
+    experience = normalize_text(args.get("experience", ""))
+    privacy = normalize_text(args.get("privacy", ""))
+    offline = args.get("offline") == "1"
+
+    return {
+        "purpose": purpose if purpose in RECOMMENDATION_PURPOSES else "",
+        "platform": platform,
+        "budget": budget if budget in {"free", "freemium", "paid", "any"} else "",
+        "hardware": hardware if hardware in {"light", "medium", "heavy", "any"} else "",
+        "experience": experience if experience in {"beginner", "intermediate", "advanced", "any"} else "",
+        "privacy": privacy if privacy in {"standard", "privacy-first", "open-source", "any"} else "",
+        "offline": offline,
+    }
+
+
+def recommendation_requested(preferences):
+    return any(value for key, value in preferences.items() if key != "offline") or preferences["offline"]
+
+
+def _tool_text_values(tool):
+    values = [
+        tool.get("name", ""), tool.get("description", ""), tool.get("category", ""),
+        tool.get("subcategory", ""), *tool.get("tags", []), *tool.get("target_users", []),
+    ]
+    return " ".join(normalize_text(value) for value in values)
+
+
+def score_recommendation(tool, preferences):
+    score = 0
+    possible = 0
+    reasons = []
+    concerns = []
+    tool_text = _tool_text_values(tool)
+
+    purpose = preferences["purpose"]
+    if purpose:
+        possible += RECOMMENDATION_WEIGHTS["purpose"]
+        purpose_info = RECOMMENDATION_PURPOSES[purpose]
+        category = normalize_text(tool.get("category", ""))
+        keyword_hits = [keyword for keyword in purpose_info["keywords"] if keyword in tool_text]
+        if category in purpose_info["categories"]:
+            score += 26
+            reasons.append(f"Its {tool.get('category', 'category')} focus matches your main purpose.")
+        if keyword_hits:
+            bonus = min(12, len(keyword_hits) * 4)
+            score += bonus
+            reasons.append("Relevant capabilities include " + ", ".join(keyword_hits[:3]) + ".")
+        if category not in purpose_info["categories"] and not keyword_hits:
+            concerns.append("Its primary focus is not a direct match for your selected purpose.")
+
+    platform = preferences["platform"]
+    if platform:
+        possible += RECOMMENDATION_WEIGHTS["platform"]
+        platforms = {normalize_platform(value) for value in tool.get("platforms", [])}
+        if platform in platforms:
+            score += RECOMMENDATION_WEIGHTS["platform"]
+            reasons.append(f"It supports {platform_label(platform)}.")
+        else:
+            concerns.append(f"No {platform_label(platform)} support is listed.")
+
+    budget = preferences["budget"]
+    if budget and budget != "any":
+        possible += RECOMMENDATION_WEIGHTS["budget"]
+        pricing = normalize_text(tool.get("pricing_type", tool.get("pricing", "")))
+        budget_matches = {
+            "free": pricing == "free",
+            "freemium": pricing in {"free", "freemium"},
+            "paid": pricing in {"free", "freemium", "paid"},
+        }
+        if budget_matches[budget]:
+            score += RECOMMENDATION_WEIGHTS["budget"]
+            reasons.append(f"Its {pricing or 'listed'} pricing fits your budget preference.")
+        else:
+            concerns.append(f"Its {pricing or 'unknown'} pricing may not fit your budget.")
+
+    hardware = preferences["hardware"]
+    if hardware and hardware != "any":
+        possible += RECOMMENDATION_WEIGHTS["hardware"]
+        levels = {"light": 1, "medium": 2, "heavy": 3, "unknown": 4}
+        requested_level = levels[hardware]
+        tool_level_name = normalize_text(tool.get("system_level", "unknown"))
+        tool_level = levels.get(tool_level_name, 4)
+        if tool_level <= requested_level:
+            score += RECOMMENDATION_WEIGHTS["hardware"]
+            ram = tool.get("minimum_ram_gb")
+            ram_note = f" and lists {ram:g} GB minimum RAM" if isinstance(ram, (int, float)) and not isinstance(ram, bool) else ""
+            reasons.append(f"Its {tool_level_name} system profile fits your hardware{ram_note}.")
+        else:
+            concerns.append(f"Its {tool_level_name} system profile may be demanding for your hardware.")
+
+    experience = preferences["experience"]
+    if experience and experience != "any":
+        possible += RECOMMENDATION_WEIGHTS["experience"]
+        beginner_terms = {"simple", "easy", "beginner", "students", "intuitive"}
+        advanced_terms = {"professional", "advanced", "developer", "technical", "enterprise", "ide"}
+        beginner_hits = sum(term in tool_text for term in beginner_terms)
+        advanced_hits = sum(term in tool_text for term in advanced_terms)
+        if experience == "beginner" and (beginner_hits or not advanced_hits):
+            score += RECOMMENDATION_WEIGHTS["experience"]
+            reasons.append("Its listed audience and workflow appear approachable for beginners.")
+        elif experience == "advanced" and advanced_hits:
+            score += RECOMMENDATION_WEIGHTS["experience"]
+            reasons.append("Its professional or technical capabilities suit advanced users.")
+        elif experience == "intermediate":
+            score += 6 if not (advanced_hits > 2) else 4
+            reasons.append("Its feature depth is broadly suitable for intermediate users.")
+        else:
+            concerns.append("Its learning curve may not align perfectly with your experience level.")
+
+    privacy = preferences["privacy"]
+    if privacy and privacy != "any":
+        possible += RECOMMENDATION_WEIGHTS["privacy"]
+        if privacy == "open-source" and tool.get("open_source", False):
+            score += RECOMMENDATION_WEIGHTS["privacy"]
+            reasons.append("It is open source.")
+        elif privacy == "privacy-first" and (tool.get("offline", False) or tool.get("open_source", False) or "privacy" in tool_text):
+            score += RECOMMENDATION_WEIGHTS["privacy"]
+            reasons.append("Its offline, open-source or privacy-oriented traits support your privacy preference.")
+        elif privacy == "standard":
+            score += 4
+        else:
+            concerns.append("It does not strongly match your selected privacy preference.")
+
+    if preferences["offline"]:
+        possible += RECOMMENDATION_WEIGHTS["offline"]
+        if tool.get("offline", False):
+            score += RECOMMENDATION_WEIGHTS["offline"]
+            reasons.append("It can be used offline.")
+        else:
+            concerns.append("Offline use is not listed.")
+
+    if possible == 0:
+        possible = 1
+    percentage = min(100, round((score / possible) * 100))
+    return {
+        "tool": tool,
+        "score": score,
+        "match": percentage,
+        "reasons": reasons[:4],
+        "concerns": concerns[:3],
+    }
+
+
+def platform_label(value):
+    return {"windows": "Windows", "macos": "macOS", "linux": "Linux", "android": "Android", "ios": "iOS", "web": "Web"}.get(value, value.title())
+
+
+def recommend_tools(tools, preferences, limit=12):
+    recommendations = [score_recommendation(tool, preferences) for tool in tools]
+    recommendations.sort(
+        key=lambda item: (item["match"], item["score"], item["tool"].get("rating", 0), item["tool"].get("popularity_score", 0)),
+        reverse=True,
+    )
+    return recommendations[:limit]
+
 @app.context_processor
 def inject_app_metadata():
     return {"app_version": APP_VERSION}
@@ -708,6 +913,21 @@ def collection_page(slug):
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
     return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "collection"), active_page="categories")
+
+
+@app.route("/recommend")
+def recommend():
+    preferences = parse_recommendation_preferences(request.args)
+    submitted = recommendation_requested(preferences)
+    recommendations = recommend_tools(load_tools(), preferences) if submitted else []
+    return render_template(
+        "recommend.html",
+        active_page="recommend",
+        preferences=preferences,
+        purpose_options=RECOMMENDATION_PURPOSES,
+        recommendations=recommendations,
+        submitted=submitted,
+    )
 
 @app.route("/tools/<slug>")
 def tool_detail(slug):
