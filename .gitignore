@@ -21,3 +21,8 @@ Thumbs.db
 
 *.log
 .pytest_cache/
+# AtlasFind SQLite runtime data
+database/*.db
+database/*.db-shm
+database/*.db-wal
+backups/

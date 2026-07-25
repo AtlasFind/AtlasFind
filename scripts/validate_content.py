@@ -19,7 +19,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    print(f"Validation successful: {len(articles)} articles satisfy the v0.4.1 content schema.")
+    print(f"Validation successful: {len(articles)} articles satisfy the v0.5.0 content schema.")
     return 0
 
 

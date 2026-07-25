@@ -1,4 +1,4 @@
-"""AtlasFind tool dataset validation helpers for v0.4.1."""
+"""AtlasFind tool dataset validation helpers for v0.5.0."""
 
 from __future__ import annotations
 
