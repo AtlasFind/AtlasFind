@@ -2992,3 +2992,23 @@ button:disabled { cursor: wait; opacity: .7; }
     .home-guides-teaser .section-container { align-items: flex-start; flex-direction: column; }
     .article-byline { flex-direction: column; gap: .35rem; }
 }
+
+/* v0.4.1 freshness and history */
+.freshness-heading { display:flex; align-items:center; justify-content:space-between; gap:.75rem; margin-bottom:.65rem; }
+.freshness-badge { display:inline-flex; align-items:center; width:max-content; padding:.3rem .65rem; border:1px solid var(--border); border-radius:999px; background:var(--surface-solid); color:var(--text-muted); font-size:.72rem; font-weight:800; }
+.freshness-current .freshness-badge, .freshness-badge.freshness-current { border-color:rgba(34,197,94,.4); color:#22c55e; }
+.freshness-review-due .freshness-badge, .freshness-badge.freshness-review-due { border-color:rgba(245,158,11,.45); color:#f59e0b; }
+.freshness-outdated .freshness-badge, .freshness-badge.freshness-outdated { border-color:rgba(239,68,68,.45); color:#ef4444; }
+.stale-warning, .article-freshness-warning { padding:.85rem 1rem; border:1px solid rgba(239,68,68,.35); border-radius:.85rem; background:rgba(239,68,68,.08); color:var(--text); }
+.article-freshness-warning { margin-top:1.25rem; max-width:760px; }
+.article-freshness-warning p { margin:.3rem 0 0; color:var(--text-muted); }
+.change-history-card h2 { margin:.45rem 0 1.1rem; }
+.change-timeline { list-style:none; margin:0; padding:0; }
+.change-timeline li { display:grid; grid-template-columns:110px 1fr; gap:1rem; padding:1rem 0; border-top:1px solid var(--border); }
+.change-timeline time { color:var(--text-muted); font-size:.82rem; }
+.change-timeline p, .price-history-entry p { margin:.35rem 0 0; color:var(--text-muted); line-height:1.55; }
+.price-history { margin-top:1rem; border-top:1px solid var(--border); padding-top:1rem; }
+.price-history summary { cursor:pointer; font-weight:800; }
+.price-history-entry { margin-top:.85rem; padding:.9rem; border:1px solid var(--border); border-radius:.8rem; background:var(--surface-solid); }
+.price-history-entry time { display:block; margin-bottom:.3rem; color:var(--text-muted); font-size:.78rem; }
+@media (max-width:620px){ .change-timeline li{grid-template-columns:1fr;gap:.35rem}.freshness-heading{align-items:flex-start;flex-direction:column} }

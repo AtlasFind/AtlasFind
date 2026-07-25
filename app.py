@@ -6,6 +6,7 @@ from urllib.parse import urlencode
 from tool_schema import validate_tools
 from search_engine import alternative_queries, rank_tools, search_suggestions
 from content_schema import validate_articles
+from freshness import content_freshness, tool_freshness
 from recommendation_engine import (
     RECOMMENDATION_PURPOSES,
     parse_recommendation_preferences,
@@ -17,7 +18,7 @@ from recommendation_engine import (
 
 app = Flask(__name__)
 
-APP_VERSION = "0.4.0"
+APP_VERSION = "0.4.1"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -821,6 +822,7 @@ def article_detail(slug):
         related_articles=related_articles_for(article, all_articles),
         section_tools=section_tools,
         category_info=CATEGORY_INFO.get(article.get("category")),
+        freshness=content_freshness(article.get("updated_at")),
     )
 
 @app.route("/recommend")
@@ -852,7 +854,8 @@ def tool_detail(slug):
     return render_template(
         "tool.html",
         tool=tool,
-        alternatives=alternatives
+        alternatives=alternatives,
+        freshness=tool_freshness(tool),
     )
 
 

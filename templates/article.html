@@ -25,7 +25,14 @@
                     <span>By {{ article.author }}</span>
                     <time datetime="{{ article.published_at }}">Published {{ article.published_at }}</time>
                     <time datetime="{{ article.updated_at }}">Updated {{ article.updated_at }}</time>
+                    <span class="freshness-badge freshness-{{ freshness.status }}">{{ freshness.label }}</span>
                 </div>
+                {% if freshness.status in ["review-due", "outdated"] %}
+                <div class="article-freshness-warning" role="note">
+                    <strong>{{ freshness.label }}</strong>
+                    <p>Product details can change. Confirm pricing, availability and supported platforms on official websites.</p>
+                </div>
+                {% endif %}
             </div>
         </div>
     </header>

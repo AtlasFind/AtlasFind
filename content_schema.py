@@ -26,6 +26,7 @@ REQUIRED_FIELDS = {
     "faq",
     "related_tool_slugs",
     "related_article_slugs",
+    "freshness",
 }
 
 
@@ -81,6 +82,19 @@ def validate_articles(articles: Any, tool_slugs: set[str] | None = None) -> list
         for field in ("published_at", "updated_at"):
             if not _valid_date(article.get(field)):
                 errors.append(f"{prefix} has an invalid {field}; use YYYY-MM-DD.")
+
+        freshness = article.get("freshness")
+        if not isinstance(freshness, dict):
+            errors.append(f"{prefix} freshness must be an object.")
+        else:
+            for field in ("last_checked_at", "next_check_at"):
+                if not _valid_date(freshness.get(field)):
+                    errors.append(f"{prefix} freshness.{field} must use YYYY-MM-DD.")
+            if freshness.get("status") not in {"current", "review-due", "outdated", "unknown"}:
+                errors.append(f"{prefix} freshness.status is unsupported.")
+            if _valid_date(freshness.get("last_checked_at")) and _valid_date(freshness.get("next_check_at")):
+                if date.fromisoformat(freshness["next_check_at"]) < date.fromisoformat(freshness["last_checked_at"]):
+                    errors.append(f"{prefix} freshness.next_check_at cannot precede last_checked_at.")
 
         sections = article.get("sections")
         section_ids: set[str] = set()
