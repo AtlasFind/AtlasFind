@@ -12,11 +12,12 @@
 - v0.3.0 - Smart Search ✅
 - v0.3.1 - Search and Recommendation Quality ✅
 - v0.4.0 - Content and SEO Pages ✅
+- v0.4.1 - Freshness and Change History ✅
+- v0.5.0 - SQLite Migration ✅
+- v0.5.1 - Administration Panel ✅
 
 ## Next planned version
 
 - Awaiting user approval
 
 Development does not move to the next version without explicit approval.
-
-- v0.5.0 - Freshness and Change History ✅

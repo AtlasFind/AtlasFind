@@ -6,70 +6,61 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.5.0
+v0.5.1
 
 ## Current Features
 
-- Typo-tolerant smart search with relevance explanations
-- Multi-filter discovery with shareable URL state
-- Professional tool pages and two-to-four tool comparison
-- Local recommendation engine with transparent match reasons
-- Category and collection discovery pages
-- Data-driven software guides, alternatives and roundups
-- Freshness badges, review schedules and change history
-- Article table of contents, FAQs, related tools and internal links
-- Dark/light themes and responsive navigation
-- JSON datasets with validation scripts
+- Typo-tolerant smart search and transparent recommendations
+- Advanced filters, categories, collections and comparisons
+- Data-driven guides with freshness and change history
+- SQLite repository layer with migration and backup scripts
+- Secure administrator login, drafts, publishing, archiving and audit logs
+- Tool/article editing, taxonomy management and validated bulk import
 
 ## Run Locally
 
-```bash
+```powershell
 pip install -r requirements.txt
-python app.py
+py scripts/migrate_database.py
+py app.py
 ```
 
 Open `http://127.0.0.1:5000`.
 
+## Create the first administrator
+
+Set a strong application secret before running the site:
+
+```powershell
+$env:ATLASFIND_SECRET_KEY = "replace-this-with-a-long-random-secret"
+py scripts/create_admin.py
+```
+
+Then open `http://127.0.0.1:5000/admin/login`.
+
+For HTTPS deployment set `ATLASFIND_HTTPS=1` so the session cookie is marked secure.
+
 ## Validation
 
 ```powershell
-python scripts/validate_tools.py
-python scripts/validate_content.py
-python scripts/validate_freshness.py
-python scripts/test_search.py
-python scripts/test_recommendations.py
+py scripts/validate_tools.py
+py scripts/validate_content.py
+py scripts/validate_freshness.py
+py scripts/verify_migration.py
+py scripts/test_search.py
+py scripts/test_recommendations.py
+py scripts/test_admin.py
 ```
 
-## Adding a tool
+## SQLite and backups
 
-Every entry in `data/tools.json` must satisfy the full scalable tool schema. The validation and application logic are not tied to a fixed tool count.
-
-## Adding an article
-
-Add a new entry to `data/articles.json` with:
-
-- unique `slug`
-- `title`, `description`, `content_type` and `category`
-- ISO dates in `published_at` and `updated_at`
-- reusable `sections`
-- optional FAQs
-- valid related tool and article slugs
-
-Run `python scripts/validate_content.py
-python scripts/validate_freshness.py` before committing. All articles use the shared `/guides/<slug>` template.
-
-## SQLite setup
-
-AtlasFind v0.5.0 reads tools and guides from SQLite. JSON files remain the migration and rollback source.
+JSON files remain migration and rollback sources. The application reads published tools and guides from SQLite.
 
 ```powershell
 py scripts/migrate_json_to_sqlite.py
+py scripts/migrate_database.py
 py scripts/verify_migration.py
-py app.py
-```
-
-Create a safe database backup with:
-
-```powershell
 py scripts/backup_database.py
 ```
+
+Draft and archived records are excluded from public routes. Administrator changes are recorded in the audit log.

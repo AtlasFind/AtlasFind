@@ -35,8 +35,8 @@
         <div class="professional-detail-grid">
             <section class="detail-section detail-card">
                 <span class="section-label">Pricing</span>
-                <h2>{{ tool.pricing_details.model }}</h2>
-                <p>{{ tool.pricing_details.note }}</p>
+                <h2>{{ tool.get("pricing_details", {}).get("model", tool.get("pricing", "Unknown")) }}</h2>
+                <p>{{ tool.get("pricing_details", {}).get("note", "Pricing details have not been reviewed yet. Confirm current plans on the official website.") }}</p>
             </section>
 
             <section class="detail-section detail-card">
@@ -125,7 +125,7 @@
             <div class="score-row"><span>Last updated</span><strong>{{ freshness.last_updated_at or "Unknown" }}</strong></div>
             <div class="score-row"><span>Next check</span><strong>{{ freshness.next_check_at or "Not scheduled" }}</strong></div>
             {% if freshness.is_outdated %}<p class="stale-warning">This listing may be outdated. Confirm important details on the official website.</p>{% endif %}
-            <p>{{ tool.verification.note }}</p>
+            <p>{{ tool.get("verification", {}).get("note", "This listing has not completed an editorial verification review yet.") }}</p>
         </div>
     </aside>
 </section>
