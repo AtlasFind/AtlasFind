@@ -1,14 +1,15 @@
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, jsonify
 import json
 from pathlib import Path
 from urllib.parse import urlencode
 
 from tool_schema import validate_tools
+from search_engine import alternative_queries, rank_tools, search_suggestions
 
 
 app = Flask(__name__)
 
-APP_VERSION = "0.2.2"
+APP_VERSION = "0.3.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -851,42 +852,34 @@ def home():
     all_tools = load_tools()
     search_query = request.args.get("q", "").strip()
     filters = parse_filters(request.args)
-    detected_needs = []
-    ranked_tools = []
+    search_meta = {"detected_needs": [], "corrected_query": search_query, "did_correct": False}
 
     if search_query:
-        detected_needs = detect_search_needs(search_query)
-        for tool in all_tools:
-            score = calculate_search_score(tool, search_query, detected_needs)
-            if score > 0:
-                ranked_tools.append({"tool": tool, "score": score, "match": 0})
-        ranked_tools.sort(
-            key=lambda item: (item["score"], item["tool"].get("rating", 0)),
-            reverse=True,
-        )
-        if ranked_tools:
-            highest_score = ranked_tools[0]["score"]
-            for item in ranked_tools:
-                item["match"] = calculate_match_percentage(item["score"], highest_score)
+        ranked_tools, search_meta = rank_tools(all_tools, search_query)
     else:
         ranked_tools = [
             {"tool": tool, "score": 0, "match": None}
             for tool in sorted(all_tools, key=lambda tool: tool.get("rating", 0), reverse=True)
         ]
 
-    ranked_tools = [
-        item for item in ranked_tools
-        if tool_matches_filters(item["tool"], filters)
-    ]
+    ranked_tools = [item for item in ranked_tools if tool_matches_filters(item["tool"], filters)]
     tools = [item["tool"] for item in ranked_tools]
     active_filters = build_active_filters(search_query, filters)
+    alternatives = alternative_queries(
+        search_query,
+        search_meta.get("corrected_query", search_query),
+        search_meta.get("detected_needs", []),
+    ) if search_query and not tools else []
 
     return render_template(
         "index.html",
         tools=tools,
         ranked_tools=ranked_tools,
         search_query=search_query,
-        detected_needs=detected_needs,
+        corrected_query=search_meta.get("corrected_query", search_query),
+        did_correct=search_meta.get("did_correct", False),
+        search_alternatives=alternatives,
+        detected_needs=search_meta.get("detected_needs", []),
         filters=filters,
         active_filters=active_filters,
         clear_filters_url=f"/?{urlencode({'q': search_query})}" if search_query else "/",
@@ -898,6 +891,12 @@ def home():
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
         collections=COLLECTION_INFO,
     )
+
+
+@app.route("/api/search-suggestions")
+def search_suggestions_api():
+    query = request.args.get("q", "").strip()
+    return jsonify(search_suggestions(load_tools(), query))
 
 
 @app.route("/categories/<slug>")

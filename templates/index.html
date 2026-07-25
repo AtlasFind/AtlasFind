@@ -70,15 +70,21 @@
                         {% if filters.turkish %}<input type="hidden" name="turkish" value="1">{% endif %}
                         {% if filters.max_ram is not none %}<input type="hidden" name="max_ram" value="{{ filters.max_ram|int if filters.max_ram == filters.max_ram|int else filters.max_ram }}">{% endif %}
 
-                        <input
-                            type="search"
-                            name="q"
-                            aria-label="Search software"
-                            id="searchInput"
-                            value="{{ search_query }}"
-                            placeholder="I need a free Photoshop alternative..."
-                            autocomplete="off"
-                        >
+                        <div class="smart-search-field">
+                            <input
+                                type="search"
+                                name="q"
+                                aria-label="Search software"
+                                aria-autocomplete="list"
+                                aria-controls="searchSuggestions"
+                                aria-expanded="false"
+                                id="searchInput"
+                                value="{{ search_query }}"
+                                placeholder="I need a free Photoshop alternative..."
+                                autocomplete="off"
+                            >
+                            <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
+                        </div>
 
                         <div class="keyboard-shortcut">
                             Ctrl K
@@ -293,6 +299,13 @@
             </div>
 
 
+            {% if did_correct %}
+            <div class="search-correction" role="status">
+                Showing results for <a href="/?q={{ corrected_query|urlencode }}">{{ corrected_query }}</a>.
+                <span>Your original search was “{{ search_query }}”.</span>
+            </div>
+            {% endif %}
+
             <div class="filter-toolbar">
                 <button type="button" class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
                     Filters <span>⚙</span>
@@ -503,6 +516,15 @@
                     <p>
                         Try another product, category or feature.
                     </p>
+
+                    {% if search_alternatives %}
+                    <div class="alternative-searches" aria-label="Alternative searches">
+                        <span>Try instead:</span>
+                        {% for alternative in search_alternatives %}
+                        <a href="/?q={{ alternative|urlencode }}">{{ alternative }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
 
                     <a href="{{ clear_filters_url }}">
                         Clear filters
