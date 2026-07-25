@@ -1,3 +1,20 @@
+## [0.4.0] - 2026-07-25
+
+### Added
+- Data-driven editorial content system for guides, alternatives, comparisons and category articles.
+- Guides index with content-type and category filters.
+- Article pages with table of contents, FAQs, related tools and related guides.
+- Content validation for slugs, dates, sections, FAQs and tool/article references.
+- Category-to-guide internal linking and canonical article URLs.
+
+### Changed
+- Navigation and footer now include the Guides section.
+- Category pages can surface related editorial content.
+- Application version updated to v0.4.0.
+
+### Preserved
+- Existing search, filters, recommendations, categories and comparison behavior.
+
 ## [0.3.1] - 2026-07-25
 
 ### Added

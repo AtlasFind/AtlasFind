@@ -8,15 +8,13 @@
 - v0.1.3 - Advanced Filtering and Data Infrastructure ✅
 - v0.2.0 - Categories and Discovery ✅
 - v0.2.1 - Smart Recommendation Engine ✅
+- v0.2.2 - Advanced Comparison ✅
+- v0.3.0 - Smart Search ✅
+- v0.3.1 - Search and Recommendation Quality ✅
+- v0.4.0 - Content and SEO Pages ✅
 
 ## Next planned version
 
 - Awaiting user approval
 
 Development does not move to the next version without explicit approval.
-
-
-
-- [x] v0.3.0 Smart Search
-
-- [x] v0.3.1 Search and Recommendation Quality
