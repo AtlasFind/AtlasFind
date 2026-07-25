@@ -15,3 +15,6 @@
 
 Development does not move to the next version without explicit approval.
 
+
+
+- [x] v0.3.0 Smart Search

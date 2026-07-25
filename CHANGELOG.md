@@ -1,3 +1,15 @@
+## [0.3.0] - 2026-07-25
+
+### Added
+- Typo-tolerant Turkish and English smart search
+- Synonym and natural-query intent detection
+- Search suggestions and alternative queries
+- Automated search quality checks
+
+### Changed
+- Weighted search ranking now prioritizes exact names, tags, categories, and user intent
+- Search remains compatible with all existing URL filters
+
 # Changelog
 
 ## [0.2.2] - 2026-07-25

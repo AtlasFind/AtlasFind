@@ -142,3 +142,86 @@ compareToolSelects.forEach((select) => {
 });
 
 syncCompareToolOptions();
+
+
+// v0.3.0 smart search suggestions
+const searchSuggestions = document.getElementById("searchSuggestions");
+let searchSuggestionTimer;
+let activeSuggestionIndex = -1;
+let currentSuggestions = [];
+
+function closeSearchSuggestions() {
+    if (!searchSuggestions || !searchInput) return;
+    searchSuggestions.hidden = true;
+    searchSuggestions.innerHTML = "";
+    searchInput.setAttribute("aria-expanded", "false");
+    activeSuggestionIndex = -1;
+    currentSuggestions = [];
+}
+
+function renderSearchSuggestions(items) {
+    if (!searchSuggestions || !searchInput || !items.length) {
+        closeSearchSuggestions();
+        return;
+    }
+    currentSuggestions = items;
+    searchSuggestions.innerHTML = items.map((item, index) => `
+        <button type="button" role="option" data-suggestion-index="${index}" aria-selected="false">
+            <span>${item.label}</span><small>${item.type === "tool" ? "Tool" : "Search"}</small>
+        </button>
+    `).join("");
+    searchSuggestions.hidden = false;
+    searchInput.setAttribute("aria-expanded", "true");
+}
+
+function chooseSearchSuggestion(index) {
+    const item = currentSuggestions[index];
+    if (!item || !searchInput) return;
+    searchInput.value = item.value;
+    closeSearchSuggestions();
+    searchInput.form?.requestSubmit();
+}
+
+searchInput?.addEventListener("input", () => {
+    window.clearTimeout(searchSuggestionTimer);
+    const query = searchInput.value.trim();
+    if (query.length < 2) {
+        closeSearchSuggestions();
+        return;
+    }
+    searchSuggestionTimer = window.setTimeout(async () => {
+        try {
+            const response = await fetch(`/api/search-suggestions?q=${encodeURIComponent(query)}`);
+            if (!response.ok) throw new Error("Suggestion request failed");
+            renderSearchSuggestions(await response.json());
+        } catch (error) {
+            closeSearchSuggestions();
+        }
+    }, 180);
+});
+
+searchSuggestions?.addEventListener("click", event => {
+    const button = event.target.closest("[data-suggestion-index]");
+    if (button) chooseSearchSuggestion(Number(button.dataset.suggestionIndex));
+});
+
+searchInput?.addEventListener("keydown", event => {
+    if (!currentSuggestions.length) return;
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        const direction = event.key === "ArrowDown" ? 1 : -1;
+        activeSuggestionIndex = (activeSuggestionIndex + direction + currentSuggestions.length) % currentSuggestions.length;
+        searchSuggestions?.querySelectorAll("[role='option']").forEach((option, index) => {
+            option.setAttribute("aria-selected", String(index === activeSuggestionIndex));
+        });
+    } else if (event.key === "Enter" && activeSuggestionIndex >= 0) {
+        event.preventDefault();
+        chooseSearchSuggestion(activeSuggestionIndex);
+    } else if (event.key === "Escape") {
+        closeSearchSuggestions();
+    }
+});
+
+document.addEventListener("click", event => {
+    if (!searchSuggestions?.contains(event.target) && event.target !== searchInput) closeSearchSuggestions();
+});
