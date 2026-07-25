@@ -77,6 +77,30 @@
             </section>
         </div>
 
+
+        <section class="detail-section detail-card change-history-card">
+            <span class="section-label">Change history</span>
+            <h2>Listing updates</h2>
+            {% if freshness.history %}
+            <ol class="change-timeline">
+                {% for entry in freshness.history %}
+                <li>
+                    <time datetime="{{ entry.date }}">{{ entry.date or "Unknown date" }}</time>
+                    <div><strong>{{ entry.type|replace('-', ' ')|title }}</strong><p>{{ entry.summary }}</p></div>
+                </li>
+                {% endfor %}
+            </ol>
+            {% else %}<p>No change history has been recorded yet.</p>{% endif %}
+            {% if freshness.price_history %}
+            <details class="price-history">
+                <summary>Pricing history</summary>
+                {% for entry in freshness.price_history %}
+                <div class="price-history-entry"><time datetime="{{ entry.date }}">{{ entry.date }}</time><strong>{{ entry.old_value }} → {{ entry.new_value }}</strong><p>{{ entry.note }}</p></div>
+                {% endfor %}
+            </details>
+            {% endif %}
+        </section>
+
         <section class="detail-section detail-card">
             <span class="section-label">Features and uses</span>
             <div class="detail-platform-list">
@@ -92,9 +116,15 @@
         <div class="score-row"><span>Offline support</span><strong>{{ "Yes" if tool.offline else "No" }}</strong></div>
         <div class="score-row"><span>AI features</span><strong>{{ "Yes" if tool.ai_powered else "No" }}</strong></div>
         <div class="score-row"><span>Rating</span><strong>{{ tool.rating }} / 5</strong></div>
-        <div class="verification-box">
-            <span class="section-label">Data review</span>
-            <strong>{{ tool.verification.date }}</strong>
+        <div class="verification-box freshness-box freshness-{{ freshness.status }}">
+            <div class="freshness-heading">
+                <span class="section-label">Data freshness</span>
+                <span class="freshness-badge">{{ freshness.label }}</span>
+            </div>
+            <div class="score-row"><span>Last checked</span><strong>{{ freshness.last_checked_at or "Unknown" }}</strong></div>
+            <div class="score-row"><span>Last updated</span><strong>{{ freshness.last_updated_at or "Unknown" }}</strong></div>
+            <div class="score-row"><span>Next check</span><strong>{{ freshness.next_check_at or "Not scheduled" }}</strong></div>
+            {% if freshness.is_outdated %}<p class="stale-warning">This listing may be outdated. Confirm important details on the official website.</p>{% endif %}
             <p>{{ tool.verification.note }}</p>
         </div>
     </aside>

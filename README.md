@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.4.0
+v0.4.1
 
 ## Current Features
 
@@ -16,6 +16,7 @@ v0.4.0
 - Local recommendation engine with transparent match reasons
 - Category and collection discovery pages
 - Data-driven software guides, alternatives and roundups
+- Freshness badges, review schedules and change history
 - Article table of contents, FAQs, related tools and internal links
 - Dark/light themes and responsive navigation
 - JSON datasets with validation scripts
@@ -34,6 +35,7 @@ Open `http://127.0.0.1:5000`.
 ```powershell
 python scripts/validate_tools.py
 python scripts/validate_content.py
+python scripts/validate_freshness.py
 python scripts/test_search.py
 python scripts/test_recommendations.py
 ```
@@ -53,4 +55,5 @@ Add a new entry to `data/articles.json` with:
 - optional FAQs
 - valid related tool and article slugs
 
-Run `python scripts/validate_content.py` before committing. All articles use the shared `/guides/<slug>` template.
+Run `python scripts/validate_content.py
+python scripts/validate_freshness.py` before committing. All articles use the shared `/guides/<slug>` template.

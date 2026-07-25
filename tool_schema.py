@@ -1,8 +1,9 @@
-"""AtlasFind tool dataset validation helpers for v0.4.0."""
+"""AtlasFind tool dataset validation helpers for v0.4.1."""
 
 from __future__ import annotations
 
 from typing import Any
+from datetime import date
 
 ALLOWED_PRICING_TYPES = {"free", "freemium", "paid"}
 ALLOWED_PLATFORMS = {"windows", "macos", "linux", "android", "ios", "ipados", "web"}
@@ -40,10 +41,26 @@ REQUIRED_FIELDS: dict[str, type | tuple[type, ...]] = {
     "editor_choice": bool,
     "date_added": str,
     "collections": list,
+    "freshness": dict,
+    "change_history": list,
+    "price_history": list,
 }
 
 REQUIRED_PRICING_FIELDS = {"model": str, "note": str}
 REQUIRED_VERIFICATION_FIELDS = {"status": str, "date": str, "note": str}
+
+ALLOWED_FRESHNESS_STATUSES = {"current", "review-due", "outdated", "unknown"}
+ALLOWED_CHANGE_TYPES = {"data-review", "pricing-change", "feature-added", "feature-removed", "platform-change", "status-change"}
+
+def _valid_iso_date(value: Any) -> bool:
+    if not isinstance(value, str):
+        return False
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return False
+    return True
+
 NON_EMPTY_LIST_FIELDS = {
     "tags", "platforms", "pros", "cons", "target_users", "system_requirements"
 }
@@ -139,6 +156,53 @@ def validate_tool(tool: Any, index: int) -> list[str]:
     date_added = tool.get("date_added")
     if _is_non_empty_text(date_added) and not __import__("re").fullmatch(r"\d{4}-\d{2}-\d{2}", date_added):
         errors.append(f"{label}.date_added: must use YYYY-MM-DD format")
+
+    freshness = tool.get("freshness")
+    if isinstance(freshness, dict):
+        for field in ("last_checked_at", "last_updated_at", "next_check_at"):
+            if not _valid_iso_date(freshness.get(field)):
+                errors.append(f"{label}.freshness.{field}: must use a valid YYYY-MM-DD date")
+        status = freshness.get("status")
+        if status not in ALLOWED_FRESHNESS_STATUSES:
+            errors.append(f"{label}.freshness.status: unsupported value")
+        if _valid_iso_date(freshness.get("last_checked_at")) and _valid_iso_date(freshness.get("next_check_at")):
+            if date.fromisoformat(freshness["next_check_at"]) < date.fromisoformat(freshness["last_checked_at"]):
+                errors.append(f"{label}.freshness.next_check_at: cannot precede last_checked_at")
+
+    history = tool.get("change_history")
+    if isinstance(history, list):
+        previous_date = None
+        for history_index, item in enumerate(history):
+            item_label = f"{label}.change_history[{history_index}]"
+            if not isinstance(item, dict):
+                errors.append(f"{item_label}: must be an object")
+                continue
+            if not _valid_iso_date(item.get("date")):
+                errors.append(f"{item_label}.date: must use YYYY-MM-DD")
+            if item.get("type") not in ALLOWED_CHANGE_TYPES:
+                errors.append(f"{item_label}.type: unsupported change type")
+            if not _is_non_empty_text(item.get("summary")):
+                errors.append(f"{item_label}.summary: required non-empty text")
+            if not isinstance(item.get("changes"), list):
+                errors.append(f"{item_label}.changes: must be a list")
+            if _valid_iso_date(item.get("date")):
+                current_date = date.fromisoformat(item["date"])
+                if previous_date is not None and current_date > previous_date:
+                    errors.append(f"{label}.change_history: records must be newest first")
+                previous_date = current_date
+
+    price_history = tool.get("price_history")
+    if isinstance(price_history, list):
+        for price_index, item in enumerate(price_history):
+            item_label = f"{label}.price_history[{price_index}]"
+            if not isinstance(item, dict):
+                errors.append(f"{item_label}: must be an object")
+                continue
+            if not _valid_iso_date(item.get("date")):
+                errors.append(f"{item_label}.date: must use YYYY-MM-DD")
+            for field in ("old_value", "new_value", "note"):
+                if not _is_non_empty_text(item.get(field)):
+                    errors.append(f"{item_label}.{field}: required non-empty text")
 
     rating = tool.get("rating")
     if isinstance(rating, (int, float)) and not 0 <= rating <= 5:

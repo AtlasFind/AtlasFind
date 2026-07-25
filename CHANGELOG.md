@@ -1,3 +1,18 @@
+## [0.4.1] - 2026-07-25
+
+### Added
+- Tool freshness metadata with last check, last update and next review dates.
+- Scalable change history and pricing history records for every current and future tool.
+- Freshness badges, stale-data warnings and listing timelines on tool and guide pages.
+- Reusable editorial update checklist and dedicated freshness validation script.
+
+### Changed
+- Application version updated to v0.4.1.
+- Tool and content schemas now validate freshness dates, statuses and history records.
+
+### Preserved
+- Existing search, recommendations, comparison, categories and editorial guide behavior.
+
 ## [0.4.0] - 2026-07-25
 
 ### Added

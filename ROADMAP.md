@@ -18,3 +18,5 @@
 - Awaiting user approval
 
 Development does not move to the next version without explicit approval.
+
+- v0.4.1 - Freshness and Change History ✅
