@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, abort, jsonify
 from pathlib import Path
+import os
+from datetime import timedelta
 from urllib.parse import urlencode
 
 from tool_schema import validate_tools
@@ -8,6 +10,8 @@ from content_schema import validate_articles
 from freshness import content_freshness, tool_freshness
 from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
+from database import apply_migrations
+from admin import admin_bp
 
 from recommendation_engine import (
     RECOMMENDATION_PURPOSES,
@@ -19,8 +23,18 @@ from recommendation_engine import (
 
 
 app = Flask(__name__)
+app.config.update(
+    SECRET_KEY=os.environ.get("ATLASFIND_SECRET_KEY", "development-only-change-me"),
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=os.environ.get("ATLASFIND_HTTPS", "0") == "1",
+    PERMANENT_SESSION_LIFETIME=timedelta(hours=8),
+    MAX_CONTENT_LENGTH=2 * 1024 * 1024,
+)
+apply_migrations()
+app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.5.0"
+APP_VERSION = "0.5.1"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"

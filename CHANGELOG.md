@@ -1,5 +1,25 @@
 # Changelog
 
+## [v0.5.1] - 2026-07-25
+
+### Fixed
+- Prevented incomplete admin-created tool records from crashing public detail pages.
+
+### Added
+- Password-hashed administrator accounts and protected admin sessions.
+- CSRF protection, login-attempt throttling and administrator audit logs.
+- Dashboard, tool/article editors, draft/publish/archive workflows and previews.
+- Category and tag management plus validated bulk JSON import.
+- Database migration `002_admin_panel` and administrator setup/test scripts.
+
+### Changed
+- Public repositories now return only published tools and articles.
+- Application version updated to v0.5.1.
+
+### Security
+- Secret key can be supplied through `ATLASFIND_SECRET_KEY`.
+- Session cookies use HttpOnly and SameSite=Lax; Secure can be enabled for HTTPS.
+
 ## [v0.5.0] - 2026-07-25
 
 ### Added

@@ -26,3 +26,6 @@ database/*.db
 database/*.db-shm
 database/*.db-wal
 backups/
+static/uploads/*
+!static/uploads/.gitkeep
+*.db-journal

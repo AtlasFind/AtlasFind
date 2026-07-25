@@ -37,3 +37,23 @@ def initialize_database(path=DATABASE_PATH):
             "INSERT OR IGNORE INTO schema_migrations(name) VALUES (?)",
             ("001_initial_schema",),
         )
+
+
+def _applied_migrations(connection):
+    rows = connection.execute("SELECT name FROM schema_migrations").fetchall()
+    return {row["name"] for row in rows}
+
+
+def apply_migrations(path=DATABASE_PATH):
+    initialize_database(path)
+    applied = []
+    with transaction(path) as connection:
+        completed = _applied_migrations(connection)
+        for migration_path in sorted(MIGRATIONS_DIR.glob("*.sql")):
+            name = migration_path.stem
+            if name in completed:
+                continue
+            connection.executescript(migration_path.read_text(encoding="utf-8"))
+            connection.execute("INSERT INTO schema_migrations(name) VALUES (?)", (name,))
+            applied.append(name)
+    return applied
