@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery and comparison platform.
 
 ## Current Version
 
-v0.2.1
+v0.2.2
 
 ## Current Features
 
@@ -54,5 +54,5 @@ The validation and filter logic are not tied to a fixed tool count.
 Browse category and collection pages with scalable sorting and pagination.
 
 
-## v0.2.1 Smart Recommendations
+## v0.2.2 Smart Recommendations
 Open `/recommend` to rank tools by purpose, platform, budget, hardware, experience, privacy and offline requirements. The engine is deterministic, transparent and independent of external AI APIs.

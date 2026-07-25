@@ -104,3 +104,41 @@ filterToggle?.addEventListener("click", () => {
     const isOpen = filterPanel?.classList.toggle("is-open") ?? false;
     filterToggle.setAttribute("aria-expanded", String(isOpen));
 });
+
+const copyComparisonLink = document.getElementById("copyComparisonLink");
+copyComparisonLink?.addEventListener("click", async () => {
+    const originalText = copyComparisonLink.textContent;
+    try {
+        await navigator.clipboard.writeText(window.location.href);
+        copyComparisonLink.textContent = copyComparisonLink.dataset.copySuccess || "Link copied";
+    } catch (error) {
+        window.prompt("Copy this comparison link:", window.location.href);
+    }
+    window.setTimeout(() => { copyComparisonLink.textContent = originalText; }, 1800);
+});
+
+
+const compareToolSelects = Array.from(document.querySelectorAll("[data-compare-tool-select]"));
+
+function syncCompareToolOptions() {
+    const selectedValues = compareToolSelects
+        .map((select) => select.value)
+        .filter(Boolean);
+
+    compareToolSelects.forEach((select) => {
+        Array.from(select.options).forEach((option) => {
+            if (!option.value) {
+                option.disabled = false;
+                return;
+            }
+
+            option.disabled = option.value !== select.value && selectedValues.includes(option.value);
+        });
+    });
+}
+
+compareToolSelects.forEach((select) => {
+    select.addEventListener("change", syncCompareToolOptions);
+});
+
+syncCompareToolOptions();

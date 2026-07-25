@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2] - 2026-07-25
+### Added
+- Two-to-four tool comparison with shareable URL parameters
+- Difference highlighting and optional common-feature hiding
+- Pricing, platform, system, language, pros, cons and use-case comparison
+- Preference-based best-fit result using the existing local recommendation engine
+- Responsive horizontal comparison layout for mobile devices
+
 ## [0.2.1] - 2026-07-25
 ### Added
 - Local rule-based recommendation engine with no external AI API

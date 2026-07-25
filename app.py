@@ -8,7 +8,7 @@ from tool_schema import validate_tools
 
 app = Flask(__name__)
 
-APP_VERSION = "0.2.1"
+APP_VERSION = "0.2.2"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -948,22 +948,102 @@ def tool_detail(slug):
     )
 
 
+def _comparison_value(tool, key):
+    if key == "category":
+        return tool.get("category") or "Unknown"
+    if key == "pricing":
+        return tool.get("pricing") or tool.get("pricing_type") or "Unknown"
+    if key in {"open_source", "offline", "ai_powered"}:
+        return "Yes" if tool.get(key, False) else "No"
+    if key == "platforms":
+        values = tool.get("platforms") or []
+        return ", ".join(platform_label(normalize_platform(value)) for value in values) or "Unknown"
+    if key == "minimum_ram_gb":
+        value = tool.get("minimum_ram_gb")
+        return f"{value:g} GB" if isinstance(value, (int, float)) and not isinstance(value, bool) else "Unknown"
+    if key == "system_level":
+        value = normalize_text(tool.get("system_level", "unknown"))
+        return value.title() if value else "Unknown"
+    if key == "languages":
+        values = tool.get("languages") or []
+        return ", ".join(value.upper() for value in values) or "Unknown"
+    if key == "rating":
+        value = tool.get("rating")
+        return f"{value} / 5" if value is not None else "Unknown"
+    if key == "target_users":
+        return ", ".join(tool.get("target_users") or []) or "Unknown"
+    return str(tool.get(key) or "Unknown")
+
+
+def build_comparison_rows(tools):
+    definitions = [
+        ("Category", "category"),
+        ("Pricing", "pricing"),
+        ("Open source", "open_source"),
+        ("Offline support", "offline"),
+        ("AI features", "ai_powered"),
+        ("Platforms", "platforms"),
+        ("Minimum RAM", "minimum_ram_gb"),
+        ("System level", "system_level"),
+        ("Languages", "languages"),
+        ("Rating", "rating"),
+        ("Target users", "target_users"),
+    ]
+    rows = []
+    for label, key in definitions:
+        values = [_comparison_value(tool, key) for tool in tools]
+        rows.append({"label": label, "key": key, "values": values, "common": len(set(values)) <= 1})
+    return rows
+
+
 @app.route("/compare")
 def compare_tools():
-    left_slug = request.args.get("left", "").strip()
-    right_slug = request.args.get("right", "").strip()
+    requested_slugs = [slug.strip() for slug in request.args.getlist("tools") if slug.strip()]
 
-    left_tool = find_tool_by_slug(left_slug) if left_slug else None
-    right_tool = find_tool_by_slug(right_slug) if right_slug else None
+    # Keep old v0.2.1 links working.
+    if not requested_slugs:
+        requested_slugs = [
+            request.args.get("left", "").strip(),
+            request.args.get("right", "").strip(),
+        ]
+        requested_slugs = [slug for slug in requested_slugs if slug]
 
-    if (left_slug and left_tool is None) or (right_slug and right_tool is None):
-        abort(404)
+    unique_slugs = []
+    for slug in requested_slugs:
+        if slug not in unique_slugs:
+            unique_slugs.append(slug)
+    unique_slugs = unique_slugs[:4]
+
+    selected_tools = []
+    for slug in unique_slugs:
+        tool = find_tool_by_slug(slug)
+        if tool is None:
+            abort(404)
+        selected_tools.append(tool)
+
+    hide_common = request.args.get("hide_common") == "1"
+    rows = build_comparison_rows(selected_tools) if len(selected_tools) >= 2 else []
+    visible_rows = [row for row in rows if not (hide_common and row["common"])]
+
+    preferences = parse_recommendation_preferences(request.args)
+    preference_submitted = recommendation_requested(preferences)
+    scored_tools = [score_recommendation(tool, preferences) for tool in selected_tools] if preference_submitted else []
+    scored_tools.sort(key=lambda item: (item["match"], item["score"], item["tool"].get("rating", 0)), reverse=True)
+    winner = scored_tools[0] if scored_tools else None
 
     return render_template(
         "compare.html",
-        left_tool=left_tool,
-        right_tool=right_tool,
-        all_tools=sorted(load_tools(), key=lambda tool: tool.get("name", ""))
+        selected_tools=selected_tools,
+        selected_slugs=unique_slugs,
+        comparison_rows=visible_rows,
+        all_rows=rows,
+        hide_common=hide_common,
+        all_tools=sorted(load_tools(), key=lambda tool: tool.get("name", "")),
+        preferences=preferences,
+        purpose_options=RECOMMENDATION_PURPOSES,
+        preference_submitted=preference_submitted,
+        scored_tools=scored_tools,
+        winner=winner,
     )
 
 
