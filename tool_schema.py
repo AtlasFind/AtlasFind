@@ -1,4 +1,4 @@
-"""AtlasFind tool dataset validation helpers for v0.1.3."""
+"""AtlasFind tool dataset validation helpers for v0.2.0."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ ALLOWED_PRICING_TYPES = {"free", "freemium", "paid"}
 ALLOWED_PLATFORMS = {"windows", "macos", "linux", "android", "ios", "ipados", "web"}
 ALLOWED_SYSTEM_LEVELS = {"light", "medium", "heavy", "unknown"}
 ALLOWED_LANGUAGE_CODES = {"en", "tr"}
+ALLOWED_COLLECTIONS = {"free-tools", "open-source", "low-end-pc", "students", "editor-choice"}
 
 REQUIRED_FIELDS: dict[str, type | tuple[type, ...]] = {
     "id": int,
@@ -34,6 +35,11 @@ REQUIRED_FIELDS: dict[str, type | tuple[type, ...]] = {
     "system_requirements": list,
     "pricing_details": dict,
     "verification": dict,
+    "subcategory": str,
+    "popularity_score": int,
+    "editor_choice": bool,
+    "date_added": str,
+    "collections": list,
 }
 
 REQUIRED_PRICING_FIELDS = {"model": str, "note": str}
@@ -64,7 +70,7 @@ def validate_tool(tool: Any, index: int) -> list[str]:
         elif not isinstance(tool[field], expected_type):
             errors.append(f"{label}.{field}: invalid value type")
 
-    for field in ("slug", "name", "description", "category", "pricing", "pricing_type", "rating_source", "website", "system_level"):
+    for field in ("slug", "name", "description", "category", "pricing", "pricing_type", "rating_source", "website", "system_level", "subcategory", "date_added"):
         if field in tool and not _is_non_empty_text(tool[field]):
             errors.append(f"{label}.{field}: value cannot be empty")
 
@@ -116,6 +122,23 @@ def validate_tool(tool: Any, index: int) -> list[str]:
             value = verification.get(field)
             if not isinstance(value, expected_type) or not value.strip():
                 errors.append(f"{label}.verification.{field}: required non-empty text")
+
+
+    popularity_score = tool.get("popularity_score")
+    if isinstance(popularity_score, bool) or not isinstance(popularity_score, int) or not 0 <= popularity_score <= 100:
+        errors.append(f"{label}.popularity_score: must be an integer between 0 and 100")
+
+    collections = tool.get("collections")
+    if isinstance(collections, list):
+        if not all(_is_non_empty_text(item) for item in collections):
+            errors.append(f"{label}.collections: every item must be non-empty text")
+        invalid_collections = _normalized_values(collections) - ALLOWED_COLLECTIONS
+        if invalid_collections:
+            errors.append(f"{label}.collections: unsupported values {sorted(invalid_collections)}")
+
+    date_added = tool.get("date_added")
+    if _is_non_empty_text(date_added) and not __import__("re").fullmatch(r"\d{4}-\d{2}-\d{2}", date_added):
+        errors.append(f"{label}.date_added: must use YYYY-MM-DD format")
 
     rating = tool.get("rating")
     if isinstance(rating, (int, float)) and not 0 <= rating <= 5:

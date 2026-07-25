@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% set active_page = "home" %}
-{% block title %}AtlasFind | Find Better Software{% endblock %}
+{% block title %}AtlasFind | Find Better Software
+<section class="section discovery-hub" id="discovery-hub"><div class="section-container"><div class="section-heading"><span class="eyebrow">Curated discovery</span><h2>Explore useful collections</h2></div><div class="collection-grid">{% for slug, info in collections.items() %}<a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}"><h3>{{ info.name }}</h3><p>{{ info.description }}</p><span>Explore →</span></a>{% endfor %}</div></div></section>
+{% endblock %}
 {% block content %}
 <section class="hero" id="discover">
 
@@ -634,7 +636,7 @@
 
             <div class="category-grid">
 
-                <a href="/?q=AI" class="category-card category-ai">
+                <a href="/categories/artificial-intelligence" class="category-card category-ai">
 
                     <div class="category-content">
                         <span>01</span>
@@ -651,7 +653,7 @@
                 </a>
 
 
-                <a href="/?q=Design" class="category-card category-design">
+                <a href="/categories/design" class="category-card category-design">
 
                     <div class="category-content">
                         <span>02</span>
@@ -668,7 +670,7 @@
                 </a>
 
 
-                <a href="/?q=Development" class="category-card category-code">
+                <a href="/categories/development" class="category-card category-code">
 
                     <div class="category-content">
                         <span>03</span>
@@ -685,7 +687,7 @@
                 </a>
 
 
-                <a href="/?q=Video" class="category-card category-video">
+                <a href="/categories/video" class="category-card category-video">
 
                     <div class="category-content">
                         <span>04</span>
