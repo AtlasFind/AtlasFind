@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block description %}Discover, compare and find software that fits your workflow.{% endblock %}">
+    <meta name="robots" content="{% block robots %}index,follow{% endblock %}">
+    <link rel="canonical" href="{% block canonical %}{{ request.base_url }}{% endblock %}">
+    {% block extra_head %}{% endblock %}
     <script>
         (() => {
             const saved = localStorage.getItem("atlas-theme");
@@ -36,6 +39,7 @@
                 <a href="{{ url_for('home') }}#tools">Tools</a>
                 <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>Categories</a>
                 <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>Recommend</a>
+                <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>Guides</a>
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>Compare</a>
             </nav>
 
@@ -68,6 +72,7 @@
             <a href="{{ url_for('home') }}#tools">Tools</a>
             <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>Categories</a>
             <a href="{{ url_for('recommend') }}">Recommend</a>
+            <a href="{{ url_for('guides') }}">Guides</a>
             <a href="{{ url_for('compare_tools') }}">Compare</a>
             <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>

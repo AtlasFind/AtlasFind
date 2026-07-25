@@ -2,22 +2,23 @@
 
 **Find the right software. Faster.**
 
-AtlasFind is a Flask-based software discovery and comparison platform.
+AtlasFind is a Flask-based software discovery, recommendation, comparison and editorial guide platform.
 
 ## Current Version
 
-v0.3.1
+v0.4.0
 
 ## Current Features
 
-- Search with relevance scoring
-- Multi-filter discovery using pricing, license, offline support, AI, platform, RAM, system level and Turkish support
-- Shareable URL-based filter state
-- Tool cards and professional detail pages
-- Side-by-side comparison
-- Dark/light themes and responsive navigation
-- JSON dataset with dynamic schema validation
+- Typo-tolerant smart search with relevance explanations
+- Multi-filter discovery with shareable URL state
+- Professional tool pages and two-to-four tool comparison
 - Local recommendation engine with transparent match reasons
+- Category and collection discovery pages
+- Data-driven software guides, alternatives and roundups
+- Article table of contents, FAQs, related tools and internal links
+- Dark/light themes and responsive navigation
+- JSON datasets with validation scripts
 
 ## Run Locally
 
@@ -28,44 +29,28 @@ python app.py
 
 Open `http://127.0.0.1:5000`.
 
-## Adding a new tool
-
-Every entry in `data/tools.json` must satisfy the full schema. Filter-related fields are:
-
-- `pricing_type`: `free`, `freemium` or `paid`
-- `open_source`: boolean
-- `offline`: boolean
-- `ai_powered`: boolean
-- `platforms`: one or more supported platform names
-- `minimum_ram_gb`: positive number or `null` when unknown
-- `system_level`: `light`, `medium`, `heavy` or `unknown`
-- `languages`: ISO-like codes currently supported by the schema (`en`, `tr`)
-
-Validate every current and future entry with:
+## Validation
 
 ```powershell
 python scripts/validate_tools.py
+python scripts/validate_content.py
+python scripts/test_search.py
+python scripts/test_recommendations.py
 ```
 
-The validation and filter logic are not tied to a fixed tool count.
+## Adding a tool
 
+Every entry in `data/tools.json` must satisfy the full scalable tool schema. The validation and application logic are not tied to a fixed tool count.
 
-## v0.2.0 Discovery
-Browse category and collection pages with scalable sorting and pagination.
+## Adding an article
 
+Add a new entry to `data/articles.json` with:
 
-## v0.2.2 Smart Recommendations
-Open `/recommend` to rank tools by purpose, platform, budget, hardware, experience, privacy and offline requirements. The engine is deterministic, transparent and independent of external AI APIs.
+- unique `slug`
+- `title`, `description`, `content_type` and `category`
+- ISO dates in `published_at` and `updated_at`
+- reusable `sections`
+- optional FAQs
+- valid related tool and article slugs
 
-
-
-## v0.3.1 Search and Recommendation Quality
-
-- Search quality dataset with expected and forbidden results
-- Stronger relevance scoring and fewer unrelated matches
-- Search-result match explanations
-- Recommendation quality profiles and clearer reasons
-- Popularity used only as a final tie-breaker
-
-## v0.3.0 Smart Search
-Typo-tolerant bilingual search, natural-query intent detection, suggestions, and filter-compatible weighted ranking.
+Run `python scripts/validate_content.py` before committing. All articles use the shared `/guides/<slug>` template.

@@ -5,6 +5,7 @@ from urllib.parse import urlencode
 
 from tool_schema import validate_tools
 from search_engine import alternative_queries, rank_tools, search_suggestions
+from content_schema import validate_articles
 from recommendation_engine import (
     RECOMMENDATION_PURPOSES,
     parse_recommendation_preferences,
@@ -16,10 +17,11 @@ from recommendation_engine import (
 
 app = Flask(__name__)
 
-APP_VERSION = "0.3.1"
+APP_VERSION = "0.4.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
+ARTICLE_FILE = BASE_DIR / "data" / "articles.json"
 
 def load_tools():
     """
@@ -51,6 +53,58 @@ def load_tools():
         print(error)
         return []
 
+
+
+def load_articles():
+    """Load and validate all editorial content."""
+    try:
+        with open(ARTICLE_FILE, "r", encoding="utf-8") as file:
+            articles = json.load(file)
+
+        tool_slugs = {tool.get("slug") for tool in load_tools()}
+        validation_errors = validate_articles(articles, tool_slugs)
+        if validation_errors:
+            error_text = "\n".join(f"- {error}" for error in validation_errors)
+            raise ValueError(
+                "articles.json does not satisfy the AtlasFind content schema:\n"
+                f"{error_text}"
+            )
+        return articles
+    except FileNotFoundError:
+        print("articles.json was not found.")
+        return []
+    except json.JSONDecodeError:
+        print("articles.json contains invalid JSON.")
+        return []
+    except ValueError as error:
+        print(error)
+        return []
+
+
+def find_article_by_slug(slug):
+    return next((article for article in load_articles() if article.get("slug") == slug), None)
+
+
+def article_tools(article, tools_by_slug):
+    return [tools_by_slug[slug] for slug in article.get("related_tool_slugs", []) if slug in tools_by_slug]
+
+
+def related_articles_for(article, all_articles, limit=3):
+    by_slug = {item.get("slug"): item for item in all_articles}
+    selected = []
+    for slug in article.get("related_article_slugs", []):
+        item = by_slug.get(slug)
+        if item and item.get("slug") != article.get("slug"):
+            selected.append(item)
+    if len(selected) < limit:
+        for item in all_articles:
+            if item.get("slug") == article.get("slug") or item in selected:
+                continue
+            if item.get("category") == article.get("category") or item.get("content_type") == article.get("content_type"):
+                selected.append(item)
+            if len(selected) >= limit:
+                break
+    return selected[:limit]
 
 def find_tool_by_slug(slug):
     """
@@ -712,15 +766,62 @@ def category_page(slug):
     info=CATEGORY_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slugify_category(t.get("category",""))==slug]
-    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "category"), active_page="categories")
+    related_guides = [article for article in load_articles() if article.get("category") == slug]
+    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "category"), active_page="categories", related_guides=related_guides)
 
 @app.route("/collections/<slug>")
 def collection_page(slug):
     info=COLLECTION_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
-    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "collection"), active_page="categories")
+    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "collection"), active_page="categories", related_guides=[])
 
+
+
+@app.route("/guides")
+def guides():
+    articles = load_articles()
+    content_type = request.args.get("type", "").strip()
+    category = request.args.get("category", "").strip()
+    filtered = articles
+    if content_type:
+        filtered = [article for article in filtered if article.get("content_type") == content_type]
+    if category:
+        filtered = [article for article in filtered if article.get("category") == category]
+    filtered = sorted(filtered, key=lambda article: (article.get("updated_at", ""), article.get("title", "")), reverse=True)
+    return render_template(
+        "guides.html",
+        active_page="guides",
+        articles=filtered,
+        all_articles=articles,
+        selected_type=content_type,
+        selected_category=category,
+        content_types=sorted({article.get("content_type") for article in articles}),
+        article_categories=sorted({article.get("category") for article in articles}),
+    )
+
+
+@app.route("/guides/<slug>")
+def article_detail(slug):
+    article = find_article_by_slug(slug)
+    if article is None:
+        abort(404)
+    all_articles = load_articles()
+    tools = load_tools()
+    tools_by_slug = {tool.get("slug"): tool for tool in tools}
+    section_tools = {
+        section.get("id"): [tools_by_slug[item] for item in section.get("tool_slugs", []) if item in tools_by_slug]
+        for section in article.get("sections", [])
+    }
+    return render_template(
+        "article.html",
+        active_page="guides",
+        article=article,
+        related_tools=article_tools(article, tools_by_slug),
+        related_articles=related_articles_for(article, all_articles),
+        section_tools=section_tools,
+        category_info=CATEGORY_INFO.get(article.get("category")),
+    )
 
 @app.route("/recommend")
 def recommend():
