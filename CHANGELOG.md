@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0] - 2026-07-25
+### Added
+- Scalable category and subcategory metadata
+- Category and curated collection pages
+- Popular, newest and editor-choice discovery metadata
+- Sorting and pagination for discovery pages
+- Dataset validation for discovery fields
+
+# Changelog
+
 ## [v0.1.3] - Advanced Filtering and Data Infrastructure
 
 ### Added

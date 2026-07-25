@@ -28,7 +28,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"Validation successful: {len(tools)} tool entries satisfy the v0.1.3 schema.")
+    print(f"Validation successful: {len(tools)} tool entries satisfy the v0.2.0 schema.")
     return 0
 
 

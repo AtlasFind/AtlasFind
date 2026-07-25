@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · AtlasFind{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block content %}
+<section class="discovery-hero"><div class="section-container"><span class="eyebrow">{{ page_type|title }}</span><h1>{{ title }}</h1><p>{{ description }}</p><strong>{{ pagination.total }} tools</strong></div></section>
+<section class="section-container discovery-layout">
+<form method="get" class="discovery-controls">
+<label>Subcategory<select name="subcategory"><option value="">All subcategories</option>{% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select></label>
+<label>Sort<select name="sort"><option value="popular" {% if sort_key=='popular' %}selected{% endif %}>Most popular</option><option value="rating" {% if sort_key=='rating' %}selected{% endif %}>Highest rated</option><option value="newest" {% if sort_key=='newest' %}selected{% endif %}>Newest</option><option value="name-asc" {% if sort_key=='name-asc' %}selected{% endif %}>A-Z</option><option value="name-desc" {% if sort_key=='name-desc' %}selected{% endif %}>Z-A</option><option value="ram" {% if sort_key=='ram' %}selected{% endif %}>Lowest RAM</option></select></label>
+<button type="submit">Apply</button><a href="{{ request.path }}">Reset</a>
+</form>
+{% if tools %}<div class="tools-grid discovery-grid">{% for tool in tools %}<article class="tool-card"><div class="tool-card-top"><span class="tool-category">{{ tool.subcategory }}</span><span class="tool-rating">★ {{ tool.rating }}</span></div><h2>{{ tool.name }}</h2><p>{{ tool.description }}</p><div class="tool-meta"><span>{{ tool.pricing|title }}</span><span>{{ tool.minimum_ram_gb if tool.minimum_ram_gb is not none else '?' }} GB RAM</span></div><a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">View details →</a></article>{% endfor %}</div>{% else %}<div class="empty-results"><h2>No tools found</h2><p>Try another subcategory or sorting option.</p></div>{% endif %}
+{% if pagination.pages>1 %}<nav class="pagination" aria-label="Pagination">{% if pagination.has_prev %}<a href="?{{ request.args.to_dict(flat=False)|urlencode }}&page={{ pagination.page-1 }}">← Previous</a>{% endif %}<span>Page {{ pagination.page }} of {{ pagination.pages }}</span>{% if pagination.has_next %}<a href="?{{ request.args.to_dict(flat=False)|urlencode }}&page={{ pagination.page+1 }}">Next →</a>{% endif %}</nav>{% endif %}
+</section>{% endblock %}

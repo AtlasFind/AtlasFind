@@ -8,7 +8,7 @@ from tool_schema import validate_tools
 
 app = Flask(__name__)
 
-APP_VERSION = "0.1.3"
+APP_VERSION = "0.2.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -581,6 +581,62 @@ def calculate_match_percentage(score, highest_score):
     return min(percentage, 100)
 
 
+
+CATEGORY_INFO = {
+    "artificial-intelligence": {"name": "Artificial Intelligence", "description": "AI assistants, local models and intelligent creative tools."},
+    "development": {"name": "Development", "description": "Editors, IDEs and utilities for building software."},
+    "design": {"name": "Design", "description": "Visual design, illustration and interface creation tools."},
+    "video": {"name": "Video", "description": "Editing, recording, animation and production software."},
+    "audio": {"name": "Audio", "description": "Audio editing, music production and podcast tools."},
+    "office": {"name": "Office", "description": "Documents, notes, planning and productivity tools."},
+    "browser": {"name": "Browser", "description": "Web browsers focused on speed, privacy and workflows."},
+    "cloud": {"name": "Cloud", "description": "Cloud storage, hosting and deployment platforms."},
+    "security": {"name": "Security", "description": "Privacy, account and device protection tools."},
+    "database": {"name": "Database", "description": "Database engines, clients and data management tools."},
+}
+COLLECTION_INFO = {
+    "free-tools": {"name": "Free Tools", "description": "Tools with a fully free pricing model."},
+    "open-source": {"name": "Open Source", "description": "Software whose source code can be inspected and improved."},
+    "low-end-pc": {"name": "Low-end PC", "description": "Lightweight tools suitable for modest hardware."},
+    "students": {"name": "For Students", "description": "Accessible tools suited to learning and student workflows."},
+    "editor-choice": {"name": "Editor Choices", "description": "Strong all-round tools selected by AtlasFind editorial rules."},
+}
+
+def slugify_category(name):
+    return normalize_text(name).replace(" ", "-")
+
+def sort_tools(items, sort_key):
+    options = {
+        "rating": lambda t: (-float(t.get("rating", 0)), normalize_text(t.get("name", ""))),
+        "popular": lambda t: (-int(t.get("popularity_score", 0)), normalize_text(t.get("name", ""))),
+        "newest": lambda t: (str(t.get("date_added", "")), normalize_text(t.get("name", ""))),
+        "name-asc": lambda t: normalize_text(t.get("name", "")),
+        "name-desc": lambda t: normalize_text(t.get("name", "")),
+        "ram": lambda t: (t.get("minimum_ram_gb") is None, t.get("minimum_ram_gb") or 9999, normalize_text(t.get("name", ""))),
+    }
+    key = sort_key if sort_key in options else "popular"
+    reverse = key in {"newest", "name-desc"}
+    return sorted(items, key=options[key], reverse=reverse)
+
+def paginate(items, page, per_page=18):
+    total=len(items); pages=max(1,(total+per_page-1)//per_page); page=max(1,min(page,pages))
+    start=(page-1)*per_page
+    return items[start:start+per_page], {"page":page,"pages":pages,"total":total,"has_prev":page>1,"has_next":page<pages}
+
+def discovery_context(items, title, description, page_type):
+    filters=parse_filters(request.args)
+    items=filter_tools(items,filters)
+    subcategory=request.args.get("subcategory","").strip()
+    if subcategory:
+        items=[t for t in items if t.get("subcategory")==subcategory]
+    sort_key=request.args.get("sort","popular")
+    items=sort_tools(items,sort_key)
+    try: page=int(request.args.get("page","1"))
+    except ValueError: page=1
+    page_items,pagination=paginate(items,page)
+    subcategories=sorted({t.get("subcategory") for t in items if t.get("subcategory")})
+    return dict(tools=page_items,title=title,description=description,page_type=page_type,filters=filters,sort_key=sort_key,subcategory=subcategory,subcategories=subcategories,pagination=pagination,query_args=request.args)
+
 @app.context_processor
 def inject_app_metadata():
     return {"app_version": APP_VERSION}
@@ -631,7 +687,27 @@ def home():
         clear_filters_url=f"/?{urlencode({'q': search_query})}" if search_query else "/",
         total_tool_count=len(all_tools),
         result_count=len(tools),
+        categories=[dict(slug=slug, **info, count=sum(1 for t in all_tools if slugify_category(t.get("category", "")) == slug)) for slug, info in CATEGORY_INFO.items()],
+        popular_tools=sort_tools(all_tools, "popular")[:6],
+        newest_tools=sort_tools(all_tools, "newest")[:6],
+        editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
+        collections=COLLECTION_INFO,
     )
+
+
+@app.route("/categories/<slug>")
+def category_page(slug):
+    info=CATEGORY_INFO.get(slug)
+    if not info: abort(404)
+    items=[t for t in load_tools() if slugify_category(t.get("category",""))==slug]
+    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "category"), active_page="categories")
+
+@app.route("/collections/<slug>")
+def collection_page(slug):
+    info=COLLECTION_INFO.get(slug)
+    if not info: abort(404)
+    items=[t for t in load_tools() if slug in t.get("collections",[])]
+    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "collection"), active_page="categories")
 
 @app.route("/tools/<slug>")
 def tool_detail(slug):

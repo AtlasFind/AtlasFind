@@ -12,3 +12,5 @@
 - v0.2.0 - Categories and Discovery
 
 Development does not move to the next version without explicit approval.
+
+- [x] v0.2.0 Categories and Discovery
