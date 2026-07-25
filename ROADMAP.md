@@ -19,4 +19,4 @@
 
 Development does not move to the next version without explicit approval.
 
-- v0.4.1 - Freshness and Change History ✅
+- v0.5.0 - Freshness and Change History ✅

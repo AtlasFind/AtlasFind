@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, abort, jsonify
-import json
 from pathlib import Path
 from urllib.parse import urlencode
 
@@ -7,6 +6,9 @@ from tool_schema import validate_tools
 from search_engine import alternative_queries, rank_tools, search_suggestions
 from content_schema import validate_articles
 from freshness import content_freshness, tool_freshness
+from repositories.tools import get_all_tools, get_tool_by_slug
+from repositories.articles import get_all_articles, get_article_by_slug
+
 from recommendation_engine import (
     RECOMMENDATION_PURPOSES,
     parse_recommendation_preferences,
@@ -18,72 +20,37 @@ from recommendation_engine import (
 
 app = Flask(__name__)
 
-APP_VERSION = "0.4.1"
+APP_VERSION = "0.5.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
 ARTICLE_FILE = BASE_DIR / "data" / "articles.json"
 
 def load_tools():
-    """
-    JSON dosyasındaki bütün araçları okur.
-    """
-    try:
-        with open(DATA_FILE, "r", encoding="utf-8") as file:
-            tools = json.load(file)
-
-        validation_errors = validate_tools(tools)
-        if validation_errors:
-            error_text = "\n".join(f"- {error}" for error in validation_errors)
-            raise ValueError(
-                "tools.json does not satisfy the AtlasFind tool schema:\n"
-                f"{error_text}"
-            )
-
-        return tools
-
-    except FileNotFoundError:
-        print("tools.json dosyası bulunamadı.")
+    """Load all tools from the SQLite repository and validate the public data shape."""
+    tools = get_all_tools()
+    validation_errors = validate_tools(tools)
+    if validation_errors:
+        error_text = "\n".join(f"- {error}" for error in validation_errors)
+        print("SQLite tool data does not satisfy the AtlasFind tool schema:\n" + error_text)
         return []
-
-    except json.JSONDecodeError:
-        print("tools.json dosyasının biçimi bozuk.")
-        return []
-
-    except ValueError as error:
-        print(error)
-        return []
-
+    return tools
 
 
 def load_articles():
-    """Load and validate all editorial content."""
-    try:
-        with open(ARTICLE_FILE, "r", encoding="utf-8") as file:
-            articles = json.load(file)
-
-        tool_slugs = {tool.get("slug") for tool in load_tools()}
-        validation_errors = validate_articles(articles, tool_slugs)
-        if validation_errors:
-            error_text = "\n".join(f"- {error}" for error in validation_errors)
-            raise ValueError(
-                "articles.json does not satisfy the AtlasFind content schema:\n"
-                f"{error_text}"
-            )
-        return articles
-    except FileNotFoundError:
-        print("articles.json was not found.")
+    """Load editorial content from SQLite and validate its public data shape."""
+    articles = get_all_articles()
+    tool_slugs = {tool.get("slug") for tool in load_tools()}
+    validation_errors = validate_articles(articles, tool_slugs)
+    if validation_errors:
+        error_text = "\n".join(f"- {error}" for error in validation_errors)
+        print("SQLite article data does not satisfy the AtlasFind content schema:\n" + error_text)
         return []
-    except json.JSONDecodeError:
-        print("articles.json contains invalid JSON.")
-        return []
-    except ValueError as error:
-        print(error)
-        return []
+    return articles
 
 
 def find_article_by_slug(slug):
-    return next((article for article in load_articles() if article.get("slug") == slug), None)
+    return get_article_by_slug(slug)
 
 
 def article_tools(article, tools_by_slug):
@@ -108,17 +75,8 @@ def related_articles_for(article, all_articles, limit=3):
     return selected[:limit]
 
 def find_tool_by_slug(slug):
-    """
-    Slug değerine göre tek bir araç bulur.
-    """
-
-    tools = load_tools()
-
-    for tool in tools:
-        if tool.get("slug") == slug:
-            return tool
-
-    return None
+    """Return a single tool from the SQLite repository by slug."""
+    return get_tool_by_slug(slug)
 
 
 def calculate_alternative_score(source_tool, candidate_tool):

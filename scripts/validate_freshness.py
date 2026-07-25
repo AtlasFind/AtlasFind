@@ -29,6 +29,6 @@ def main()->int:
         print('Freshness validation failed:')
         for error in errors: print(f'- {error}')
         return 1
-    print(f'Validation successful: {len(tools)} tools, {len(articles)} articles and {len(items)} checklist items satisfy the v0.4.1 freshness schema.')
+    print(f'Validation successful: {len(tools)} tools, {len(articles)} articles and {len(items)} checklist items satisfy the v0.5.0 freshness schema.')
     return 0
 if __name__=='__main__': raise SystemExit(main())

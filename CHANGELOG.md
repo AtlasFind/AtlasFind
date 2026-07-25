@@ -1,3 +1,17 @@
+# Changelog
+
+## [v0.5.0] - 2026-07-25
+
+### Added
+- SQLite database schema and migration tracking.
+- JSON-to-SQLite migration and verification scripts.
+- Repository layer for tools and editorial content.
+- Safe SQLite backup command.
+
+### Changed
+- The application now reads tools and articles from SQLite.
+- JSON files remain available as migration and rollback sources.
+
 ## [0.4.1] - 2026-07-25
 
 ### Added
@@ -7,7 +21,7 @@
 - Reusable editorial update checklist and dedicated freshness validation script.
 
 ### Changed
-- Application version updated to v0.4.1.
+- Application version updated to v0.5.0.
 - Tool and content schemas now validate freshness dates, statuses and history records.
 
 ### Preserved

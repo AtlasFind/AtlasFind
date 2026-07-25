@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.4.1
+v0.5.0
 
 ## Current Features
 
@@ -57,3 +57,19 @@ Add a new entry to `data/articles.json` with:
 
 Run `python scripts/validate_content.py
 python scripts/validate_freshness.py` before committing. All articles use the shared `/guides/<slug>` template.
+
+## SQLite setup
+
+AtlasFind v0.5.0 reads tools and guides from SQLite. JSON files remain the migration and rollback source.
+
+```powershell
+py scripts/migrate_json_to_sqlite.py
+py scripts/verify_migration.py
+py app.py
+```
+
+Create a safe database backup with:
+
+```powershell
+py scripts/backup_database.py
+```
