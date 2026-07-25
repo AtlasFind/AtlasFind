@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1] - 2026-07-25
+### Added
+- Local rule-based recommendation engine with no external AI API
+- Preference form for purpose, platform, budget, hardware, experience, privacy and offline use
+- Match percentages with transparent recommendation and mismatch explanations
+- Scalable scoring across every current and future tool entry
+
 ## [0.2.0] - 2026-07-25
 ### Added
 - Scalable category and subcategory metadata

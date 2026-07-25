@@ -35,6 +35,7 @@
                 <a href="{{ url_for('home') }}#discover" {% if active_page == 'home' %}aria-current="page"{% endif %}>Discover</a>
                 <a href="{{ url_for('home') }}#tools">Tools</a>
                 <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>Categories</a>
+                <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>Recommend</a>
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>Compare</a>
             </nav>
 
@@ -66,6 +67,7 @@
             <a href="{{ url_for('home') }}#discover">Discover</a>
             <a href="{{ url_for('home') }}#tools">Tools</a>
             <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>Categories</a>
+            <a href="{{ url_for('recommend') }}">Recommend</a>
             <a href="{{ url_for('compare_tools') }}">Compare</a>
             <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
