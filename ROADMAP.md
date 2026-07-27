@@ -15,6 +15,10 @@
 - v0.4.1 - Freshness and Change History ✅
 - v0.5.0 - SQLite Migration ✅
 - v0.5.1 - Administration Panel ✅
+- v0.6.0 - Technical SEO ✅
+- v0.6.1 - Multilingual Infrastructure ✅
+- v0.7.0 - Performance and Scalability ✅
+- v0.7.1 - Security and Production Readiness ✅
 
 ## Next planned version
 

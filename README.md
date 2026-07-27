@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.7.0
+v0.7.1
 
 ## Current Features
 
@@ -106,3 +106,33 @@ py scripts/benchmark_performance.py
 ```
 
 The benchmark requires the project virtual environment and Flask dependencies.
+
+
+## Production security
+
+Copy `.env.example` values into the environment used by the server. AtlasFind does not automatically read `.env`, which avoids silently depending on an extra package.
+
+Generate a strong secret locally:
+
+```powershell
+py -c "import secrets; print(secrets.token_urlsafe(48))"
+```
+
+Production example:
+
+```powershell
+$env:ATLASFIND_ENV = "production"
+$env:ATLASFIND_SECRET_KEY = "paste-the-generated-secret-here"
+$env:ATLASFIND_HTTPS = "1"
+$env:ATLASFIND_SITE_URL = "https://atlasfind.com"
+$env:ATLASFIND_DEBUG = "0"
+py app.py
+```
+
+Only set `ATLASFIND_TRUST_PROXY=1` when AtlasFind is behind a trusted reverse proxy that overwrites forwarding headers. Validate the security wiring with:
+
+```powershell
+py scripts/validate_security.py
+```
+
+The built-in Flask server remains suitable for local testing. A production deployment should run behind a production WSGI server and HTTPS reverse proxy.

@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, abort, jsonify, Response, red
 from pathlib import Path
 from functools import lru_cache
 import os
-from datetime import timedelta
 from urllib.parse import urlencode
 
 from tool_schema import validate_tools
@@ -15,6 +14,7 @@ from repositories.translations import localize_tool, localize_article, localize_
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
+from security import add_security_headers, configure_logging, configure_security, new_request_id
 from seo import (
     SITE_URL, absolute_url, article_schema, breadcrumb_schema, breadcrumbs as build_breadcrumbs,
     faq_schema, json_ld, page_seo, software_schema, website_schema,
@@ -30,18 +30,12 @@ from recommendation_engine import (
 
 
 app = Flask(__name__)
-app.config.update(
-    SECRET_KEY=os.environ.get("ATLASFIND_SECRET_KEY", "development-only-change-me"),
-    SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE="Lax",
-    SESSION_COOKIE_SECURE=os.environ.get("ATLASFIND_HTTPS", "0") == "1",
-    PERMANENT_SESSION_LIFETIME=timedelta(hours=8),
-    MAX_CONTENT_LENGTH=2 * 1024 * 1024,
-)
+configure_security(app)
+configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.7.0"
+APP_VERSION = "0.7.1"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -701,6 +695,7 @@ def discovery_context(items, title, description, page_type):
 
 @app.before_request
 def resolve_request_locale():
+    g.request_id = new_request_id()
     locale = (request.view_args or {}).get("locale")
     if locale is not None and locale not in SUPPORTED_LOCALES:
         abort(404)
@@ -729,16 +724,15 @@ def _locale_redirect(locale):
 
 
 @app.after_request
-def performance_headers(response):
-    """Add conservative caching and security-neutral performance headers."""
-    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+def response_headers(response):
+    """Apply caching policy and production security headers."""
     if request.path.startswith("/static/"):
         response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
     elif request.path in {"/robots.txt", "/sitemap.xml"}:
         response.headers["Cache-Control"] = "public, max-age=3600"
     elif request.method == "GET" and response.status_code == 200 and not request.path.startswith("/admin"):
         response.headers.setdefault("Cache-Control", "public, max-age=60, stale-while-revalidate=300")
-    return response
+    return add_security_headers(response)
 
 
 @app.context_processor
@@ -1121,6 +1115,49 @@ def legacy_guide_url(slug):
     return redirect(localized_path(f"/guides/{slug}", DEFAULT_LOCALE), code=301)
 
 
+@app.errorhandler(400)
+def bad_request(error):
+    app.logger.warning("bad_request request_id=%s path=%s", getattr(g, "request_id", "-"), request.path)
+    return render_template(
+        "error.html", status_code=400, title="Invalid request",
+        message="The request could not be processed safely.", request_id=getattr(g, "request_id", None),
+        seo=page_seo("Invalid request", "The request could not be processed.", request.path, robots="noindex,nofollow"),
+        breadcrumbs=[], schemas=[],
+    ), 400
+
+
+@app.errorhandler(413)
+def request_too_large(error):
+    return render_template(
+        "error.html", status_code=413, title="Request too large",
+        message="The submitted data exceeds the allowed size.", request_id=getattr(g, "request_id", None),
+        seo=page_seo("Request too large", "The submitted request is too large.", request.path, robots="noindex,nofollow"),
+        breadcrumbs=[], schemas=[],
+    ), 413
+
+
+@app.errorhandler(429)
+def too_many_requests(error):
+    return render_template(
+        "error.html", status_code=429, title="Too many requests",
+        message="Too many attempts were made. Please wait before trying again.", request_id=getattr(g, "request_id", None),
+        seo=page_seo("Too many requests", "Please wait before trying again.", request.path, robots="noindex,nofollow"),
+        breadcrumbs=[], schemas=[],
+    ), 429
+
+
+@app.errorhandler(500)
+def internal_error(error):
+    request_id = getattr(g, "request_id", None)
+    app.logger.exception("internal_server_error request_id=%s path=%s", request_id, request.path)
+    return render_template(
+        "error.html", status_code=500, title="Something went wrong",
+        message="The error was recorded. Please try again later.", request_id=request_id,
+        seo=page_seo("Server error", "An internal error occurred.", request.path, robots="noindex,nofollow"),
+        breadcrumbs=[], schemas=[],
+    ), 500
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     first_segment = request.path.strip("/").split("/", 1)[0]
@@ -1147,4 +1184,7 @@ def page_not_found(error):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug = os.environ.get("ATLASFIND_DEBUG", "0").strip().lower() in {"1", "true", "yes", "on"}
+    if app.config.get("PRODUCTION"):
+        debug = False
+    app.run(debug=debug)

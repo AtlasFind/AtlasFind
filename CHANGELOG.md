@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.7.1 - Security and Production Readiness
+
+### Added
+- Centralized environment-based production security configuration.
+- In-memory sliding-window rate limits for administrator login attempts.
+- Rotating application logs with request reference IDs.
+- Safe 400, 413, 429 and 500 error pages without traceback disclosure.
+- Content Security Policy, clickjacking, referrer, permissions and HSTS headers.
+- `.env.example` and a security validation script.
+
+### Changed
+- Admin sessions now expire after 30 minutes of inactivity.
+- Proxy forwarding headers are trusted only when explicitly enabled.
+- Admin responses are marked private and `no-store`.
+- Debug mode is disabled by default and forcibly disabled in production.
+- Production startup rejects missing or weak application secrets.
+- Application version updated to v0.7.1.
+
 ## v0.7.0 - Performance and Scalability
 
 - Replaced per-tool translation queries with bulk translation loading.

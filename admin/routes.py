@@ -5,6 +5,7 @@ from flask import Blueprint, current_app, flash, redirect, render_template, requ
 from werkzeug.security import check_password_hash
 
 from .auth import csrf_token, current_admin, login_required, validate_csrf
+from security import client_ip, enforce_admin_login_rate_limit
 from .forms import missing_article_fields, missing_tool_fields, parse_json_payload
 from .services import safe_next_url, validate_import_payload
 from repositories.admin import (
@@ -29,9 +30,10 @@ def login():
         return redirect(url_for("admin.dashboard"))
     if request.method == "POST":
         validate_csrf()
-        username = request.form.get("username", "").strip()
+        username = request.form.get("username", "").strip()[:120]
         password = request.form.get("password", "")
-        ip_address = request.headers.get("X-Forwarded-For", request.remote_addr or "")[:120]
+        enforce_admin_login_rate_limit(username)
+        ip_address = client_ip()
         if recent_failed_attempts(username) >= 5:
             flash("Too many failed attempts. Try again in 15 minutes.", "error")
             return render_template("admin/login.html"), 429
@@ -41,9 +43,11 @@ def login():
         if valid:
             session.clear()
             session["admin_user_id"] = admin["id"]
+            session["last_admin_activity"] = int(datetime.now(timezone.utc).timestamp())
             session.permanent = True
             log_action(admin["id"], "login", "admin", admin["id"], "Administrator signed in")
             return redirect(safe_next_url(request.args.get("next")) or url_for("admin.dashboard"))
+        current_app.logger.warning("admin_login_failed username=%r ip=%s", username, ip_address)
         flash("Invalid username or password.", "error")
     return render_template("admin/login.html")
 

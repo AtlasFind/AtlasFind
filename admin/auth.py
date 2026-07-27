@@ -1,15 +1,26 @@
 import hmac
 import secrets
+import time
 from functools import wraps
 
-from flask import abort, redirect, request, session, url_for
+from flask import abort, current_app, redirect, request, session, url_for
 
 from repositories.admin import get_admin_by_id
+
+SESSION_IDLE_SECONDS = 30 * 60
 
 
 def current_admin():
     admin_id = session.get("admin_user_id")
-    return get_admin_by_id(admin_id) if admin_id else None
+    if not admin_id:
+        return None
+    now = int(time.time())
+    last_activity = int(session.get("last_admin_activity", now))
+    if now - last_activity > SESSION_IDLE_SECONDS:
+        session.clear()
+        return None
+    session["last_admin_activity"] = now
+    return get_admin_by_id(admin_id)
 
 
 def login_required(view):
