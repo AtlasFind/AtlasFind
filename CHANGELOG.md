@@ -1,4 +1,15 @@
-## [v0.6.1] - 2026-07-27
+# Changelog
+
+## v0.7.0 - Performance and Scalability
+
+- Replaced per-tool translation queries with bulk translation loading.
+- Added database-aware in-process caches for localized tools and articles.
+- Added SQLite WAL, memory cache, busy timeout and normal synchronous settings.
+- Added indexes for published tools, articles and translation lookups.
+- Added long-lived static asset caching and conservative public page cache headers.
+- Added a local performance benchmark script.
+
+[v0.6.1] - 2026-07-27
 
 ### Added
 - English and Turkish locale-prefixed public URLs.

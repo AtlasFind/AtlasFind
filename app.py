@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context
 from pathlib import Path
+from functools import lru_cache
 import os
 from datetime import timedelta
 from urllib.parse import urlencode
@@ -10,8 +11,8 @@ from content_schema import validate_articles
 from freshness import content_freshness, tool_freshness
 from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
-from repositories.translations import localize_tool, localize_article
-from database import apply_migrations
+from repositories.translations import localize_tool, localize_article, localize_tools, localize_articles
+from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
 from seo import (
@@ -40,37 +41,52 @@ app.config.update(
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.6.1"
+APP_VERSION = "0.7.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
 ARTICLE_FILE = BASE_DIR / "data" / "articles.json"
 
-def load_tools(locale=None):
-    """Load all tools from the SQLite repository and validate the public data shape."""
-    tools = get_all_tools()
-    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
-    tools = [localize_tool(tool, locale) for tool in tools]
+def _database_version():
+    try:
+        return DATABASE_PATH.stat().st_mtime_ns
+    except FileNotFoundError:
+        return 0
+
+
+@lru_cache(maxsize=8)
+def _cached_tools(locale, database_version):
+    tools = localize_tools(get_all_tools(), locale)
     validation_errors = validate_tools(tools)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
         print("SQLite tool data does not satisfy the AtlasFind tool schema:\n" + error_text)
-        return []
-    return tools
+        return tuple()
+    return tuple(tools)
 
 
-def load_articles(locale=None):
-    """Load editorial content from SQLite and validate its public data shape."""
-    articles = get_all_articles()
-    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
-    articles = [localize_article(article, locale) for article in articles]
-    tool_slugs = {tool.get("slug") for tool in load_tools(locale)}
+@lru_cache(maxsize=8)
+def _cached_articles(locale, database_version):
+    articles = localize_articles(get_all_articles(), locale)
+    tool_slugs = {tool.get("slug") for tool in _cached_tools(locale, database_version)}
     validation_errors = validate_articles(articles, tool_slugs)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
         print("SQLite article data does not satisfy the AtlasFind content schema:\n" + error_text)
-        return []
-    return articles
+        return tuple()
+    return tuple(articles)
+
+
+def load_tools(locale=None):
+    """Return validated localized tools from an mtime-aware in-process cache."""
+    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
+    return list(_cached_tools(locale, _database_version()))
+
+
+def load_articles(locale=None):
+    """Return validated localized articles from an mtime-aware in-process cache."""
+    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
+    return list(_cached_articles(locale, _database_version()))
 
 
 def find_article_by_slug(slug, locale=None):
@@ -710,6 +726,19 @@ def _locale_redirect(locale):
     if request.query_string:
         target += "?" + request.query_string.decode("utf-8")
     return redirect(target, code=301)
+
+
+@app.after_request
+def performance_headers(response):
+    """Add conservative caching and security-neutral performance headers."""
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    if request.path.startswith("/static/"):
+        response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+    elif request.path in {"/robots.txt", "/sitemap.xml"}:
+        response.headers["Cache-Control"] = "public, max-age=3600"
+    elif request.method == "GET" and response.status_code == 200 and not request.path.startswith("/admin"):
+        response.headers.setdefault("Cache-Control", "public, max-age=60, stale-while-revalidate=300")
+    return response
 
 
 @app.context_processor

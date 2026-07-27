@@ -14,6 +14,11 @@ def connect_database(path=DATABASE_PATH):
     connection = sqlite3.connect(path)
     connection.row_factory = sqlite3.Row
     connection.execute("PRAGMA foreign_keys = ON")
+    connection.execute("PRAGMA journal_mode = WAL")
+    connection.execute("PRAGMA synchronous = NORMAL")
+    connection.execute("PRAGMA temp_store = MEMORY")
+    connection.execute("PRAGMA cache_size = -20000")
+    connection.execute("PRAGMA busy_timeout = 5000")
     return connection
 
 

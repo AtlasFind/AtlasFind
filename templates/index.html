@@ -204,10 +204,10 @@
                         A
                     </div>
 
-                    <strong>Find your match</strong>
+                    <strong>{{ t("home.match.title") }}</strong>
 
                     <span>
-                        Smarter software discovery
+                        {{ t("home.match.subtitle") }}
                     </span>
 
                 </div>
@@ -220,7 +220,7 @@
         <section class="trust-section">
 
             <p>
-                Discover tools across every major platform
+                {{ t("home.platform_eyebrow") }}
             </p>
 
             <div class="platform-row">
@@ -238,23 +238,23 @@
         <section class="stats-section">
 
             <div class="stat-item">
-                <strong>{{ tools|length }}+</strong>
-                <span>Listed tools</span>
+                <strong>{{ total_tool_count }}+</strong>
+                <span>{{ t("home.stats.listed_tools") }}</span>
             </div>
 
             <div class="stat-item">
                 <strong>40+</strong>
-                <span>Categories</span>
+                <span>{{ t("home.stats.categories") }}</span>
             </div>
 
             <div class="stat-item">
                 <strong>2</strong>
-                <span>Languages</span>
+                <span>{{ t("home.stats.languages") }}</span>
             </div>
 
             <div class="stat-item">
                 <strong>100%</strong>
-                <span>Independent discovery</span>
+                <span>{{ t("home.stats.independent") }}</span>
             </div>
 
         </section>
@@ -266,32 +266,31 @@
 
                 <div>
                     <span class="section-label">
-                        Trending now
+                        {{ t("home.trending_eyebrow") }}
                     </span>
 
                     {% if search_query %}
 
                         <h2>
-                            Results for
+                            {{ t("home.results_for") }}
                             <span>“{{ search_query }}”</span>
                         </h2>
 
                     {% else %}
 
                         <h2>
-                            Tools worth discovering
+                            {{ t("home.trending_title") }}
                         </h2>
 
                     {% endif %}
 
                     <p>
-                        Explore software selected for quality,
-                        usefulness and real-world performance.
+                        {{ t("home.trending_description") }}
                     </p>
                 </div>
 
                 <a href="#" class="view-all">
-                    View all tools
+                    {{ t("actions.view_all_tools") }}
                     <span>→</span>
                 </a>
 
@@ -318,29 +317,29 @@
             <form class="filter-panel" id="filterPanel" method="GET" action="{{ url_for('home') }}">
                 {% if search_query %}<input type="hidden" name="q" value="{{ search_query }}">{% endif %}
                 <fieldset>
-                    <legend>Pricing</legend>
+                    <legend>{{ t("filter.pricing") }}</legend>
                     {% for value, label in [('free','Free'),('freemium','Freemium'),('paid','Paid')] %}
                     <label><input type="checkbox" name="pricing" value="{{ value }}" {% if value in filters.pricing %}checked{% endif %}> {{ label }}</label>
                     {% endfor %}
                 </fieldset>
                 <fieldset>
-                    <legend>Features</legend>
-                    <label><input type="checkbox" name="open_source" value="1" {% if filters.open_source %}checked{% endif %}> Open source</label>
-                    <label><input type="checkbox" name="offline" value="1" {% if filters.offline %}checked{% endif %}> Offline</label>
-                    <label><input type="checkbox" name="ai" value="1" {% if filters.ai %}checked{% endif %}> AI-powered</label>
-                    <label><input type="checkbox" name="turkish" value="1" {% if filters.turkish %}checked{% endif %}> Turkish support</label>
+                    <legend>{{ t("filter.features") }}</legend>
+                    <label><input type="checkbox" name="open_source" value="1" {% if filters.open_source %}checked{% endif %}> {{ t("common.open_source") }}</label>
+                    <label><input type="checkbox" name="offline" value="1" {% if filters.offline %}checked{% endif %}> {{ t("common.offline") }}</label>
+                    <label><input type="checkbox" name="ai" value="1" {% if filters.ai %}checked{% endif %}> {{ t("common.ai_powered") }}</label>
+                    <label><input type="checkbox" name="turkish" value="1" {% if filters.turkish %}checked{% endif %}> {{ t("filter.turkish") }}</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Platforms</legend>
+                    <legend>{{ t("filter.platforms") }}</legend>
                     {% for value, label in [('windows','Windows'),('macos','macOS'),('linux','Linux'),('android','Android'),('ios','iOS'),('web','Web')] %}
                     <label><input type="checkbox" name="platform" value="{{ value }}" {% if value in filters.platforms %}checked{% endif %}> {{ label }}</label>
                     {% endfor %}
                 </fieldset>
                 <fieldset>
-                    <legend>System</legend>
+                    <legend>{{ t("filter.system") }}</legend>
                     <label>Maximum RAM
                         <select name="max_ram">
-                            <option value="">Any</option>
+                            <option value="">{{ t("filter.any") }}</option>
                             {% for value in [2,4,8,16] %}<option value="{{ value }}" {% if filters.max_ram == value %}selected{% endif %}>{{ value }} GB</option>{% endfor %}
                         </select>
                     </label>
@@ -349,15 +348,15 @@
                     {% endfor %}
                 </fieldset>
                 <div class="filter-actions">
-                    <button type="submit">Apply filters</button>
-                    <a href="{{ clear_filters_url }}">Clear filters</a>
+                    <button type="submit">{{ t("filter.apply") }}</button>
+                    <a href="{{ clear_filters_url }}">{{ t("filter.clear") }}</a>
                 </div>
             </form>
 
             {% if active_filters %}
             <div class="active-filters" aria-label="Active filters">
                 {% for item in active_filters %}<a href="{{ item.url }}">{{ item.label }} <span aria-hidden="true">×</span></a>{% endfor %}
-                <a href="{{ clear_filters_url }}" class="clear-all">Clear all</a>
+                <a href="{{ clear_filters_url }}" class="clear-all">{{ t("filter.clear_all") }}</a>
             </div>
             {% endif %}
 
@@ -373,7 +372,7 @@
 
                          <div class="best-match-badge">
                             <span>✦</span>
-                            Best Match
+                            {{ t("filter.best_match") }}
                         </div>
 
                     {% endif %}
@@ -389,7 +388,7 @@
         <div class="match-score-header">
 
             <span>
-                Match score
+                {{ t("common.match_score") }}
             </span>
 
             <strong>
@@ -413,9 +412,9 @@
 {% set match_reasons = result.get("reasons", []) %}
 {% if search_query and match_reasons %}
     <details class="search-match-reasons" aria-label="Why this result matched">
-        <summary title="Why this result was recommended">Why?</summary>
+        <summary title="Why this result was recommended">{{ t("common.why") }}</summary>
         <div class="search-match-reasons-panel">
-            <strong>Why this result</strong>
+            <strong>{{ t("common.why_result") }}</strong>
             <ul>
                 {% for reason in match_reasons %}<li>{{ reason }}</li>{% endfor %}
             </ul>
@@ -457,7 +456,7 @@
 
                                 {% if tool.open_source %}
                                     <span class="tag">
-                                        Open Source
+                                        {{ t("common.open_source") }}
                                     </span>
                                 {% endif %}
 
@@ -469,7 +468,7 @@
 
                                 {% if tool.ai_powered %}
                                     <span class="tag">
-                                        AI-powered
+                                        {{ t("common.ai_powered") }}
                                     </span>
                                 {% endif %}
 
@@ -522,15 +521,15 @@
                         ⌕
                     </div>
 
-                    <h3>No tools found</h3>
+                    <h3>{{ t("common.no_tools") }}</h3>
 
                     <p>
-                        Try another product, category or feature.
+                        {{ t("common.try_another") }}
                     </p>
 
                     {% if search_alternatives %}
                     <div class="alternative-searches" aria-label="Alternative searches">
-                        <span>Try instead:</span>
+                        <span>{{ t("common.try_instead") }}</span>
                         {% for alternative in search_alternatives %}
                         <a href="/?q={{ alternative|urlencode }}">{{ alternative }}</a>
                         {% endfor %}
@@ -554,15 +553,15 @@
 
                 <div>
                     <span class="section-label">
-                        Browse by need
+                        {{ t("home.need.eyebrow") }}
                     </span>
 
                     <h2>
-                        What matters most to you?
+                        {{ t("home.need.title") }}
                     </h2>
 
                     <p>
-                        Start with your priority, not with a brand name.
+                        {{ t("home.need.description") }}
                     </p>
                 </div>
 
@@ -578,11 +577,10 @@
                     </div>
 
                     <div>
-                        <span>Save money</span>
-                        <h3>Find powerful free alternatives</h3>
+                        <span>{{ t("home.need.save_money") }}</span>
+                        <h3>{{ t("home.need.free_title") }}</h3>
                         <p>
-                            Discover free and open-source tools
-                            without sacrificing important features.
+                            {{ t("home.need.free_desc") }}
                         </p>
                     </div>
 
@@ -597,10 +595,10 @@
                         ◈
                     </div>
 
-                    <span>Privacy</span>
+                    <span>{{ t("home.need.privacy") }}</span>
 
                     <h3>
-                        Keep your data under control
+                        {{ t("home.need.privacy_title") }}
                     </h3>
 
                     <strong>Explore →</strong>
@@ -617,7 +615,7 @@
                     <span>Offline</span>
 
                     <h3>
-                        Tools that work without internet
+                        {{ t("home.need.offline_title") }}
                     </h3>
 
                     <strong>Explore →</strong>
@@ -631,10 +629,10 @@
                         ⚡
                     </div>
 
-                    <span>Performance</span>
+                    <span>{{ t("home.need.performance") }}</span>
 
                     <h3>
-                        Lightweight tools for older computers
+                        {{ t("home.need.performance_title") }}
                     </h3>
 
                     <strong>Explore →</strong>
@@ -656,11 +654,11 @@
                     </span>
 
                     <h2>
-                        Explore the software universe
+                        {{ t("home.categories.title") }}
                     </h2>
 
                     <p>
-                        Browse tools by the work you actually want to do.
+                        {{ t("home.categories.description") }}
                     </p>
                 </div>
 
@@ -673,9 +671,9 @@
 
                     <div class="category-content">
                         <span>01</span>
-                        <h3>Artificial Intelligence</h3>
+                        <h3>{{ t("category.ai") }}</h3>
                         <p>
-                            Assistants, generators and local AI tools.
+                            {{ t("category.ai_desc") }}
                         </p>
                     </div>
 
@@ -690,9 +688,9 @@
 
                     <div class="category-content">
                         <span>02</span>
-                        <h3>Design</h3>
+                        <h3>{{ t("category.design") }}</h3>
                         <p>
-                            Graphics, interfaces and creative tools.
+                            {{ t("category.design_desc") }}
                         </p>
                     </div>
 
@@ -707,9 +705,9 @@
 
                     <div class="category-content">
                         <span>03</span>
-                        <h3>Development</h3>
+                        <h3>{{ t("category.development") }}</h3>
                         <p>
-                            Editors, coding assistants and databases.
+                            {{ t("category.development_desc") }}
                         </p>
                     </div>
 
@@ -724,9 +722,9 @@
 
                     <div class="category-content">
                         <span>04</span>
-                        <h3>Video and Audio</h3>
+                        <h3>{{ t("category.media") }}</h3>
                         <p>
-                            Editing, recording and production tools.
+                            {{ t("category.media_desc") }}
                         </p>
                     </div>
 
@@ -748,21 +746,19 @@
                 <div class="compare-content">
 
                     <span class="section-label">
-                        Smarter decisions
+                        {{ t("home.compare.eyebrow") }}
                     </span>
 
                     <h2>
-                        Compare tools without opening
-                        twenty browser tabs.
+                        {{ t("home.compare.title") }}
                     </h2>
 
                     <p>
-                        Compare pricing, privacy, performance,
-                        offline support and ease of use in one place.
+                        {{ t("home.compare.description") }}
                     </p>
 
                     <a href="{{ url_for('compare_tools') }}" class="primary-button">
-                        Start comparing
+                        {{ t("home.compare.start") }}
                         <span>→</span>
                     </a>
 
@@ -802,9 +798,9 @@
 
 
                     <div class="comparison-row">
-                        <span>Price</span>
+                        <span>{{ t("common.price") }}</span>
                         <strong>$22.99/mo</strong>
-                        <strong>Free</strong>
+                        <strong>{{ t("common.free") }}</strong>
                     </div>
 
                     <div class="comparison-row">

@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.6.1
+v0.7.0
 
 ## Current Features
 
@@ -94,5 +94,15 @@ py scripts/validate_translations.py
 ```
 
 
-### v0.6.1 Turkish content completion
+### v0.7.0 Turkish content completion
 - Added complete Turkish content records for all 100 published tools, including descriptions, categories, tags, pros, cons, target users, requirements, pricing notes, verification notes and history labels.
+
+
+## Performance checks
+
+```powershell
+py scripts/migrate_database.py
+py scripts/benchmark_performance.py
+```
+
+The benchmark requires the project virtual environment and Flask dependencies.
