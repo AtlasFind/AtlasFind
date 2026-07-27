@@ -6,9 +6,9 @@
 {% block content %}
 <section class="recommend-hero">
     <div class="container">
-        <span class="eyebrow">LOCAL RECOMMENDATION ENGINE</span>
-        <h1>Find tools that fit your actual setup.</h1>
-        <p>Choose what matters to you. AtlasFind scores every current and future tool using the same transparent rules, without an external AI API.</p>
+        <span class="eyebrow">{{ t("recommend.eyebrow") }}</span>
+        <h1>{{ t("recommend.title") }}</h1>
+        <p>{{ t("recommend.description") }}</p>
     </div>
 </section>
 
@@ -17,14 +17,14 @@
         <div class="recommend-form-heading">
             <div>
                 <span class="section-kicker">YOUR PREFERENCES</span>
-                <h2>Build your recommendation profile</h2>
+                <h2>{{ t("recommend.profile") }}</h2>
             </div>
-            <a href="{{ url_for('recommend') }}">Reset</a>
+            <a href="{{ url_for('recommend') }}">{{ t("common.reset") }}</a>
         </div>
 
         <div class="recommend-fields">
             <label>
-                <span>Main purpose</span>
+                <span>{{ t("recommend.purpose") }}</span>
                 <select name="purpose" required>
                     <option value="">Choose a purpose</option>
                     {% for value, item in purpose_options.items() %}
@@ -34,7 +34,7 @@
             </label>
 
             <label>
-                <span>Operating system</span>
+                <span>{{ t("recommend.platform") }}</span>
                 <select name="platform">
                     <option value="">Any platform</option>
                     {% for value, label in [('windows','Windows'),('macos','macOS'),('linux','Linux'),('android','Android'),('ios','iOS'),('web','Web')] %}
@@ -44,7 +44,7 @@
             </label>
 
             <label>
-                <span>Budget</span>
+                <span>{{ t("recommend.budget") }}</span>
                 <select name="budget">
                     {% for value, label in [('any','Any budget'),('free','Free only'),('freemium','Free or freemium'),('paid','Paid tools are acceptable')] %}
                     <option value="{{ value }}" {% if preferences.budget == value %}selected{% endif %}>{{ label }}</option>
@@ -53,7 +53,7 @@
             </label>
 
             <label>
-                <span>Hardware level</span>
+                <span>{{ t("recommend.hardware") }}</span>
                 <select name="hardware">
                     {% for value, label in [('any','Any hardware'),('light','Low-end / older computer'),('medium','Mid-range computer'),('heavy','High-end computer')] %}
                     <option value="{{ value }}" {% if preferences.hardware == value %}selected{% endif %}>{{ label }}</option>
@@ -62,7 +62,7 @@
             </label>
 
             <label>
-                <span>Experience level</span>
+                <span>{{ t("recommend.experience") }}</span>
                 <select name="experience">
                     {% for value, label in [('any','Any experience'),('beginner','Beginner'),('intermediate','Intermediate'),('advanced','Advanced')] %}
                     <option value="{{ value }}" {% if preferences.experience == value %}selected{% endif %}>{{ label }}</option>
@@ -71,7 +71,7 @@
             </label>
 
             <label>
-                <span>Privacy preference</span>
+                <span>{{ t("recommend.privacy") }}</span>
                 <select name="privacy">
                     {% for value, label in [('any','No special preference'),('standard','Standard'),('privacy-first','Privacy-first'),('open-source','Open source preferred')] %}
                     <option value="{{ value }}" {% if preferences.privacy == value %}selected{% endif %}>{{ label }}</option>
@@ -82,10 +82,10 @@
 
         <label class="recommend-checkbox">
             <input type="checkbox" name="offline" value="1" {% if preferences.offline %}checked{% endif %}>
-            <span><strong>I need offline use</strong><small>Prefer tools that can work without a permanent internet connection.</small></span>
+            <span><strong>{{ t("recommend.offline") }}</strong><small>Prefer tools that can work without a permanent internet connection.</small></span>
         </label>
 
-        <button class="recommend-submit" type="submit" data-loading-text="Scoring tools…">Get recommendations</button>
+        <button class="recommend-submit" type="submit" data-loading-text="Scoring tools…">{{ t("actions.get_recommendations") }}</button>
     </form>
 
     {% if submitted %}
@@ -93,7 +93,7 @@
         <div class="recommend-results-heading">
             <div>
                 <span class="section-kicker">TRANSPARENT RESULTS</span>
-                <h2 id="recommend-results-title">Your best matches</h2>
+                <h2 id="recommend-results-title">{{ t("recommend.results") }}</h2>
             </div>
             <span>{{ recommendations|length }} ranked tools</span>
         </div>
@@ -112,14 +112,14 @@
                 <p>{{ item.tool.description }}</p>
 
                 <div class="recommend-explanation good">
-                    <strong>Why it was recommended</strong>
+                    <strong>{{ t("recommend.why") }}</strong>
                     <ul>
                         {% for reason in item.reasons %}<li>{{ reason }}</li>{% else %}<li>It ranks well overall among the available tools.</li>{% endfor %}
                     </ul>
                 </div>
 
                 <div class="recommend-explanation caution">
-                    <strong>Why it may not fit</strong>
+                    <strong>{{ t("recommend.why_not") }}</strong>
                     <ul>
                         {% for concern in item.concerns %}<li>{{ concern }}</li>{% else %}<li>No major mismatch was found for the selected preferences.</li>{% endfor %}
                     </ul>

@@ -4,12 +4,12 @@
 {% block content %}
 <section class="comparison-page">
     <div class="comparison-title">
-        <span class="section-label">Advanced software comparison</span>
+        <span class="section-label">{{ t("compare.eyebrow") }}</span>
         {% if selected_tools|length >= 2 %}
             <h1>{{ selected_tools|map(attribute='name')|join(' vs ') }}</h1>
-            <p>Compare pricing, platforms, requirements, strengths and trade-offs across up to four tools.</p>
+            <p>{{ t("compare.description") }}</p>
         {% else %}
-            <h1>Compare up to four tools.</h1>
+            <h1>{{ t("compare.title") }}</h1>
             <p>Select at least two tools. Apparently software also needs a proper contest before humans make a decision.</p>
         {% endif %}
     </div>
@@ -20,7 +20,7 @@
             <label>
                 <span>Tool {{ index + 1 }}{% if index > 1 %} <small>(optional)</small>{% endif %}</span>
                 <select name="tools" data-compare-tool-select {% if index < 2 %}required{% endif %}>
-                    <option value="">Choose a tool</option>
+                    <option value="">{{ t("compare.choose_tool") }}</option>
                     {% for item in all_tools %}
                     <option value="{{ item.slug }}" {% if selected_slugs|length > index and selected_slugs[index] == item.slug %}selected{% elif item.slug in selected_slugs %}disabled{% endif %}>{{ item.name }}</option>
                     {% endfor %}
@@ -31,7 +31,7 @@
         <div class="compare-picker-actions">
             <label class="check-option compact-check">
                 <input type="checkbox" name="hide_common" value="1" {% if hide_common %}checked{% endif %}>
-                <span>Hide common features</span>
+                <span>{{ t("compare.hide_common") }}</span>
             </label>
             <button type="submit" class="primary-button" data-loading-text="Comparing…">Compare tools <span>→</span></button>
         </div>
@@ -40,12 +40,12 @@
     {% if selected_tools|length >= 2 %}
     <div class="comparison-utility-bar">
         <p>{{ selected_tools|length }} tools selected · {{ comparison_rows|length }} feature rows shown</p>
-        <button type="button" class="secondary-button" id="copyComparisonLink" data-copy-success="Link copied">Copy share link</button>
+        <button type="button" class="secondary-button" id="copyComparisonLink" data-copy-success="Link copied">{{ t("actions.copy_link") }}</button>
     </div>
 
     <div class="comparison-table comparison-table-dynamic columns-{{ selected_tools|length }}" role="region" aria-label="Software comparison table" tabindex="0">
         <div class="comparison-table-header comparison-grid-row" style="--tool-count: {{ selected_tools|length }}">
-            <div class="comparison-property">Feature</div>
+            <div class="comparison-property">{{ t("compare.feature") }}</div>
             {% for item in selected_tools %}
             <div class="comparison-product">
                 <div class="tool-logo">{{ item.name[0] }}</div>
@@ -64,19 +64,19 @@
         {% endfor %}
 
         <div class="comparison-table-row comparison-grid-row comparison-list-row" style="--tool-count: {{ selected_tools|length }}">
-            <span>Pros</span>
+            <span>{{ t("tool.pros") }}</span>
             {% for item in selected_tools %}
             <div><ul>{% for value in item.pros or [] %}<li>{{ value }}</li>{% else %}<li>Not listed</li>{% endfor %}</ul></div>
             {% endfor %}
         </div>
         <div class="comparison-table-row comparison-grid-row comparison-list-row" style="--tool-count: {{ selected_tools|length }}">
-            <span>Cons</span>
+            <span>{{ t("tool.cons") }}</span>
             {% for item in selected_tools %}
             <div><ul>{% for value in item.cons or [] %}<li>{{ value }}</li>{% else %}<li>Not listed</li>{% endfor %}</ul></div>
             {% endfor %}
         </div>
         <div class="comparison-table-row comparison-grid-row comparison-list-row" style="--tool-count: {{ selected_tools|length }}">
-            <span>Use cases</span>
+            <span>{{ t("compare.use_cases") }}</span>
             {% for item in selected_tools %}
             <div>
                 <p>{{ item.subcategory or item.category or 'General use' }}</p>
@@ -92,8 +92,8 @@
 
     <section class="comparison-fit-panel">
         <div class="comparison-fit-copy">
-            <span class="section-label">Personal fit</span>
-            <h2>Which one fits you best?</h2>
+            <span class="section-label">{{ t("compare.personal_fit") }}</span>
+            <h2>{{ t("compare.best_fit") }}</h2>
             <p>Use the same transparent scoring engine as AtlasFind recommendations. No external AI API, no mysterious oracle behind a curtain.</p>
         </div>
         <form method="GET" action="{{ url_for('compare_tools') }}" class="comparison-preference-form" data-loading-form>
@@ -101,12 +101,12 @@
             {% if hide_common %}<input type="hidden" name="hide_common" value="1">{% endif %}
             <label><span>Purpose</span><select name="purpose"><option value="">Choose purpose</option>{% for value, info in purpose_options.items() %}<option value="{{ value }}" {% if preferences.purpose == value %}selected{% endif %}>{{ info.label }}</option>{% endfor %}</select></label>
             <label><span>Platform</span><select name="platform"><option value="">Any platform</option>{% for value in ['windows','macos','linux','android','ios','web'] %}<option value="{{ value }}" {% if preferences.platform == value %}selected{% endif %}>{{ value|title }}</option>{% endfor %}</select></label>
-            <label><span>Budget</span><select name="budget"><option value="">Any budget</option>{% for value in ['free','freemium','paid','any'] %}<option value="{{ value }}" {% if preferences.budget == value %}selected{% endif %}>{{ value|title }}</option>{% endfor %}</select></label>
+            <label><span>{{ t("recommend.budget") }}</span><select name="budget"><option value="">Any budget</option>{% for value in ['free','freemium','paid','any'] %}<option value="{{ value }}" {% if preferences.budget == value %}selected{% endif %}>{{ value|title }}</option>{% endfor %}</select></label>
             <label><span>Hardware</span><select name="hardware"><option value="">Any hardware</option>{% for value in ['light','medium','heavy','any'] %}<option value="{{ value }}" {% if preferences.hardware == value %}selected{% endif %}>{{ value|title }}</option>{% endfor %}</select></label>
             <label><span>Experience</span><select name="experience"><option value="">Any experience</option>{% for value in ['beginner','intermediate','advanced','any'] %}<option value="{{ value }}" {% if preferences.experience == value %}selected{% endif %}>{{ value|title }}</option>{% endfor %}</select></label>
             <label><span>Privacy</span><select name="privacy"><option value="">Any privacy preference</option>{% for value in ['standard','privacy-first','open-source','any'] %}<option value="{{ value }}" {% if preferences.privacy == value %}selected{% endif %}>{{ value|replace('-', ' ')|title }}</option>{% endfor %}</select></label>
             <label class="check-option compact-check"><input type="checkbox" name="offline" value="1" {% if preferences.offline %}checked{% endif %}><span>Offline use required</span></label>
-            <button type="submit" class="primary-button" data-loading-text="Scoring…">Find best fit</button>
+            <button type="submit" class="primary-button" data-loading-text="Scoring…">{{ t("actions.find_best_fit") }}</button>
         </form>
 
         {% if winner %}

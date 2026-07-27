@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.6.0
+v0.6.1
 
 ## Current Features
 
@@ -74,3 +74,25 @@ py scripts/check_links.py
 ```
 
 Set `ATLASFIND_SITE_URL` to the production origin before deployment.
+
+
+## Multilingual URLs
+
+AtlasFind supports English and Turkish public routes:
+
+```text
+/en/
+/tr/
+/en/tools/gimp
+/tr/tools/gimp
+```
+
+Interface translations live in `translations/en.json` and `translations/tr.json`. Missing Turkish content safely falls back to English. Validate translations with:
+
+```powershell
+py scripts/validate_translations.py
+```
+
+
+### v0.6.1 Turkish content completion
+- Added complete Turkish content records for all 100 published tools, including descriptions, categories, tags, pros, cons, target users, requirements, pricing notes, verification notes and history labels.

@@ -1,6 +1,7 @@
 import json
 import os
 from urllib.parse import urljoin
+from i18n import localized_path, get_locale
 
 SITE_NAME = "AtlasFind"
 SITE_URL = os.environ.get("ATLASFIND_SITE_URL", "https://atlasfind.com").rstrip("/")
@@ -14,6 +15,7 @@ def absolute_url(path="/"):
 
 
 def page_seo(title, description, path="/", page_type="website", image=None, robots="index,follow"):
+    path = localized_path(path, get_locale())
     clean_title = title if title.endswith(SITE_NAME) else f"{title} | {SITE_NAME}"
     return {
         "title": clean_title,
@@ -28,7 +30,7 @@ def page_seo(title, description, path="/", page_type="website", image=None, robo
 def breadcrumbs(items):
     result = []
     for position, item in enumerate(items, start=1):
-        result.append({"name": item[0], "url": absolute_url(item[1]), "position": position})
+        result.append({"name": item[0], "url": absolute_url(localized_path(item[1], get_locale())), "position": position})
     return result
 
 
@@ -53,7 +55,7 @@ def website_schema():
         "url": SITE_URL,
         "potentialAction": {
             "@type": "SearchAction",
-            "target": absolute_url("/?q={search_term_string}"),
+            "target": absolute_url(localized_path("/?q={search_term_string}", get_locale())),
             "query-input": "required name=search_term_string",
         },
     }
@@ -67,7 +69,7 @@ def software_schema(tool):
         "description": tool.get("description"),
         "applicationCategory": tool.get("category") or "SoftwareApplication",
         "operatingSystem": ", ".join(tool.get("platforms") or []),
-        "url": absolute_url(f"/tools/{tool.get('slug','')}")
+        "url": absolute_url(localized_path(f"/tools/{tool.get('slug','')}", get_locale()))
     }
     rating = tool.get("rating")
     if isinstance(rating, (int, float)):
@@ -88,7 +90,7 @@ def article_schema(article):
         "dateModified": article.get("updated_at"),
         "author": {"@type": "Organization", "name": article.get("author") or "AtlasFind Editors"},
         "publisher": {"@type": "Organization", "name": SITE_NAME},
-        "mainEntityOfPage": absolute_url(f"/guides/{article.get('slug','')}")
+        "mainEntityOfPage": absolute_url(localized_path(f"/guides/{article.get('slug','')}", get_locale()))
     }
 
 

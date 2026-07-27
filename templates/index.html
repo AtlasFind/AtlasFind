@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set active_page = "home" %}
 {% block title %}AtlasFind | Find Better Software
-<section class="section discovery-hub" id="discovery-hub"><div class="section-container"><div class="section-heading"><span class="eyebrow">Curated discovery</span><h2>Explore useful collections</h2></div><div class="collection-grid">{% for slug, info in collections.items() %}<a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}"><h3>{{ info.name }}</h3><p>{{ info.description }}</p><span>Explore →</span></a>{% endfor %}</div></div></section>
+<section class="section discovery-hub" id="discovery-hub"><div class="section-container"><div class="section-heading"><span class="eyebrow">{{ t("home.collections.eyebrow") }}</span><h2>{{ t("home.collections.title") }}</h2></div><div class="collection-grid">{% for slug, info in collections.items() %}<a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}"><h3>{{ info.name }}</h3><p>{{ info.description }}</p><span>{{ t("actions.explore") }}</span></a>{% endfor %}</div></div></section>
 {% endblock %}
 {% block content %}
 <section class="hero" id="discover">
@@ -10,21 +10,20 @@
 
                 <div class="hero-label">
                     <span class="hero-label-dot"></span>
-                    The smarter way to discover software
+                    {{ t("home.eyebrow") }}
                 </div>
 
 
                 <h1>
-                    Stop settling for
+                    {{ t("home.hero.before") }}
                     <span class="gradient-text">
-                        the wrong software.
+                        {{ t("home.hero.highlight") }}
                     </span>
                 </h1>
 
 
                 <p class="hero-description">
-                    Discover, compare and switch to tools that
-                    actually fit your workflow, budget and device.
+                    {{ t("home.hero.description") }}
                 </p>
 
 
@@ -32,7 +31,7 @@
                     class="search-form"
                     data-loading-form
                     method="GET"
-                    action="/"
+                    action="{{ url_for('home') }}"
                 >
 
                     <div class="search-box">
@@ -74,13 +73,13 @@
                             <input
                                 type="search"
                                 name="q"
-                                aria-label="Search software"
+                                aria-label="{{ t('home.search.label') }}"
                                 aria-autocomplete="list"
                                 aria-controls="searchSuggestions"
                                 aria-expanded="false"
                                 id="searchInput"
                                 value="{{ search_query }}"
-                                placeholder="I need a free Photoshop alternative..."
+                                placeholder="{{ t('home.search.placeholder') }}"
                                 autocomplete="off"
                             >
                             <div class="search-suggestions" id="searchSuggestions" role="listbox" hidden></div>
@@ -90,8 +89,8 @@
                             Ctrl K
                         </div>
 
-                        <button type="submit" data-loading-text="Searching…">
-                            Search
+                        <button type="submit" data-loading-text="{{ t('home.search.loading') }}">
+                            {{ t("home.search.button") }}
                             <span>→</span>
                         </button>
 
@@ -102,29 +101,29 @@
 
                 <div class="search-examples">
 
-                    <span>Try:</span>
+                    <span>{{ t("home.try") }}</span>
 
-                    <a href="/?q=offline AI">
-                        Offline AI assistant
+                    <a href="{{ url_for('home', q='offline AI') }}">
+                        {{ t("home.example.offline_ai") }}
                     </a>
 
-                    <a href="/?q=free video editing">
-                        Free video editor
+                    <a href="{{ url_for('home', q='free video editing') }}">
+                        {{ t("home.example.video") }}
                     </a>
 
-                    <a href="/?q=privacy">
-                        Privacy-focused tools
+                    <a href="{{ url_for('home', q='privacy') }}">
+                        {{ t("home.example.privacy") }}
                     </a>
 
                 </div>
 
 
-                <div class="quick-filters" aria-label="Quick filters">
-                    <a href="/?pricing=free">Free</a>
-                    <a href="/?open_source=1">Open Source</a>
-                    <a href="/?offline=1">Offline</a>
-                    <a href="/?ai=1">AI-powered</a>
-                    <a href="/?system_level=light">Lightweight</a>
+                <div class="quick-filters" aria-label="{{ t('filter.quick') }}">
+                    <a href="{{ url_for('home', pricing='free') }}">{{ t("filter.free") }}</a>
+                    <a href="{{ url_for('home', open_source=1) }}">{{ t("filter.open_source") }}</a>
+                    <a href="{{ url_for('home', offline=1) }}">{{ t("filter.offline") }}</a>
+                    <a href="{{ url_for('home', ai=1) }}">{{ t("filter.ai") }}</a>
+                    <a href="{{ url_for('home', system_level='light') }}">{{ t("filter.lightweight") }}</a>
                 </div>
 
             </div>
@@ -316,7 +315,7 @@
                 </div>
             </div>
 
-            <form class="filter-panel" id="filterPanel" method="GET" action="/">
+            <form class="filter-panel" id="filterPanel" method="GET" action="{{ url_for('home') }}">
                 {% if search_query %}<input type="hidden" name="q" value="{{ search_query }}">{% endif %}
                 <fieldset>
                     <legend>Pricing</legend>
@@ -592,7 +591,7 @@
                 </a>
 
 
-                <a href="/?q=privacy" class="need-card">
+                <a href="{{ url_for('home', q='privacy') }}" class="need-card">
 
                     <div class="need-icon">
                         ◈

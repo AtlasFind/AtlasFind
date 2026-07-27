@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, jsonify, Response, redirect
+from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context
 from pathlib import Path
 import os
 from datetime import timedelta
@@ -10,7 +10,9 @@ from content_schema import validate_articles
 from freshness import content_freshness, tool_freshness
 from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
+from repositories.translations import localize_tool, localize_article
 from database import apply_migrations
+from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
 from seo import (
     SITE_URL, absolute_url, article_schema, breadcrumb_schema, breadcrumbs as build_breadcrumbs,
@@ -38,15 +40,17 @@ app.config.update(
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.6.0"
+APP_VERSION = "0.6.1"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
 ARTICLE_FILE = BASE_DIR / "data" / "articles.json"
 
-def load_tools():
+def load_tools(locale=None):
     """Load all tools from the SQLite repository and validate the public data shape."""
     tools = get_all_tools()
+    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
+    tools = [localize_tool(tool, locale) for tool in tools]
     validation_errors = validate_tools(tools)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
@@ -55,10 +59,12 @@ def load_tools():
     return tools
 
 
-def load_articles():
+def load_articles(locale=None):
     """Load editorial content from SQLite and validate its public data shape."""
     articles = get_all_articles()
-    tool_slugs = {tool.get("slug") for tool in load_tools()}
+    locale = locale or (get_locale() if has_request_context() else DEFAULT_LOCALE)
+    articles = [localize_article(article, locale) for article in articles]
+    tool_slugs = {tool.get("slug") for tool in load_tools(locale)}
     validation_errors = validate_articles(articles, tool_slugs)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
@@ -67,8 +73,8 @@ def load_articles():
     return articles
 
 
-def find_article_by_slug(slug):
-    return get_article_by_slug(slug)
+def find_article_by_slug(slug, locale=None):
+    return localize_article(get_article_by_slug(slug), locale or get_locale())
 
 
 def article_tools(article, tools_by_slug):
@@ -92,9 +98,9 @@ def related_articles_for(article, all_articles, limit=3):
                 break
     return selected[:limit]
 
-def find_tool_by_slug(slug):
-    """Return a single tool from the SQLite repository by slug."""
-    return get_tool_by_slug(slug)
+def find_tool_by_slug(slug, locale=None):
+    """Return a localized tool from the SQLite repository by slug."""
+    return localize_tool(get_tool_by_slug(slug), locale or get_locale())
 
 
 def calculate_alternative_score(source_tool, candidate_tool):
@@ -677,16 +683,53 @@ def discovery_context(items, title, description, page_type):
     return dict(tools=page_items,title=title,description=description,page_type=page_type,filters=filters,sort_key=sort_key,subcategory=subcategory,subcategories=subcategories,pagination=pagination,query_args=request.args)
 
 
+@app.before_request
+def resolve_request_locale():
+    locale = (request.view_args or {}).get("locale")
+    if locale is not None and locale not in SUPPORTED_LOCALES:
+        abort(404)
+    g.locale = locale if locale in SUPPORTED_LOCALES else DEFAULT_LOCALE
+
+
+@app.url_defaults
+def inject_locale_into_urls(endpoint, values):
+    if "locale" in values or not request:
+        return
+    rules = app.url_map._rules_by_endpoint.get(endpoint, ())
+    if any("locale" in rule.arguments for rule in rules):
+        values["locale"] = get_locale()
+
+
+def _locale_redirect(locale):
+    if locale is not None:
+        return None
+    endpoint = request.endpoint
+    values = dict(request.view_args or {})
+    values["locale"] = DEFAULT_LOCALE
+    target = url_for(endpoint, **values)
+    if request.query_string:
+        target += "?" + request.query_string.decode("utf-8")
+    return redirect(target, code=301)
+
+
 @app.context_processor
 def inject_app_metadata():
     return {
         "app_version": APP_VERSION,
         "site_url": SITE_URL,
         "json_ld": json_ld,
+        "locale": get_locale(),
+        "supported_locales": SUPPORTED_LOCALES,
+        "t": translate,
+        "localized_path": localized_path,
+        "alternate_urls": alternate_urls(request.path),
     }
 
 @app.route("/")
-def home():
+@app.route("/<locale>/")
+def home(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     all_tools = load_tools()
     search_query = request.args.get("q", "").strip()
     filters = parse_filters(request.args)
@@ -725,7 +768,7 @@ def home():
         detected_needs=search_meta.get("detected_needs", []),
         filters=filters,
         active_filters=active_filters,
-        clear_filters_url=f"/?{urlencode({'q': search_query})}" if search_query else "/",
+        clear_filters_url=localized_path(f"/?{urlencode({'q': search_query})}" if search_query else "/"),
         total_tool_count=len(all_tools),
         result_count=len(tools),
         categories=[dict(slug=slug, **info, count=sum(1 for t in all_tools if slugify_category(t.get("category", "")) == slug)) for slug, info in CATEGORY_INFO.items()],
@@ -751,7 +794,10 @@ def search_suggestions_api():
 
 
 @app.route("/categories/<slug>")
-def category_page(slug):
+@app.route("/<locale>/categories/<slug>")
+def category_page(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     info=CATEGORY_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slugify_category(t.get("category",""))==slug]
@@ -766,7 +812,10 @@ def category_page(slug):
     )
 
 @app.route("/collections/<slug>")
-def collection_page(slug):
+@app.route("/<locale>/collections/<slug>")
+def collection_page(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     info=COLLECTION_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
@@ -782,7 +831,10 @@ def collection_page(slug):
 
 
 @app.route("/guides")
-def guides():
+@app.route("/<locale>/guides")
+def guides(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     articles = load_articles()
     content_type = request.args.get("type", "").strip()
     category = request.args.get("category", "").strip()
@@ -808,7 +860,10 @@ def guides():
 
 
 @app.route("/guides/<slug>")
-def article_detail(slug):
+@app.route("/<locale>/guides/<slug>")
+def article_detail(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     article = find_article_by_slug(slug)
     if article is None:
         abort(404)
@@ -834,7 +889,10 @@ def article_detail(slug):
     )
 
 @app.route("/recommend")
-def recommend():
+@app.route("/<locale>/recommend")
+def recommend(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     preferences = parse_recommendation_preferences(request.args)
     submitted = recommendation_requested(preferences)
     recommendations = recommend_tools(load_tools(), preferences) if submitted else []
@@ -850,7 +908,10 @@ def recommend():
     )
 
 @app.route("/tools/<slug>")
-def tool_detail(slug):
+@app.route("/<locale>/tools/<slug>")
+def tool_detail(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     tool = find_tool_by_slug(slug)
 
     if tool is None:
@@ -921,7 +982,10 @@ def build_comparison_rows(tools):
 
 
 @app.route("/compare")
-def compare_tools():
+@app.route("/<locale>/compare")
+def compare_tools(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
     requested_slugs = [slug.strip() for slug in request.args.getlist("tools") if slug.strip()]
 
     # Keep old v0.2.1 links working.
@@ -990,11 +1054,12 @@ def robots_txt():
 def sitemap_xml():
     from xml.sax.saxutils import escape
 
-    urls = [("/", None), ("/guides", None), ("/recommend", None)]
-    urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools())
-    urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles())
-    urls.extend((f"/categories/{slug}", None) for slug in CATEGORY_INFO)
-    urls.extend((f"/collections/{slug}", None) for slug in COLLECTION_INFO)
+    base_urls = [("/", None), ("/guides", None), ("/recommend", None)]
+    base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
+    base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
+    base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORY_INFO)
+    base_urls.extend((f"/collections/{slug}", None) for slug in COLLECTION_INFO)
+    urls = [(localized_path(path, locale), lastmod) for locale in SUPPORTED_LOCALES for path, lastmod in base_urls]
 
     seen = set()
     entries = []
@@ -1014,21 +1079,23 @@ def sitemap_xml():
 
 @app.route("/tool/<slug>")
 def legacy_tool_url(slug):
-    return redirect(f"/tools/{slug}", code=301)
+    return redirect(localized_path(f"/tools/{slug}", DEFAULT_LOCALE), code=301)
 
 
 @app.route("/category/<slug>")
 def legacy_category_url(slug):
-    return redirect(f"/categories/{slug}", code=301)
+    return redirect(localized_path(f"/categories/{slug}", DEFAULT_LOCALE), code=301)
 
 
 @app.route("/guide/<slug>")
 def legacy_guide_url(slug):
-    return redirect(f"/guides/{slug}", code=301)
+    return redirect(localized_path(f"/guides/{slug}", DEFAULT_LOCALE), code=301)
 
 
 @app.errorhandler(404)
 def page_not_found(error):
+    first_segment = request.path.strip("/").split("/", 1)[0]
+    g.locale = first_segment if first_segment in SUPPORTED_LOCALES else DEFAULT_LOCALE
     popular_tools = sorted(
         load_tools(),
         key=lambda tool: (tool.get("popularity_score", 0), tool.get("rating", 0)),
@@ -1040,8 +1107,8 @@ def page_not_found(error):
         popular_tools=popular_tools,
         active_page=None,
         seo=page_seo(
-            "Page Not Found",
-            "The requested AtlasFind page could not be found.",
+            translate("errors.404.title"),
+            translate("errors.404.text"),
             request.path,
             robots="noindex,follow",
         ),
