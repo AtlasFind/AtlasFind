@@ -32,3 +32,5 @@ Development does not move to the next version without explicit approval.
 - Translation catalogs and fallback
 - hreflang and multilingual sitemap
 - SQLite translation tables
+
+- v0.8.0 ✅ Deployment and public beta readiness

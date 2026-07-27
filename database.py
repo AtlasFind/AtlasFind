@@ -1,12 +1,15 @@
+import os
 import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-DATABASE_DIR = BASE_DIR / "database"
-DATABASE_PATH = DATABASE_DIR / "atlasfind.db"
-SCHEMA_PATH = DATABASE_DIR / "schema.sql"
-MIGRATIONS_DIR = DATABASE_DIR / "migrations"
+DATABASE_ASSETS_DIR = BASE_DIR / "database"
+_database_env = os.environ.get("ATLASFIND_DATABASE_PATH", "").strip()
+DATABASE_PATH = Path(_database_env).expanduser().resolve() if _database_env else DATABASE_ASSETS_DIR / "atlasfind.db"
+DATABASE_DIR = DATABASE_PATH.parent
+SCHEMA_PATH = DATABASE_ASSETS_DIR / "schema.sql"
+MIGRATIONS_DIR = DATABASE_ASSETS_DIR / "migrations"
 
 
 def connect_database(path=DATABASE_PATH):

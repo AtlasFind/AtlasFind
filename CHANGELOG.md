@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.8.0 - Deployment and Public Beta
+
+- Added production WSGI entry point and Gunicorn startup.
+- Added Docker and Render deployment configuration.
+- Added `/health` and `/ready` service checks.
+- Added configurable persistent SQLite database path.
+- Added safe database bootstrap and first-deploy catalog seeding.
+- Added deployment validation and production documentation.
+- Added domain, HTTPS, backup and release checklists.
+
 ## v0.7.1 - Security and Production Readiness
 
 ### Added

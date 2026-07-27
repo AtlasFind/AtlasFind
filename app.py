@@ -35,7 +35,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.7.1"
+APP_VERSION = "0.8.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -1058,6 +1058,38 @@ def compare_tools(locale=None):
         seo=page_seo("Compare Software Tools", "Compare pricing, platforms, requirements, features, pros and cons for up to four software tools.", "/compare", robots="noindex,follow"),
         breadcrumbs=build_breadcrumbs([("Home", "/"), ("Compare", "/compare")]), schemas=[],
     )
+
+
+@app.route("/health")
+def health_check():
+    """Lightweight liveness endpoint for hosting health checks."""
+    return jsonify({
+        "status": "ok",
+        "service": "atlasfind",
+        "version": APP_VERSION,
+    })
+
+
+@app.route("/ready")
+def readiness_check():
+    """Verify that SQLite is reachable and the catalog has been seeded."""
+    import sqlite3
+
+    try:
+        connection = sqlite3.connect(DATABASE_PATH)
+        tool_count = connection.execute("SELECT COUNT(*) FROM tools").fetchone()[0]
+        connection.close()
+    except Exception:
+        app.logger.exception("readiness_check_failed")
+        return jsonify({"status": "not_ready", "database": "unavailable"}), 503
+
+    status_code = 200 if tool_count > 0 else 503
+    return jsonify({
+        "status": "ready" if tool_count > 0 else "not_ready",
+        "database": "ok",
+        "tools": tool_count,
+        "version": APP_VERSION,
+    }), status_code
 
 
 @app.route("/robots.txt")
