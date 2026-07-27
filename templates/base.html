@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% block description %}Discover, compare and find software that fits your workflow.{% endblock %}">
-    <meta name="robots" content="{% block robots %}index,follow{% endblock %}">
-    <link rel="canonical" href="{% block canonical %}{{ request.base_url }}{% endblock %}">
+    <meta name="description" content="{{ seo.description if seo else self.description()|striptags }}">
+    <meta name="robots" content="{{ seo.robots if seo else self.robots()|striptags }}">
+    <link rel="canonical" href="{{ seo.canonical if seo else self.canonical()|striptags }}">
+    <meta property="og:title" content="{{ seo.title if seo else self.title()|striptags }}">
+    <meta property="og:description" content="{{ seo.description if seo else self.description()|striptags }}">
+    <meta property="og:url" content="{{ seo.canonical if seo else request.base_url }}">
+    <meta property="og:type" content="{{ seo.type if seo else 'website' }}">
+    <meta property="og:site_name" content="AtlasFind">
+    <meta property="og:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-social.svg' }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
+    <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
     {% block extra_head %}{% endblock %}
     <script>
         (() => {
@@ -16,7 +25,8 @@
             }
         })();
     </script>
-    <title>{% block title %}AtlasFind{% endblock %}</title>
+    <title>{{ seo.title if seo else self.title()|striptags }}</title>
+    {% for schema in schemas or [] %}{% if schema %}<script type="application/ld+json">{{ json_ld(schema)|safe }}</script>{% endif %}{% endfor %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -56,6 +66,7 @@
     </header>
 
     <main id="main-content">
+        {% include "components/breadcrumbs.html" %}
         {% block content %}{% endblock %}
     </main>
 
