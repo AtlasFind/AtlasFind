@@ -34,27 +34,27 @@
 
         <div class="professional-detail-grid">
             <section class="detail-section detail-card">
-                <span class="section-label">Pricing</span>
+                <span class="section-label">{{ t("tool.pricing") }}</span>
                 <h2>{{ tool.get("pricing_details", {}).get("model", tool.get("pricing", "Unknown")) }}</h2>
                 <p>{{ tool.get("pricing_details", {}).get("note", "Pricing details have not been reviewed yet. Confirm current plans on the official website.") }}</p>
             </section>
 
             <section class="detail-section detail-card">
-                <span class="section-label">Available on</span>
+                <span class="section-label">{{ t("tool.available_on") }}</span>
                 <div class="detail-platform-list">
                     {% for platform in tool.platforms %}<span>{{ platform }}</span>{% endfor %}
                 </div>
             </section>
 
             <section class="detail-section detail-card">
-                <span class="section-label">Best for</span>
+                <span class="section-label">{{ t("tool.best_for") }}</span>
                 <ul class="detail-list">
                     {% for user in tool.target_users %}<li>{{ user }}</li>{% endfor %}
                 </ul>
             </section>
 
             <section class="detail-section detail-card">
-                <span class="section-label">System requirements</span>
+                <span class="section-label">{{ t("tool.system_requirements") }}</span>
                 <ul class="detail-list">
                     {% for requirement in tool.system_requirements %}<li>{{ requirement }}</li>{% endfor %}
                 </ul>
@@ -63,14 +63,14 @@
 
         <div class="pros-cons-grid">
             <section class="detail-section detail-card pros-card">
-                <span class="section-label">Pros</span>
+                <span class="section-label">{{ t("tool.pros") }}</span>
                 <ul class="detail-list status-list">
                     {% for pro in tool.pros %}<li><span aria-hidden="true">✓</span>{{ pro }}</li>{% endfor %}
                 </ul>
             </section>
 
             <section class="detail-section detail-card cons-card">
-                <span class="section-label">Cons</span>
+                <span class="section-label">{{ t("tool.cons") }}</span>
                 <ul class="detail-list status-list">
                     {% for con in tool.cons %}<li><span aria-hidden="true">−</span>{{ con }}</li>{% endfor %}
                 </ul>
@@ -79,7 +79,7 @@
 
 
         <section class="detail-section detail-card change-history-card">
-            <span class="section-label">Change history</span>
+            <span class="section-label">{{ t("tool.change_history") }}</span>
             <h2>Listing updates</h2>
             {% if freshness.history %}
             <ol class="change-timeline">
@@ -93,7 +93,7 @@
             {% else %}<p>No change history has been recorded yet.</p>{% endif %}
             {% if freshness.price_history %}
             <details class="price-history">
-                <summary>Pricing history</summary>
+                <summary>{{ t("tool.pricing_history") }}</summary>
                 {% for entry in freshness.price_history %}
                 <div class="price-history-entry"><time datetime="{{ entry.date }}">{{ entry.date }}</time><strong>{{ entry.old_value }} → {{ entry.new_value }}</strong><p>{{ entry.note }}</p></div>
                 {% endfor %}
@@ -102,7 +102,7 @@
         </section>
 
         <section class="detail-section detail-card">
-            <span class="section-label">Features and uses</span>
+            <span class="section-label">{{ t("tool.features") }}</span>
             <div class="detail-platform-list">
                 {% for tag in tool.tags %}<span>{{ tag }}</span>{% endfor %}
             </div>
@@ -111,19 +111,19 @@
 
     <aside class="tool-score-panel">
         <span class="section-label">Quick summary</span>
-        <div class="score-row"><span>Pricing</span><strong>{{ tool.pricing }}</strong></div>
+        <div class="score-row"><span>{{ t("tool.pricing") }}</span><strong>{{ tool.pricing }}</strong></div>
         <div class="score-row"><span>Open source</span><strong>{{ "Yes" if tool.open_source else "No" }}</strong></div>
         <div class="score-row"><span>Offline support</span><strong>{{ "Yes" if tool.offline else "No" }}</strong></div>
         <div class="score-row"><span>AI features</span><strong>{{ "Yes" if tool.ai_powered else "No" }}</strong></div>
         <div class="score-row"><span>Rating</span><strong>{{ tool.rating }} / 5</strong></div>
         <div class="verification-box freshness-box freshness-{{ freshness.status }}">
             <div class="freshness-heading">
-                <span class="section-label">Data freshness</span>
+                <span class="section-label">{{ t("tool.data_freshness") }}</span>
                 <span class="freshness-badge">{{ freshness.label }}</span>
             </div>
-            <div class="score-row"><span>Last checked</span><strong>{{ freshness.last_checked_at or "Unknown" }}</strong></div>
-            <div class="score-row"><span>Last updated</span><strong>{{ freshness.last_updated_at or "Unknown" }}</strong></div>
-            <div class="score-row"><span>Next check</span><strong>{{ freshness.next_check_at or "Not scheduled" }}</strong></div>
+            <div class="score-row"><span>{{ t("tool.last_checked") }}</span><strong>{{ freshness.last_checked_at or "Unknown" }}</strong></div>
+            <div class="score-row"><span>{{ t("tool.last_updated") }}</span><strong>{{ freshness.last_updated_at or "Unknown" }}</strong></div>
+            <div class="score-row"><span>{{ t("tool.next_check") }}</span><strong>{{ freshness.next_check_at or "Not scheduled" }}</strong></div>
             {% if freshness.is_outdated %}<p class="stale-warning">This listing may be outdated. Confirm important details on the official website.</p>{% endif %}
             <p>{{ tool.get("verification", {}).get("note", "This listing has not completed an editorial verification review yet.") }}</p>
         </div>
@@ -133,7 +133,7 @@
 <section class="alternatives-section" id="alternatives">
     <div class="section-heading">
         <div>
-            <span class="section-label">Recommended alternatives</span>
+            <span class="section-label">{{ t("tool.alternatives") }}</span>
             <h2>Alternatives to {{ tool.name }}</h2>
             <p>Ranked using category, features, platforms and user rating.</p>
         </div>

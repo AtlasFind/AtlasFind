@@ -1,3 +1,18 @@
+## [v0.6.1] - 2026-07-27
+
+### Added
+- English and Turkish locale-prefixed public URLs.
+- JSON translation catalogs with English fallback behavior.
+- Navbar language switcher that keeps users on the equivalent page.
+- Localized canonical URLs, hreflang tags and multilingual sitemap entries.
+- SQLite translation tables and the 003_multilingual migration.
+- Translation validation command for interface keys and database locale records.
+
+### Changed
+- Public unprefixed URLs now redirect permanently to the English locale.
+- Tool and article repositories can apply locale-specific translations with safe fallback.
+- Application version updated to v0.6.1.
+
 ## [v0.6.0] - 2026-07-27
 
 ### Added
@@ -169,3 +184,7 @@
 
 ### Added
 - Flask application, search, cards, details, comparison, themes, responsive design and JSON dataset
+
+
+### v0.6.1 Turkish content completion
+- Added complete Turkish content records for all 100 published tools, including descriptions, categories, tags, pros, cons, target users, requirements, pricing notes, verification notes and history labels.

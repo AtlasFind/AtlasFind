@@ -39,12 +39,12 @@
 
     <div class="section-container article-layout">
         <aside class="article-toc" aria-label="Table of contents">
-            <strong>On this page</strong>
+            <strong>{{ t("article.on_page") }}</strong>
             <ol>
                 {% for section in article.sections %}
                 <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
                 {% endfor %}
-                {% if article.faq %}<li><a href="#faq">Frequently asked questions</a></li>{% endif %}
+                {% if article.faq %}<li><a href="#faq">{{ t("article.faq") }}</a></li>{% endif %}
             </ol>
         </aside>
 
@@ -69,7 +69,7 @@
 
             {% if article.faq %}
             <section id="faq" class="article-section faq-section">
-                <h2>Frequently asked questions</h2>
+                <h2>{{ t("article.faq") }}</h2>
                 {% for item in article.faq %}
                 <details class="faq-item">
                     <summary>{{ item.question }}</summary>
@@ -82,7 +82,7 @@
             {% if category_info %}
             <section class="article-category-cta">
                 <div>
-                    <span class="eyebrow">Keep exploring</span>
+                    <span class="eyebrow">{{ t("article.keep_exploring") }}</span>
                     <h2>Browse {{ category_info.name }} tools</h2>
                     <p>{{ category_info.description }}</p>
                 </div>
@@ -94,14 +94,14 @@
 
     {% if related_tools %}
     <section class="section-container article-related-section">
-        <div class="section-heading"><span class="eyebrow">Connected data</span><h2>Related tools</h2></div>
+        <div class="section-heading"><span class="eyebrow">Connected data</span><h2>{{ t("common.related_tools") }}</h2></div>
         <div class="tools-grid article-related-tools">
             {% for tool in related_tools %}
             <article class="tool-card">
                 <div class="tool-card-top"><span class="tool-category">{{ tool.subcategory }}</span><span class="tool-rating">★ {{ tool.rating }}</span></div>
                 <h3>{{ tool.name }}</h3>
                 <p>{{ tool.description }}</p>
-                <a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">View details →</a>
+                <a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">{{ t("actions.view_details_arrow") }}</a>
             </article>
             {% endfor %}
         </div>
@@ -110,7 +110,7 @@
 
     {% if related_articles %}
     <section class="section-container article-related-section">
-        <div class="section-heading"><span class="eyebrow">Continue reading</span><h2>Related guides</h2></div>
+        <div class="section-heading"><span class="eyebrow">{{ t("article.continue_reading") }}</span><h2>{{ t("common.related_guides") }}</h2></div>
         <div class="article-grid compact-article-grid">
             {% for related in related_articles %}
             <article class="article-card">

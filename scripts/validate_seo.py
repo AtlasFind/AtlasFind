@@ -26,4 +26,4 @@ with app.test_client() as client:
     if sitemap.status_code != 200 or '<urlset' not in sitemap.get_data(as_text=True): errors.append('sitemap.xml invalid')
 if errors:
     print('\n'.join(f'- {e}' for e in errors)); raise SystemExit(1)
-print(f'SEO validation successful: {len(load_tools())} tools and {len(load_articles())} articles checked for v0.6.0.')
+print(f'SEO validation successful: {len(load_tools())} tools and {len(load_articles())} articles checked for v0.6.1.')

@@ -21,3 +21,10 @@
 - Awaiting user approval
 
 Development does not move to the next version without explicit approval.
+
+
+## v0.6.1 - Multilingual Infrastructure ✅
+- English and Turkish locale routes
+- Translation catalogs and fallback
+- hreflang and multilingual sitemap
+- SQLite translation tables
