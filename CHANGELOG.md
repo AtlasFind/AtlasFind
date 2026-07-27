@@ -1,3 +1,18 @@
+## [v0.6.0] - 2026-07-27
+
+### Added
+- Dynamic robots.txt and sitemap.xml generated from published SQLite records.
+- Open Graph and Twitter card metadata.
+- WebSite, SoftwareApplication, Article, FAQPage and BreadcrumbList JSON-LD.
+- Shared breadcrumb component and custom 404 page.
+- Legacy URL 301 redirects for tools, categories and guides.
+- Internal link and SEO validation scripts.
+
+### Changed
+- Centralized canonical URLs and SEO metadata around the configured production domain.
+- Search, filtered, comparison and recommendation result pages now use safer indexing directives.
+- Application version updated to v0.6.0.
+
 # Changelog
 
 ## [v0.5.1] - 2026-07-25

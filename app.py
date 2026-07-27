@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, jsonify
+from flask import Flask, render_template, request, abort, jsonify, Response, redirect
 from pathlib import Path
 import os
 from datetime import timedelta
@@ -12,6 +12,10 @@ from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
 from database import apply_migrations
 from admin import admin_bp
+from seo import (
+    SITE_URL, absolute_url, article_schema, breadcrumb_schema, breadcrumbs as build_breadcrumbs,
+    faq_schema, json_ld, page_seo, software_schema, website_schema,
+)
 
 from recommendation_engine import (
     RECOMMENDATION_PURPOSES,
@@ -34,7 +38,7 @@ app.config.update(
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.5.1"
+APP_VERSION = "0.6.0"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -675,7 +679,11 @@ def discovery_context(items, title, description, page_type):
 
 @app.context_processor
 def inject_app_metadata():
-    return {"app_version": APP_VERSION}
+    return {
+        "app_version": APP_VERSION,
+        "site_url": SITE_URL,
+        "json_ld": json_ld,
+    }
 
 @app.route("/")
 def home():
@@ -725,6 +733,14 @@ def home():
         newest_tools=sort_tools(all_tools, "newest")[:6],
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
         collections=COLLECTION_INFO,
+        seo=page_seo(
+            "Discover and Compare Software",
+            "Discover, compare and find software that fits your workflow, platform, budget and hardware.",
+            "/",
+            robots="noindex,follow" if search_query or any(active_filters) else "index,follow",
+        ),
+        schemas=[website_schema()],
+        breadcrumbs=[],
     )
 
 
@@ -740,14 +756,28 @@ def category_page(slug):
     if not info: abort(404)
     items=[t for t in load_tools() if slugify_category(t.get("category",""))==slug]
     related_guides = [article for article in load_articles() if article.get("category") == slug]
-    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "category"), active_page="categories", related_guides=related_guides)
+    crumbs = build_breadcrumbs([("Home", "/"), ("Categories", "/categories/development"), (info["name"], f"/categories/{slug}")])
+    return render_template(
+        "discovery.html",
+        **discovery_context(items, info["name"], info["description"], "category"),
+        active_page="categories", related_guides=related_guides,
+        seo=page_seo(f"Best {info['name']} Tools", info["description"], f"/categories/{slug}"),
+        breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
+    )
 
 @app.route("/collections/<slug>")
 def collection_page(slug):
     info=COLLECTION_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
-    return render_template("discovery.html", **discovery_context(items, info["name"], info["description"], "collection"), active_page="categories", related_guides=[])
+    crumbs = build_breadcrumbs([("Home", "/"), ("Collections", "/collections/free-tools"), (info["name"], f"/collections/{slug}")])
+    return render_template(
+        "discovery.html",
+        **discovery_context(items, info["name"], info["description"], "collection"),
+        active_page="categories", related_guides=[],
+        seo=page_seo(info["name"], info["description"], f"/collections/{slug}"),
+        breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
+    )
 
 
 
@@ -771,6 +801,9 @@ def guides():
         selected_category=category,
         content_types=sorted({article.get("content_type") for article in articles}),
         article_categories=sorted({article.get("category") for article in articles}),
+        seo=page_seo("Software Guides", "Practical software guides, comparisons and curated tool collections from AtlasFind.", "/guides", robots="noindex,follow" if content_type or category else "index,follow"),
+        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Guides", "/guides")]),
+        schemas=[breadcrumb_schema(build_breadcrumbs([("Home", "/"), ("Guides", "/guides")]))],
     )
 
 
@@ -795,6 +828,9 @@ def article_detail(slug):
         section_tools=section_tools,
         category_info=CATEGORY_INFO.get(article.get("category")),
         freshness=content_freshness(article.get("updated_at")),
+        seo=page_seo(article.get("title", "Guide"), article.get("description", ""), f"/guides/{slug}", page_type="article"),
+        breadcrumbs=(crumbs := build_breadcrumbs([("Home", "/"), ("Guides", "/guides"), (article.get("title", "Guide"), f"/guides/{slug}")])),
+        schemas=[item for item in [article_schema(article), faq_schema(article.get("faq", [])), breadcrumb_schema(crumbs)] if item],
     )
 
 @app.route("/recommend")
@@ -809,6 +845,8 @@ def recommend():
         purpose_options=RECOMMENDATION_PURPOSES,
         recommendations=recommendations,
         submitted=submitted,
+        seo=page_seo("Smart Software Recommendations", "Get transparent software recommendations based on purpose, platform, budget, hardware and privacy preferences.", "/recommend", robots="noindex,follow" if submitted else "index,follow"),
+        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Recommend", "/recommend")]), schemas=[],
     )
 
 @app.route("/tools/<slug>")
@@ -828,6 +866,9 @@ def tool_detail(slug):
         tool=tool,
         alternatives=alternatives,
         freshness=tool_freshness(tool),
+        seo=page_seo(f"{tool.get('name')} Review, Pricing, Features & Alternatives", f"Explore {tool.get('name')} pricing, features, pros, cons, platforms, requirements and alternatives.", f"/tools/{slug}"),
+        breadcrumbs=(crumbs := build_breadcrumbs([("Home", "/"), ("Tools", "/#tools"), (tool.get("name", "Tool"), f"/tools/{slug}")])),
+        schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
     )
 
 
@@ -927,7 +968,86 @@ def compare_tools():
         preference_submitted=preference_submitted,
         scored_tools=scored_tools,
         winner=winner,
+        seo=page_seo("Compare Software Tools", "Compare pricing, platforms, requirements, features, pros and cons for up to four software tools.", "/compare", robots="noindex,follow"),
+        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Compare", "/compare")]), schemas=[],
     )
+
+
+@app.route("/robots.txt")
+def robots_txt():
+    body = "\n".join([
+        "User-agent: *",
+        "Allow: /",
+        "Disallow: /admin/",
+        "Disallow: /api/",
+        f"Sitemap: {absolute_url('/sitemap.xml')}",
+        "",
+    ])
+    return Response(body, mimetype="text/plain")
+
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    from xml.sax.saxutils import escape
+
+    urls = [("/", None), ("/guides", None), ("/recommend", None)]
+    urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools())
+    urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles())
+    urls.extend((f"/categories/{slug}", None) for slug in CATEGORY_INFO)
+    urls.extend((f"/collections/{slug}", None) for slug in COLLECTION_INFO)
+
+    seen = set()
+    entries = []
+    for path, lastmod in urls:
+        if path in seen:
+            continue
+        seen.add(path)
+        loc = escape(absolute_url(path))
+        lastmod_xml = f"<lastmod>{escape(str(lastmod))}</lastmod>" if lastmod else ""
+        entries.append(f"<url><loc>{loc}</loc>{lastmod_xml}</url>")
+
+    xml = '<?xml version="1.0" encoding="UTF-8"?>' + \
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + \
+          ''.join(entries) + '</urlset>'
+    return Response(xml, mimetype="application/xml")
+
+
+@app.route("/tool/<slug>")
+def legacy_tool_url(slug):
+    return redirect(f"/tools/{slug}", code=301)
+
+
+@app.route("/category/<slug>")
+def legacy_category_url(slug):
+    return redirect(f"/categories/{slug}", code=301)
+
+
+@app.route("/guide/<slug>")
+def legacy_guide_url(slug):
+    return redirect(f"/guides/{slug}", code=301)
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    popular_tools = sorted(
+        load_tools(),
+        key=lambda tool: (tool.get("popularity_score", 0), tool.get("rating", 0)),
+        reverse=True,
+    )[:6]
+    crumbs = build_breadcrumbs([("Home", "/"), ("Page not found", request.path)])
+    return render_template(
+        "404.html",
+        popular_tools=popular_tools,
+        active_page=None,
+        seo=page_seo(
+            "Page Not Found",
+            "The requested AtlasFind page could not be found.",
+            request.path,
+            robots="noindex,follow",
+        ),
+        breadcrumbs=crumbs,
+        schemas=[breadcrumb_schema(crumbs)],
+    ), 404
 
 
 if __name__ == "__main__":

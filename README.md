@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.5.1
+v0.6.0
 
 ## Current Features
 
@@ -64,3 +64,13 @@ py scripts/backup_database.py
 ```
 
 Draft and archived records are excluded from public routes. Administrator changes are recorded in the audit log.
+
+
+## Technical SEO checks
+
+```powershell
+py scripts/validate_seo.py
+py scripts/check_links.py
+```
+
+Set `ATLASFIND_SITE_URL` to the production origin before deployment.
