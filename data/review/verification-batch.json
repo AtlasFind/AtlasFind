@@ -1,0 +1,477 @@
+[
+  {
+    "id": 11,
+    "slug": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "official_website": "https://code.visualstudio.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 30,
+    "slug": "blender",
+    "name": "Blender",
+    "official_website": "https://www.blender.org",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 31,
+    "slug": "davinci-resolve",
+    "name": "DaVinci Resolve",
+    "official_website": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 1,
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "official_website": "https://chatgpt.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 2,
+    "slug": "claude",
+    "name": "Claude",
+    "official_website": "https://claude.ai",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 12,
+    "slug": "cursor",
+    "name": "Cursor",
+    "official_website": "https://www.cursor.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 17,
+    "slug": "intellij-idea",
+    "name": "IntelliJ IDEA",
+    "official_website": "https://www.jetbrains.com/idea/",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 37,
+    "slug": "obs-studio",
+    "name": "OBS Studio",
+    "official_website": "https://obsproject.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 5,
+    "slug": "ollama",
+    "name": "Ollama",
+    "official_website": "https://ollama.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 16,
+    "slug": "pycharm",
+    "name": "PyCharm",
+    "official_website": "https://www.jetbrains.com/pycharm/",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 21,
+    "slug": "adobe-photoshop",
+    "name": "Adobe Photoshop",
+    "official_website": "https://www.adobe.com/products/photoshop.html",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 25,
+    "slug": "figma",
+    "name": "Figma",
+    "official_website": "https://www.figma.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 43,
+    "slug": "ableton-live",
+    "name": "Ableton Live",
+    "official_website": "https://www.ableton.com/live/",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 81,
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "official_website": "https://bitwarden.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 44,
+    "slug": "fl-studio",
+    "name": "FL Studio",
+    "official_website": "https://www.image-line.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 10,
+    "slug": "hugging-face",
+    "name": "Hugging Face",
+    "official_website": "https://huggingface.co",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 23,
+    "slug": "krita",
+    "name": "Krita",
+    "official_website": "https://krita.org",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 6,
+    "slug": "lm-studio",
+    "name": "LM Studio",
+    "official_website": "https://lmstudio.ai",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 51,
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "official_website": "https://www.microsoft.com/microsoft-365",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 86,
+    "slug": "nmap",
+    "name": "Nmap",
+    "official_website": "https://nmap.org",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 14,
+    "slug": "notepad-plus-plus",
+    "name": "Notepad++",
+    "official_website": "https://notepad-plus-plus.org",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 56,
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "official_website": "https://obsidian.md",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 8,
+    "slug": "open-webui",
+    "name": "Open WebUI",
+    "official_website": "https://openwebui.com",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 4,
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "official_website": "https://www.perplexity.ai",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  },
+  {
+    "id": 91,
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "official_website": "https://www.postgresql.org",
+    "required_checks": [
+      "identity",
+      "company",
+      "description",
+      "category",
+      "platforms",
+      "pricing",
+      "privacy-security",
+      "official-links",
+      "logo-rights-and-source"
+    ],
+    "status": "not-started",
+    "reviewer_notes": ""
+  }
+]

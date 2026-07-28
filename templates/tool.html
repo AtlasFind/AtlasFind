@@ -103,7 +103,7 @@
         <div class="score-row"><span>{{ t("tool.open_source") }}</span><strong>{{ t("common.yes") if tool.open_source else t("common.no") }}</strong></div>
         <div class="score-row"><span>{{ t("tool.offline_support") }}</span><strong>{{ t("common.yes") if tool.offline else t("common.no") }}</strong></div>
         <div class="score-row"><span>{{ t("tool.ai_features") }}</span><strong>{{ t("common.yes") if tool.ai_powered else t("common.no") }}</strong></div>
-        <div class="score-row"><span>{{ t("tool.rating") }}</span><strong>{{ tool.rating }} / 5</strong></div>
+        <div class="score-row"><span>{{ t("tool.rating") }}</span><strong>{% if tool.rating_source != 'not-rated' %}{{ tool.rating }} / 5{% else %}{{ t('tool.not_rated') }}{% endif %}</strong></div>
         <div class="verification-box freshness-box freshness-{{ freshness.status }}">
             <div class="quality-summary"><span>{{ t("quality.quality_status") }}</span><strong class="quality-badge quality-{{ tool.get('quality_status', 'unverified') }}">{{ t('quality.' ~ tool.get('quality_status', 'unverified')) }}</strong></div>
             <p class="quality-notice">{{ tool.get("quality_review", {}).get("note", t("quality.quality_notice")) }}</p>

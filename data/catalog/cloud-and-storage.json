@@ -1,0 +1,3989 @@
+[
+  {
+    "id": 71,
+    "slug": "google-drive",
+    "name": "Google Drive",
+    "description": "Cloud storage and file collaboration service integrated with Google Workspace.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Files",
+      "Collaboration",
+      "Google",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://drive.google.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 86,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-drive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Drive icon",
+    "icon_fallback_url": "/static/icons/generated/google-drive.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GD",
+      "domain": "drive.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 72,
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "description": "Cloud file storage, synchronization and sharing platform.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Sync",
+      "Files",
+      "Sharing",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.dropbox.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 84,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dropbox.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dropbox icon",
+    "icon_fallback_url": "/static/icons/generated/dropbox.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "internal-consistency-pilot",
+      "reviewed_at": "2026-07-28",
+      "note": "Core fields were checked for internal consistency. Live pricing, platform support and feature availability still require confirmation on the official website."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DR",
+      "domain": "dropbox.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 73,
+    "slug": "microsoft-onedrive",
+    "name": "Microsoft OneDrive",
+    "description": "Cloud storage integrated with Windows and Microsoft 365.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Microsoft",
+      "Sync",
+      "Files",
+      "Windows"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 84,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-onedrive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft OneDrive icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-onedrive.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MO",
+      "domain": "microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 74,
+    "slug": "proton-drive",
+    "name": "Proton Drive",
+    "description": "Privacy-focused encrypted cloud storage service.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Privacy",
+      "Encryption",
+      "Security",
+      "Files"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://proton.me/drive",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 84,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/proton-drive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Proton Drive icon",
+    "icon_fallback_url": "/static/icons/generated/proton-drive.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PD",
+      "domain": "proton.me",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 75,
+    "slug": "nextcloud",
+    "name": "Nextcloud",
+    "description": "Open-source self-hosted platform for files, collaboration and communication.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Self Hosted",
+      "Open Source",
+      "Privacy",
+      "Collaboration"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://nextcloud.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 86,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/nextcloud.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Nextcloud icon",
+    "icon_fallback_url": "/static/icons/generated/nextcloud.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NE",
+      "domain": "nextcloud.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 76,
+    "slug": "syncthing",
+    "name": "Syncthing",
+    "description": "Open-source peer-to-peer file synchronization without a central cloud.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Sync",
+      "Peer to Peer",
+      "Open Source",
+      "Privacy",
+      "Self Hosted"
+    ],
+    "pricing": "Free",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://syncthing.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Modern web browser or supported application",
+      "Internet connection unless offline support is listed"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Platforms",
+    "popularity_score": 88,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/syncthing.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Syncthing icon",
+    "icon_fallback_url": "/static/icons/generated/syncthing.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SY",
+      "domain": "syncthing.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 77,
+    "slug": "mega",
+    "name": "MEGA",
+    "description": "Cloud storage service with encrypted file sharing and synchronization.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Encryption",
+      "Files",
+      "Sharing",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://mega.io",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 82,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mega.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MEGA icon",
+    "icon_fallback_url": "/static/icons/generated/mega.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ME",
+      "domain": "mega.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 78,
+    "slug": "pcloud",
+    "name": "pCloud",
+    "description": "Cloud storage and file sharing service with desktop and mobile clients.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Files",
+      "Sync",
+      "Sharing",
+      "Backup"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.pcloud.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 82,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pcloud.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "pCloud icon",
+    "icon_fallback_url": "/static/icons/generated/pcloud.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PC",
+      "domain": "pcloud.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 79,
+    "slug": "filen",
+    "name": "Filen",
+    "description": "Encrypted cloud storage service focused on privacy.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Privacy",
+      "Encryption",
+      "Files",
+      "Sync"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://filen.io",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 82,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/filen.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Filen icon",
+    "icon_fallback_url": "/static/icons/generated/filen.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FI",
+      "domain": "filen.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 80,
+    "slug": "seafile",
+    "name": "Seafile",
+    "description": "Self-hosted file synchronization and sharing platform.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Self Hosted",
+      "File Sync",
+      "Open Source",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://www.seafile.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 82,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/seafile.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Seafile icon",
+    "icon_fallback_url": "/static/icons/generated/seafile.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SE",
+      "domain": "seafile.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 112,
+    "slug": "box",
+    "name": "Box",
+    "description": "Box is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://box.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/box.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Box icon",
+    "icon_fallback_url": "/static/icons/generated/box.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BO",
+      "domain": "box.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 130,
+    "slug": "icloud-drive",
+    "name": "iCloud Drive",
+    "description": "iCloud Drive is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://icloud.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/icloud-drive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "iCloud Drive icon",
+    "icon_fallback_url": "/static/icons/generated/icloud-drive.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ID",
+      "domain": "icloud.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 148,
+    "slug": "sync-com",
+    "name": "Sync.com",
+    "description": "Sync.com is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sync.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sync-com.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sync.com icon",
+    "icon_fallback_url": "/static/icons/generated/sync-com.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SC",
+      "domain": "sync.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 166,
+    "slug": "tresorit",
+    "name": "Tresorit",
+    "description": "Tresorit is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://tresorit.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/tresorit.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Tresorit icon",
+    "icon_fallback_url": "/static/icons/generated/tresorit.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TR",
+      "domain": "tresorit.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 184,
+    "slug": "koofr",
+    "name": "Koofr",
+    "description": "Koofr is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://koofr.eu",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/koofr.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Koofr icon",
+    "icon_fallback_url": "/static/icons/generated/koofr.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "KO",
+      "domain": "koofr.eu",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 202,
+    "slug": "icedrive",
+    "name": "Icedrive",
+    "description": "Icedrive is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://icedrive.net",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/icedrive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Icedrive icon",
+    "icon_fallback_url": "/static/icons/generated/icedrive.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IC",
+      "domain": "icedrive.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 220,
+    "slug": "internxt",
+    "name": "Internxt",
+    "description": "Internxt is a cloud storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://internxt.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/internxt.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Internxt icon",
+    "icon_fallback_url": "/static/icons/generated/internxt.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IN",
+      "domain": "internxt.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 238,
+    "slug": "backblaze",
+    "name": "Backblaze",
+    "description": "Backblaze is a cloud backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://backblaze.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/backblaze.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Backblaze icon",
+    "icon_fallback_url": "/static/icons/generated/backblaze.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BA",
+      "domain": "backblaze.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 256,
+    "slug": "carbonite",
+    "name": "Carbonite",
+    "description": "Carbonite is a cloud backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://carbonite.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/carbonite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Carbonite icon",
+    "icon_fallback_url": "/static/icons/generated/carbonite.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CA",
+      "domain": "carbonite.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 274,
+    "slug": "idrive",
+    "name": "IDrive",
+    "description": "IDrive is a cloud backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Cloud Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://idrive.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/idrive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "IDrive icon",
+    "icon_fallback_url": "/static/icons/generated/idrive.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ID",
+      "domain": "idrive.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 292,
+    "slug": "acronis-cyber-protect-home-office",
+    "name": "Acronis Cyber Protect Home Office",
+    "description": "Acronis Cyber Protect Home Office is a backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://acronis.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/acronis-cyber-protect-home-office.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Acronis Cyber Protect Home Office icon",
+    "icon_fallback_url": "/static/icons/generated/acronis-cyber-protect-home-office.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AC",
+      "domain": "acronis.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 310,
+    "slug": "duplicati",
+    "name": "Duplicati",
+    "description": "Duplicati is a backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://duplicati.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/duplicati.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Duplicati icon",
+    "icon_fallback_url": "/static/icons/generated/duplicati.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DU",
+      "domain": "duplicati.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 328,
+    "slug": "restic",
+    "name": "Restic",
+    "description": "Restic is a backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://restic.net",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/restic.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Restic icon",
+    "icon_fallback_url": "/static/icons/generated/restic.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "restic.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 346,
+    "slug": "borgbackup",
+    "name": "BorgBackup",
+    "description": "BorgBackup is a backup tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Backup",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://borgbackup.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Backup",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/borgbackup.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "BorgBackup icon",
+    "icon_fallback_url": "/static/icons/generated/borgbackup.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BO",
+      "domain": "borgbackup.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 364,
+    "slug": "rclone",
+    "name": "Rclone",
+    "description": "Rclone is a file sync tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Sync",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://rclone.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Sync",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rclone.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Rclone icon",
+    "icon_fallback_url": "/static/icons/generated/rclone.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RC",
+      "domain": "rclone.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 382,
+    "slug": "freefilesync",
+    "name": "FreeFileSync",
+    "description": "FreeFileSync is a file sync tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Sync",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://freefilesync.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Sync",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/freefilesync.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "FreeFileSync icon",
+    "icon_fallback_url": "/static/icons/generated/freefilesync.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FR",
+      "domain": "freefilesync.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 400,
+    "slug": "resilio-sync",
+    "name": "Resilio Sync",
+    "description": "Resilio Sync is a file sync tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Sync",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://resilio.com/sync",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Sync",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/resilio-sync.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Resilio Sync icon",
+    "icon_fallback_url": "/static/icons/generated/resilio-sync.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RS",
+      "domain": "resilio.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 418,
+    "slug": "cyberduck",
+    "name": "Cyberduck",
+    "description": "Cyberduck is a file transfer tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Transfer",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://cyberduck.io",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Transfer",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cyberduck.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cyberduck icon",
+    "icon_fallback_url": "/static/icons/generated/cyberduck.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CY",
+      "domain": "cyberduck.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 436,
+    "slug": "filezilla",
+    "name": "FileZilla",
+    "description": "FileZilla is a file transfer tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Transfer",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://filezilla-project.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Transfer",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/filezilla.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "FileZilla icon",
+    "icon_fallback_url": "/static/icons/generated/filezilla.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FI",
+      "domain": "filezilla-project.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 454,
+    "slug": "winscp",
+    "name": "WinSCP",
+    "description": "WinSCP is a file transfer tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Transfer",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://winscp.net",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Transfer",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/winscp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "WinSCP icon",
+    "icon_fallback_url": "/static/icons/generated/winscp.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WI",
+      "domain": "winscp.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 472,
+    "slug": "transmit",
+    "name": "Transmit",
+    "description": "Transmit is a file transfer tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Transfer",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://panic.com/transmit",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Transfer",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/transmit.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Transmit icon",
+    "icon_fallback_url": "/static/icons/generated/transmit.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TR",
+      "domain": "panic.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 490,
+    "slug": "forklift",
+    "name": "ForkLift",
+    "description": "ForkLift is a file transfer tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "File Transfer",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://binarynights.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "File Transfer",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/forklift.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "ForkLift icon",
+    "icon_fallback_url": "/static/icons/generated/forklift.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FO",
+      "domain": "binarynights.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 508,
+    "slug": "cloudflare-r2",
+    "name": "Cloudflare R2",
+    "description": "Cloudflare R2 is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://cloudflare.com/products/r2",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cloudflare-r2.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cloudflare R2 icon",
+    "icon_fallback_url": "/static/icons/generated/cloudflare-r2.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CR",
+      "domain": "cloudflare.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 526,
+    "slug": "amazon-s3",
+    "name": "Amazon S3",
+    "description": "Amazon S3 is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://aws.amazon.com/s3",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/amazon-s3.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Amazon S3 icon",
+    "icon_fallback_url": "/static/icons/generated/amazon-s3.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AS",
+      "domain": "aws.amazon.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 544,
+    "slug": "google-cloud-storage",
+    "name": "Google Cloud Storage",
+    "description": "Google Cloud Storage is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://cloud.google.com/storage",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-cloud-storage.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Cloud Storage icon",
+    "icon_fallback_url": "/static/icons/generated/google-cloud-storage.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GC",
+      "domain": "cloud.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 562,
+    "slug": "azure-blob-storage",
+    "name": "Azure Blob Storage",
+    "description": "Azure Blob Storage is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://azure.microsoft.com/products/storage/blobs",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/azure-blob-storage.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Azure Blob Storage icon",
+    "icon_fallback_url": "/static/icons/generated/azure-blob-storage.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AB",
+      "domain": "azure.microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 580,
+    "slug": "minio",
+    "name": "MinIO",
+    "description": "MinIO is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://min.io",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/minio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MinIO icon",
+    "icon_fallback_url": "/static/icons/generated/minio.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MI",
+      "domain": "min.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 598,
+    "slug": "wasabi",
+    "name": "Wasabi",
+    "description": "Wasabi is a object storage tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Object Storage",
+      "Cloud",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://wasabi.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Object Storage",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/wasabi.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Wasabi icon",
+    "icon_fallback_url": "/static/icons/generated/wasabi.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WA",
+      "domain": "wasabi.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

@@ -407,3 +407,28 @@
 
 ### Note
 - Primary Simple Icons URLs remain in place where configured. The new local cache is the reliable fallback and reduces dependence on third-party favicon services.
+
+## v1.0.2 - Modular catalog foundation (Phase 1)
+
+- Added a category-based catalog source under `data/catalog/` with a deterministic manifest.
+- Added a strict catalog loader with path traversal protection and JSON parsing errors.
+- Added cross-file duplicate checks for IDs, slugs, names and exact website URLs.
+- Added publication and verification states without falsely marking legacy records as verified.
+- Added source-reference fields for future evidence-based data reviews.
+- Added canonical taxonomy files, a JSON Schema document and generated lookup indexes.
+- Updated database bootstrap and JSON-to-SQLite migration to read the modular catalog source.
+- Added catalog build, validation and 100/1,000/5,000/10,000-record benchmark scripts.
+- Added large-catalog candidate prefiltering to the existing search ranking pipeline.
+
+### v1.0.2 Phase 2
+- Added official-source taxonomy and claim-level evidence requirements.
+- Added strict publication-readiness auditing and evidence freshness warnings.
+- Added deterministic verification batch generation for editorial review.
+- Strengthened JSON Schema and catalog validation for source references.
+
+## v1.0.2 Final Release
+
+- Added consolidated `validate_release_v102.py` release gate.
+- Added `run_atlasfind.bat`, `test_release.bat`, and Turkish start instructions.
+- Finalized modular catalog, evidence audit, compatibility build, and scale-test tooling.
+- Preserved honest catalog state: 5 strict verified records and 595 pending records.

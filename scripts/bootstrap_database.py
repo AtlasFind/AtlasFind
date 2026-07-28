@@ -23,9 +23,9 @@ def tool_count() -> int:
 
 
 def expected_tool_count() -> int:
-    source = ROOT / "data" / "tools.json"
     try:
-        return len(json.loads(source.read_text(encoding="utf-8")))
+        from catalog.loader import load_catalog
+        return len(load_catalog(validate=True))
     except (OSError, ValueError, TypeError):
         return 0
 

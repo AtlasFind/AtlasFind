@@ -1,0 +1,2841 @@
+[
+  {
+    "id": 118,
+    "slug": "steam",
+    "name": "Steam",
+    "description": "Steam is a game stores tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Stores",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://store.steampowered.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Stores",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/steam.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Steam icon",
+    "icon_fallback_url": "/static/icons/generated/steam.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "internal-consistency-pilot",
+      "reviewed_at": "2026-07-28",
+      "note": "Core fields were checked for internal consistency. Live pricing, platform support and feature availability still require confirmation on the official website."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ST",
+      "domain": "store.steampowered.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 136,
+    "slug": "epic-games-store",
+    "name": "Epic Games Store",
+    "description": "Epic Games Store is a game stores tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Stores",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://store.epicgames.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Stores",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/epic-games-store.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Epic Games Store icon",
+    "icon_fallback_url": "/static/icons/generated/epic-games-store.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EG",
+      "domain": "store.epicgames.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 154,
+    "slug": "gog-galaxy",
+    "name": "GOG Galaxy",
+    "description": "GOG Galaxy is a game stores tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Stores",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gog.com/galaxy",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Stores",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gog-galaxy.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GOG Galaxy icon",
+    "icon_fallback_url": "/static/icons/generated/gog-galaxy.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GG",
+      "domain": "gog.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 172,
+    "slug": "itch-io",
+    "name": "itch.io",
+    "description": "itch.io is a game stores tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Stores",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://itch.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Stores",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/itch-io.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "itch.io icon",
+    "icon_fallback_url": "/static/icons/generated/itch-io.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "II",
+      "domain": "itch.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 190,
+    "slug": "ea-app",
+    "name": "EA app",
+    "description": "EA app is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ea.com/ea-app",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ea-app.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "EA app icon",
+    "icon_fallback_url": "/static/icons/generated/ea-app.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EA",
+      "domain": "ea.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 208,
+    "slug": "ubisoft-connect",
+    "name": "Ubisoft Connect",
+    "description": "Ubisoft Connect is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ubisoftconnect.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ubisoft-connect.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ubisoft Connect icon",
+    "icon_fallback_url": "/static/icons/generated/ubisoft-connect.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "UC",
+      "domain": "ubisoftconnect.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 226,
+    "slug": "battle-net",
+    "name": "Battle.net",
+    "description": "Battle.net is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://battle.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/battle-net.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Battle.net icon",
+    "icon_fallback_url": "/static/icons/generated/battle-net.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BN",
+      "domain": "battle.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 244,
+    "slug": "xbox-app",
+    "name": "Xbox app",
+    "description": "Xbox app is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://xbox.com/apps/xbox-app-for-pc",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/xbox-app.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Xbox app icon",
+    "icon_fallback_url": "/static/icons/generated/xbox-app.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "XA",
+      "domain": "xbox.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 262,
+    "slug": "playnite",
+    "name": "Playnite",
+    "description": "Playnite is a game libraries tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Libraries",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://playnite.link",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Libraries",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/playnite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Playnite icon",
+    "icon_fallback_url": "/static/icons/generated/playnite.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PL",
+      "domain": "playnite.link",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 280,
+    "slug": "heroic-games-launcher",
+    "name": "Heroic Games Launcher",
+    "description": "Heroic Games Launcher is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://heroicgameslauncher.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/heroic-games-launcher.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Heroic Games Launcher icon",
+    "icon_fallback_url": "/static/icons/generated/heroic-games-launcher.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HG",
+      "domain": "heroicgameslauncher.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 298,
+    "slug": "lutris",
+    "name": "Lutris",
+    "description": "Lutris is a game launchers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://lutris.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Launchers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/lutris.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Lutris icon",
+    "icon_fallback_url": "/static/icons/generated/lutris.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LU",
+      "domain": "lutris.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 316,
+    "slug": "retroarch",
+    "name": "RetroArch",
+    "description": "RetroArch is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://retroarch.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/retroarch.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "RetroArch icon",
+    "icon_fallback_url": "/static/icons/generated/retroarch.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "retroarch.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 334,
+    "slug": "dolphin-emulator",
+    "name": "Dolphin Emulator",
+    "description": "Dolphin Emulator is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://dolphin-emu.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dolphin-emulator.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dolphin Emulator icon",
+    "icon_fallback_url": "/static/icons/generated/dolphin-emulator.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DE",
+      "domain": "dolphin-emu.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 352,
+    "slug": "pcsx2",
+    "name": "PCSX2",
+    "description": "PCSX2 is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://pcsx2.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pcsx2.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PCSX2 icon",
+    "icon_fallback_url": "/static/icons/generated/pcsx2.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PC",
+      "domain": "pcsx2.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 370,
+    "slug": "ppsspp",
+    "name": "PPSSPP",
+    "description": "PPSSPP is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ppsspp.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ppsspp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PPSSPP icon",
+    "icon_fallback_url": "/static/icons/generated/ppsspp.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PP",
+      "domain": "ppsspp.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 388,
+    "slug": "rpcs3",
+    "name": "RPCS3",
+    "description": "RPCS3 is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://rpcs3.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rpcs3.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "RPCS3 icon",
+    "icon_fallback_url": "/static/icons/generated/rpcs3.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RP",
+      "domain": "rpcs3.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 406,
+    "slug": "cemu",
+    "name": "Cemu",
+    "description": "Cemu is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://cemu.info",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cemu.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cemu icon",
+    "icon_fallback_url": "/static/icons/generated/cemu.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CE",
+      "domain": "cemu.info",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 424,
+    "slug": "ryujinx",
+    "name": "Ryujinx",
+    "description": "Ryujinx is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ryujinx.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ryujinx.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ryujinx icon",
+    "icon_fallback_url": "/static/icons/generated/ryujinx.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RY",
+      "domain": "ryujinx.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 442,
+    "slug": "mame",
+    "name": "MAME",
+    "description": "MAME is a emulation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Emulation",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://mamedev.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Emulation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mame.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MAME icon",
+    "icon_fallback_url": "/static/icons/generated/mame.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MA",
+      "domain": "mamedev.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 460,
+    "slug": "moonlight",
+    "name": "Moonlight",
+    "description": "Moonlight is a game streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Streaming",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://moonlight-stream.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/moonlight.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Moonlight icon",
+    "icon_fallback_url": "/static/icons/generated/moonlight.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MO",
+      "domain": "moonlight-stream.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 478,
+    "slug": "parsec",
+    "name": "Parsec",
+    "description": "Parsec is a remote gaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Remote Gaming",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://parsec.app",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Remote Gaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/parsec.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Parsec icon",
+    "icon_fallback_url": "/static/icons/generated/parsec.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PA",
+      "domain": "parsec.app",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 496,
+    "slug": "sunshine",
+    "name": "Sunshine",
+    "description": "Sunshine is a game streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Streaming",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://app.lizardbyte.dev/Sunshine",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Game Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sunshine.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sunshine icon",
+    "icon_fallback_url": "/static/icons/generated/sunshine.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SU",
+      "domain": "app.lizardbyte.dev",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 514,
+    "slug": "geforce-now",
+    "name": "GeForce NOW",
+    "description": "GeForce NOW is a cloud gaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Cloud Gaming",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://nvidia.com/geforce-now",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Gaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/geforce-now.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GeForce NOW icon",
+    "icon_fallback_url": "/static/icons/generated/geforce-now.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GN",
+      "domain": "nvidia.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 532,
+    "slug": "xbox-cloud-gaming",
+    "name": "Xbox Cloud Gaming",
+    "description": "Xbox Cloud Gaming is a cloud gaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Cloud Gaming",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://xbox.com/cloud-gaming",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Cloud Gaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/xbox-cloud-gaming.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Xbox Cloud Gaming icon",
+    "icon_fallback_url": "/static/icons/generated/xbox-cloud-gaming.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "XC",
+      "domain": "xbox.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 550,
+    "slug": "plex",
+    "name": "Plex",
+    "description": "Plex is a media servers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Media Servers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://plex.tv",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Media Servers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/plex.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Plex icon",
+    "icon_fallback_url": "/static/icons/generated/plex.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PL",
+      "domain": "plex.tv",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 568,
+    "slug": "jellyfin",
+    "name": "Jellyfin",
+    "description": "Jellyfin is a media servers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Media Servers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jellyfin.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Media Servers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/jellyfin.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Jellyfin icon",
+    "icon_fallback_url": "/static/icons/generated/jellyfin.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "JE",
+      "domain": "jellyfin.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 586,
+    "slug": "emby",
+    "name": "Emby",
+    "description": "Emby is a media servers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Media Servers",
+      "Gaming",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://emby.media",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Media Servers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/emby.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Emby icon",
+    "icon_fallback_url": "/static/icons/generated/emby.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EM",
+      "domain": "emby.media",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

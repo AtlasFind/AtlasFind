@@ -1,0 +1,2888 @@
+[
+  {
+    "id": 113,
+    "slug": "quickbooks",
+    "name": "QuickBooks",
+    "description": "QuickBooks is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://quickbooks.intuit.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/quickbooks.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "QuickBooks icon",
+    "icon_fallback_url": "/static/icons/generated/quickbooks.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "QU",
+      "domain": "quickbooks.intuit.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 131,
+    "slug": "xero",
+    "name": "Xero",
+    "description": "Xero is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://xero.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/xero.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Xero icon",
+    "icon_fallback_url": "/static/icons/generated/xero.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "XE",
+      "domain": "xero.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 149,
+    "slug": "freshbooks",
+    "name": "FreshBooks",
+    "description": "FreshBooks is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://freshbooks.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/freshbooks.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "FreshBooks icon",
+    "icon_fallback_url": "/static/icons/generated/freshbooks.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FR",
+      "domain": "freshbooks.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 167,
+    "slug": "wave-accounting",
+    "name": "Wave Accounting",
+    "description": "Wave Accounting is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://waveapps.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/wave-accounting.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Wave Accounting icon",
+    "icon_fallback_url": "/static/icons/generated/wave-accounting.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WA",
+      "domain": "waveapps.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 185,
+    "slug": "zoho-books",
+    "name": "Zoho Books",
+    "description": "Zoho Books is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://zoho.com/books",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/zoho-books.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Zoho Books icon",
+    "icon_fallback_url": "/static/icons/generated/zoho-books.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ZB",
+      "domain": "zoho.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 203,
+    "slug": "sage-accounting",
+    "name": "Sage Accounting",
+    "description": "Sage Accounting is a accounting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sage.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Accounting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sage-accounting.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sage Accounting icon",
+    "icon_fallback_url": "/static/icons/generated/sage-accounting.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SA",
+      "domain": "sage.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 221,
+    "slug": "odoo",
+    "name": "Odoo",
+    "description": "Odoo is a business management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Business Management",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://odoo.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Business Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/odoo.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Odoo icon",
+    "icon_fallback_url": "/static/icons/generated/odoo.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OD",
+      "domain": "odoo.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 239,
+    "slug": "erpnext",
+    "name": "ERPNext",
+    "description": "ERPNext is a business management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Business Management",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://erpnext.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Business Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/erpnext.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "ERPNext icon",
+    "icon_fallback_url": "/static/icons/generated/erpnext.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ER",
+      "domain": "erpnext.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 257,
+    "slug": "sap-business-one",
+    "name": "SAP Business One",
+    "description": "SAP Business One is a erp tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "ERP",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sap.com/products/erp/business-one.html",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "ERP",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sap-business-one.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SAP Business One icon",
+    "icon_fallback_url": "/static/icons/generated/sap-business-one.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SB",
+      "domain": "sap.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 275,
+    "slug": "oracle-netsuite",
+    "name": "Oracle NetSuite",
+    "description": "Oracle NetSuite is a erp tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "ERP",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://netsuite.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "ERP",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/oracle-netsuite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Oracle NetSuite icon",
+    "icon_fallback_url": "/static/icons/generated/oracle-netsuite.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ON",
+      "domain": "netsuite.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 293,
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "description": "Salesforce is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://salesforce.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/salesforce.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Salesforce icon",
+    "icon_fallback_url": "/static/icons/generated/salesforce.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SA",
+      "domain": "salesforce.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 311,
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "description": "Pipedrive is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://pipedrive.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pipedrive.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Pipedrive icon",
+    "icon_fallback_url": "/static/icons/generated/pipedrive.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PI",
+      "domain": "pipedrive.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 329,
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "description": "Zoho CRM is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://zoho.com/crm",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/zoho-crm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Zoho CRM icon",
+    "icon_fallback_url": "/static/icons/generated/zoho-crm.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ZC",
+      "domain": "zoho.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 347,
+    "slug": "freshsales",
+    "name": "Freshsales",
+    "description": "Freshsales is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://freshworks.com/crm",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/freshsales.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Freshsales icon",
+    "icon_fallback_url": "/static/icons/generated/freshsales.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FR",
+      "domain": "freshworks.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 365,
+    "slug": "copper",
+    "name": "Copper",
+    "description": "Copper is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://copper.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/copper.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Copper icon",
+    "icon_fallback_url": "/static/icons/generated/copper.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CO",
+      "domain": "copper.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 383,
+    "slug": "insightly",
+    "name": "Insightly",
+    "description": "Insightly is a crm tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "CRM",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://insightly.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "CRM",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/insightly.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Insightly icon",
+    "icon_fallback_url": "/static/icons/generated/insightly.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IN",
+      "domain": "insightly.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 401,
+    "slug": "stripe",
+    "name": "Stripe",
+    "description": "Stripe is a payments tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Payments",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://stripe.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Payments",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/stripe.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Stripe icon",
+    "icon_fallback_url": "/static/icons/generated/stripe.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ST",
+      "domain": "stripe.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 419,
+    "slug": "paypal",
+    "name": "PayPal",
+    "description": "PayPal is a payments tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Payments",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://paypal.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Payments",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/paypal.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PayPal icon",
+    "icon_fallback_url": "/static/icons/generated/paypal.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PA",
+      "domain": "paypal.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 437,
+    "slug": "square",
+    "name": "Square",
+    "description": "Square is a payments tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Payments",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://squareup.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Payments",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/square.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Square icon",
+    "icon_fallback_url": "/static/icons/generated/square.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SQ",
+      "domain": "squareup.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 455,
+    "slug": "wise",
+    "name": "Wise",
+    "description": "Wise is a payments tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Payments",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://wise.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Payments",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/wise.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Wise icon",
+    "icon_fallback_url": "/static/icons/generated/wise.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WI",
+      "domain": "wise.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 473,
+    "slug": "revolut",
+    "name": "Revolut",
+    "description": "Revolut is a finance tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Finance",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://revolut.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Finance",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/revolut.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Revolut icon",
+    "icon_fallback_url": "/static/icons/generated/revolut.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "revolut.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 491,
+    "slug": "expensify",
+    "name": "Expensify",
+    "description": "Expensify is a expense management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Expense Management",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://expensify.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Expense Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/expensify.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Expensify icon",
+    "icon_fallback_url": "/static/icons/generated/expensify.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EX",
+      "domain": "expensify.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 509,
+    "slug": "ramp",
+    "name": "Ramp",
+    "description": "Ramp is a expense management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Expense Management",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ramp.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Expense Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ramp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ramp icon",
+    "icon_fallback_url": "/static/icons/generated/ramp.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RA",
+      "domain": "ramp.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 527,
+    "slug": "brex",
+    "name": "Brex",
+    "description": "Brex is a expense management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Expense Management",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://brex.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Expense Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/brex.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Brex icon",
+    "icon_fallback_url": "/static/icons/generated/brex.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BR",
+      "domain": "brex.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 545,
+    "slug": "gnucash",
+    "name": "GnuCash",
+    "description": "GnuCash is a personal finance tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Personal Finance",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gnucash.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Personal Finance",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gnucash.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GnuCash icon",
+    "icon_fallback_url": "/static/icons/generated/gnucash.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GN",
+      "domain": "gnucash.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 563,
+    "slug": "homebank",
+    "name": "HomeBank",
+    "description": "HomeBank is a personal finance tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Personal Finance",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gethomebank.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Personal Finance",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/homebank.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "HomeBank icon",
+    "icon_fallback_url": "/static/icons/generated/homebank.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HO",
+      "domain": "gethomebank.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 581,
+    "slug": "money-manager-ex",
+    "name": "Money Manager Ex",
+    "description": "Money Manager Ex is a personal finance tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Personal Finance",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://moneymanagerex.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Personal Finance",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/money-manager-ex.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Money Manager Ex icon",
+    "icon_fallback_url": "/static/icons/generated/money-manager-ex.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MM",
+      "domain": "moneymanagerex.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 599,
+    "slug": "ynab",
+    "name": "YNAB",
+    "description": "YNAB is a budgeting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Finance and Business",
+    "tags": [
+      "Budgeting",
+      "Finance",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ynab.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Budgeting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ynab.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "YNAB icon",
+    "icon_fallback_url": "/static/icons/generated/ynab.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "YN",
+      "domain": "ynab.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

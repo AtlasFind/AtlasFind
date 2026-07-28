@@ -295,10 +295,44 @@ def calculate_search_score(tool: dict, search_query: str, detected_needs: list[s
     return score_tool(tool, search_query, detected_needs)["score"]
 
 
+
+def _candidate_tools(tools: list[dict], search_query: str, needs: list[str]) -> list[dict]:
+    """Cheaply reduce large catalogs before applying the detailed scoring model."""
+    if len(tools) < 750:
+        return tools
+    tokens = expand_tokens(search_query)
+    if not tokens and not needs:
+        return tools
+    candidates = []
+    for tool in tools:
+        blob = normalize_text(" ".join([
+            str(tool.get("name", "")),
+            str(tool.get("slug", "")),
+            str(tool.get("category", "")),
+            str(tool.get("subcategory", "")),
+            " ".join(map(str, tool.get("tags", []))),
+            " ".join(map(str, tool.get("platforms", []))),
+            " ".join(map(str, tool.get("target_users", []))),
+        ]))
+        if any(token in blob for token in tokens):
+            candidates.append(tool)
+            continue
+        if "free" in needs and tool.get("pricing_type") == "free":
+            candidates.append(tool)
+        elif "open_source" in needs and tool.get("open_source"):
+            candidates.append(tool)
+        elif "offline" in needs and tool.get("offline"):
+            candidates.append(tool)
+        elif "ai" in needs and tool.get("ai_powered"):
+            candidates.append(tool)
+    return candidates or tools
+
 def rank_tools(tools: list[dict], search_query: str) -> tuple[list[dict], dict]:
     started = perf_counter()
     corrected_query = correct_query(search_query, tools)
     needs = detect_search_needs(corrected_query)
+    source_count = len(tools)
+    tools = _candidate_tools(tools, corrected_query, needs)
     ranked = []
     seen: set[str] = set()
     for tool in tools:
@@ -320,6 +354,8 @@ def rank_tools(tools: list[dict], search_query: str) -> tuple[list[dict], dict]:
         "did_correct": corrected_query != normalize_text(search_query),
         "duration_ms": duration_ms,
         "result_count": len(ranked),
+        "candidate_count": len(tools),
+        "source_count": source_count,
     }
 
 

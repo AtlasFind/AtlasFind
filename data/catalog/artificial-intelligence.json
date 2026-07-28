@@ -1,0 +1,4162 @@
+[
+  {
+    "id": 1,
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "description": "OpenAI AI assistant for conversation, writing, coding, image creation, file analysis, research and other knowledge-work tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Writing",
+      "Coding",
+      "Research"
+    ],
+    "pricing": "Freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://chatgpt.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Free plan is available",
+      "Works on web, desktop and mobile platforms",
+      "Supports writing, coding, image creation and file-based work",
+      "Business plans include administrative and privacy controls",
+      "Broad general-purpose workflow coverage"
+    ],
+    "cons": [
+      "Outputs can be incorrect and require human verification",
+      "Usage limits and model availability vary by plan",
+      "Most capabilities require an internet connection"
+    ],
+    "target_users": [
+      "Individuals",
+      "Students",
+      "Developers",
+      "Writers and researchers",
+      "Teams and enterprises"
+    ],
+    "system_requirements": [
+      "Modern supported web browser and internet connection",
+      "Supported Windows or macOS device for the desktop app",
+      "Supported Android or iOS device for the mobile app"
+    ],
+    "pricing_details": {
+      "model": "Free and paid subscription plans",
+      "starting_price": 0,
+      "currency": "USD",
+      "free_plan": true,
+      "trial": false,
+      "billing": "Monthly subscription options are available; business and enterprise terms vary",
+      "note": "Plan names, limits and prices can change. The official pricing page is the source of truth."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-07-29",
+      "note": "Core identity, description, category, platform and pricing claims were checked against official first-party sources."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "AI Assistants",
+    "popularity_score": 0,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-29",
+      "last_updated_at": "2026-07-29",
+      "next_check_at": "2026-10-27",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-29",
+        "type": "data-review",
+        "summary": "Listing verified against official first-party sources for AtlasFind v1.0.2 Phase 3.",
+        "changes": [
+          "Replaced generic catalog copy",
+          "Added official evidence references",
+          "Removed seed rating from public data"
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/chatgpt.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "ChatGPT icon",
+    "icon_fallback_url": "/static/icons/generated/chatgpt.svg",
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "official-source-review",
+      "reviewed_at": "2026-07-29",
+      "note": "Verified from official first-party pages. Time-sensitive prices and platform availability require periodic re-checking."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CH",
+      "domain": "chatgpt.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "ChatGPT official product",
+        "url": "https://chatgpt.com/",
+        "checked_at": "2026-07-29",
+        "type": "official-homepage",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ],
+        "domain": "chatgpt.com"
+      },
+      {
+        "label": "ChatGPT pricing",
+        "url": "https://openai.com/chatgpt/pricing/",
+        "checked_at": "2026-07-29",
+        "type": "official-pricing",
+        "claims": [
+          "pricing",
+          "features"
+        ],
+        "domain": "openai.com"
+      },
+      {
+        "label": "ChatGPT downloads",
+        "url": "https://chatgpt.com/download/",
+        "checked_at": "2026-07-29",
+        "type": "official-store",
+        "claims": [
+          "platforms"
+        ],
+        "domain": "chatgpt.com"
+      },
+      {
+        "label": "OpenAI enterprise privacy",
+        "url": "https://openai.com/enterprise-privacy/",
+        "checked_at": "2026-07-29",
+        "type": "official-security",
+        "claims": [
+          "security",
+          "privacy"
+        ],
+        "domain": "openai.com"
+      }
+    ],
+    "company_info": {
+      "developer": "OpenAI",
+      "company": "OpenAI",
+      "country": "United States"
+    },
+    "editor_summary": "A general-purpose assistant with broad consumer and business use, available across major device categories.",
+    "use_cases": [
+      "Drafting and rewriting",
+      "Programming assistance",
+      "Image creation",
+      "Document and file analysis",
+      "Research and information synthesis",
+      "Voice-based interaction"
+    ],
+    "technical_capabilities": {
+      "file_uploads": true,
+      "image_generation": true,
+      "web_access": true,
+      "desktop_apps": true,
+      "mobile_apps": true,
+      "api_separate_product": true,
+      "offline": false
+    },
+    "official_links": {
+      "website": "https://chatgpt.com/",
+      "pricing": "https://openai.com/chatgpt/pricing/",
+      "download": "https://chatgpt.com/download/",
+      "help": "https://help.openai.com/",
+      "privacy": "https://openai.com/policies/privacy-policy/",
+      "enterprise_privacy": "https://openai.com/enterprise-privacy/"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "claude",
+    "name": "Claude",
+    "description": "Anthropic AI assistant for writing, analysis, coding, research, document work and collaborative productivity.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Writing",
+      "Coding",
+      "Documents"
+    ],
+    "pricing": "Freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://claude.ai",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Free plan is available",
+      "Native applications are available for major desktop and mobile platforms",
+      "Strong support for document-oriented and writing workflows",
+      "Paid tiers cover individuals, teams and enterprises",
+      "Integrates with several workplace applications"
+    ],
+    "cons": [
+      "Usage limits and features vary by plan",
+      "Requires an internet connection for core use",
+      "AI-generated output still requires human checking"
+    ],
+    "target_users": [
+      "Individuals",
+      "Writers and researchers",
+      "Developers",
+      "Teams",
+      "Enterprise organizations"
+    ],
+    "system_requirements": [
+      "Modern web browser and internet connection",
+      "Supported Windows or macOS device for desktop applications",
+      "Supported Android or iOS device for mobile applications"
+    ],
+    "pricing_details": {
+      "model": "Free, Pro, Max, Team and Enterprise plans",
+      "starting_price": 0,
+      "currency": "USD",
+      "free_plan": true,
+      "trial": false,
+      "billing": "Monthly and annual options vary by plan",
+      "note": "The official pricing page lists current plan names and prices; regional availability can vary."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-07-29",
+      "note": "Core identity, description, category, platform and pricing claims were checked against official first-party sources."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "AI Assistants",
+    "popularity_score": 0,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-29",
+      "last_updated_at": "2026-07-29",
+      "next_check_at": "2026-10-27",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-29",
+        "type": "data-review",
+        "summary": "Listing verified against official first-party sources for AtlasFind v1.0.2 Phase 3.",
+        "changes": [
+          "Replaced generic catalog copy",
+          "Added official evidence references",
+          "Removed seed rating from public data"
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/claude.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Claude icon",
+    "icon_fallback_url": "/static/icons/generated/claude.svg",
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "official-source-review",
+      "reviewed_at": "2026-07-29",
+      "note": "Verified from official first-party pages. Time-sensitive prices and platform availability require periodic re-checking."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CL",
+      "domain": "claude.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Claude official product",
+        "url": "https://claude.ai/",
+        "checked_at": "2026-07-29",
+        "type": "official-homepage",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ],
+        "domain": "claude.ai"
+      },
+      {
+        "label": "Claude plans and pricing",
+        "url": "https://www.anthropic.com/pricing",
+        "checked_at": "2026-07-29",
+        "type": "official-pricing",
+        "claims": [
+          "pricing",
+          "features"
+        ],
+        "domain": "www.anthropic.com"
+      },
+      {
+        "label": "Claude downloads",
+        "url": "https://claude.com/download",
+        "checked_at": "2026-07-29",
+        "type": "official-store",
+        "claims": [
+          "platforms",
+          "integrations"
+        ],
+        "domain": "claude.com"
+      },
+      {
+        "label": "Anthropic Privacy Center",
+        "url": "https://privacy.anthropic.com/",
+        "checked_at": "2026-07-29",
+        "type": "official-legal",
+        "claims": [
+          "security",
+          "privacy"
+        ],
+        "domain": "privacy.anthropic.com"
+      }
+    ],
+    "company_info": {
+      "developer": "Anthropic",
+      "company": "Anthropic PBC",
+      "country": "United States"
+    },
+    "editor_summary": "A general-purpose AI assistant with consumer, professional and enterprise plans and a growing set of workplace integrations.",
+    "use_cases": [
+      "Writing and editing",
+      "Document analysis",
+      "Programming assistance",
+      "Research",
+      "Project organization",
+      "Workplace productivity"
+    ],
+    "technical_capabilities": {
+      "file_uploads": true,
+      "desktop_apps": true,
+      "mobile_apps": true,
+      "browser_extension": true,
+      "workplace_integrations": true,
+      "api_separate_product": true,
+      "offline": false
+    },
+    "official_links": {
+      "website": "https://claude.ai/",
+      "pricing": "https://www.anthropic.com/pricing",
+      "download": "https://claude.com/download",
+      "privacy": "https://privacy.anthropic.com/",
+      "documentation": "https://docs.anthropic.com/"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "gemini",
+    "name": "Gemini",
+    "description": "Google's AI assistant for text, images, research and productivity.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Assistant",
+      "Google",
+      "Research",
+      "Multimodal"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://gemini.google.com",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Image Generation",
+    "popularity_score": 88,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gemini.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Gemini icon",
+    "icon_fallback_url": "/static/icons/generated/gemini.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GE",
+      "domain": "gemini.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 4,
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "description": "AI-powered search and research assistant with source-oriented answers.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Search",
+      "Research",
+      "Sources",
+      "Assistant"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.perplexity.ai",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Research Assistants",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/perplexity.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Perplexity icon",
+    "icon_fallback_url": "/static/icons/generated/perplexity.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PE",
+      "domain": "perplexity.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 5,
+    "slug": "ollama",
+    "name": "Ollama",
+    "description": "Run and manage large language models locally from a simple command-line interface.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "LLM",
+      "Privacy",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://ollama.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": [],
+    "subcategory": "Local AI",
+    "popularity_score": 91,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ollama.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ollama icon",
+    "icon_fallback_url": "/static/icons/generated/ollama.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OL",
+      "domain": "ollama.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 6,
+    "slug": "lm-studio",
+    "name": "LM Studio",
+    "description": "Desktop application for downloading, running and testing local language models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "LLM",
+      "Desktop",
+      "Privacy"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://lmstudio.ai",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": [],
+    "subcategory": "Local AI",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/lm-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "LM Studio icon",
+    "icon_fallback_url": "/static/icons/generated/lm-studio.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LS",
+      "domain": "lmstudio.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 7,
+    "slug": "jan",
+    "name": "Jan",
+    "description": "Open-source desktop assistant for running AI models locally.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Local AI",
+      "Open Source",
+      "Privacy",
+      "Desktop"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://jan.ai",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": [],
+    "subcategory": "Local AI",
+    "popularity_score": 86,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/jan.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Jan icon",
+    "icon_fallback_url": "/static/icons/generated/jan.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "JA",
+      "domain": "jan.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 8,
+    "slug": "open-webui",
+    "name": "Open WebUI",
+    "description": "Self-hosted web interface for local and remote AI models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Self Hosted",
+      "Local AI",
+      "Open Source",
+      "Web UI"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://openwebui.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": [],
+    "subcategory": "Local AI",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/open-webui.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Open WebUI icon",
+    "icon_fallback_url": "/static/icons/generated/open-webui.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OW",
+      "domain": "openwebui.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 9,
+    "slug": "anythingllm",
+    "name": "AnythingLLM",
+    "description": "Private AI workspace for chatting with documents and local models.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Documents",
+      "RAG",
+      "Local AI",
+      "Privacy"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://anythingllm.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 8,
+    "system_level": "heavy",
+    "languages": [],
+    "subcategory": "Local AI",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/anythingllm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "AnythingLLM icon",
+    "icon_fallback_url": "/static/icons/generated/anythingllm.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AN",
+      "domain": "anythingllm.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 10,
+    "slug": "hugging-face",
+    "name": "Hugging Face",
+    "description": "Platform for discovering, sharing and deploying machine learning models and datasets.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI",
+      "Models",
+      "Datasets",
+      "Developer",
+      "Machine Learning"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://huggingface.co",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Broad task coverage",
+      "Useful for drafting and ideation",
+      "Works across common devices"
+    ],
+    "cons": [
+      "Results still require human review",
+      "Advanced features may require a paid plan"
+    ],
+    "target_users": [
+      "Writers and researchers",
+      "Developers and technical teams",
+      "Students and knowledge workers"
+    ],
+    "system_requirements": [
+      "Modern web browser and internet connection",
+      "Supported desktop or mobile app where available"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Artificial Intelligence Tools",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/hugging-face.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Hugging Face icon",
+    "icon_fallback_url": "/static/icons/generated/hugging-face.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HF",
+      "domain": "huggingface.co",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 101,
+    "slug": "microsoft-copilot",
+    "name": "Microsoft Copilot",
+    "description": "Microsoft Copilot is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://copilot.microsoft.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-copilot.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft Copilot icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-copilot.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MC",
+      "domain": "copilot.microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 119,
+    "slug": "poe",
+    "name": "Poe",
+    "description": "Poe is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://poe.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/poe.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Poe icon",
+    "icon_fallback_url": "/static/icons/generated/poe.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PO",
+      "domain": "poe.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 137,
+    "slug": "you-com",
+    "name": "You.com",
+    "description": "You.com is a ai search tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Search",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://you.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Search",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/you-com.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "You.com icon",
+    "icon_fallback_url": "/static/icons/generated/you-com.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "YC",
+      "domain": "you.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 155,
+    "slug": "mistral-le-chat",
+    "name": "Mistral Le Chat",
+    "description": "Mistral Le Chat is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://chat.mistral.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mistral-le-chat.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Mistral Le Chat icon",
+    "icon_fallback_url": "/static/icons/generated/mistral-le-chat.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ML",
+      "domain": "chat.mistral.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 173,
+    "slug": "deepseek",
+    "name": "DeepSeek",
+    "description": "DeepSeek is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://deepseek.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/deepseek.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DeepSeek icon",
+    "icon_fallback_url": "/static/icons/generated/deepseek.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DE",
+      "domain": "deepseek.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 191,
+    "slug": "meta-ai",
+    "name": "Meta AI",
+    "description": "Meta AI is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://meta.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/meta-ai.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Meta AI icon",
+    "icon_fallback_url": "/static/icons/generated/meta-ai.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MA",
+      "domain": "meta.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 209,
+    "slug": "pi",
+    "name": "Pi",
+    "description": "Pi is a ai assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://pi.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pi.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Pi icon",
+    "icon_fallback_url": "/static/icons/generated/pi.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PI",
+      "domain": "pi.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 227,
+    "slug": "character-ai",
+    "name": "Character.AI",
+    "description": "Character.AI is a ai chat tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Chat",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://character.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Chat",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/character-ai.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Character.AI icon",
+    "icon_fallback_url": "/static/icons/generated/character-ai.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CA",
+      "domain": "character.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 245,
+    "slug": "replika",
+    "name": "Replika",
+    "description": "Replika is a ai chat tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Chat",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://replika.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Chat",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/replika.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Replika icon",
+    "icon_fallback_url": "/static/icons/generated/replika.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "replika.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 263,
+    "slug": "notebooklm",
+    "name": "NotebookLM",
+    "description": "NotebookLM is a research assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Research Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://notebooklm.google.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Research Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/notebooklm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "NotebookLM icon",
+    "icon_fallback_url": "/static/icons/generated/notebooklm.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NO",
+      "domain": "notebooklm.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 281,
+    "slug": "elicit",
+    "name": "Elicit",
+    "description": "Elicit is a research assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Research Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://elicit.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Research Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/elicit.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Elicit icon",
+    "icon_fallback_url": "/static/icons/generated/elicit.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EL",
+      "domain": "elicit.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 299,
+    "slug": "consensus",
+    "name": "Consensus",
+    "description": "Consensus is a research assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Research Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://consensus.app",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Research Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/consensus.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Consensus icon",
+    "icon_fallback_url": "/static/icons/generated/consensus.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CO",
+      "domain": "consensus.app",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 317,
+    "slug": "scite",
+    "name": "Scite",
+    "description": "Scite is a research assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Research Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://scite.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Research Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/scite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Scite icon",
+    "icon_fallback_url": "/static/icons/generated/scite.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SC",
+      "domain": "scite.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 335,
+    "slug": "scholarcy",
+    "name": "Scholarcy",
+    "description": "Scholarcy is a research assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Research Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://scholarcy.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Research Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/scholarcy.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Scholarcy icon",
+    "icon_fallback_url": "/static/icons/generated/scholarcy.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SC",
+      "domain": "scholarcy.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 353,
+    "slug": "humata",
+    "name": "Humata",
+    "description": "Humata is a document ai tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Document AI",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://humata.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Document AI",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/humata.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Humata icon",
+    "icon_fallback_url": "/static/icons/generated/humata.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HU",
+      "domain": "humata.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 371,
+    "slug": "gamma",
+    "name": "Gamma",
+    "description": "Gamma is a ai presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Presentations",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gamma.app",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gamma.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Gamma icon",
+    "icon_fallback_url": "/static/icons/generated/gamma.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GA",
+      "domain": "gamma.app",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 389,
+    "slug": "tome",
+    "name": "Tome",
+    "description": "Tome is a ai presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Presentations",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://tome.app",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/tome.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Tome icon",
+    "icon_fallback_url": "/static/icons/generated/tome.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TO",
+      "domain": "tome.app",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 407,
+    "slug": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "description": "Beautiful.ai is a ai presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Presentations",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://beautiful.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/beautiful-ai.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Beautiful.ai icon",
+    "icon_fallback_url": "/static/icons/generated/beautiful-ai.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BA",
+      "domain": "beautiful.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 425,
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "description": "Writesonic is a ai writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://writesonic.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/writesonic.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Writesonic icon",
+    "icon_fallback_url": "/static/icons/generated/writesonic.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WR",
+      "domain": "writesonic.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 443,
+    "slug": "jasper",
+    "name": "Jasper",
+    "description": "Jasper is a ai writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jasper.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/jasper.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Jasper icon",
+    "icon_fallback_url": "/static/icons/generated/jasper.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "JA",
+      "domain": "jasper.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 461,
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "description": "Copy.ai is a ai writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://copy.ai",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/copy-ai.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Copy.ai icon",
+    "icon_fallback_url": "/static/icons/generated/copy-ai.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CA",
+      "domain": "copy.ai",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 479,
+    "slug": "rytr",
+    "name": "Rytr",
+    "description": "Rytr is a ai writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "AI Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://rytr.me",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "AI Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rytr.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Rytr icon",
+    "icon_fallback_url": "/static/icons/generated/rytr.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RY",
+      "domain": "rytr.me",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 497,
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "description": "Grammarly is a writing assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Writing Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://grammarly.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Writing Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/grammarly.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Grammarly icon",
+    "icon_fallback_url": "/static/icons/generated/grammarly.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GR",
+      "domain": "grammarly.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 515,
+    "slug": "quillbot",
+    "name": "QuillBot",
+    "description": "QuillBot is a writing assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Writing Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://quillbot.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Writing Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/quillbot.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "QuillBot icon",
+    "icon_fallback_url": "/static/icons/generated/quillbot.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "QU",
+      "domain": "quillbot.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 533,
+    "slug": "wordtune",
+    "name": "Wordtune",
+    "description": "Wordtune is a writing assistants tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Writing Assistants",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://wordtune.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Writing Assistants",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/wordtune.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Wordtune icon",
+    "icon_fallback_url": "/static/icons/generated/wordtune.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WO",
+      "domain": "wordtune.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 551,
+    "slug": "sudowrite",
+    "name": "Sudowrite",
+    "description": "Sudowrite is a creative writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Creative Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sudowrite.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Creative Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sudowrite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sudowrite icon",
+    "icon_fallback_url": "/static/icons/generated/sudowrite.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SU",
+      "domain": "sudowrite.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 569,
+    "slug": "novelai",
+    "name": "NovelAI",
+    "description": "NovelAI is a creative writing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Creative Writing",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://novelai.net",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Creative Writing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/novelai.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "NovelAI icon",
+    "icon_fallback_url": "/static/icons/generated/novelai.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NO",
+      "domain": "novelai.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 587,
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "description": "Midjourney is a image generation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "Image Generation",
+      "Artificial Intelligence",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://midjourney.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Image Generation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/midjourney.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Midjourney icon",
+    "icon_fallback_url": "/static/icons/generated/midjourney.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MI",
+      "domain": "midjourney.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

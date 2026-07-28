@@ -1,0 +1,5238 @@
+[
+  {
+    "id": 11,
+    "slug": "visual-studio-code",
+    "name": "Visual Studio Code",
+    "description": "Free code editor from Microsoft for Windows, macOS and Linux, with built-in Git, debugging, testing and an extension ecosystem.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "Developer",
+      "Extensions",
+      "Git",
+      "Lightweight"
+    ],
+    "pricing": "Free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://code.visualstudio.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Web"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Free for private and commercial use",
+      "Available on Windows, macOS, Linux and the web",
+      "Built-in Git source control",
+      "Integrated debugging and testing workflows",
+      "Large extension marketplace"
+    ],
+    "cons": [
+      "Some language tooling depends on extensions",
+      "Extension quality and permissions vary by publisher",
+      "Advanced AI usage may depend on separate provider plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students",
+      "DevOps engineers",
+      "Data professionals"
+    ],
+    "system_requirements": [
+      "Supported Windows, macOS or Linux release",
+      "At least 1 GB RAM is recommended by the official requirements page",
+      "A modern browser for VS Code for the Web"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "starting_price": 0,
+      "currency": "USD",
+      "free_plan": true,
+      "trial": false,
+      "billing": "No purchase required for the core editor",
+      "note": "VS Code is free for private and commercial use. Optional third-party services or extensions may have separate pricing."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-07-29",
+      "note": "Core identity, description, category, platform and pricing claims were checked against official first-party sources."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 1,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Code Editors",
+    "popularity_score": 0,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-29",
+      "last_updated_at": "2026-07-29",
+      "next_check_at": "2026-10-27",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-29",
+        "type": "data-review",
+        "summary": "Listing verified against official first-party sources for AtlasFind v1.0.2 Phase 3.",
+        "changes": [
+          "Replaced generic catalog copy",
+          "Added official evidence references",
+          "Removed seed rating from public data"
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/visual-studio-code.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Visual Studio Code icon",
+    "icon_fallback_url": "/static/icons/generated/visual-studio-code.svg",
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "official-source-review",
+      "reviewed_at": "2026-07-29",
+      "note": "Verified from official first-party pages. Time-sensitive prices and platform availability require periodic re-checking."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "VS",
+      "domain": "code.visualstudio.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Visual Studio Code homepage",
+        "url": "https://code.visualstudio.com/",
+        "checked_at": "2026-07-29",
+        "type": "official-homepage",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category",
+          "platforms"
+        ],
+        "domain": "code.visualstudio.com"
+      },
+      {
+        "label": "Visual Studio Code documentation",
+        "url": "https://code.visualstudio.com/docs",
+        "checked_at": "2026-07-29",
+        "type": "official-documentation",
+        "claims": [
+          "description",
+          "category",
+          "platforms",
+          "features"
+        ],
+        "domain": "code.visualstudio.com"
+      },
+      {
+        "label": "Visual Studio Code FAQ",
+        "url": "https://code.visualstudio.com/docs/supporting/FAQ",
+        "checked_at": "2026-07-29",
+        "type": "official-support",
+        "claims": [
+          "pricing",
+          "platforms"
+        ],
+        "domain": "code.visualstudio.com"
+      },
+      {
+        "label": "Visual Studio Code license",
+        "url": "https://code.visualstudio.com/license",
+        "checked_at": "2026-07-29",
+        "type": "official-legal",
+        "claims": [
+          "pricing",
+          "license",
+          "open-source"
+        ],
+        "domain": "code.visualstudio.com"
+      }
+    ],
+    "company_info": {
+      "developer": "Microsoft",
+      "company": "Microsoft Corporation",
+      "country": "United States"
+    },
+    "editor_summary": "A lightweight, extensible editor suited to general software development, remote work and browser-based coding.",
+    "use_cases": [
+      "Editing and refactoring code",
+      "Git-based source control",
+      "Debugging applications",
+      "Running tests and build tasks",
+      "Remote and browser-based development"
+    ],
+    "technical_capabilities": {
+      "extensions": true,
+      "cli": true,
+      "api": true,
+      "git_integration": true,
+      "debugging": true,
+      "offline": true,
+      "cloud_sync": true
+    },
+    "official_links": {
+      "website": "https://code.visualstudio.com/",
+      "documentation": "https://code.visualstudio.com/docs",
+      "download": "https://code.visualstudio.com/download",
+      "license": "https://code.visualstudio.com/license",
+      "repository": "https://github.com/microsoft/vscode",
+      "support": "https://code.visualstudio.com/docs/supporting/FAQ"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "cursor",
+    "name": "Cursor",
+    "description": "AI-first code editor designed for code generation, editing and repository understanding.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "AI",
+      "Coding",
+      "Developer",
+      "Productivity"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.cursor.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Code Editors",
+    "popularity_score": 91,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cursor.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cursor icon",
+    "icon_fallback_url": "/static/icons/generated/cursor.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CU",
+      "domain": "cursor.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 13,
+    "slug": "zed",
+    "name": "Zed",
+    "description": "Fast collaborative code editor built for modern software development.",
+    "category": "Development",
+    "tags": [
+      "Code Editor",
+      "Fast",
+      "Collaboration",
+      "Developer",
+      "Lightweight"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://zed.dev",
+    "platforms": [
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Code Editors",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/zed.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Zed icon",
+    "icon_fallback_url": "/static/icons/generated/zed.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ZE",
+      "domain": "zed.dev",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 14,
+    "slug": "notepad-plus-plus",
+    "name": "Notepad++",
+    "description": "Lightweight Windows text and source-code editor with plugin support.",
+    "category": "Development",
+    "tags": [
+      "Text Editor",
+      "Code Editor",
+      "Lightweight",
+      "Plugins",
+      "Windows"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://notepad-plus-plus.org",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Code Editors",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/notepad-plus-plus.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Notepad++ icon",
+    "icon_fallback_url": "/static/icons/generated/notepad-plus-plus.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NO",
+      "domain": "notepad-plus-plus.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 15,
+    "slug": "sublime-text",
+    "name": "Sublime Text",
+    "description": "Fast and polished text editor for code, markup and prose.",
+    "category": "Development",
+    "tags": [
+      "Text Editor",
+      "Code Editor",
+      "Fast",
+      "Developer",
+      "Lightweight"
+    ],
+    "pricing": "Paid",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.sublimetext.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Code Editors",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Paid",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sublime-text.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sublime Text icon",
+    "icon_fallback_url": "/static/icons/generated/sublime-text.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ST",
+      "domain": "sublimetext.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 16,
+    "slug": "pycharm",
+    "name": "PyCharm",
+    "description": "Python IDE with intelligent coding assistance, debugging and project tools.",
+    "category": "Development",
+    "tags": [
+      "Python",
+      "IDE",
+      "Developer",
+      "Debugger",
+      "JetBrains"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.jetbrains.com/pycharm/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "IDEs",
+    "popularity_score": 91,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pycharm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PyCharm icon",
+    "icon_fallback_url": "/static/icons/generated/pycharm.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PY",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 17,
+    "slug": "intellij-idea",
+    "name": "IntelliJ IDEA",
+    "description": "Powerful JVM-focused IDE for Java, Kotlin and enterprise development.",
+    "category": "Development",
+    "tags": [
+      "Java",
+      "Kotlin",
+      "IDE",
+      "Developer",
+      "JetBrains"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.jetbrains.com/idea/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "IDEs",
+    "popularity_score": 91,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/intellij-idea.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "IntelliJ IDEA icon",
+    "icon_fallback_url": "/static/icons/generated/intellij-idea.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "II",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 18,
+    "slug": "visual-studio",
+    "name": "Visual Studio",
+    "description": "Full-featured IDE for .NET, C++, cloud and Windows development.",
+    "category": "Development",
+    "tags": [
+      "IDE",
+      ".NET",
+      "C++",
+      "Windows",
+      "Developer"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://visualstudio.microsoft.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "IDEs",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/visual-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Visual Studio icon",
+    "icon_fallback_url": "/static/icons/generated/visual-studio.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "VS",
+      "domain": "visualstudio.microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 19,
+    "slug": "github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Graphical Git client for managing repositories and common Git workflows.",
+    "category": "Development",
+    "tags": [
+      "Git",
+      "GitHub",
+      "Version Control",
+      "Desktop",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://desktop.github.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Version Control",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/github-desktop.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GitHub Desktop icon",
+    "icon_fallback_url": "/static/icons/generated/github-desktop.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GD",
+      "domain": "desktop.github.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 20,
+    "slug": "gitkraken",
+    "name": "GitKraken",
+    "description": "Visual Git client with repository management and collaboration features.",
+    "category": "Development",
+    "tags": [
+      "Git",
+      "Version Control",
+      "Developer",
+      "Collaboration",
+      "Desktop"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.gitkraken.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Version Control",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gitkraken.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GitKraken icon",
+    "icon_fallback_url": "/static/icons/generated/gitkraken.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GI",
+      "domain": "gitkraken.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 91,
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "description": "Powerful open-source relational database known for reliability and extensibility.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "SQL",
+      "Open Source",
+      "Backend",
+      "Server"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.postgresql.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Databases",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/postgresql.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PostgreSQL icon",
+    "icon_fallback_url": "/static/icons/generated/postgresql.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PO",
+      "domain": "postgresql.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 92,
+    "slug": "mysql",
+    "name": "MySQL",
+    "description": "Widely used relational database for web and application development.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "SQL",
+      "Backend",
+      "Server",
+      "Open Source"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.mysql.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Databases",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mysql.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MySQL icon",
+    "icon_fallback_url": "/static/icons/generated/mysql.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MY",
+      "domain": "mysql.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 93,
+    "slug": "sqlite",
+    "name": "SQLite",
+    "description": "Small embedded relational database stored in a single file.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "SQL",
+      "Embedded",
+      "Lightweight",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.sqlite.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Databases",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sqlite.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SQLite icon",
+    "icon_fallback_url": "/static/icons/generated/sqlite.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SQ",
+      "domain": "sqlite.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 94,
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "description": "Document-oriented database designed for flexible application data.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "NoSQL",
+      "Documents",
+      "Backend",
+      "Cloud"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.mongodb.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Web"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Databases",
+    "popularity_score": 83,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mongodb.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MongoDB icon",
+    "icon_fallback_url": "/static/icons/generated/mongodb.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MO",
+      "domain": "mongodb.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 95,
+    "slug": "redis",
+    "name": "Redis",
+    "description": "In-memory data store used for caching, queues and real-time applications.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "Cache",
+      "In Memory",
+      "Backend",
+      "Server"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://redis.io",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Database Management",
+    "popularity_score": 87,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/redis.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Redis icon",
+    "icon_fallback_url": "/static/icons/generated/redis.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "redis.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 96,
+    "slug": "dbeaver",
+    "name": "DBeaver",
+    "description": "Universal database management tool supporting many database systems.",
+    "category": "Development",
+    "tags": [
+      "Database",
+      "SQL",
+      "Client",
+      "Developer",
+      "Open Source"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://dbeaver.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Databases",
+    "popularity_score": 87,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dbeaver.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DBeaver icon",
+    "icon_fallback_url": "/static/icons/generated/dbeaver.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DB",
+      "domain": "dbeaver.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 97,
+    "slug": "docker",
+    "name": "Docker",
+    "description": "Platform for building, packaging and running applications in containers.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "DevOps",
+      "Developer",
+      "Deployment",
+      "Backend"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.9,
+    "rating_source": "editorial_seed",
+    "website": "https://www.docker.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Developer Utilities",
+    "popularity_score": 88,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/docker.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Docker icon",
+    "icon_fallback_url": "/static/icons/generated/docker.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DO",
+      "domain": "docker.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 98,
+    "slug": "podman",
+    "name": "Podman",
+    "description": "Daemonless open-source container engine compatible with common container workflows.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "DevOps",
+      "Open Source",
+      "Linux",
+      "Developer"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://podman.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Developer Utilities",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/podman.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Podman icon",
+    "icon_fallback_url": "/static/icons/generated/podman.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PO",
+      "domain": "podman.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 99,
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "description": "API client for designing, debugging and testing HTTP and GraphQL APIs.",
+    "category": "Development",
+    "tags": [
+      "API",
+      "Testing",
+      "Developer",
+      "HTTP",
+      "GraphQL"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://insomnia.rest",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "API Tools",
+    "popularity_score": 83,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/insomnia.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Insomnia icon",
+    "icon_fallback_url": "/static/icons/generated/insomnia.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IN",
+      "domain": "insomnia.rest",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 100,
+    "slug": "postman",
+    "name": "Postman",
+    "description": "API platform for building, testing, documenting and collaborating on APIs.",
+    "category": "Development",
+    "tags": [
+      "API",
+      "Testing",
+      "Developer",
+      "Documentation",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.postman.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Developer-focused workflow",
+      "Supports common coding tasks",
+      "Useful for individual and team projects"
+    ],
+    "cons": [
+      "Setup may require technical knowledge",
+      "Some integrations may require paid plans"
+    ],
+    "target_users": [
+      "Software developers",
+      "Technical teams",
+      "Students learning programming"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "A supported operating system",
+      "Modern browser or current desktop application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "API Tools",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/postman.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Postman icon",
+    "icon_fallback_url": "/static/icons/generated/postman.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PO",
+      "domain": "postman.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 105,
+    "slug": "eclipse-ide",
+    "name": "Eclipse IDE",
+    "description": "Eclipse IDE is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://eclipse.org/ide",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/eclipse-ide.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Eclipse IDE icon",
+    "icon_fallback_url": "/static/icons/generated/eclipse-ide.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EI",
+      "domain": "eclipse.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 123,
+    "slug": "netbeans",
+    "name": "NetBeans",
+    "description": "NetBeans is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://netbeans.apache.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/netbeans.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "NetBeans icon",
+    "icon_fallback_url": "/static/icons/generated/netbeans.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NE",
+      "domain": "netbeans.apache.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 141,
+    "slug": "android-studio",
+    "name": "Android Studio",
+    "description": "Android Studio is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://developer.android.com/studio",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/android-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Android Studio icon",
+    "icon_fallback_url": "/static/icons/generated/android-studio.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AS",
+      "domain": "developer.android.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 159,
+    "slug": "xcode",
+    "name": "Xcode",
+    "description": "Xcode is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://developer.apple.com/xcode",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/xcode.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Xcode icon",
+    "icon_fallback_url": "/static/icons/generated/xcode.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "XC",
+      "domain": "developer.apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 177,
+    "slug": "rider",
+    "name": "Rider",
+    "description": "Rider is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/rider",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rider.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Rider icon",
+    "icon_fallback_url": "/static/icons/generated/rider.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RI",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 195,
+    "slug": "goland",
+    "name": "GoLand",
+    "description": "GoLand is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/go",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/goland.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GoLand icon",
+    "icon_fallback_url": "/static/icons/generated/goland.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GO",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 213,
+    "slug": "phpstorm",
+    "name": "PhpStorm",
+    "description": "PhpStorm is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/phpstorm",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/phpstorm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PhpStorm icon",
+    "icon_fallback_url": "/static/icons/generated/phpstorm.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PH",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 231,
+    "slug": "webstorm",
+    "name": "WebStorm",
+    "description": "WebStorm is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/webstorm",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/webstorm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "WebStorm icon",
+    "icon_fallback_url": "/static/icons/generated/webstorm.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WE",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 249,
+    "slug": "rubymine",
+    "name": "RubyMine",
+    "description": "RubyMine is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/ruby",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rubymine.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "RubyMine icon",
+    "icon_fallback_url": "/static/icons/generated/rubymine.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RU",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 267,
+    "slug": "clion",
+    "name": "CLion",
+    "description": "CLion is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/clion",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/clion.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "CLion icon",
+    "icon_fallback_url": "/static/icons/generated/clion.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CL",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 285,
+    "slug": "fleet",
+    "name": "Fleet",
+    "description": "Fleet is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://jetbrains.com/fleet",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/fleet.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Fleet icon",
+    "icon_fallback_url": "/static/icons/generated/fleet.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FL",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 303,
+    "slug": "vim",
+    "name": "Vim",
+    "description": "Vim is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://vim.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/vim.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Vim icon",
+    "icon_fallback_url": "/static/icons/generated/vim.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "VI",
+      "domain": "vim.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 321,
+    "slug": "neovim",
+    "name": "Neovim",
+    "description": "Neovim is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://neovim.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/neovim.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Neovim icon",
+    "icon_fallback_url": "/static/icons/generated/neovim.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NE",
+      "domain": "neovim.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 339,
+    "slug": "emacs",
+    "name": "Emacs",
+    "description": "Emacs is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gnu.org/software/emacs",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/emacs.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Emacs icon",
+    "icon_fallback_url": "/static/icons/generated/emacs.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EM",
+      "domain": "gnu.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 357,
+    "slug": "kate",
+    "name": "Kate",
+    "description": "Kate is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://kate-editor.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/kate.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Kate icon",
+    "icon_fallback_url": "/static/icons/generated/kate.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "KA",
+      "domain": "kate-editor.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 375,
+    "slug": "geany",
+    "name": "Geany",
+    "description": "Geany is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://geany.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/geany.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Geany icon",
+    "icon_fallback_url": "/static/icons/generated/geany.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GE",
+      "domain": "geany.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 393,
+    "slug": "brackets",
+    "name": "Brackets",
+    "description": "Brackets is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://brackets.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/brackets.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Brackets icon",
+    "icon_fallback_url": "/static/icons/generated/brackets.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BR",
+      "domain": "brackets.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 411,
+    "slug": "textmate",
+    "name": "TextMate",
+    "description": "TextMate is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://macromates.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/textmate.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "TextMate icon",
+    "icon_fallback_url": "/static/icons/generated/textmate.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TE",
+      "domain": "macromates.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 429,
+    "slug": "bbedit",
+    "name": "BBEdit",
+    "description": "BBEdit is a code editors tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://barebones.com/products/bbedit",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Editors",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/bbedit.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "BBEdit icon",
+    "icon_fallback_url": "/static/icons/generated/bbedit.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BB",
+      "domain": "barebones.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 447,
+    "slug": "code-blocks",
+    "name": "Code::Blocks",
+    "description": "Code::Blocks is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://codeblocks.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/code-blocks.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Code::Blocks icon",
+    "icon_fallback_url": "/static/icons/generated/code-blocks.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CB",
+      "domain": "codeblocks.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 465,
+    "slug": "dev-c",
+    "name": "Dev-C++",
+    "description": "Dev-C++ is a ides tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "IDEs",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://bloodshed.net",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "IDEs",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dev-c.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dev-C++ icon",
+    "icon_fallback_url": "/static/icons/generated/dev-c.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DC",
+      "domain": "bloodshed.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 483,
+    "slug": "git",
+    "name": "Git",
+    "description": "Git is a version control tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Version Control",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://git-scm.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Version Control",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/git.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Git icon",
+    "icon_fallback_url": "/static/icons/generated/git.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GI",
+      "domain": "git-scm.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 501,
+    "slug": "github",
+    "name": "GitHub",
+    "description": "GitHub is a code hosting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Hosting",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://github.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Hosting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/github.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GitHub icon",
+    "icon_fallback_url": "/static/icons/generated/github.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GI",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 519,
+    "slug": "gitlab",
+    "name": "GitLab",
+    "description": "GitLab is a code hosting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Hosting",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gitlab.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Hosting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gitlab.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GitLab icon",
+    "icon_fallback_url": "/static/icons/generated/gitlab.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GI",
+      "domain": "gitlab.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 537,
+    "slug": "bitbucket",
+    "name": "Bitbucket",
+    "description": "Bitbucket is a code hosting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Hosting",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://bitbucket.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Hosting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/bitbucket.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Bitbucket icon",
+    "icon_fallback_url": "/static/icons/generated/bitbucket.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BI",
+      "domain": "bitbucket.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 555,
+    "slug": "gitea",
+    "name": "Gitea",
+    "description": "Gitea is a code hosting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Hosting",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://gitea.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Hosting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/gitea.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Gitea icon",
+    "icon_fallback_url": "/static/icons/generated/gitea.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GI",
+      "domain": "gitea.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 573,
+    "slug": "forgejo",
+    "name": "Forgejo",
+    "description": "Forgejo is a code hosting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Code Hosting",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://forgejo.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Code Hosting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/forgejo.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Forgejo icon",
+    "icon_fallback_url": "/static/icons/generated/forgejo.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FO",
+      "domain": "forgejo.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 591,
+    "slug": "sourcetree",
+    "name": "SourceTree",
+    "description": "SourceTree is a git clients tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Development",
+    "tags": [
+      "Git Clients",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sourcetreeapp.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Git Clients",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sourcetree.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SourceTree icon",
+    "icon_fallback_url": "/static/icons/generated/sourcetree.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SO",
+      "domain": "sourcetreeapp.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

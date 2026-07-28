@@ -1,0 +1,4032 @@
+[
+  {
+    "id": 41,
+    "slug": "audacity",
+    "name": "Audacity",
+    "description": "Free and open-source audio editor and recorder.",
+    "category": "Audio and Music",
+    "tags": [
+      "Audio Editing",
+      "Recording",
+      "Open Source",
+      "Podcast",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.audacityteam.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Podcasting",
+    "popularity_score": 88,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/audacity.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Audacity icon",
+    "icon_fallback_url": "/static/icons/generated/audacity.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "internal-consistency-pilot",
+      "reviewed_at": "2026-07-28",
+      "note": "Core fields were checked for internal consistency. Live pricing, platform support and feature availability still require confirmation on the official website."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AU",
+      "domain": "audacityteam.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 42,
+    "slug": "reaper",
+    "name": "REAPER",
+    "description": "Flexible digital audio workstation for recording, editing and mixing.",
+    "category": "Audio and Music",
+    "tags": [
+      "DAW",
+      "Audio Editing",
+      "Recording",
+      "Mixing",
+      "Professional"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.reaper.fm",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Audio Editing",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Paid",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/reaper.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "REAPER icon",
+    "icon_fallback_url": "/static/icons/generated/reaper.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "reaper.fm",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 43,
+    "slug": "ableton-live",
+    "name": "Ableton Live",
+    "description": "Digital audio workstation for music production and live performance.",
+    "category": "Audio and Music",
+    "tags": [
+      "DAW",
+      "Music Production",
+      "Live Performance",
+      "MIDI",
+      "Professional"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.ableton.com/live/",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Paid",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ableton-live.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ableton Live icon",
+    "icon_fallback_url": "/static/icons/generated/ableton-live.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AL",
+      "domain": "ableton.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 44,
+    "slug": "fl-studio",
+    "name": "FL Studio",
+    "description": "Music production environment with sequencing, recording and mixing tools.",
+    "category": "Audio and Music",
+    "tags": [
+      "DAW",
+      "Music Production",
+      "Beat Making",
+      "MIDI",
+      "Mixing"
+    ],
+    "pricing": "Paid",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.image-line.com",
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Paid",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/fl-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "FL Studio icon",
+    "icon_fallback_url": "/static/icons/generated/fl-studio.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FS",
+      "domain": "image-line.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 45,
+    "slug": "ardour",
+    "name": "Ardour",
+    "description": "Open-source digital audio workstation for recording and mixing.",
+    "category": "Audio and Music",
+    "tags": [
+      "DAW",
+      "Open Source",
+      "Recording",
+      "Mixing",
+      "Linux"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://ardour.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Audio Editing",
+    "popularity_score": 84,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ardour.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ardour icon",
+    "icon_fallback_url": "/static/icons/generated/ardour.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AR",
+      "domain": "ardour.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 46,
+    "slug": "lmms",
+    "name": "LMMS",
+    "description": "Free and open-source music production application.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Production",
+      "DAW",
+      "Open Source",
+      "Beat Making",
+      "Free"
+    ],
+    "pricing": "Free",
+    "rating": 4.3,
+    "rating_source": "editorial_seed",
+    "website": "https://lmms.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 80,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/lmms.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "LMMS icon",
+    "icon_fallback_url": "/static/icons/generated/lmms.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LM",
+      "domain": "lmms.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 47,
+    "slug": "ocenaudio",
+    "name": "Ocenaudio",
+    "description": "Simple cross-platform audio editor for quick editing tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Audio Editing",
+      "Simple",
+      "Cross Platform",
+      "Recording",
+      "Lightweight"
+    ],
+    "pricing": "Free",
+    "rating": 4.4,
+    "rating_source": "editorial_seed",
+    "website": "https://www.ocenaudio.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Audio Editing",
+    "popularity_score": 82,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ocenaudio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ocenaudio icon",
+    "icon_fallback_url": "/static/icons/generated/ocenaudio.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OC",
+      "domain": "ocenaudio.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 48,
+    "slug": "spotify",
+    "name": "Spotify",
+    "description": "Music and podcast streaming service with personalized recommendations.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music",
+      "Streaming",
+      "Podcasts",
+      "Discovery",
+      "Mobile"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.spotify.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/spotify.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Spotify icon",
+    "icon_fallback_url": "/static/icons/generated/spotify.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SP",
+      "domain": "spotify.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 49,
+    "slug": "musicbee",
+    "name": "MusicBee",
+    "description": "Feature-rich music library manager and player for Windows.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Player",
+      "Library",
+      "Windows",
+      "Offline",
+      "Customization"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.getmusicbee.com",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/musicbee.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MusicBee icon",
+    "icon_fallback_url": "/static/icons/generated/musicbee.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MU",
+      "domain": "getmusicbee.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 50,
+    "slug": "foobar2000",
+    "name": "foobar2000",
+    "description": "Lightweight and customizable audio player for advanced users.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Player",
+      "Lightweight",
+      "Customization",
+      "Offline",
+      "Windows"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.foobar2000.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Focused audio production workflow",
+      "Supports common audio formats",
+      "Useful for recording and editing"
+    ],
+    "cons": [
+      "Complex projects may require stronger hardware",
+      "Some plugins or exports may cost extra"
+    ],
+    "target_users": [
+      "Musicians and producers",
+      "Podcasters",
+      "Audio editors and creators"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "8 GB RAM recommended",
+      "Audio-capable operating system and supported drivers"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 2,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Music Production",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/foobar2000.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "foobar2000 icon",
+    "icon_fallback_url": "/static/icons/generated/foobar2000.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FO",
+      "domain": "foobar2000.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 104,
+    "slug": "logic-pro",
+    "name": "Logic Pro",
+    "description": "Logic Pro is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://apple.com/logic-pro",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/logic-pro.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Logic Pro icon",
+    "icon_fallback_url": "/static/icons/generated/logic-pro.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LP",
+      "domain": "apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 122,
+    "slug": "pro-tools",
+    "name": "Pro Tools",
+    "description": "Pro Tools is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://avid.com/pro-tools",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pro-tools.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Pro Tools icon",
+    "icon_fallback_url": "/static/icons/generated/pro-tools.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PT",
+      "domain": "avid.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 140,
+    "slug": "cubase",
+    "name": "Cubase",
+    "description": "Cubase is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://steinberg.net/cubase",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cubase.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cubase icon",
+    "icon_fallback_url": "/static/icons/generated/cubase.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CU",
+      "domain": "steinberg.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 158,
+    "slug": "studio-one",
+    "name": "Studio One",
+    "description": "Studio One is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://presonus.com/studio-one",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/studio-one.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Studio One icon",
+    "icon_fallback_url": "/static/icons/generated/studio-one.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SO",
+      "domain": "presonus.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 176,
+    "slug": "bitwig-studio",
+    "name": "Bitwig Studio",
+    "description": "Bitwig Studio is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://bitwig.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/bitwig-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Bitwig Studio icon",
+    "icon_fallback_url": "/static/icons/generated/bitwig-studio.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BS",
+      "domain": "bitwig.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 194,
+    "slug": "reason",
+    "name": "Reason",
+    "description": "Reason is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://reasonstudios.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/reason.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Reason icon",
+    "icon_fallback_url": "/static/icons/generated/reason.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RE",
+      "domain": "reasonstudios.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 212,
+    "slug": "garageband",
+    "name": "GarageBand",
+    "description": "GarageBand is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://apple.com/mac/garageband",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/garageband.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GarageBand icon",
+    "icon_fallback_url": "/static/icons/generated/garageband.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GA",
+      "domain": "apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 230,
+    "slug": "cakewalk",
+    "name": "Cakewalk",
+    "description": "Cakewalk is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://cakewalk.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/cakewalk.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cakewalk icon",
+    "icon_fallback_url": "/static/icons/generated/cakewalk.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CA",
+      "domain": "cakewalk.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 248,
+    "slug": "waveform",
+    "name": "Waveform",
+    "description": "Waveform is a digital audio workstations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Digital Audio Workstations",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://tracktion.com/products/waveform-free",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Digital Audio Workstations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/waveform.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Waveform icon",
+    "icon_fallback_url": "/static/icons/generated/waveform.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WA",
+      "domain": "tracktion.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 266,
+    "slug": "rosegarden",
+    "name": "Rosegarden",
+    "description": "Rosegarden is a music production tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Production",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://rosegardenmusic.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Production",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/rosegarden.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Rosegarden icon",
+    "icon_fallback_url": "/static/icons/generated/rosegarden.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RO",
+      "domain": "rosegardenmusic.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 284,
+    "slug": "musescore",
+    "name": "MuseScore",
+    "description": "MuseScore is a music notation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Notation",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://musescore.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Notation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/musescore.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MuseScore icon",
+    "icon_fallback_url": "/static/icons/generated/musescore.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MU",
+      "domain": "musescore.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 302,
+    "slug": "sibelius",
+    "name": "Sibelius",
+    "description": "Sibelius is a music notation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Notation",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://avid.com/sibelius",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Notation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sibelius.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sibelius icon",
+    "icon_fallback_url": "/static/icons/generated/sibelius.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SI",
+      "domain": "avid.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 320,
+    "slug": "finale",
+    "name": "Finale",
+    "description": "Finale is a music notation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Notation",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://finalemusic.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Notation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/finale.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Finale icon",
+    "icon_fallback_url": "/static/icons/generated/finale.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FI",
+      "domain": "finalemusic.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 338,
+    "slug": "dorico",
+    "name": "Dorico",
+    "description": "Dorico is a music notation tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Notation",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://steinberg.net/dorico",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Notation",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dorico.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dorico icon",
+    "icon_fallback_url": "/static/icons/generated/dorico.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DO",
+      "domain": "steinberg.net",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 356,
+    "slug": "mixxx",
+    "name": "Mixxx",
+    "description": "Mixxx is a dj software tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "DJ Software",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://mixxx.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "DJ Software",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/mixxx.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Mixxx icon",
+    "icon_fallback_url": "/static/icons/generated/mixxx.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MI",
+      "domain": "mixxx.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 374,
+    "slug": "virtualdj",
+    "name": "VirtualDJ",
+    "description": "VirtualDJ is a dj software tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "DJ Software",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://virtualdj.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "DJ Software",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/virtualdj.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "VirtualDJ icon",
+    "icon_fallback_url": "/static/icons/generated/virtualdj.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "VI",
+      "domain": "virtualdj.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 392,
+    "slug": "serato-dj",
+    "name": "Serato DJ",
+    "description": "Serato DJ is a dj software tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "DJ Software",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://serato.com/dj",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "DJ Software",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/serato-dj.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Serato DJ icon",
+    "icon_fallback_url": "/static/icons/generated/serato-dj.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SD",
+      "domain": "serato.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 410,
+    "slug": "traktor-pro",
+    "name": "Traktor Pro",
+    "description": "Traktor Pro is a dj software tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "DJ Software",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://native-instruments.com/products/traktor",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "DJ Software",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/traktor-pro.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Traktor Pro icon",
+    "icon_fallback_url": "/static/icons/generated/traktor-pro.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TP",
+      "domain": "native-instruments.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 428,
+    "slug": "aimp",
+    "name": "AIMP",
+    "description": "AIMP is a music players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://aimp.ru",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/aimp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "AIMP icon",
+    "icon_fallback_url": "/static/icons/generated/aimp.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AI",
+      "domain": "aimp.ru",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 446,
+    "slug": "vlc",
+    "name": "VLC",
+    "description": "VLC is a media players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Media Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://videolan.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Media Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/vlc.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "VLC icon",
+    "icon_fallback_url": "/static/icons/generated/vlc.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "VL",
+      "domain": "videolan.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 464,
+    "slug": "clementine",
+    "name": "Clementine",
+    "description": "Clementine is a music players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://clementine-player.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/clementine.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Clementine icon",
+    "icon_fallback_url": "/static/icons/generated/clementine.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CL",
+      "domain": "clementine-player.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 482,
+    "slug": "strawberry-music-player",
+    "name": "Strawberry Music Player",
+    "description": "Strawberry Music Player is a music players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://strawberrymusicplayer.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/strawberry-music-player.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Strawberry Music Player icon",
+    "icon_fallback_url": "/static/icons/generated/strawberry-music-player.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SM",
+      "domain": "strawberrymusicplayer.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 500,
+    "slug": "deadbeef",
+    "name": "DeaDBeeF",
+    "description": "DeaDBeeF is a music players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://deadbeef.sourceforge.io",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/deadbeef.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DeaDBeeF icon",
+    "icon_fallback_url": "/static/icons/generated/deadbeef.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DE",
+      "domain": "deadbeef.sourceforge.io",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 518,
+    "slug": "plexamp",
+    "name": "Plexamp",
+    "description": "Plexamp is a music players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Players",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://plex.tv/plexamp",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Players",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/plexamp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Plexamp icon",
+    "icon_fallback_url": "/static/icons/generated/plexamp.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PL",
+      "domain": "plex.tv",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 536,
+    "slug": "tidal",
+    "name": "TIDAL",
+    "description": "TIDAL is a music streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Streaming",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://tidal.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/tidal.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "TIDAL icon",
+    "icon_fallback_url": "/static/icons/generated/tidal.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TI",
+      "domain": "tidal.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 554,
+    "slug": "apple-music",
+    "name": "Apple Music",
+    "description": "Apple Music is a music streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Streaming",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://music.apple.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/apple-music.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Apple Music icon",
+    "icon_fallback_url": "/static/icons/generated/apple-music.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AM",
+      "domain": "music.apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 572,
+    "slug": "youtube-music",
+    "name": "YouTube Music",
+    "description": "YouTube Music is a music streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Streaming",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://music.youtube.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/youtube-music.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "YouTube Music icon",
+    "icon_fallback_url": "/static/icons/generated/youtube-music.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "YM",
+      "domain": "music.youtube.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 590,
+    "slug": "soundcloud",
+    "name": "SoundCloud",
+    "description": "SoundCloud is a music streaming tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Streaming",
+      "Audio",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://soundcloud.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Music Streaming",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/soundcloud.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SoundCloud icon",
+    "icon_fallback_url": "/static/icons/generated/soundcloud.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SO",
+      "domain": "soundcloud.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

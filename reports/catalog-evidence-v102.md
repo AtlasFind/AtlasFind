@@ -1,0 +1,113 @@
+# AtlasFind v1.0.2 Evidence Audit
+
+- Total records: 600
+- Strict publication-ready: 5
+- Requires evidence work: 595
+
+## Issue totals
+
+- `sources.missing`: 595
+- `verification.status`: 595
+
+## First 100 records requiring work
+
+- `gemini`: sources.missing, verification.status
+- `perplexity`: sources.missing, verification.status
+- `ollama`: sources.missing, verification.status
+- `lm-studio`: sources.missing, verification.status
+- `jan`: sources.missing, verification.status
+- `open-webui`: sources.missing, verification.status
+- `anythingllm`: sources.missing, verification.status
+- `hugging-face`: sources.missing, verification.status
+- `microsoft-copilot`: sources.missing, verification.status
+- `poe`: sources.missing, verification.status
+- `you-com`: sources.missing, verification.status
+- `mistral-le-chat`: sources.missing, verification.status
+- `deepseek`: sources.missing, verification.status
+- `meta-ai`: sources.missing, verification.status
+- `pi`: sources.missing, verification.status
+- `character-ai`: sources.missing, verification.status
+- `replika`: sources.missing, verification.status
+- `notebooklm`: sources.missing, verification.status
+- `elicit`: sources.missing, verification.status
+- `consensus`: sources.missing, verification.status
+- `scite`: sources.missing, verification.status
+- `scholarcy`: sources.missing, verification.status
+- `humata`: sources.missing, verification.status
+- `gamma`: sources.missing, verification.status
+- `tome`: sources.missing, verification.status
+- `beautiful-ai`: sources.missing, verification.status
+- `writesonic`: sources.missing, verification.status
+- `jasper`: sources.missing, verification.status
+- `copy-ai`: sources.missing, verification.status
+- `rytr`: sources.missing, verification.status
+- `grammarly`: sources.missing, verification.status
+- `quillbot`: sources.missing, verification.status
+- `wordtune`: sources.missing, verification.status
+- `sudowrite`: sources.missing, verification.status
+- `novelai`: sources.missing, verification.status
+- `midjourney`: sources.missing, verification.status
+- `audacity`: sources.missing, verification.status
+- `reaper`: sources.missing, verification.status
+- `ableton-live`: sources.missing, verification.status
+- `fl-studio`: sources.missing, verification.status
+- `ardour`: sources.missing, verification.status
+- `lmms`: sources.missing, verification.status
+- `ocenaudio`: sources.missing, verification.status
+- `spotify`: sources.missing, verification.status
+- `musicbee`: sources.missing, verification.status
+- `foobar2000`: sources.missing, verification.status
+- `logic-pro`: sources.missing, verification.status
+- `pro-tools`: sources.missing, verification.status
+- `cubase`: sources.missing, verification.status
+- `studio-one`: sources.missing, verification.status
+- `bitwig-studio`: sources.missing, verification.status
+- `reason`: sources.missing, verification.status
+- `garageband`: sources.missing, verification.status
+- `cakewalk`: sources.missing, verification.status
+- `waveform`: sources.missing, verification.status
+- `rosegarden`: sources.missing, verification.status
+- `musescore`: sources.missing, verification.status
+- `sibelius`: sources.missing, verification.status
+- `finale`: sources.missing, verification.status
+- `dorico`: sources.missing, verification.status
+- `mixxx`: sources.missing, verification.status
+- `virtualdj`: sources.missing, verification.status
+- `serato-dj`: sources.missing, verification.status
+- `traktor-pro`: sources.missing, verification.status
+- `aimp`: sources.missing, verification.status
+- `vlc`: sources.missing, verification.status
+- `clementine`: sources.missing, verification.status
+- `strawberry-music-player`: sources.missing, verification.status
+- `deadbeef`: sources.missing, verification.status
+- `plexamp`: sources.missing, verification.status
+- `tidal`: sources.missing, verification.status
+- `apple-music`: sources.missing, verification.status
+- `youtube-music`: sources.missing, verification.status
+- `soundcloud`: sources.missing, verification.status
+- `google-chrome`: sources.missing, verification.status
+- `mozilla-firefox`: sources.missing, verification.status
+- `brave`: sources.missing, verification.status
+- `microsoft-edge`: sources.missing, verification.status
+- `vivaldi`: sources.missing, verification.status
+- `tor-browser`: sources.missing, verification.status
+- `librewolf`: sources.missing, verification.status
+- `floorp`: sources.missing, verification.status
+- `ungoogled-chromium`: sources.missing, verification.status
+- `arc-browser`: sources.missing, verification.status
+- `opera`: sources.missing, verification.status
+- `opera-gx`: sources.missing, verification.status
+- `safari`: sources.missing, verification.status
+- `chromium`: sources.missing, verification.status
+- `waterfox`: sources.missing, verification.status
+- `pale-moon`: sources.missing, verification.status
+- `seamonkey`: sources.missing, verification.status
+- `orion-browser`: sources.missing, verification.status
+- `duckduckgo-browser`: sources.missing, verification.status
+- `zen-browser`: sources.missing, verification.status
+- `kagi-search`: sources.missing, verification.status
+- `duckduckgo`: sources.missing, verification.status
+- `startpage`: sources.missing, verification.status
+- `brave-search`: sources.missing, verification.status
+- `ecosia`: sources.missing, verification.status
+- `qwant`: sources.missing, verification.status

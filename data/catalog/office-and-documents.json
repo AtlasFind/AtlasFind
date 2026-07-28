@@ -1,0 +1,3986 @@
+[
+  {
+    "id": 51,
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "description": "Productivity suite with Word, Excel, PowerPoint and cloud collaboration.",
+    "category": "Office and Documents",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Cloud",
+      "Collaboration"
+    ],
+    "pricing": "Subscription",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://www.microsoft.com/microsoft-365",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Subscription",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "paid",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Subscription",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-365.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft 365 icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-365.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M3",
+      "domain": "microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 52,
+    "slug": "libreoffice",
+    "name": "LibreOffice",
+    "description": "Free and open-source office suite for documents, spreadsheets and presentations.",
+    "category": "Office and Documents",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Open Source",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.libreoffice.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/libreoffice.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "LibreOffice icon",
+    "icon_fallback_url": "/static/icons/generated/libreoffice.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "internal-consistency-pilot",
+      "reviewed_at": "2026-07-28",
+      "note": "Core fields were checked for internal consistency. Live pricing, platform support and feature availability still require confirmation on the official website."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LI",
+      "domain": "libreoffice.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 53,
+    "slug": "onlyoffice",
+    "name": "ONLYOFFICE",
+    "description": "Office suite for documents, spreadsheets and presentations with collaboration support.",
+    "category": "Office and Documents",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Collaboration",
+      "Self Hosted"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://www.onlyoffice.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/onlyoffice.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "ONLYOFFICE icon",
+    "icon_fallback_url": "/static/icons/generated/onlyoffice.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ON",
+      "domain": "onlyoffice.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 54,
+    "slug": "google-workspace",
+    "name": "Google Workspace",
+    "description": "Cloud productivity suite with Docs, Sheets, Slides and team collaboration.",
+    "category": "Office and Documents",
+    "tags": [
+      "Documents",
+      "Spreadsheets",
+      "Presentations",
+      "Cloud",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://workspace.google.com",
+    "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Modern web browser or supported application",
+      "Internet connection unless offline support is listed"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": null,
+    "system_level": "light",
+    "languages": [],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-workspace.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Workspace icon",
+    "icon_fallback_url": "/static/icons/generated/google-workspace.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GW",
+      "domain": "workspace.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 55,
+    "slug": "notion",
+    "name": "Notion",
+    "description": "All-in-one workspace for notes, documents, databases and project planning.",
+    "category": "Office and Documents",
+    "tags": [
+      "Notes",
+      "Documents",
+      "Database",
+      "Projects",
+      "Collaboration"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://www.notion.so",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Modern web browser or supported application",
+      "Internet connection unless offline support is listed"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Notes",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/notion.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Notion icon",
+    "icon_fallback_url": "/static/icons/generated/notion.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NO",
+      "domain": "notion.so",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 56,
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "description": "Local-first knowledge base and Markdown note-taking application.",
+    "category": "Office and Documents",
+    "tags": [
+      "Notes",
+      "Markdown",
+      "Knowledge Base",
+      "Local First",
+      "Plugins"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.8,
+    "rating_source": "editorial_seed",
+    "website": "https://obsidian.md",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Notes",
+    "popularity_score": 89,
+    "editor_choice": true,
+    "date_added": "2026-07-25",
+    "collections": [
+      "editor-choice",
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/obsidian.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Obsidian icon",
+    "icon_fallback_url": "/static/icons/generated/obsidian.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OB",
+      "domain": "obsidian.md",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 57,
+    "slug": "joplin",
+    "name": "Joplin",
+    "description": "Open-source note-taking and to-do application with synchronization support.",
+    "category": "Office and Documents",
+    "tags": [
+      "Notes",
+      "Markdown",
+      "Open Source",
+      "Privacy",
+      "Offline"
+    ],
+    "pricing": "Free",
+    "rating": 4.6,
+    "rating_source": "editorial_seed",
+    "website": "https://joplinapp.org",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Notes",
+    "popularity_score": 85,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/joplin.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Joplin icon",
+    "icon_fallback_url": "/static/icons/generated/joplin.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "JO",
+      "domain": "joplinapp.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 58,
+    "slug": "todoist",
+    "name": "Todoist",
+    "description": "Task manager for organizing personal and team work.",
+    "category": "Office and Documents",
+    "tags": [
+      "Tasks",
+      "Productivity",
+      "Projects",
+      "Collaboration",
+      "Mobile"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.7,
+    "rating_source": "editorial_seed",
+    "website": "https://todoist.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": true,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Productivity",
+    "popularity_score": 87,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/todoist.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Todoist icon",
+    "icon_fallback_url": "/static/icons/generated/todoist.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TO",
+      "domain": "todoist.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 59,
+    "slug": "trello",
+    "name": "Trello",
+    "description": "Visual Kanban-style project and task management platform.",
+    "category": "Office and Documents",
+    "tags": [
+      "Kanban",
+      "Projects",
+      "Tasks",
+      "Collaboration",
+      "Teams"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://trello.com",
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Modern web browser or supported application",
+      "Internet connection unless offline support is listed"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Productivity",
+    "popularity_score": 83,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "low-end-pc",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/trello.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Trello icon",
+    "icon_fallback_url": "/static/icons/generated/trello.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TR",
+      "domain": "trello.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 60,
+    "slug": "logseq",
+    "name": "Logseq",
+    "description": "Open-source local-first knowledge management and outlining tool.",
+    "category": "Office and Documents",
+    "tags": [
+      "Notes",
+      "Knowledge Base",
+      "Open Source",
+      "Local First",
+      "Outliner"
+    ],
+    "pricing": "Free",
+    "rating": 4.5,
+    "rating_source": "editorial_seed",
+    "website": "https://logseq.com",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "pros": [
+      "Clear category-focused workflow",
+      "Available on multiple platforms",
+      "Useful for common day-to-day tasks"
+    ],
+    "cons": [
+      "Advanced features may require payment",
+      "Fit depends on the specific workflow"
+    ],
+    "target_users": [
+      "Individuals evaluating tools",
+      "Small teams",
+      "Professionals in this category"
+    ],
+    "system_requirements": [
+      "Supported operating system and sufficient local storage",
+      "Modern web browser or supported application"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-24",
+      "note": "Core listing fields were reviewed for AtlasFind v0.1.2. Live pricing and plan limits should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [],
+    "subcategory": "Notes",
+    "popularity_score": 83,
+    "editor_choice": false,
+    "date_added": "2026-07-25",
+    "collections": [
+      "free-tools",
+      "low-end-pc",
+      "open-source",
+      "students"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-24",
+      "last_updated_at": "2026-07-24",
+      "next_check_at": "2026-10-22",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-24",
+        "type": "data-review",
+        "summary": "Core listing data reviewed for AtlasFind.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-24",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Pricing model recorded during editorial review; confirm live plan details on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/logseq.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Logseq icon",
+    "icon_fallback_url": "/static/icons/generated/logseq.svg",
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LO",
+      "domain": "logseq.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 108,
+    "slug": "wps-office",
+    "name": "WPS Office",
+    "description": "WPS Office is a office suites tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Office Suites",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://wps.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Office Suites",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/wps-office.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "WPS Office icon",
+    "icon_fallback_url": "/static/icons/generated/wps-office.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WO",
+      "domain": "wps.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 126,
+    "slug": "softmaker-office",
+    "name": "SoftMaker Office",
+    "description": "SoftMaker Office is a office suites tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Office Suites",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://softmaker.com/en/softmaker-office",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Office Suites",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/softmaker-office.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SoftMaker Office icon",
+    "icon_fallback_url": "/static/icons/generated/softmaker-office.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SO",
+      "domain": "softmaker.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 144,
+    "slug": "zoho-workplace",
+    "name": "Zoho Workplace",
+    "description": "Zoho Workplace is a office suites tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Office Suites",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://zoho.com/workplace",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Office Suites",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/zoho-workplace.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Zoho Workplace icon",
+    "icon_fallback_url": "/static/icons/generated/zoho-workplace.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ZW",
+      "domain": "zoho.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 162,
+    "slug": "apache-openoffice",
+    "name": "Apache OpenOffice",
+    "description": "Apache OpenOffice is a office suites tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Office Suites",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://openoffice.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Office Suites",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/apache-openoffice.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Apache OpenOffice icon",
+    "icon_fallback_url": "/static/icons/generated/apache-openoffice.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AO",
+      "domain": "openoffice.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 180,
+    "slug": "pages",
+    "name": "Pages",
+    "description": "Pages is a word processing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Word Processing",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://apple.com/pages",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Word Processing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pages.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Pages icon",
+    "icon_fallback_url": "/static/icons/generated/pages.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PA",
+      "domain": "apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 198,
+    "slug": "numbers",
+    "name": "Numbers",
+    "description": "Numbers is a spreadsheets tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Spreadsheets",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://apple.com/numbers",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/numbers.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Numbers icon",
+    "icon_fallback_url": "/static/icons/generated/numbers.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NU",
+      "domain": "apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 216,
+    "slug": "keynote",
+    "name": "Keynote",
+    "description": "Keynote is a presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Presentations",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://apple.com/keynote",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/keynote.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Keynote icon",
+    "icon_fallback_url": "/static/icons/generated/keynote.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "KE",
+      "domain": "apple.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 234,
+    "slug": "google-docs",
+    "name": "Google Docs",
+    "description": "Google Docs is a word processing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Word Processing",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://docs.google.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Word Processing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-docs.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Docs icon",
+    "icon_fallback_url": "/static/icons/generated/google-docs.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GD",
+      "domain": "docs.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 252,
+    "slug": "google-sheets",
+    "name": "Google Sheets",
+    "description": "Google Sheets is a spreadsheets tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Spreadsheets",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sheets.google.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-sheets.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Sheets icon",
+    "icon_fallback_url": "/static/icons/generated/google-sheets.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GS",
+      "domain": "sheets.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 270,
+    "slug": "google-slides",
+    "name": "Google Slides",
+    "description": "Google Slides is a presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Presentations",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://slides.google.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/google-slides.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Google Slides icon",
+    "icon_fallback_url": "/static/icons/generated/google-slides.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GS",
+      "domain": "slides.google.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 288,
+    "slug": "microsoft-word",
+    "name": "Microsoft Word",
+    "description": "Microsoft Word is a word processing tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Word Processing",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://microsoft.com/microsoft-365/word",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Word Processing",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-word.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft Word icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-word.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MW",
+      "domain": "microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 306,
+    "slug": "microsoft-excel",
+    "name": "Microsoft Excel",
+    "description": "Microsoft Excel is a spreadsheets tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Spreadsheets",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://microsoft.com/microsoft-365/excel",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Spreadsheets",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-excel.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft Excel icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-excel.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ME",
+      "domain": "microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 324,
+    "slug": "microsoft-powerpoint",
+    "name": "Microsoft PowerPoint",
+    "description": "Microsoft PowerPoint is a presentations tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Presentations",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://microsoft.com/microsoft-365/powerpoint",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Presentations",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/microsoft-powerpoint.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Microsoft PowerPoint icon",
+    "icon_fallback_url": "/static/icons/generated/microsoft-powerpoint.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MP",
+      "domain": "microsoft.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 342,
+    "slug": "latex",
+    "name": "LaTeX",
+    "description": "LaTeX is a typesetting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Typesetting",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://latex-project.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Typesetting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/latex.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "LaTeX icon",
+    "icon_fallback_url": "/static/icons/generated/latex.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LA",
+      "domain": "latex-project.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 360,
+    "slug": "overleaf",
+    "name": "Overleaf",
+    "description": "Overleaf is a typesetting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Typesetting",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://overleaf.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Typesetting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/overleaf.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Overleaf icon",
+    "icon_fallback_url": "/static/icons/generated/overleaf.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OV",
+      "domain": "overleaf.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 378,
+    "slug": "typst",
+    "name": "Typst",
+    "description": "Typst is a typesetting tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Typesetting",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://typst.app",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Typesetting",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/typst.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Typst icon",
+    "icon_fallback_url": "/static/icons/generated/typst.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TY",
+      "domain": "typst.app",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 396,
+    "slug": "pandoc",
+    "name": "Pandoc",
+    "description": "Pandoc is a document conversion tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "Document Conversion",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://pandoc.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "Document Conversion",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pandoc.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Pandoc icon",
+    "icon_fallback_url": "/static/icons/generated/pandoc.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PA",
+      "domain": "pandoc.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 414,
+    "slug": "calibre",
+    "name": "Calibre",
+    "description": "Calibre is a e-book management tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "E-book Management",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Free",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://calibre-ebook.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "free",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "E-book Management",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [
+      "free-tools"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Free",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/calibre.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Calibre icon",
+    "icon_fallback_url": "/static/icons/generated/calibre.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CA",
+      "domain": "calibre-ebook.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 432,
+    "slug": "sumatra-pdf",
+    "name": "Sumatra PDF",
+    "description": "Sumatra PDF is a pdf readers tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Readers",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sumatrapdfreader.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Readers",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sumatra-pdf.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sumatra PDF icon",
+    "icon_fallback_url": "/static/icons/generated/sumatra-pdf.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SP",
+      "domain": "sumatrapdfreader.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 450,
+    "slug": "foxit-pdf-reader",
+    "name": "Foxit PDF Reader",
+    "description": "Foxit PDF Reader is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://foxit.com/pdf-reader",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/foxit-pdf-reader.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Foxit PDF Reader icon",
+    "icon_fallback_url": "/static/icons/generated/foxit-pdf-reader.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FP",
+      "domain": "foxit.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 468,
+    "slug": "pdf-xchange-editor",
+    "name": "PDF-XChange Editor",
+    "description": "PDF-XChange Editor is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://pdf-xchange.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pdf-xchange-editor.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PDF-XChange Editor icon",
+    "icon_fallback_url": "/static/icons/generated/pdf-xchange-editor.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PX",
+      "domain": "pdf-xchange.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 486,
+    "slug": "adobe-acrobat",
+    "name": "Adobe Acrobat",
+    "description": "Adobe Acrobat is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://adobe.com/acrobat",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/adobe-acrobat.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Adobe Acrobat icon",
+    "icon_fallback_url": "/static/icons/generated/adobe-acrobat.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AA",
+      "domain": "adobe.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 504,
+    "slug": "pdf24-creator",
+    "name": "PDF24 Creator",
+    "description": "PDF24 Creator is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://tools.pdf24.org",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/pdf24-creator.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PDF24 Creator icon",
+    "icon_fallback_url": "/static/icons/generated/pdf24-creator.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PC",
+      "domain": "tools.pdf24.org",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 522,
+    "slug": "smallpdf",
+    "name": "Smallpdf",
+    "description": "Smallpdf is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://smallpdf.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/smallpdf.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Smallpdf icon",
+    "icon_fallback_url": "/static/icons/generated/smallpdf.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SM",
+      "domain": "smallpdf.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 540,
+    "slug": "ilovepdf",
+    "name": "iLovePDF",
+    "description": "iLovePDF is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://ilovepdf.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/ilovepdf.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "iLovePDF icon",
+    "icon_fallback_url": "/static/icons/generated/ilovepdf.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IL",
+      "domain": "ilovepdf.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 558,
+    "slug": "sejda-pdf",
+    "name": "Sejda PDF",
+    "description": "Sejda PDF is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://sejda.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/sejda-pdf.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Sejda PDF icon",
+    "icon_fallback_url": "/static/icons/generated/sejda-pdf.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SP",
+      "domain": "sejda.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 576,
+    "slug": "dochub",
+    "name": "DocHub",
+    "description": "DocHub is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://dochub.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/dochub.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DocHub icon",
+    "icon_fallback_url": "/static/icons/generated/dochub.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DO",
+      "domain": "dochub.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  },
+  {
+    "id": 594,
+    "slug": "xodo",
+    "name": "Xodo",
+    "description": "Xodo is a pdf tools tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "category": "Office and Documents",
+    "tags": [
+      "PDF Tools",
+      "Office",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "rating": 4.0,
+    "rating_source": "catalog_seed",
+    "website": "https://xodo.com",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "pros": [
+      "Focused feature set for its category",
+      "Useful for common individual or team workflows",
+      "Official website available for current details"
+    ],
+    "cons": [
+      "Exact limits and pricing require verification",
+      "Feature availability may vary by platform"
+    ],
+    "target_users": [
+      "Individuals exploring tools in this category",
+      "Teams comparing software options",
+      "Users who want an official product link"
+    ],
+    "system_requirements": [
+      "Modern web browser or a supported desktop application",
+      "Internet connection for online features"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+    },
+    "verification": {
+      "status": "pending",
+      "date": "2026-07-28",
+      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+    },
+    "pricing_type": "freemium",
+    "minimum_ram_gb": 4,
+    "system_level": "medium",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "subcategory": "PDF Tools",
+    "popularity_score": 55,
+    "editor_choice": false,
+    "date_added": "2026-07-28",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-07-28",
+      "last_updated_at": "2026-07-28",
+      "next_check_at": "2026-10-26",
+      "status": "review-due"
+    },
+    "change_history": [
+      {
+        "date": "2026-07-28",
+        "type": "data-review",
+        "summary": "Catalog entry added for AtlasFind v0.9.0.",
+        "changes": []
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2026-07-28",
+        "old_value": "Unknown",
+        "new_value": "Freemium",
+        "note": "Initial catalog pricing model; verify current plans on the official website."
+      }
+    ],
+    "icon_url": "/static/icons/generated/xodo.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Xodo icon",
+    "icon_fallback_url": "/static/icons/generated/xodo.svg",
+    "quality_status": "review_due",
+    "quality_review": {
+      "scope": "dataset-audit",
+      "reviewed_at": "2026-07-28",
+      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+    },
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "XO",
+      "domain": "xodo.com",
+      "lazy_load": true,
+      "review_status": "automated"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": []
+  }
+]

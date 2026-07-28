@@ -40,7 +40,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.1"
+APP_VERSION = "1.0.2"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 

@@ -11,8 +11,10 @@ for locale,data in (("en",en),("tr",tr)):
         if key != "quality" and (not isinstance(value,str) or not value.strip()): errors.append(f"Empty translation: {locale}:{key}")
 js=(ROOT/"static/js/main.js").read_text(encoding="utf-8")
 # Ensure required integration points exist
-for needle,path in [("window.ATLAS_I18N",ROOT/"templates/base.html"),("atlasT(\"js.menu.open",ROOT/"static/js/main.js"),("APP_VERSION = \"1.0.1\"",ROOT/"app.py")]:
+for needle,path in [("window.ATLAS_I18N",ROOT/"templates/base.html"),("atlasT(\"js.menu.open",ROOT/"static/js/main.js")]:
     if needle not in path.read_text(encoding="utf-8"): errors.append(f"Missing integration: {needle}")
+if not re.search(r'APP_VERSION\s*=\s*"1\.0\.[1-9][0-9]*"', (ROOT/"app.py").read_text(encoding="utf-8")):
+    errors.append("Missing compatible APP_VERSION (expected 1.0.1 or newer patch release)")
 if errors:
     print("Localization validation failed:")
     print("\n".join(f"- {e}" for e in errors)); sys.exit(1)

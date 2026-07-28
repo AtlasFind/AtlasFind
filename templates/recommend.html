@@ -127,7 +127,7 @@
 
                 <div class="recommend-card-footer">
                     <span>{{ item.tool.pricing }}</span>
-                    <span>★ {{ item.tool.rating }}</span>
+                    <span>{% if item.tool.rating_source != 'not-rated' %}★ {{ item.tool.rating }}{% else %}{{ t('tool.not_rated') }}{% endif %}</span>
                     <a href="{{ url_for('tool_detail', slug=item.tool.slug) }}">{{ t("actions.view_details") }}</a>
                 </div>
             </article>

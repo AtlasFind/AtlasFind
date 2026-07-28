@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from database import DATABASE_PATH, initialize_database, transaction
+from catalog.loader import load_catalog
 from tool_schema import validate_tools
 from content_schema import validate_articles
 
@@ -37,7 +38,7 @@ def get_or_create(connection, table, key_column, value, extra_column=None, extra
 
 
 def migrate(reset=True):
-    tools = load_json(TOOLS_FILE)
+    tools = load_catalog(validate=True)
     articles = load_json(ARTICLES_FILE)
     checklist = load_json(CHECKLIST_FILE)
 

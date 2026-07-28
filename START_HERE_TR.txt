@@ -1,0 +1,15 @@
+ATLASFIND v1.0.2 - BASLATMA
+
+1. Bu klasorde run_atlasfind.bat dosyasina cift tiklayin.
+2. Ilk calistirmada .venv olusturulur ve requirements.txt kurulur.
+3. Dogrulamalar gecerli olursa Flask sunucusu baslar.
+4. Tarayicidan http://127.0.0.1:5000/tr/ adresini acin.
+
+Elle calistirma:
+  py -m venv .venv
+  .venv\Scripts\python -m pip install -r requirements.txt
+  .venv\Scripts\python scripts\validate_release_v102.py
+  .venv\Scripts\python app.py
+
+Not: 600 kaydin 5'i resmi kaynaklarla strict verified durumundadir.
+Kalan 595 kayit pending durumundadir; uydurma dogrulama veya puan verilmemistir.

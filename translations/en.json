@@ -460,5 +460,6 @@
   "flash.taxonomy_saved": "{kind} saved.",
   "flash.invalid_json": "Invalid JSON: {error}",
   "flash.import_failed": "Import validation failed: {errors}",
-  "flash.imported_drafts": "Imported {count} tools as drafts."
+  "flash.imported_drafts": "Imported {count} tools as drafts.",
+  "tool.not_rated": "Not rated yet"
 }
