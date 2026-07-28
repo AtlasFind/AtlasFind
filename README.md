@@ -137,7 +137,7 @@ py scripts/validate_security.py
 
 The built-in Flask server remains suitable for local testing. A production deployment should run behind a production WSGI server and HTTPS reverse proxy.
 
-## Production deployment (v0.8.0)
+## Production deployment (v0.8.1)
 
 AtlasFind includes a WSGI entry point, Gunicorn startup, Dockerfile, Render Blueprint, persistent SQLite path support, automatic first-deploy seeding, and health checks.
 
@@ -153,3 +153,7 @@ python scripts/start_production.py
 ```
 
 See `docs/DEPLOYMENT.md` for environment variables, domain setup, HTTPS, persistent storage, and backup steps.
+
+
+## Public beta pages
+`/<locale>/privacy`, `terms`, `cookies` and `contact` provide bilingual launch information.

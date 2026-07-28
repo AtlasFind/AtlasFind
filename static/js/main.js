@@ -225,3 +225,10 @@ searchInput?.addEventListener("keydown", event => {
 document.addEventListener("click", event => {
     if (!searchSuggestions?.contains(event.target) && event.target !== searchInput) closeSearchSuggestions();
 });
+
+
+// v0.8.1 essential-storage notice
+const cookieNotice = document.getElementById("cookieNotice");
+const cookieAccept = document.getElementById("cookieAccept");
+if (cookieNotice && localStorage.getItem("atlas-cookie-notice") !== "accepted") cookieNotice.hidden = false;
+cookieAccept?.addEventListener("click", () => { localStorage.setItem("atlas-cookie-notice", "accepted"); cookieNotice.hidden = true; });

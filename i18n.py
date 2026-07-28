@@ -46,6 +46,8 @@ def translate(key, **values):
 
 
 def localized_path(path='/', locale=None):
+    if path is None:
+        return None
     locale = locale or get_locale()
     if not path.startswith('/'):
         path = '/' + path

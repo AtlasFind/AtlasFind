@@ -1,4 +1,16 @@
+# v0.8.1 - Public Beta Readiness
+
+- Added bilingual privacy, terms, cookie and contact pages.
+- Added an essential-storage notice and public beta validation.
+- Expanded footer navigation and mobile public-page layout.
+
 # Changelog
+### v0.8.1 hotfix
+- Fixed public-page breadcrumb generation when the current breadcrumb has no URL.
+- Added trailing-slash support for privacy, terms, cookies and contact routes.
+- Fixed the translated home label on safe error pages.
+- Made localized path generation tolerate non-clickable breadcrumb items.
+
 
 ## v0.8.0 - Deployment and Public Beta
 
