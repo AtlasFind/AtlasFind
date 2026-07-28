@@ -421,8 +421,9 @@
         </div>
     </details>
 {% endif %}
-                                <div class="tool-logo">
-                                    {{ tool.name[0] }}
+                                <div class="tool-logo tool-icon-shell">
+                                    <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon>
+                                    <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
                                 </div>
 
 

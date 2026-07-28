@@ -98,7 +98,7 @@
         <div class="tools-grid article-related-tools">
             {% for tool in related_tools %}
             <article class="tool-card">
-                <div class="tool-card-top"><span class="tool-category">{{ tool.subcategory }}</span><span class="tool-rating">★ {{ tool.rating }}</span></div>
+                <div class="tool-card-top"><div class="tool-logo tool-icon-shell"><img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" loading="lazy" width="40" height="40" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span></div><span class="tool-category">{{ tool.subcategory }}</span><span class="tool-rating">★ {{ tool.rating }}</span></div>
                 <h3>{{ tool.name }}</h3>
                 <p>{{ tool.description }}</p>
                 <a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">{{ t("actions.view_details_arrow") }}</a>

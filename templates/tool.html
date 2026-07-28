@@ -5,7 +5,7 @@
 {% block content %}
 <section class="tool-detail-hero" id="overview">
     <div class="tool-detail-main">
-        <div class="tool-detail-logo" aria-hidden="true">{{ tool.name[0] }}</div>
+        <div class="tool-detail-logo tool-icon-shell"><img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" width="72" height="72" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span></div>
         <div class="tool-detail-title">
             <span class="section-label">{{ tool.category }}</span>
             <h1>{{ tool.name }}</h1>
@@ -144,7 +144,7 @@
         {% for alternative in alternatives %}
         <article class="alternative-card">
             <div class="alternative-header">
-                <div class="tool-logo" aria-hidden="true">{{ alternative.name[0] }}</div>
+                <div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div>
                 <div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div>
                 <strong class="alternative-rating">★ {{ alternative.rating }}</strong>
             </div>

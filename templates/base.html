@@ -29,7 +29,7 @@
     </script>
     <title>{{ seo.title if seo else self.title()|striptags }}</title>
     {% for schema in schemas or [] %}{% if schema %}<script type="application/ld+json">{{ json_ld(schema)|safe }}</script>{% endif %}{% endfor %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', v=app_version) }}">
 </head>
 <body>
     <a class="skip-link" href="#main-content">{{ t("access.skip") }}</a>
@@ -48,7 +48,7 @@
 
             <nav class="nav-links" id="primaryNavigation" aria-label="{{ t('nav.primary') }}">
                 <a href="{{ url_for('home') }}#discover" {% if active_page == 'home' %}aria-current="page"{% endif %}>{{ t("nav.discover") }}</a>
-                <a href="{{ url_for('home') }}#tools">{{ t("nav.tools") }}</a>
+                <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
                 <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
                 <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>{{ t("nav.recommend") }}</a>
                 <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>{{ t("nav.guides") }}</a>
@@ -83,7 +83,7 @@
         </div>
         <div class="footer-links" aria-label="Footer navigation">
             <a href="{{ url_for('home') }}#discover">{{ t("nav.discover") }}</a>
-            <a href="{{ url_for('home') }}#tools">{{ t("nav.tools") }}</a>
+            <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
             <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
@@ -92,6 +92,7 @@
             <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
             <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
             <a href="{{ url_for('contact') }}">{{ t("footer.contact") }}</a>
+            <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>
             <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <span class="copyright">© 2026 AtlasFind · v{{ app_version }}</span>
@@ -102,7 +103,7 @@
         <button type="button" id="cookieAccept">{{ t("cookie.accept") }}</button>
     </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -2,14 +2,50 @@
 {% block title %}{{ title }} · AtlasFind{% endblock %}
 {% block description %}{{ description }}{% endblock %}
 {% block content %}
-<section class="discovery-hero"><div class="section-container"><span class="eyebrow">{{ page_type|title }}</span><h1>{{ title }}</h1><p>{{ description }}</p><strong>{{ pagination.total }} tools</strong></div></section>
+<section class="discovery-hero catalog-hero">
+  <div class="section-container">
+    <span class="eyebrow">{{ "Katalog" if locale == "tr" else "Catalog" }}</span>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <div class="catalog-summary"><strong>{{ pagination.total }}</strong><span>{{ "araç listeleniyor" if locale == "tr" else "tools listed" }}</span></div>
+  </div>
+</section>
 <section class="section-container discovery-layout">
-<form method="get" class="discovery-controls">
-<label>{{ t("common.subcategory") }}<select name="subcategory"><option value="">{{ t("common.all_subcategories") }}</option>{% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select></label>
-<label>{{ t("common.sort") }}<select name="sort"><option value="popular" {% if sort_key=='popular' %}selected{% endif %}>Most popular</option><option value="rating" {% if sort_key=='rating' %}selected{% endif %}>Highest rated</option><option value="newest" {% if sort_key=='newest' %}selected{% endif %}>Newest</option><option value="name-asc" {% if sort_key=='name-asc' %}selected{% endif %}>A-Z</option><option value="name-desc" {% if sort_key=='name-desc' %}selected{% endif %}>Z-A</option><option value="ram" {% if sort_key=='ram' %}selected{% endif %}>Lowest RAM</option></select></label>
-<button type="submit">{{ t("actions.apply") }}</button><a href="{{ request.path }}">{{ t("common.reset") }}</a>
-</form>
-{% if tools %}<div class="tools-grid discovery-grid">{% for tool in tools %}<article class="tool-card"><div class="tool-card-top"><span class="tool-category">{{ tool.subcategory }}</span><span class="tool-rating">★ {{ tool.rating }}</span></div><h2>{{ tool.name }}</h2><p>{{ tool.description }}</p><div class="tool-meta"><span>{{ tool.pricing|title }}</span><span>{{ tool.minimum_ram_gb if tool.minimum_ram_gb is not none else '?' }} GB RAM</span></div><a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">{{ t("actions.view_details_arrow") }}</a></article>{% endfor %}</div>{% else %}<div class="empty-results"><h2>{{ t("common.no_tools") }}</h2><p>Try another subcategory or sorting option.</p></div>{% endif %}
-{% if related_guides %}<section class="category-guides"><div class="section-heading"><span class="eyebrow">Learn before choosing</span><h2>{{ t("common.related_guides") }}</h2></div><div class="article-grid compact-article-grid">{% for article in related_guides %}<article class="article-card"><div class="article-card-meta"><span>{{ article.content_type|replace('-', ' ')|title }}</span><time datetime="{{ article.updated_at }}">{{ article.updated_at }}</time></div><h3><a href="{{ url_for('article_detail', slug=article.slug) }}">{{ article.title }}</a></h3><p>{{ article.description }}</p><a href="{{ url_for('article_detail', slug=article.slug) }}">{{ t("actions.read_guide") }}</a></article>{% endfor %}</div></section>{% endif %}
-{% if pagination.pages>1 %}<nav class="pagination" aria-label="Pagination">{% if pagination.has_prev %}<a href="?{{ request.args.to_dict(flat=False)|urlencode }}&page={{ pagination.page-1 }}">← Previous</a>{% endif %}<span>Page {{ pagination.page }} of {{ pagination.pages }}</span>{% if pagination.has_next %}<a href="?{{ request.args.to_dict(flat=False)|urlencode }}&page={{ pagination.page+1 }}">{{ t("actions.next") }}</a>{% endif %}</nav>{% endif %}
-</section>{% endblock %}
+  <form method="get" class="discovery-controls catalog-controls">
+    <label>{{ t("common.subcategory") }}
+      <select name="subcategory"><option value="">{{ t("common.all_subcategories") }}</option>{% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select>
+    </label>
+    <label>{{ t("common.sort") }}
+      <select name="sort">
+        <option value="popular" {% if sort_key=='popular' %}selected{% endif %}>{{ "En popüler" if locale == "tr" else "Most popular" }}</option>
+        <option value="rating" {% if sort_key=='rating' %}selected{% endif %}>{{ "En yüksek puan" if locale == "tr" else "Highest rated" }}</option>
+        <option value="newest" {% if sort_key=='newest' %}selected{% endif %}>{{ "En yeni" if locale == "tr" else "Newest" }}</option>
+        <option value="name-asc" {% if sort_key=='name-asc' %}selected{% endif %}>A-Z</option>
+        <option value="name-desc" {% if sort_key=='name-desc' %}selected{% endif %}>Z-A</option>
+        <option value="ram" {% if sort_key=='ram' %}selected{% endif %}>{{ "En düşük RAM" if locale == "tr" else "Lowest RAM" }}</option>
+      </select>
+    </label>
+    <button type="submit">{{ t("actions.apply") }}</button><a class="control-reset" href="{{ request.path }}">{{ t("common.reset") }}</a>
+  </form>
+  {% if tools %}
+  <div class="tools-grid discovery-grid catalog-grid">
+    {% for tool in tools %}
+    <article class="tool-card catalog-card">
+      <div class="catalog-card-head">
+        <div class="tool-logo tool-icon-shell catalog-icon">
+          <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" loading="lazy" width="56" height="56" data-atlas-icon>
+          <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
+        </div>
+        <div class="catalog-card-title"><span class="tool-category">{{ tool.subcategory }}</span><h2>{{ tool.name }}</h2></div>
+        <span class="tool-rating">★ {{ tool.rating }}</span>
+      </div>
+      <p class="catalog-description">{{ tool.description }}</p>
+      <div class="catalog-badges"><span>{{ tool.pricing|title }}</span>{% for platform in tool.platforms[:2] %}<span>{{ platform }}</span>{% endfor %}</div>
+      <div class="catalog-card-footer"><span>{{ tool.minimum_ram_gb if tool.minimum_ram_gb is not none else '?' }} GB RAM</span><a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">{{ t("actions.view_details_arrow") }}</a></div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}<div class="empty-results"><h2>{{ t("common.no_tools") }}</h2><p>{{ "Başka bir filtre veya sıralama deneyin." if locale == "tr" else "Try another filter or sorting option." }}</p></div>{% endif %}
+  {% if pagination.pages>1 %}<nav class="pagination" aria-label="Pagination">{% if pagination.has_prev %}<a href="?page={{ pagination.page-1 }}{% if sort_key %}&sort={{ sort_key }}{% endif %}{% if subcategory %}&subcategory={{ subcategory|urlencode }}{% endif %}">← {{ "Önceki" if locale == "tr" else "Previous" }}</a>{% endif %}<span>{{ "Sayfa" if locale == "tr" else "Page" }} {{ pagination.page }} / {{ pagination.pages }}</span>{% if pagination.has_next %}<a href="?page={{ pagination.page+1 }}{% if sort_key %}&sort={{ sort_key }}{% endif %}{% if subcategory %}&subcategory={{ subcategory|urlencode }}{% endif %}">{{ t("actions.next") }} →</a>{% endif %}</nav>{% endif %}
+</section>
+{% endblock %}

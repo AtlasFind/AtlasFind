@@ -7,7 +7,7 @@
   <div class="public-page-grid">
     {% for heading, body in content.sections %}<article class="public-card"><h2>{{ heading }}</h2><p>{{ body }}</p></article>{% endfor %}
   </div>
-  {% if page_key == 'contact' %}<div class="public-actions"><a class="primary-button" href="{{ url_for('recommend') }}">{{ t("public.suggest_tool") }}</a><a class="secondary-button" href="https://github.com/AtlasFind/AtlasFind/issues" target="_blank" rel="noopener noreferrer">{{ t("public.github_issue") }}</a></div>{% endif %}
+  {% if page_key == 'contact' %}<div class="contact-email-card"><div class="contact-email-copy"><span class="section-label">{{ t('footer.contact') }}</span><strong>{{ "Bize e-posta gönderin" if locale == "tr" else "Send us an email" }}</strong><p>{{ "Hata bildirimleri, araç önerileri ve iş birliği talepleri için." if locale == "tr" else "For bug reports, tool suggestions and collaboration requests." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div><div class="public-actions"><a class="primary-button" href="{{ url_for('recommend') }}">{{ t("public.suggest_tool") }}</a><a class="secondary-button" href="https://github.com/AtlasFind/AtlasFind/issues" target="_blank" rel="noopener noreferrer">{{ t("public.github_issue") }}</a></div>{% endif %}
   <p class="public-updated">{{ t("public.updated") }}</p>
 </section>
 {% endblock %}

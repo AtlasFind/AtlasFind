@@ -8,6 +8,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from database import DATABASE_PATH, apply_migrations
+import json
 
 
 def tool_count() -> int:
@@ -21,15 +22,26 @@ def tool_count() -> int:
         return 0
 
 
+def expected_tool_count() -> int:
+    source = ROOT / "data" / "tools.json"
+    try:
+        return len(json.loads(source.read_text(encoding="utf-8")))
+    except (OSError, ValueError, TypeError):
+        return 0
+
+
 def main() -> None:
     DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    expected = expected_tool_count()
 
-    if tool_count() == 0:
+    if tool_count() < expected:
         from scripts.migrate_json_to_sqlite import migrate
-        print(f"Catalog is empty; rebuilding {DATABASE_PATH} from JSON sources.")
+        print(f"Catalog is missing or outdated; rebuilding {DATABASE_PATH} from JSON sources.")
         migrate(reset=True)
 
     apply_migrations()
+    from scripts.sync_catalog_translations import main as sync_catalog_translations
+    sync_catalog_translations()
     count = tool_count()
     if count == 0:
         raise RuntimeError("Database bootstrap completed without any tools.")

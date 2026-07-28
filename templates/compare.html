@@ -48,7 +48,7 @@
             <div class="comparison-property">{{ t("compare.feature") }}</div>
             {% for item in selected_tools %}
             <div class="comparison-product">
-                <div class="tool-logo">{{ item.name[0] }}</div>
+                <div class="tool-logo tool-icon-shell"><img src="{{ item.icon_url }}"{% if item.icon_fallback_url %} data-fallback-src="{{ item.icon_fallback_url }}"{% endif %} alt="{{ item.icon_alt or (item.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ item.name[0] }}</span></div>
                 <h2>{{ item.name }}</h2>
                 <span>★ {{ item.rating }}</span>
                 <a href="{{ url_for('tool_detail', slug=item.slug) }}">View details</a>
@@ -111,7 +111,7 @@
 
         {% if winner %}
         <div class="comparison-winner">
-            <div class="tool-logo">{{ winner.tool.name[0] }}</div>
+            <div class="tool-logo tool-icon-shell"><img src="{{ winner.tool.icon_url }}"{% if winner.tool.icon_fallback_url %} data-fallback-src="{{ winner.tool.icon_fallback_url }}"{% endif %} alt="{{ winner.tool.icon_alt or (winner.tool.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ winner.tool.name[0] }}</span></div>
             <div>
                 <span class="section-label">Best match · {{ winner.match }}%</span>
                 <h3>{{ winner.tool.name }}</h3>

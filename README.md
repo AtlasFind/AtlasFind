@@ -137,7 +137,7 @@ py scripts/validate_security.py
 
 The built-in Flask server remains suitable for local testing. A production deployment should run behind a production WSGI server and HTTPS reverse proxy.
 
-## Production deployment (v0.8.1)
+## Production deployment (v0.9.0)
 
 AtlasFind includes a WSGI entry point, Gunicorn startup, Dockerfile, Render Blueprint, persistent SQLite path support, automatic first-deploy seeding, and health checks.
 
@@ -157,3 +157,8 @@ See `docs/DEPLOYMENT.md` for environment variables, domain setup, HTTPS, persist
 
 ## Public beta pages
 `/<locale>/privacy`, `terms`, `cookies` and `contact` provide bilingual launch information.
+
+
+## v0.9.0 catalog
+
+The bundled catalog contains 600 tools. Validate it with `py scripts/validate_catalog_v090.py`. Contact email is configured with `ATLASFIND_CONTACT_EMAIL` and defaults to `atlasfindd@gmail.com`.

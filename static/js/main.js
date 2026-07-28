@@ -1,3 +1,47 @@
+function showAtlasIconMonogram(img) {
+    if (!img) return;
+    img.hidden = true;
+    img.removeAttribute("src");
+    const monogram = img.parentElement?.querySelector(".tool-icon-fallback");
+    if (monogram) monogram.hidden = false;
+}
+
+function tryAtlasIconFallback(img) {
+    if (!img || img.dataset.iconFinished === "1") return;
+    const fallback = img.dataset.fallbackSrc;
+    const fallbackAlreadyTried = img.dataset.fallbackTried === "1";
+
+    if (fallback && !fallbackAlreadyTried) {
+        img.dataset.fallbackTried = "1";
+        img.src = fallback;
+        return;
+    }
+
+    img.dataset.iconFinished = "1";
+    showAtlasIconMonogram(img);
+}
+
+function validateAtlasIcon(img) {
+    if (!img || img.hidden) return;
+    if (!img.complete) return;
+    if (!img.naturalWidth || !img.naturalHeight || img.naturalWidth < 32 || img.naturalHeight < 32) {
+        tryAtlasIconFallback(img);
+    }
+}
+
+function initializeAtlasIcons(scope = document) {
+    scope.querySelectorAll("img[data-atlas-icon]").forEach((img) => {
+        if (img.dataset.iconBound === "1") return;
+        img.dataset.iconBound = "1";
+        img.addEventListener("error", () => tryAtlasIconFallback(img));
+        img.addEventListener("load", () => validateAtlasIcon(img));
+        if (img.complete) validateAtlasIcon(img);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => initializeAtlasIcons());
+
+
 const root = document.documentElement;
 const themeButton = document.getElementById("themeButton");
 const themeIcon = document.getElementById("themeIcon");

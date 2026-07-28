@@ -35,7 +35,9 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.8.1"
+APP_VERSION = "0.9.1.2"
+
+CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
 
 PUBLIC_PAGES = {
@@ -45,7 +47,7 @@ PUBLIC_PAGES = {
             ("Cookies and local storage", "AtlasFind uses essential browser storage for interface preferences such as language, theme and cookie notice status. Advertising or analytics cookies are not enabled unless the policy is updated and consent is collected where required."),
             ("External websites", "Tool pages link to third-party websites. Their privacy practices and content are controlled by those providers, not AtlasFind."),
             ("Data retention", "Security and error logs are retained only as long as reasonably needed to operate and protect the service."),
-            ("Contact", "Questions about privacy can be submitted through the AtlasFind GitHub repository until a dedicated support address is published."),
+            ("Contact", "Questions about privacy can be sent to the contact address shown on this page."),
         ]},
         "tr": {"title": "Gizlilik Politikası", "description": "AtlasFind'in teknik verileri nasıl işlediği ve ziyaretçi gizliliğini nasıl koruduğu.", "sections": [
             ("Topladığımız bilgiler", "AtlasFind ziyaretçi hesabı gerektirmez. Güvenlik, hizmet sürekliliği ve kötüye kullanımın önlenmesi amacıyla IP adresi, tarayıcı bilgisi, istenen sayfalar ve zaman bilgisi gibi standart sunucu kayıtları işlenebilir."),
@@ -800,6 +802,7 @@ def inject_app_metadata():
     return {
         "app_version": APP_VERSION,
         "site_url": SITE_URL,
+        "contact_email": CONTACT_EMAIL,
         "json_ld": json_ld,
         "locale": get_locale(),
         "supported_locales": SUPPORTED_LOCALES,
@@ -875,6 +878,28 @@ def search_suggestions_api():
     query = request.args.get("q", "").strip()
     return jsonify(search_suggestions(load_tools(), query))
 
+
+
+@app.route("/tools")
+@app.route("/<locale>/tools")
+def tools_directory(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    items = load_tools()
+    title = "Tüm Araçlar" if get_locale() == "tr" else "All Tools"
+    description = (
+        "AtlasFind kataloğundaki yazılım ve servisleri kategori, platform, fiyatlandırma ve sistem gereksinimlerine göre keşfedin."
+        if get_locale() == "tr"
+        else "Explore software and services in the AtlasFind catalog by category, platform, pricing and system requirements."
+    )
+    crumbs = build_breadcrumbs([(("Ana Sayfa" if get_locale() == "tr" else "Home"), "/"), (title, "/tools")])
+    return render_template(
+        "discovery.html",
+        **discovery_context(items, title, description, "catalog"),
+        active_page="tools", related_guides=[],
+        seo=page_seo(title, description, "/tools"),
+        breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
+    )
 
 @app.route("/categories/<slug>")
 @app.route("/<locale>/categories/<slug>")

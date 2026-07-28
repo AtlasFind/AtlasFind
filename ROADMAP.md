@@ -34,3 +34,10 @@ Development does not move to the next version without explicit approval.
 - SQLite translation tables
 
 - v0.8.1 ✅ Deployment and public beta readiness
+
+
+## v0.9.0 - Expanded catalog
+- [x] 600 tools
+- [x] Tool icons with fallback
+- [x] Contact email configuration
+- [x] Bilingual seed content for 500 new listings

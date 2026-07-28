@@ -1,3 +1,27 @@
+# AtlasFind v0.9.1.2
+
+- Removed fragile inline icon handlers that executed before JavaScript loaded.
+- Added centralized icon initialization, fallback and monogram handling.
+- Added asset cache busting and narrow-screen layout safeguards.
+- Broken or tiny remote icons now fall back without console errors.
+
+## v0.9.1 - Catalog UI and icon quality hotfix
+
+- Added bilingual `/tools` catalog route.
+- Added resilient Simple Icons → favicon → monogram icon fallback.
+- Redesigned catalog cards, tool detail layout and contact email card.
+- Improved responsive spacing, readability and pagination.
+
+# Changelog
+
+## v0.9.0 - Expanded catalog and public beta content
+- Expanded the directory from 100 to 600 tools across 18 balanced categories.
+- Added domain-based application icons with a local initial fallback.
+- Added 500 Turkish catalog translations for the new directory entries.
+- Added `atlasfindd@gmail.com` through `ATLASFIND_CONTACT_EMAIL`.
+- Added catalog validation and translation synchronization scripts.
+- Updated deployment bootstrap to rebuild an outdated catalog automatically.
+
 # v0.8.1 - Public Beta Readiness
 
 - Added bilingual privacy, terms, cookie and contact pages.
