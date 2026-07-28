@@ -6,7 +6,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.7.1
+v0.9.2-dev
 
 ## Current Features
 
@@ -162,3 +162,26 @@ See `docs/DEPLOYMENT.md` for environment variables, domain setup, HTTPS, persist
 ## v0.9.0 catalog
 
 The bundled catalog contains 600 tools. Validate it with `py scripts/validate_catalog_v090.py`. Contact email is configured with `ATLASFIND_CONTACT_EMAIL` and defaults to `atlasfindd@gmail.com`.
+
+
+## v0.9.2 Professional Catalog Experience
+
+The current development version upgrades `/tr/tools` and `/en/tools` into a professional directory experience without replacing the existing Flask, SQLite or localization architecture.
+
+Included in this development package:
+
+- collapsible category, subcategory, pricing, platform, rating and feature filters
+- active filter chips and a clear-all action
+- filter-safe previous/next pagination URLs
+- grid and list views with a saved browser preference
+- mobile filter panel and narrow-screen layout protections
+- improved card hierarchy, platform summaries and RAM fallback text
+- complete Turkish and English catalog interface strings
+
+Validation command:
+
+```powershell
+py scripts\validate_catalog_v092.py
+```
+
+Real route checks must also be performed with Flask running locally before release approval.

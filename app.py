@@ -35,7 +35,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.9.1.2"
+APP_VERSION = "0.9.2-dev"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -580,7 +580,16 @@ def parse_filters(args):
     except ValueError:
         max_ram = None
 
+    min_rating_raw = args.get("min_rating", "").strip()
+    try:
+        min_rating = float(min_rating_raw) if min_rating_raw else None
+        if min_rating is not None and not 0 < min_rating <= 5:
+            min_rating = None
+    except ValueError:
+        min_rating = None
+
     return {
+        "category": args.get("category", "").strip(),
         "pricing": pricing,
         "platforms": platforms,
         "system_levels": system_levels,
@@ -589,10 +598,14 @@ def parse_filters(args):
         "ai": args.get("ai") == "1",
         "turkish": args.get("turkish") == "1",
         "max_ram": max_ram,
+        "min_rating": min_rating,
     }
 
 
 def tool_matches_filters(tool, filters):
+    if filters.get("category") and tool.get("category") != filters["category"]:
+        return False
+
     if filters["pricing"]:
         pricing_type = normalize_text(tool.get("pricing_type", tool.get("pricing", "")))
         if pricing_type not in filters["pricing"]:
@@ -625,6 +638,13 @@ def tool_matches_filters(tool, filters):
         if minimum_ram > filters["max_ram"]:
             return False
 
+    if filters.get("min_rating") is not None:
+        try:
+            if float(tool.get("rating", 0)) < filters["min_rating"]:
+                return False
+        except (TypeError, ValueError):
+            return False
+
     return True
 
 
@@ -632,11 +652,13 @@ def filter_tools(tools, filters):
     return [tool for tool in tools if tool_matches_filters(tool, filters)]
 
 
-def build_query_url(search_query, filters, remove=None):
+def build_query_url(search_query, filters, remove=None, base_path="/", extra=None):
     params = []
     if search_query:
         params.append(("q", search_query))
 
+    if filters.get("category") and remove != ("category", filters["category"]):
+        params.append(("category", filters["category"]))
     for value in filters["pricing"]:
         if remove != ("pricing", value):
             params.append(("pricing", value))
@@ -654,34 +676,60 @@ def build_query_url(search_query, filters, remove=None):
     if filters["max_ram"] is not None and remove != ("max_ram", str(filters["max_ram"])):
         value = int(filters["max_ram"]) if filters["max_ram"].is_integer() else filters["max_ram"]
         params.append(("max_ram", str(value)))
+    if filters.get("min_rating") is not None and remove != ("min_rating", str(filters["min_rating"])):
+        value = int(filters["min_rating"]) if filters["min_rating"].is_integer() else filters["min_rating"]
+        params.append(("min_rating", str(value)))
+
+    for key, value in (extra or {}).items():
+        if value not in (None, "", False):
+            params.append((key, value))
 
     query = urlencode(params, doseq=True)
-    return f"/?{query}" if query else "/"
+    return f"{base_path}?{query}" if query else base_path
 
 
-def build_active_filters(search_query, filters):
+def build_active_filters(search_query, filters, base_path="/", locale="en", extra=None):
     labels = {
-        "free": "Free", "freemium": "Freemium", "paid": "Paid",
-        "windows": "Windows", "macos": "macOS", "linux": "Linux",
-        "android": "Android", "ios": "iOS", "web": "Web",
-        "light": "Light system", "medium": "Medium system",
-        "heavy": "Heavy system", "unknown": "Unknown system",
-    }
+        "en": {
+            "free": "Free", "freemium": "Freemium", "paid": "Paid",
+            "windows": "Windows", "macos": "macOS", "linux": "Linux",
+            "android": "Android", "ios": "iOS", "web": "Web",
+            "light": "Light system", "medium": "Medium system",
+            "heavy": "Heavy system", "unknown": "Unknown system",
+            "open_source": "Open source", "offline": "Offline",
+            "ai": "AI-powered", "turkish": "Turkish support",
+            "ram": "Up to {value} GB RAM", "rating": "{value}+ rating",
+        },
+        "tr": {
+            "free": "Ücretsiz", "freemium": "Ücretsiz + ücretli", "paid": "Ücretli",
+            "windows": "Windows", "macos": "macOS", "linux": "Linux",
+            "android": "Android", "ios": "iOS", "web": "Web",
+            "light": "Hafif sistem", "medium": "Orta sistem",
+            "heavy": "Güçlü sistem", "unknown": "Sistem bilgisi yok",
+            "open_source": "Açık kaynak", "offline": "Çevrimdışı",
+            "ai": "Yapay zekâ destekli", "turkish": "Türkçe desteği",
+            "ram": "En fazla {value} GB RAM", "rating": "{value}+ puan",
+        },
+    }[locale if locale in {"tr", "en"} else "en"]
     active = []
+    if filters.get("category"):
+        active.append({"label": filters["category"], "url": build_query_url(search_query, filters, ("category", filters["category"]), base_path, extra)})
     for value in filters["pricing"]:
-        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("pricing", value))})
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("pricing", value), base_path, extra)})
     for value in filters["platforms"]:
-        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("platform", value))})
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("platform", value), base_path, extra)})
     for value in filters["system_levels"]:
-        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("system_level", value))})
-    for key, label in (("open_source", "Open source"), ("offline", "Offline"), ("ai", "AI-powered"), ("turkish", "Turkish support")):
+        active.append({"label": labels[value], "url": build_query_url(search_query, filters, ("system_level", value), base_path, extra)})
+    for key in ("open_source", "offline", "ai", "turkish"):
         if filters[key]:
-            active.append({"label": label, "url": build_query_url(search_query, filters, (key, "1"))})
+            active.append({"label": labels[key], "url": build_query_url(search_query, filters, (key, "1"), base_path, extra)})
     if filters["max_ram"] is not None:
         value = int(filters["max_ram"]) if filters["max_ram"].is_integer() else filters["max_ram"]
-        active.append({"label": f"Up to {value} GB RAM", "url": build_query_url(search_query, filters, ("max_ram", str(filters["max_ram"])))})
+        active.append({"label": labels["ram"].format(value=value), "url": build_query_url(search_query, filters, ("max_ram", str(filters["max_ram"])), base_path, extra)})
+    if filters.get("min_rating") is not None:
+        value = int(filters["min_rating"]) if filters["min_rating"].is_integer() else filters["min_rating"]
+        active.append({"label": labels["rating"].format(value=value), "url": build_query_url(search_query, filters, ("min_rating", str(filters["min_rating"])), base_path, extra)})
     return active
-
 
 def calculate_match_percentage(score, highest_score):
     """
@@ -741,18 +789,59 @@ def paginate(items, page, per_page=18):
     return items[start:start+per_page], {"page":page,"pages":pages,"total":total,"has_prev":page>1,"has_next":page<pages}
 
 def discovery_context(items, title, description, page_type):
-    filters=parse_filters(request.args)
-    items=filter_tools(items,filters)
-    subcategory=request.args.get("subcategory","").strip()
+    source_items = list(items)
+    filters = parse_filters(request.args)
+    selected_category = filters.get("category", "")
+
+    category_scoped_items = source_items
+    if selected_category:
+        category_scoped_items = [tool for tool in source_items if tool.get("category") == selected_category]
+
+    subcategory = request.args.get("subcategory", "").strip()
+    items = filter_tools(source_items, filters)
     if subcategory:
-        items=[t for t in items if t.get("subcategory")==subcategory]
-    sort_key=request.args.get("sort","popular")
-    items=sort_tools(items,sort_key)
-    try: page=int(request.args.get("page","1"))
-    except ValueError: page=1
-    page_items,pagination=paginate(items,page)
-    subcategories=sorted({t.get("subcategory") for t in items if t.get("subcategory")})
-    return dict(tools=page_items,title=title,description=description,page_type=page_type,filters=filters,sort_key=sort_key,subcategory=subcategory,subcategories=subcategories,pagination=pagination,query_args=request.args)
+        items = [tool for tool in items if tool.get("subcategory") == subcategory]
+
+    sort_key = request.args.get("sort", "popular")
+    items = sort_tools(items, sort_key)
+    try:
+        page = int(request.args.get("page", "1"))
+    except ValueError:
+        page = 1
+    page_items, pagination = paginate(items, page)
+
+    categories = sorted({tool.get("category") for tool in source_items if tool.get("category")})
+    subcategories = sorted({tool.get("subcategory") for tool in category_scoped_items if tool.get("subcategory")})
+    base_path = request.path
+    persistent = {"sort": sort_key}
+    if subcategory:
+        persistent["subcategory"] = subcategory
+    active_filters = build_active_filters("", filters, base_path, get_locale(), persistent)
+
+    def page_url(target_page):
+        extras = dict(persistent)
+        extras["page"] = target_page
+        return build_query_url("", filters, base_path=base_path, extra=extras)
+
+    return dict(
+        tools=page_items,
+        title=title,
+        description=description,
+        page_type=page_type,
+        filters=filters,
+        sort_key=sort_key,
+        subcategory=subcategory,
+        categories=categories,
+        subcategories=subcategories,
+        active_filters=active_filters,
+        active_filter_count=len(active_filters) + (1 if subcategory else 0),
+        pagination=pagination,
+        previous_page_url=page_url(pagination["page"] - 1) if pagination["has_prev"] else None,
+        next_page_url=page_url(pagination["page"] + 1) if pagination["has_next"] else None,
+        clear_filters_url=base_path,
+        subcategory_remove_url=build_query_url("", filters, base_path=base_path, extra={"sort": sort_key}),
+        query_args=request.args,
+    )
 
 
 @app.before_request

@@ -276,3 +276,29 @@ const cookieNotice = document.getElementById("cookieNotice");
 const cookieAccept = document.getElementById("cookieAccept");
 if (cookieNotice && localStorage.getItem("atlas-cookie-notice") !== "accepted") cookieNotice.hidden = false;
 cookieAccept?.addEventListener("click", () => { localStorage.setItem("atlas-cookie-notice", "accepted"); cookieNotice.hidden = true; });
+
+// v0.9.2 catalog filters and view preference
+const catalogRoot = document.querySelector("[data-catalog-root]");
+const catalogGrid = document.querySelector("[data-catalog-grid]");
+const catalogViewButtons = Array.from(document.querySelectorAll("[data-catalog-view]"));
+
+function setCatalogView(view) {
+    if (!catalogGrid || !["grid", "list"].includes(view)) return;
+    catalogGrid.classList.toggle("is-list", view === "list");
+    catalogViewButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.catalogView === view));
+    });
+    localStorage.setItem("atlas-catalog-view", view);
+}
+
+if (catalogRoot && catalogGrid) {
+    const savedView = localStorage.getItem("atlas-catalog-view");
+    setCatalogView(savedView === "list" ? "list" : "grid");
+    catalogViewButtons.forEach((button) => {
+        button.addEventListener("click", () => setCatalogView(button.dataset.catalogView));
+    });
+}
+
+document.querySelectorAll("[data-auto-submit]").forEach((control) => {
+    control.addEventListener("change", () => control.form?.requestSubmit());
+});
