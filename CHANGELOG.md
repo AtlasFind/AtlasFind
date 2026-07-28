@@ -1,3 +1,18 @@
+## [1.0.1-hotfix] - 2026-07-28
+
+- Navbar dil seçicisi tüm ekran genişliklerinde görünür hâle getirildi.
+- Dil kodları açık biçimde `EN / TR` olarak gösteriliyor.
+- Ana sayfa dil istatistiği `EN / TR` olarak güncellendi.
+- Ana sayfadaki sabit `Categories` metni çeviri sistemine bağlandı.
+- Kırık Simple Icons CDN istekleri yerel ikon dosyalarına yönlendirildi.
+
+
+## v1.0.1 - Turkish localization completion
+
+- Expanded the centralized EN/TR translation catalogs.
+- Localized remaining public templates, accessibility labels, JavaScript interface messages and admin screens.
+- Changed the compact language selector to EN / TR and highlighted the active locale.
+- Added safe locale fallback validation and a localization audit script.
 # Changelog
 
 ## v1.0.0 - First Stable Release

@@ -142,7 +142,7 @@
 
                     <div>
                         <strong>ChatGPT</strong>
-                        <span>AI Assistant</span>
+                        <span>{{ t("home.card.ai_assistant") }}</span>
                     </div>
 
                     <small>4.9</small>
@@ -158,7 +158,7 @@
 
                     <div>
                         <strong>Photoshop</strong>
-                        <span>Photo Editing</span>
+                        <span>{{ t("home.card.photo_editing") }}</span>
                     </div>
 
                     <small>4.8</small>
@@ -174,7 +174,7 @@
 
                     <div>
                         <strong>Cursor</strong>
-                        <span>Development</span>
+                        <span>{{ t("home.card.development") }}</span>
                     </div>
 
                     <small>4.9</small>
@@ -190,7 +190,7 @@
 
                     <div>
                         <strong>Figma</strong>
-                        <span>Design</span>
+                        <span>{{ t("home.card.design") }}</span>
                     </div>
 
                     <small>4.7</small>
@@ -248,7 +248,7 @@
             </div>
 
             <div class="stat-item">
-                <strong>2</strong>
+                <strong>EN / TR</strong>
                 <span>{{ t("home.stats.languages") }}</span>
             </div>
 
@@ -299,14 +299,14 @@
 
             {% if did_correct %}
             <div class="search-correction" role="status">
-                Showing results for <a href="/?q={{ corrected_query|urlencode }}">{{ corrected_query }}</a>.
+                {{ t("home.results.showing") }} <a href="/?q={{ corrected_query|urlencode }}">{{ corrected_query }}</a>.
                 <span>Your original search was “{{ search_query }}”.</span>
             </div>
             {% endif %}
 
             <div class="filter-toolbar">
                 <button type="button" class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
-                    Filters <span>⚙</span>
+                    {{ t("filter.title") }} <span>⚙</span>
                 </button>
                 <div class="result-count" aria-live="polite">
                     <strong>{{ result_count }}</strong> of {{ total_tool_count }} tools
@@ -337,7 +337,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>{{ t("filter.system") }}</legend>
-                    <label>Maximum RAM
+                    <label>{{ t("filter.maximum_ram") }}
                         <select name="max_ram">
                             <option value="">{{ t("filter.any") }}</option>
                             {% for value in [2,4,8,16] %}<option value="{{ value }}" {% if filters.max_ram == value %}selected{% endif %}>{{ value }} GB</option>{% endfor %}
@@ -354,7 +354,7 @@
             </form>
 
             {% if active_filters %}
-            <div class="active-filters" aria-label="Active filters">
+            <div class="active-filters" aria-label="{{ t('common.active_filters') }}">
                 {% for item in active_filters %}<a href="{{ item.url }}">{{ item.label }} <span aria-hidden="true">×</span></a>{% endfor %}
                 <a href="{{ clear_filters_url }}" class="clear-all">{{ t("filter.clear_all") }}</a>
             </div>
@@ -411,8 +411,8 @@
 {% endif %}
 {% set match_reasons = result.get("reasons", []) %}
 {% if search_query and match_reasons %}
-    <details class="search-match-reasons" aria-label="Why this result matched">
-        <summary title="Why this result was recommended">{{ t("common.why") }}</summary>
+    <details class="search-match-reasons" aria-label="{{ t('common.match_reason') }}">
+        <summary title="{{ t('common.recommendation_reason') }}">{{ t("common.why") }}</summary>
         <div class="search-match-reasons-panel">
             <strong>{{ t("common.why_result") }}</strong>
             <ul>
@@ -463,7 +463,7 @@
 
                                 {% if tool.offline %}
                                     <span class="tag">
-                                        Offline
+                                        {{ t("filter.offline") }}
                                     </span>
                                 {% endif %}
 
@@ -494,7 +494,7 @@
                                     href="{{ url_for('tool_detail', slug=tool.slug) }}"
                                     class="visit-button"
                         >
-                                    Explore
+                                    {{ t("actions.explore") }}
                                      <span>→</span>
                                 </a>
 
@@ -503,7 +503,7 @@
                                     class="compare-button"
                                 >
                                     <span>⇄</span>
-                                     Compare
+                                     {{ t("nav.compare") }}
                                 </a>
 
                             </div>
@@ -529,7 +529,7 @@
                     </p>
 
                     {% if search_alternatives %}
-                    <div class="alternative-searches" aria-label="Alternative searches">
+                    <div class="alternative-searches" aria-label="{{ t('common.alternative_searches') }}">
                         <span>{{ t("common.try_instead") }}</span>
                         {% for alternative in search_alternatives %}
                         <a href="/?q={{ alternative|urlencode }}">{{ alternative }}</a>
@@ -538,7 +538,7 @@
                     {% endif %}
 
                     <a href="{{ clear_filters_url }}">
-                        Clear filters
+                        {{ t("actions.clear_filters") }}
                     </a>
 
                 </div>
@@ -585,7 +585,7 @@
                         </p>
                     </div>
 
-                    <strong>Explore free tools →</strong>
+                    <strong>{{ t("actions.explore_free") }}</strong>
 
                 </a>
 
@@ -602,7 +602,7 @@
                         {{ t("home.need.privacy_title") }}
                     </h3>
 
-                    <strong>Explore →</strong>
+                    <strong>{{ t("actions.explore") }} →</strong>
 
                 </a>
 
@@ -613,13 +613,13 @@
                         ↓
                     </div>
 
-                    <span>Offline</span>
+                    <span>{{ t("filter.offline") }}</span>
 
                     <h3>
                         {{ t("home.need.offline_title") }}
                     </h3>
 
-                    <strong>Explore →</strong>
+                    <strong>{{ t("actions.explore") }} →</strong>
 
                 </a>
 
@@ -636,7 +636,7 @@
                         {{ t("home.need.performance_title") }}
                     </h3>
 
-                    <strong>Explore →</strong>
+                    <strong>{{ t("actions.explore") }} →</strong>
 
                 </a>
 
@@ -651,7 +651,7 @@
 
                 <div>
                     <span class="section-label">
-                        Categories
+                        {{ t("home.categories.eyebrow") }}
                     </span>
 
                     <h2>
@@ -776,7 +776,7 @@
                             <span></span>
                         </div>
 
-                        <small>AtlasFind Compare</small>
+                        <small>{{ t("compare.brand") }}</small>
 
                     </div>
 
@@ -805,13 +805,13 @@
                     </div>
 
                     <div class="comparison-row">
-                        <span>Open source</span>
+                        <span>{{ t("status.open_source") }}</span>
                         <strong>—</strong>
                         <strong>✓</strong>
                     </div>
 
                     <div class="comparison-row">
-                        <span>Offline</span>
+                        <span>{{ t("filter.offline") }}</span>
                         <strong>✓</strong>
                         <strong>✓</strong>
                     </div>

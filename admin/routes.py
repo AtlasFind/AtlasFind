@@ -2,6 +2,7 @@ import json
 from datetime import datetime, timezone
 
 from flask import Blueprint, current_app, flash, redirect, render_template, request, session, url_for
+from i18n import translate
 from werkzeug.security import check_password_hash
 
 from .auth import csrf_token, current_admin, login_required, validate_csrf
@@ -35,7 +36,7 @@ def login():
         enforce_admin_login_rate_limit(username)
         ip_address = client_ip()
         if recent_failed_attempts(username) >= 5:
-            flash("Too many failed attempts. Try again in 15 minutes.", "error")
+            flash(translate("flash.too_many_attempts"), "error")
             return render_template("admin/login.html"), 429
         admin = get_admin_by_username(username)
         valid = bool(admin and check_password_hash(admin["password_hash"], password))
@@ -48,7 +49,7 @@ def login():
             log_action(admin["id"], "login", "admin", admin["id"], "Administrator signed in")
             return redirect(safe_next_url(request.args.get("next")) or url_for("admin.dashboard"))
         current_app.logger.warning("admin_login_failed username=%r ip=%s", username, ip_address)
-        flash("Invalid username or password.", "error")
+        flash(translate("flash.invalid_login"), "error")
     return render_template("admin/login.html")
 
 
@@ -83,7 +84,7 @@ def tools():
 def tool_form(tool_id=None):
     record = get_tool_for_admin(tool_id) if tool_id else None
     if tool_id and not record:
-        return ("Tool not found", 404)
+        return (translate("flash.tool_not_found"), 404)
     payload = record["payload"] if record else {
         "name": "", "slug": "", "description": "", "category": "Uncategorized",
         "pricing_type": "free", "platforms": ["web"], "languages": ["en"],
@@ -98,14 +99,14 @@ def tool_form(tool_id=None):
         else:
             missing = missing_tool_fields(parsed)
             if status == "published" and missing:
-                flash("Cannot publish. Missing: " + ", ".join(missing), "error")
+                flash(translate("flash.cannot_publish", fields=", ".join(missing)), "error")
             else:
                 before = record["payload"] if record else None
                 saved_id = save_tool(parsed, status=status, tool_id=tool_id)
                 admin = current_admin()
                 log_action(admin["id"], "update" if tool_id else "create", "tool", saved_id,
                            f"{status.title()} tool {parsed.get('name')}", before, parsed)
-                flash("Tool saved.", "success")
+                flash(translate("flash.tool_saved"), "success")
                 return redirect(url_for("admin.tool_form", tool_id=saved_id))
         payload = parsed or payload
     return render_template(
@@ -120,11 +121,11 @@ def tool_archive(tool_id):
     validate_csrf()
     record = get_tool_for_admin(tool_id)
     if not record:
-        return ("Tool not found", 404)
+        return (translate("flash.tool_not_found"), 404)
     archive_tool(tool_id)
     admin = current_admin()
     log_action(admin["id"], "archive", "tool", tool_id, f"Archived {record['name']}", record["payload"], None)
-    flash("Tool archived.", "success")
+    flash(translate("flash.tool_archived"), "success")
     return redirect(url_for("admin.tools"))
 
 
@@ -133,7 +134,7 @@ def tool_archive(tool_id):
 def tool_preview(tool_id):
     record = get_tool_for_admin(tool_id)
     if not record:
-        return ("Tool not found", 404)
+        return (translate("flash.tool_not_found"), 404)
     return render_template("admin/preview.html", title=record["name"], payload=record["payload"], entity_type="Tool")
 
 
@@ -149,7 +150,7 @@ def articles():
 def article_form(article_id=None):
     record = get_article_for_admin(article_id) if article_id else None
     if article_id and not record:
-        return ("Article not found", 404)
+        return (translate("flash.article_not_found"), 404)
     payload = record["payload"] if record else {
         "title": "", "slug": "", "description": "", "content_type": "guide",
         "category": "uncategorized", "author": "AtlasFind Editors", "sections": [], "faq": [],
@@ -164,14 +165,14 @@ def article_form(article_id=None):
         else:
             missing = missing_article_fields(parsed)
             if status == "published" and missing:
-                flash("Cannot publish. Missing: " + ", ".join(missing), "error")
+                flash(translate("flash.cannot_publish", fields=", ".join(missing)), "error")
             else:
                 before = record["payload"] if record else None
                 saved_id = save_article(parsed, status=status, article_id=article_id)
                 admin = current_admin()
                 log_action(admin["id"], "update" if article_id else "create", "article", saved_id,
                            f"{status.title()} article {parsed.get('title')}", before, parsed)
-                flash("Article saved.", "success")
+                flash(translate("flash.article_saved"), "success")
                 return redirect(url_for("admin.article_form", article_id=saved_id))
         payload = parsed or payload
     return render_template(
@@ -191,7 +192,7 @@ def taxonomy():
             add_category(name) if kind == "category" else add_tag(name)
             admin = current_admin()
             log_action(admin["id"], "create", kind, name, f"Created {kind}: {name}")
-            flash(f"{kind.title()} saved.", "success")
+            flash(translate("flash.taxonomy_saved", kind=kind.title()), "success")
     categories, tags = list_taxonomies()
     return render_template("admin/taxonomy.html", categories=categories, tags=tags, active_admin="taxonomy")
 
@@ -206,17 +207,17 @@ def import_tools():
         try:
             value = json.loads(raw)
         except json.JSONDecodeError as exc:
-            flash(f"Invalid JSON: {exc}", "error")
+            flash(translate("flash.invalid_json", error=exc), "error")
             value = None
         if value is not None:
             tools, errors = validate_import_payload(value)
             if errors:
-                flash("Import validation failed: " + " | ".join(errors[:8]), "error")
+                flash(translate("flash.import_failed", errors=" | ".join(errors[:8])), "error")
             elif request.form.get("confirm") == "1":
                 ids = [save_tool(tool, status="draft") for tool in tools]
                 admin = current_admin()
                 log_action(admin["id"], "import", "tool", None, f"Imported {len(ids)} tools as drafts")
-                flash(f"Imported {len(ids)} tools as drafts.", "success")
+                flash(translate("flash.imported_drafts", count=len(ids)), "success")
                 return redirect(url_for("admin.tools"))
             else:
                 preview = tools

@@ -17,6 +17,7 @@ SUPPORTED_LOCALES = {
 
 @lru_cache(maxsize=None)
 def load_translations(locale):
+    locale = locale if locale in SUPPORTED_LOCALES else DEFAULT_LOCALE
     path = TRANSLATIONS_DIR / f'{locale}.json'
     if not path.exists():
         return {}

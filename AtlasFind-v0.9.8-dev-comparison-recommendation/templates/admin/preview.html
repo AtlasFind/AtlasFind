@@ -1,1 +1,0 @@
-{% extends 'admin/base.html' %}{% block content %}<div class="admin-page-heading"><div><span class="eyebrow">Preview</span><h1>{{ title }}</h1></div></div><section class="admin-panel"><p>This preview shows the current stored payload, including drafts.</p><pre class="admin-json-preview">{{ payload|tojson(indent=2) }}</pre></section>{% endblock %}

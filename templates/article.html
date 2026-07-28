@@ -13,8 +13,8 @@
     <header class="article-hero">
         <div class="section-container article-hero-inner">
             <div>
-                <nav class="article-breadcrumbs" aria-label="Breadcrumb">
-                    <a href="{{ url_for('guides') }}">Guides</a>
+                <nav class="article-breadcrumbs" aria-label="{{ t('common.breadcrumb') }}">
+                    <a href="{{ url_for('guides') }}">{{ t("article.guides") }}</a>
                     <span aria-hidden="true">/</span>
                     <span>{{ article.content_type|replace('-', ' ')|title }}</span>
                 </nav>
@@ -30,7 +30,7 @@
                 {% if freshness.status in ["review-due", "outdated"] %}
                 <div class="article-freshness-warning" role="note">
                     <strong>{{ freshness.label }}</strong>
-                    <p>Product details can change. Confirm pricing, availability and supported platforms on official websites.</p>
+                    <p>{{ t("article.disclaimer") }}</p>
                 </div>
                 {% endif %}
             </div>
@@ -38,7 +38,7 @@
     </header>
 
     <div class="section-container article-layout">
-        <aside class="article-toc" aria-label="Table of contents">
+        <aside class="article-toc" aria-label="{{ t('common.table_of_contents') }}">
             <strong>{{ t("article.on_page") }}</strong>
             <ol>
                 {% for section in article.sections %}
@@ -86,7 +86,7 @@
                     <h2>Browse {{ category_info.name }} tools</h2>
                     <p>{{ category_info.description }}</p>
                 </div>
-                <a href="{{ url_for('category_page', slug=article.category) }}">Open category →</a>
+                <a href="{{ url_for('category_page', slug=article.category) }}">{{ t("article.open_category") }}</a>
             </section>
             {% endif %}
         </div>
@@ -94,7 +94,7 @@
 
     {% if related_tools %}
     <section class="section-container article-related-section">
-        <div class="section-heading"><span class="eyebrow">Connected data</span><h2>{{ t("common.related_tools") }}</h2></div>
+        <div class="section-heading"><span class="eyebrow">{{ t("article.connected_data") }}</span><h2>{{ t("common.related_tools") }}</h2></div>
         <div class="tools-grid article-related-tools">
             {% for tool in related_tools %}
             <article class="tool-card">

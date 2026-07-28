@@ -10,8 +10,8 @@
         <p>{{ t("guides.description") }}</p>
         <div class="article-stat-row">
             <strong>{{ all_articles|length }} guides</strong>
-            <span>Data-linked recommendations</span>
-            <span>Published and updated dates</span>
+            <span>{{ t("guides.data_linked") }}</span>
+            <span>{{ t("guides.dates") }}</span>
         </div>
     </div>
 </section>
@@ -19,18 +19,18 @@
 <section class="section-container guides-index">
     <form class="guide-filters" method="get">
         <label>
-            Content type
+            {{ t("guides.content_type") }}
             <select name="type">
-                <option value="">All types</option>
+                <option value="">{{ t("guides.all_types") }}</option>
                 {% for item in content_types %}
                 <option value="{{ item }}" {% if selected_type == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
                 {% endfor %}
             </select>
         </label>
         <label>
-            Category
+            {{ t("guides.category") }}
             <select name="category">
-                <option value="">All categories</option>
+                <option value="">{{ t("guides.all_categories") }}</option>
                 {% for item in article_categories %}
                 <option value="{{ item }}" {% if selected_category == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
                 {% endfor %}
@@ -60,8 +60,8 @@
     {% else %}
     <div class="empty-results">
         <h2>{{ t("common.no_guides") }}</h2>
-        <p>Clear the filters to return to all published content.</p>
-        <a href="{{ url_for('guides') }}">View all guides</a>
+        <p>{{ t("guides.clear_help") }}</p>
+        <a href="{{ url_for('guides') }}">{{ t("guides.view_all") }}</a>
     </div>
     {% endif %}
 </section>

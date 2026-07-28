@@ -83,7 +83,7 @@
             </a>
             <p>{{ t("footer.tagline") }}</p>
         </div>
-        <div class="footer-links" aria-label="Footer navigation">
+        <div class="footer-links" aria-label="{{ t('footer.navigation') }}">
             <a href="{{ url_for('home') }}#discover">{{ t("nav.discover") }}</a>
             <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
             <a href="{{ url_for('categories_directory') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
@@ -105,6 +105,7 @@
         <button type="button" id="cookieAccept">{{ t("cookie.accept") }}</button>
     </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
+    <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }};</script>
     <script src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
     {% block scripts %}{% endblock %}
 </body>

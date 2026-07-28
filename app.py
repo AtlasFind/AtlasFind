@@ -11,6 +11,7 @@ from freshness import content_freshness, tool_freshness
 from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
 from repositories.translations import localize_tool, localize_article, localize_tools, localize_articles
+from icon_system import ensure_local_icon
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -39,7 +40,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -114,9 +115,27 @@ def _database_version():
         return 0
 
 
+def _normalize_tool_icons(tools):
+    """Replace stale remote Simple Icons URLs with packaged local fallbacks."""
+    normalized = []
+    for source_tool in tools:
+        tool = dict(source_tool)
+        icon_url = str(tool.get("icon_url") or "")
+        fallback_url = str(tool.get("icon_fallback_url") or "")
+        if "cdn.simpleicons.org" in icon_url or not icon_url:
+            tool["icon_url"] = ensure_local_icon(
+                str(tool.get("name") or "AtlasFind"),
+                str(tool.get("slug") or "tool"),
+            )
+        if "cdn.simpleicons.org" in fallback_url:
+            tool["icon_fallback_url"] = tool["icon_url"]
+        normalized.append(tool)
+    return normalized
+
+
 @lru_cache(maxsize=8)
 def _cached_tools(locale, database_version):
-    tools = localize_tools(get_all_tools(), locale)
+    tools = _normalize_tool_icons(localize_tools(get_all_tools(), locale))
     validation_errors = validate_tools(tools)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
@@ -912,7 +931,7 @@ def resolve_request_locale():
     locale = (request.view_args or {}).get("locale")
     if locale is not None and locale not in SUPPORTED_LOCALES:
         abort(404)
-    g.locale = locale if locale in SUPPORTED_LOCALES else DEFAULT_LOCALE
+    g.locale = ("tr" if request.path.startswith("/admin") else DEFAULT_LOCALE) if locale not in SUPPORTED_LOCALES else locale
 
 
 @app.url_defaults
@@ -961,6 +980,11 @@ def inject_app_metadata():
         "localized_path": localized_path,
         "alternate_urls": alternate_urls(request.path),
         "csp_nonce": getattr(g, "csp_nonce", ""),
+        "js_i18n": {key: translate(key) for key in (
+            "js.theme.dark", "js.theme.light", "js.menu.open", "js.menu.close",
+            "js.loading", "js.copy.success", "js.copy.prompt",
+            "js.suggestion.tool", "js.suggestion.search"
+        )},
     }
 
 @app.route("/")

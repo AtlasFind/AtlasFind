@@ -1,3 +1,6 @@
+const atlasI18n = window.ATLAS_I18N || {};
+const atlasT = (key, fallback) => atlasI18n[key] || fallback;
+
 function showAtlasIconMonogram(img) {
     if (!img) return;
     img.hidden = true;
@@ -64,7 +67,7 @@ function updateThemeControl() {
     const isLight = root.classList.contains("light-theme");
     themeIcon.textContent = isLight ? "☀" : "☾";
     themeButton.setAttribute("aria-pressed", String(isLight));
-    themeButton.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+    themeButton.setAttribute("aria-label", isLight ? atlasT("js.theme.dark", "Switch to dark theme") : atlasT("js.theme.light", "Switch to light theme"));
 }
 
 updateThemeControl();
@@ -81,7 +84,7 @@ function closeMenu() {
     primaryNavigation.classList.remove("is-open");
     menuButton.classList.remove("is-open");
     menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Open navigation menu");
+    menuButton.setAttribute("aria-label", atlasT("js.menu.open", "Open navigation menu"));
     document.body.classList.remove("menu-open");
 }
 
@@ -89,7 +92,7 @@ menuButton?.addEventListener("click", () => {
     const isOpen = primaryNavigation?.classList.toggle("is-open") ?? false;
     menuButton.classList.toggle("is-open", isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
-    menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    menuButton.setAttribute("aria-label", isOpen ? atlasT("js.menu.close", "Close navigation menu") : atlasT("js.menu.open", "Open navigation menu"));
     document.body.classList.toggle("menu-open", isOpen);
 });
 
@@ -135,7 +138,7 @@ document.querySelectorAll("[data-loading-form]").forEach(form => {
         button.disabled = true;
         button.setAttribute("aria-busy", "true");
         button.dataset.originalText = button.innerHTML;
-        button.textContent = button.dataset.loadingText || "Loading…";
+        button.textContent = button.dataset.loadingText || atlasT("js.loading", "Loading…");
         if (liveStatus) liveStatus.textContent = button.textContent;
     });
 });
@@ -161,9 +164,9 @@ copyComparisonLink?.addEventListener("click", async () => {
     const originalText = copyComparisonLink.textContent;
     try {
         await navigator.clipboard.writeText(window.location.href);
-        copyComparisonLink.textContent = copyComparisonLink.dataset.copySuccess || "Link copied";
+        copyComparisonLink.textContent = copyComparisonLink.dataset.copySuccess || atlasT("js.copy.success", "Link copied");
     } catch (error) {
-        window.prompt("Copy this comparison link:", window.location.href);
+        window.prompt(atlasT("js.copy.prompt", "Copy this comparison link:"), window.location.href);
     }
     window.setTimeout(() => { copyComparisonLink.textContent = originalText; }, 1800);
 });
@@ -218,7 +221,7 @@ function renderSearchSuggestions(items) {
     currentSuggestions = items;
     searchSuggestions.innerHTML = items.map((item, index) => `
         <button type="button" role="option" data-suggestion-index="${index}" aria-selected="false">
-            <span>${item.label}</span><small>${item.type === "tool" ? "Tool" : "Search"}</small>
+            <span>${item.label}</span><small>${item.type === "tool" ? atlasT("js.suggestion.tool", "Tool") : atlasT("js.suggestion.search", "Search")}</small>
         </button>
     `).join("");
     searchSuggestions.hidden = false;

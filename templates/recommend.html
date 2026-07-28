@@ -16,7 +16,7 @@
     <form class="recommend-form" method="get" action="{{ url_for('recommend') }}" data-loading-form>
         <div class="recommend-form-heading">
             <div>
-                <span class="section-kicker">YOUR PREFERENCES</span>
+                <span class="section-kicker">{{ t("recommend.preferences") }}</span>
                 <h2>{{ t("recommend.profile") }}</h2>
             </div>
             <a href="{{ url_for('recommend') }}">{{ t("common.reset") }}</a>
@@ -26,7 +26,7 @@
             <label>
                 <span>{{ t("recommend.purpose") }}</span>
                 <select name="purpose" required>
-                    <option value="">Choose a purpose</option>
+                    <option value="">{{ t("recommend.choose_purpose") }}</option>
                     {% for value, item in purpose_options.items() %}
                     <option value="{{ value }}" {% if preferences.purpose == value %}selected{% endif %}>{{ item.label }}</option>
                     {% endfor %}
@@ -36,7 +36,7 @@
             <label>
                 <span>{{ t("recommend.platform") }}</span>
                 <select name="platform">
-                    <option value="">Any platform</option>
+                    <option value="">{{ t("recommend.any_platform") }}</option>
                     {% for value, label in [('windows','Windows'),('macos','macOS'),('linux','Linux'),('android','Android'),('ios','iOS'),('web','Web')] %}
                     <option value="{{ value }}" {% if preferences.platform == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
@@ -73,7 +73,7 @@
             <label>
                 <span>{{ t("recommend.privacy") }}</span>
                 <select name="privacy">
-                    {% for value, label in [('any','No special preference'),('standard','Standard'),('privacy-first','Privacy-first'),('open-source','Open source preferred')] %}
+                    {% for value, label in [('any','No special preference'),('standard','Standard'),('privacy-first','Privacy-first'),('open-source','{{ t("status.open_source") }} preferred')] %}
                     <option value="{{ value }}" {% if preferences.privacy == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
@@ -82,7 +82,7 @@
 
         <label class="recommend-checkbox">
             <input type="checkbox" name="offline" value="1" {% if preferences.offline %}checked{% endif %}>
-            <span><strong>{{ t("recommend.offline") }}</strong><small>Prefer tools that can work without a permanent internet connection.</small></span>
+            <span><strong>{{ t("recommend.offline") }}</strong><small>{{ t("recommend.offline_help") }}</small></span>
         </label>
 
         <button class="recommend-submit" type="submit" data-loading-text="Scoring tools…">{{ t("actions.get_recommendations") }}</button>
@@ -92,7 +92,7 @@
     <section class="recommend-results" aria-labelledby="recommend-results-title">
         <div class="recommend-results-heading">
             <div>
-                <span class="section-kicker">TRANSPARENT RESULTS</span>
+                <span class="section-kicker">{{ t("recommend.transparent") }}</span>
                 <h2 id="recommend-results-title">{{ t("recommend.results") }}</h2>
             </div>
             <span>{{ recommendations|length }} ranked tools</span>
@@ -114,21 +114,21 @@
                 <div class="recommend-explanation good">
                     <strong>{{ t("recommend.why") }}</strong>
                     <ul>
-                        {% for reason in item.reasons %}<li>{{ reason }}</li>{% else %}<li>It ranks well overall among the available tools.</li>{% endfor %}
+                        {% for reason in item.reasons %}<li>{{ reason }}</li>{% else %}<li>{{ t("recommend.rank_reason") }}</li>{% endfor %}
                     </ul>
                 </div>
 
                 <div class="recommend-explanation caution">
                     <strong>{{ t("recommend.why_not") }}</strong>
                     <ul>
-                        {% for concern in item.concerns %}<li>{{ concern }}</li>{% else %}<li>No major mismatch was found for the selected preferences.</li>{% endfor %}
+                        {% for concern in item.concerns %}<li>{{ concern }}</li>{% else %}<li>{{ t("recommend.no_mismatch") }}</li>{% endfor %}
                     </ul>
                 </div>
 
                 <div class="recommend-card-footer">
                     <span>{{ item.tool.pricing }}</span>
                     <span>★ {{ item.tool.rating }}</span>
-                    <a href="{{ url_for('tool_detail', slug=item.tool.slug) }}">View details</a>
+                    <a href="{{ url_for('tool_detail', slug=item.tool.slug) }}">{{ t("actions.view_details") }}</a>
                 </div>
             </article>
             {% endfor %}
