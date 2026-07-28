@@ -35,7 +35,67 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.8.0"
+APP_VERSION = "0.8.1"
+
+
+PUBLIC_PAGES = {
+    "privacy": {
+        "en": {"title": "Privacy Policy", "description": "How AtlasFind handles technical data and protects visitor privacy.", "sections": [
+            ("What we collect", "AtlasFind does not require a visitor account. The service may process standard server logs such as IP address, browser information, requested pages and timestamps for security, reliability and abuse prevention."),
+            ("Cookies and local storage", "AtlasFind uses essential browser storage for interface preferences such as language, theme and cookie notice status. Advertising or analytics cookies are not enabled unless the policy is updated and consent is collected where required."),
+            ("External websites", "Tool pages link to third-party websites. Their privacy practices and content are controlled by those providers, not AtlasFind."),
+            ("Data retention", "Security and error logs are retained only as long as reasonably needed to operate and protect the service."),
+            ("Contact", "Questions about privacy can be submitted through the AtlasFind GitHub repository until a dedicated support address is published."),
+        ]},
+        "tr": {"title": "Gizlilik Politikası", "description": "AtlasFind'in teknik verileri nasıl işlediği ve ziyaretçi gizliliğini nasıl koruduğu.", "sections": [
+            ("Topladığımız bilgiler", "AtlasFind ziyaretçi hesabı gerektirmez. Güvenlik, hizmet sürekliliği ve kötüye kullanımın önlenmesi amacıyla IP adresi, tarayıcı bilgisi, istenen sayfalar ve zaman bilgisi gibi standart sunucu kayıtları işlenebilir."),
+            ("Çerezler ve yerel depolama", "AtlasFind dil, tema ve çerez bildirimi tercihi gibi temel arayüz ayarları için gerekli tarayıcı depolamasını kullanır. Politika güncellenmeden ve gerektiğinde izin alınmadan reklam veya analiz çerezleri etkinleştirilmez."),
+            ("Haricî siteler", "Araç sayfaları üçüncü taraf sitelere bağlantı verir. Bu sitelerin içerik ve gizlilik uygulamalarından AtlasFind sorumlu değildir."),
+            ("Saklama süresi", "Güvenlik ve hata kayıtları yalnızca hizmeti işletmek ve korumak için makul ölçüde gerekli süre boyunca tutulur."),
+            ("İletişim", "Özel bir destek adresi yayımlanana kadar gizlilik soruları AtlasFind GitHub deposu üzerinden iletilebilir."),
+        ]}
+    },
+    "terms": {
+        "en": {"title": "Terms of Use", "description": "Rules for using AtlasFind and its independent tool information.", "sections": [
+            ("Informational service", "AtlasFind provides discovery, comparison and editorial information. It does not sell, license or guarantee third-party tools."),
+            ("Accuracy", "Prices, features and availability can change. Visitors should confirm important details on the official provider website before purchasing or relying on a tool."),
+            ("Acceptable use", "Do not attempt to disrupt the service, bypass security controls, scrape it abusively or submit unlawful content."),
+            ("Intellectual property", "Third-party names and trademarks belong to their respective owners. AtlasFind branding, original writing and site code remain subject to their applicable rights and licences."),
+            ("Limitation", "AtlasFind is provided as available without a guarantee that every listing is complete, current or suitable for a particular purpose."),
+        ]},
+        "tr": {"title": "Kullanım Koşulları", "description": "AtlasFind'in ve bağımsız araç bilgilerinin kullanım kuralları.", "sections": [
+            ("Bilgilendirme hizmeti", "AtlasFind keşif, karşılaştırma ve editoryal bilgi sunar. Üçüncü taraf araçları satmaz, lisanslamaz veya garanti etmez."),
+            ("Doğruluk", "Fiyatlar, özellikler ve erişilebilirlik değişebilir. Satın alma veya önemli bir karar öncesinde bilgiler resmî sağlayıcı sitesinden doğrulanmalıdır."),
+            ("Kabul edilebilir kullanım", "Hizmeti aksatmaya, güvenlik kontrollerini aşmaya, aşırı veri toplamaya veya yasa dışı içerik göndermeye çalışmayın."),
+            ("Fikrî mülkiyet", "Üçüncü taraf adları ve markaları ilgili sahiplerine aittir. AtlasFind markası, özgün içerikleri ve site kodu geçerli hak ve lisanslara tabidir."),
+            ("Sorumluluk sınırı", "AtlasFind mevcut hâliyle sunulur; her kaydın eksiksiz, güncel veya belirli bir amaca uygun olduğu garanti edilmez."),
+        ]}
+    },
+    "cookies": {
+        "en": {"title": "Cookie Policy", "description": "Essential storage used by AtlasFind.", "sections": [
+            ("Essential preferences", "AtlasFind stores language, theme and cookie-notice choices in local storage so the interface works consistently."),
+            ("No advertising cookies yet", "The public beta does not intentionally set advertising or cross-site tracking cookies. This page will be updated before such technology is introduced."),
+            ("Managing storage", "You can clear AtlasFind site data from your browser settings. Doing so resets saved interface preferences."),
+        ]},
+        "tr": {"title": "Çerez Politikası", "description": "AtlasFind tarafından kullanılan gerekli tarayıcı depolaması.", "sections": [
+            ("Gerekli tercihler", "AtlasFind arayüzün tutarlı çalışması için dil, tema ve çerez bildirimi tercihlerini yerel depolamada saklar."),
+            ("Henüz reklam çerezi yok", "Public beta sürümü bilerek reklam veya siteler arası takip çerezi yerleştirmez. Böyle bir teknoloji eklenmeden önce bu sayfa güncellenecektir."),
+            ("Depolamayı yönetme", "Tarayıcı ayarlarından AtlasFind site verilerini silebilirsiniz. Bu işlem kayıtlı arayüz tercihlerini sıfırlar."),
+        ]}
+    },
+    "contact": {
+        "en": {"title": "Contact AtlasFind", "description": "Report an issue, suggest a tool or contact the AtlasFind project.", "sections": [
+            ("Suggest a tool", "Use the recommendation and suggestion page to share a tool that should be reviewed for the directory."),
+            ("Report incorrect information", "Open an issue on the AtlasFind GitHub repository and include the tool name, official source and the information that should be corrected."),
+            ("Public beta support", "AtlasFind is an early public beta. Reports that include a page address, screenshot and clear reproduction steps are the most useful."),
+        ]},
+        "tr": {"title": "AtlasFind ile İletişim", "description": "Sorun bildirin, araç önerin veya AtlasFind projesiyle iletişime geçin.", "sections": [
+            ("Araç öner", "Dizinde incelenmesini istediğiniz aracı paylaşmak için öneri sayfasını kullanın."),
+            ("Yanlış bilgi bildir", "AtlasFind GitHub deposunda bir konu açın; araç adını, resmî kaynağı ve düzeltilmesi gereken bilgiyi ekleyin."),
+            ("Public beta desteği", "AtlasFind erken public beta aşamasındadır. Sayfa adresi, ekran görüntüsü ve açık tekrar adımları içeren bildirimler en yararlı olanlardır."),
+        ]}
+    },
+}
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "tools.json"
@@ -1131,6 +1191,39 @@ def sitemap_xml():
           ''.join(entries) + '</urlset>'
     return Response(xml, mimetype="application/xml")
 
+
+
+@app.route("/privacy", strict_slashes=False)
+@app.route("/<locale>/privacy", strict_slashes=False)
+def privacy(locale=None):
+    return _public_page("privacy", locale)
+
+@app.route("/terms", strict_slashes=False)
+@app.route("/<locale>/terms", strict_slashes=False)
+def terms(locale=None):
+    return _public_page("terms", locale)
+
+@app.route("/cookies", strict_slashes=False)
+@app.route("/<locale>/cookies", strict_slashes=False)
+def cookies(locale=None):
+    return _public_page("cookies", locale)
+
+@app.route("/contact", strict_slashes=False)
+@app.route("/<locale>/contact", strict_slashes=False)
+def contact(locale=None):
+    return _public_page("contact", locale)
+
+def _public_page(page_key, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    content = PUBLIC_PAGES[page_key][get_locale()]
+    path = f"/{get_locale()}/{page_key}"
+    return render_template(
+        "public_page.html", content=content, page_key=page_key, active_page=page_key,
+        seo=page_seo(content["title"], content["description"], path),
+        breadcrumbs=build_breadcrumbs([(translate("common.home"), url_for("home")), (content["title"], None)]),
+        schemas=[],
+    )
 
 @app.route("/tool/<slug>")
 def legacy_tool_url(slug):

@@ -30,7 +30,9 @@ def page_seo(title, description, path="/", page_type="website", image=None, robo
 def breadcrumbs(items):
     result = []
     for position, item in enumerate(items, start=1):
-        result.append({"name": item[0], "url": absolute_url(localized_path(item[1], get_locale())), "position": position})
+        path = item[1] if len(item) > 1 else None
+        url = absolute_url(localized_path(path, get_locale())) if path else None
+        result.append({"name": item[0], "url": url, "position": position})
     return result
 
 
@@ -41,7 +43,10 @@ def breadcrumb_schema(items):
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {"@type": "ListItem", "position": item["position"], "name": item["name"], "item": item["url"]}
+            {
+                **{"@type": "ListItem", "position": item["position"], "name": item["name"]},
+                **({"item": item["url"]} if item.get("url") else {}),
+            }
             for item in items
         ],
     }

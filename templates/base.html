@@ -88,11 +88,19 @@
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
+            <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
+            <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
+            <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
+            <a href="{{ url_for('contact') }}">{{ t("footer.contact") }}</a>
             <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <span class="copyright">© 2026 AtlasFind · v{{ app_version }}</span>
     </footer>
 
+    <div class="cookie-notice" id="cookieNotice" hidden role="dialog" aria-label="{{ t('footer.cookies') }}">
+        <p>{{ t("cookie.message") }} <a href="{{ url_for('cookies') }}">{{ t("cookie.learn") }}</a></p>
+        <button type="button" id="cookieAccept">{{ t("cookie.accept") }}</button>
+    </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block scripts %}{% endblock %}
