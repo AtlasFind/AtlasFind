@@ -41,3 +41,19 @@ Development does not move to the next version without explicit approval.
 - [x] Tool icons with fallback
 - [x] Contact email configuration
 - [x] Bilingual seed content for 500 new listings
+
+
+## v0.9.2 - Professional Catalog Experience (in development)
+
+- [x] professional catalog shell and responsive filter panel
+- [x] collapsible filter groups
+- [x] category, subcategory, pricing, platform, rating and feature filters
+- [x] active filter chips and clear-all action
+- [x] correct filtered result count
+- [x] improved card information hierarchy and overflow protection
+- [x] stronger icon fallback compatibility
+- [x] grid and list view preference
+- [x] Turkish and English interface translations
+- [ ] local Flask route verification
+- [ ] desktop and mobile browser approval
+- [ ] user approval and final v0.9.2 release tag

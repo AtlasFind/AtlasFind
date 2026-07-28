@@ -4,48 +4,137 @@
 {% block content %}
 <section class="discovery-hero catalog-hero">
   <div class="section-container">
-    <span class="eyebrow">{{ "Katalog" if locale == "tr" else "Catalog" }}</span>
+    <span class="eyebrow">{{ t("catalog.eyebrow") }}</span>
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
-    <div class="catalog-summary"><strong>{{ pagination.total }}</strong><span>{{ "araç listeleniyor" if locale == "tr" else "tools listed" }}</span></div>
+    <div class="catalog-summary"><strong>{{ pagination.total }}</strong><span>{{ t("catalog.tools_listed") }}</span></div>
   </div>
 </section>
-<section class="section-container discovery-layout">
-  <form method="get" class="discovery-controls catalog-controls">
-    <label>{{ t("common.subcategory") }}
-      <select name="subcategory"><option value="">{{ t("common.all_subcategories") }}</option>{% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select>
-    </label>
-    <label>{{ t("common.sort") }}
-      <select name="sort">
-        <option value="popular" {% if sort_key=='popular' %}selected{% endif %}>{{ "En popüler" if locale == "tr" else "Most popular" }}</option>
-        <option value="rating" {% if sort_key=='rating' %}selected{% endif %}>{{ "En yüksek puan" if locale == "tr" else "Highest rated" }}</option>
-        <option value="newest" {% if sort_key=='newest' %}selected{% endif %}>{{ "En yeni" if locale == "tr" else "Newest" }}</option>
-        <option value="name-asc" {% if sort_key=='name-asc' %}selected{% endif %}>A-Z</option>
-        <option value="name-desc" {% if sort_key=='name-desc' %}selected{% endif %}>Z-A</option>
-        <option value="ram" {% if sort_key=='ram' %}selected{% endif %}>{{ "En düşük RAM" if locale == "tr" else "Lowest RAM" }}</option>
-      </select>
-    </label>
-    <button type="submit">{{ t("actions.apply") }}</button><a class="control-reset" href="{{ request.path }}">{{ t("common.reset") }}</a>
-  </form>
-  {% if tools %}
-  <div class="tools-grid discovery-grid catalog-grid">
-    {% for tool in tools %}
-    <article class="tool-card catalog-card">
-      <div class="catalog-card-head">
-        <div class="tool-logo tool-icon-shell catalog-icon">
-          <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" loading="lazy" width="56" height="56" data-atlas-icon>
-          <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
-        </div>
-        <div class="catalog-card-title"><span class="tool-category">{{ tool.subcategory }}</span><h2>{{ tool.name }}</h2></div>
-        <span class="tool-rating">★ {{ tool.rating }}</span>
+<section class="section-container discovery-layout catalog-layout" data-catalog-root>
+  <div class="catalog-toolbar">
+    <button class="filter-toggle" id="filterToggle" type="button" aria-controls="filterPanel" aria-expanded="false">
+      {{ t("catalog.filters") }}{% if active_filter_count %} <span class="filter-count">{{ active_filter_count }}</span>{% endif %}
+    </button>
+    <div class="catalog-toolbar-main">
+      <p class="result-count"><strong>{{ pagination.total }}</strong> {{ t("catalog.results") }}</p>
+      <label class="catalog-sort">{{ t("common.sort") }}
+        <select name="sort" form="catalogFilterForm" data-auto-submit>
+          <option value="popular" {% if sort_key=='popular' %}selected{% endif %}>{{ t("catalog.sort_popular") }}</option>
+          <option value="rating" {% if sort_key=='rating' %}selected{% endif %}>{{ t("catalog.sort_rating") }}</option>
+          <option value="newest" {% if sort_key=='newest' %}selected{% endif %}>{{ t("catalog.sort_newest") }}</option>
+          <option value="name-asc" {% if sort_key=='name-asc' %}selected{% endif %}>A-Z</option>
+          <option value="name-desc" {% if sort_key=='name-desc' %}selected{% endif %}>Z-A</option>
+          <option value="ram" {% if sort_key=='ram' %}selected{% endif %}>{{ t("catalog.sort_ram") }}</option>
+        </select>
+      </label>
+      <div class="view-switcher" aria-label="{{ t('catalog.view_mode') }}">
+        <button type="button" data-catalog-view="grid" aria-pressed="true" title="{{ t('catalog.grid_view') }}">▦</button>
+        <button type="button" data-catalog-view="list" aria-pressed="false" title="{{ t('catalog.list_view') }}">☰</button>
       </div>
-      <p class="catalog-description">{{ tool.description }}</p>
-      <div class="catalog-badges"><span>{{ tool.pricing|title }}</span>{% for platform in tool.platforms[:2] %}<span>{{ platform }}</span>{% endfor %}</div>
-      <div class="catalog-card-footer"><span>{{ tool.minimum_ram_gb if tool.minimum_ram_gb is not none else '?' }} GB RAM</span><a class="card-link" href="{{ url_for('tool_detail', slug=tool.slug) }}">{{ t("actions.view_details_arrow") }}</a></div>
-    </article>
-    {% endfor %}
+    </div>
   </div>
-  {% else %}<div class="empty-results"><h2>{{ t("common.no_tools") }}</h2><p>{{ "Başka bir filtre veya sıralama deneyin." if locale == "tr" else "Try another filter or sorting option." }}</p></div>{% endif %}
-  {% if pagination.pages>1 %}<nav class="pagination" aria-label="Pagination">{% if pagination.has_prev %}<a href="?page={{ pagination.page-1 }}{% if sort_key %}&sort={{ sort_key }}{% endif %}{% if subcategory %}&subcategory={{ subcategory|urlencode }}{% endif %}">← {{ "Önceki" if locale == "tr" else "Previous" }}</a>{% endif %}<span>{{ "Sayfa" if locale == "tr" else "Page" }} {{ pagination.page }} / {{ pagination.pages }}</span>{% if pagination.has_next %}<a href="?page={{ pagination.page+1 }}{% if sort_key %}&sort={{ sort_key }}{% endif %}{% if subcategory %}&subcategory={{ subcategory|urlencode }}{% endif %}">{{ t("actions.next") }} →</a>{% endif %}</nav>{% endif %}
+
+  {% if active_filters or subcategory %}
+  <div class="active-filters" aria-label="{{ t('catalog.active_filters') }}">
+    {% for item in active_filters %}<a href="{{ item.url }}">{{ item.label }} <span aria-hidden="true">×</span></a>{% endfor %}
+    {% if subcategory %}<a href="{{ subcategory_remove_url }}">{{ subcategory }} <span aria-hidden="true">×</span></a>{% endif %}
+    <a class="clear-all" href="{{ clear_filters_url }}">{{ t("filter.clear_all") }}</a>
+  </div>
+  {% endif %}
+
+  <div class="catalog-shell">
+    <aside class="catalog-sidebar" id="filterPanel">
+      <form method="get" id="catalogFilterForm" class="catalog-filter-form">
+        <input type="hidden" name="sort" value="{{ sort_key }}">
+        <details class="filter-group" open>
+          <summary>{{ t("catalog.category") }}</summary>
+          <div class="filter-group-body">
+            <select name="category" data-auto-submit>
+              <option value="">{{ t("catalog.all_categories") }}</option>
+              {% for item in categories %}<option value="{{ item }}" {% if filters.category==item %}selected{% endif %}>{{ item }}</option>{% endfor %}
+            </select>
+          </div>
+        </details>
+        <details class="filter-group" open>
+          <summary>{{ t("common.subcategory") }}</summary>
+          <div class="filter-group-body">
+            <select name="subcategory" data-auto-submit>
+              <option value="">{{ t("common.all_subcategories") }}</option>
+              {% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}
+            </select>
+          </div>
+        </details>
+        <details class="filter-group" open>
+          <summary>{{ t("filter.pricing") }}</summary>
+          <div class="filter-group-body check-list">
+            {% for value,label in [('free',t('catalog.price_free')),('freemium',t('catalog.price_freemium')),('paid',t('catalog.price_paid'))] %}
+            <label><input type="checkbox" name="pricing" value="{{ value }}" {% if value in filters.pricing %}checked{% endif %}>{{ label }}</label>
+            {% endfor %}
+          </div>
+        </details>
+        <details class="filter-group">
+          <summary>{{ t("filter.platforms") }}</summary>
+          <div class="filter-group-body check-list two-columns">
+            {% for value,label in [('web','Web'),('windows','Windows'),('macos','macOS'),('linux','Linux'),('android','Android'),('ios','iOS')] %}
+            <label><input type="checkbox" name="platform" value="{{ value }}" {% if value in filters.platforms %}checked{% endif %}>{{ label }}</label>
+            {% endfor %}
+          </div>
+        </details>
+        <details class="filter-group">
+          <summary>{{ t("catalog.rating") }}</summary>
+          <div class="filter-group-body">
+            <select name="min_rating">
+              <option value="">{{ t("filter.any") }}</option>
+              {% for value in [4.5,4.0,3.5] %}<option value="{{ value }}" {% if filters.min_rating==value %}selected{% endif %}>{{ value }}+</option>{% endfor %}
+            </select>
+          </div>
+        </details>
+        <details class="filter-group">
+          <summary>{{ t("catalog.more_filters") }}</summary>
+          <div class="filter-group-body check-list">
+            <label><input type="checkbox" name="open_source" value="1" {% if filters.open_source %}checked{% endif %}>{{ t("common.open_source") }}</label>
+            <label><input type="checkbox" name="offline" value="1" {% if filters.offline %}checked{% endif %}>{{ t("common.offline") }}</label>
+            <label><input type="checkbox" name="ai" value="1" {% if filters.ai %}checked{% endif %}>{{ t("common.ai_powered") }}</label>
+            <label><input type="checkbox" name="turkish" value="1" {% if filters.turkish %}checked{% endif %}>{{ t("filter.turkish") }}</label>
+          </div>
+        </details>
+        <div class="filter-actions">
+          <button type="submit">{{ t("actions.apply") }}</button>
+          <a href="{{ clear_filters_url }}">{{ t("filter.clear_all") }}</a>
+        </div>
+      </form>
+    </aside>
+
+    <div class="catalog-results">
+      {% if tools %}
+      <div class="tools-grid discovery-grid catalog-grid" data-catalog-grid>
+        {% for tool in tools %}
+        <article class="tool-card catalog-card">
+          <a class="catalog-card-main-link" href="{{ url_for('tool_detail', slug=tool.slug) }}" aria-label="{{ tool.name }}"></a>
+          <div class="catalog-card-head">
+            <div class="tool-logo tool-icon-shell catalog-icon">
+              <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" loading="lazy" width="56" height="56" data-atlas-icon>
+              <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
+            </div>
+            <div class="catalog-card-title"><span class="tool-category">{{ tool.category }}{% if tool.subcategory %} · {{ tool.subcategory }}{% endif %}</span><h2>{{ tool.name }}</h2></div>
+            <span class="tool-rating">★ {{ tool.rating }}</span>
+          </div>
+          <p class="catalog-description">{{ tool.description }}</p>
+          <div class="catalog-badges">
+            <span>{{ t('catalog.price_' ~ tool.pricing_type) if tool.pricing_type in ['free','freemium','paid'] else tool.pricing }}</span>
+            {% for platform in tool.platforms[:3] %}<span>{{ platform }}</span>{% endfor %}
+            {% if tool.platforms|length > 3 %}<span>+{{ tool.platforms|length - 3 }}</span>{% endif %}
+          </div>
+          <div class="catalog-card-footer">
+            <span>{% if tool.minimum_ram_gb is not none %}{{ tool.minimum_ram_gb }} GB RAM{% else %}{{ t('catalog.ram_unknown') }}{% endif %}</span>
+            <span class="card-link">{{ t("actions.view_details_arrow") }}</span>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}<div class="empty-results"><h2>{{ t("common.no_tools") }}</h2><p>{{ t("catalog.empty_hint") }}</p><a href="{{ clear_filters_url }}">{{ t("filter.clear_all") }}</a></div>{% endif %}
+      {% if pagination.pages>1 %}<nav class="pagination" aria-label="{{ t('catalog.pagination') }}">{% if previous_page_url %}<a href="{{ previous_page_url }}">← {{ t("catalog.previous") }}</a>{% endif %}<span>{{ t("catalog.page") }} {{ pagination.page }} / {{ pagination.pages }}</span>{% if next_page_url %}<a href="{{ next_page_url }}">{{ t("actions.next") }} →</a>{% endif %}</nav>{% endif %}
+    </div>
+  </div>
 </section>
 {% endblock %}

@@ -1,3 +1,23 @@
+# Changelog
+
+## [0.9.2-dev] - Professional Catalog Experience
+
+### Added
+- Professional catalog filter sidebar for category, subcategory, pricing, platform, rating and feature filters.
+- Active filter chips, clear-all behavior and mobile filter drawer controls.
+- Grid/list catalog view with local browser preference persistence.
+- Filter-preserving previous and next page links.
+- Turkish and English translations for every new catalog control.
+- `scripts/validate_catalog_v092.py` for static, translation and 600-tool data checks.
+
+### Changed
+- Catalog cards now show category hierarchy, up to three platform badges and clean RAM fallback text.
+- Long names and descriptions receive stronger desktop and mobile overflow protection.
+- Catalog cards use one large accessible detail link without inline JavaScript handlers.
+
+### Status
+- Development package only. v0.9.2 is not marked complete until local Flask route, browser and mobile tests are approved.
+
 # AtlasFind v0.9.1.2
 
 - Removed fragile inline icon handlers that executed before JavaScript loaded.
