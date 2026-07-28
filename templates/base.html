@@ -15,10 +15,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
     <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg', v=app_version) }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg', v=app_version) }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternate_urls.get('en') }}">
     {% block extra_head %}{% endblock %}
-    <script>
+    <script nonce="{{ csp_nonce }}">
         (() => {
             const saved = localStorage.getItem("atlas-theme");
             const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
@@ -28,7 +30,7 @@
         })();
     </script>
     <title>{{ seo.title if seo else self.title()|striptags }}</title>
-    {% for schema in schemas or [] %}{% if schema %}<script type="application/ld+json">{{ json_ld(schema)|safe }}</script>{% endif %}{% endfor %}
+    {% for schema in schemas or [] %}{% if schema %}<script type="application/ld+json" nonce="{{ csp_nonce }}">{{ json_ld(schema)|safe }}</script>{% endif %}{% endfor %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', v=app_version) }}">
 </head>
 <body>
@@ -49,7 +51,7 @@
             <nav class="nav-links" id="primaryNavigation" aria-label="{{ t('nav.primary') }}">
                 <a href="{{ url_for('home') }}#discover" {% if active_page == 'home' %}aria-current="page"{% endif %}>{{ t("nav.discover") }}</a>
                 <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
-                <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
+                <a href="{{ url_for('categories_directory') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
                 <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>{{ t("nav.recommend") }}</a>
                 <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>{{ t("nav.guides") }}</a>
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>{{ t("nav.compare") }}</a>
@@ -84,7 +86,7 @@
         <div class="footer-links" aria-label="Footer navigation">
             <a href="{{ url_for('home') }}#discover">{{ t("nav.discover") }}</a>
             <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
-            <a href="{{ url_for('category_page', slug='development') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
+            <a href="{{ url_for('categories_directory') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>

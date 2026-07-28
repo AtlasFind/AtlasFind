@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="empty-state page-shell">
+  <span class="eyebrow">{{ status_code }}</span>
+  <h1>{{ title }}</h1>
+  <p>{{ message }}</p>
+  {% if request_id %}<small>Reference: {{ request_id }}</small>{% endif %}
+  <div class="hero-actions"><a class="primary-button" href="{{ localized_path('/', locale) }}">{{ t('common.home') }}</a></div>
+</main>
+{% endblock %}

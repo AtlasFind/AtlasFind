@@ -13,8 +13,12 @@ services:
         value: "1"
       - key: ATLASFIND_TRUST_PROXY
         value: "1"
+      - key: ATLASFIND_ALLOWED_HOSTS
+        value: atlasfind.org,www.atlasfind.org,.onrender.com
       - key: ATLASFIND_SITE_URL
-        value: https://atlasfind.com
+        value: https://atlasfind.org
+      - key: ATLASFIND_CONTACT_EMAIL
+        value: atlasfindd@gmail.com
       - key: ATLASFIND_DATABASE_PATH
         value: /opt/render/project/src/storage/atlasfind.db
       - key: ATLASFIND_SECRET_KEY

@@ -31,7 +31,7 @@ def login():
     if request.method == "POST":
         validate_csrf()
         username = request.form.get("username", "").strip()[:120]
-        password = request.form.get("password", "")
+        password = request.form.get("password", "")[:512]
         enforce_admin_login_rate_limit(username)
         ip_address = client_ip()
         if recent_failed_attempts(username) >= 5:

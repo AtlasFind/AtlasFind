@@ -1,5 +1,81 @@
 # Changelog
 
+## v1.0.0 - First Stable Release
+
+- Promoted the application version to `1.0.0`.
+- Corrected production SEO and Render configuration to use `https://atlasfind.org`.
+- Added trusted proxy handling and an optional production Host-header allow-list.
+- Replaced unsafe inline-script CSP permission with per-request script nonces.
+- Added request IDs to responses and strengthened browser security headers.
+- Added rate limiting for public API endpoints and explicit TRACE/TRACK rejection.
+- Added a localized 405 error page and bounded public search query length.
+- Strengthened `/ready` with SQLite integrity, tool, translation and category checks.
+- Added safe SQLite backups before production migrations and disabled destructive automatic reseeding of non-empty databases.
+- Hardened Gunicorn lifecycle settings with graceful timeout and request recycling.
+- Added a full v1.0.0 release validator, deployment checklist and security policy.
+- Updated README, deployment documentation, CHANGELOG and ROADMAP.
+
+## v0.9.9-dev - Public Beta Final Check
+
+- Added a consolidated public-beta validator covering required files, routes, error handlers, translations, static assets, database counts and known regressions.
+- Added optional real Flask route tests that run automatically when dependencies are installed.
+- Localized 400, 413, 429 and 500 error pages and the 404 search placeholder.
+- Localized guide, recommendation, collection and 404 breadcrumbs.
+- Added tools, legal and contact pages to the multilingual sitemap source list.
+- Kept runtime route approval pending until local Flask and browser tests are completed.
+
+## v0.9.8-dev - Comparison and Recommendation System
+
+- Rebuilt the localized two-to-four tool comparison flow.
+- Prevented duplicate selections both in JavaScript and on the server.
+- Safely ignores unavailable comparison slugs instead of crashing the page.
+- Localized comparison rows, actions, empty states, preference controls and SEO.
+- Updated recommendation category matching for the v0.9.4 taxonomy.
+- Improved mobile horizontal comparison behavior and long-content handling.
+- Added `scripts/validate_compare_recommendations_v098.py`.
+- Relaxed older validators so later development versions do not fail only because the version number changed.
+
+# v0.9.7-dev - Professional tool detail pages
+
+- Rebuilt the bilingual tool detail layout, navigation, summaries, requirements, pros/cons, verification and alternatives.
+- Preserved localized URLs for tool and comparison links.
+- Added responsive mobile behavior and long-content safeguards.
+
+
+## v0.9.4-dev.1 - Localized category identity fix
+
+- Fixed Turkish category directory counts showing zero while English counts were correct.
+- Added canonical category resolution for old and new Turkish category labels.
+- Restored Turkish category detail results without changing the 600-tool catalog.
+- Extended taxonomy validation to test Turkish and English category parity.
+
+# Changelog
+
+## v0.9.4-dev - Category and Subcategory System
+
+- Consolidated 26 overlapping category labels into 18 canonical categories.
+- Added bilingual category names, descriptions, icons and legacy aliases in `taxonomy.py`.
+- Added localized `/tr/categories` and `/en/categories` directory pages.
+- Added category landing summaries and subcategory routes.
+- Updated navigation, breadcrumbs, canonical paths and sitemap category entries.
+- Migrated all 600 JSON and SQLite records while preserving tool count.
+- Added migration and validation scripts for taxonomy integrity.
+
+# AtlasFind Changelog
+
+## [0.9.3-dev] - Search, Filter and Pagination
+
+- Added catalog search to `/tr/tools` and `/en/tools`.
+- Added relevance sorting, typo correction hints and Turkish character normalization support.
+- Increased catalog pagination to 24 tools per page.
+- Added numbered pagination with compact ellipsis windows.
+- Preserved search and filter query parameters between pages.
+- Added duplicate-result protection and search duration measurement.
+- Improved empty-result actions in Turkish and English.
+- Added `scripts/validate_search_pagination_v093.py`.
+
+# Changelog
+
 ## [0.9.2-dev] - Professional Catalog Experience
 
 ### Added
@@ -283,3 +359,36 @@
 
 ### v0.6.1 Turkish content completion
 - Added complete Turkish content records for all 100 published tools, including descriptions, categories, tags, pros, cons, target users, requirements, pricing notes, verification notes and history labels.
+
+## [0.9.5-dev] - 2026-07-28
+
+### Added
+- Transparent per-tool data-quality status: verified, partially verified, unverified, or review due.
+- Ten-tool internal consistency pilot covering ChatGPT, Visual Studio Code, Blender, DaVinci Resolve, Audacity, LibreOffice, Firefox, Bitwarden, Dropbox and Steam.
+- Automated data-quality audit and JSON/Markdown reports.
+- Catalog and detail-page quality labels in Turkish and English.
+- JSON/SQLite consistency validation for quality metadata.
+
+### Changed
+- Pricing type values are deterministically normalized where the visible pricing model provides an exact mapping.
+- APP_VERSION advanced to `0.9.5-dev`.
+
+### Important
+- No tool is automatically marked fully verified. Live pricing, platform support and feature availability still require individual editorial confirmation against official sources.
+
+## [0.9.6-dev] - 2026-07-28
+
+### Added
+- Generated local SVG monogram fallback cache for all 600 tools.
+- Shared icon metadata and deterministic initials for catalog, detail, comparison, recommendation and article cards.
+- Icon audit and validation scripts with JSON and Markdown reports.
+- Local SVG site favicon to prevent favicon 404 responses.
+
+### Changed
+- External Google favicon fallback URLs were replaced by local generated SVG fallbacks.
+- Runtime icon validation now rejects tiny and extreme-aspect images before falling back.
+- JSON and SQLite icon payloads are synchronized.
+- APP_VERSION advanced to `0.9.6-dev`.
+
+### Note
+- Primary Simple Icons URLs remain in place where configured. The new local cache is the reliable fallback and reduces dependence on third-party favicon services.

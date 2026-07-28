@@ -1,59 +1,28 @@
 # AtlasFind Roadmap
 
-## Completed
+## v1.0.0 - Released candidate
 
-- v0.1.0 - Foundation ✅
-- v0.1.1 - Premium Appearance ✅
-- v0.1.2 - Professional Tool Pages ✅
-- v0.1.3 - Advanced Filtering and Data Infrastructure ✅
-- v0.2.0 - Categories and Discovery ✅
-- v0.2.1 - Smart Recommendation Engine ✅
-- v0.2.2 - Advanced Comparison ✅
-- v0.3.0 - Smart Search ✅
-- v0.3.1 - Search and Recommendation Quality ✅
-- v0.4.0 - Content and SEO Pages ✅
-- v0.4.1 - Freshness and Change History ✅
-- v0.5.0 - SQLite Migration ✅
-- v0.5.1 - Administration Panel ✅
-- v0.6.0 - Technical SEO ✅
-- v0.6.1 - Multilingual Infrastructure ✅
-- v0.7.0 - Performance and Scalability ✅
-- v0.7.1 - Security and Production Readiness ✅
+- Stable bilingual catalog experience
+- 600 catalog entries and 18 canonical categories
+- Search, filters, pagination, comparison and recommendation flows
+- Admin panel, SQLite persistence and backup tooling
+- Production security headers, CSRF protection, rate limiting and trusted proxy handling
+- Render deployment, health/readiness checks, robots.txt and sitemap.xml
+- Final production activation requires the release checklist and live-domain smoke test
 
-## Next planned version
+## v1.0.1 - Stabilization and bug-fix release
 
-- Awaiting user approval
+- Resolve defects discovered after public launch
+- Review browser console and server error logs
+- Re-run mobile, cross-browser and live-domain regression tests
+- Close remaining data-quality and icon-verification findings
 
-Development does not move to the next version without explicit approval.
+## After v1.0
 
+- 1,000+ verified tools
+- Accounts, favorites and lists
+- Community reviews and editor selections
+- Clearly labeled sponsored content
+- PostgreSQL and expanded content workflow
+- Newsletter, analytics and sustainable revenue experiments
 
-## v0.6.1 - Multilingual Infrastructure ✅
-- English and Turkish locale routes
-- Translation catalogs and fallback
-- hreflang and multilingual sitemap
-- SQLite translation tables
-
-- v0.8.1 ✅ Deployment and public beta readiness
-
-
-## v0.9.0 - Expanded catalog
-- [x] 600 tools
-- [x] Tool icons with fallback
-- [x] Contact email configuration
-- [x] Bilingual seed content for 500 new listings
-
-
-## v0.9.2 - Professional Catalog Experience (in development)
-
-- [x] professional catalog shell and responsive filter panel
-- [x] collapsible filter groups
-- [x] category, subcategory, pricing, platform, rating and feature filters
-- [x] active filter chips and clear-all action
-- [x] correct filtered result count
-- [x] improved card information hierarchy and overflow protection
-- [x] stronger icon fallback compatibility
-- [x] grid and list view preference
-- [x] Turkish and English interface translations
-- [ ] local Flask route verification
-- [ ] desktop and mobile browser approval
-- [ ] user approval and final v0.9.2 release tag

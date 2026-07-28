@@ -33,11 +33,23 @@ def expected_tool_count() -> int:
 def main() -> None:
     DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
     expected = expected_tool_count()
+    existing = tool_count()
 
-    if tool_count() < expected:
+    if existing:
+        from scripts.backup_database import create_backup
+        backup = create_backup()
+        if backup:
+            print(f"Pre-start backup created: {backup}")
+
+    if existing == 0:
         from scripts.migrate_json_to_sqlite import migrate
-        print(f"Catalog is missing or outdated; rebuilding {DATABASE_PATH} from JSON sources.")
+        print(f"Catalog is empty; seeding {DATABASE_PATH} from JSON sources.")
         migrate(reset=True)
+    elif expected and existing < expected:
+        raise RuntimeError(
+            f"Persistent database contains {existing} tools but the release expects {expected}. "
+            "Automatic destructive reseeding is disabled; restore a backup or migrate explicitly."
+        )
 
     apply_migrations()
     from scripts.sync_catalog_translations import main as sync_catalog_translations

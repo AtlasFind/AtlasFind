@@ -12,12 +12,17 @@ def main() -> None:
     port = os.environ.get("PORT", "8000")
     workers = os.environ.get("WEB_CONCURRENCY", "2")
     timeout = os.environ.get("GUNICORN_TIMEOUT", "60")
+    max_requests = os.environ.get("GUNICORN_MAX_REQUESTS", "1000")
     command = [
         "gunicorn",
         "--bind", f"0.0.0.0:{port}",
         "--workers", workers,
         "--threads", "2",
         "--timeout", timeout,
+        "--graceful-timeout", "30",
+        "--keep-alive", "5",
+        "--max-requests", max_requests,
+        "--max-requests-jitter", "100",
         "--access-logfile", "-",
         "--error-logfile", "-",
         "wsgi:app",
