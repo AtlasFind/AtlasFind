@@ -1,3 +1,12 @@
+# AtlasFind v1.0.0
+
+AtlasFind is a bilingual software discovery and comparison directory built with Flask, SQLite, HTML, CSS and JavaScript. The v1.0.0 release contains 600 catalog entries, 18 canonical categories, Turkish and English interfaces, local icon fallbacks, search, filtering, pagination, comparison, recommendations, an admin panel, technical SEO, production hardening and Render deployment support.
+
+**Production domain:** https://atlasfind.org  
+**Contact:** atlasfindd@gmail.com
+
+> Release status: v1.0.0 code and deployment package. Run `py scripts\validate_release_v100.py` in the target environment before switching production traffic.
+
 # AtlasFind
 
 **Find the right software. Faster.**
@@ -6,7 +15,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v0.9.2-dev
+v1.0.0
 
 ## Current Features
 
@@ -50,6 +59,7 @@ py scripts/verify_migration.py
 py scripts/test_search.py
 py scripts/test_recommendations.py
 py scripts/test_admin.py
+py scripts/validate_public_beta_v099.py
 ```
 
 ## SQLite and backups
@@ -124,7 +134,7 @@ Production example:
 $env:ATLASFIND_ENV = "production"
 $env:ATLASFIND_SECRET_KEY = "paste-the-generated-secret-here"
 $env:ATLASFIND_HTTPS = "1"
-$env:ATLASFIND_SITE_URL = "https://atlasfind.com"
+$env:ATLASFIND_SITE_URL = "https://atlasfind.org"
 $env:ATLASFIND_DEBUG = "0"
 py app.py
 ```
@@ -185,3 +195,41 @@ py scripts\validate_catalog_v092.py
 ```
 
 Real route checks must also be performed with Flask running locally before release approval.
+
+
+## v0.9.3 Development Status
+
+The catalog now supports integrated search, typo-tolerant ranking, Turkish character normalization, 24-item pages, numbered pagination, preserved query parameters, stable sorting and duplicate-result protection. This remains a development build until browser and live Flask tests are approved.
+
+## v0.9.4 category system
+
+AtlasFind uses 18 canonical bilingual categories defined in `taxonomy.py`. Legacy category names are migrated through `scripts/migrate_taxonomy_v094.py`. Category routes include `/tr/categories`, `/en/categories`, category landing pages and subcategory pages. Run `py scripts/validate_taxonomy_v094.py` after taxonomy changes.
+
+## v0.9.5 data-quality workflow
+
+AtlasFind now distinguishes between `verified`, `partially_verified`, `unverified` and `review_due` listings. The automated migration never promotes a listing to fully verified. Use the audit before editorial work:
+
+```powershell
+py scripts\audit_tool_data_v095.py
+py scripts\validate_tool_quality_v095.py
+```
+
+Audit reports are written to `reports/data-quality-v095.json` and `reports/data-quality-v095.md`. Live pricing, platform availability and feature claims must still be checked against each tool's official website before using the `verified` status.
+
+### v0.9.6 icon system
+
+Tool images use a three-stage approach: configured primary icon, generated local SVG fallback, and an in-page text monogram as the final runtime fallback. Run `py scripts/audit_icons_v096.py` and `py scripts/validate_icons_v096.py` after icon-data changes.
+
+
+## v0.9.7-dev
+Professional bilingual tool detail pages with clearer pricing, platforms, target users, requirements, pros/cons, verification, history and alternatives.
+
+## Current development version: v0.9.8-dev
+
+The comparison system supports two, three or four unique tools, localized Turkish and English labels, mobile horizontal tables, common-row hiding and a transparent local recommendation score. No external AI API is used.
+
+Validation:
+
+```powershell
+py scripts\validate_compare_recommendations_v098.py
+```

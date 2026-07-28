@@ -23,7 +23,7 @@ ATLASFIND_ENV=production
 ATLASFIND_SECRET_KEY=<unique random value, minimum 32 characters>
 ATLASFIND_HTTPS=1
 ATLASFIND_TRUST_PROXY=1
-ATLASFIND_SITE_URL=https://atlasfind.com
+ATLASFIND_SITE_URL=https://atlasfind.org
 ATLASFIND_DATABASE_PATH=/absolute/persistent/path/atlasfind.db
 ```
 
@@ -37,10 +37,10 @@ The database path must point to persistent storage. A normal container filesyste
 ## Domain checklist
 
 1. Deploy and verify the provider URL.
-2. Add `atlasfind.com` and `www.atlasfind.com` in the hosting dashboard.
+2. Add `atlasfind.org` and `www.atlasfind.org` in the hosting dashboard.
 3. Copy the DNS records supplied by the host into the domain registrar.
 4. Wait for DNS verification and HTTPS issuance.
-5. Set `ATLASFIND_SITE_URL=https://atlasfind.com`.
+5. Set `ATLASFIND_SITE_URL=https://atlasfind.org`.
 6. Redirect `www` to the canonical root domain at the hosting layer.
 7. Verify `/robots.txt`, `/sitemap.xml`, `/health`, `/ready`, `/en/`, and `/tr/`.
 

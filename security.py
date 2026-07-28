@@ -14,8 +14,9 @@ from collections import defaultdict, deque
 from datetime import timedelta
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
+from werkzeug.middleware.proxy_fix import ProxyFix
 
-from flask import abort, current_app, request
+from flask import abort, current_app, g, request
 
 BASE_DIR = Path(__file__).resolve().parent
 LOG_DIR = BASE_DIR / "logs"
@@ -53,22 +54,42 @@ def configure_security(app) -> None:
         PERMANENT_SESSION_LIFETIME=timedelta(minutes=30),
         MAX_CONTENT_LENGTH=2 * 1024 * 1024,
         TRUST_PROXY_HEADERS=env_bool("ATLASFIND_TRUST_PROXY", False),
+        ALLOWED_HOSTS=tuple(
+            host.strip().lower()
+            for host in os.environ.get("ATLASFIND_ALLOWED_HOSTS", "").split(",")
+            if host.strip()
+        ),
         ADMIN_LOGIN_LIMIT=int(os.environ.get("ATLASFIND_LOGIN_LIMIT", "5")),
         ADMIN_LOGIN_WINDOW=int(os.environ.get("ATLASFIND_LOGIN_WINDOW", "900")),
+        SESSION_REFRESH_EACH_REQUEST=False,
+        PREFERRED_URL_SCHEME="https" if https_enabled else "http",
     )
+
+    if app.config["TRUST_PROXY_HEADERS"]:
+        # Render terminates TLS and forwards one trusted proxy hop.
+        app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_port=1)
 
 
 def configure_logging(app) -> None:
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    handler = RotatingFileHandler(
-        LOG_DIR / "atlasfind.log", maxBytes=1_000_000, backupCount=5, encoding="utf-8"
-    )
-    handler.setFormatter(logging.Formatter(
-        "%(asctime)s %(levelname)s %(name)s %(message)s"
-    ))
-    handler.setLevel(logging.INFO)
-    app.logger.addHandler(handler)
+    if getattr(app, "_atlasfind_logging_configured", False):
+        return
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s")
+    stream = logging.StreamHandler()
+    stream.setFormatter(formatter)
+    stream.setLevel(logging.INFO)
+    app.logger.addHandler(stream)
+    try:
+        LOG_DIR.mkdir(parents=True, exist_ok=True)
+        handler = RotatingFileHandler(
+            LOG_DIR / "atlasfind.log", maxBytes=1_000_000, backupCount=5, encoding="utf-8"
+        )
+        handler.setFormatter(formatter)
+        handler.setLevel(logging.INFO)
+        app.logger.addHandler(handler)
+    except OSError:
+        app.logger.warning("file_logging_unavailable", exc_info=True)
     app.logger.setLevel(logging.INFO)
+    app._atlasfind_logging_configured = True
 
 
 def client_ip() -> str:
@@ -101,6 +122,7 @@ class SlidingWindowLimiter:
 
 
 login_limiter = SlidingWindowLimiter()
+api_limiter = SlidingWindowLimiter()
 
 
 def enforce_admin_login_rate_limit(username: str) -> None:
@@ -116,28 +138,62 @@ def enforce_admin_login_rate_limit(username: str) -> None:
         abort(429)
 
 
+def enforce_api_rate_limit() -> None:
+    if not request.path.startswith("/api/"):
+        return
+    ip = client_ip()
+    if not api_limiter.allow(f"api:{ip}", 60, 60):
+        current_app.logger.warning("api_rate_limited ip=%s path=%s", ip, request.path)
+        abort(429)
+
+
+def validate_request_host() -> None:
+    """Reject unexpected Host headers when an allow-list is configured."""
+    allowed = current_app.config.get("ALLOWED_HOSTS") or ()
+    if not allowed:
+        return
+    host = (request.host.split(":", 1)[0] or "").rstrip(".").lower()
+    valid = any(
+        host == entry or (entry.startswith(".") and host.endswith(entry))
+        for entry in allowed
+    )
+    if not valid:
+        current_app.logger.warning("rejected_host host=%r", request.host[:200])
+        abort(400)
+
+
+def enforce_safe_method() -> None:
+    if request.method in {"TRACE", "TRACK"}:
+        abort(405)
+
+
 def add_security_headers(response):
     response.headers.setdefault("X-Content-Type-Options", "nosniff")
     response.headers.setdefault("X-Frame-Options", "DENY")
     response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
-    response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+    response.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=(), payment=(), usb=()")
     response.headers.setdefault("Cross-Origin-Opener-Policy", "same-origin")
-    # Inline styles/scripts still exist in current templates. v0.7.1 keeps a compatible
-    # CSP rather than breaking rendering and pretending the breakage is security.
+    response.headers.setdefault("X-Permitted-Cross-Domain-Policies", "none")
+    response.headers.setdefault("X-DNS-Prefetch-Control", "off")
+    response.headers.setdefault("Origin-Agent-Cluster", "?1")
+    response.headers.setdefault("X-Request-ID", getattr(g, "request_id", "-"))
+    nonce = getattr(g, "csp_nonce", "")
+    script_policy = f"script-src 'self' 'nonce-{nonce}'" if nonce else "script-src 'self'"
     response.headers.setdefault(
         "Content-Security-Policy",
         "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; "
         "object-src 'none'; img-src 'self' data: https:; font-src 'self' data:; "
-        "style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; "
-        "connect-src 'self'",
+        "style-src 'self' 'unsafe-inline'; " + script_policy + "; "
+        "connect-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests",
     )
     if current_app.config.get("SESSION_COOKIE_SECURE"):
         response.headers.setdefault(
-            "Strict-Transport-Security", "max-age=31536000; includeSubDomains"
+            "Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload"
         )
     if request.path.startswith("/admin"):
         response.headers["Cache-Control"] = "no-store, private"
         response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
     return response
 
 

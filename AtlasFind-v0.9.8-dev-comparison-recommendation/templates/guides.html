@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% set active_page = "guides" %}
+{% block title %}Software Guides and Comparisons · AtlasFind{% endblock %}
+{% block description %}Practical software guides, free-tool roundups, alternatives and comparisons from AtlasFind.{% endblock %}
+{% block content %}
+<section class="guides-hero">
+    <div class="section-container">
+        <span class="eyebrow">{{ t("guides.eyebrow") }}</span>
+        <h1>{{ t("guides.title") }}</h1>
+        <p>{{ t("guides.description") }}</p>
+        <div class="article-stat-row">
+            <strong>{{ all_articles|length }} guides</strong>
+            <span>Data-linked recommendations</span>
+            <span>Published and updated dates</span>
+        </div>
+    </div>
+</section>
+
+<section class="section-container guides-index">
+    <form class="guide-filters" method="get">
+        <label>
+            Content type
+            <select name="type">
+                <option value="">All types</option>
+                {% for item in content_types %}
+                <option value="{{ item }}" {% if selected_type == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>
+            Category
+            <select name="category">
+                <option value="">All categories</option>
+                {% for item in article_categories %}
+                <option value="{{ item }}" {% if selected_category == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <button type="submit">{{ t("actions.apply") }}</button>
+        <a href="{{ url_for('guides') }}">{{ t("common.reset") }}</a>
+    </form>
+
+    {% if articles %}
+    <div class="article-grid">
+        {% for article in articles %}
+        <article class="article-card">
+            <div class="article-card-meta">
+                <span>{{ article.content_type|replace('-', ' ')|title }}</span>
+                <time datetime="{{ article.updated_at }}">Updated {{ article.updated_at }}</time>
+            </div>
+            <h2><a href="{{ url_for('article_detail', slug=article.slug) }}">{{ article.title }}</a></h2>
+            <p>{{ article.description }}</p>
+            <div class="article-card-footer">
+                <span>{{ article.category|replace('-', ' ')|title }}</span>
+                <a href="{{ url_for('article_detail', slug=article.slug) }}">{{ t("actions.read_guide") }}</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-results">
+        <h2>{{ t("common.no_guides") }}</h2>
+        <p>Clear the filters to return to all published content.</p>
+        <a href="{{ url_for('guides') }}">View all guides</a>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

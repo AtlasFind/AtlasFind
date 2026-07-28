@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · AtlasFind{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block content %}
+<section class="categories-directory section-shell">
+  <div class="section-heading categories-heading">
+    <span class="eyebrow">AtlasFind</span>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+  </div>
+  <div class="category-directory-grid">
+    {% for category in categories %}
+    <article class="category-directory-card">
+      <a class="category-card-link" href="{{ url_for('category_page', slug=category.slug) }}" aria-label="{{ category.name }}"></a>
+      <div class="category-directory-head">
+        <span class="category-directory-icon" aria-hidden="true">{{ category.icon }}</span>
+        <div><h2>{{ category.name }}</h2><span>{{ category.count }} {{ t('common.tools') }}</span></div>
+      </div>
+      <p>{{ category.description }}</p>
+      <div class="category-directory-meta">
+        <span>{{ category.free_count }} {{ t('catalog.price_free') }}</span>
+        <span>{{ category.subcategories|length }} {{ t('categories.subcategories') }}</span>
+      </div>
+      {% if category.featured %}<div class="category-featured-names">{% for tool in category.featured %}<span>{{ tool.name }}</span>{% endfor %}</div>{% endif %}
+      <span class="category-directory-action">{{ t('actions.view_details_arrow') }}</span>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

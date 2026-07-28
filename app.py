@@ -14,7 +14,11 @@ from repositories.translations import localize_tool, localize_article, localize_
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
-from security import add_security_headers, configure_logging, configure_security, new_request_id
+from security import (
+    add_security_headers, configure_logging, configure_security, enforce_api_rate_limit,
+    enforce_safe_method, new_request_id, validate_request_host,
+)
+from taxonomy import CATEGORIES, category_slug, localized_category
 from seo import (
     SITE_URL, absolute_url, article_schema, breadcrumb_schema, breadcrumbs as build_breadcrumbs,
     faq_schema, json_ld, page_seo, software_schema, website_schema,
@@ -35,7 +39,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "0.9.2-dev"
+APP_VERSION = "1.0.0"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -54,7 +58,7 @@ PUBLIC_PAGES = {
             ("Çerezler ve yerel depolama", "AtlasFind dil, tema ve çerez bildirimi tercihi gibi temel arayüz ayarları için gerekli tarayıcı depolamasını kullanır. Politika güncellenmeden ve gerektiğinde izin alınmadan reklam veya analiz çerezleri etkinleştirilmez."),
             ("Haricî siteler", "Araç sayfaları üçüncü taraf sitelere bağlantı verir. Bu sitelerin içerik ve gizlilik uygulamalarından AtlasFind sorumlu değildir."),
             ("Saklama süresi", "Güvenlik ve hata kayıtları yalnızca hizmeti işletmek ve korumak için makul ölçüde gerekli süre boyunca tutulur."),
-            ("İletişim", "Özel bir destek adresi yayımlanana kadar gizlilik soruları AtlasFind GitHub deposu üzerinden iletilebilir."),
+            ("İletişim", "Gizlilik soruları atlasfindd@gmail.com adresine gönderilebilir."),
         ]}
     },
     "terms": {
@@ -747,18 +751,8 @@ def calculate_match_percentage(score, highest_score):
 
 
 
-CATEGORY_INFO = {
-    "artificial-intelligence": {"name": "Artificial Intelligence", "description": "AI assistants, local models and intelligent creative tools."},
-    "development": {"name": "Development", "description": "Editors, IDEs and utilities for building software."},
-    "design": {"name": "Design", "description": "Visual design, illustration and interface creation tools."},
-    "video": {"name": "Video", "description": "Editing, recording, animation and production software."},
-    "audio": {"name": "Audio", "description": "Audio editing, music production and podcast tools."},
-    "office": {"name": "Office", "description": "Documents, notes, planning and productivity tools."},
-    "browser": {"name": "Browser", "description": "Web browsers focused on speed, privacy and workflows."},
-    "cloud": {"name": "Cloud", "description": "Cloud storage, hosting and deployment platforms."},
-    "security": {"name": "Security", "description": "Privacy, account and device protection tools."},
-    "database": {"name": "Database", "description": "Database engines, clients and data management tools."},
-}
+CATEGORY_INFO = CATEGORIES
+
 COLLECTION_INFO = {
     "free-tools": {"name": "Free Tools", "description": "Tools with a fully free pricing model."},
     "open-source": {"name": "Open Source", "description": "Software whose source code can be inspected and improved."},
@@ -768,7 +762,22 @@ COLLECTION_INFO = {
 }
 
 def slugify_category(name):
-    return normalize_text(name).replace(" ", "-")
+    return category_slug(name)
+
+def category_cards(items, locale):
+    cards = []
+    for slug in CATEGORIES:
+        info = localized_category(slug, locale)
+        category_tools = [tool for tool in items if category_slug(tool.get("category", "")) == slug]
+        info.update({
+            "count": len(category_tools),
+            "free_count": sum(1 for tool in category_tools if tool.get("pricing_type") == "free"),
+            "featured": sort_tools(category_tools, "rating")[:3],
+            "subcategories": sorted({tool.get("subcategory") for tool in category_tools if tool.get("subcategory")}),
+            "subcategory_links": [{"name": name, "slug": slugify_category(name)} for name in sorted({tool.get("subcategory") for tool in category_tools if tool.get("subcategory")})],
+        })
+        cards.append(info)
+    return cards
 
 def sort_tools(items, sort_key):
     options = {
@@ -783,45 +792,87 @@ def sort_tools(items, sort_key):
     reverse = key in {"newest", "name-desc"}
     return sorted(items, key=options[key], reverse=reverse)
 
-def paginate(items, page, per_page=18):
-    total=len(items); pages=max(1,(total+per_page-1)//per_page); page=max(1,min(page,pages))
-    start=(page-1)*per_page
-    return items[start:start+per_page], {"page":page,"pages":pages,"total":total,"has_prev":page>1,"has_next":page<pages}
+def paginate(items, page, per_page=24):
+    total = len(items)
+    pages = max(1, (total + per_page - 1) // per_page)
+    page = max(1, min(page, pages))
+    start = (page - 1) * per_page
+    return items[start:start + per_page], {
+        "page": page, "pages": pages, "total": total,
+        "per_page": per_page, "has_prev": page > 1, "has_next": page < pages,
+    }
+
+
+def pagination_window(page, pages, radius=2):
+    if pages <= 7:
+        return list(range(1, pages + 1))
+    values = {1, pages}
+    values.update(range(max(2, page - radius), min(pages, page + radius) + 1))
+    output = []
+    previous = None
+    for value in sorted(values):
+        if previous is not None and value - previous > 1:
+            output.append(None)
+        output.append(value)
+        previous = value
+    return output
 
 def discovery_context(items, title, description, page_type):
     source_items = list(items)
     filters = parse_filters(request.args)
     selected_category = filters.get("category", "")
+    search_query = request.args.get("q", "").strip()[:160]
+
+    search_meta = {"corrected_query": "", "did_correct": False, "duration_ms": 0, "result_count": len(source_items), "detected_needs": []}
+    relevance_scores = {}
+    if search_query:
+        ranked, search_meta = rank_tools(source_items, search_query)
+        source_items = [entry["tool"] for entry in ranked]
+        relevance_scores = {str(entry["tool"].get("slug") or entry["tool"].get("id")): entry for entry in ranked}
+        app.logger.info(
+            "catalog_search query=%r tools=%s results=%s duration_ms=%s",
+            search_query, len(items), search_meta["result_count"], search_meta["duration_ms"],
+        )
 
     category_scoped_items = source_items
     if selected_category:
         category_scoped_items = [tool for tool in source_items if tool.get("category") == selected_category]
 
     subcategory = request.args.get("subcategory", "").strip()
-    items = filter_tools(source_items, filters)
+    filtered_items = filter_tools(source_items, filters)
     if subcategory:
-        items = [tool for tool in items if tool.get("subcategory") == subcategory]
+        filtered_items = [tool for tool in filtered_items if tool.get("subcategory") == subcategory]
 
-    sort_key = request.args.get("sort", "popular")
-    items = sort_tools(items, sort_key)
+    requested_sort = request.args.get("sort", "").strip()
+    sort_key = requested_sort or ("relevance" if search_query else "popular")
+    if sort_key != "relevance":
+        filtered_items = sort_tools(filtered_items, sort_key)
+
     try:
         page = int(request.args.get("page", "1"))
     except ValueError:
         page = 1
-    page_items, pagination = paginate(items, page)
+    page_items, pagination = paginate(filtered_items, page)
 
-    categories = sorted({tool.get("category") for tool in source_items if tool.get("category")})
+    categories = sorted({tool.get("category") for tool in (list(items) if search_query else source_items) if tool.get("category")})
     subcategories = sorted({tool.get("subcategory") for tool in category_scoped_items if tool.get("subcategory")})
     base_path = request.path
     persistent = {"sort": sort_key}
     if subcategory:
         persistent["subcategory"] = subcategory
-    active_filters = build_active_filters("", filters, base_path, get_locale(), persistent)
+    active_filters = build_active_filters(search_query, filters, base_path, get_locale(), persistent)
 
     def page_url(target_page):
         extras = dict(persistent)
         extras["page"] = target_page
-        return build_query_url("", filters, base_path=base_path, extra=extras)
+        return build_query_url(search_query, filters, base_path=base_path, extra=extras)
+
+    page_links = [
+        {"page": value, "url": page_url(value) if value is not None else None, "current": value == pagination["page"]}
+        for value in pagination_window(pagination["page"], pagination["pages"])
+    ]
+    corrected_query = search_meta.get("corrected_query", "")
+    corrected_query_url = build_query_url(corrected_query, filters, base_path=base_path, extra={"sort": "relevance"}) if search_meta.get("did_correct") else None
 
     return dict(
         tools=page_items,
@@ -830,16 +881,23 @@ def discovery_context(items, title, description, page_type):
         page_type=page_type,
         filters=filters,
         sort_key=sort_key,
+        search_query=search_query,
+        search_meta=search_meta,
+        corrected_query_url=corrected_query_url,
+        relevance_scores=relevance_scores,
         subcategory=subcategory,
         categories=categories,
         subcategories=subcategories,
         active_filters=active_filters,
-        active_filter_count=len(active_filters) + (1 if subcategory else 0),
+        active_filter_count=len(active_filters) + (1 if subcategory else 0) + (1 if search_query else 0),
         pagination=pagination,
+        page_links=page_links,
         previous_page_url=page_url(pagination["page"] - 1) if pagination["has_prev"] else None,
         next_page_url=page_url(pagination["page"] + 1) if pagination["has_next"] else None,
         clear_filters_url=base_path,
-        subcategory_remove_url=build_query_url("", filters, base_path=base_path, extra={"sort": sort_key}),
+        clear_filters_keep_query_url=build_query_url(search_query, {"category": "", "pricing": [], "platforms": [], "system_levels": [], "open_source": False, "offline": False, "ai": False, "turkish": False, "max_ram": None, "min_rating": None}, base_path=base_path, extra={"sort": "relevance"}) if search_query else base_path,
+        remove_query_url=build_query_url("", filters, base_path=base_path, extra={"sort": "popular", **({"subcategory": subcategory} if subcategory else {})}),
+        subcategory_remove_url=build_query_url(search_query, filters, base_path=base_path, extra={"sort": sort_key}),
         query_args=request.args,
     )
 
@@ -847,6 +905,10 @@ def discovery_context(items, title, description, page_type):
 @app.before_request
 def resolve_request_locale():
     g.request_id = new_request_id()
+    g.csp_nonce = new_request_id()
+    validate_request_host()
+    enforce_safe_method()
+    enforce_api_rate_limit()
     locale = (request.view_args or {}).get("locale")
     if locale is not None and locale not in SUPPORTED_LOCALES:
         abort(404)
@@ -898,6 +960,7 @@ def inject_app_metadata():
         "t": translate,
         "localized_path": localized_path,
         "alternate_urls": alternate_urls(request.path),
+        "csp_nonce": getattr(g, "csp_nonce", ""),
     }
 
 @app.route("/")
@@ -906,7 +969,7 @@ def home(locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
     all_tools = load_tools()
-    search_query = request.args.get("q", "").strip()
+    search_query = request.args.get("q", "").strip()[:160]
     filters = parse_filters(request.args)
     search_meta = {"detected_needs": [], "corrected_query": search_query, "did_correct": False}
 
@@ -946,7 +1009,7 @@ def home(locale=None):
         clear_filters_url=localized_path(f"/?{urlencode({'q': search_query})}" if search_query else "/"),
         total_tool_count=len(all_tools),
         result_count=len(tools),
-        categories=[dict(slug=slug, **info, count=sum(1 for t in all_tools if slugify_category(t.get("category", "")) == slug)) for slug, info in CATEGORY_INFO.items()],
+        categories=category_cards(all_tools, get_locale()),
         popular_tools=sort_tools(all_tools, "popular")[:6],
         newest_tools=sort_tools(all_tools, "newest")[:6],
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
@@ -964,7 +1027,7 @@ def home(locale=None):
 
 @app.route("/api/search-suggestions")
 def search_suggestions_api():
-    query = request.args.get("q", "").strip()
+    query = request.args.get("q", "").strip()[:160]
     return jsonify(search_suggestions(load_tools(), query))
 
 
@@ -990,21 +1053,67 @@ def tools_directory(locale=None):
         breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
     )
 
+@app.route("/categories")
+@app.route("/<locale>/categories")
+def categories_directory(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    current_locale = get_locale()
+    all_tools = load_tools()
+    title = "Kategoriler" if current_locale == "tr" else "Categories"
+    description = ("AtlasFind araçlarını kullanım alanına göre keşfedin." if current_locale == "tr" else "Explore AtlasFind tools by purpose and category.")
+    crumbs = build_breadcrumbs([(("Ana Sayfa" if current_locale == "tr" else "Home"), "/"), (title, "/categories")])
+    return render_template(
+        "categories.html", categories=category_cards(all_tools, current_locale), active_page="categories",
+        title=title, description=description,
+        seo=page_seo(title, description, "/categories"), breadcrumbs=crumbs,
+        schemas=[breadcrumb_schema(crumbs)],
+    )
+
 @app.route("/categories/<slug>")
 @app.route("/<locale>/categories/<slug>")
 def category_page(slug, locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
-    info=CATEGORY_INFO.get(slug)
-    if not info: abort(404)
-    items=[t for t in load_tools() if slugify_category(t.get("category",""))==slug]
+    if slug not in CATEGORIES: abort(404)
+    current_locale = get_locale()
+    info = localized_category(slug, current_locale)
+    items=[t for t in load_tools() if category_slug(t.get("category",""))==slug]
     related_guides = [article for article in load_articles() if article.get("category") == slug]
-    crumbs = build_breadcrumbs([("Home", "/"), ("Categories", "/categories/development"), (info["name"], f"/categories/{slug}")])
+    home_label = "Ana Sayfa" if current_locale == "tr" else "Home"
+    categories_label = "Kategoriler" if current_locale == "tr" else "Categories"
+    crumbs = build_breadcrumbs([(home_label, "/"), (categories_label, "/categories"), (info["name"], f"/categories/{slug}")])
+    context = discovery_context(items, info["name"], info["description"], "category")
+    context["category_landing"] = category_cards(items, current_locale)[list(CATEGORIES).index(slug)]
     return render_template(
-        "discovery.html",
-        **discovery_context(items, info["name"], info["description"], "category"),
+        "discovery.html", **context,
         active_page="categories", related_guides=related_guides,
-        seo=page_seo(f"Best {info['name']} Tools", info["description"], f"/categories/{slug}"),
+        seo=page_seo((f"En İyi {info['name']} Araçları" if current_locale == "tr" else f"Best {info['name']} Tools"), info["description"], f"/categories/{slug}"),
+        breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
+    )
+
+@app.route("/categories/<category_slug_value>/<subcategory_slug>")
+@app.route("/<locale>/categories/<category_slug_value>/<subcategory_slug>")
+def subcategory_page(category_slug_value, subcategory_slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if category_slug_value not in CATEGORIES: abort(404)
+    current_locale = get_locale()
+    category_info = localized_category(category_slug_value, current_locale)
+    category_tools = [t for t in load_tools() if category_slug(t.get("category", "")) == category_slug_value]
+    subcategories = {slugify_category(t.get("subcategory", "")): t.get("subcategory") for t in category_tools if t.get("subcategory")}
+    subcategory_name = subcategories.get(subcategory_slug)
+    if not subcategory_name: abort(404)
+    items = [t for t in category_tools if t.get("subcategory") == subcategory_name]
+    title = subcategory_name
+    description = ((f"{category_info['name']} kategorisindeki {subcategory_name} araçlarını keşfedin ve karşılaştırın.") if current_locale == "tr" else f"Discover and compare {subcategory_name} tools in {category_info['name']}.")
+    home_label = "Ana Sayfa" if current_locale == "tr" else "Home"
+    categories_label = "Kategoriler" if current_locale == "tr" else "Categories"
+    crumbs = build_breadcrumbs([(home_label, "/"), (categories_label, "/categories"), (category_info["name"], f"/categories/{category_slug_value}"), (title, f"/categories/{category_slug_value}/{subcategory_slug}")])
+    return render_template(
+        "discovery.html", **discovery_context(items, title, description, "subcategory"),
+        active_page="categories", related_guides=[],
+        seo=page_seo(title, description, f"/categories/{category_slug_value}/{subcategory_slug}"),
         breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
     )
 
@@ -1016,7 +1125,9 @@ def collection_page(slug, locale=None):
     info=COLLECTION_INFO.get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
-    crumbs = build_breadcrumbs([("Home", "/"), ("Collections", "/collections/free-tools"), (info["name"], f"/collections/{slug}")])
+    home_label = translate("common.home")
+    collections_label = translate("common.collections")
+    crumbs = build_breadcrumbs([(home_label, "/"), (collections_label, None), (info["name"], f"/collections/{slug}")])
     return render_template(
         "discovery.html",
         **discovery_context(items, info["name"], info["description"], "collection"),
@@ -1050,9 +1161,9 @@ def guides(locale=None):
         selected_category=category,
         content_types=sorted({article.get("content_type") for article in articles}),
         article_categories=sorted({article.get("category") for article in articles}),
-        seo=page_seo("Software Guides", "Practical software guides, comparisons and curated tool collections from AtlasFind.", "/guides", robots="noindex,follow" if content_type or category else "index,follow"),
-        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Guides", "/guides")]),
-        schemas=[breadcrumb_schema(build_breadcrumbs([("Home", "/"), ("Guides", "/guides")]))],
+        seo=page_seo(translate("guides.seo_title"), translate("guides.seo_description"), "/guides", robots="noindex,follow" if content_type or category else "index,follow"),
+        breadcrumbs=(crumbs := build_breadcrumbs([(translate("common.home"), "/"), (translate("nav.guides"), "/guides")])),
+        schemas=[breadcrumb_schema(crumbs)],
     )
 
 
@@ -1078,10 +1189,10 @@ def article_detail(slug, locale=None):
         related_tools=article_tools(article, tools_by_slug),
         related_articles=related_articles_for(article, all_articles),
         section_tools=section_tools,
-        category_info=CATEGORY_INFO.get(article.get("category")),
+        category_info=(localized_category(article.get("category"), get_locale()) if article.get("category") in CATEGORIES else None),
         freshness=content_freshness(article.get("updated_at")),
         seo=page_seo(article.get("title", "Guide"), article.get("description", ""), f"/guides/{slug}", page_type="article"),
-        breadcrumbs=(crumbs := build_breadcrumbs([("Home", "/"), ("Guides", "/guides"), (article.get("title", "Guide"), f"/guides/{slug}")])),
+         breadcrumbs=(crumbs := build_breadcrumbs([(translate("common.home"), "/"), (translate("nav.guides"), "/guides"), (article.get("title", translate("nav.guides")), f"/guides/{slug}")])),
         schemas=[item for item in [article_schema(article), faq_schema(article.get("faq", [])), breadcrumb_schema(crumbs)] if item],
     )
 
@@ -1100,8 +1211,8 @@ def recommend(locale=None):
         purpose_options=RECOMMENDATION_PURPOSES,
         recommendations=recommendations,
         submitted=submitted,
-        seo=page_seo("Smart Software Recommendations", "Get transparent software recommendations based on purpose, platform, budget, hardware and privacy preferences.", "/recommend", robots="noindex,follow" if submitted else "index,follow"),
-        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Recommend", "/recommend")]), schemas=[],
+        seo=page_seo(translate("recommend.seo_title"), translate("recommend.seo_description"), "/recommend", robots="noindex,follow" if submitted else "index,follow"),
+        breadcrumbs=build_breadcrumbs([(translate("common.home"), "/"), (translate("nav.recommend"), "/recommend")]), schemas=[],
     )
 
 @app.route("/tools/<slug>")
@@ -1119,63 +1230,102 @@ def tool_detail(slug, locale=None):
         limit=6
     )
 
+    locale_code = get_locale()
+    title = translate("tool.seo_title", name=tool.get("name", "Tool"))
+    description = translate("tool.seo_description", name=tool.get("name", "Tool"))
+    canonical_path = f"/{locale_code}/tools/{slug}"
+    crumbs = build_breadcrumbs([
+        (translate("common.home"), localized_path("/", locale_code)),
+        (translate("nav.tools"), localized_path("/tools", locale_code)),
+        (tool.get("name", "Tool"), canonical_path),
+    ])
+
     return render_template(
         "tool.html",
         tool=tool,
         alternatives=alternatives,
         freshness=tool_freshness(tool),
-        seo=page_seo(f"{tool.get('name')} Review, Pricing, Features & Alternatives", f"Explore {tool.get('name')} pricing, features, pros, cons, platforms, requirements and alternatives.", f"/tools/{slug}"),
-        breadcrumbs=(crumbs := build_breadcrumbs([("Home", "/"), ("Tools", "/#tools"), (tool.get("name", "Tool"), f"/tools/{slug}")])),
+        seo=page_seo(title, description, canonical_path),
+        breadcrumbs=crumbs,
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
     )
 
 
 def _comparison_value(tool, key):
-    if key == "category":
-        return tool.get("category") or "Unknown"
-    if key == "pricing":
-        return tool.get("pricing") or tool.get("pricing_type") or "Unknown"
+    current_locale = get_locale()
+    unknown = translate("common.unknown")
+    yes = translate("common.yes")
+    no = translate("common.no")
     if key in {"open_source", "offline", "ai_powered"}:
-        return "Yes" if tool.get(key, False) else "No"
-    if key == "platforms":
-        values = tool.get("platforms") or []
-        return ", ".join(platform_label(normalize_platform(value)) for value in values) or "Unknown"
+        return yes if tool.get(key) else no
     if key == "minimum_ram_gb":
-        value = tool.get("minimum_ram_gb")
-        return f"{value:g} GB" if isinstance(value, (int, float)) and not isinstance(value, bool) else "Unknown"
-    if key == "system_level":
-        value = normalize_text(tool.get("system_level", "unknown"))
-        return value.title() if value else "Unknown"
+        value = tool.get(key)
+        return f"{value:g} GB" if isinstance(value, (int, float)) and not isinstance(value, bool) else unknown
+    if key == "platforms":
+        return ", ".join(tool.get("platforms") or []) or unknown
     if key == "languages":
         values = tool.get("languages") or []
-        return ", ".join(value.upper() for value in values) or "Unknown"
+        return ", ".join(value.upper() for value in values) or unknown
     if key == "rating":
         value = tool.get("rating")
-        return f"{value} / 5" if value is not None else "Unknown"
+        return f"{value:g} / 5" if isinstance(value, (int, float)) else unknown
     if key == "target_users":
-        return ", ".join(tool.get("target_users") or []) or "Unknown"
-    return str(tool.get(key) or "Unknown")
+        return ", ".join(tool.get("target_users") or []) or unknown
+    if key == "pricing":
+        pricing_key = str(tool.get("pricing_type") or tool.get("pricing") or "").strip().lower()
+        return translate(f"pricing.{pricing_key}") if pricing_key else unknown
+    return str(tool.get(key) or unknown)
 
 
 def build_comparison_rows(tools):
     definitions = [
-        ("Category", "category"),
-        ("Pricing", "pricing"),
-        ("Open source", "open_source"),
-        ("Offline support", "offline"),
-        ("AI features", "ai_powered"),
-        ("Platforms", "platforms"),
-        ("Minimum RAM", "minimum_ram_gb"),
-        ("System level", "system_level"),
-        ("Languages", "languages"),
-        ("Rating", "rating"),
-        ("Target users", "target_users"),
+        ("compare.row.category", "category"),
+        ("compare.row.pricing", "pricing"),
+        ("compare.row.open_source", "open_source"),
+        ("compare.row.offline", "offline"),
+        ("compare.row.ai", "ai_powered"),
+        ("compare.row.platforms", "platforms"),
+        ("compare.row.ram", "minimum_ram_gb"),
+        ("compare.row.system", "system_level"),
+        ("compare.row.languages", "languages"),
+        ("compare.row.rating", "rating"),
+        ("compare.row.target_users", "target_users"),
     ]
     rows = []
-    for label, key in definitions:
+    for label_key, key in definitions:
         values = [_comparison_value(tool, key) for tool in tools]
-        rows.append({"label": label, "key": key, "values": values, "common": len(set(values)) <= 1})
+        rows.append({"label": translate(label_key), "key": key, "values": values, "common": len(set(values)) <= 1})
     return rows
+
+
+def _localized_recommendation_result(result):
+    """Return recommendation text that never leaks the other locale into the page."""
+    tool = result["tool"]
+    reasons = []
+    concerns = []
+    for reason in result.get("reasons", []):
+        if get_locale() == "tr":
+            replacements = {
+                "Category fit:": "Kategori uyumu:", "Relevant capabilities:": "İlgili yetenekler:",
+                "Platform fit:": "Platform uyumu:", "Budget fit:": "Bütçe uyumu:",
+                "Hardware fit:": "Donanım uyumu:", "Experience fit:": "Deneyim uyumu:",
+                "Privacy fit:": "Gizlilik uyumu:", "Offline fit:": "Çevrimdışı kullanım:",
+            }
+            for source, target in replacements.items():
+                reason = reason.replace(source, target)
+        reasons.append(reason)
+    for concern in result.get("concerns", []):
+        if get_locale() == "tr":
+            replacements = {
+                "Purpose mismatch:": "Amaç uyumsuzluğu:", "Platform limitation:": "Platform sınırlaması:",
+                "Budget mismatch:": "Bütçe uyumsuzluğu:", "Hardware concern:": "Donanım uyarısı:",
+                "Learning-curve concern:": "Öğrenme eğrisi uyarısı:", "Privacy mismatch:": "Gizlilik uyumsuzluğu:",
+                "Offline limitation:": "Çevrimdışı kullanım sınırlaması:",
+            }
+            for source, target in replacements.items():
+                concern = concern.replace(source, target)
+        concerns.append(concern)
+    return {**result, "tool": tool, "reasons": reasons, "concerns": concerns}
 
 
 @app.route("/compare")
@@ -1183,27 +1333,28 @@ def build_comparison_rows(tools):
 def compare_tools(locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
-    requested_slugs = [slug.strip() for slug in request.args.getlist("tools") if slug.strip()]
 
-    # Keep old v0.2.1 links working.
+    requested_slugs = [slug.strip() for slug in request.args.getlist("tools") if slug and slug.strip()]
     if not requested_slugs:
-        requested_slugs = [
-            request.args.get("left", "").strip(),
-            request.args.get("right", "").strip(),
-        ]
+        requested_slugs = [request.args.get("left", "").strip(), request.args.get("right", "").strip()]
         requested_slugs = [slug for slug in requested_slugs if slug]
 
     unique_slugs = []
+    duplicate_removed = False
     for slug in requested_slugs:
-        if slug not in unique_slugs:
-            unique_slugs.append(slug)
+        if slug in unique_slugs:
+            duplicate_removed = True
+            continue
+        unique_slugs.append(slug)
     unique_slugs = unique_slugs[:4]
 
     selected_tools = []
+    invalid_slugs = []
     for slug in unique_slugs:
-        tool = find_tool_by_slug(slug)
+        tool = find_tool_by_slug(slug, get_locale())
         if tool is None:
-            abort(404)
+            invalid_slugs.append(slug)
+            continue
         selected_tools.append(tool)
 
     hide_common = request.args.get("hide_common") == "1"
@@ -1212,25 +1363,35 @@ def compare_tools(locale=None):
 
     preferences = parse_recommendation_preferences(request.args)
     preference_submitted = recommendation_requested(preferences)
-    scored_tools = [score_recommendation(tool, preferences) for tool in selected_tools] if preference_submitted else []
+    scored_tools = [_localized_recommendation_result(score_recommendation(tool, preferences)) for tool in selected_tools] if preference_submitted else []
     scored_tools.sort(key=lambda item: (item["match"], item["score"], item["tool"].get("rating", 0)), reverse=True)
     winner = scored_tools[0] if scored_tools else None
+
+    current_locale = get_locale()
+    title = translate("compare.seo_title")
+    description = translate("compare.seo_description")
+    home_label = translate("common.home")
+    compare_label = translate("nav.compare")
+    crumbs = build_breadcrumbs([(home_label, "/"), (compare_label, "/compare")])
 
     return render_template(
         "compare.html",
         selected_tools=selected_tools,
-        selected_slugs=unique_slugs,
+        selected_slugs=[tool.get("slug") for tool in selected_tools],
         comparison_rows=visible_rows,
         all_rows=rows,
         hide_common=hide_common,
-        all_tools=sorted(load_tools(), key=lambda tool: tool.get("name", "")),
+        all_tools=sorted(load_tools(current_locale), key=lambda tool: str(tool.get("name", "")).casefold()),
         preferences=preferences,
         purpose_options=RECOMMENDATION_PURPOSES,
         preference_submitted=preference_submitted,
         scored_tools=scored_tools,
         winner=winner,
-        seo=page_seo("Compare Software Tools", "Compare pricing, platforms, requirements, features, pros and cons for up to four software tools.", "/compare", robots="noindex,follow"),
-        breadcrumbs=build_breadcrumbs([("Home", "/"), ("Compare", "/compare")]), schemas=[],
+        duplicate_removed=duplicate_removed,
+        invalid_slugs=invalid_slugs,
+        seo=page_seo(title, description, "/compare", robots="noindex,follow"),
+        breadcrumbs=crumbs,
+        schemas=[breadcrumb_schema(crumbs)],
     )
 
 
@@ -1251,19 +1412,24 @@ def readiness_check():
 
     try:
         connection = sqlite3.connect(DATABASE_PATH)
+        integrity = connection.execute("PRAGMA quick_check").fetchone()[0]
         tool_count = connection.execute("SELECT COUNT(*) FROM tools").fetchone()[0]
+        translation_count = connection.execute("SELECT COUNT(*) FROM tool_translations").fetchone()[0]
+        category_count = connection.execute("SELECT COUNT(*) FROM categories").fetchone()[0]
         connection.close()
     except Exception:
         app.logger.exception("readiness_check_failed")
         return jsonify({"status": "not_ready", "database": "unavailable"}), 503
 
-    status_code = 200 if tool_count > 0 else 503
+    ready = integrity == "ok" and tool_count >= 600 and translation_count >= 1200 and category_count == 18
     return jsonify({
-        "status": "ready" if tool_count > 0 else "not_ready",
-        "database": "ok",
+        "status": "ready" if ready else "not_ready",
+        "database": "ok" if integrity == "ok" else "corrupt",
         "tools": tool_count,
+        "translations": translation_count,
+        "categories": category_count,
         "version": APP_VERSION,
-    }), status_code
+    }), 200 if ready else 503
 
 
 @app.route("/robots.txt")
@@ -1283,10 +1449,10 @@ def robots_txt():
 def sitemap_xml():
     from xml.sax.saxutils import escape
 
-    base_urls = [("/", None), ("/guides", None), ("/recommend", None)]
+    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
     base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
-    base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORY_INFO)
+    base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORIES)
     base_urls.extend((f"/collections/{slug}", None) for slug in COLLECTION_INFO)
     urls = [(localized_path(path, locale), lastmod) for locale in SUPPORTED_LOCALES for path, lastmod in base_urls]
 
@@ -1357,30 +1523,48 @@ def legacy_guide_url(slug):
 @app.errorhandler(400)
 def bad_request(error):
     app.logger.warning("bad_request request_id=%s path=%s", getattr(g, "request_id", "-"), request.path)
+    title = translate("errors.400.title")
+    message = translate("errors.400.text")
     return render_template(
-        "error.html", status_code=400, title="Invalid request",
-        message="The request could not be processed safely.", request_id=getattr(g, "request_id", None),
-        seo=page_seo("Invalid request", "The request could not be processed.", request.path, robots="noindex,nofollow"),
+        "error.html", status_code=400, title=title,
+        message=message, request_id=getattr(g, "request_id", None),
+        seo=page_seo(title, message, request.path, robots="noindex,nofollow"),
         breadcrumbs=[], schemas=[],
     ), 400
 
 
+@app.errorhandler(405)
+def method_not_allowed(error):
+    title = translate("errors.405.title")
+    message = translate("errors.405.text")
+    return render_template(
+        "error.html", status_code=405, title=title,
+        message=message, request_id=getattr(g, "request_id", None),
+        seo=page_seo(title, message, request.path, robots="noindex,nofollow"),
+        breadcrumbs=[], schemas=[],
+    ), 405
+
+
 @app.errorhandler(413)
 def request_too_large(error):
+    title = translate("errors.413.title")
+    message = translate("errors.413.text")
     return render_template(
-        "error.html", status_code=413, title="Request too large",
-        message="The submitted data exceeds the allowed size.", request_id=getattr(g, "request_id", None),
-        seo=page_seo("Request too large", "The submitted request is too large.", request.path, robots="noindex,nofollow"),
+        "error.html", status_code=413, title=title,
+        message=message, request_id=getattr(g, "request_id", None),
+        seo=page_seo(title, message, request.path, robots="noindex,nofollow"),
         breadcrumbs=[], schemas=[],
     ), 413
 
 
 @app.errorhandler(429)
 def too_many_requests(error):
+    title = translate("errors.429.title")
+    message = translate("errors.429.text")
     return render_template(
-        "error.html", status_code=429, title="Too many requests",
-        message="Too many attempts were made. Please wait before trying again.", request_id=getattr(g, "request_id", None),
-        seo=page_seo("Too many requests", "Please wait before trying again.", request.path, robots="noindex,nofollow"),
+        "error.html", status_code=429, title=title,
+        message=message, request_id=getattr(g, "request_id", None),
+        seo=page_seo(title, message, request.path, robots="noindex,nofollow"),
         breadcrumbs=[], schemas=[],
     ), 429
 
@@ -1389,10 +1573,12 @@ def too_many_requests(error):
 def internal_error(error):
     request_id = getattr(g, "request_id", None)
     app.logger.exception("internal_server_error request_id=%s path=%s", request_id, request.path)
+    title = translate("errors.500.title")
+    message = translate("errors.500.text")
     return render_template(
-        "error.html", status_code=500, title="Something went wrong",
-        message="The error was recorded. Please try again later.", request_id=request_id,
-        seo=page_seo("Server error", "An internal error occurred.", request.path, robots="noindex,nofollow"),
+        "error.html", status_code=500, title=title,
+        message=message, request_id=request_id,
+        seo=page_seo(title, message, request.path, robots="noindex,nofollow"),
         breadcrumbs=[], schemas=[],
     ), 500
 
@@ -1406,7 +1592,7 @@ def page_not_found(error):
         key=lambda tool: (tool.get("popularity_score", 0), tool.get("rating", 0)),
         reverse=True,
     )[:6]
-    crumbs = build_breadcrumbs([("Home", "/"), ("Page not found", request.path)])
+    crumbs = build_breadcrumbs([(translate("common.home"), "/"), (translate("common.page_not_found"), request.path)])
     return render_template(
         "404.html",
         popular_tools=popular_tools,
