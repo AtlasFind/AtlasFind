@@ -195,6 +195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/asana/logo.webp",
+        "source_url": "https://asana.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 100,
+        "height": 100,
+        "aspect_ratio": "100:100",
+        "file_size_bytes": 2366,
+        "checksum": "b3124867b0f0c4dcbb309dd0eb740ad847f5ad5932bc56af1af8705749323ace",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://asana.com/assets/img/brand/asana-logo-favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AS"
+      },
+      "version": 1,
+      "tool_slug": "asana"
     }
   },
   {
@@ -393,6 +426,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MC"
+      },
+      "version": 1,
+      "tool_slug": "monday-com"
     }
   },
   {
@@ -591,6 +656,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/clickup/logo.webp",
+        "source_url": "https://clickup.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3872,
+        "checksum": "7e7ffe2b0a600b1feb2a14374943986a1d5778d4fa4f5e3b4df281f84bf52871",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://clickup.com/favicons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CL"
+      },
+      "version": 1,
+      "tool_slug": "clickup"
     }
   },
   {
@@ -789,6 +887,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/basecamp/logo.webp",
+        "source_url": "https://basecamp.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 6426,
+        "checksum": "10e0e2d15b830918b22b23d167c2a9a677d81ffc525f2d7718401bf5a1866f1e",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://basecamp.com/assets/images/general/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BA"
+      },
+      "version": 1,
+      "tool_slug": "basecamp"
     }
   },
   {
@@ -987,6 +1118,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wrike/logo.webp",
+        "source_url": "https://www.wrike.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1024,
+        "checksum": "87aad599427f53ae1a2de7cbe1114be652c2f767a1114c305c7dfb6c67c0b891",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://web-static.wrike.com/tp/static/favicon.ico?v8"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WR"
+      },
+      "version": 1,
+      "tool_slug": "wrike"
     }
   },
   {
@@ -1185,6 +1349,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/jira/logo.webp",
+        "source_url": "https://atlassian.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 3348,
+        "checksum": "f48063d91c1fd473792dbfbe264e86ce2fa5cea589986d7d9272ebbba37714f2",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.atlassian.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "JI"
+      },
+      "version": 1,
+      "tool_slug": "jira"
     }
   },
   {
@@ -1383,6 +1580,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/linear/logo.webp",
+        "source_url": "https://linear.app",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 840,
+        "checksum": "af81f22ab5b98988c2c474d6cc621831bb31a00365a75c77aaa6627a050bda5a",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://linear.app/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LI"
+      },
+      "version": 1,
+      "tool_slug": "linear"
     }
   },
   {
@@ -1581,6 +1811,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HE"
+      },
+      "version": 1,
+      "tool_slug": "height"
     }
   },
   {
@@ -1779,6 +2041,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/smartsheet/logo.webp",
+        "source_url": "https://www.smartsheet.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1826,
+        "checksum": "b075ba6ea4e4c3ed3fb79161a79f571ffc9bb1e49d5d6c95dd66fbd6da244f71",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.smartsheet.com/sites/default/files/favicons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SM"
+      },
+      "version": 1,
+      "tool_slug": "smartsheet"
     }
   },
   {
@@ -1977,6 +2272,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/airtable/logo.webp",
+        "source_url": "https://www.airtable.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1472,
+        "checksum": "7ba0647a675b34f60958ae24ab744577604ae3ef88850bce740aa3043e59afc7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.airtable.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AI"
+      },
+      "version": 1,
+      "tool_slug": "airtable"
     }
   },
   {
@@ -2175,6 +2503,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/coda/logo.webp",
+        "source_url": "https://coda.io",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 120,
+        "height": 120,
+        "aspect_ratio": "120:120",
+        "file_size_bytes": 1940,
+        "checksum": "8d73dc3b0ed8bd7c56445e643db5cced6078273c1604c47e8ecb46aca680f81e",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://cdn.coda.io/icons/png/color/coda-apple-120.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CO"
+      },
+      "version": 1,
+      "tool_slug": "coda"
     }
   },
   {
@@ -2373,6 +2734,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/evernote/logo.webp",
+        "source_url": "https://evernote.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 796,
+        "checksum": "2151873d93d4013506c414f76c68bd84e8719ea133f3710bb8eb49dc6cb46181",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://evernote.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EV"
+      },
+      "version": 1,
+      "tool_slug": "evernote"
     }
   },
   {
@@ -2571,6 +2965,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MO"
+      },
+      "version": 1,
+      "tool_slug": "microsoft-onenote"
     }
   },
   {
@@ -2769,6 +3195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/simplenote/logo.webp",
+        "source_url": "https://simplenote.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 3300,
+        "checksum": "ce2d32cad067db40e481edff9c32e702b0c35b9c7ad6712a3ca13745b8c07ab0",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://simplenote.com/wp-content/uploads/2020/07/cropped-icon_512x512.png?w=180"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SI"
+      },
+      "version": 1,
+      "tool_slug": "simplenote"
     }
   },
   {
@@ -2967,6 +3426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/standard-notes/logo.webp",
+        "source_url": "https://standardnotes.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1656,
+        "checksum": "cf4f3fbeeb6a8200666b9ced4f90890fb8c61fe57c9201c05030fc88e67cd6ca",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://standardnotes.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SN"
+      },
+      "version": 1,
+      "tool_slug": "standard-notes"
     }
   },
   {
@@ -3165,6 +3657,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bear/logo.webp",
+        "source_url": "https://bear.app",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 175,
+        "aspect_ratio": "180:175",
+        "file_size_bytes": 5162,
+        "checksum": "d0496ca45f36c88bfb37bba114011062edbda168e67de117a6720c982130d9b3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://bear.app/images/website-icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BE"
+      },
+      "version": 1,
+      "tool_slug": "bear"
     }
   },
   {
@@ -3363,6 +3888,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/craft/logo.webp",
+        "source_url": "https://craft.do",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 3766,
+        "checksum": "b6fb7f1a15d52828cd0b24406d0882a777007190d1182c1f191240da5e52e90b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.craft.do/images/favicon-large.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CR"
+      },
+      "version": 1,
+      "tool_slug": "craft"
     }
   },
   {
@@ -3561,6 +4119,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/upnote/logo.webp",
+        "source_url": "https://getupnote.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 700,
+        "checksum": "f9c2f7c343075830b39b64629098187558e48b08ad8df3d23bcf042322c195d8",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://getupnote.com/favicon-32x32.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "UP"
+      },
+      "version": 1,
+      "tool_slug": "upnote"
     }
   },
   {
@@ -3759,6 +4350,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ticktick/logo.webp",
+        "source_url": "https://ticktick.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 152,
+        "height": 152,
+        "aspect_ratio": "152:152",
+        "file_size_bytes": 2800,
+        "checksum": "37bb307f81f3ce1680296632b681c33c529a4b4e939e74a74adc16940025eb70",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://d107mjio2rjf74.cloudfront.net/web/static/img/apple-touch-icon-152x152.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TI"
+      },
+      "version": 1,
+      "tool_slug": "ticktick"
     }
   },
   {
@@ -3957,6 +4581,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MT"
+      },
+      "version": 1,
+      "tool_slug": "microsoft-to-do"
     }
   },
   {
@@ -4155,6 +4811,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/things/logo.webp",
+        "source_url": "https://culturedcode.com/things/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2688,
+        "checksum": "3502f57e96f20a923296b252e10e9a2e8793bf3a76a5782412b0f1a03ba4a1d3",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://culturedcode.com/apple-touch-icon.png?breackcache=ddi27f1a"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TH"
+      },
+      "version": 1,
+      "tool_slug": "things"
     }
   },
   {
@@ -4353,6 +5042,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/any-do/logo.webp",
+        "source_url": "https://www.any.do/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 892,
+        "checksum": "b298919ccd981331bc59e63124689493cfd3f697b54d6ac52279971403655757",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.any.do/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AD"
+      },
+      "version": 1,
+      "tool_slug": "any-do"
     }
   },
   {
@@ -4551,6 +5273,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/remember-the-milk/logo.webp",
+        "source_url": "https://www.rememberthemilk.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 980,
+        "checksum": "6b26f4523e176cfe4c07713c4aa8e3e062d9495b41ad3188be7dd2c878e25060",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.rememberthemilk.com/favicon3.ico?1573573620"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RT"
+      },
+      "version": 1,
+      "tool_slug": "remember-the-milk"
     }
   },
   {
@@ -4749,6 +5504,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SU"
+      },
+      "version": 1,
+      "tool_slug": "sunsama"
     }
   },
   {
@@ -4947,6 +5734,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AK"
+      },
+      "version": 1,
+      "tool_slug": "akiflow"
     }
   },
   {
@@ -5145,6 +5964,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/motion/logo.svg",
+        "source_url": "https://www.usemotion.com/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 4424,
+        "checksum": "406789fdab0730cdfd2213bf6e3d53af4840ec4641ca40a7d2c702831d4ac27a",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.usemotion.com/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MO"
+      },
+      "version": 1,
+      "tool_slug": "motion"
     }
   },
   {
@@ -5343,6 +6195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/rescuetime/logo.webp",
+        "source_url": "https://www.rescuetime.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1706,
+        "checksum": "cc239d92660d0ece8362859ad882c438239ca11c35511f4b231d4d6a10a8c585",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.rescuetime.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "rescuetime"
     }
   },
   {
@@ -5541,6 +6426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/toggl-track/logo.webp",
+        "source_url": "https://toggl.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4972,
+        "checksum": "7943b46868c0b6b567135b393482a7550ac433f45ccca37c2b4d46479d3a41b6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://public-assets.toggl.com/b/static/apple-touch-icon-523b61294d4384b46ddaf22b8eab2a35.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TT"
+      },
+      "version": 1,
+      "tool_slug": "toggl-track"
     }
   }
 ]

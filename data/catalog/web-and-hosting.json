@@ -195,6 +195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wordpress/logo.webp",
+        "source_url": "https://wordpress.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1000,
+        "height": 1000,
+        "aspect_ratio": "1000:1000",
+        "file_size_bytes": 39862,
+        "checksum": "86a6b7f0b8c8e35a0256d3b43d31964d93787fdc7c7ad8453ec83da38452efe7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://s.w.org/images/wmark.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WO"
+      },
+      "version": 1,
+      "tool_slug": "wordpress"
     }
   },
   {
@@ -393,6 +426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ghost/logo.webp",
+        "source_url": "https://ghost.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 160,
+        "height": 160,
+        "aspect_ratio": "160:160",
+        "file_size_bytes": 3342,
+        "checksum": "ceed031727c6223f73088b456a4c7d6edeccf93b0e159814780fdafc3ed2578e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://ghost.org/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GH"
+      },
+      "version": 1,
+      "tool_slug": "ghost"
     }
   },
   {
@@ -591,6 +657,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/drupal/logo.webp",
+        "source_url": "https://new.drupal.org/home",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1180,
+        "checksum": "64d5c146828ee3c744820c8be11e90443868cac5efb956fce5a623253e6878f9",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://new.drupal.org/core/misc/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DR"
+      },
+      "version": 1,
+      "tool_slug": "drupal"
     }
   },
   {
@@ -789,6 +888,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/joomla/logo.webp",
+        "source_url": "https://www.joomla.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 114,
+        "height": 114,
+        "aspect_ratio": "114:114",
+        "file_size_bytes": 2370,
+        "checksum": "8f59dd775795d5d4cd26ebeb120d4086531734ec04bb80c91f9ca401aa406e2e",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.joomla.org/templates/joomla/images/apple-touch-icon-114x114.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "JO"
+      },
+      "version": 1,
+      "tool_slug": "joomla"
     }
   },
   {
@@ -987,6 +1119,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/strapi/logo.webp",
+        "source_url": "https://strapi.io",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 804,
+        "checksum": "6ba3a857ece2378aa0ab5a2967fae2fd646e4e12d745671e4b63ee72077e680c",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://strapi.io/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "strapi"
     }
   },
   {
@@ -1185,6 +1350,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DI"
+      },
+      "version": 1,
+      "tool_slug": "directus"
     }
   },
   {
@@ -1383,6 +1580,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/contentful/logo.webp",
+        "source_url": "https://www.contentful.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 5990,
+        "checksum": "c37e3bbceb6d438085593b48f8da46e517397d7c408e92068449abdcdfcbf091",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.contentful.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CO"
+      },
+      "version": 1,
+      "tool_slug": "contentful"
     }
   },
   {
@@ -1581,6 +1811,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/sanity/logo.webp",
+        "source_url": "https://www.sanity.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 114,
+        "height": 114,
+        "aspect_ratio": "114:114",
+        "file_size_bytes": 1770,
+        "checksum": "4f0e4e921e68bb87c761c8c77b16ef963108684b8532a2fdeb14c0c107a1723b",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.sanity.io/_astro/apple-icon-114x114.DSbU0dpL.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SA"
+      },
+      "version": 1,
+      "tool_slug": "sanity"
     }
   },
   {
@@ -1779,6 +2042,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/webflow-cms/logo.webp",
+        "source_url": "https://webflow.com/feature/cms",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2996,
+        "checksum": "70aadb18fd3903e878532db83015f1aef1b94d0e90b587b41d836ab7ea8ad07b",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://webflow.com/logo-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WC"
+      },
+      "version": 1,
+      "tool_slug": "webflow-cms"
     }
   },
   {
@@ -1977,6 +2273,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WI"
+      },
+      "version": 1,
+      "tool_slug": "wix"
     }
   },
   {
@@ -2175,6 +2503,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/squarespace/logo.webp",
+        "source_url": "https://www.squarespace.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 3418,
+        "checksum": "be0e59dee2920d7a90d43b3a93de796e04d956d81d08773279ce09087e45c16c",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://images.squarespace-cdn.com/content/5134cbefe4b0c6fb04df8065/1541453017272-VW5DX9K6F21C7VZZTZYR/sqsp-favicon.ico?content-type=image%2Fx-icon"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SQ"
+      },
+      "version": 1,
+      "tool_slug": "squarespace"
     }
   },
   {
@@ -2373,6 +2734,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/carrd/logo.webp",
+        "source_url": "https://carrd.co",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 152,
+        "height": 152,
+        "aspect_ratio": "152:152",
+        "file_size_bytes": 2942,
+        "checksum": "a7ecc3cb6b8a8b5f0ed32d1c293c0450b6ad6784a7daad72853c85d5ecacb6ae",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://carrd.co/assets/images/icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CA"
+      },
+      "version": 1,
+      "tool_slug": "carrd"
     }
   },
   {
@@ -2571,6 +2965,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "dorik"
     }
   },
   {
@@ -2769,6 +3195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/weebly/logo.webp",
+        "source_url": "https://www.weebly.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1066,
+        "checksum": "e7a6b2b4f96c26d06466d0efe0a11256a548f8ae3fb2f90b5679dd79d04f2180",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.weebly.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WE"
+      },
+      "version": 1,
+      "tool_slug": "weebly"
     }
   },
   {
@@ -2967,6 +3426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bubble/logo.webp",
+        "source_url": "https://bubble.io",
+        "source_type": "official_product_site",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 1694,
+        "checksum": "31310680984ef13b5b786eb9a4d9fb3fa0c002c97b6edbccce36feeeab1cfacd",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://meta-q.cdn.bubble.io/cdn-cgi/image/w=192,h=,f=auto,dpr=1,fit=contain/f1534423790492x745180500205606300/icon_512x512%402x.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BU"
+      },
+      "version": 1,
+      "tool_slug": "bubble"
     }
   },
   {
@@ -3165,6 +3657,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/glide/logo.webp",
+        "source_url": "https://www.glideapps.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 682,
+        "checksum": "b08ff0ab1388fb2779544fa32a5c50c78e3c2f1e2e0fb9d6e165bfd6a94907db",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.glideapps.com/favicon.ico?favicon.2h4a_93e7b1ja.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GL"
+      },
+      "version": 1,
+      "tool_slug": "glide"
     }
   },
   {
@@ -3363,6 +3888,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/softr/logo.webp",
+        "source_url": "https://www.softr.io/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 740,
+        "checksum": "6158ac471bed9687d4b05bf0008c9627b002308d57bd54345419b919f3329d5b",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.softr.io/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SO"
+      },
+      "version": 1,
+      "tool_slug": "softr"
     }
   },
   {
@@ -3561,6 +4119,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/appsmith/logo.webp",
+        "source_url": "https://www.appsmith.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1522,
+        "checksum": "05e502c718f4ec8e02f48f286a5d45f8fd7992795766d43905b7266eae96ad1e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.appsmith.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AP"
+      },
+      "version": 1,
+      "tool_slug": "appsmith"
     }
   },
   {
@@ -3759,6 +4350,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/retool/logo.webp",
+        "source_url": "https://retool.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 426,
+        "checksum": "b37d3c16f8f0f3141169f9f3858a503de46299a9b0f8dfe7b814ead7234dfd5d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://retool.com/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "retool"
     }
   },
   {
@@ -3957,6 +4581,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/budibase/logo.webp",
+        "source_url": "https://budibase.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2636,
+        "checksum": "84aadd7feaae816a42178717ef0a6f2d81925d80c778b5e1614ecc7f3bfa099c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://budibase.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BU"
+      },
+      "version": 1,
+      "tool_slug": "budibase"
     }
   },
   {
@@ -4155,6 +4812,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/vercel/logo.webp",
+        "source_url": "https://vercel.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 114,
+        "height": 114,
+        "aspect_ratio": "114:114",
+        "file_size_bytes": 498,
+        "checksum": "6b2e938cf2d1d84995ebca04555d4c394b76f2bb04ed1accfe7588f929682fbc",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/apple-touch-icon-114x114.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "VE"
+      },
+      "version": 1,
+      "tool_slug": "vercel"
     }
   },
   {
@@ -4353,6 +5043,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/netlify/logo.webp",
+        "source_url": "https://www.netlify.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1488,
+        "checksum": "c0e7089adebb2b79d136943b94f503a31d4db5c6f47a92b001bf9f75727e174a",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.netlify.com/favicon/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NE"
+      },
+      "version": 1,
+      "tool_slug": "netlify"
     }
   },
   {
@@ -4551,6 +5274,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cloudflare-pages/logo.webp",
+        "source_url": "https://pages.cloudflare.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1114,
+        "checksum": "4a44306fffd256249ddc6484e14f4af5214c07d6e3ef1b578cb09cf1bd411506",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://pages.cloudflare.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CP"
+      },
+      "version": 1,
+      "tool_slug": "cloudflare-pages"
     }
   },
   {
@@ -4751,6 +5507,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/github-pages/logo.webp",
+        "source_url": "https://pages.github.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 640,
+        "checksum": "a6e8046c906ddeb69e37fa5bf6b1efbb550df18854e66e0c651dd4fb982e59ab",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://pages.github.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GP"
+      },
+      "version": 1,
+      "tool_slug": "github-pages"
     }
   },
   {
@@ -4949,6 +5738,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/firebase-hosting/logo.webp",
+        "source_url": "https://firebase.google.com/products/hosting",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 1826,
+        "checksum": "958e560b533dd3a7a699d7800e4fb2d1bd5362d8939e65e291bdeb04560d09e9",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://firebase.google.com/_pwa/firebase/icons/icon-128x128.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FH"
+      },
+      "version": 1,
+      "tool_slug": "firebase-hosting"
     }
   },
   {
@@ -5147,6 +5969,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/railway/logo.webp",
+        "source_url": "https://railway.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2364,
+        "checksum": "6275eb25bb5c867e3dceabd7c9335ae9c6e2f496632862e584151238b2c0358d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://railway.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RA"
+      },
+      "version": 1,
+      "tool_slug": "railway"
     }
   },
   {
@@ -5345,6 +6200,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/fly-io/logo.webp",
+        "source_url": "https://fly.io",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2468,
+        "checksum": "90387a30cb6577c45aa3f0ab2c65bf6883801f11aa5774a658e7b01724ef96f2",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://fly.io/phx/ui/images/favicon/apple-touch-icon-3e4c9ce127b5cd6f5516638d4bbf1dd5.png?vsn=d"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FI"
+      },
+      "version": 1,
+      "tool_slug": "fly-io"
     }
   }
 ]

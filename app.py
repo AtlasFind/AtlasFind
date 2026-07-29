@@ -12,7 +12,7 @@ from freshness import content_freshness, tool_freshness
 from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
 from repositories.translations import localize_tool, localize_article, localize_tools, localize_articles
-from icon_system import ensure_local_icon
+from services.image_service import enrich_tool_branding
 from services.rating_service import enrich_tool_rating
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from database import DATABASE_PATH, apply_migrations
@@ -43,7 +43,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.3"
+APP_VERSION = "1.0.4"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -119,21 +119,8 @@ def _database_version():
 
 
 def _normalize_tool_icons(tools):
-    """Replace stale remote Simple Icons URLs with packaged local fallbacks."""
-    normalized = []
-    for source_tool in tools:
-        tool = dict(source_tool)
-        icon_url = str(tool.get("icon_url") or "")
-        fallback_url = str(tool.get("icon_fallback_url") or "")
-        if "cdn.simpleicons.org" in icon_url or not icon_url:
-            tool["icon_url"] = ensure_local_icon(
-                str(tool.get("name") or "AtlasFind"),
-                str(tool.get("slug") or "tool"),
-            )
-        if "cdn.simpleicons.org" in fallback_url:
-            tool["icon_fallback_url"] = tool["icon_url"]
-        normalized.append(tool)
-    return normalized
+    """Apply the central local-first v1.0.4 branding resolver."""
+    return [enrich_tool_branding(tool) for tool in tools]
 
 
 @lru_cache(maxsize=8)

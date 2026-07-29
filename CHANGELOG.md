@@ -451,3 +451,19 @@
 - Added side-by-side AtlasFind and user rating cards near the top of tool details.
 - Added the user voting form and transparent calculation explanations to the Rating section.
 
+
+## v1.0.4 - Professional image infrastructure
+- Added structured branding metadata to all 600 tool records.
+- Added a local-first image resolver with checksum cache busting and safe initials fallbacks.
+- Added path traversal, dangerous SVG, MIME, size, pixel-area and source URL validation.
+- Added image migration, validation and optimization scripts.
+- Added an admin image inventory dashboard.
+- Removed runtime dependence on remote logo URLs for public rendering.
+
+### v1.0.4 Logo Pipeline Hotfix
+- Added a 600-tool official-site logo discovery queue.
+- Added manifest, icon, Apple touch icon and Open Graph candidate discovery.
+- Added SSRF-safe remote URL validation and limited downloads.
+- Added mandatory candidate review before import.
+- Added secure local WebP/SVG import, checksum, metadata and backup handling.
+- Added queue reporting and automated pipeline tests.

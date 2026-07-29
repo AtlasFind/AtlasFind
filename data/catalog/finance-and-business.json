@@ -195,6 +195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/quickbooks/logo.webp",
+        "source_url": "https://quickbooks.intuit.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 114,
+        "height": 114,
+        "aspect_ratio": "114:114",
+        "file_size_bytes": 3280,
+        "checksum": "a0e4a802c82ecea4464e5e5ef0bab428c9e5d3cee1590b4c369f2fa277cd0f15",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://quickbooks.intuit.com/cas/dam/IMAGE/A3A7IuZgd/apple-touch-icon-114x114.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "QU"
+      },
+      "version": 1,
+      "tool_slug": "quickbooks"
     }
   },
   {
@@ -393,6 +426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/xero/logo.webp",
+        "source_url": "https://www.xero.com:443/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 3742,
+        "checksum": "b5d507eb1f7a4ad1c3449c7797bb98008df077c3c862ec272b9523d17cd744e3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.xero.com:443/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "XE"
+      },
+      "version": 1,
+      "tool_slug": "xero"
     }
   },
   {
@@ -591,6 +657,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/freshbooks/logo.svg",
+        "source_url": "https://www.freshbooks.com/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 649,
+        "checksum": "b9246e879b167912f1cb0626b5a862a091829395ba9c22e847244d1b37b4fe59",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.freshbooks.com/mask-icon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FR"
+      },
+      "version": 1,
+      "tool_slug": "freshbooks"
     }
   },
   {
@@ -789,6 +888,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wave-accounting/logo.webp",
+        "source_url": "https://www.waveapps.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 7666,
+        "checksum": "3f51526e4d96bae1bd0e773ca444c4b44554bcef5a1a19e98fd4af3697cc8216",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn.prod.website-files.com/62446230dcb514b828a6e237/627e0a14ff7686635f162d06_favicon-large.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WA"
+      },
+      "version": 1,
+      "tool_slug": "wave-accounting"
     }
   },
   {
@@ -987,6 +1119,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/zoho-books/logo.webp",
+        "source_url": "https://www.zoho.com/books/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 24788,
+        "checksum": "a897b05fab32438a18d82fc62da486cceac01dac6d69d48c7ca46c8338c08e5b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.zoho.com/books/books-app-logo.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ZB"
+      },
+      "version": 1,
+      "tool_slug": "zoho-books"
     }
   },
   {
@@ -1185,6 +1350,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/sage-accounting/logo.webp",
+        "source_url": "https://www.sage.com/en-gb/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3206,
+        "checksum": "283c4f27d2dad8d0e5cf6af8a181b55b855b5fa4bffa404c5fb28fa0468c456c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.sage.com/Areas/SageDotCom/img/favicon/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SA"
+      },
+      "version": 1,
+      "tool_slug": "sage-accounting"
     }
   },
   {
@@ -1383,6 +1581,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/odoo/logo.webp",
+        "source_url": "https://www.odoo.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 3110,
+        "checksum": "5b3d6afcd6b024e95fd7f6c031c2f7441732ac49db3352a9bf2b67d291fadc6b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.odoo.com/openerp_website/static/src/img/odoo_o_128.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OD"
+      },
+      "version": 1,
+      "tool_slug": "odoo"
     }
   },
   {
@@ -1581,6 +1812,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ER"
+      },
+      "version": 1,
+      "tool_slug": "erpnext"
     }
   },
   {
@@ -1779,6 +2042,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SB"
+      },
+      "version": 1,
+      "tool_slug": "sap-business-one"
     }
   },
   {
@@ -1977,6 +2272,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ON"
+      },
+      "version": 1,
+      "tool_slug": "oracle-netsuite"
     }
   },
   {
@@ -2175,6 +2502,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/salesforce/logo.webp",
+        "source_url": "https://www.salesforce.com/eu/?ir=1&bc=DB",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 826,
+        "checksum": "53bfcf10e49dc88cf7ceddb25540ab8a78c64220e1641cbdf1c8d7f85572a121",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.salesforce.com/c2/public/app/favicon.ico?bc=DB"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SA"
+      },
+      "version": 1,
+      "tool_slug": "salesforce"
     }
   },
   {
@@ -2373,6 +2733,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pipedrive/logo.webp",
+        "source_url": "https://www.pipedrive.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 2648,
+        "checksum": "2a23b8734b61dcc4916daf225b5a41d38dc93a7c01a8a05ad75d4641cfd09fa3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn.fra-1.pipedriveassets.com/www-main-renderer/_next/static/media/apple-touch-icon-144x144.184934e8.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PI"
+      },
+      "version": 1,
+      "tool_slug": "pipedrive"
     }
   },
   {
@@ -2571,6 +2964,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/zoho-crm/logo.webp",
+        "source_url": "https://www.zoho.com/crm/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1800,
+        "checksum": "6e82e7089515a2fd6f5c9bdda1b5d7b3ed35ca7e53e783e8bf569fe8001e78da",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.zoho.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ZC"
+      },
+      "version": 1,
+      "tool_slug": "zoho-crm"
     }
   },
   {
@@ -2769,6 +3195,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/freshsales/logo.webp",
+        "source_url": "https://www.freshworks.com/crm/sales/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6782,
+        "checksum": "da5982d7a94fc8c1bf6203dbec6e010b97c311838fb396a75e5f260b68fb5674",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.freshworks.com/favicons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FR"
+      },
+      "version": 1,
+      "tool_slug": "freshsales"
     }
   },
   {
@@ -2967,6 +3426,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/copper/logo.webp",
+        "source_url": "https://www.copper.com:443/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 5746,
+        "checksum": "a0d44205cc127ad6842a2704d31edbb593548bb50bc8e22c190bb485e278d4c7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn.prod.website-files.com/69bdc11d6d8dca48c8a32ff4/6a68a40aeb4851e2572f03ee_copper-logo-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CO"
+      },
+      "version": 1,
+      "tool_slug": "copper"
     }
   },
   {
@@ -3165,6 +3657,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/insightly/logo.webp",
+        "source_url": "https://www.insightly.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2950,
+        "checksum": "f03787451979ac070b25145e11e43cc1fe07357c419df462e5a69f07063f272e",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.insightly.com/wp-content/uploads/2022/05/cropped-cropped-favicon-1-180x180.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IN"
+      },
+      "version": 1,
+      "tool_slug": "insightly"
     }
   },
   {
@@ -3363,6 +3888,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/stripe/logo.webp",
+        "source_url": "https://stripe.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1952,
+        "checksum": "25ff16bdfcdf88b300e675b4a3840384aff16271f2c5ff34d698c63afb59f544",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&h=180"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "stripe"
     }
   },
   {
@@ -3561,6 +4119,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/paypal/logo.webp",
+        "source_url": "https://www.paypal.com/tr/home",
+        "source_type": "official_product_site",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1770,
+        "checksum": "4054932339137a3a2434dd2ed9d77f12cda382c6ea344caf1cbf33149e91e7bb",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.paypalobjects.com/webstatic/icon/pp144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PA"
+      },
+      "version": 1,
+      "tool_slug": "paypal"
     }
   },
   {
@@ -3759,6 +4350,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/square/logo.webp",
+        "source_url": "https://squareup.com/us/en",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 57,
+        "height": 57,
+        "aspect_ratio": "57:57",
+        "file_size_bytes": 436,
+        "checksum": "905e849ac9ad2358d95d4c1bd9d02b5c5a9a0194130364fd26ac22d37bcb79a7",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://squareup.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SQ"
+      },
+      "version": 1,
+      "tool_slug": "square"
     }
   },
   {
@@ -3957,6 +4581,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wise/logo.webp",
+        "source_url": "https://wise.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2960,
+        "checksum": "6d1fb3f57e157fb63194af01f26df74e7da162da3ad80cbd58ab174ac3b1aecd",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://wise.com/public-resources/assets/icons/wise-personal/apple_touch_icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WI"
+      },
+      "version": 1,
+      "tool_slug": "wise"
     }
   },
   {
@@ -4155,6 +4812,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/revolut/logo.webp",
+        "source_url": "https://www.revolut.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1098,
+        "checksum": "a6c1f5ffd4729912ee702082fec0946652caf40a882c442f132ce7f008a69aee",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://assets.revolut.com/assets/favicons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "revolut"
     }
   },
   {
@@ -4353,6 +5043,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/expensify/logo.webp",
+        "source_url": "https://www.expensify.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 4290,
+        "checksum": "afab83c1b9ea03b184d288165da1a972bd890c2740785a727eaa2520ebd881db",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.expensify.com/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EX"
+      },
+      "version": 1,
+      "tool_slug": "expensify"
     }
   },
   {
@@ -4551,6 +5274,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ramp/logo.webp",
+        "source_url": "https://ramp.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6368,
+        "checksum": "8bc247de0c18482397a814fdf1c74cce26795b9ad39e45b9b17f160e7a2952f6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://ramp.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RA"
+      },
+      "version": 1,
+      "tool_slug": "ramp"
     }
   },
   {
@@ -4749,6 +5505,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/brex/logo.webp",
+        "source_url": "https://www.brex.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 434,
+        "checksum": "faa9fbc084479b2f384d5c7118702b6180c38e4665d204fd986fbbe2b81f5c2a",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.brex.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BR"
+      },
+      "version": 1,
+      "tool_slug": "brex"
     }
   },
   {
@@ -4949,6 +5738,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/gnucash/logo.webp",
+        "source_url": "https://gnucash.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 10568,
+        "checksum": "396581bdabc9b1e5ec86ff053544aadfc14168b008024bccd5d4f47fbb6de384",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://gnucash.org/apple-touch-icon.png?v=gAXA7A9nAq"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GN"
+      },
+      "version": 1,
+      "tool_slug": "gnucash"
     }
   },
   {
@@ -5147,6 +5969,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/homebank/logo.webp",
+        "source_url": "https://gethomebank.org/en/index.php",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1178,
+        "checksum": "8e273773d3a2fe77beeda3ff288c8949b5b8db9dc3f7db81d799c2cd9da1f45b",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://gethomebank.org/img/favicon-32x32.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HO"
+      },
+      "version": 1,
+      "tool_slug": "homebank"
     }
   },
   {
@@ -5345,6 +6200,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/money-manager-ex/logo.webp",
+        "source_url": "https://moneymanagerex.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6876,
+        "checksum": "b6d3e70acb8559d85ffaa27010a335b2a30e5e208f1edcd401af674cf9561767",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://moneymanagerex.org/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MM"
+      },
+      "version": 1,
+      "tool_slug": "money-manager-ex"
     }
   },
   {
@@ -5543,6 +6431,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "YN"
+      },
+      "version": 1,
+      "tool_slug": "ynab"
     }
   }
 ]

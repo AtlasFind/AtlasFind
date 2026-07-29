@@ -197,6 +197,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/steam/logo.webp",
+        "source_url": "https://store.steampowered.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 9434,
+        "checksum": "d9570f937f484645aee89b8a713fe8ddce04e83968817568d035622926c39239",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://store.steampowered.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "steam"
     }
   },
   {
@@ -397,6 +430,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EG"
+      },
+      "version": 1,
+      "tool_slug": "epic-games-store"
     }
   },
   {
@@ -597,6 +662,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/gog-galaxy/logo.webp",
+        "source_url": "https://www.gog.com/galaxy",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 4878,
+        "checksum": "d2b2bd12ea1f630a0e97173bd20ac4bbaa19be4585aa1443dcba2822e2f8a450",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://gogalaxy.gog-statics.com/favicons/android-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GG"
+      },
+      "version": 1,
+      "tool_slug": "gog-galaxy"
     }
   },
   {
@@ -797,6 +895,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/itch-io/logo.webp",
+        "source_url": "https://itch.io",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 2944,
+        "checksum": "33802e195ad18fe0354ada6e407fd0419d8f99bdbc411b6f32a7ace2970a733f",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://itch.io/static/images/itchio-square-144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "II"
+      },
+      "version": 1,
+      "tool_slug": "itch-io"
     }
   },
   {
@@ -997,6 +1128,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EA"
+      },
+      "version": 1,
+      "tool_slug": "ea-app"
     }
   },
   {
@@ -1197,6 +1360,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ubisoft-connect/logo.webp",
+        "source_url": "https://www.ubisoft.com/en-gb/ubisoft-connect",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 9478,
+        "checksum": "a29736c14cdef921f8563201d1f978fee68ac6703634c126b1f89139584f23b5",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://static-dm.ubisoft.com/ubisoft/prod/favicon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "UC"
+      },
+      "version": 1,
+      "tool_slug": "ubisoft-connect"
     }
   },
   {
@@ -1397,6 +1593,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/battle-net/logo.webp",
+        "source_url": "https://eu.shop.battle.net/en-us?from=root",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 196,
+        "height": 196,
+        "aspect_ratio": "196:196",
+        "file_size_bytes": 9300,
+        "checksum": "6edf452108106ce04c8c88113e94e179c9b4441ca6ed42e4e1c045c9051197b6",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://eu.shop.battle.net/static/favicon-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BN"
+      },
+      "version": 1,
+      "tool_slug": "battle-net"
     }
   },
   {
@@ -1597,6 +1826,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/xbox-app/logo.webp",
+        "source_url": "https://www.xbox.com/tr-TR/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6478,
+        "checksum": "a594ab2af1018b4d7007418b9e6eaa14d61e52e1f118936a5ef10c60e2fa2550",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.xbox.com/favicon-180.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "XA"
+      },
+      "version": 1,
+      "tool_slug": "xbox-app"
     }
   },
   {
@@ -1797,6 +2059,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PL"
+      },
+      "version": 1,
+      "tool_slug": "playnite"
     }
   },
   {
@@ -1997,6 +2291,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/heroic-games-launcher/logo.webp",
+        "source_url": "https://heroicgameslauncher.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 968,
+        "checksum": "f87fa39804484b6065b75eb9dcfc0831d6bc89d07cedced6d00d943c8a99f84f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://heroicgameslauncher.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HG"
+      },
+      "version": 1,
+      "tool_slug": "heroic-games-launcher"
     }
   },
   {
@@ -2197,6 +2524,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lutris/logo.webp",
+        "source_url": "https://lutris.net",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 2130,
+        "checksum": "183dc94625ed668919af46b36aab64873593c9c93db1ea99a4e89ba8b1c4c0ae",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://lutris.net/static/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LU"
+      },
+      "version": 1,
+      "tool_slug": "lutris"
     }
   },
   {
@@ -2399,6 +2759,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "retroarch"
     }
   },
   {
@@ -2599,6 +2991,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DE"
+      },
+      "version": 1,
+      "tool_slug": "dolphin-emulator"
     }
   },
   {
@@ -2799,6 +3223,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pcsx2/logo.webp",
+        "source_url": "https://pcsx2.net",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 2798,
+        "checksum": "8007dbb9c6fdcdbe5cb2956be5ec6e253803df6a72e22290ad5130aa55b6df1c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://pcsx2.net/img/favicon.webp"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PC"
+      },
+      "version": 1,
+      "tool_slug": "pcsx2"
     }
   },
   {
@@ -2999,6 +3456,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ppsspp/logo.webp",
+        "source_url": "https://www.ppsspp.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6716,
+        "checksum": "1e0cc60c8d6f8dcd990753d1ab7c6863dff680237a05f967dee936eca4aa0607",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.ppsspp.org/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PP"
+      },
+      "version": 1,
+      "tool_slug": "ppsspp"
     }
   },
   {
@@ -3199,6 +3689,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/rpcs3/logo.webp",
+        "source_url": "https://rpcs3.net",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 3294,
+        "checksum": "49a3aabded9129e888a4a49467c32ba3e684283cc70bb80cae898498ef710abc",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://rpcs3.net/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RP"
+      },
+      "version": 1,
+      "tool_slug": "rpcs3"
     }
   },
   {
@@ -3399,6 +3922,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cemu/logo.webp",
+        "source_url": "https://cemu.info",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1056,
+        "checksum": "79c5d1b46abc64d2ff70d785d944af58a1f081c73897e7364fda66ad50e5b636",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://cemu.info/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CE"
+      },
+      "version": 1,
+      "tool_slug": "cemu"
     }
   },
   {
@@ -3599,6 +4155,38 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "missing",
+        "local_path": null,
+        "source_url": null,
+        "source_type": null,
+        "original_format": null,
+        "served_format": null,
+        "width": null,
+        "height": null,
+        "aspect_ratio": null,
+        "file_size_bytes": null,
+        "checksum": null,
+        "transparent_background": null,
+        "supports_light_theme": null,
+        "supports_dark_theme": null,
+        "verified_at": null,
+        "verified_by": null,
+        "license_status": "unknown",
+        "attribution_required": null,
+        "notes": "Official logo verification required."
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RY"
+      },
+      "version": 1,
+      "tool_slug": "ryujinx"
     }
   },
   {
@@ -3801,6 +4389,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mame/logo.webp",
+        "source_url": "https://www.mamedev.org/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 910,
+        "checksum": "c988419bc9ce4459363ff24ebc39615666580c836a35542dd85d97f7c6bb82f2",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://www.mamedev.org/_include/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MA"
+      },
+      "version": 1,
+      "tool_slug": "mame"
     }
   },
   {
@@ -4001,6 +4622,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/moonlight/logo.webp",
+        "source_url": "https://moonlight-stream.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 120,
+        "height": 120,
+        "aspect_ratio": "120:120",
+        "file_size_bytes": 3386,
+        "checksum": "4f3e27b0aef87a53283ce9a919328ea1f7ceee5adaf984dcb8fc46422ebf6883",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://moonlight-stream.org/images/touch/icons-120.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MO"
+      },
+      "version": 1,
+      "tool_slug": "moonlight"
     }
   },
   {
@@ -4201,6 +4855,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/parsec/logo.webp",
+        "source_url": "https://parsec.app",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 5252,
+        "checksum": "de16f88272524a82551b63a8380b404abaa405daa9456cebd8064b977ae3d64f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://parsec.app/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PA"
+      },
+      "version": 1,
+      "tool_slug": "parsec"
     }
   },
   {
@@ -4401,6 +5088,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/sunshine/logo.webp",
+        "source_url": "https://app.lizardbyte.dev/Sunshine/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 9604,
+        "checksum": "76fb647507568b0332c3c5d870de3c99637aa9a23ea9dc5477699f811bb9ea47",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://app.lizardbyte.dev/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SU"
+      },
+      "version": 1,
+      "tool_slug": "sunshine"
     }
   },
   {
@@ -4601,6 +5321,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/geforce-now/logo.webp",
+        "source_url": "https://www.nvidia.com/tr-tr/geforce-now/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1766,
+        "checksum": "8e8ce8ce169132d9c5501c311e65f2082b08ab6b2efcb458db729d0c917cfc18",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://www.nvidia.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GN"
+      },
+      "version": 1,
+      "tool_slug": "geforce-now"
     }
   },
   {
@@ -4801,6 +5554,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/xbox-cloud-gaming/logo.webp",
+        "source_url": "https://www.xbox.com/tr-TR/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 6922,
+        "checksum": "29a9488d81acf821f5fdecfc1e2450e6efc153a9ccdba4591953ab52888c3519",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.xbox.com/favicon-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "XC"
+      },
+      "version": 1,
+      "tool_slug": "xbox-cloud-gaming"
     }
   },
   {
@@ -5001,6 +5787,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/plex/logo.webp",
+        "source_url": "https://watch.plex.tv/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 120,
+        "height": 120,
+        "aspect_ratio": "120:120",
+        "file_size_bytes": 1234,
+        "checksum": "fb83b9c40bbce0725cc56313062f34c42fb06d86c85d75d4a7fc67506357e9a9",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://watch.plex.tv/icons/plex-120.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PL"
+      },
+      "version": 1,
+      "tool_slug": "plex"
     }
   },
   {
@@ -5201,6 +6020,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/jellyfin/logo.webp",
+        "source_url": "https://jellyfin.org",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1272,
+        "checksum": "4049d21eb87b3fcf90adeaa347167a7d4a1c290794c9052a7dcad8091f6e06da",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-selected from the official product site; final visual review remains recommended.",
+        "asset_url": "https://jellyfin.org/images/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "JE"
+      },
+      "version": 1,
+      "tool_slug": "jellyfin"
     }
   },
   {
@@ -5401,6 +6253,39 @@
         "source": "catalog_seed",
         "displayed": false
       }
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/emby/logo.webp",
+        "source_url": "https://emby.media",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 114,
+        "height": 114,
+        "aspect_ratio": "114:114",
+        "file_size_bytes": 1580,
+        "checksum": "b06bbbea196c93cd4676d3b559a9e1b270b0d92c3698c0ebee243d0c2f3624ea",
+        "transparent_background": false,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-07-29",
+        "verified_by": "admin",
+        "license_status": "unknown",
+        "attribution_required": false,
+        "notes": "Imported from an approved official-site candidate.",
+        "asset_url": "https://emby.media/apple-touch-icon-114x114.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EM"
+      },
+      "version": 1,
+      "tool_slug": "emby"
     }
   }
 ]

@@ -539,5 +539,20 @@
   "rating.editor_method_independent": "Sponsors and paid partnerships cannot change the score.",
   "rating.user_method_separate": "User votes are kept completely separate from the AtlasFind assessment.",
   "rating.user_method_weighted": "A weighted average prevents a very small number of votes from being misleading.",
-  "rating.user_method_update": "Voting again from the same browser updates the previous vote."
+  "rating.user_method_update": "Voting again from the same browser updates the previous vote.",
+  "image.management": "Image management",
+  "image.verified": "Verified logos",
+  "image.missing": "Missing official logos",
+  "image.pending": "Pending review",
+  "image.broken": "Broken logos",
+  "image.fallback": "Safe fallbacks",
+  "image.management_help": "Only verified local files are published. Missing or unverified logos use a safe local initials fallback.",
+  "image.preview": "Preview",
+  "image.source_type": "Source type",
+  "image.resolution": "Resolution",
+  "image.verified_at": "Last verified",
+  "image.validation": "Validation",
+  "image.errors": "errors",
+  "image.warnings": "warnings",
+  "image.clean": "Clean"
 }

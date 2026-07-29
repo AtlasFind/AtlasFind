@@ -1,0 +1,15 @@
+{% extends 'admin/base.html' %}
+{% block content %}
+<div class="admin-page-heading"><div><span class="eyebrow">v1.0.4</span><h1>{{ t('image.management') }}</h1></div></div>
+<div class="admin-stat-grid">
+  <div><strong>{{ counts.verified }}</strong><span>{{ t('image.verified') }}</span></div>
+  <div><strong>{{ counts.missing }}</strong><span>{{ t('image.missing') }}</span></div>
+  <div><strong>{{ counts.pending }}</strong><span>{{ t('image.pending') }}</span></div>
+  <div><strong>{{ counts.broken }}</strong><span>{{ t('image.broken') }}</span></div>
+  <div><strong>{{ counts.fallback }}</strong><span>{{ t('image.fallback') }}</span></div>
+</div>
+<section class="admin-panel"><p>{{ t('image.management_help') }}</p>
+<table class="admin-table"><tr><th>{{ t('admin.name') }}</th><th>{{ t('image.preview') }}</th><th>{{ t('admin.status') }}</th><th>{{ t('image.source_type') }}</th><th>{{ t('image.resolution') }}</th><th>{{ t('image.verified_at') }}</th><th>{{ t('image.validation') }}</th></tr>
+{% for row in images %}<tr><td>{{ row.name }}<br><small>{{ row.slug }}</small></td><td><div class="tool-logo tool-icon-shell"><img src="{{ row.icon_url }}" alt="{{ row.name }} logo" width="44" height="44" loading="lazy" data-atlas-icon></div></td><td><span class="status-pill">{{ row.status }}</span></td><td>{{ row.source_type }}</td><td>{{ row.resolution }}</td><td>{{ row.verified_at }}</td><td>{% if row.errors %}<strong>{{ row.errors }} {{ t('image.errors') }}</strong>{% elif row.warnings %}{{ row.warnings }} {{ t('image.warnings') }}{% else %}{{ t('image.clean') }}{% endif %}</td></tr>{% endfor %}
+</table></section>
+{% endblock %}

@@ -254,3 +254,16 @@ Public methodology pages:
 - `/en/rating-methodology`
 
 Admin rating management: `/admin/ratings`
+
+## v1.0.4 image infrastructure
+
+Run the image metadata migration and validation from the main `project-atlas` folder:
+
+```powershell
+py scripts\migrate_tool_images_v104.py
+py scripts\sync_branding_v104_to_sqlite.py
+py scripts\validate_tool_images_v104.py
+py scripts\optimize_tool_images_v104.py --dry-run
+```
+
+Only local files marked `verified` are published as official logos. Every other status uses a local initials fallback, preventing broken images and third-party tracking requests.

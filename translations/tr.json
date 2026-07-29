@@ -539,5 +539,20 @@
   "rating.editor_method_independent": "Sponsor veya ücretli iş birliği puanı değiştiremez.",
   "rating.user_method_separate": "Kullanıcı oyları AtlasFind değerlendirmesinden tamamen ayrı tutulur.",
   "rating.user_method_weighted": "Az sayıdaki oyun yanıltıcı sonuç vermemesi için ağırlıklı ortalama kullanılır.",
-  "rating.user_method_update": "Aynı tarayıcıdan yeniden oy verildiğinde önceki oy güncellenir."
+  "rating.user_method_update": "Aynı tarayıcıdan yeniden oy verildiğinde önceki oy güncellenir.",
+  "image.management": "Görsel yönetimi",
+  "image.verified": "Doğrulanmış logolar",
+  "image.missing": "Eksik resmî logolar",
+  "image.pending": "İnceleme bekleyenler",
+  "image.broken": "Kırık logolar",
+  "image.fallback": "Güvenli yedekler",
+  "image.management_help": "Yalnızca doğrulanmış yerel dosyalar yayınlanır. Eksik veya doğrulanmamış logolarda güvenli yerel baş harf yedeği kullanılır.",
+  "image.preview": "Önizleme",
+  "image.source_type": "Kaynak türü",
+  "image.resolution": "Çözünürlük",
+  "image.verified_at": "Son doğrulama",
+  "image.validation": "Doğrulama",
+  "image.errors": "hata",
+  "image.warnings": "uyarı",
+  "image.clean": "Temiz"
 }

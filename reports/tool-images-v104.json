@@ -1,0 +1,97 @@
+{
+  "total_tools": 600,
+  "verified": 494,
+  "missing": 106,
+  "pending": 0,
+  "broken": 0,
+  "safe_fallback_coverage": 600,
+  "duplicate_verified_files": {
+    "0e3feb28895a0b38beeae1f3b49f1726f3bff77af6bbbcc2aeea5f8c6766609c": [
+      "logic-pro",
+      "garageband",
+      "safari",
+      "pages",
+      "numbers",
+      "keynote",
+      "final-cut-pro",
+      "apple-motion"
+    ],
+    "7ab1b59815abd033d46a1c5c09e8ea303d692b6b87fc7b3e238350617410caa8": [
+      "cubase",
+      "dorico"
+    ],
+    "b69548574411625b011dc67225988691e89773995714b4081d1224df78f0b11a": [
+      "microsoft-edge",
+      "microsoft-onedrive",
+      "microsoft-teams",
+      "microsoft-365",
+      "microsoft-word",
+      "microsoft-excel",
+      "microsoft-powerpoint"
+    ],
+    "903d29eb6b667eadb119b4663df3e4b0c0e4fa9adcb4a1c70ae8504e4ab50f08": [
+      "ungoogled-chromium",
+      "hydra",
+      "github-desktop",
+      "github",
+      "nanazip",
+      "losslesscut"
+    ],
+    "a8e7b3d3bf59dc0009db70c7e9df4fab184bf4ce61b78f754a4fbba3fbfd9183": [
+      "duckduckgo-browser",
+      "duckduckgo"
+    ],
+    "65fa3a1e37e6ac441097994ac6668766a20b8baf1297e899e830fb3ee4cef1e3": [
+      "proton-drive",
+      "proton-pass"
+    ],
+    "89b7442e3b1a7afc828ef41fa65b93a518954543e33f22513b360df594b431cb": [
+      "amazon-s3",
+      "amazon-redshift"
+    ],
+    "462a14baccb984873fb4e5010ed382a89595a96a6485a80a8e69947825f1d1b3": [
+      "google-cloud-storage",
+      "bigquery"
+    ],
+    "5646b2b18c8ffc47d658004d285c05943229dc3cf31048b2559b579f6361445f": [
+      "google-colab",
+      "google-search-console",
+      "google-workspace"
+    ],
+    "ca930a84a7721218df3aea2152a3eba024098f97ff82b8e2b9049696753baef7": [
+      "adobe-photoshop",
+      "adobe-illustrator",
+      "adobe-indesign",
+      "adobe-lightroom",
+      "adobe-acrobat",
+      "adobe-premiere-pro",
+      "after-effects",
+      "adobe-animate"
+    ],
+    "c1aecef7568f134e01d60698dd91947e9f9ced261f2ab1f0195eeefea3ffa9f2": [
+      "pycharm",
+      "intellij-idea",
+      "rider",
+      "goland",
+      "phpstorm",
+      "webstorm",
+      "rubymine",
+      "clion",
+      "fleet"
+    ],
+    "6e82e7089515a2fd6f5c9bdda1b5d7b3ed35ca7e53e783e8bf569fe8001e78da": [
+      "zoho-crm",
+      "zoho-workplace"
+    ],
+    "92a59893529cd9b7dc5ad332183da3f72c0fced61892ec2a49699112d63682cc": [
+      "process-explorer",
+      "autoruns"
+    ],
+    "bed111d34add9f571500b8115755d0f50537d1280adea74ee0c2aba03315ba4b": [
+      "davinci-resolve",
+      "fusion-studio"
+    ]
+  },
+  "critical_errors": [],
+  "required_verified": 1
+}

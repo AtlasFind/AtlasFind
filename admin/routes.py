@@ -17,6 +17,8 @@ from repositories.article_writer import get_article_for_admin, list_admin_articl
 from repositories.taxonomy_writer import add_category, add_tag, list_taxonomies
 from repositories.tool_writer import archive_tool, get_tool_for_admin, list_admin_tools, save_tool
 from services.rating_service import evaluate_rating
+from services.image_service import enrich_tool_branding
+from validators.image_validator import validate_tool_branding
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin", template_folder="../templates")
 
@@ -192,6 +194,35 @@ def rating_form(tool_id):
         rating = parsed or rating
     result = evaluate_rating(rating, record["payload"].get("category", "")) if rating else None
     return render_template("admin/rating_form.html", record=record, rating_json=json.dumps(rating, ensure_ascii=False, indent=2), result=result, active_admin="ratings")
+
+
+@admin_bp.route("/images")
+@login_required
+def images():
+    rows = []
+    counts = {"verified": 0, "missing": 0, "pending": 0, "broken": 0, "fallback": 0}
+    for item in list_admin_tools():
+        record = get_tool_for_admin(item["id"])
+        if not record:
+            continue
+        payload = enrich_tool_branding(record["payload"])
+        branding = payload.get("branding") or {}
+        logo = branding.get("logo") or {}
+        status = logo.get("status", "missing")
+        validation = validate_tool_branding(payload)
+        if status in counts:
+            counts[status] += 1
+        if payload.get("image_is_fallback"):
+            counts["fallback"] += 1
+        rows.append({
+            "id": item["id"], "name": item["name"], "slug": item["slug"],
+            "status": status, "icon_url": payload.get("icon_url"),
+            "source_type": logo.get("source_type") or "—",
+            "resolution": f"{logo.get('width')}×{logo.get('height')}" if logo.get("width") and logo.get("height") else "—",
+            "verified_at": logo.get("verified_at") or "—",
+            "warnings": len(validation.warnings), "errors": len(validation.errors),
+        })
+    return render_template("admin/images.html", images=rows, counts=counts, active_admin="images")
 
 
 @admin_bp.route("/articles")
