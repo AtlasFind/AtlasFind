@@ -16,6 +16,7 @@ from repositories.admin import (
 from repositories.article_writer import get_article_for_admin, list_admin_articles, save_article
 from repositories.taxonomy_writer import add_category, add_tag, list_taxonomies
 from repositories.tool_writer import archive_tool, get_tool_for_admin, list_admin_tools, save_tool
+from services.rating_service import evaluate_rating
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin", template_folder="../templates")
 
@@ -136,6 +137,61 @@ def tool_preview(tool_id):
     if not record:
         return (translate("flash.tool_not_found"), 404)
     return render_template("admin/preview.html", title=record["name"], payload=record["payload"], entity_type="Tool")
+
+
+@admin_bp.route("/ratings")
+@login_required
+def ratings():
+    rows = []
+    for item in list_admin_tools():
+        record = get_tool_for_admin(item["id"])
+        rating = (record["payload"].get("rating_v103") or {}) if record else {}
+        result = evaluate_rating(rating, record["payload"].get("category", "")) if rating else None
+        rows.append({"id": item["id"], "name": item["name"], "slug": item["slug"], "status": rating.get("status", "unreviewed"), "score": result.overall_score if result else None, "coverage": round((result.coverage if result else 0) * 100, 1), "confidence": result.confidence_level if result else "insufficient"})
+    counts = {"published": sum(1 for row in rows if row["score"] is not None), "pending": sum(1 for row in rows if row["score"] is None), "low_confidence": sum(1 for row in rows if row["confidence"] in {"low", "insufficient"})}
+    return render_template("admin/ratings.html", ratings=rows, counts=counts, active_admin="ratings")
+
+
+@admin_bp.route("/ratings/<int:tool_id>", methods=["GET", "POST"])
+@login_required
+def rating_form(tool_id):
+    record = get_tool_for_admin(tool_id)
+    if not record:
+        return (translate("flash.tool_not_found"), 404)
+    rating = record["payload"].get("rating_v103") or {}
+    if request.method == "POST":
+        validate_csrf()
+        parsed, error = parse_json_payload(request.form.get("rating_json"))
+        if error:
+            flash(error, "error")
+        elif not isinstance(parsed, dict):
+            flash(translate("rating.invalid_payload"), "error")
+        else:
+            admin = current_admin()
+            parsed.pop("overall_score", None)
+            parsed.pop("calculated_score", None)
+            parsed["reviewed_by"] = admin["id"]
+            approved_raw = request.form.get("approved_by", "").strip()
+            parsed["approved_by"] = int(approved_raw) if approved_raw.isdigit() else None
+            result = evaluate_rating(parsed, record["payload"].get("category", ""))
+            parsed["confidence_score"] = result.confidence_score
+            parsed["confidence_level"] = result.confidence_level
+            parsed["overall_score"] = result.overall_score
+            parsed["status"] = "published" if result.publishable else "editor_review"
+            payload = dict(record["payload"]); before = payload.get("rating_v103")
+            payload["rating_v103"] = parsed
+            payload["rating"] = result.overall_score / 2 if result.overall_score is not None else 0
+            payload["rating_source"] = "atlasfind_v103" if result.publishable else "not-rated"
+            save_tool(payload, status=record["status"], tool_id=tool_id)
+            log_action(admin["id"], "rating_update", "tool", tool_id, f"Rating workflow updated for {record['name']}", before, parsed)
+            if result.publishable:
+                flash(translate("rating.saved_published"), "success")
+            else:
+                flash(translate("rating.saved_with_errors", errors="; ".join(result.errors) or translate("rating.not_approved")), "error")
+            return redirect(url_for("admin.rating_form", tool_id=tool_id))
+        rating = parsed or rating
+    result = evaluate_rating(rating, record["payload"].get("category", "")) if rating else None
+    return render_template("admin/rating_form.html", record=record, rating_json=json.dumps(rating, ensure_ascii=False, indent=2), result=result, active_admin="ratings")
 
 
 @admin_bp.route("/articles")

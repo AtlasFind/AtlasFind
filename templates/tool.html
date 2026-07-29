@@ -24,15 +24,22 @@
             </div>
         </div>
     </div>
-    <div class="tool-detail-rating" aria-label="{{ t('tool.rating_aria', rating=tool.rating) }}">
+    <div class="tool-detail-rating" aria-label="{{ t('rating.editor_score') }}">
+        {% set rating = tool.get('rating_v103', {}) %}
         <span aria-hidden="true">★</span>
-        <strong>{{ tool.rating }}</strong>
-        <small>{{ t("tool.atlasfind_rating") }}</small>
+        {% if rating.get('publishable') %}
+        <strong>{{ rating.get('display_score') }} / 10</strong>
+        <small>{{ t("rating.atlasfind_score") }}</small>
+        {% else %}
+        <strong class="rating-unavailable">—</strong>
+        <small>{{ t("rating.not_evaluated") }}</small>
+        {% endif %}
     </div>
 </section>
 
 <nav class="tool-detail-jump" aria-label="{{ t('tool.page_sections') }}">
     <a href="#overview">{{ t("tool.overview") }}</a>
+    <a href="#rating">{{ t("rating.section_title") }}</a>
     <a href="#strengths">{{ t("tool.pros_cons") }}</a>
     <a href="#requirements">{{ t("tool.requirements") }}</a>
     <a href="#history">{{ t("tool.change_history") }}</a>
@@ -46,6 +53,82 @@
             <a href="{{ url_for('compare_tools', locale=locale, left=tool.slug) }}" class="secondary-button">{{ t("tool.compare_tool") }} <span aria-hidden="true">⇄</span></a>
             <a href="#alternatives" class="secondary-button">{{ t("tool.view_alternatives") }} <span aria-hidden="true">↓</span></a>
         </div>
+
+        <section class="detail-section detail-card dual-rating-section" id="rating">
+            {% set rating = tool.get('rating_v103', {}) %}
+            {% set user_rating = rating.get('user_rating', {}) %}
+            <div class="dual-rating-heading">
+                <div>
+                    <span class="section-label">{{ t('rating.section_title') }}</span>
+                    <h2>{{ t('rating.two_score_title') }}</h2>
+                    <p>{{ t('rating.two_score_intro') }}</p>
+                </div>
+                <a class="detail-inline-link" href="{{ url_for('rating_methodology', locale=locale) }}">{{ t('rating.view_methodology') }} →</a>
+            </div>
+
+            <div class="dual-rating-grid">
+                <article class="rating-type-card atlasfind-rating-card">
+                    <div class="rating-type-head">
+                        <div>
+                            <span class="rating-type-kicker">{{ t('rating.first_type') }}</span>
+                            <h3>{{ t('rating.atlasfind_score') }}</h3>
+                        </div>
+                        <div class="rating-type-score">
+                            {% if rating.get('publishable') %}
+                            <strong>{{ rating.get('display_score') }}</strong><span>/10</span>
+                            {% else %}
+                            <strong>—</strong>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if rating.get('publishable') %}
+                    <div class="rating-criteria-grid">{% for key, item in rating.get('criteria', {}).items() %}{% if item.get('status') == 'verified' %}<div class="rating-criterion"><div><strong>{{ t('rating.criteria.' ~ key) }}</strong><span>{{ item.get('score') }} / 10</span></div><progress max="10" value="{{ item.get('score') }}"></progress><p>{{ item.get('reason_tr') if locale == 'tr' else item.get('reason_en') }}</p></div>{% endif %}{% endfor %}</div>
+                    {% else %}
+                    <div class="rating-pending"><strong>{{ t('rating.not_evaluated') }}</strong><p>{{ t('rating.editor_description') }}</p></div>
+                    {% endif %}
+                    <ul class="rating-method-list">
+                        <li>{{ t('rating.editor_method_features') }}</li>
+                        <li>{{ t('rating.editor_method_performance') }}</li>
+                        <li>{{ t('rating.editor_method_independent') }}</li>
+                    </ul>
+                </article>
+
+                <article class="rating-type-card community-rating-card">
+                    <div class="rating-type-head">
+                        <div>
+                            <span class="rating-type-kicker">{{ t('rating.second_type') }}</span>
+                            <h3>{{ t('rating.community_score') }}</h3>
+                        </div>
+                        <div class="rating-type-score">
+                            {% if user_rating.get('score') is not none %}
+                            <strong>{{ user_rating.get('score')|round(1) }}</strong><span>/10</span>
+                            {% else %}
+                            <strong>—</strong>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <p>{{ t('rating.community_description') }}</p>
+                    {% if user_rating.get('verified_count', 0) %}<p class="rating-vote-count">{{ t('rating.vote_count', count=user_rating.get('verified_count', 0)) }}</p>{% else %}<p class="rating-empty-message">{{ t('rating.no_user_score') }}</p>{% endif %}
+                    {% if request.args.get('rating_saved') == '1' %}<div class="rating-success" role="status">{{ t('rating.score_saved') }}</div>{% endif %}
+                    <form method="post" action="{{ url_for('rate_tool', locale=locale, slug=tool.slug) }}" class="community-rating-form">
+                        <input type="hidden" name="csrf_token" value="{{ rating_csrf_token }}">
+                        <label for="community-score">{{ t('rating.your_score') }}</label>
+                        <div class="community-rating-controls">
+                            <select id="community-score" name="score" required>
+                                <option value="">{{ t('rating.choose_score') }}</option>
+                                {% for value in range(10, 0, -1) %}<option value="{{ value }}">{{ value }} / 10</option>{% endfor %}
+                            </select>
+                            <button type="submit" class="primary-button">{{ t('rating.submit_score') }}</button>
+                        </div>
+                    </form>
+                    <ul class="rating-method-list">
+                        <li>{{ t('rating.user_method_separate') }}</li>
+                        <li>{{ t('rating.user_method_weighted') }}</li>
+                        <li>{{ t('rating.user_method_update') }}</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
         <div class="professional-detail-grid" id="requirements">
             <section class="detail-section detail-card pricing-card">
@@ -103,7 +186,13 @@
         <div class="score-row"><span>{{ t("tool.open_source") }}</span><strong>{{ t("common.yes") if tool.open_source else t("common.no") }}</strong></div>
         <div class="score-row"><span>{{ t("tool.offline_support") }}</span><strong>{{ t("common.yes") if tool.offline else t("common.no") }}</strong></div>
         <div class="score-row"><span>{{ t("tool.ai_features") }}</span><strong>{{ t("common.yes") if tool.ai_powered else t("common.no") }}</strong></div>
-        <div class="score-row"><span>{{ t("tool.rating") }}</span><strong>{% if tool.rating_source != 'not-rated' %}{{ tool.rating }} / 5{% else %}{{ t('tool.not_rated') }}{% endif %}</strong></div>
+        {% set rating = tool.get('rating_v103', {}) %}
+        <div class="score-row"><span>{{ t("rating.atlasfind_score") }}</span><strong>{% if rating.get('publishable') %}{{ rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated') }}{% endif %}</strong></div>
+        <div class="score-row"><span>{{ t("rating.data_coverage") }}</span><strong>%{{ rating.get('coverage', 0) }}</strong></div>
+        <div class="score-row"><span>{{ t("rating.confidence") }}</span><strong>{{ t('rating.confidence_levels.' ~ rating.get('confidence_level', 'insufficient')) }}</strong></div>
+        <div class="score-row"><span>{{ t("rating.methodology") }}</span><strong>{{ rating.get('methodology_version', '1.0.0') }}</strong></div>
+        {% set user_rating = rating.get('user_rating', {}) %}<div class="score-row"><span>{{ t("rating.community_score") }}</span><strong>{% if user_rating.get('score') is not none %}{{ user_rating.get('score')|round(1) }} / 10 · {{ user_rating.get('verified_count', 0) }}{% else %}{{ t('rating.no_user_score') }}{% endif %}</strong></div>
+        {% if rating.get('external_ratings') %}{% for external in rating.get('external_ratings') %}<div class="score-row"><span>{{ external.get('source') }}</span><strong>{{ external.get('score') }} / {{ external.get('scale') }} · {{ external.get('review_count', 0) }}</strong></div>{% endfor %}{% endif %}
         <div class="verification-box freshness-box freshness-{{ freshness.status }}">
             <div class="quality-summary"><span>{{ t("quality.quality_status") }}</span><strong class="quality-badge quality-{{ tool.get('quality_status', 'unverified') }}">{{ t('quality.' ~ tool.get('quality_status', 'unverified')) }}</strong></div>
             <p class="quality-notice">{{ tool.get("quality_review", {}).get("note", t("quality.quality_notice")) }}</p>
@@ -121,7 +210,7 @@
     <div class="section-heading"><div><span class="section-label">{{ t("tool.alternatives") }}</span><h2>{{ t("tool.alternatives_to", name=tool.name) }}</h2><p>{{ t("tool.alternatives_explanation") }}</p></div></div>
     {% if alternatives %}
     <div class="alternative-grid">{% for alternative in alternatives %}<article class="alternative-card">
-        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">★ {{ alternative.rating }}</strong></div>
+        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">{% set alt_rating = alternative.get('rating_v103', {}) %}{% if alt_rating.get('publishable') %}★ {{ alt_rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated') }}{% endif %}</strong></div>
         <p>{{ alternative.description }}</p>
         <div class="tool-tags"><span class="tag featured-tag">{{ alternative.pricing }}</span>{% if alternative.open_source %}<span class="tag">{{ t("tool.open_source") }}</span>{% endif %}{% if alternative.offline %}<span class="tag">{{ t("tool.offline") }}</span>{% endif %}</div>
         <div class="alternative-actions"><a href="{{ url_for('tool_detail', locale=locale, slug=alternative.slug) }}" class="secondary-button">{{ t("tool.explore") }}</a><a href="{{ url_for('compare_tools', locale=locale, left=tool.slug, right=alternative.slug) }}" class="primary-button">{{ t("tool.compare") }} <span aria-hidden="true">⇄</span></a></div>

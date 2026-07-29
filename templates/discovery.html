@@ -128,7 +128,7 @@
               <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
             </div>
             <div class="catalog-card-title"><span class="tool-category">{{ tool.category }}{% if tool.subcategory %} · {{ tool.subcategory }}{% endif %}</span><h2>{{ tool.name }}</h2></div>
-            <span class="tool-rating">{% if tool.rating_source != 'not-rated' %}★ {{ tool.rating }}{% else %}{{ t('tool.not_rated') }}{% endif %}</span>
+            {% set item_rating = tool.get('rating_v103', {}) %}<span class="tool-rating">{% if item_rating.get('publishable') %}★ {{ item_rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated_short') }}{% endif %}</span>
           </div>
           <p class="catalog-description">{{ tool.description }}</p>
           <div class="catalog-badges">

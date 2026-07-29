@@ -1,3 +1,15 @@
+# Changelog
+
+## v1.0.3 - Transparent Rating System
+
+- Replaced unverified legacy scores with a versioned, evidence-linked 10-point rating model.
+- Added category-specific weight profiles, minimum coverage and independent approval rules.
+- Added rating confidence, methodology, source, external rating and user rating structures.
+- Added rating administration, change-log and user-review database tables.
+- Added Turkish and English rating methodology pages and detailed tool-page rating UI.
+- Added migration, validation, recalculation, benchmark and unit-test scripts.
+- Backed up and hid all 600 legacy seed scores instead of presenting them as verified ratings.
+
 ## [1.0.1-hotfix] - 2026-07-28
 
 - Navbar dil seçicisi tüm ekran genişliklerinde görünür hâle getirildi.
@@ -432,3 +444,10 @@
 - Added `run_atlasfind.bat`, `test_release.bat`, and Turkish start instructions.
 - Finalized modular catalog, evidence audit, compatibility build, and scale-test tooling.
 - Preserved honest catalog state: 5 strict verified records and 595 pending records.
+
+### v1.0.3 Dual Rating UI Hotfix
+- Removed misleading `★ 0` displays from tool cards.
+- Added a visible Rating tab to tool detail navigation.
+- Added side-by-side AtlasFind and user rating cards near the top of tool details.
+- Added the user voting form and transparent calculation explanations to the Rating section.
+

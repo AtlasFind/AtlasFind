@@ -434,9 +434,14 @@
                                         <span>{{ tool.category }}</span>
                                     </div>
 
-                                    <div class="rating">
-                                        <span>★</span>
-                                        {{ tool.rating }}
+                                    {% set card_rating = tool.get('rating_v103', {}) %}
+                                    <div class="rating rating-summary" aria-label="{{ t('rating.section_title') }}">
+                                        {% if card_rating.get('publishable') %}
+                                            <span aria-hidden="true">★</span>
+                                            <strong>{{ card_rating.get('display_score') }}</strong><small>/10</small>
+                                        {% else %}
+                                            <span class="rating-empty">{{ t('rating.not_evaluated_short') }}</span>
+                                        {% endif %}
                                     </div>
 
                                 </div>

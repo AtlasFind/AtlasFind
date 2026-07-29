@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"AtlasFind Rating v1.0.3",
+  "type":"object",
+  "required":["status","scale","methodology_version","category_profile","criteria","sources","change_history"],
+  "properties":{
+    "status":{"enum":["unreviewed","data_collection","criteria_scoring","source_check","editor_review","admin_approval","published","update_required","archived"]},
+    "overall_score":{"type":["number","null"],"minimum":0,"maximum":10},
+    "scale":{"const":10},
+    "methodology_version":{"type":"string","pattern":"^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "category_profile":{"type":"string"},
+    "confidence_score":{"type":"integer","minimum":0,"maximum":100},
+    "confidence_level":{"enum":["very_high","high","medium","low","insufficient"]},
+    "reviewed_by":{"type":["integer","null"]},
+    "approved_by":{"type":["integer","null"]},
+    "criteria":{"type":"object"},
+    "sources":{"type":"array"},
+    "external_ratings":{"type":"array"},
+    "user_rating":{"type":"object"},
+    "change_history":{"type":"array"}
+  },
+  "additionalProperties":true
+}

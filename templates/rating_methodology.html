@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block content %}
+<section class="methodology-hero"><span class="eyebrow">AtlasFind v1.0</span><h1>{{ t('rating.methodology_title') }}</h1><p>{{ t('rating.methodology_description') }}</p></section>
+<section class="methodology-grid">
+<article class="detail-card"><h2>{{ t('rating.editor_score') }}</h2><p>{{ t('rating.editor_score_text') }}</p></article>
+<article class="detail-card"><h2>{{ t('rating.user_score') }}</h2><p>{{ t('rating.user_score_text') }}</p></article>
+<article class="detail-card"><h2>{{ t('rating.external_score') }}</h2><p>{{ t('rating.external_score_text') }}</p></article>
+<article class="detail-card"><h2>{{ t('rating.confidence') }}</h2><p>{{ t('rating.confidence_text') }}</p></article>
+</section>
+<section class="detail-card methodology-table"><h2>{{ t('rating.criteria_title') }}</h2><table><thead><tr><th>{{ t('rating.criterion') }}</th><th>{{ t('rating.default_weight') }}</th></tr></thead><tbody>
+{% for key, weight in [('features',20),('ease_of_use',15),('value',15),('performance',15),('security',10),('platforms',10),('support',10),('transparency',5)] %}<tr><td>{{ t('rating.criteria.' ~ key) }}</td><td>%{{ weight }}</td></tr>{% endfor %}
+</tbody></table><p>{{ t('rating.category_profiles_notice') }}</p></section>
+<section class="detail-card"><h2>{{ t('rating.independence_title') }}</h2><p>{{ t('rating.independence_text') }}</p><h2>{{ t('rating.update_policy_title') }}</h2><p>{{ t('rating.update_policy_text') }}</p></section>
+{% endblock %}

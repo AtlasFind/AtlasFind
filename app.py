@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context
+from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context, session
 from pathlib import Path
 from functools import lru_cache
 import os
+import secrets
 from urllib.parse import urlencode
 
 from tool_schema import validate_tools
@@ -12,6 +13,8 @@ from repositories.tools import get_all_tools, get_tool_by_slug
 from repositories.articles import get_all_articles, get_article_by_slug
 from repositories.translations import localize_tool, localize_article, localize_tools, localize_articles
 from icon_system import ensure_local_icon
+from services.rating_service import enrich_tool_rating
+from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -40,7 +43,7 @@ configure_logging(app)
 apply_migrations()
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.2"
+APP_VERSION = "1.0.3"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -135,7 +138,7 @@ def _normalize_tool_icons(tools):
 
 @lru_cache(maxsize=8)
 def _cached_tools(locale, database_version):
-    tools = _normalize_tool_icons(localize_tools(get_all_tools(), locale))
+    tools = [enrich_tool_rating(tool) for tool in _normalize_tool_icons(localize_tools(get_all_tools(), locale))]
     validation_errors = validate_tools(tools)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
@@ -1239,6 +1242,21 @@ def recommend(locale=None):
         breadcrumbs=build_breadcrumbs([(translate("common.home"), "/"), (translate("nav.recommend"), "/recommend")]), schemas=[],
     )
 
+
+@app.route("/rating-methodology")
+@app.route("/<locale>/rating-methodology")
+@app.route("/tr/puanlama-metodolojisi", defaults={"locale": "tr"})
+@app.route("/en/rating-methodology", defaults={"locale": "en"})
+def rating_methodology(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    locale_code = get_locale()
+    title = translate("rating.methodology_title")
+    description = translate("rating.methodology_description")
+    canonical = "/tr/puanlama-metodolojisi" if locale_code == "tr" else "/en/rating-methodology"
+    crumbs = build_breadcrumbs([(translate("common.home"), localized_path("/", locale_code)), (title, canonical)])
+    return render_template("rating_methodology.html", active_page="methodology", seo=page_seo(title, description, canonical), breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)])
+
 @app.route("/tools/<slug>")
 @app.route("/<locale>/tools/<slug>")
 def tool_detail(slug, locale=None):
@@ -1264,15 +1282,61 @@ def tool_detail(slug, locale=None):
         (tool.get("name", "Tool"), canonical_path),
     ])
 
+    rating_payload = dict(tool.get("rating_v103") or {})
+    rating_payload["user_rating"] = aggregate_user_rating(slug)
+    tool = {**tool, "rating_v103": rating_payload}
+    rating_csrf_token = session.get("rating_csrf_token")
+    if not rating_csrf_token:
+        rating_csrf_token = secrets.token_urlsafe(32)
+        session["rating_csrf_token"] = rating_csrf_token
+
     return render_template(
         "tool.html",
         tool=tool,
+        rating_csrf_token=rating_csrf_token,
         alternatives=alternatives,
         freshness=tool_freshness(tool),
         seo=page_seo(title, description, canonical_path),
         breadcrumbs=crumbs,
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
     )
+
+
+@app.post("/tools/<slug>/rate")
+@app.post("/<locale>/tools/<slug>/rate")
+def rate_tool(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if find_tool_by_slug(slug) is None:
+        abort(404)
+
+    submitted_csrf = str(request.form.get("csrf_token") or "")
+    expected_csrf = str(session.get("rating_csrf_token") or "")
+    if not expected_csrf or not secrets.compare_digest(submitted_csrf, expected_csrf):
+        abort(400)
+
+    try:
+        score = float(request.form.get("score", ""))
+    except (TypeError, ValueError):
+        abort(400)
+    if score < 1 or score > 10:
+        abort(400)
+
+    voter_token = session.get("rating_voter_token")
+    if not voter_token:
+        voter_token = secrets.token_urlsafe(32)
+        session["rating_voter_token"] = voter_token
+    user_key = anonymous_user_key(app.config["SECRET_KEY"], voter_token)
+    upsert_review(
+        tool_slug=slug,
+        user_key_hash=user_key,
+        score=score,
+        criteria={},
+        comment="",
+        risk_score=0,
+        status="verified",
+    )
+    return redirect(url_for("tool_detail", locale=get_locale(), slug=slug, rating_saved="1") + "#community-rating")
 
 
 def _comparison_value(tool, key):
@@ -1291,8 +1355,9 @@ def _comparison_value(tool, key):
         values = tool.get("languages") or []
         return ", ".join(value.upper() for value in values) or unknown
     if key == "rating":
-        value = tool.get("rating")
-        return f"{value:g} / 5" if isinstance(value, (int, float)) else unknown
+        rating = tool.get("rating_v103") or {}
+        value = rating.get("overall_score")
+        return f"{value:.1f} / 10" if isinstance(value, (int, float)) else translate("tool.not_rated")
     if key == "target_users":
         return ", ".join(tool.get("target_users") or []) or unknown
     if key == "pricing":

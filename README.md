@@ -233,3 +233,24 @@ Validation:
 ```powershell
 py scripts\validate_compare_recommendations_v098.py
 ```
+
+## v1.0.3 Transparent Rating System
+
+AtlasFind ratings are calculated on a 10-point scale from versioned category profiles. Unverified legacy scores are not displayed. A public editor score requires at least 80% evaluated weight, bilingual reasons, linked evidence, an identified reviewer and approval by a different administrator.
+
+Validation commands:
+
+```powershell
+py scripts\migrate_ratings_v103.py
+py scripts\validate_release_v103.py
+py scripts\benchmark_ratings_v103.py
+py scripts\sync_ratings_v103_to_sqlite.py
+py app.py
+```
+
+Public methodology pages:
+
+- `/tr/puanlama-metodolojisi`
+- `/en/rating-methodology`
+
+Admin rating management: `/admin/ratings`

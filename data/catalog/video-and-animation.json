@@ -190,6 +190,101 @@
       "studio": "https://www.blackmagicdesign.com/products/davinciresolve/studio",
       "support": "https://www.blackmagicdesign.com/support/",
       "training": "https://www.blackmagicdesign.com/products/davinciresolve/training"
+    },
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 0,
+        "scale": 5,
+        "source": "not-rated",
+        "displayed": false
+      }
     }
   },
   {
@@ -206,8 +301,8 @@
       "Creative"
     ],
     "pricing": "Subscription",
-    "rating": 4.7,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://www.adobe.com/products/premiere.html",
     "platforms": [
       "Windows",
@@ -294,7 +389,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.7,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 33,
@@ -310,8 +500,8 @@
       "Linux"
     ],
     "pricing": "Free",
-    "rating": 4.5,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://kdenlive.org",
     "platforms": [
       "Windows",
@@ -402,7 +592,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.5,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 34,
@@ -418,8 +703,8 @@
       "Timeline"
     ],
     "pricing": "Free",
-    "rating": 4.4,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://shotcut.org",
     "platforms": [
       "Windows",
@@ -510,7 +795,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.4,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 35,
@@ -526,8 +906,8 @@
       "Simple"
     ],
     "pricing": "Free",
-    "rating": 4.2,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://www.openshot.org",
     "platforms": [
       "Windows",
@@ -618,7 +998,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.2,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 36,
@@ -634,8 +1109,8 @@
       "Mobile"
     ],
     "pricing": "Freemium",
-    "rating": 4.6,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://www.capcut.com",
     "platforms": [
       "Web",
@@ -725,7 +1200,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.6,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 37,
@@ -741,8 +1311,8 @@
       "Live"
     ],
     "pricing": "Free",
-    "rating": 4.9,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://obsproject.com",
     "platforms": [
       "Windows",
@@ -834,7 +1404,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.9,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 38,
@@ -850,8 +1515,8 @@
       "Free"
     ],
     "pricing": "Free",
-    "rating": 4.7,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://handbrake.fr",
     "platforms": [
       "Windows",
@@ -942,7 +1607,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.7,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 39,
@@ -958,8 +1718,8 @@
       "Lightweight"
     ],
     "pricing": "Free",
-    "rating": 4.6,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://github.com/mifi/lossless-cut",
     "platforms": [
       "Windows",
@@ -1050,7 +1810,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.6,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 40,
@@ -1066,8 +1921,8 @@
       "Timeline"
     ],
     "pricing": "Paid",
-    "rating": 4.5,
-    "rating_source": "editorial_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://www.vegascreativesoftware.com",
     "platforms": [
       "Windows"
@@ -1153,7 +2008,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.5,
+        "scale": 5,
+        "source": "editorial_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 103,
@@ -1167,8 +2117,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://apple.com/final-cut-pro",
     "platforms": [
       "Windows",
@@ -1258,7 +2208,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 121,
@@ -1272,8 +2317,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://avid.com/media-composer",
     "platforms": [
       "Windows",
@@ -1363,7 +2408,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 139,
@@ -1377,8 +2517,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://filmora.wondershare.com",
     "platforms": [
       "Windows",
@@ -1468,7 +2608,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 157,
@@ -1482,8 +2717,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://lwks.com",
     "platforms": [
       "Windows",
@@ -1573,7 +2808,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 175,
@@ -1587,8 +2917,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://fxhome.com",
     "platforms": [
       "Windows",
@@ -1678,7 +3008,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 193,
@@ -1692,8 +3117,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://videosoftdev.com",
     "platforms": [
       "Windows",
@@ -1783,7 +3208,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 211,
@@ -1797,8 +3317,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://movavi.com/video-editor-plus",
     "platforms": [
       "Windows",
@@ -1888,7 +3408,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 229,
@@ -1902,8 +3517,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://clipchamp.com",
     "platforms": [
       "Windows",
@@ -1993,7 +3608,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 247,
@@ -2007,8 +3717,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://veed.io",
     "platforms": [
       "Windows",
@@ -2098,7 +3808,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 265,
@@ -2112,8 +3917,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://kapwing.com",
     "platforms": [
       "Windows",
@@ -2203,7 +4008,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 283,
@@ -2217,8 +4117,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://flexclip.com",
     "platforms": [
       "Windows",
@@ -2308,7 +4208,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 301,
@@ -2322,8 +4317,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://animoto.com",
     "platforms": [
       "Windows",
@@ -2413,7 +4408,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 319,
@@ -2427,8 +4517,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://invideo.io",
     "platforms": [
       "Windows",
@@ -2518,7 +4608,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 337,
@@ -2532,8 +4717,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://adobe.com/products/aftereffects.html",
     "platforms": [
       "Windows",
@@ -2623,7 +4808,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 355,
@@ -2637,8 +4917,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://apple.com/final-cut-pro/motion",
     "platforms": [
       "Windows",
@@ -2728,7 +5008,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 373,
@@ -2742,8 +5117,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://natrongithub.github.io",
     "platforms": [
       "Windows",
@@ -2833,7 +5208,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 391,
@@ -2847,8 +5317,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://foundry.com/products/nuke-family",
     "platforms": [
       "Windows",
@@ -2938,7 +5408,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 409,
@@ -2952,8 +5517,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://blackmagicdesign.com/products/fusion",
     "platforms": [
       "Windows",
@@ -3043,7 +5608,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 427,
@@ -3057,8 +5717,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://toonboom.com/products/harmony",
     "platforms": [
       "Windows",
@@ -3148,7 +5808,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 445,
@@ -3162,8 +5917,8 @@
       "Software"
     ],
     "pricing": "Free",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://opentoonz.github.io",
     "platforms": [
       "Windows",
@@ -3255,7 +6010,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 463,
@@ -3269,8 +6119,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://synfig.org",
     "platforms": [
       "Windows",
@@ -3360,7 +6210,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 481,
@@ -3374,8 +6319,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://pencil2d.org",
     "platforms": [
       "Windows",
@@ -3465,7 +6410,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 499,
@@ -3479,8 +6519,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://moho.lostmarble.com",
     "platforms": [
       "Windows",
@@ -3570,7 +6610,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 517,
@@ -3584,8 +6719,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://adobe.com/products/animate.html",
     "platforms": [
       "Windows",
@@ -3675,7 +6810,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 535,
@@ -3689,8 +6919,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://dragonframe.com",
     "platforms": [
       "Windows",
@@ -3780,7 +7010,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 553,
@@ -3794,8 +7119,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://techsmith.com/video-editor.html",
     "platforms": [
       "Windows",
@@ -3885,7 +7210,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 571,
@@ -3899,8 +7319,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://telestream.net/screenflow",
     "platforms": [
       "Windows",
@@ -3990,7 +7410,102 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   },
   {
     "id": 589,
@@ -4004,8 +7519,8 @@
       "Software"
     ],
     "pricing": "Freemium",
-    "rating": 4.0,
-    "rating_source": "catalog_seed",
+    "rating": 0,
+    "rating_source": "not-rated",
     "website": "https://loom.com",
     "platforms": [
       "Windows",
@@ -4095,6 +7610,101 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": []
+    "source_references": [],
+    "rating_v103": {
+      "status": "unreviewed",
+      "overall_score": null,
+      "scale": 10,
+      "methodology_version": "1.0.0",
+      "category_profile": "default",
+      "confidence_score": 0,
+      "confidence_level": "insufficient",
+      "reviewed_at": null,
+      "next_review_at": null,
+      "reviewed_by": null,
+      "approved_by": null,
+      "criteria": {
+        "features": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "ease_of_use": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "value": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "performance": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "security": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "platforms": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "support": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        },
+        "transparency": {
+          "score": null,
+          "weight": null,
+          "reason_tr": "",
+          "reason_en": "",
+          "evidence_ids": [],
+          "status": "insufficient_data"
+        }
+      },
+      "editor_summary_tr": "",
+      "editor_summary_en": "",
+      "sources": [],
+      "external_ratings": [],
+      "user_rating": {
+        "score": null,
+        "review_count": 0,
+        "verified_count": 0
+      },
+      "change_history": [],
+      "legacy": {
+        "score": 4.0,
+        "scale": 5,
+        "source": "catalog_seed",
+        "displayed": false
+      }
+    }
   }
 ]

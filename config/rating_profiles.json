@@ -1,0 +1,11 @@
+{
+  "methodology_version": "1.0.0",
+  "minimum_coverage": 0.80,
+  "profiles": {
+    "default": {"features":0.20,"ease_of_use":0.15,"value":0.15,"performance":0.15,"security":0.10,"platforms":0.10,"support":0.10,"transparency":0.05},
+    "ai_chat": {"features":0.25,"ease_of_use":0.15,"value":0.15,"performance":0.15,"security":0.15,"platforms":0.05,"support":0.05,"transparency":0.05},
+    "vpn": {"security":0.30,"performance":0.20,"features":0.15,"value":0.15,"platforms":0.10,"transparency":0.05,"support":0.05,"ease_of_use":0.00},
+    "video_editor": {"features":0.25,"performance":0.20,"ease_of_use":0.15,"value":0.15,"platforms":0.10,"support":0.10,"security":0.05,"transparency":0.00}
+  },
+  "critical_criteria": {"vpn":["security"],"cybersecurity":["security"]}
+}
