@@ -1,6 +1,6 @@
 const atlasI18n = window.ATLAS_I18N || {};
 const atlasT = (key, fallback) => atlasI18n[key] || fallback;
-const atlasLocalLogoExtensions = ["webp", "png", "jpg", "jpeg", "svg"];
+const atlasLocalLogoExtensions = ["webp", "png", "jpg", "jpeg", "svg", "ico"];
 
 function showAtlasIconMonogram(img) {
     if (!img) return;
@@ -38,7 +38,8 @@ function validateAtlasIcon(img) {
     const width = img.naturalWidth || 0;
     const height = img.naturalHeight || 0;
     const ratio = height ? width / height : 0;
-    const invalidSize = width < 32 || height < 32;
+    const minimumSize = img.dataset.localLogoBase ? 16 : 32;
+    const invalidSize = width < minimumSize || height < minimumSize;
     const invalidRatio = ratio < 0.25 || ratio > 4;
     if (!width || !height || invalidSize || invalidRatio) {
         tryAtlasIconFallback(img);

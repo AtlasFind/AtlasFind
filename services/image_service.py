@@ -14,7 +14,7 @@ STATIC_DIR = BASE_DIR / "static"
 TOOLS_IMAGE_DIR = STATIC_DIR / "images" / "tools"
 PUBLISHABLE_STATUSES = {"verified"}
 SAFE_SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-LOCAL_LOGO_FILENAMES = ("logo.webp", "logo.png", "logo.jpg", "logo.jpeg", "logo.svg")
+LOCAL_LOGO_FILENAMES = ("logo.webp", "logo.png", "logo.jpg", "logo.jpeg", "logo.svg", "logo.ico")
 
 
 def safe_slug(value: str) -> str:

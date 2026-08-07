@@ -54,7 +54,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.7"
+APP_VERSION = "1.0.8"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -230,7 +230,8 @@ def related_articles_for(article, all_articles, limit=3):
 
 def find_tool_by_slug(slug, locale=None):
     """Return a localized tool from the SQLite repository by slug."""
-    return localize_tool(get_tool_by_slug(slug), locale or get_locale())
+    tool = localize_tool(get_tool_by_slug(slug), locale or get_locale())
+    return enrich_tool_branding(tool) if tool else None
 
 
 def calculate_alternative_score(source_tool, candidate_tool):
