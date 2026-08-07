@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sqlite3
 import subprocess
 import sys
 import threading
@@ -18,6 +19,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from services.catalog_worker_record_service import build_review_records
+from services.catalog_worker_export_service import create_export_package
 from services.catalog_worker_review_service import export_readiness, load_reviews, merge_reviews, save_review
 
 CATALOG = ROOT / "data/tools.json"
@@ -70,7 +72,18 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/stop":
             if PROCESS and PROCESS.poll() is None:
                 PROCESS.terminate()
-            return self.send(200, b'{"ok":true}', "application/json")
+                try:
+                    PROCESS.wait(timeout=15)
+                except subprocess.TimeoutExpired:
+                    PROCESS.kill()
+                    PROCESS.wait(timeout=5)
+            try:
+                exported = create_export_package(records_payload()["records"])
+                body = json.dumps({"ok": True, "export": exported}, ensure_ascii=False).encode("utf-8")
+                return self.send(200, body, "application/json; charset=utf-8")
+            except (OSError, ValueError, sqlite3.Error) as exc:
+                body = json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False).encode("utf-8")
+                return self.send(500, body, "application/json; charset=utf-8")
         if path.startswith("/api/review/"):
             slug = unquote(path.removeprefix("/api/review/"))
             try:
