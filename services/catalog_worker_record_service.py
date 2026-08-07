@@ -90,6 +90,10 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
     category = _clean_text(candidate.get("category_suggestion")) or "Other"
     subcategory = _clean_text(candidate.get("subcategory_suggestion")) or "Needs Classification"
     topics = _unique_text(candidate.get("topics") or [])
+    evidence = candidate.get("official_evidence") if isinstance(candidate.get("official_evidence"), dict) else {}
+    evidence_features = [item.get("text") for item in evidence.get("features", []) if isinstance(item, dict)]
+    evidence_platforms = _unique_text(evidence.get("platforms") or [])
+    purpose = _clean_text(evidence.get("purpose"))
     license_id = _clean_text(candidate.get("license"))
     open_source = bool(license_id and license_id.upper() not in {"NOASSERTION", "OTHER"})
 
@@ -104,21 +108,22 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
 
     claim_review = {
         "identity": _claim("provisionally_supported", [sources[0]["type"]], "A human must confirm that the source belongs to the product."),
-        "purpose": _claim("needs_enrichment", [], "A detailed purpose statement has not been researched yet."),
+        "purpose": _claim("provisionally_supported" if purpose else "needs_enrichment", ["official-documentation"] if purpose else [], "Extracted from the official README; human confirmation is required." if purpose else "A detailed purpose statement has not been researched yet."),
         "description": _claim("provisionally_supported", [sources[0]["type"]], "Currently based on source-provided summary text."),
-        "features": _claim("missing", [], "Feature claims require official product or documentation sources."),
+        "features": _claim("provisionally_supported" if evidence_features else "missing", ["official-documentation"] if evidence_features else [], "Feature bullets were extracted from the official README and require human confirmation." if evidence_features else "Feature claims require official product or documentation sources."),
         "category": _claim("suggested", [], "Discovery query supplied this category; editorial confirmation is required."),
         "subcategory": _claim("suggested", [], "Discovery query supplied this subcategory; editorial confirmation is required."),
-        "pricing": _claim("missing", [], "No pricing claim is made until an official pricing source is checked."),
-        "platforms": _claim("missing", [], "No platform claim is made until official downloads or documentation are checked."),
+        "pricing": _claim("provisionally_supported" if evidence.get("pricing") else "missing", ["official-documentation"] if evidence.get("pricing") else [], "README contains an explicit free/open-source statement." if evidence.get("pricing") else "No pricing claim is made until an official pricing source is checked."),
+        "platforms": _claim("provisionally_supported" if evidence_platforms else "missing", ["official-documentation"] if evidence_platforms else [], "Platform names were found in an official installation/download section." if evidence_platforms else "No platform claim is made until official downloads or documentation are checked."),
         "open_source": _claim("provisionally_supported" if open_source else "unknown", ["official-repository"] if open_source else [],
                               f"Repository reports license {license_id}." if open_source else "A usable license was not confirmed."),
         "avatar": _claim("missing", [], "GitHub preview images are not accepted as an official product avatar."),
     }
 
     # Required catalog values below are explicit review placeholders, never facts.
-    pricing = "Free (unverified)" if open_source else "Pricing pending review"
-    pricing_type = "free" if open_source else "freemium"
+    pricing_evidence = evidence.get("pricing") if isinstance(evidence.get("pricing"), dict) else {}
+    pricing = pricing_evidence.get("model") or ("Free (unverified)" if open_source else "Pricing pending review")
+    pricing_type = pricing_evidence.get("pricing_type") or ("free" if open_source else "freemium")
     fallback = f"/static/icons/generated/{slug}.svg"
     tags = _unique_text([subcategory, category, *topics[:3]]) or ["Software"]
     return {
@@ -133,7 +138,7 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
         "rating": 0,
         "rating_source": "not-rated",
         "website": website,
-        "platforms": ["Web"],
+        "platforms": evidence_platforms or ["Web"],
         "open_source": open_source,
         "offline": False,
         "ai_powered": False,
@@ -165,7 +170,8 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
         "aliases": [],
         "publication_status": "research_only",
         "source_references": sources,
-        "features": [],
+        "features": _unique_text(evidence_features),
+        "purpose": purpose,
         "research_metadata": {
             "schema_version": 1,
             "record_kind": "atlasfind_catalog_review",
@@ -174,6 +180,7 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
             "repository": candidate.get("repository"),
             "stars": int(candidate.get("stars") or 0),
             "license": license_id or None,
+            "official_evidence": evidence,
             "claim_review": claim_review,
             "required_claims": list(CLAIM_NAMES),
             "missing_claims": [name for name, review in claim_review.items() if review["status"] in {"missing", "needs_enrichment", "unknown"}],
