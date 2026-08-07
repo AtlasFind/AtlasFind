@@ -181,6 +181,13 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
             "stars": int(candidate.get("stars") or 0),
             "license": license_id or None,
             "official_evidence": evidence,
+            "logo_review": {
+                "status": "not_started",
+                "candidates": [],
+                "attempts": [],
+                "requires_human_selection": True,
+                "selected_candidate": None,
+            },
             "claim_review": claim_review,
             "required_claims": list(CLAIM_NAMES),
             "missing_claims": [name for name, review in claim_review.items() if review["status"] in {"missing", "needs_enrichment", "unknown"}],
