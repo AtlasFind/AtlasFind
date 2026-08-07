@@ -28,6 +28,11 @@ def create_admin(username, password_hash, path=DATABASE_PATH):
         return cursor.lastrowid
 
 
+def admin_user_count(path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return int(connection.execute("SELECT COUNT(*) AS total FROM admin_users").fetchone()["total"])
+
+
 def record_login_attempt(username, ip_address, successful, path=DATABASE_PATH):
     with transaction(path) as connection:
         connection.execute(

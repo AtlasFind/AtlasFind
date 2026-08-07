@@ -20,6 +20,7 @@ from repositories.admin import record_visit
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
+from admin.bootstrap import bootstrap_admin_from_environment
 from security import (
     add_security_headers, client_ip, configure_logging, configure_security, enforce_api_rate_limit,
     enforce_safe_method, new_request_id, validate_request_host,
@@ -43,6 +44,9 @@ app = Flask(__name__)
 configure_security(app)
 configure_logging(app)
 apply_migrations()
+bootstrap_status = bootstrap_admin_from_environment(app.config["PRODUCTION"])
+if bootstrap_status == "created":
+    app.logger.warning("production_admin_bootstrapped")
 app.register_blueprint(admin_bp)
 
 APP_VERSION = "1.0.4"
