@@ -381,7 +381,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/superlist/logo.webp",
+        "source_url": "https://www.superlist.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 200,
+        "height": 200,
+        "aspect_ratio": "200:200",
+        "file_size_bytes": 3608,
+        "checksum": "58288e9a4545dc7ffcc10e5a06fcc1b89cbeaa5946d8410873a61cd8fac1ea04",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://framerusercontent.com/images/bI0E6AOBvqILIpkzDCXQ2HSjAFQ.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SU"
+      },
+      "version": 1,
+      "tool_slug": "superlist"
+    }
   },
   {
     "id": 604,
@@ -3949,7 +3982,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/riverside/logo.webp",
+        "source_url": "https://riverside.fm/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2388,
+        "checksum": "3bf56559b90ad976d38be689f781843618a154451ed17519bef4580f884bf33c",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RI"
+      },
+      "version": 1,
+      "tool_slug": "riverside"
+    }
   },
   {
     "id": 631,
@@ -9024,7 +9090,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/redisinsight/logo.webp",
+        "source_url": "https://github.com/RedisInsight/RedisInsight/blob/main/redisinsight/ui/public/favicon-180x180.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6616,
+        "checksum": "646ad19a6d5c5e4ed93b466cbba6247a67dcdddb9ee36eaa06a0c1d8626e7177",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/RedisInsight/RedisInsight/main/redisinsight/ui/public/favicon-180x180.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "redisinsight"
+    }
   },
   {
     "id": 668,
@@ -10266,7 +10365,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/beehiiv/logo.webp",
+        "source_url": "https://www.beehiiv.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 999,
+        "height": 999,
+        "aspect_ratio": "999:999",
+        "file_size_bytes": 39174,
+        "checksum": "cfeb1dd78e3b8b3b0450ece4a9ec632ece6d9ec69eaba29aedd3ee7a78fb33f7",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BE"
+      },
+      "version": 1,
+      "tool_slug": "beehiiv"
+    }
   },
   {
     "id": 677,
@@ -10376,7 +10508,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mumble/logo.webp",
+        "source_url": "https://github.com/mumble-voip/mumble/blob/master/icons/mumble_256x256.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 8244,
+        "checksum": "0c03cf71eee457543186d03ed39bc1993ce4a0dce036b6e6e263cd5accef285f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble_256x256.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MU"
+      },
+      "version": 1,
+      "tool_slug": "mumble"
+    }
   },
   {
     "id": 678,
@@ -12790,7 +12955,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/age/logo.svg",
+        "source_url": "https://github.com/FiloSottile/age/blob/main/logo/logo.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 65647,
+        "checksum": "4ddd008cfb1f8122bf7ee4c81241856cff6ac864dd3cee51a54741d332f5fa85",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/FiloSottile/age/main/logo/logo.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AG"
+      },
+      "version": 1,
+      "tool_slug": "age"
+    }
   },
   {
     "id": 696,

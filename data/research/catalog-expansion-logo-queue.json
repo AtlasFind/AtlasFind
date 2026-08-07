@@ -474,7 +474,7 @@
       "slug": "superlist",
       "name": "Superlist",
       "official_url": "https://www.superlist.com/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
         {
@@ -591,21 +591,22 @@
           "url": "https://framerusercontent.com/images/bI0E6AOBvqILIpkzDCXQ2HSjAFQ.png",
           "source_page": "https://www.superlist.com/",
           "source_type": "official_product_site",
-          "relation": "apple-touch-icon",
-          "score": 98,
-          "requires_review": true,
+          "relation": "official-site-icon",
+          "score": 190,
+          "requires_review": false,
           "declared_sizes": null,
           "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
+          "discovery_method": "manual-official-site-markup-audit",
+          "review_status": "approved",
+          "license_status": "brand_usage",
           "supports_light_theme": null,
           "supports_dark_theme": null,
           "last_import_error": null,
           "product_relevance": "product_match",
           "auto_review_rejections": [
             "score"
-          ]
+          ],
+          "notes": "Product-specific icon explicitly published by the official product site."
         },
         {
           "url": "https://framerusercontent.com/assets/xlouachsGTVuJaHXsYmxxI66e2s.png",
@@ -645,7 +646,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://framerusercontent.com/images/bI0E6AOBvqILIpkzDCXQ2HSjAFQ.png"
     },
     {
       "tool_id": 604,
@@ -7930,7 +7932,7 @@
       "slug": "riverside",
       "name": "Riverside",
       "official_url": "https://riverside.fm/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
         {
@@ -8045,23 +8047,24 @@
         },
         {
           "url": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png",
-          "source_page": "https://riverside.com/",
+          "source_page": "https://riverside.fm/",
           "source_type": "official_product_site",
-          "relation": "apple-touch-icon",
-          "score": 108,
-          "requires_review": true,
+          "relation": "official-site-icon",
+          "score": 190,
+          "requires_review": false,
           "declared_sizes": null,
           "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
+          "discovery_method": "manual-official-site-markup-audit",
+          "review_status": "approved",
+          "license_status": "brand_usage",
           "supports_light_theme": null,
           "supports_dark_theme": null,
           "last_import_error": null,
           "product_relevance": "product_match",
           "auto_review_rejections": [
             "unrelated_source"
-          ]
+          ],
+          "notes": "Product-specific icon explicitly published by the official product site."
         },
         {
           "url": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e49_RS_favicon-black.png",
@@ -8123,7 +8126,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png"
     },
     {
       "tool_id": 631,
@@ -20198,9 +20202,22 @@
       "slug": "redisinsight",
       "name": "RedisInsight",
       "official_url": "https://redis.io/insight/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/RedisInsight/RedisInsight/main/redisinsight/ui/public/favicon-180x180.png",
+          "source_page": "https://github.com/RedisInsight/RedisInsight/blob/main/redisinsight/ui/public/favicon-180x180.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://redis.io/apple-touch-icon-precomposed.png",
           "source_page": "https://redis.io/insight/",
@@ -20428,7 +20445,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/RedisInsight/RedisInsight/main/redisinsight/ui/public/favicon-180x180.png"
     },
     {
       "tool_id": 668,
@@ -22579,7 +22597,7 @@
       "slug": "beehiiv",
       "name": "beehiiv",
       "official_url": "https://www.beehiiv.com/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
         {
@@ -22696,21 +22714,22 @@
           "url": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png",
           "source_page": "https://www.beehiiv.com/",
           "source_type": "official_product_site",
-          "relation": "shortcut icon",
-          "score": 98,
-          "requires_review": true,
+          "relation": "official-site-icon",
+          "score": 190,
+          "requires_review": false,
           "declared_sizes": null,
           "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
+          "discovery_method": "manual-official-site-markup-audit",
+          "review_status": "approved",
+          "license_status": "brand_usage",
           "supports_light_theme": null,
           "supports_dark_theme": null,
           "last_import_error": null,
           "product_relevance": "product_match",
           "auto_review_rejections": [
             "score"
-          ]
+          ],
+          "notes": "Product-specific icon explicitly published by the official product site."
         },
         {
           "url": "https://media.beehiiv.com/www/og-image/og-beehiiv.png",
@@ -22750,16 +22769,30 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png"
     },
     {
       "tool_id": 677,
       "slug": "mumble",
       "name": "Mumble",
       "official_url": "https://www.mumble.info/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble_256x256.png",
+          "source_page": "https://github.com/mumble-voip/mumble/blob/master/icons/mumble_256x256.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://mumble.info/apple-touch-icon-precomposed.png",
           "source_page": "https://mumble.info/",
@@ -22981,7 +23014,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble_256x256.png"
     },
     {
       "tool_id": 678,
@@ -27637,9 +27671,22 @@
       "slug": "age",
       "name": "age",
       "official_url": "https://github.com/FiloSottile/age",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/FiloSottile/age/main/logo/logo.svg",
+          "source_page": "https://github.com/FiloSottile/age/blob/main/logo/logo.svg",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://github.githubassets.com/assets/app-icon-192-bcc967ab9829.png",
           "source_page": "https://github.com/FiloSottile/age",
@@ -28148,7 +28195,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/FiloSottile/age/main/logo/logo.svg"
     },
     {
       "tool_id": 696,

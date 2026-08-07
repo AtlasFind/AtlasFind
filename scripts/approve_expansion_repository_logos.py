@@ -17,6 +17,15 @@ ASSETS = {
     "cryptomator": ("cryptomator/cryptomator", "develop", "src/main/resources/img/logo128@2x.png"),
     "dangerzone": ("freedomofpress/dangerzone", "main", "share/icon.png"),
     "actual-budget": ("actualbudget/actual", "master", "packages/component-library/src/icons/logo/logo.svg"),
+    "redisinsight": ("RedisInsight/RedisInsight", "main", "redisinsight/ui/public/favicon-180x180.png"),
+    "mumble": ("mumble-voip/mumble", "master", "icons/mumble_256x256.png"),
+    "age": ("FiloSottile/age", "main", "logo/logo.svg"),
+}
+
+OFFICIAL_SITE_ASSETS = {
+    "superlist": "https://framerusercontent.com/images/bI0E6AOBvqILIpkzDCXQ2HSjAFQ.png",
+    "riverside": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png",
+    "beehiiv": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png",
 }
 
 
@@ -25,6 +34,8 @@ def main() -> None:
     by_slug = {item["slug"]: item for item in payload["items"]}
     for slug, (repo, branch, path) in ASSETS.items():
         item = by_slug[slug]
+        if item.get("status") == "imported":
+            continue
         url = f"https://raw.githubusercontent.com/{repo}/{branch}/{path}"
         candidate = next((value for value in item.get("candidates", []) if value.get("url") == url), None)
         if candidate is None:
@@ -46,6 +57,30 @@ def main() -> None:
         )
         item["status"] = "approved"
         print(f"Approved official repository icon: {slug}")
+    for slug, url in OFFICIAL_SITE_ASSETS.items():
+        item = by_slug[slug]
+        if item.get("status") == "imported":
+            continue
+        candidate = next((value for value in item.get("candidates", []) if value.get("url") == url), None)
+        if candidate is None:
+            candidate = {"url": url}
+            item.setdefault("candidates", []).insert(0, candidate)
+        candidate.update(
+            {
+                "source_page": item["official_url"],
+                "source_type": "official_product_site",
+                "relation": "official-site-icon",
+                "score": 190,
+                "requires_review": False,
+                "review_status": "approved",
+                "license_status": "brand_usage",
+                "product_relevance": "product_match",
+                "discovery_method": "manual-official-site-markup-audit",
+                "notes": "Product-specific icon explicitly published by the official product site.",
+            }
+        )
+        item["status"] = "approved"
+        print(f"Approved official site icon: {slug}")
     QUEUE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 

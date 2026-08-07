@@ -65,7 +65,9 @@ def _download(url: str, *, timeout_seconds: int | None = None) -> tuple[bytes, s
         safe_url,
         headers={
             "User-Agent": USER_AGENT,
-            "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            # Request only formats this importer can validate and normalize. Some
+            # image CDNs otherwise negotiate AVIF even when the URL ends in PNG.
+            "Accept": "image/webp,image/apng,image/svg+xml,image/png,image/jpeg,image/*;q=0.8,*/*;q=0.5",
         },
     )
     effective_timeout = timeout_seconds if timeout_seconds is not None else TIMEOUT_SECONDS
