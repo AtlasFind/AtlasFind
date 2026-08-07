@@ -14,6 +14,7 @@ STATIC_DIR = BASE_DIR / "static"
 TOOLS_IMAGE_DIR = STATIC_DIR / "images" / "tools"
 PUBLISHABLE_STATUSES = {"verified"}
 SAFE_SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+LOCAL_LOGO_FILENAMES = ("logo.webp", "logo.png", "logo.jpg", "logo.jpeg", "logo.svg")
 
 
 def safe_slug(value: str) -> str:
@@ -95,6 +96,18 @@ def _variant(branding: dict, theme: str) -> dict | None:
     return branding.get("logo") if isinstance(branding.get("logo"), dict) else None
 
 
+def _catalog_local_logo(tool_slug: str) -> Path | None:
+    """Recover an audited local logo when older database rows lack branding metadata."""
+    if not SAFE_SLUG_RE.fullmatch(tool_slug):
+        return None
+    logo_directory = TOOLS_IMAGE_DIR / tool_slug
+    for filename in LOCAL_LOGO_FILENAMES:
+        candidate = logo_directory / filename
+        if candidate.is_file() and candidate.stat().st_size > 0:
+            return candidate
+    return None
+
+
 def resolve_tool_image(tool: dict, theme: str = "default") -> dict:
     branding = normalize_branding(tool)
     candidate = _variant(branding, theme)
@@ -109,6 +122,16 @@ def resolve_tool_image(tool: dict, theme: str = "default") -> dict:
                 "width": candidate.get("width") or 128,
                 "height": candidate.get("height") or 128,
             }
+    local_logo = _catalog_local_logo(branding["tool_slug"])
+    if local_logo:
+        return {
+            "url": _static_url(local_logo),
+            "fallback_url": ensure_local_icon(str(tool.get("name") or "AtlasFind"), branding["tool_slug"]),
+            "status": "verified-local",
+            "is_fallback": False,
+            "width": 128,
+            "height": 128,
+        }
     fallback_url = ensure_local_icon(str(tool.get("name") or "AtlasFind"), branding["tool_slug"])
     return {"url": fallback_url, "fallback_url": fallback_url, "status": branding["logo"].get("status", "missing"), "is_fallback": True, "width": 128, "height": 128}
 
