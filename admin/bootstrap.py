@@ -31,7 +31,7 @@ def bootstrap_admin_from_environment(production, environ=None, database_path=DAT
 
 
 def reset_admin_password_from_environment(production, environ=None, database_path=DATABASE_PATH):
-    """Reset one named admin only when explicitly enabled for recovery."""
+    """Create or recover one named admin when explicitly enabled for recovery."""
     environ = os.environ if environ is None else environ
     if not production or environ.get("ATLASFIND_ADMIN_RESET_ENABLED") != "1":
         return "disabled"
@@ -41,6 +41,8 @@ def reset_admin_password_from_environment(production, environ=None, database_pat
         return "invalid_username"
     if len(password) < 12:
         return "invalid_password"
-    if not reset_admin_password(username, generate_password_hash(password), path=database_path):
-        return "user_not_found"
-    return "reset"
+    password_hash = generate_password_hash(password)
+    if reset_admin_password(username, password_hash, path=database_path):
+        return "reset"
+    create_admin(username, password_hash, path=database_path)
+    return "created"
