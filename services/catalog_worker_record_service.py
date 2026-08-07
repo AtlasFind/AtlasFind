@@ -100,11 +100,19 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
     if not name or not slug or not website.startswith("https://") or len(description) < 20:
         raise ValueError("candidate requires a name, HTTPS source URL and meaningful source description")
 
-    sources = [_source(f"{name} discovery source", website, "official-homepage", checked_at,
-                       ["identity", "website", "description"])]
+    primary_type = "official-repository" if repository_url and repository_url.rstrip("/") == website.rstrip("/") else "official-homepage"
+    primary_claims = ["identity", "website", "description"]
+    if primary_type == "official-repository" and open_source:
+        primary_claims.append("open_source")
+    sources = [_source(f"{name} discovery source", website, primary_type, checked_at, primary_claims)]
     if repository_url.startswith("https://") and repository_url.rstrip("/") != website.rstrip("/"):
         repo_claims = ["identity", "description"] + (["open_source"] if open_source else [])
         sources.append(_source(f"{name} official repository", repository_url, "official-repository", checked_at, repo_claims))
+    readme_url = _clean_text(evidence.get("readme_source_url"))
+    if readme_url.startswith("https://"):
+        claims_from_readme = [name for name, value in (("purpose", purpose), ("features", evidence_features),
+                                                       ("platforms", evidence_platforms), ("pricing", evidence.get("pricing"))) if value]
+        sources.append(_source(f"{name} official documentation", readme_url, "official-documentation", checked_at, claims_from_readme))
 
     claim_review = {
         "identity": _claim("provisionally_supported", [sources[0]["type"]], "A human must confirm that the source belongs to the product."),
@@ -115,7 +123,7 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
         "subcategory": _claim("suggested", [], "Discovery query supplied this subcategory; editorial confirmation is required."),
         "pricing": _claim("provisionally_supported" if evidence.get("pricing") else "missing", ["official-documentation"] if evidence.get("pricing") else [], "README contains an explicit free/open-source statement." if evidence.get("pricing") else "No pricing claim is made until an official pricing source is checked."),
         "platforms": _claim("provisionally_supported" if evidence_platforms else "missing", ["official-documentation"] if evidence_platforms else [], "Platform names were found in an official installation/download section." if evidence_platforms else "No platform claim is made until official downloads or documentation are checked."),
-        "open_source": _claim("provisionally_supported" if open_source else "unknown", ["official-repository"] if open_source else [],
+        "open_source": _claim("provisionally_supported" if open_source and "official-repository" in {source["type"] for source in sources} else "unknown", ["official-repository"] if open_source and "official-repository" in {source["type"] for source in sources} else [],
                               f"Repository reports license {license_id}." if open_source else "A usable license was not confirmed."),
         "avatar": _claim("missing", [], "GitHub preview images are not accepted as an official product avatar."),
     }

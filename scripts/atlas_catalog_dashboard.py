@@ -25,7 +25,8 @@ from services.catalog_worker_review_service import export_readiness, load_review
 CATALOG = ROOT / "data/tools.json"
 QUEUE = ROOT / "data/research/overnight-tool-candidates.json"
 RECORDS = ROOT / "data/research/catalog-worker-records.json"
-WORKER = ROOT / "scripts/atlas_catalog_worker.py"
+WORKER = ROOT / "scripts/catalog_worker_orchestrator.py"
+STOP_FILE = ROOT / "data/research/catalog-worker.stop"
 TEMPLATE = ROOT / "templates/catalog_worker_dashboard.html"
 HOST, PORT = "127.0.0.1", 8765
 PROCESS: subprocess.Popen | None = None
@@ -71,12 +72,16 @@ class Handler(BaseHTTPRequestHandler):
         path = urlparse(self.path).path
         if path == "/api/stop":
             if PROCESS and PROCESS.poll() is None:
-                PROCESS.terminate()
+                STOP_FILE.write_text("stop requested\n", encoding="utf-8")
                 try:
-                    PROCESS.wait(timeout=15)
+                    PROCESS.wait(timeout=45)
                 except subprocess.TimeoutExpired:
-                    PROCESS.kill()
-                    PROCESS.wait(timeout=5)
+                    PROCESS.terminate()
+                    try:
+                        PROCESS.wait(timeout=10)
+                    except subprocess.TimeoutExpired:
+                        PROCESS.kill()
+                        PROCESS.wait(timeout=5)
             try:
                 exported = create_export_package(records_payload()["records"])
                 body = json.dumps({"ok": True, "export": exported}, ensure_ascii=False).encode("utf-8")
@@ -112,7 +117,7 @@ def main() -> None:
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
     if args.start_worker:
-        PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--hours", "0", "--max-candidates", "0", "--min-stars", "250", "--cycle-minutes", "20"], cwd=ROOT)
+        PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--cycle-minutes", "20"], cwd=ROOT)
     server = ThreadingHTTPServer((HOST, PORT), Handler)
     if not args.no_browser and os.environ.get("ATLASFIND_NO_BROWSER") != "1":
         threading.Timer(1.0, lambda: webbrowser.open(f"http://{HOST}:{PORT}/")).start()
