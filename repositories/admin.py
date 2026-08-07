@@ -33,6 +33,16 @@ def admin_user_count(path=DATABASE_PATH):
         return int(connection.execute("SELECT COUNT(*) AS total FROM admin_users").fetchone()["total"])
 
 
+def reset_admin_password(username, password_hash, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        cursor = connection.execute(
+            """UPDATE admin_users SET password_hash=?, is_active=1
+               WHERE lower(username)=lower(?)""",
+            (password_hash, username.strip()),
+        )
+        return cursor.rowcount == 1
+
+
 def record_login_attempt(username, ip_address, successful, path=DATABASE_PATH):
     with transaction(path) as connection:
         connection.execute(

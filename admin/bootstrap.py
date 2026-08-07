@@ -4,7 +4,7 @@ import os
 from werkzeug.security import generate_password_hash
 
 from database import DATABASE_PATH
-from repositories.admin import admin_user_count, create_admin
+from repositories.admin import admin_user_count, create_admin, reset_admin_password
 
 
 def bootstrap_admin_from_environment(production, environ=None, database_path=DATABASE_PATH):
@@ -28,3 +28,19 @@ def bootstrap_admin_from_environment(production, environ=None, database_path=DAT
 
     create_admin(username, generate_password_hash(password), path=database_path)
     return "created"
+
+
+def reset_admin_password_from_environment(production, environ=None, database_path=DATABASE_PATH):
+    """Reset one named admin only when explicitly enabled for recovery."""
+    environ = os.environ if environ is None else environ
+    if not production or environ.get("ATLASFIND_ADMIN_RESET_ENABLED") != "1":
+        return "disabled"
+    username = environ.get("ATLASFIND_ADMIN_RESET_USERNAME", "").strip()
+    password = environ.get("ATLASFIND_ADMIN_RESET_PASSWORD", "")
+    if not username or len(username) > 120:
+        return "invalid_username"
+    if len(password) < 12:
+        return "invalid_password"
+    if not reset_admin_password(username, generate_password_hash(password), path=database_path):
+        return "user_not_found"
+    return "reset"

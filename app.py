@@ -20,7 +20,7 @@ from repositories.admin import record_visit
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
-from admin.bootstrap import bootstrap_admin_from_environment
+from admin.bootstrap import bootstrap_admin_from_environment, reset_admin_password_from_environment
 from security import (
     add_security_headers, client_ip, configure_logging, configure_security, enforce_api_rate_limit,
     enforce_safe_method, new_request_id, validate_request_host,
@@ -49,6 +49,9 @@ if bootstrap_status != "disabled":
     # Never log credentials; this is solely a deployment diagnostic for hosts
     # that do not provide an interactive shell on their free tier.
     app.logger.warning("production_admin_bootstrap_status=%s", bootstrap_status)
+password_reset_status = reset_admin_password_from_environment(app.config["PRODUCTION"])
+if password_reset_status != "disabled":
+    app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
 APP_VERSION = "1.0.4"
