@@ -4,105 +4,805 @@
   "policy": "Publish only after official-source, logo, pricing, platform and category verification.",
   "generated_at": "2026-08-07",
   "candidates": [
-    {"slug":"morgen","name":"Morgen","category":"Productivity","subcategory":"Calendar and Tasks","official_url":"https://www.morgen.so/","verification_status":"official_source_confirmed"},
-    {"slug":"routine","name":"Routine","category":"Productivity","subcategory":"Task Management","official_url":"https://www.routine.co/","verification_status":"official_source_confirmed"},
-    {"slug":"superlist","name":"Superlist","category":"Productivity","subcategory":"Task Management","official_url":"https://www.superlist.com/","verification_status":"official_source_confirmed"},
-    {"slug":"twos","name":"Twos","category":"Productivity","subcategory":"Notes and Tasks","official_url":"https://www.twosapp.com/","verification_status":"official_source_confirmed"},
-    {"slug":"structured","name":"Structured","category":"Productivity","subcategory":"Daily Planner","official_url":"https://structured.app/","verification_status":"official_source_confirmed"},
-    {"slug":"reclaim-ai","name":"Reclaim AI","category":"Productivity","subcategory":"Calendar Automation","official_url":"https://reclaim.ai/","verification_status":"official_source_confirmed"},
-    {"slug":"timeular","name":"Timeular","category":"Productivity","subcategory":"Time Tracking","official_url":"https://timeular.com/","verification_status":"official_source_confirmed"},
-    {"slug":"amplenote","name":"Amplenote","category":"Productivity","subcategory":"Notes and Tasks","official_url":"https://www.amplenote.com/","verification_status":"official_source_confirmed"},
-    {"slug":"dialpad","name":"Dialpad","category":"Communication","subcategory":"Business Communication","official_url":"https://www.dialpad.com/","verification_status":"official_source_confirmed"},
-    {"slug":"ringcentral","name":"RingCentral","category":"Communication","subcategory":"Business Communication","official_url":"https://www.ringcentral.com/","verification_status":"official_source_confirmed"},
-    {"slug":"chanty","name":"Chanty","category":"Communication","subcategory":"Team Chat","official_url":"https://www.chanty.com/","verification_status":"official_source_confirmed"},
-    {"slug":"udacity","name":"Udacity","category":"Education","subcategory":"Online Courses","official_url":"https://www.udacity.com/","verification_status":"official_source_confirmed"},
-    {"slug":"masterclass","name":"MasterClass","category":"Education","subcategory":"Online Courses","official_url":"https://www.masterclass.com/","verification_status":"official_source_confirmed"},
-    {"slug":"quickbooks-online","name":"QuickBooks Online","category":"Finance and Business","subcategory":"Accounting","official_url":"https://quickbooks.intuit.com/online/","verification_status":"official_source_confirmed"},
-    {"slug":"paddle","name":"Paddle","category":"Finance and Business","subcategory":"Payments and Billing","official_url":"https://www.paddle.com/","verification_status":"official_source_confirmed"},
-    {"slug":"chargebee","name":"Chargebee","category":"Finance and Business","subcategory":"Subscription Billing","official_url":"https://www.chargebee.com/","verification_status":"official_source_confirmed"},
-    {"slug":"mercury","name":"Mercury","category":"Finance and Business","subcategory":"Business Banking"},
-    {"slug":"plausible-analytics","name":"Plausible Analytics","category":"Marketing and SEO","subcategory":"Web Analytics"},
-    {"slug":"socialbee","name":"SocialBee","category":"Marketing and SEO","subcategory":"Social Media Management"},
-    {"slug":"metricool","name":"Metricool","category":"Marketing and SEO","subcategory":"Social Media Analytics"},
-    {"slug":"raindrop-io","name":"Raindrop.io","category":"Productivity","subcategory":"Bookmark Management"},
-    {"slug":"wallabag","name":"Wallabag","category":"Productivity","subcategory":"Read It Later"},
-    {"slug":"linkwarden","name":"Linkwarden","category":"Productivity","subcategory":"Bookmark Management"},
-    {"slug":"karakeep","name":"Karakeep","category":"Productivity","subcategory":"Bookmark Management"},
-    {"slug":"readwise","name":"Readwise","category":"Productivity","subcategory":"Reading and Knowledge"},
-    {"slug":"mendeley","name":"Mendeley","category":"Education","subcategory":"Reference Management"},
-    {"slug":"endnote","name":"EndNote","category":"Education","subcategory":"Reference Management"},
-    {"slug":"paperpile","name":"Paperpile","category":"Education","subcategory":"Reference Management"},
-    {"slug":"descript","name":"Descript","category":"Video and Animation","subcategory":"Audio and Video Editing"},
-    {"slug":"riverside","name":"Riverside","category":"Video and Animation","subcategory":"Remote Recording"},
-    {"slug":"spline","name":"Spline","category":"Design and Graphics","subcategory":"3D Design"},
-    {"slug":"podman-desktop","name":"Podman Desktop","category":"Development","subcategory":"Containers"},
-    {"slug":"rancher-desktop","name":"Rancher Desktop","category":"Development","subcategory":"Containers"},
-    {"slug":"lazygit","name":"Lazygit","category":"Development","subcategory":"Git Clients"},
-    {"slug":"warp","name":"Warp","category":"Development","subcategory":"Terminals"},
-    {"slug":"wezterm","name":"WezTerm","category":"Development","subcategory":"Terminals"},
-    {"slug":"tabby","name":"Tabby","category":"Development","subcategory":"Terminals"},
-    {"slug":"lapce","name":"Lapce","category":"Development","subcategory":"Code Editors"},
-    {"slug":"beekeeper-studio","name":"Beekeeper Studio","category":"Development","subcategory":"Database Tools"},
-    {"slug":"1password","name":"1Password","category":"Cybersecurity","subcategory":"Password Managers"},
-    {"slug":"ente-auth","name":"Ente Auth","category":"Cybersecurity","subcategory":"Authenticators"},
-    {"slug":"authy","name":"Authy","category":"Cybersecurity","subcategory":"Authenticators"},
-    {"slug":"portmaster","name":"Portmaster","category":"Cybersecurity","subcategory":"Network Privacy"},
-    {"slug":"simplewall","name":"simplewall","category":"Cybersecurity","subcategory":"Firewalls"},
-    {"slug":"qubes-os","name":"Qubes OS","category":"Cybersecurity","subcategory":"Secure Operating Systems"},
-    {"slug":"fan-control","name":"Fan Control","category":"System Utilities","subcategory":"Hardware Monitoring"},
-    {"slug":"winaero-tweaker","name":"Winaero Tweaker","category":"System Utilities","subcategory":"System Customization"},
-    {"slug":"scrcpy","name":"scrcpy","category":"System Utilities","subcategory":"Device Management"},
-    {"slug":"prismlauncher","name":"Prism Launcher","category":"Gaming and Entertainment","subcategory":"Game Launchers"},
-    {"slug":"navidrome","name":"Navidrome","category":"Audio and Music","subcategory":"Music Servers"},
-    {"slug":"finamp","name":"Finamp","category":"Audio and Music","subcategory":"Music Clients"},
-    {"slug":"render","name":"Render","category":"Web and Hosting","subcategory":"Application Hosting"},
-    {"slug":"coolify","name":"Coolify","category":"Web and Hosting","subcategory":"Self Hosted PaaS"},
-    {"slug":"caprover","name":"CapRover","category":"Web and Hosting","subcategory":"Self Hosted PaaS"},
-    {"slug":"plesk","name":"Plesk","category":"Web and Hosting","subcategory":"Hosting Control Panels"},
-    {"slug":"cyberpanel","name":"CyberPanel","category":"Web and Hosting","subcategory":"Hosting Control Panels"},
-    {"slug":"hestia-control-panel","name":"HestiaCP","category":"Web and Hosting","subcategory":"Hosting Control Panels"},
-    {"slug":"bruno","name":"Bruno","category":"Development","subcategory":"API Clients"},
-    {"slug":"hoppscotch","name":"Hoppscotch","category":"Development","subcategory":"API Clients"},
-    {"slug":"yaak","name":"Yaak","category":"Development","subcategory":"API Clients"},
-    {"slug":"helix-editor","name":"Helix","category":"Development","subcategory":"Code Editors"},
-    {"slug":"vscodium","name":"VSCodium","category":"Development","subcategory":"Code Editors"},
-    {"slug":"tableplus","name":"TablePlus","category":"Development","subcategory":"Database Tools"},
-    {"slug":"datagrip","name":"DataGrip","category":"Development","subcategory":"Database Tools"},
-    {"slug":"pgadmin","name":"pgAdmin","category":"Development","subcategory":"Database Tools"},
-    {"slug":"mongodb-compass","name":"MongoDB Compass","category":"Development","subcategory":"Database Tools"},
-    {"slug":"redisinsight","name":"RedisInsight","category":"Development","subcategory":"Database Tools"},
-    {"slug":"dbgate","name":"DbGate","category":"Development","subcategory":"Database Tools"},
-    {"slug":"affine","name":"AFFiNE","category":"Productivity","subcategory":"Knowledge Management"},
-    {"slug":"appflowy","name":"AppFlowy","category":"Productivity","subcategory":"Knowledge Management"},
-    {"slug":"siyuan","name":"SiYuan","category":"Productivity","subcategory":"Knowledge Management"},
-    {"slug":"triliumnext-notes","name":"TriliumNext Notes","category":"Productivity","subcategory":"Knowledge Management"},
-    {"slug":"anytype","name":"Anytype","category":"Productivity","subcategory":"Knowledge Management"},
-    {"slug":"audiomass","name":"AudioMass","category":"Audio and Music","subcategory":"Audio Editors"},
-    {"slug":"getresponse","name":"GetResponse","category":"Marketing and SEO","subcategory":"Email Marketing"},
-    {"slug":"beehiiv","name":"beehiiv","category":"Marketing and SEO","subcategory":"Newsletters"},
-    {"slug":"mumble","name":"Mumble","category":"Communication","subcategory":"Voice Chat"},
-    {"slug":"teamspeak","name":"TeamSpeak","category":"Communication","subcategory":"Voice Chat"},
-    {"slug":"revolt","name":"Revolt","category":"Communication","subcategory":"Community Chat"},
-    {"slug":"session","name":"Session","category":"Communication","subcategory":"Private Messaging"},
-    {"slug":"wire","name":"Wire","category":"Communication","subcategory":"Secure Messaging"},
-    {"slug":"threema","name":"Threema","category":"Communication","subcategory":"Secure Messaging"},
-    {"slug":"gamescope","name":"Gamescope","category":"Gaming and Entertainment","subcategory":"Gaming Utilities"},
-    {"slug":"bottles","name":"Bottles","category":"Gaming and Entertainment","subcategory":"Compatibility Tools"},
-    {"slug":"dokploy","name":"Dokploy","category":"Web and Hosting","subcategory":"Self Hosted PaaS"},
-    {"slug":"easypanel","name":"Easypanel","category":"Web and Hosting","subcategory":"Server Management"},
-    {"slug":"cloudron","name":"Cloudron","category":"Web and Hosting","subcategory":"Server Management"},
-    {"slug":"yunohost","name":"YunoHost","category":"Web and Hosting","subcategory":"Server Management"},
-    {"slug":"dokku","name":"Dokku","category":"Web and Hosting","subcategory":"Self Hosted PaaS"},
-    {"slug":"mullvad-browser","name":"Mullvad Browser","category":"Browsers and Internet","subcategory":"Privacy Browsers"},
-    {"slug":"thorium-browser","name":"Thorium Browser","category":"Browsers and Internet","subcategory":"Web Browsers"},
-    {"slug":"cromite","name":"Cromite","category":"Browsers and Internet","subcategory":"Privacy Browsers"},
-    {"slug":"cryptomator","name":"Cryptomator","category":"Cybersecurity","subcategory":"File Encryption"},
-    {"slug":"picocrypt","name":"Picocrypt","category":"Cybersecurity","subcategory":"File Encryption"},
-    {"slug":"age","name":"age","category":"Cybersecurity","subcategory":"File Encryption"},
-    {"slug":"ente-photos","name":"Ente Photos","category":"Cloud and Storage","subcategory":"Photo Backup"},
-    {"slug":"immich","name":"Immich","category":"Cloud and Storage","subcategory":"Photo Backup"},
-    {"slug":"photoprism","name":"PhotoPrism","category":"Cloud and Storage","subcategory":"Photo Management"},
-    {"slug":"librephotos","name":"LibrePhotos","category":"Cloud and Storage","subcategory":"Photo Management"},
-    {"slug":"actual-budget","name":"Actual Budget","category":"Finance and Business","subcategory":"Personal Finance"}
+    {
+      "slug": "morgen",
+      "name": "Morgen",
+      "category": "Productivity",
+      "subcategory": "Calendar and Tasks",
+      "official_url": "https://www.morgen.so/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "routine",
+      "name": "Routine",
+      "category": "Productivity",
+      "subcategory": "Task Management",
+      "official_url": "https://www.routine.co/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "superlist",
+      "name": "Superlist",
+      "category": "Productivity",
+      "subcategory": "Task Management",
+      "official_url": "https://www.superlist.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "twos",
+      "name": "Twos",
+      "category": "Productivity",
+      "subcategory": "Notes and Tasks",
+      "official_url": "https://www.twosapp.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "structured",
+      "name": "Structured",
+      "category": "Productivity",
+      "subcategory": "Daily Planner",
+      "official_url": "https://structured.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "reclaim-ai",
+      "name": "Reclaim AI",
+      "category": "Productivity",
+      "subcategory": "Calendar Automation",
+      "official_url": "https://reclaim.ai/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "timeular",
+      "name": "Timeular",
+      "category": "Productivity",
+      "subcategory": "Time Tracking",
+      "official_url": "https://timeular.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "amplenote",
+      "name": "Amplenote",
+      "category": "Productivity",
+      "subcategory": "Notes and Tasks",
+      "official_url": "https://www.amplenote.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "dialpad",
+      "name": "Dialpad",
+      "category": "Communication",
+      "subcategory": "Business Communication",
+      "official_url": "https://www.dialpad.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "ringcentral",
+      "name": "RingCentral",
+      "category": "Communication",
+      "subcategory": "Business Communication",
+      "official_url": "https://www.ringcentral.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "chanty",
+      "name": "Chanty",
+      "category": "Communication",
+      "subcategory": "Team Chat",
+      "official_url": "https://www.chanty.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "udacity",
+      "name": "Udacity",
+      "category": "Education",
+      "subcategory": "Online Courses",
+      "official_url": "https://www.udacity.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "masterclass",
+      "name": "MasterClass",
+      "category": "Education",
+      "subcategory": "Online Courses",
+      "official_url": "https://www.masterclass.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "quickbooks-online",
+      "name": "QuickBooks Online",
+      "category": "Finance and Business",
+      "subcategory": "Accounting",
+      "official_url": "https://quickbooks.intuit.com/online/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "paddle",
+      "name": "Paddle",
+      "category": "Finance and Business",
+      "subcategory": "Payments and Billing",
+      "official_url": "https://www.paddle.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "chargebee",
+      "name": "Chargebee",
+      "category": "Finance and Business",
+      "subcategory": "Subscription Billing",
+      "official_url": "https://www.chargebee.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "mercury",
+      "name": "Mercury",
+      "category": "Finance and Business",
+      "subcategory": "Business Banking",
+      "official_url": "https://mercury.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "plausible-analytics",
+      "name": "Plausible Analytics",
+      "category": "Marketing and SEO",
+      "subcategory": "Web Analytics",
+      "official_url": "https://plausible.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "socialbee",
+      "name": "SocialBee",
+      "category": "Marketing and SEO",
+      "subcategory": "Social Media Management",
+      "official_url": "https://socialbee.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "metricool",
+      "name": "Metricool",
+      "category": "Marketing and SEO",
+      "subcategory": "Social Media Analytics",
+      "official_url": "https://metricool.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "raindrop-io",
+      "name": "Raindrop.io",
+      "category": "Productivity",
+      "subcategory": "Bookmark Management",
+      "official_url": "https://raindrop.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "wallabag",
+      "name": "Wallabag",
+      "category": "Productivity",
+      "subcategory": "Read It Later",
+      "official_url": "https://wallabag.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "linkwarden",
+      "name": "Linkwarden",
+      "category": "Productivity",
+      "subcategory": "Bookmark Management",
+      "official_url": "https://linkwarden.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "karakeep",
+      "name": "Karakeep",
+      "category": "Productivity",
+      "subcategory": "Bookmark Management",
+      "official_url": "https://karakeep.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "readwise",
+      "name": "Readwise",
+      "category": "Productivity",
+      "subcategory": "Reading and Knowledge",
+      "official_url": "https://readwise.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "mendeley",
+      "name": "Mendeley",
+      "category": "Education",
+      "subcategory": "Reference Management",
+      "official_url": "https://www.mendeley.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "endnote",
+      "name": "EndNote",
+      "category": "Education",
+      "subcategory": "Reference Management",
+      "official_url": "https://endnote.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "paperpile",
+      "name": "Paperpile",
+      "category": "Education",
+      "subcategory": "Reference Management",
+      "official_url": "https://paperpile.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "descript",
+      "name": "Descript",
+      "category": "Video and Animation",
+      "subcategory": "Audio and Video Editing",
+      "official_url": "https://www.descript.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "riverside",
+      "name": "Riverside",
+      "category": "Video and Animation",
+      "subcategory": "Remote Recording",
+      "official_url": "https://riverside.fm/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "spline",
+      "name": "Spline",
+      "category": "Design and Graphics",
+      "subcategory": "3D Design",
+      "official_url": "https://spline.design/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "podman-desktop",
+      "name": "Podman Desktop",
+      "category": "Development",
+      "subcategory": "Containers",
+      "official_url": "https://podman-desktop.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "rancher-desktop",
+      "name": "Rancher Desktop",
+      "category": "Development",
+      "subcategory": "Containers",
+      "official_url": "https://rancherdesktop.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "lazygit",
+      "name": "Lazygit",
+      "category": "Development",
+      "subcategory": "Git Clients",
+      "official_url": "https://github.com/jesseduffield/lazygit",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "warp",
+      "name": "Warp",
+      "category": "Development",
+      "subcategory": "Terminals",
+      "official_url": "https://www.warp.dev/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "wezterm",
+      "name": "WezTerm",
+      "category": "Development",
+      "subcategory": "Terminals",
+      "official_url": "https://wezterm.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "tabby",
+      "name": "Tabby",
+      "category": "Development",
+      "subcategory": "Terminals",
+      "official_url": "https://tabby.sh/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "lapce",
+      "name": "Lapce",
+      "category": "Development",
+      "subcategory": "Code Editors",
+      "official_url": "https://lapce.dev/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "beekeeper-studio",
+      "name": "Beekeeper Studio",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://www.beekeeperstudio.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "1password",
+      "name": "1Password",
+      "category": "Cybersecurity",
+      "subcategory": "Password Managers",
+      "official_url": "https://1password.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "ente-auth",
+      "name": "Ente Auth",
+      "category": "Cybersecurity",
+      "subcategory": "Authenticators",
+      "official_url": "https://ente.io/auth/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "authy",
+      "name": "Authy",
+      "category": "Cybersecurity",
+      "subcategory": "Authenticators",
+      "official_url": "https://www.authy.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "portmaster",
+      "name": "Portmaster",
+      "category": "Cybersecurity",
+      "subcategory": "Network Privacy",
+      "official_url": "https://safing.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "simplewall",
+      "name": "simplewall",
+      "category": "Cybersecurity",
+      "subcategory": "Firewalls",
+      "official_url": "https://www.henrypp.org/product/simplewall",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "qubes-os",
+      "name": "Qubes OS",
+      "category": "Cybersecurity",
+      "subcategory": "Secure Operating Systems",
+      "official_url": "https://www.qubes-os.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "fan-control",
+      "name": "Fan Control",
+      "category": "System Utilities",
+      "subcategory": "Hardware Monitoring",
+      "official_url": "https://github.com/Rem0o/FanControl.Releases",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "winaero-tweaker",
+      "name": "Winaero Tweaker",
+      "category": "System Utilities",
+      "subcategory": "System Customization",
+      "official_url": "https://winaero.com/winaero-tweaker/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "scrcpy",
+      "name": "scrcpy",
+      "category": "System Utilities",
+      "subcategory": "Device Management",
+      "official_url": "https://github.com/Genymobile/scrcpy",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "prismlauncher",
+      "name": "Prism Launcher",
+      "category": "Gaming and Entertainment",
+      "subcategory": "Game Launchers",
+      "official_url": "https://prismlauncher.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "navidrome",
+      "name": "Navidrome",
+      "category": "Audio and Music",
+      "subcategory": "Music Servers",
+      "official_url": "https://www.navidrome.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "finamp",
+      "name": "Finamp",
+      "category": "Audio and Music",
+      "subcategory": "Music Clients",
+      "official_url": "https://github.com/jmshrv/finamp",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "render",
+      "name": "Render",
+      "category": "Web and Hosting",
+      "subcategory": "Application Hosting",
+      "official_url": "https://render.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "coolify",
+      "name": "Coolify",
+      "category": "Web and Hosting",
+      "subcategory": "Self Hosted PaaS",
+      "official_url": "https://coolify.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "caprover",
+      "name": "CapRover",
+      "category": "Web and Hosting",
+      "subcategory": "Self Hosted PaaS",
+      "official_url": "https://caprover.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "plesk",
+      "name": "Plesk",
+      "category": "Web and Hosting",
+      "subcategory": "Hosting Control Panels",
+      "official_url": "https://www.plesk.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "cyberpanel",
+      "name": "CyberPanel",
+      "category": "Web and Hosting",
+      "subcategory": "Hosting Control Panels",
+      "official_url": "https://cyberpanel.net/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "hestia-control-panel",
+      "name": "HestiaCP",
+      "category": "Web and Hosting",
+      "subcategory": "Hosting Control Panels",
+      "official_url": "https://hestiacp.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "bruno",
+      "name": "Bruno",
+      "category": "Development",
+      "subcategory": "API Clients",
+      "official_url": "https://www.usebruno.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "hoppscotch",
+      "name": "Hoppscotch",
+      "category": "Development",
+      "subcategory": "API Clients",
+      "official_url": "https://hoppscotch.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "yaak",
+      "name": "Yaak",
+      "category": "Development",
+      "subcategory": "API Clients",
+      "official_url": "https://yaak.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "helix-editor",
+      "name": "Helix",
+      "category": "Development",
+      "subcategory": "Code Editors",
+      "official_url": "https://helix-editor.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "vscodium",
+      "name": "VSCodium",
+      "category": "Development",
+      "subcategory": "Code Editors",
+      "official_url": "https://vscodium.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "tableplus",
+      "name": "TablePlus",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://tableplus.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "datagrip",
+      "name": "DataGrip",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://www.jetbrains.com/datagrip/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "pgadmin",
+      "name": "pgAdmin",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://www.pgadmin.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "mongodb-compass",
+      "name": "MongoDB Compass",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://www.mongodb.com/products/tools/compass",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "redisinsight",
+      "name": "RedisInsight",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://redis.io/insight/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "dbgate",
+      "name": "DbGate",
+      "category": "Development",
+      "subcategory": "Database Tools",
+      "official_url": "https://www.dbgate.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "affine",
+      "name": "AFFiNE",
+      "category": "Productivity",
+      "subcategory": "Knowledge Management",
+      "official_url": "https://affine.pro/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "appflowy",
+      "name": "AppFlowy",
+      "category": "Productivity",
+      "subcategory": "Knowledge Management",
+      "official_url": "https://appflowy.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "siyuan",
+      "name": "SiYuan",
+      "category": "Productivity",
+      "subcategory": "Knowledge Management",
+      "official_url": "https://b3log.org/siyuan/en/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "triliumnext-notes",
+      "name": "TriliumNext Notes",
+      "category": "Productivity",
+      "subcategory": "Knowledge Management",
+      "official_url": "https://triliumnext.github.io/Docs/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "anytype",
+      "name": "Anytype",
+      "category": "Productivity",
+      "subcategory": "Knowledge Management",
+      "official_url": "https://anytype.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "audiomass",
+      "name": "AudioMass",
+      "category": "Audio and Music",
+      "subcategory": "Audio Editors",
+      "official_url": "https://audiomass.co/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "getresponse",
+      "name": "GetResponse",
+      "category": "Marketing and SEO",
+      "subcategory": "Email Marketing",
+      "official_url": "https://www.getresponse.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "beehiiv",
+      "name": "beehiiv",
+      "category": "Marketing and SEO",
+      "subcategory": "Newsletters",
+      "official_url": "https://www.beehiiv.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "mumble",
+      "name": "Mumble",
+      "category": "Communication",
+      "subcategory": "Voice Chat",
+      "official_url": "https://www.mumble.info/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "teamspeak",
+      "name": "TeamSpeak",
+      "category": "Communication",
+      "subcategory": "Voice Chat",
+      "official_url": "https://www.teamspeak.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "revolt",
+      "name": "Revolt",
+      "category": "Communication",
+      "subcategory": "Community Chat",
+      "official_url": "https://revolt.chat/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "session",
+      "name": "Session",
+      "category": "Communication",
+      "subcategory": "Private Messaging",
+      "official_url": "https://getsession.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "wire",
+      "name": "Wire",
+      "category": "Communication",
+      "subcategory": "Secure Messaging",
+      "official_url": "https://wire.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "threema",
+      "name": "Threema",
+      "category": "Communication",
+      "subcategory": "Secure Messaging",
+      "official_url": "https://threema.ch/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "gamescope",
+      "name": "Gamescope",
+      "category": "Gaming and Entertainment",
+      "subcategory": "Gaming Utilities",
+      "official_url": "https://github.com/ValveSoftware/gamescope",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "bottles",
+      "name": "Bottles",
+      "category": "Gaming and Entertainment",
+      "subcategory": "Compatibility Tools",
+      "official_url": "https://usebottles.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "dokploy",
+      "name": "Dokploy",
+      "category": "Web and Hosting",
+      "subcategory": "Self Hosted PaaS",
+      "official_url": "https://dokploy.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "easypanel",
+      "name": "Easypanel",
+      "category": "Web and Hosting",
+      "subcategory": "Server Management",
+      "official_url": "https://easypanel.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "cloudron",
+      "name": "Cloudron",
+      "category": "Web and Hosting",
+      "subcategory": "Server Management",
+      "official_url": "https://www.cloudron.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "yunohost",
+      "name": "YunoHost",
+      "category": "Web and Hosting",
+      "subcategory": "Server Management",
+      "official_url": "https://yunohost.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "dokku",
+      "name": "Dokku",
+      "category": "Web and Hosting",
+      "subcategory": "Self Hosted PaaS",
+      "official_url": "https://dokku.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "mullvad-browser",
+      "name": "Mullvad Browser",
+      "category": "Browsers and Internet",
+      "subcategory": "Privacy Browsers",
+      "official_url": "https://mullvad.net/en/browser",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "thorium-browser",
+      "name": "Thorium Browser",
+      "category": "Browsers and Internet",
+      "subcategory": "Web Browsers",
+      "official_url": "https://thorium.rocks/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "cromite",
+      "name": "Cromite",
+      "category": "Browsers and Internet",
+      "subcategory": "Privacy Browsers",
+      "official_url": "https://github.com/uazo/cromite",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "cryptomator",
+      "name": "Cryptomator",
+      "category": "Cybersecurity",
+      "subcategory": "File Encryption",
+      "official_url": "https://cryptomator.org/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "dangerzone",
+      "name": "Dangerzone",
+      "category": "Cybersecurity",
+      "subcategory": "Document Security",
+      "official_url": "https://dangerzone.rocks/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "age",
+      "name": "age",
+      "category": "Cybersecurity",
+      "subcategory": "File Encryption",
+      "official_url": "https://github.com/FiloSottile/age",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "ente-photos",
+      "name": "Ente Photos",
+      "category": "Cloud and Storage",
+      "subcategory": "Photo Backup",
+      "official_url": "https://ente.io/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "immich",
+      "name": "Immich",
+      "category": "Cloud and Storage",
+      "subcategory": "Photo Backup",
+      "official_url": "https://immich.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "photoprism",
+      "name": "PhotoPrism",
+      "category": "Cloud and Storage",
+      "subcategory": "Photo Management",
+      "official_url": "https://www.photoprism.app/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "librephotos",
+      "name": "LibrePhotos",
+      "category": "Cloud and Storage",
+      "subcategory": "Photo Management",
+      "official_url": "https://docs.librephotos.com/",
+      "verification_status": "official_source_confirmed"
+    },
+    {
+      "slug": "actual-budget",
+      "name": "Actual Budget",
+      "category": "Finance and Business",
+      "subcategory": "Personal Finance",
+      "official_url": "https://actualbudget.org/",
+      "verification_status": "official_source_confirmed"
+    }
   ]
 }
