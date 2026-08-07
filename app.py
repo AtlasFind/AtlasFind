@@ -1088,6 +1088,9 @@ def home(locale=None):
     ranked_tools = [item for item in ranked_tools if tool_matches_filters(item["tool"], filters)]
     tools = [item["tool"] for item in ranked_tools]
     active_filters = build_active_filters(search_query, filters)
+    if not search_query and not active_filters:
+        ranked_tools = ranked_tools[:6]
+        tools = tools[:6]
     alternatives = alternative_queries(
         search_query,
         search_meta.get("corrected_query", search_query),

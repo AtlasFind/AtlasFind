@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "home" %}
-{% block title %}AtlasFind | Find Better Software
-<section class="section discovery-hub" id="discovery-hub"><div class="section-container"><div class="section-heading"><span class="eyebrow">{{ t("home.collections.eyebrow") }}</span><h2>{{ t("home.collections.title") }}</h2></div><div class="collection-grid">{% for slug, info in collections.items() %}<a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}"><h3>{{ info.name }}</h3><p>{{ info.description }}</p><span>{{ t("actions.explore") }}</span></a>{% endfor %}</div></div></section>
-{% endblock %}
+{% block title %}AtlasFind | Find Better Software{% endblock %}
 {% block content %}
 <section class="hero" id="discover">
 
@@ -134,68 +132,19 @@
                 <div class="visual-orbit orbit-one"></div>
                 <div class="visual-orbit orbit-two"></div>
 
-                <div class="floating-card floating-card-one">
-
-                    <div class="floating-logo purple">
-                        C
+                {% for tool in popular_tools[:4] %}
+                <a class="floating-card floating-card-{{ ['one', 'two', 'three', 'four'][loop.index0] }}" href="{{ url_for('tool_detail', slug=tool.slug) }}">
+                    <div class="floating-logo tool-icon-shell">
+                        <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="" width="39" height="39" data-atlas-icon>
+                        <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
                     </div>
-
                     <div>
-                        <strong>ChatGPT</strong>
-                        <span>{{ t("home.card.ai_assistant") }}</span>
+                        <strong>{{ tool.name }}</strong>
+                        <span>{{ tool.category }}</span>
                     </div>
-
-                    <small>4.9</small>
-
-                </div>
-
-
-                <div class="floating-card floating-card-two">
-
-                    <div class="floating-logo blue">
-                        P
-                    </div>
-
-                    <div>
-                        <strong>Photoshop</strong>
-                        <span>{{ t("home.card.photo_editing") }}</span>
-                    </div>
-
-                    <small>4.8</small>
-
-                </div>
-
-
-                <div class="floating-card floating-card-three">
-
-                    <div class="floating-logo green">
-                        C
-                    </div>
-
-                    <div>
-                        <strong>Cursor</strong>
-                        <span>{{ t("home.card.development") }}</span>
-                    </div>
-
-                    <small>4.9</small>
-
-                </div>
-
-
-                <div class="floating-card floating-card-four">
-
-                    <div class="floating-logo orange">
-                        F
-                    </div>
-
-                    <div>
-                        <strong>Figma</strong>
-                        <span>{{ t("home.card.design") }}</span>
-                    </div>
-
-                    <small>4.7</small>
-
-                </div>
+                    <small aria-hidden="true">→</small>
+                </a>
+                {% endfor %}
 
 
                 <div class="visual-center">
@@ -214,6 +163,26 @@
 
             </div>
 
+        </section>
+
+        <section class="section discovery-hub" id="discovery-hub">
+            <div class="section-container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">{{ t("home.collections.eyebrow") }}</span>
+                        <h2>{{ t("home.collections.title") }}</h2>
+                    </div>
+                </div>
+                <div class="collection-grid">
+                    {% for slug, info in collections.items() %}
+                    <a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}">
+                        <h3>{{ info.name }}</h3>
+                        <p>{{ info.description }}</p>
+                        <span>{{ t("actions.explore") }} →</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
 
 
@@ -289,7 +258,7 @@
                     </p>
                 </div>
 
-                <a href="#" class="view-all">
+                <a href="{{ url_for('tools_directory') }}" class="view-all">
                     {{ t("actions.view_all_tools") }}
                     <span>→</span>
                 </a>
