@@ -56,6 +56,7 @@
                 <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>{{ t("nav.guides") }}</a>
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>{{ t("nav.compare") }}</a>
                 <a class="nav-utility-link nav-utility-start" href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
+                <a class="nav-utility-link" href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('contact') }}" {% if active_page == 'contact' %}aria-current="page"{% endif %}>{{ t("footer.contact") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
@@ -95,6 +96,7 @@
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
+            <a href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
             <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
             <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
             <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>

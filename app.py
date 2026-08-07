@@ -60,6 +60,24 @@ CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").str
 
 
 PUBLIC_PAGES = {
+    "collaborate": {
+        "en": {"title": "Collaborate with AtlasFind", "description": "Partnership, creator and editorial collaboration opportunities with AtlasFind.", "sections": [
+            ("A focused software discovery platform", "AtlasFind is a bilingual software discovery and comparison platform covering 600 tools across 18 main categories and 159 subcategories. It helps visitors narrow broad software choices into relevant categories and meaningful comparisons."),
+            ("Who we can work with", "We are open to hearing from creators, educators, software communities, independent developers, technology publications and brands whose work is relevant to software discovery, productivity and digital tools."),
+            ("Possible collaboration formats", "Relevant formats may include an AtlasFind introduction, educational software guides, category-focused content, tool discovery campaigns, community feedback projects and clearly disclosed sponsored collaborations."),
+            ("Editorial independence", "Payment or partnership does not guarantee a positive ranking, rating or recommendation. Sponsored activity must be clearly disclosed, and factual product claims should be supported by official sources."),
+            ("Current project stage", "AtlasFind is a continuously developing public-beta project. Its catalog, interface, comparison rules and data quality processes are actively improved as the platform prepares for wider audiences."),
+            ("Start a conversation", "Send a short introduction, your channel or project link, audience focus and collaboration idea to atlasfindd@gmail.com. We can then discuss whether the idea is relevant for both audiences."),
+        ]},
+        "tr": {"title": "AtlasFind ile İş Birliği", "description": "AtlasFind ile içerik üreticisi, yayın ve marka iş birliği fırsatları.", "sections": [
+            ("Odaklı bir yazılım keşif platformu", "AtlasFind; 18 ana kategori ve 159 alt kategoride 600 aracı kapsayan, Türkçe ve İngilizce çalışan bir yazılım keşif ve karşılaştırma platformudur. Ziyaretçilerin geniş yazılım seçeneklerini ilgili kategorilere ve anlamlı karşılaştırmalara indirmesine yardımcı olur."),
+            ("Kimlerle çalışabiliriz?", "İçerik üreticileri, eğitimciler, yazılım toplulukları, bağımsız geliştiriciler, teknoloji yayınları ve yazılım keşfi, üretkenlik veya dijital araçlarla ilgili markalardan gelecek fikirleri değerlendirmeye açığız."),
+            ("İş birliği biçimleri", "AtlasFind tanıtımı, eğitici yazılım rehberleri, kategori odaklı içerikler, araç keşif kampanyaları, topluluk geri bildirim projeleri ve açıkça belirtilen sponsorlu çalışmalar değerlendirilebilir."),
+            ("Editoryal bağımsızlık", "Ödeme veya iş birliği; olumlu sıralama, puan ya da öneri garantisi vermez. Sponsorlu çalışmalar açıkça belirtilir ve ürünle ilgili önemli iddialar resmî kaynaklarla desteklenmelidir."),
+            ("Projenin mevcut aşaması", "AtlasFind sürekli geliştirilen bir public beta projesidir. Daha geniş kitlelere hazırlanırken katalog, arayüz, karşılaştırma kuralları ve veri kalitesi süreçleri aktif biçimde iyileştirilmektedir."),
+            ("İlk adımı atalım", "Kısa bir tanıtım, kanal veya proje bağlantınız, hedef kitleniz ve iş birliği fikrinizle birlikte atlasfindd@gmail.com adresine yazabilirsiniz. Ardından fikrin iki tarafın kitlesi için de uygun olup olmadığını konuşabiliriz."),
+        ]},
+    },
     "about": {
         "en": {"title": "About AtlasFind", "description": "Why AtlasFind exists, how the project works and where it is heading.", "sections": [
             ("Why we built AtlasFind", "AtlasFind was created to make software discovery less confusing. It brings tools from different fields into one independent catalog so visitors can explore, filter and compare options before choosing what fits their workflow."),
@@ -1097,8 +1115,8 @@ def home(locale=None):
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
         collections=COLLECTION_INFO,
         seo=page_seo(
-            "Discover and Compare Software",
-            "Discover, compare and find software that fits your workflow, platform, budget and hardware.",
+            "Yazılımları Keşfet ve Karşılaştır" if get_locale() == "tr" else "Discover and Compare Software",
+            "İhtiyacına, bütçene, platformuna ve bilgisayarına uygun yazılımları keşfet ve karşılaştır." if get_locale() == "tr" else "Discover, compare and find software that fits your workflow, platform, budget and hardware.",
             "/",
             robots="noindex,follow" if search_query or any(active_filters) else "index,follow",
         ),
@@ -1615,7 +1633,7 @@ def robots_txt():
 def sitemap_xml():
     from xml.sax.saxutils import escape
 
-    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
+    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/collaborate", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
     base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
     base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORIES)
@@ -1648,6 +1666,11 @@ def privacy(locale=None):
 @app.route("/<locale>/about", strict_slashes=False)
 def about(locale=None):
     return _public_page("about", locale)
+
+@app.route("/collaborate", strict_slashes=False)
+@app.route("/<locale>/collaborate", strict_slashes=False)
+def collaborate(locale=None):
+    return _public_page("collaborate", locale)
 
 @app.route("/terms", strict_slashes=False)
 @app.route("/<locale>/terms", strict_slashes=False)
