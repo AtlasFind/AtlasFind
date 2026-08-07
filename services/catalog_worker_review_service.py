@@ -101,3 +101,25 @@ def export_readiness(record: dict[str, Any]) -> list[str]:
     if not record.get("features"):
         blockers.append("At least one verified feature is required")
     return blockers
+
+
+def collection_completeness(record: dict[str, Any]) -> dict[str, Any]:
+    """Separate fully researched cards from raw discovery candidates."""
+    missing: list[str] = []
+    claims = (record.get("research_metadata") or {}).get("claim_review") or {}
+    for field in ("name", "description", "purpose", "category", "subcategory", "website"):
+        if not str(record.get(field) or "").strip():
+            missing.append(field)
+    if not record.get("features"):
+        missing.append("features")
+    for claim in ("purpose", "features", "pricing", "platforms"):
+        if claims.get(claim, {}).get("status") not in {"verified", "provisionally_supported"}:
+            missing.append(claim)
+    logo = (record.get("research_metadata") or {}).get("logo_review") or {}
+    if logo.get("status") not in {"candidates_found", "verified_official_asset"} or not logo.get("candidates"):
+        missing.append("avatar")
+    if not record.get("source_references"):
+        missing.append("sources")
+    missing = list(dict.fromkeys(missing))
+    return {"complete": not missing, "missing": missing,
+            "percent": round(100 * (8 - min(8, len(missing))) / 8)}

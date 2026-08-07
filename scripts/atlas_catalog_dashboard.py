@@ -21,7 +21,7 @@ if str(ROOT) not in sys.path:
 
 from services.catalog_worker_record_service import build_review_records
 from services.catalog_worker_export_service import create_export_package
-from services.catalog_worker_review_service import export_readiness, load_reviews, merge_reviews, save_review
+from services.catalog_worker_review_service import collection_completeness, export_readiness, load_reviews, merge_reviews, save_review
 
 CATALOG = ROOT / "data/tools.json"
 QUEUE = ROOT / "data/research/overnight-tool-candidates.json"
@@ -49,8 +49,11 @@ def records_payload() -> dict:
         catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
         queue = json.loads(QUEUE.read_text(encoding="utf-8")) if QUEUE.exists() else {"items": []}
         records = build_review_records(queue.get("items", []), catalog)
+    merged = merge_reviews(records, load_reviews())
+    for record in merged:
+        record["collection_completeness"] = collection_completeness(record)
     return {
-        "records": merge_reviews(records, load_reviews()),
+        "records": merged,
         "running": bool(PROCESS and PROCESS.poll() is None),
         "auto_publish_allowed": False,
     }
