@@ -4782,41 +4782,41 @@
     "tool_id": 182,
     "locale": "tr",
     "name": "SE Ranking",
-    "description": "SE Ranking, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir seo aracıdır.",
+    "description": "SE Ranking; sıra takibi, anahtar kelime ve rakip araştırması, backlink analizi, site denetimi, sayfa içi SEO, raporlama ve yapay zekâ arama görünürlüğünü bir araya getiren bulut tabanlı bir SEO ve GEO platformudur.",
     "subcategory": "SEO",
-    "pricing_summary": "Ücretsiz",
-    "pricing_notes": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın.",
+    "pricing_summary": "Ücretli · 14 günlük ücretsiz deneme",
+    "pricing_notes": "Core, Growth ve özel Enterprise paketleri sunulur. Fiyatlar ve kullanım sınırları değişebileceğinden satın almadan önce resmî fiyatlandırma sayfasını kontrol edin.",
     "payload_json": {
-      "description": "SE Ranking, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir seo aracıdır.",
+      "description": "SE Ranking; sıra takibi, anahtar kelime ve rakip araştırması, backlink analizi, site denetimi, sayfa içi SEO, raporlama ve yapay zekâ arama görünürlüğünü bir araya getiren bulut tabanlı bir SEO ve GEO platformudur.",
       "category": "Pazarlama ve SEO",
       "subcategory": "SEO",
-      "pricing": "Ücretsiz",
+      "pricing": "Ücretli",
       "pros": [
-        "Kategorisine odaklanan özellik seti",
-        "Bireysel veya ekip iş akışlarında kullanılabilir",
-        "Güncel bilgiler için resmî site bağlantısı bulunur"
+        "Sıra takibi, denetim, araştırma, backlink ve raporlamayı birleştirir",
+        "Geleneksel arama ve yapay zekâ görünürlüğü iş akışlarını destekler",
+        "Google Analytics, Search Console ve Looker Studio entegrasyonları sunar"
       ],
       "cons": [
-        "Kesin sınırlar ve fiyatlandırma doğrulanmalıdır",
-        "Özellikler platforma göre değişebilir"
+        "Kalıcı ücretsiz planı yoktur; erişim süreli denemeyle başlar",
+        "Kullanım sınırları ve gelişmiş özellikler pakete göre değişir"
       ],
       "target_users": [
-        "Bu kategoride araç araştıran bireyler",
-        "Yazılım seçeneklerini karşılaştıran ekipler",
-        "Resmî ürün bağlantısına hızlı ulaşmak isteyen kullanıcılar"
+        "Düzenli optimizasyon çalışmaları yürüten SEO uzmanları",
+        "Arama ve yapay zekâ görünürlüğünü izleyen pazarlama ekipleri",
+        "Birden fazla müşteri projesini yöneten ajanslar"
       ],
       "system_requirements": [
-        "Modern bir web tarayıcısı veya desteklenen masaüstü uygulaması",
-        "Çevrim içi özellikler için internet bağlantısı"
+        "Desteklenen modern bir web tarayıcısı",
+        "İnternet bağlantısı ve SE Ranking hesabı"
       ],
       "pricing_details": {
-        "model": "Ücretsiz",
-        "note": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın."
+        "model": "14 günlük ücretsiz deneme sunan ücretli abonelik",
+        "note": "Core, Growth ve özel Enterprise paketleri sunulur. Fiyatlar ve sınırlar değişebileceğinden resmî fiyatlandırma sayfasını kontrol edin."
       },
       "verification": {
-        "status": "Katalog başlangıç incelemesi",
-        "date": "2026-07-28",
-        "note": "Ad, kategori ve resmî alan adı AtlasFind v0.9.0 için eklendi. Fiyatlandırma, platform desteği ve özellik ayrıntıları resmî web sitesinden doğrulanmalıdır."
+        "status": "Doğrulandı",
+        "date": "2026-08-07",
+        "note": "Ürün özellikleri, ücretli abonelik modeli, 14 günlük deneme ve güncel paket yapısı resmî SE Ranking sayfalarından kontrol edildi."
       },
       "change_history": [
         {
@@ -10269,41 +10269,41 @@
     "tool_id": 275,
     "locale": "tr",
     "name": "Oracle NetSuite",
-    "description": "Oracle NetSuite, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir erp aracıdır.",
+    "description": "Oracle NetSuite; finans, siparişten tahsilata süreçleri, satın alma, envanter, sabit varlıklar, raporlama ve çok şirketli operasyonları tek sistemde yöneten bulut tabanlı bir ERP paketidir.",
     "subcategory": "ERP",
-    "pricing_summary": "Ücretsiz + Ücretli",
-    "pricing_notes": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın.",
+    "pricing_summary": "Ücretli · Teklif usulü",
+    "pricing_notes": "NetSuite standart liste fiyatı yayımlamaz. Lisans, modüller, kullanıcı sayısı, kurulum ve bölgesel gereksinimler satış ekibi tarafından fiyatlandırılır.",
     "payload_json": {
-      "description": "Oracle NetSuite, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir erp aracıdır.",
+      "description": "Oracle NetSuite; finans, siparişten tahsilata süreçleri, satın alma, envanter, sabit varlıklar, raporlama ve çok şirketli operasyonları tek sistemde yöneten bulut tabanlı bir ERP paketidir.",
       "category": "Finans ve İşletme",
       "subcategory": "ERP",
-      "pricing": "Ücretsiz + Ücretli",
+      "pricing": "Ücretli",
       "pros": [
-        "Kategorisine odaklanan özellik seti",
-        "Bireysel veya ekip iş akışlarında kullanılabilir",
-        "Güncel bilgiler için resmî site bağlantısı bulunur"
+        "Finans, sipariş, satın alma ve envanter süreçlerini bütünleştirir",
+        "Şirketler genelinde gerçek zamanlı raporlama sunar",
+        "Desteklenen web tarayıcılarından bulut erişimi sağlar"
       ],
       "cons": [
-        "Kesin sınırlar ve fiyatlandırma doğrulanmalıdır",
-        "Özellikler platforma göre değişebilir"
+        "Herkese açık liste fiyatı yoktur; satış teklifi gerekir",
+        "Kurulum ve yapılandırma uzman desteği gerektirebilir"
       ],
       "target_users": [
-        "Bu kategoride araç araştıran bireyler",
-        "Yazılım seçeneklerini karşılaştıran ekipler",
-        "Resmî ürün bağlantısına hızlı ulaşmak isteyen kullanıcılar"
+        "Finans ve operasyonlarını birleştiren büyüyen ve orta ölçekli işletmeler",
+        "Merkezi raporlamaya ihtiyaç duyan çok şirketli kuruluşlar",
+        "Finans, operasyon, satın alma ve envanter ekipleri"
       ],
       "system_requirements": [
-        "Modern bir web tarayıcısı veya desteklenen masaüstü uygulaması",
-        "Çevrim içi özellikler için internet bağlantısı"
+        "Desteklenen modern bir web tarayıcısı",
+        "Güvenilir internet bağlantısı ve tanımlanmış NetSuite hesabı"
       ],
       "pricing_details": {
-        "model": "Ücretsiz + Ücretli",
-        "note": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın."
+        "model": "Teklif usulü ücretli abonelik",
+        "note": "NetSuite standart liste fiyatı yayımlamaz. Lisans, modüller, kullanıcılar, kurulum ve bölgesel gereksinimler satış ekibi tarafından fiyatlandırılır."
       },
       "verification": {
-        "status": "Katalog başlangıç incelemesi",
-        "date": "2026-07-28",
-        "note": "Ad, kategori ve resmî alan adı AtlasFind v0.9.0 için eklendi. Fiyatlandırma, platform desteği ve özellik ayrıntıları resmî web sitesinden doğrulanmalıdır."
+        "status": "Doğrulandı",
+        "date": "2026-08-07",
+        "note": "Temel ERP özellikleri ve bulut sunumu resmî NetSuite ürün belgelerinden kontrol edildi. Herkese açık liste fiyatı bulunmadığı için satış teklifi gerekir."
       },
       "change_history": [
         {

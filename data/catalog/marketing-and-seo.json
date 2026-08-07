@@ -927,51 +927,51 @@
     "id": 182,
     "slug": "se-ranking",
     "name": "SE Ranking",
-    "description": "SE Ranking is a seo tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "description": "SE Ranking is a cloud SEO and GEO platform for rank tracking, keyword and competitor research, backlink analysis, website audits, on-page checks, reporting, and AI search visibility.",
     "category": "Marketing and SEO",
     "tags": [
       "SEO",
       "Marketing",
       "Software"
     ],
-    "pricing": "Free",
+    "pricing": "Paid",
     "rating": 0,
     "rating_source": "not-rated",
     "website": "https://seranking.com",
     "platforms": [
       "Web"
     ],
-    "open_source": true,
+    "open_source": false,
     "offline": false,
-    "ai_powered": false,
+    "ai_powered": true,
     "pros": [
-      "Focused feature set for its category",
-      "Useful for common individual or team workflows",
-      "Official website available for current details"
+      "Combines rank tracking, audits, research, backlinks, and reporting",
+      "Supports traditional search and AI visibility workflows",
+      "Offers integrations with Google Analytics, Search Console, and Looker Studio"
     ],
     "cons": [
-      "Exact limits and pricing require verification",
-      "Feature availability may vary by platform"
+      "No permanent free plan; access starts with a time-limited trial",
+      "Usage limits and advanced capabilities vary by subscription tier"
     ],
     "target_users": [
-      "Individuals exploring tools in this category",
-      "Teams comparing software options",
-      "Users who want an official product link"
+      "SEO professionals managing recurring optimization work",
+      "Marketing teams tracking search and AI visibility",
+      "Agencies handling multiple client projects"
     ],
     "system_requirements": [
-      "Modern web browser or a supported desktop application",
-      "Internet connection for online features"
+      "Supported modern web browser",
+      "Internet connection and an SE Ranking account"
     ],
     "pricing_details": {
-      "model": "Free",
-      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+      "model": "Paid subscription with a 14-day free trial",
+      "note": "Core, Growth, and custom Enterprise tiers are offered. Prices and limits can change; check the official pricing page before purchase."
     },
     "verification": {
-      "status": "pending",
-      "date": "2026-07-28",
-      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+      "status": "verified",
+      "date": "2026-08-07",
+      "note": "Product capabilities, paid subscription model, 14-day trial, and current plan structure were checked against official SE Ranking pages."
     },
-    "pricing_type": "free",
+    "pricing_type": "paid",
     "minimum_ram_gb": 4,
     "system_level": "medium",
     "languages": [
@@ -982,40 +982,38 @@
     "popularity_score": 55,
     "editor_choice": false,
     "date_added": "2026-07-28",
-    "collections": [
-      "free-tools"
-    ],
+    "collections": [],
     "freshness": {
-      "last_checked_at": "2026-07-28",
-      "last_updated_at": "2026-07-28",
-      "next_check_at": "2026-10-26",
-      "status": "review-due"
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
     },
     "change_history": [
       {
-        "date": "2026-07-28",
+        "date": "2026-08-07",
         "type": "data-review",
-        "summary": "Catalog entry added for AtlasFind v0.9.0.",
-        "changes": []
+        "summary": "Replaced generic copy and incorrect free/open-source classification with official-source product and pricing information.",
+        "changes": ["description", "pricing", "open_source", "ai_powered", "pros", "cons", "target_users", "system_requirements", "verification", "sources"]
       }
     ],
     "price_history": [
       {
         "date": "2026-07-28",
-        "old_value": "Unknown",
-        "new_value": "Free",
-        "note": "Initial catalog pricing model; verify current plans on the official website."
+        "old_value": "Free",
+        "new_value": "Paid",
+        "note": "Corrected after official-source review; SE Ranking offers paid subscriptions and a time-limited free trial."
       }
     ],
     "icon_url": "/static/icons/generated/se-ranking.svg",
     "icon_source": "local-generated",
     "icon_alt": "SE Ranking icon",
     "icon_fallback_url": "/static/icons/generated/se-ranking.svg",
-    "quality_status": "review_due",
+    "quality_status": "verified",
     "quality_review": {
-      "scope": "dataset-audit",
-      "reviewed_at": "2026-07-28",
-      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+      "scope": "individual-editorial-review",
+      "reviewed_at": "2026-08-07",
+      "note": "Core product, pricing-model, trial, and feature claims were checked against official SE Ranking pages."
     },
     "icon_meta": {
       "fallback": "local-svg-monogram",
@@ -1026,7 +1024,24 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": [],
+    "source_references": [
+      {
+        "label": "SE Ranking official pricing",
+        "url": "https://seranking.com/subscription.html",
+        "checked_at": "2026-08-07",
+        "type": "official-pricing",
+        "claims": ["paid plans", "14-day free trial", "plan limits", "Enterprise tier"],
+        "domain": "seranking.com"
+      },
+      {
+        "label": "SE Ranking official features",
+        "url": "https://seranking.com/features.html",
+        "checked_at": "2026-08-07",
+        "type": "official-homepage",
+        "claims": ["rank tracking", "website audit", "keyword research", "backlink analysis", "content tools"],
+        "domain": "seranking.com"
+      }
+    ],
     "rating_v103": {
       "status": "unreviewed",
       "overall_score": null,

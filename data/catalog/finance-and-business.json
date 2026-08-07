@@ -2080,14 +2080,14 @@
     "id": 275,
     "slug": "oracle-netsuite",
     "name": "Oracle NetSuite",
-    "description": "Oracle NetSuite is a erp tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "description": "Oracle NetSuite is a cloud ERP suite for managing financials, order-to-cash, procurement, inventory, fixed assets, reporting, and multi-entity operations in one system.",
     "category": "Finance and Business",
     "tags": [
       "ERP",
       "Finance",
       "Software"
     ],
-    "pricing": "Freemium",
+    "pricing": "Paid",
     "rating": 0,
     "rating_source": "not-rated",
     "website": "https://netsuite.com",
@@ -2098,33 +2098,33 @@
     "offline": false,
     "ai_powered": false,
     "pros": [
-      "Focused feature set for its category",
-      "Useful for common individual or team workflows",
-      "Official website available for current details"
+      "Integrated financial, order, procurement, and inventory workflows",
+      "Real-time reporting across business entities",
+      "Cloud access through a supported web browser"
     ],
     "cons": [
-      "Exact limits and pricing require verification",
-      "Feature availability may vary by platform"
+      "Public list pricing is not published; a sales quote is required",
+      "Implementation and configuration can require specialist support"
     ],
     "target_users": [
-      "Individuals exploring tools in this category",
-      "Teams comparing software options",
-      "Users who want an official product link"
+      "Growing and mid-market businesses consolidating finance and operations",
+      "Multi-entity organizations that need centralized reporting",
+      "Finance, operations, procurement, and inventory teams"
     ],
     "system_requirements": [
-      "Modern web browser or a supported desktop application",
-      "Internet connection for online features"
+      "Supported modern web browser",
+      "Reliable internet connection and a provisioned NetSuite account"
     ],
     "pricing_details": {
-      "model": "Freemium",
-      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+      "model": "Paid subscription with quote-based pricing",
+      "note": "NetSuite does not publish standard public list pricing. Licensing, modules, users, implementation, and regional requirements are quoted by sales."
     },
     "verification": {
-      "status": "pending",
-      "date": "2026-07-28",
-      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+      "status": "verified",
+      "date": "2026-08-07",
+      "note": "Core ERP capabilities and cloud delivery were checked against official NetSuite product materials. Public list pricing is unavailable and requires a sales quote."
     },
-    "pricing_type": "freemium",
+    "pricing_type": "paid",
     "minimum_ram_gb": 4,
     "system_level": "medium",
     "languages": [
@@ -2137,36 +2137,36 @@
     "date_added": "2026-07-28",
     "collections": [],
     "freshness": {
-      "last_checked_at": "2026-07-28",
-      "last_updated_at": "2026-07-28",
-      "next_check_at": "2026-10-26",
-      "status": "review-due"
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
     },
     "change_history": [
       {
-        "date": "2026-07-28",
+        "date": "2026-08-07",
         "type": "data-review",
-        "summary": "Catalog entry added for AtlasFind v0.9.0.",
-        "changes": []
+        "summary": "Replaced generic copy and incorrect freemium classification with verified ERP capabilities and quote-based pricing.",
+        "changes": ["description", "pricing", "pros", "cons", "target_users", "system_requirements", "verification", "sources"]
       }
     ],
     "price_history": [
       {
         "date": "2026-07-28",
-        "old_value": "Unknown",
-        "new_value": "Freemium",
-        "note": "Initial catalog pricing model; verify current plans on the official website."
+        "old_value": "Freemium",
+        "new_value": "Paid",
+        "note": "Corrected after official-source review; NetSuite uses quote-based commercial licensing."
       }
     ],
     "icon_url": "/static/icons/generated/oracle-netsuite.svg",
     "icon_source": "local-generated",
     "icon_alt": "Oracle NetSuite icon",
     "icon_fallback_url": "/static/icons/generated/oracle-netsuite.svg",
-    "quality_status": "review_due",
+    "quality_status": "verified",
     "quality_review": {
-      "scope": "dataset-audit",
-      "reviewed_at": "2026-07-28",
-      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+      "scope": "individual-editorial-review",
+      "reviewed_at": "2026-08-07",
+      "note": "Core product, delivery, and pricing-model claims were checked against official NetSuite materials."
     },
     "icon_meta": {
       "fallback": "local-svg-monogram",
@@ -2177,7 +2177,16 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": [],
+    "source_references": [
+      {
+        "label": "NetSuite ERP product sheet",
+        "url": "https://www.netsuite.com/portal/assets/pdf/ds-netsuite-erp-emea.pdf",
+        "checked_at": "2026-08-07",
+        "type": "official-documentation",
+        "claims": ["cloud ERP", "financial management", "order management", "procurement", "inventory", "reporting"],
+        "domain": "netsuite.com"
+      }
+    ],
     "rating_v103": {
       "status": "unreviewed",
       "overall_score": null,
