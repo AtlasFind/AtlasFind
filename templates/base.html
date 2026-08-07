@@ -57,6 +57,7 @@
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>{{ t("nav.compare") }}</a>
                 <a class="nav-utility-link nav-utility-start" href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
+                <a class="nav-utility-link" href="{{ url_for('rating_methodology', locale=locale) }}" {% if active_page == 'methodology' %}aria-current="page"{% endif %}>{{ t("rating.section_title") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('contact') }}" {% if active_page == 'contact' %}aria-current="page"{% endif %}>{{ t("footer.contact") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
                 <a class="nav-utility-link" href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
