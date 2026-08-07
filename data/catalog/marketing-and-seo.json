@@ -6505,5 +6505,702 @@
       "version": 1,
       "tool_slug": "later"
     }
+  },
+  {
+    "id": 618,
+    "slug": "umami",
+    "name": "Umami",
+    "description": "Umami is a web analytics tool for users evaluating software in the marketing and seo category.",
+    "category": "Marketing and SEO",
+    "tags": [
+      "Web Analytics",
+      "Marketing and SEO",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://umami.is/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on web analytics workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for web analytics software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Web Analytics",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/umami.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Umami icon",
+    "icon_fallback_url": "/static/icons/generated/umami.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "U",
+      "domain": "umami.is",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Umami official website",
+        "url": "https://umami.is/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "umami.is",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/umami/logo.webp",
+        "source_url": "https://umami.is/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1862,
+        "checksum": "eeca545467b2a172b625e36e62c4b6491ec01a18a449f61127da0d3dd0103dc1",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://umami.is/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "UM"
+      },
+      "version": 1,
+      "tool_slug": "umami"
+    }
+  },
+  {
+    "id": 619,
+    "slug": "socialbee",
+    "name": "SocialBee",
+    "description": "SocialBee is a social media management tool for users evaluating software in the marketing and seo category.",
+    "category": "Marketing and SEO",
+    "tags": [
+      "Social Media Management",
+      "Marketing and SEO",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://socialbee.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on social media management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for social media management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Social Media Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/socialbee.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "SocialBee icon",
+    "icon_fallback_url": "/static/icons/generated/socialbee.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "socialbee.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "SocialBee official website",
+        "url": "https://socialbee.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "socialbee.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/socialbee/logo.webp",
+        "source_url": "https://socialbee.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3794,
+        "checksum": "4337bf83ec16da03b6263a23be7d41cdaf70294a07dcdfac9a28fe5c251efa89",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://socialbee.com/wp-content/uploads/2022/09/cropped-favicon-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SO"
+      },
+      "version": 1,
+      "tool_slug": "socialbee"
+    }
+  },
+  {
+    "id": 620,
+    "slug": "metricool",
+    "name": "Metricool",
+    "description": "Metricool is a social media analytics tool for users evaluating software in the marketing and seo category.",
+    "category": "Marketing and SEO",
+    "tags": [
+      "Social Media Analytics",
+      "Marketing and SEO",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://metricool.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on social media analytics workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for social media analytics software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Social Media Analytics",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/metricool.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Metricool icon",
+    "icon_fallback_url": "/static/icons/generated/metricool.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "metricool.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Metricool official website",
+        "url": "https://metricool.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "metricool.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/metricool/logo.webp",
+        "source_url": "https://metricool.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2430,
+        "checksum": "cddbc5ab90fac0671ea512ec817c101da3fa5bc341c2f69f1d4ee1ad2d52ffaa",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://metricool.com/wp-content/uploads/cropped-web-app-manifest-512x512-1-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ME"
+      },
+      "version": 1,
+      "tool_slug": "metricool"
+    }
+  },
+  {
+    "id": 675,
+    "slug": "getresponse",
+    "name": "GetResponse",
+    "description": "GetResponse is a email marketing tool for users evaluating software in the marketing and seo category.",
+    "category": "Marketing and SEO",
+    "tags": [
+      "Email Marketing",
+      "Marketing and SEO",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.getresponse.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on email marketing workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for email marketing software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Email Marketing",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/getresponse.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "GetResponse icon",
+    "icon_fallback_url": "/static/icons/generated/getresponse.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "G",
+      "domain": "getresponse.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "GetResponse official website",
+        "url": "https://www.getresponse.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "getresponse.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/getresponse/logo.webp",
+        "source_url": "https://www.getresponse.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1860,
+        "checksum": "e997303acbbc6f598e355b35528ddbbf9af7c3bf051253efa10ac68231bf418c",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.getresponse.com/global/favicons/android-chrome-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GE"
+      },
+      "version": 1,
+      "tool_slug": "getresponse"
+    }
+  },
+  {
+    "id": 676,
+    "slug": "beehiiv",
+    "name": "beehiiv",
+    "description": "beehiiv is a newsletters tool for users evaluating software in the marketing and seo category.",
+    "category": "Marketing and SEO",
+    "tags": [
+      "Newsletters",
+      "Marketing and SEO",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.beehiiv.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on newsletters workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for newsletters software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Newsletters",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/beehiiv.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "beehiiv icon",
+    "icon_fallback_url": "/static/icons/generated/beehiiv.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "beehiiv.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "beehiiv official website",
+        "url": "https://www.beehiiv.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "beehiiv.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/beehiiv/logo.webp",
+        "source_url": "https://www.beehiiv.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 999,
+        "height": 999,
+        "aspect_ratio": "999:999",
+        "file_size_bytes": 39174,
+        "checksum": "cfeb1dd78e3b8b3b0450ece4a9ec632ece6d9ec69eaba29aedd3ee7a78fb33f7",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BE"
+      },
+      "version": 1,
+      "tool_slug": "beehiiv"
+    }
   }
 ]

@@ -46,14 +46,15 @@ def main() -> None:
         print(f"Catalog is empty; seeding {DATABASE_PATH} from JSON sources.")
         migrate(reset=True)
     elif expected and existing < expected:
-        raise RuntimeError(
-            f"Persistent database contains {existing} tools but the release expects {expected}. "
-            "Automatic destructive reseeding is disabled; restore a backup or migrate explicitly."
-        )
+        from scripts.sync_missing_catalog_tools import main as sync_missing_catalog_tools
+        print(f"Catalog upgrade detected: {existing} -> {expected}; appending missing published tools.")
+        sync_missing_catalog_tools()
 
     apply_migrations()
     from scripts.sync_catalog_translations import main as sync_catalog_translations
     sync_catalog_translations()
+    from scripts.sync_expansion_translations import main as sync_expansion_translations
+    sync_expansion_translations()
     count = tool_count()
     if count == 0:
         raise RuntimeError("Database bootstrap completed without any tools.")

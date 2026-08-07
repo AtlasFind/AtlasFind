@@ -6466,5 +6466,1283 @@
       "version": 1,
       "tool_slug": "spark-mail"
     }
+  },
+  {
+    "id": 609,
+    "slug": "dialpad",
+    "name": "Dialpad",
+    "description": "Dialpad is a business communication tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Business Communication",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.dialpad.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on business communication workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for business communication software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Business Communication",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/dialpad.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dialpad icon",
+    "icon_fallback_url": "/static/icons/generated/dialpad.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dialpad.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dialpad official website",
+        "url": "https://www.dialpad.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "dialpad.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dialpad/logo.webp",
+        "source_url": "https://www.dialpad.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 4314,
+        "checksum": "15dbc61e61c77d9442e891bff7bc72cf2e5a29de4b24235603e92a3d91c0c167",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.dialpad.com/assets/images/favicons/favicon-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DI"
+      },
+      "version": 1,
+      "tool_slug": "dialpad"
+    }
+  },
+  {
+    "id": 610,
+    "slug": "ringcentral",
+    "name": "RingCentral",
+    "description": "RingCentral is a business communication tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Business Communication",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.ringcentral.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on business communication workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for business communication software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Business Communication",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/ringcentral.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "RingCentral icon",
+    "icon_fallback_url": "/static/icons/generated/ringcentral.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "ringcentral.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "RingCentral official website",
+        "url": "https://www.ringcentral.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "ringcentral.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ringcentral/logo.webp",
+        "source_url": "https://www.ringcentral.com/",
+        "source_type": "official_product_site",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 6314,
+        "checksum": "6ad16f25e8500b8ff927163d6d688a38a5f7d2cc431c62b5148092a8b1c897ea",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/22/a8/8b/22a88b45-d382-189d-471d-ffe2a62e64f1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RI"
+      },
+      "version": 1,
+      "tool_slug": "ringcentral"
+    }
+  },
+  {
+    "id": 611,
+    "slug": "chanty",
+    "name": "Chanty",
+    "description": "Chanty is a team chat tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Team Chat",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.chanty.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on team chat workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for team chat software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Team Chat",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/chanty.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Chanty icon",
+    "icon_fallback_url": "/static/icons/generated/chanty.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "chanty.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Chanty official website",
+        "url": "https://www.chanty.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "chanty.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/chanty/logo.webp",
+        "source_url": "https://www.chanty.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 5812,
+        "checksum": "61a2ee2870c6a56c2788a0578f92b9df114cab0722b461be3d3c7a365947c25e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn.chanty.com/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CH"
+      },
+      "version": 1,
+      "tool_slug": "chanty"
+    }
+  },
+  {
+    "id": 677,
+    "slug": "mumble",
+    "name": "Mumble",
+    "description": "Mumble is a voice chat tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Voice Chat",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.mumble.info/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on voice chat workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for voice chat software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Voice Chat",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/mumble.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Mumble icon",
+    "icon_fallback_url": "/static/icons/generated/mumble.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "mumble.info",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mumble official website",
+        "url": "https://www.mumble.info/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "mumble.info",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mumble/logo.webp",
+        "source_url": "https://github.com/mumble-voip/mumble/blob/master/icons/mumble_256x256.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 8244,
+        "checksum": "0c03cf71eee457543186d03ed39bc1993ce4a0dce036b6e6e263cd5accef285f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/mumble-voip/mumble/master/icons/mumble_256x256.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MU"
+      },
+      "version": 1,
+      "tool_slug": "mumble"
+    }
+  },
+  {
+    "id": 678,
+    "slug": "teamspeak",
+    "name": "TeamSpeak",
+    "description": "TeamSpeak is a voice chat tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Voice Chat",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.teamspeak.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on voice chat workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for voice chat software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Voice Chat",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/teamspeak.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "TeamSpeak icon",
+    "icon_fallback_url": "/static/icons/generated/teamspeak.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "teamspeak.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "TeamSpeak official website",
+        "url": "https://www.teamspeak.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "teamspeak.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/teamspeak/logo.webp",
+        "source_url": "https://teamspeak.com/en/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 7326,
+        "checksum": "9e238321aaa0715a770d932a318a04110532444cadaa163e6154689617ca71b7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://teamspeak.com/user/themes/teamspeak/images/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TE"
+      },
+      "version": 1,
+      "tool_slug": "teamspeak"
+    }
+  },
+  {
+    "id": 679,
+    "slug": "revolt",
+    "name": "Stoat",
+    "description": "Stoat is a community chat tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Community Chat",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://stoat.chat/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on community chat workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for community chat software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Revolt officially changed its product name to Stoat in 2026. Pricing and platform evidence remain under review."
+    },
+    "subcategory": "Community Chat",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "status-change",
+        "summary": "Revolt officially changed its product name to Stoat in 2026.",
+        "changes": [
+          "name",
+          "website",
+          "aliases"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/revolt.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Stoat icon",
+    "icon_fallback_url": "/static/icons/generated/revolt.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "revolt.chat",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [
+      "Revolt"
+    ],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Stoat official rebrand announcement",
+        "url": "https://stoat.chat/updates/policies-30-jun-2026",
+        "type": "official-company",
+        "checked_at": "2026-08-08",
+        "domain": "stoat.chat",
+        "claims": [
+          "identity",
+          "name-change",
+          "website"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/revolt/logo.svg",
+        "source_url": "https://stoat.chat/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 2060,
+        "checksum": "1aca9be29a2319cb2b28bcb42ad8b22da61665c9b6da7f716fb0c651bc8aa424",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://stoat.chat/favicon-stoat.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "revolt"
+    }
+  },
+  {
+    "id": 680,
+    "slug": "session",
+    "name": "Session",
+    "description": "Session is a private messaging tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Private Messaging",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://getsession.org/",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on private messaging workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for private messaging software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Private Messaging",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/session.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Session icon",
+    "icon_fallback_url": "/static/icons/generated/session.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "getsession.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Session official website",
+        "url": "https://getsession.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "getsession.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/session/logo.webp",
+        "source_url": "https://getsession.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4726,
+        "checksum": "593b992f21a1b2e6ce8def06070287e55072eb94f5b3dea943167ec84c4906a5",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://getsession.org/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SE"
+      },
+      "version": 1,
+      "tool_slug": "session"
+    }
+  },
+  {
+    "id": 681,
+    "slug": "wire",
+    "name": "Wire",
+    "description": "Wire is a secure messaging tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Secure Messaging",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://wire.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on secure messaging workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for secure messaging software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Secure Messaging",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/wire.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Wire icon",
+    "icon_fallback_url": "/static/icons/generated/wire.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "wire.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Wire official website",
+        "url": "https://wire.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "wire.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wire/logo.webp",
+        "source_url": "https://wire.com/en/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 260,
+        "height": 260,
+        "aspect_ratio": "260:260",
+        "file_size_bytes": 2824,
+        "checksum": "f6c55cd96eeaa484cda26ff8a4b5e51f4976691b866df3d782dfd128bfe17040",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://wire.com/hubfs/Short%20logo%20white%20on%20black@2x%20(1).png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WI"
+      },
+      "version": 1,
+      "tool_slug": "wire"
+    }
+  },
+  {
+    "id": 682,
+    "slug": "threema",
+    "name": "Threema",
+    "description": "Threema is a secure messaging tool for users evaluating software in the communication category.",
+    "category": "Communication",
+    "tags": [
+      "Secure Messaging",
+      "Communication",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://threema.ch/",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on secure messaging workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for secure messaging software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Secure Messaging",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/threema.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Threema icon",
+    "icon_fallback_url": "/static/icons/generated/threema.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "threema.ch",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Threema official website",
+        "url": "https://threema.ch/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "threema.ch",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/threema/logo.webp",
+        "source_url": "https://threema.com/en",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2754,
+        "checksum": "3144a3a1e921bcfe5ab6f03dc4315d9628b4c81b19e55f36830f339a94143e79",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://threema.com/build/assets/apple-icon-180x180-Dmg5Cyre.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TH"
+      },
+      "version": 1,
+      "tool_slug": "threema"
+    }
   }
 ]

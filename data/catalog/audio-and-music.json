@@ -8931,5 +8931,433 @@
       "version": 1,
       "tool_slug": "soundcloud"
     }
+  },
+  {
+    "id": 650,
+    "slug": "navidrome",
+    "name": "Navidrome",
+    "description": "Navidrome is a music servers tool for users evaluating software in the audio and music category.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Servers",
+      "Audio and Music",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.navidrome.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on music servers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for music servers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Music Servers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/navidrome.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Navidrome icon",
+    "icon_fallback_url": "/static/icons/generated/navidrome.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "navidrome.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Navidrome official website",
+        "url": "https://www.navidrome.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "navidrome.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/navidrome/logo.webp",
+        "source_url": "https://navidrome.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 6366,
+        "checksum": "986a705b0d0e47c166461c0bd072e174c1ccb752b24b0d3d899d77125c81b101",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://navidrome.org/favicons/apple-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NA"
+      },
+      "version": 1,
+      "tool_slug": "navidrome"
+    }
+  },
+  {
+    "id": 651,
+    "slug": "finamp",
+    "name": "Finamp",
+    "description": "Finamp is a music clients tool for users evaluating software in the audio and music category.",
+    "category": "Audio and Music",
+    "tags": [
+      "Music Clients",
+      "Audio and Music",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/jmshrv/finamp",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on music clients workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for music clients software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Music Clients",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/finamp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Finamp icon",
+    "icon_fallback_url": "/static/icons/generated/finamp.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "F",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Finamp official website",
+        "url": "https://github.com/jmshrv/finamp",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/finamp/logo.webp",
+        "source_url": "https://github.com/finamp-app/finamp",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 152,
+        "height": 152,
+        "aspect_ratio": "152:152",
+        "file_size_bytes": 2386,
+        "checksum": "eec0d6c14f1d9443e8470a3052fbe117333352a6b2f57354d21510451a150105",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://github.githubassets.com/assets/apple-touch-icon-152x152-5f777cdc30ae.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FI"
+      },
+      "version": 1,
+      "tool_slug": "finamp"
+    }
+  },
+  {
+    "id": 674,
+    "slug": "audiomass",
+    "name": "AudioMass",
+    "description": "AudioMass is a audio editors tool for users evaluating software in the audio and music category.",
+    "category": "Audio and Music",
+    "tags": [
+      "Audio Editors",
+      "Audio and Music",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://audiomass.co/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on audio editors workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for audio editors software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Audio Editors",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/audiomass.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "AudioMass icon",
+    "icon_fallback_url": "/static/icons/generated/audiomass.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "A",
+      "domain": "audiomass.co",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "AudioMass official website",
+        "url": "https://audiomass.co/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "audiomass.co",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/audiomass/logo.webp",
+        "source_url": "https://audiomass.co/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1452,
+        "checksum": "ae5e74e9c505aacfda7293228206260aaa1e1d2772a58d4a59393494ad103f55",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://audiomass.co/icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AU"
+      },
+      "version": 1,
+      "tool_slug": "audiomass"
+    }
   }
 ]

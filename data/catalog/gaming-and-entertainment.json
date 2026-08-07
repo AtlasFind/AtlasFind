@@ -6293,5 +6293,415 @@
       "version": 1,
       "tool_slug": "emby"
     }
+  },
+  {
+    "id": 649,
+    "slug": "prismlauncher",
+    "name": "Prism Launcher",
+    "description": "Prism Launcher is a game launchers tool for users evaluating software in the gaming and entertainment category.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Game Launchers",
+      "Gaming and Entertainment",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://prismlauncher.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on game launchers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for game launchers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Game Launchers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/prismlauncher.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Prism Launcher icon",
+    "icon_fallback_url": "/static/icons/generated/prismlauncher.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PL",
+      "domain": "prismlauncher.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Prism Launcher official website",
+        "url": "https://prismlauncher.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "prismlauncher.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/prismlauncher/logo.webp",
+        "source_url": "https://prismlauncher.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 96,
+        "height": 96,
+        "aspect_ratio": "96:96",
+        "file_size_bytes": 2398,
+        "checksum": "de5ab4d22429ad604e35054ae3edcf893b332002ad8abb382fc513b7311d59d7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://prismlauncher.org/img/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PL"
+      },
+      "version": 1,
+      "tool_slug": "prismlauncher"
+    }
+  },
+  {
+    "id": 683,
+    "slug": "gamescope",
+    "name": "Gamescope",
+    "description": "Gamescope is a gaming utilities tool for users evaluating software in the gaming and entertainment category.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Gaming Utilities",
+      "Gaming and Entertainment",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/ValveSoftware/gamescope",
+    "platforms": [
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on gaming utilities workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for gaming utilities software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Gaming Utilities",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/gamescope.svg",
+    "icon_source": "local-generated-no-upstream-artwork",
+    "icon_alt": "Gamescope icon",
+    "icon_fallback_url": "/static/icons/generated/gamescope.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "GA",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "verified-fallback",
+      "reason": "The official Valve source repository publishes no standalone project or application logo."
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Gamescope official website",
+        "url": "https://github.com/ValveSoftware/gamescope",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "local_path": "/static/icons/generated/gamescope.svg",
+        "source_url": "https://github.com/ValveSoftware/gamescope",
+        "asset_url": null,
+        "source_type": "official-source-no-artwork",
+        "original_format": "none",
+        "served_format": "svg",
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-manual-source-audit",
+        "license_status": "generated-fallback",
+        "attribution_required": false,
+        "notes": "The official Valve source repository publishes no standalone project or application logo."
+      }
+    }
+  },
+  {
+    "id": 684,
+    "slug": "bottles",
+    "name": "Bottles",
+    "description": "Bottles is a compatibility tools tool for users evaluating software in the gaming and entertainment category.",
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Compatibility Tools",
+      "Gaming and Entertainment",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://usebottles.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on compatibility tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for compatibility tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Compatibility Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/bottles.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Bottles icon",
+    "icon_fallback_url": "/static/icons/generated/bottles.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "usebottles.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Bottles official website",
+        "url": "https://usebottles.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "usebottles.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bottles/logo.webp",
+        "source_url": "https://usebottles.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 460,
+        "height": 460,
+        "aspect_ratio": "460:460",
+        "file_size_bytes": 4516,
+        "checksum": "9718940183f496f65f3a323b59ca6171912d92cb6aa89d0c45fc7d3993f5ad58",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://usebottles.com/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BO"
+      },
+      "version": 1,
+      "tool_slug": "bottles"
+    }
   }
 ]

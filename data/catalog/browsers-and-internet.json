@@ -8619,5 +8619,413 @@
       "version": 1,
       "tool_slug": "pairdrop"
     }
+  },
+  {
+    "id": 690,
+    "slug": "mullvad-browser",
+    "name": "Mullvad Browser",
+    "description": "Mullvad Browser is a privacy browsers tool for users evaluating software in the browsers and internet category.",
+    "category": "Browsers and Internet",
+    "tags": [
+      "Privacy Browsers",
+      "Browsers and Internet",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://mullvad.net/en/browser",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on privacy browsers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for privacy browsers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Privacy Browsers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/mullvad-browser.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Mullvad Browser icon",
+    "icon_fallback_url": "/static/icons/generated/mullvad-browser.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MB",
+      "domain": "mullvad.net",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mullvad Browser official website",
+        "url": "https://mullvad.net/en/browser",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "mullvad.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mullvad-browser/logo.webp",
+        "source_url": "https://mullvad.net/en/browser",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6274,
+        "checksum": "69b244ed009188931fa5082b0ffe756afb4c31e71e9f1c6a13571c8136e1cb9e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://mullvad.net/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MB"
+      },
+      "version": 1,
+      "tool_slug": "mullvad-browser"
+    }
+  },
+  {
+    "id": 691,
+    "slug": "thorium-browser",
+    "name": "Thorium Browser",
+    "description": "Thorium Browser is a web browsers tool for users evaluating software in the browsers and internet category.",
+    "category": "Browsers and Internet",
+    "tags": [
+      "Web Browsers",
+      "Browsers and Internet",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://thorium.rocks/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on web browsers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for web browsers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Web Browsers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/thorium-browser.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Thorium Browser icon",
+    "icon_fallback_url": "/static/icons/generated/thorium-browser.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TB",
+      "domain": "thorium.rocks",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Thorium Browser official website",
+        "url": "https://thorium.rocks/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "thorium.rocks",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/thorium-browser/logo.webp",
+        "source_url": "https://thorium.rocks/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 3686,
+        "checksum": "b433b0193af8c4d55d2893d216678fe528f37d098040a105fdc9baa8d515ee38",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://thorium.rocks/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TB"
+      },
+      "version": 1,
+      "tool_slug": "thorium-browser"
+    }
+  },
+  {
+    "id": 692,
+    "slug": "cromite",
+    "name": "Cromite",
+    "description": "Cromite is a privacy browsers tool for users evaluating software in the browsers and internet category.",
+    "category": "Browsers and Internet",
+    "tags": [
+      "Privacy Browsers",
+      "Browsers and Internet",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/uazo/cromite",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on privacy browsers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for privacy browsers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Privacy Browsers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/cromite.svg",
+    "icon_source": "local-generated-no-upstream-artwork",
+    "icon_alt": "Cromite icon",
+    "icon_fallback_url": "/static/icons/generated/cromite.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CR",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "verified-fallback",
+      "reason": "The official source repository publishes no reusable standalone application logo asset."
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Cromite official website",
+        "url": "https://github.com/uazo/cromite",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "local_path": "/static/icons/generated/cromite.svg",
+        "source_url": "https://github.com/uazo/cromite",
+        "asset_url": null,
+        "source_type": "official-source-no-artwork",
+        "original_format": "none",
+        "served_format": "svg",
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-manual-source-audit",
+        "license_status": "generated-fallback",
+        "attribution_required": false,
+        "notes": "The official source repository publishes no reusable standalone application logo asset."
+      }
+    }
   }
 ]

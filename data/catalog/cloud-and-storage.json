@@ -8849,5 +8849,576 @@
       "version": 1,
       "tool_slug": "wasabi"
     }
+  },
+  {
+    "id": 696,
+    "slug": "ente-photos",
+    "name": "Ente Photos",
+    "description": "Ente Photos is a photo backup tool for users evaluating software in the cloud and storage category.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Photo Backup",
+      "Cloud and Storage",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ente.io/",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on photo backup workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for photo backup software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Photo Backup",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/ente-photos.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ente Photos icon",
+    "icon_fallback_url": "/static/icons/generated/ente-photos.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EP",
+      "domain": "ente.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Ente Photos official website",
+        "url": "https://ente.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "ente.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ente-photos/logo.webp",
+        "source_url": "https://ente.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 13074,
+        "checksum": "63e4c01ecde0667b2a8df0ee8a87d1629c495b18bc0e200d1d18ec0cb7dc5723",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://ente.com/assets/icon.Dv-LNK-m.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EP"
+      },
+      "version": 1,
+      "tool_slug": "ente-photos"
+    }
+  },
+  {
+    "id": 697,
+    "slug": "immich",
+    "name": "Immich",
+    "description": "Immich is a photo backup tool for users evaluating software in the cloud and storage category.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Photo Backup",
+      "Cloud and Storage",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://immich.app/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on photo backup workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for photo backup software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Photo Backup",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/immich.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Immich icon",
+    "icon_fallback_url": "/static/icons/generated/immich.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "I",
+      "domain": "immich.app",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Immich official website",
+        "url": "https://immich.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "immich.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/immich/logo.webp",
+        "source_url": "https://github.com/immich-app/immich/blob/main/design/immich-logo.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1001,
+        "aspect_ratio": "1024:1001",
+        "file_size_bytes": 71768,
+        "checksum": "a031753bf4cc3ac84beecdf0c020386a903bc9c2f15d841f7dd55b72be533a89",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/immich-app/immich/main/design/immich-logo.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IM"
+      },
+      "version": 1,
+      "tool_slug": "immich"
+    }
+  },
+  {
+    "id": 698,
+    "slug": "photoprism",
+    "name": "PhotoPrism",
+    "description": "PhotoPrism is a photo management tool for users evaluating software in the cloud and storage category.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Photo Management",
+      "Cloud and Storage",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.photoprism.app/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on photo management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for photo management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Photo Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/photoprism.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "PhotoPrism icon",
+    "icon_fallback_url": "/static/icons/generated/photoprism.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "photoprism.app",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "PhotoPrism official website",
+        "url": "https://www.photoprism.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "photoprism.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/photoprism/logo.webp",
+        "source_url": "https://www.photoprism.app/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 44232,
+        "checksum": "d9629f39e93e56a70300dc1b2cdd262f267adb7aa9bc0d500e64c9b2b530806e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.photoprism.app/static/icons/logo/1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PH"
+      },
+      "version": 1,
+      "tool_slug": "photoprism"
+    }
+  },
+  {
+    "id": 699,
+    "slug": "librephotos",
+    "name": "LibrePhotos",
+    "description": "LibrePhotos is a photo management tool for users evaluating software in the cloud and storage category.",
+    "category": "Cloud and Storage",
+    "tags": [
+      "Photo Management",
+      "Cloud and Storage",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docs.librephotos.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on photo management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for photo management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Photo Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/librephotos.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "LibrePhotos icon",
+    "icon_fallback_url": "/static/icons/generated/librephotos.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "docs.librephotos.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "LibrePhotos official website",
+        "url": "https://docs.librephotos.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "docs.librephotos.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/librephotos/logo.webp",
+        "source_url": "https://docs.librephotos.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 7876,
+        "checksum": "13a0a015a673c4fed8e9c0ae86289a03352385e9ed80682f4172caa05a7b164c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://docs.librephotos.com/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LI"
+      },
+      "version": 1,
+      "tool_slug": "librephotos"
+    }
   }
 ]

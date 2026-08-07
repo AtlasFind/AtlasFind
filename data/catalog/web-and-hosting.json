@@ -6237,5 +6237,1546 @@
       "version": 1,
       "tool_slug": "fly-io"
     }
+  },
+  {
+    "id": 652,
+    "slug": "render",
+    "name": "Render",
+    "description": "Render is a application hosting tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Application Hosting",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://render.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on application hosting workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for application hosting software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Application Hosting",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/render.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Render icon",
+    "icon_fallback_url": "/static/icons/generated/render.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "render.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Render official website",
+        "url": "https://render.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "render.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/render/logo.svg",
+        "source_url": "https://render.com/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 649,
+        "checksum": "02192da254698159edc32c0e87c44fa1f11639136050fad0eae56d92c83070eb",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://render.com/icon.svg?e6fbdd2e217c0064"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "render"
+    }
+  },
+  {
+    "id": 653,
+    "slug": "coolify",
+    "name": "Coolify",
+    "description": "Coolify is a self hosted paas tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Self Hosted PaaS",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://coolify.io/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on self hosted paas workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for self hosted paas software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Self Hosted PaaS",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/coolify.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Coolify icon",
+    "icon_fallback_url": "/static/icons/generated/coolify.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "coolify.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Coolify official website",
+        "url": "https://coolify.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "coolify.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/coolify/logo.webp",
+        "source_url": "https://coolify.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1828,
+        "checksum": "5edf2fe5be3f27e3756a775d1ed3ab9caad71258ca0272cc12f125de4e1d8b62",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://coolify.io/android-launchericon-144-144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CO"
+      },
+      "version": 1,
+      "tool_slug": "coolify"
+    }
+  },
+  {
+    "id": 654,
+    "slug": "caprover",
+    "name": "CapRover",
+    "description": "CapRover is a self hosted paas tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Self Hosted PaaS",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://caprover.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on self hosted paas workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for self hosted paas software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Self Hosted PaaS",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/caprover.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "CapRover icon",
+    "icon_fallback_url": "/static/icons/generated/caprover.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "caprover.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "CapRover official website",
+        "url": "https://caprover.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "caprover.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/caprover/logo.webp",
+        "source_url": "https://caprover.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 585,
+        "height": 588,
+        "aspect_ratio": "585:588",
+        "file_size_bytes": 27748,
+        "checksum": "04bd6a6617c90734a058dbaec123d38e3873a35a59896d5c27937a126197a68c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://caprover.com/homepage-assets/caprover-logo.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CA"
+      },
+      "version": 1,
+      "tool_slug": "caprover"
+    }
+  },
+  {
+    "id": 655,
+    "slug": "plesk",
+    "name": "Plesk",
+    "description": "Plesk is a hosting control panels tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Hosting Control Panels",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.plesk.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on hosting control panels workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for hosting control panels software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Hosting Control Panels",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/plesk.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Plesk icon",
+    "icon_fallback_url": "/static/icons/generated/plesk.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "plesk.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Plesk official website",
+        "url": "https://www.plesk.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "plesk.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/plesk/logo.webp",
+        "source_url": "https://www.plesk.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2028,
+        "checksum": "c1583a6a1572ff40f723cc829438b53033e03b8413b82e6e4c305aad9cf4faae",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn-ilemdpo.nitrocdn.com/WNsKLnoDoQZLOuGzkBIktYCgzMstmhPp/assets/images/optimized/rev-cbfc9eb/cdn1.plesk.com/wp-content/uploads/2020/11/02120824/cropped-Logo_Plesk-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PL"
+      },
+      "version": 1,
+      "tool_slug": "plesk"
+    }
+  },
+  {
+    "id": 656,
+    "slug": "cyberpanel",
+    "name": "CyberPanel",
+    "description": "CyberPanel is a hosting control panels tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Hosting Control Panels",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://cyberpanel.net/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on hosting control panels workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for hosting control panels software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Hosting Control Panels",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/cyberpanel.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "CyberPanel icon",
+    "icon_fallback_url": "/static/icons/generated/cyberpanel.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "cyberpanel.net",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "CyberPanel official website",
+        "url": "https://cyberpanel.net/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "cyberpanel.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cyberpanel/logo.webp",
+        "source_url": "https://cyberpanel.net/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 200,
+        "height": 200,
+        "aspect_ratio": "200:200",
+        "file_size_bytes": 7698,
+        "checksum": "f4fd461847e91641a151d54b31fed322e367191f9ddd0c94e87002a777164303",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cyberpanel.net/wp-content/uploads/2022/04/cyberpanel-logo-icon_only-1.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CY"
+      },
+      "version": 1,
+      "tool_slug": "cyberpanel"
+    }
+  },
+  {
+    "id": 657,
+    "slug": "hestia-control-panel",
+    "name": "HestiaCP",
+    "description": "HestiaCP is a hosting control panels tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Hosting Control Panels",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://hestiacp.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on hosting control panels workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for hosting control panels software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Hosting Control Panels",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/hestia-control-panel.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "HestiaCP icon",
+    "icon_fallback_url": "/static/icons/generated/hestia-control-panel.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "hestiacp.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "HestiaCP official website",
+        "url": "https://hestiacp.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "hestiacp.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/hestia-control-panel/logo.webp",
+        "source_url": "https://hestiacp.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3956,
+        "checksum": "078c2841094fa9f4fa72ec2731acebdfb967ba6b6881e3c295e8cf5a7b39079d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://hestiacp.com/icon-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HE"
+      },
+      "version": 1,
+      "tool_slug": "hestia-control-panel"
+    }
+  },
+  {
+    "id": 685,
+    "slug": "dokploy",
+    "name": "Dokploy",
+    "description": "Dokploy is a self hosted paas tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Self Hosted PaaS",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://dokploy.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on self hosted paas workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for self hosted paas software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Self Hosted PaaS",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/dokploy.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dokploy icon",
+    "icon_fallback_url": "/static/icons/generated/dokploy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dokploy.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dokploy official website",
+        "url": "https://dokploy.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "dokploy.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dokploy/logo.webp",
+        "source_url": "https://dokploy.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 5480,
+        "checksum": "699122e025657364946ed4f5e8025f68ad0da8e44dbc1829f4de17c6c6d962be",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://dokploy.com/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "dokploy"
+    }
+  },
+  {
+    "id": 686,
+    "slug": "easypanel",
+    "name": "Easypanel",
+    "description": "Easypanel is a server management tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Server Management",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://easypanel.io/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on server management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for server management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Server Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/easypanel.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Easypanel icon",
+    "icon_fallback_url": "/static/icons/generated/easypanel.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "E",
+      "domain": "easypanel.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Easypanel official website",
+        "url": "https://easypanel.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "easypanel.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/easypanel/logo.webp",
+        "source_url": "https://easypanel.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2310,
+        "checksum": "f0357a9ba9f2f356cb1372419cf858d65479ae7e39a77a87c28a83982c1abb98",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://easypanel.io/apple-icon.png?apple-icon.0nofdoon4h03o.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EA"
+      },
+      "version": 1,
+      "tool_slug": "easypanel"
+    }
+  },
+  {
+    "id": 687,
+    "slug": "cloudron",
+    "name": "Cloudron",
+    "description": "Cloudron is a server management tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Server Management",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.cloudron.io/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on server management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for server management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Server Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/cloudron.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cloudron icon",
+    "icon_fallback_url": "/static/icons/generated/cloudron.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "cloudron.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Cloudron official website",
+        "url": "https://www.cloudron.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "cloudron.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cloudron/logo.webp",
+        "source_url": "https://www.cloudron.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1850,
+        "checksum": "e179d852c25139374785d73227cab7cbf17cfd2f93621dcb752cf5f9e37777b7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.cloudron.io/img/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CL"
+      },
+      "version": 1,
+      "tool_slug": "cloudron"
+    }
+  },
+  {
+    "id": 688,
+    "slug": "yunohost",
+    "name": "YunoHost",
+    "description": "YunoHost is a server management tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Server Management",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://yunohost.org/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on server management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for server management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Server Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/yunohost.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "YunoHost icon",
+    "icon_fallback_url": "/static/icons/generated/yunohost.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "Y",
+      "domain": "yunohost.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "YunoHost official website",
+        "url": "https://yunohost.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "yunohost.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/yunohost/logo.webp",
+        "source_url": "https://yunohost.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 263,
+        "height": 262,
+        "aspect_ratio": "263:262",
+        "file_size_bytes": 6156,
+        "checksum": "dd6579ffb2402820f3ccb10c08a3990e74f6e7d583f60eeb373a99d10141bab3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://yunohost.org/assets/img/ynh_logo_roundcorner.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "YU"
+      },
+      "version": 1,
+      "tool_slug": "yunohost"
+    }
+  },
+  {
+    "id": 689,
+    "slug": "dokku",
+    "name": "Dokku",
+    "description": "Dokku is a self hosted paas tool for users evaluating software in the web and hosting category.",
+    "category": "Web and Hosting",
+    "tags": [
+      "Self Hosted PaaS",
+      "Web and Hosting",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://dokku.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on self hosted paas workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for self hosted paas software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Self Hosted PaaS",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/dokku.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dokku icon",
+    "icon_fallback_url": "/static/icons/generated/dokku.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dokku.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dokku official website",
+        "url": "https://dokku.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "dokku.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dokku/logo.webp",
+        "source_url": "https://dokku.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 2586,
+        "checksum": "40574e78791b82628e247d68580c0ca3f86c34e55c23e8d01a932328b5e45236",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://cdn.jsdelivr.net/gh/dokku/dokku@v0.38.25/docs/assets/favicons/apple-touch-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "dokku"
+    }
   }
 ]

@@ -1603,13 +1603,13 @@ def readiness_check():
         integrity = connection.execute("PRAGMA quick_check").fetchone()[0]
         tool_count = connection.execute("SELECT COUNT(*) FROM tools").fetchone()[0]
         translation_count = connection.execute("SELECT COUNT(*) FROM tool_translations").fetchone()[0]
-        category_count = connection.execute("SELECT COUNT(*) FROM categories").fetchone()[0]
+        category_count = connection.execute("SELECT COUNT(DISTINCT category_id) FROM tools WHERE COALESCE(status,'published')='published'").fetchone()[0]
         connection.close()
     except Exception:
         app.logger.exception("readiness_check_failed")
         return jsonify({"status": "not_ready", "database": "unavailable"}), 503
 
-    ready = integrity == "ok" and tool_count >= 600 and translation_count >= 1200 and category_count == 18
+    ready = integrity == "ok" and tool_count >= 700 and translation_count >= tool_count * 2 and category_count == 18
     return jsonify({
         "status": "ready" if ready else "not_ready",
         "database": "ok" if integrity == "ok" else "corrupt",

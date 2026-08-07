@@ -11378,5 +11378,2691 @@
       "version": 1,
       "tool_slug": "sourcetree"
     }
+  },
+  {
+    "id": 632,
+    "slug": "podman-desktop",
+    "name": "Podman Desktop",
+    "description": "Podman Desktop is a containers tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://podman-desktop.io/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on containers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for containers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Containers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/podman-desktop.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Podman Desktop icon",
+    "icon_fallback_url": "/static/icons/generated/podman-desktop.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PD",
+      "domain": "podman-desktop.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Podman Desktop official website",
+        "url": "https://podman-desktop.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "podman-desktop.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/podman-desktop/logo.webp",
+        "source_url": "https://podman-desktop.io/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 5142,
+        "checksum": "35f946ec216e6590210d43ad5ab2ce68e090ab51726c828b80714c2a82ce8306",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://podman-desktop.io/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PD"
+      },
+      "version": 1,
+      "tool_slug": "podman-desktop"
+    }
+  },
+  {
+    "id": 633,
+    "slug": "rancher-desktop",
+    "name": "Rancher Desktop",
+    "description": "Rancher Desktop is a containers tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Containers",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://rancherdesktop.io/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on containers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for containers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Containers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/rancher-desktop.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Rancher Desktop icon",
+    "icon_fallback_url": "/static/icons/generated/rancher-desktop.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RD",
+      "domain": "rancherdesktop.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Rancher Desktop official website",
+        "url": "https://rancherdesktop.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "rancherdesktop.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/rancher-desktop/logo.webp",
+        "source_url": "https://rancherdesktop.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 96,
+        "height": 96,
+        "aspect_ratio": "96:96",
+        "file_size_bytes": 1446,
+        "checksum": "e33524b66575d9a1d67fe870d107b866cb64084fd3a5a955409c37af8df5478c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://rancherdesktop.io/android-icon-96x96.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RD"
+      },
+      "version": 1,
+      "tool_slug": "rancher-desktop"
+    }
+  },
+  {
+    "id": 634,
+    "slug": "lazygit",
+    "name": "Lazygit",
+    "description": "Lazygit is a git clients tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Git Clients",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/jesseduffield/lazygit",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on git clients workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for git clients software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Git Clients",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/lazygit.svg",
+    "icon_source": "local-generated-no-upstream-artwork",
+    "icon_alt": "Lazygit icon",
+    "icon_fallback_url": "/static/icons/generated/lazygit.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LA",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "verified-fallback",
+      "reason": "The official source repository and release artifacts publish no project or application logo."
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lazygit official website",
+        "url": "https://github.com/jesseduffield/lazygit",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "local_path": "/static/icons/generated/lazygit.svg",
+        "source_url": "https://github.com/jesseduffield/lazygit",
+        "asset_url": null,
+        "source_type": "official-source-no-artwork",
+        "original_format": "none",
+        "served_format": "svg",
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-manual-source-audit",
+        "license_status": "generated-fallback",
+        "attribution_required": false,
+        "notes": "The official source repository and release artifacts publish no project or application logo."
+      }
+    }
+  },
+  {
+    "id": 635,
+    "slug": "warp",
+    "name": "Warp",
+    "description": "Warp is a terminals tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Terminals",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.warp.dev/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on terminals workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for terminals software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Terminals",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/warp.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Warp icon",
+    "icon_fallback_url": "/static/icons/generated/warp.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "warp.dev",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Warp official website",
+        "url": "https://www.warp.dev/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "warp.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/warp/logo.webp",
+        "source_url": "https://www.warp.dev/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1170,
+        "checksum": "fdf1de37a5d6ebc7154eac33f1677d992df8b9d08491530370f9422013e8d52f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.warp.dev/apple-touch-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WA"
+      },
+      "version": 1,
+      "tool_slug": "warp"
+    }
+  },
+  {
+    "id": 636,
+    "slug": "wezterm",
+    "name": "WezTerm",
+    "description": "WezTerm is a terminals tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Terminals",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://wezterm.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on terminals workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for terminals software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Terminals",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/wezterm.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "WezTerm icon",
+    "icon_fallback_url": "/static/icons/generated/wezterm.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "wezterm.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "WezTerm official website",
+        "url": "https://wezterm.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "wezterm.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wezterm/logo.webp",
+        "source_url": "https://wezterm.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 2240,
+        "checksum": "fd087cf6ecf318a77453fc03bf0b856b7e871fc227da1a865ba74fd2c42ccd90",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://wezterm.org/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WE"
+      },
+      "version": 1,
+      "tool_slug": "wezterm"
+    }
+  },
+  {
+    "id": 637,
+    "slug": "tabby",
+    "name": "Tabby",
+    "description": "Tabby is a terminals tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Terminals",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://tabby.sh/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on terminals workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for terminals software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Terminals",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/tabby.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Tabby icon",
+    "icon_fallback_url": "/static/icons/generated/tabby.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "tabby.sh",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Tabby official website",
+        "url": "https://tabby.sh/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "tabby.sh",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/tabby/logo.webp",
+        "source_url": "https://tabby.sh/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1666,
+        "checksum": "a0a87a56283baf6bbb9fcec8e8f560df22d50b4c319c46b62220b008e381316a",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://tabby.sh/41c0b2191a91f83bee77.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TA"
+      },
+      "version": 1,
+      "tool_slug": "tabby"
+    }
+  },
+  {
+    "id": 638,
+    "slug": "lapce",
+    "name": "Lapce",
+    "description": "Lapce is a code editors tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://lapce.dev/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on code editors workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for code editors software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Code Editors",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/lapce.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Lapce icon",
+    "icon_fallback_url": "/static/icons/generated/lapce.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "lapce.dev",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lapce official website",
+        "url": "https://lapce.dev/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "lapce.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lapce/logo.svg",
+        "source_url": "https://github.com/lapce/lapce/blob/master/extra/images/logo_app.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 4639,
+        "checksum": "4c4915da304cafeacfd3a7cacd6389d94ef1062db30b1f2ca3a805f3aac3d401",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo_app.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LA"
+      },
+      "version": 1,
+      "tool_slug": "lapce"
+    }
+  },
+  {
+    "id": 639,
+    "slug": "beekeeper-studio",
+    "name": "Beekeeper Studio",
+    "description": "Beekeeper Studio is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.beekeeperstudio.io/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/beekeeper-studio.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Beekeeper Studio icon",
+    "icon_fallback_url": "/static/icons/generated/beekeeper-studio.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BS",
+      "domain": "beekeeperstudio.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Beekeeper Studio official website",
+        "url": "https://www.beekeeperstudio.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "beekeeperstudio.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/beekeeper-studio/logo.webp",
+        "source_url": "https://www.beekeeperstudio.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 4344,
+        "checksum": "6931f84fa9a24b4ef45db96e43851391bc72746fb24819d3e9ac59050aded3f5",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.beekeeperstudio.io/static/favicon/apple-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BS"
+      },
+      "version": 1,
+      "tool_slug": "beekeeper-studio"
+    }
+  },
+  {
+    "id": 658,
+    "slug": "bruno",
+    "name": "Bruno",
+    "description": "Bruno is a api clients tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "API Clients",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.usebruno.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on api clients workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for api clients software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "API Clients",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/bruno.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Bruno icon",
+    "icon_fallback_url": "/static/icons/generated/bruno.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "usebruno.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Bruno official website",
+        "url": "https://www.usebruno.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "usebruno.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bruno/logo.webp",
+        "source_url": "https://github.com/usebruno/bruno/blob/main/packages/bruno-electron/resources/icons/png/1024x1024.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 59004,
+        "checksum": "b809f6a8fd69067781a206e2924cc5c3ff67fb665cbae99b87615c5c860b0bb0",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/usebruno/bruno/main/packages/bruno-electron/resources/icons/png/1024x1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BR"
+      },
+      "version": 1,
+      "tool_slug": "bruno"
+    }
+  },
+  {
+    "id": 659,
+    "slug": "hoppscotch",
+    "name": "Hoppscotch",
+    "description": "Hoppscotch is a api clients tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "API Clients",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://hoppscotch.io/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on api clients workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for api clients software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "API Clients",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/hoppscotch.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Hoppscotch icon",
+    "icon_fallback_url": "/static/icons/generated/hoppscotch.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "hoppscotch.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Hoppscotch official website",
+        "url": "https://hoppscotch.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "hoppscotch.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/hoppscotch/logo.webp",
+        "source_url": "https://hoppscotch.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 22372,
+        "checksum": "ed3ccb1a80509edbc081e78175bddf3c745d1bdedd4a78102e134ce3872c3280",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://hoppscotch.io/icons/pwa-1024x1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HO"
+      },
+      "version": 1,
+      "tool_slug": "hoppscotch"
+    }
+  },
+  {
+    "id": 660,
+    "slug": "yaak",
+    "name": "Yaak",
+    "description": "Yaak is a api clients tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "API Clients",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://yaak.app/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on api clients workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for api clients software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "API Clients",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/yaak.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Yaak icon",
+    "icon_fallback_url": "/static/icons/generated/yaak.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "Y",
+      "domain": "yaak.app",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Yaak official website",
+        "url": "https://yaak.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "yaak.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/yaak/logo.webp",
+        "source_url": "https://yaak.app/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 6108,
+        "checksum": "c6370bca03fc9b973af66fc861de2cea6dc1569fe92b59a8d19c8999e893f860",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://yaak.app/static/favicon/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "YA"
+      },
+      "version": 1,
+      "tool_slug": "yaak"
+    }
+  },
+  {
+    "id": 661,
+    "slug": "helix-editor",
+    "name": "Helix",
+    "description": "Helix is a code editors tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://helix-editor.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on code editors workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for code editors software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Code Editors",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/helix-editor.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Helix icon",
+    "icon_fallback_url": "/static/icons/generated/helix-editor.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "helix-editor.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Helix official website",
+        "url": "https://helix-editor.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "helix-editor.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/helix-editor/logo.svg",
+        "source_url": "https://helix-editor.com/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 3099,
+        "checksum": "c9c06930d3d7eea73fc22a236eec29cf637946b8922359b7272a5eee1cb79e64",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://helix-editor.com/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HE"
+      },
+      "version": 1,
+      "tool_slug": "helix-editor"
+    }
+  },
+  {
+    "id": 662,
+    "slug": "vscodium",
+    "name": "VSCodium",
+    "description": "VSCodium is a code editors tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Code Editors",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://vscodium.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on code editors workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for code editors software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Code Editors",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/vscodium.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "VSCodium icon",
+    "icon_fallback_url": "/static/icons/generated/vscodium.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "V",
+      "domain": "vscodium.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "VSCodium official website",
+        "url": "https://vscodium.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "vscodium.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/vscodium/logo.webp",
+        "source_url": "https://vscodium.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4726,
+        "checksum": "2eada50f11507c91e3138822eef1ead9045758e368c1689a39f3e620b2046d2e",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://vscodium.com/img/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "VS"
+      },
+      "version": 1,
+      "tool_slug": "vscodium"
+    }
+  },
+  {
+    "id": 663,
+    "slug": "tableplus",
+    "name": "TablePlus",
+    "description": "TablePlus is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://tableplus.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/tableplus.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "TablePlus icon",
+    "icon_fallback_url": "/static/icons/generated/tableplus.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "tableplus.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "TablePlus official website",
+        "url": "https://tableplus.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "tableplus.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/tableplus/logo.webp",
+        "source_url": "https://tableplus.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 7322,
+        "checksum": "9bcd93ce129704db02785f0ef1a34801e99e8cbf971324d73bb60d2713ade94f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://tableplus.com/resources/favicons/apple-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TA"
+      },
+      "version": 1,
+      "tool_slug": "tableplus"
+    }
+  },
+  {
+    "id": 664,
+    "slug": "datagrip",
+    "name": "DataGrip",
+    "description": "DataGrip is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.jetbrains.com/datagrip/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/datagrip.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DataGrip icon",
+    "icon_fallback_url": "/static/icons/generated/datagrip.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "jetbrains.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "DataGrip official website",
+        "url": "https://www.jetbrains.com/datagrip/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "jetbrains.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/datagrip/logo.webp",
+        "source_url": "https://www.jetbrains.com/datagrip/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2274,
+        "checksum": "cc95422011b8c282b8f5270a59941f7309be04edc1ed1f0a2ad9cd05c3f795d4",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.jetbrains.com/icon-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DA"
+      },
+      "version": 1,
+      "tool_slug": "datagrip"
+    }
+  },
+  {
+    "id": 665,
+    "slug": "pgadmin",
+    "name": "pgAdmin",
+    "description": "pgAdmin is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.pgadmin.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/pgadmin.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "pgAdmin icon",
+    "icon_fallback_url": "/static/icons/generated/pgadmin.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "pgadmin.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "pgAdmin official website",
+        "url": "https://www.pgadmin.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "pgadmin.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pgadmin/logo.webp",
+        "source_url": "https://www.pgadmin.org/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 138,
+        "height": 138,
+        "aspect_ratio": "138:138",
+        "file_size_bytes": 2950,
+        "checksum": "3470010040c511e3e4fe2b4ca81dc9c9ad23b7bb82a7d65d1fbacb649eac5d84",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.pgadmin.org/static/COMPILED/assets/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PG"
+      },
+      "version": 1,
+      "tool_slug": "pgadmin"
+    }
+  },
+  {
+    "id": 666,
+    "slug": "mongodb-compass",
+    "name": "MongoDB Compass",
+    "description": "MongoDB Compass is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.mongodb.com/products/tools/compass",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/mongodb-compass.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "MongoDB Compass icon",
+    "icon_fallback_url": "/static/icons/generated/mongodb-compass.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MC",
+      "domain": "mongodb.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "MongoDB Compass official website",
+        "url": "https://www.mongodb.com/products/tools/compass",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "mongodb.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mongodb-compass/logo.webp",
+        "source_url": "https://www.mongodb.com/products/tools/compass",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1570,
+        "checksum": "a5e83c49faa34daafbe92acc0a947df60abd050316e5a1bca53b253ec6afaba2",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.mongodb.com/assets/images/global/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MC"
+      },
+      "version": 1,
+      "tool_slug": "mongodb-compass"
+    }
+  },
+  {
+    "id": 667,
+    "slug": "redisinsight",
+    "name": "RedisInsight",
+    "description": "RedisInsight is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://redis.io/insight/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/redisinsight.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "RedisInsight icon",
+    "icon_fallback_url": "/static/icons/generated/redisinsight.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "redis.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "RedisInsight official website",
+        "url": "https://redis.io/insight/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "redis.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/redisinsight/logo.webp",
+        "source_url": "https://github.com/RedisInsight/RedisInsight/blob/main/redisinsight/ui/public/favicon-180x180.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6616,
+        "checksum": "646ad19a6d5c5e4ed93b466cbba6247a67dcdddb9ee36eaa06a0c1d8626e7177",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/RedisInsight/RedisInsight/main/redisinsight/ui/public/favicon-180x180.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "redisinsight"
+    }
+  },
+  {
+    "id": 668,
+    "slug": "dbgate",
+    "name": "DbGate",
+    "description": "DbGate is a database tools tool for users evaluating software in the development category.",
+    "category": "Development",
+    "tags": [
+      "Database Tools",
+      "Development",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.dbgate.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on database tools workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for database tools software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Database Tools",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/dbgate.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "DbGate icon",
+    "icon_fallback_url": "/static/icons/generated/dbgate.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dbgate.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "DbGate official website",
+        "url": "https://www.dbgate.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "dbgate.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dbgate/logo.webp",
+        "source_url": "https://www.dbgate.io/",
+        "source_type": "official_product_site",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 7202,
+        "checksum": "c9339dbfff725c69af72c2a317f0bc05a6eb4b5240afed2ea4bf2a99fec1326a",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.dbgate.io/img/dbgate-logo-512x512.jpg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DB"
+      },
+      "version": 1,
+      "tool_slug": "dbgate"
+    }
   }
 ]

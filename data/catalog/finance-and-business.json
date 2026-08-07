@@ -6493,5 +6493,704 @@
       "version": 1,
       "tool_slug": "ynab"
     }
+  },
+  {
+    "id": 614,
+    "slug": "quickbooks-online",
+    "name": "QuickBooks Online",
+    "description": "QuickBooks Online is a accounting tool for users evaluating software in the finance and business category.",
+    "category": "Finance and Business",
+    "tags": [
+      "Accounting",
+      "Finance and Business",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://quickbooks.intuit.com/online/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on accounting workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for accounting software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Accounting",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/quickbooks-online.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "QuickBooks Online icon",
+    "icon_fallback_url": "/static/icons/generated/quickbooks-online.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "QO",
+      "domain": "quickbooks.intuit.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "QuickBooks Online official website",
+        "url": "https://quickbooks.intuit.com/online/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "quickbooks.intuit.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/quickbooks-online/logo.webp",
+        "source_url": "https://quickbooks.intuit.com/online/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 152,
+        "height": 152,
+        "aspect_ratio": "152:152",
+        "file_size_bytes": 4368,
+        "checksum": "4784b742809de4cb376245b185c71c6d499b1f2895db604895bb7be0eee03e08",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://quickbooks.intuit.com/cas/dam/IMAGE/A8u8GvpJS/apple-touch-icon-152x152.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "QO"
+      },
+      "version": 1,
+      "tool_slug": "quickbooks-online"
+    }
+  },
+  {
+    "id": 615,
+    "slug": "paddle",
+    "name": "Paddle",
+    "description": "Paddle is a payments and billing tool for users evaluating software in the finance and business category.",
+    "category": "Finance and Business",
+    "tags": [
+      "Payments and Billing",
+      "Finance and Business",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.paddle.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on payments and billing workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for payments and billing software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Payments and Billing",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/paddle.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Paddle icon",
+    "icon_fallback_url": "/static/icons/generated/paddle.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "paddle.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Paddle official website",
+        "url": "https://www.paddle.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "paddle.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/paddle/logo.webp",
+        "source_url": "https://www.paddle.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2406,
+        "checksum": "d568d53c4acdd4dc847437587bbbdf419a28813f94006edb25719f509c98d83c",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.paddle.com/favicon.ico?favicon.1w168eg0y-euk.ico?dpl=211494ef525db95b9fab6e9726544eb460322dae2e365fae2d06c0f00de3a866366137356664633136303938363930303038353164623231"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PA"
+      },
+      "version": 1,
+      "tool_slug": "paddle"
+    }
+  },
+  {
+    "id": 616,
+    "slug": "chargebee",
+    "name": "Chargebee",
+    "description": "Chargebee is a subscription billing tool for users evaluating software in the finance and business category.",
+    "category": "Finance and Business",
+    "tags": [
+      "Subscription Billing",
+      "Finance and Business",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.chargebee.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on subscription billing workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for subscription billing software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Subscription Billing",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/chargebee.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Chargebee icon",
+    "icon_fallback_url": "/static/icons/generated/chargebee.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "chargebee.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Chargebee official website",
+        "url": "https://www.chargebee.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "chargebee.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/chargebee/logo.webp",
+        "source_url": "https://www.chargebee.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 6598,
+        "checksum": "25aa4a547fa898720c20efd6ab34d10f5e8205bea4906afb3e8d6dcb2a060c20",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.chargebee.com/static/resources/brand/apple-touch-icon.png?v=1"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CH"
+      },
+      "version": 1,
+      "tool_slug": "chargebee"
+    }
+  },
+  {
+    "id": 617,
+    "slug": "mercury",
+    "name": "Mercury",
+    "description": "Mercury is a business banking tool for users evaluating software in the finance and business category.",
+    "category": "Finance and Business",
+    "tags": [
+      "Business Banking",
+      "Finance and Business",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://mercury.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on business banking workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for business banking software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Business Banking",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/mercury.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Mercury icon",
+    "icon_fallback_url": "/static/icons/generated/mercury.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "mercury.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mercury official website",
+        "url": "https://mercury.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "mercury.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mercury/logo.webp",
+        "source_url": "https://mercury.com/",
+        "source_type": "official_product_site",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 24268,
+        "checksum": "5cf79dffadb649e0ea30b028cddbb78912b8116fa25d32879906d86176aa1178",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/80/e7/0080e73d-9e68-ca53-3d16-ce4152c623a5/AppIcon-Release-0-0-1x_U007ephone-0-1-0-0-sRGB-85-220.png/512x512bb.jpg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ME"
+      },
+      "version": 1,
+      "tool_slug": "mercury"
+    }
+  },
+  {
+    "id": 700,
+    "slug": "actual-budget",
+    "name": "Actual Budget",
+    "description": "Actual Budget is a personal finance tool for users evaluating software in the finance and business category.",
+    "category": "Finance and Business",
+    "tags": [
+      "Personal Finance",
+      "Finance and Business",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://actualbudget.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on personal finance workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for personal finance software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Personal Finance",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/actual-budget.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Actual Budget icon",
+    "icon_fallback_url": "/static/icons/generated/actual-budget.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AB",
+      "domain": "actualbudget.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Actual Budget official website",
+        "url": "https://actualbudget.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "actualbudget.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/actual-budget/logo.svg",
+        "source_url": "https://github.com/actualbudget/actual/blob/master/packages/component-library/src/icons/logo/logo.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 1006,
+        "checksum": "cc7d1b8eb71512cff785206e34d532d60172d73ffbf1ab1bae39f0a84274e759",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/actualbudget/actual/master/packages/component-library/src/icons/logo/logo.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AB"
+      },
+      "version": 1,
+      "tool_slug": "actual-budget"
+    }
   }
 ]

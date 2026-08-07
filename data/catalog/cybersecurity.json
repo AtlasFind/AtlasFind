@@ -8903,5 +8903,1284 @@
       "version": 1,
       "tool_slug": "eset-nod32"
     }
+  },
+  {
+    "id": 640,
+    "slug": "1password",
+    "name": "1Password",
+    "description": "1Password is a password managers tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Password Managers",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Paid",
+    "pricing_type": "paid",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://1password.com/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on password managers workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for password managers software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Paid",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Password Managers",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/1password.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "1Password icon",
+    "icon_fallback_url": "/static/icons/generated/1password.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "1",
+      "domain": "1password.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "1Password official website",
+        "url": "https://1password.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "1password.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/1password/logo.webp",
+        "source_url": "https://1password.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 5238,
+        "checksum": "b932214789518e80237a256a88d6c06d8c8935bfec343ce261aff0d338498aec",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://1password.com/img/favicon/icon-192x192-v2.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "1P"
+      },
+      "version": 1,
+      "tool_slug": "1password"
+    }
+  },
+  {
+    "id": 641,
+    "slug": "ente-auth",
+    "name": "Ente Auth",
+    "description": "Ente Auth is a authenticators tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Authenticators",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ente.io/auth/",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on authenticators workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for authenticators software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Authenticators",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/ente-auth.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Ente Auth icon",
+    "icon_fallback_url": "/static/icons/generated/ente-auth.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EA",
+      "domain": "ente.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Ente Auth official website",
+        "url": "https://ente.io/auth/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "ente.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ente-auth/logo.webp",
+        "source_url": "https://ente.com/auth/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 5752,
+        "checksum": "e81007b54e4ca443800225b88272d09644b3e4fca28e130c9b4b0e497eb25c68",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://ente.com/assets/auth-favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EA"
+      },
+      "version": 1,
+      "tool_slug": "ente-auth"
+    }
+  },
+  {
+    "id": 642,
+    "slug": "authy",
+    "name": "Authy",
+    "description": "Authy is a authenticators tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Authenticators",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.authy.com/",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on authenticators workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for authenticators software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Authenticators",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/authy.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Authy icon",
+    "icon_fallback_url": "/static/icons/generated/authy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "A",
+      "domain": "authy.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Authy official website",
+        "url": "https://www.authy.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "authy.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/authy/logo.webp",
+        "source_url": "https://www.authy.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 3224,
+        "checksum": "83da661169aea0c560f679f648ffad8c9df612cf25fef314dd97a67348062404",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.authy.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AU"
+      },
+      "version": 1,
+      "tool_slug": "authy"
+    }
+  },
+  {
+    "id": 643,
+    "slug": "portmaster",
+    "name": "Portmaster",
+    "description": "Portmaster is a network privacy tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Network Privacy",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://safing.io/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on network privacy workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for network privacy software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Network Privacy",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/portmaster.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Portmaster icon",
+    "icon_fallback_url": "/static/icons/generated/portmaster.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "safing.io",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Portmaster official website",
+        "url": "https://safing.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "safing.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/portmaster/logo.webp",
+        "source_url": "https://safing.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 6182,
+        "checksum": "297e483200e4c1deb6716191c8ee085ccf30e30abff02fca1eb58c3d53d1f721",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://safing.io/assets/icons/apple-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PO"
+      },
+      "version": 1,
+      "tool_slug": "portmaster"
+    }
+  },
+  {
+    "id": 644,
+    "slug": "simplewall",
+    "name": "simplewall",
+    "description": "simplewall is a firewalls tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Firewalls",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.henrypp.org/product/simplewall",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on firewalls workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for firewalls software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Firewalls",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/simplewall.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "simplewall icon",
+    "icon_fallback_url": "/static/icons/generated/simplewall.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "henrypp.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "simplewall official website",
+        "url": "https://www.henrypp.org/product/simplewall",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "henrypp.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/simplewall/logo.webp",
+        "source_url": "https://github.com/henrypp/simplewall/blob/master/src/res/100.ico",
+        "source_type": "official_source_repository",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 5816,
+        "checksum": "cbdc7c7ec673f23dc3db318d2ecb3004faa0866e77721cdc15f855a09a934428",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/henrypp/simplewall/master/src/res/100.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SI"
+      },
+      "version": 1,
+      "tool_slug": "simplewall"
+    }
+  },
+  {
+    "id": 645,
+    "slug": "qubes-os",
+    "name": "Qubes OS",
+    "description": "Qubes OS is a secure operating systems tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Secure Operating Systems",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.qubes-os.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on secure operating systems workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for secure operating systems software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Secure Operating Systems",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/qubes-os.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Qubes OS icon",
+    "icon_fallback_url": "/static/icons/generated/qubes-os.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "QO",
+      "domain": "qubes-os.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Qubes OS official website",
+        "url": "https://www.qubes-os.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "qubes-os.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/qubes-os/logo.webp",
+        "source_url": "https://www.qubes-os.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2050,
+        "checksum": "3b17ce90e9e3abf0e4e3c168e2a982ccb4a331f0597d73105a39a6bddf31da76",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://www.qubes-os.org/apple-touch-icon.png?v=bOv986l09r"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "QO"
+      },
+      "version": 1,
+      "tool_slug": "qubes-os"
+    }
+  },
+  {
+    "id": 693,
+    "slug": "cryptomator",
+    "name": "Cryptomator",
+    "description": "Cryptomator is a file encryption tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "File Encryption",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://cryptomator.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on file encryption workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for file encryption software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "File Encryption",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/cryptomator.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Cryptomator icon",
+    "icon_fallback_url": "/static/icons/generated/cryptomator.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "cryptomator.org",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Cryptomator official website",
+        "url": "https://cryptomator.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "cryptomator.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cryptomator/logo.webp",
+        "source_url": "https://github.com/cryptomator/cryptomator/blob/develop/src/main/resources/img/logo128@2x.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 302,
+        "height": 256,
+        "aspect_ratio": "302:256",
+        "file_size_bytes": 11770,
+        "checksum": "4d8a19ed8b0988379222159166c21f794c98118209151be2a780d80317a89aa3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/src/main/resources/img/logo128@2x.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CR"
+      },
+      "version": 1,
+      "tool_slug": "cryptomator"
+    }
+  },
+  {
+    "id": 694,
+    "slug": "dangerzone",
+    "name": "Dangerzone",
+    "description": "Dangerzone is a document security tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "Document Security",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://dangerzone.rocks/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on document security workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for document security software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Document Security",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/dangerzone.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Dangerzone icon",
+    "icon_fallback_url": "/static/icons/generated/dangerzone.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dangerzone.rocks",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dangerzone official website",
+        "url": "https://dangerzone.rocks/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "dangerzone.rocks",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dangerzone/logo.webp",
+        "source_url": "https://github.com/freedomofpress/dangerzone/blob/main/share/icon.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1526,
+        "checksum": "6d0d70419138b13351471a91c5d8a6c7e8d67187e8a78ff5e91c160a60e8a6a6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/freedomofpress/dangerzone/main/share/icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DA"
+      },
+      "version": 1,
+      "tool_slug": "dangerzone"
+    }
+  },
+  {
+    "id": 695,
+    "slug": "age",
+    "name": "age",
+    "description": "age is a file encryption tool for users evaluating software in the cybersecurity category.",
+    "category": "Cybersecurity",
+    "tags": [
+      "File Encryption",
+      "Cybersecurity",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/FiloSottile/age",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on file encryption workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for file encryption software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "File Encryption",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/age.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "age icon",
+    "icon_fallback_url": "/static/icons/generated/age.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "A",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "age official website",
+        "url": "https://github.com/FiloSottile/age",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/age/logo.svg",
+        "source_url": "https://github.com/FiloSottile/age/blob/main/logo/logo.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 65647,
+        "checksum": "4ddd008cfb1f8122bf7ee4c81241856cff6ac864dd3cee51a54741d332f5fa85",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/FiloSottile/age/main/logo/logo.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AG"
+      },
+      "version": 1,
+      "tool_slug": "age"
+    }
   }
 ]

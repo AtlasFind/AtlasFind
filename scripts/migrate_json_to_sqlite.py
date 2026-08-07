@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from database import DATABASE_PATH, initialize_database, transaction
+from database import DATABASE_PATH, apply_migrations, initialize_database, transaction
 from catalog.loader import load_catalog
 from tool_schema import validate_tools
 from content_schema import validate_articles
@@ -126,6 +126,10 @@ def migrate(reset=True):
                 "INSERT INTO update_checklist_items(position,payload_json) VALUES (?,?)",
                 (position, json.dumps(item, ensure_ascii=False)),
             )
+
+    # Data-dependent migrations (translations, ratings and indexes) must run
+    # after the base catalog rows exist.
+    apply_migrations()
 
     print(f"{len(tools)} tools migrated")
     print(f"{len(articles)} articles migrated")

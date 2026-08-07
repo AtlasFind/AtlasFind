@@ -6296,5 +6296,428 @@
       "version": 1,
       "tool_slug": "process-hacker"
     }
+  },
+  {
+    "id": 646,
+    "slug": "fan-control",
+    "name": "Fan Control",
+    "description": "Fan Control is a hardware monitoring tool for users evaluating software in the system utilities category.",
+    "category": "System Utilities",
+    "tags": [
+      "Hardware Monitoring",
+      "System Utilities",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/Rem0o/FanControl.Releases",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on hardware monitoring workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for hardware monitoring software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Hardware Monitoring",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/fan-control.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Fan Control icon",
+    "icon_fallback_url": "/static/icons/generated/fan-control.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FC",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Fan Control official website",
+        "url": "https://github.com/Rem0o/FanControl.Releases",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/fan-control/logo.svg",
+        "source_url": "https://github.com/Rem0o/FanControl.Releases",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 829,
+        "checksum": "c8f73015c64ac94fc0daa8652ed862655616e74de82cc02b47b1a459749aa938",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://getfancontrol.com/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FC"
+      },
+      "version": 1,
+      "tool_slug": "fan-control"
+    }
+  },
+  {
+    "id": 647,
+    "slug": "winaero-tweaker",
+    "name": "Winaero Tweaker",
+    "description": "Winaero Tweaker is a system customization tool for users evaluating software in the system utilities category.",
+    "category": "System Utilities",
+    "tags": [
+      "System Customization",
+      "System Utilities",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://winaero.com/winaero-tweaker/",
+    "platforms": [
+      "Windows"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on system customization workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for system customization software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "System Customization",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/winaero-tweaker.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Winaero Tweaker icon",
+    "icon_fallback_url": "/static/icons/generated/winaero-tweaker.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "WT",
+      "domain": "winaero.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Winaero Tweaker official website",
+        "url": "https://winaero.com/winaero-tweaker/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "winaero.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/winaero-tweaker/logo.webp",
+        "source_url": "https://community.chocolatey.org/packages/winaero-tweaker",
+        "source_type": "verified_package_mirror",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 13578,
+        "checksum": "5c6c1a7a6ba165f25ad8a0e14fd87b4310c8c3f1a2fad38f00ab7de605213bcf",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Application icon distributed by the moderated package entry; official download blocks automated retrieval.",
+        "asset_url": "https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cecfce145d52fe2e4539dbe5b0ad47254b5620f/icons/winaero-tweaker.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WT"
+      },
+      "version": 1,
+      "tool_slug": "winaero-tweaker"
+    }
+  },
+  {
+    "id": 648,
+    "slug": "scrcpy",
+    "name": "scrcpy",
+    "description": "scrcpy is a device management tool for users evaluating software in the system utilities category.",
+    "category": "System Utilities",
+    "tags": [
+      "Device Management",
+      "System Utilities",
+      "Software"
+    ],
+    "pricing": "Free",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://github.com/Genymobile/scrcpy",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": true,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on device management workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for device management software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Free",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Device Management",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/scrcpy.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "scrcpy icon",
+    "icon_fallback_url": "/static/icons/generated/scrcpy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "github.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "scrcpy official website",
+        "url": "https://github.com/Genymobile/scrcpy",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/scrcpy/logo.webp",
+        "source_url": "https://github.com/Genymobile/scrcpy",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 2328,
+        "checksum": "01f6edfaaf5b9305eadbd1754b3c134e9212d25eb1c29ec411fa3d620572e4e1",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SC"
+      },
+      "version": 1,
+      "tool_slug": "scrcpy"
+    }
   }
 ]

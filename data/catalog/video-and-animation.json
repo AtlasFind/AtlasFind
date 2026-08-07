@@ -8959,5 +8959,283 @@
       "version": 1,
       "tool_slug": "loom"
     }
+  },
+  {
+    "id": 629,
+    "slug": "descript",
+    "name": "Descript",
+    "description": "Descript is a audio and video editing tool for users evaluating software in the video and animation category.",
+    "category": "Video and Animation",
+    "tags": [
+      "Audio and Video Editing",
+      "Video and Animation",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.descript.com/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on audio and video editing workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for audio and video editing software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Audio and Video Editing",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/descript.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Descript icon",
+    "icon_fallback_url": "/static/icons/generated/descript.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "descript.com",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Descript official website",
+        "url": "https://www.descript.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "descript.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/descript/logo.webp",
+        "source_url": "https://www.descript.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2070,
+        "checksum": "36d0112e6f7be260fe44864d251683ba94d376db06f590722609fd63f92a67bf",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Auto-approved after official-source, product relevance, image preflight, and duplicate asset checks; visual audit remains available.",
+        "asset_url": "https://static-cdn.descript.com/web/icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DE"
+      },
+      "version": 1,
+      "tool_slug": "descript"
+    }
+  },
+  {
+    "id": 630,
+    "slug": "riverside",
+    "name": "Riverside",
+    "description": "Riverside is a remote recording tool for users evaluating software in the video and animation category.",
+    "category": "Video and Animation",
+    "tags": [
+      "Remote Recording",
+      "Video and Animation",
+      "Software"
+    ],
+    "pricing": "Freemium",
+    "pricing_type": "freemium",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://riverside.fm/",
+    "platforms": [
+      "Web"
+    ],
+    "open_source": false,
+    "offline": false,
+    "ai_powered": true,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Official product source is available",
+      "Focused on remote recording workflows"
+    ],
+    "cons": [
+      "Pricing and platform details require final editorial confirmation"
+    ],
+    "target_users": [
+      "Users looking for remote recording software",
+      "Teams comparing software options"
+    ],
+    "system_requirements": [
+      "See the official product documentation for current requirements"
+    ],
+    "pricing_details": {
+      "model": "Freemium",
+      "note": "Final plan limits and regional pricing are pending editorial confirmation."
+    },
+    "verification": {
+      "status": "partially_verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+    },
+    "subcategory": "Remote Recording",
+    "popularity_score": 25,
+    "editor_choice": false,
+    "date_added": "2026-08-07",
+    "collections": [],
+    "freshness": {
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-07",
+        "type": "data-review",
+        "summary": "Staged for official-source editorial review.",
+        "changes": []
+      }
+    ],
+    "price_history": [],
+    "quality_status": "partially_verified",
+    "quality_review": {
+      "scope": "official-source-public-beta",
+      "reviewed_at": "2026-08-08",
+      "note": "Identity, official website, category and logo were reviewed. Plan limits, regional pricing and platform availability remain subject to official provider changes."
+    },
+    "icon_url": "/static/icons/generated/riverside.svg",
+    "icon_source": "local-generated",
+    "icon_alt": "Riverside icon",
+    "icon_fallback_url": "/static/icons/generated/riverside.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "riverside.fm",
+      "lazy_load": true,
+      "review_status": "staged"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Riverside official website",
+        "url": "https://riverside.fm/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-07",
+        "domain": "riverside.fm",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      }
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/riverside/logo.webp",
+        "source_url": "https://riverside.fm/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2388,
+        "checksum": "3bf56559b90ad976d38be689f781843618a154451ed17519bef4580f884bf33c",
+        "transparent_background": true,
+        "supports_light_theme": false,
+        "supports_dark_theme": false,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RI"
+      },
+      "version": 1,
+      "tool_slug": "riverside"
+    }
   }
 ]
