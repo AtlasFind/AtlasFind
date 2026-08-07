@@ -15,6 +15,29 @@
     <div class="catalog-summary"><strong>{{ pagination.total }}</strong><span>{{ t("catalog.tools_listed") }}</span></div>
   </div>
 </section>
+{% if category_landing %}
+<section class="section-container category-detail-overview">
+  <div class="category-detail-stats">
+    <div><strong>{{ category_landing.count }}</strong><span>{{ t('common.tools') }}</span></div>
+    <div><strong>{{ category_landing.subcategory_count }}</strong><span>{{ t('categories.subcategories') }}</span></div>
+    <div><strong>{{ category_landing.free_count }}</strong><span>{{ t('catalog.price_free') }}</span></div>
+    <div><strong>{{ category_landing.open_source_count }}</strong><span>{{ t('common.open_source') }}</span></div>
+  </div>
+  <div class="category-detail-heading">
+    <div><span class="eyebrow">{% if locale == 'tr' %}Alt kategoriler{% else %}Subcategories{% endif %}</span><h2>{% if locale == 'tr' %}İhtiyacına göre daralt{% else %}Narrow by what you need{% endif %}</h2></div>
+    {% if category_landing.compare_slugs|length >= 2 %}<a class="secondary-button" href="{{ localized_path('/compare?tools=' ~ category_landing.compare_slugs[0] ~ '&tools=' ~ category_landing.compare_slugs[1]) }}">{% if locale == 'tr' %}Öne çıkanları karşılaştır{% else %}Compare featured tools{% endif %}</a>{% endif %}
+  </div>
+  <div class="subcategory-detail-grid">
+    {% for subcategory in category_landing.subcategory_cards %}
+    <a class="subcategory-detail-card" href="{{ localized_path('/categories/' ~ category_landing.slug ~ '/' ~ subcategory.slug) }}">
+      <div><h3>{{ subcategory.name }}</h3><strong>{{ subcategory.count }} {{ t('common.tools') }}</strong></div>
+      <p>{% for tool in subcategory.featured %}{{ tool.name }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+      <span>{{ subcategory.free_count }} {{ t('catalog.price_free') }}{% if subcategory.ai_count %} · {{ subcategory.ai_count }} AI{% endif %} →</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 <section class="section-container discovery-layout catalog-layout" data-catalog-root>
   <div class="catalog-toolbar">
     <button class="filter-toggle" id="filterToggle" type="button" aria-controls="filterPanel" aria-expanded="false">

@@ -799,6 +799,33 @@ def category_cards(items, locale):
         cards.append(info)
     return cards
 
+def category_landing_data(items, slug, locale):
+    info = localized_category(slug, locale)
+    subcategory_names = sorted({tool.get("subcategory") for tool in items if tool.get("subcategory")})
+    subcategory_cards = []
+    for name in subcategory_names:
+        scoped = [tool for tool in items if tool.get("subcategory") == name]
+        subcategory_cards.append({
+            "name": name,
+            "slug": slugify_category(name),
+            "count": len(scoped),
+            "free_count": sum(1 for tool in scoped if tool.get("pricing_type") == "free"),
+            "ai_count": sum(1 for tool in scoped if tool.get("ai_powered")),
+            "featured": sort_tools(scoped, "popular")[:3],
+        })
+    featured = sort_tools(items, "popular")[:4]
+    return {
+        **info,
+        "count": len(items),
+        "subcategory_count": len(subcategory_cards),
+        "free_count": sum(1 for tool in items if tool.get("pricing_type") == "free"),
+        "open_source_count": sum(1 for tool in items if tool.get("open_source")),
+        "ai_count": sum(1 for tool in items if tool.get("ai_powered")),
+        "subcategory_cards": subcategory_cards,
+        "featured": featured,
+        "compare_slugs": [tool.get("slug") for tool in featured[:2]],
+    }
+
 def sort_tools(items, sort_key):
     options = {
         "rating": lambda t: (-float(t.get("rating", 0)), normalize_text(t.get("name", ""))),
@@ -991,6 +1018,7 @@ def inject_app_metadata():
         "supported_locales": SUPPORTED_LOCALES,
         "t": translate,
         "localized_path": localized_path,
+        "category_slug": category_slug,
         "alternate_urls": alternate_urls(request.path),
         "csp_nonce": getattr(g, "csp_nonce", ""),
         "js_i18n": {key: translate(key) for key in (
@@ -1045,6 +1073,7 @@ def home(locale=None):
         active_filters=active_filters,
         clear_filters_url=localized_path(f"/?{urlencode({'q': search_query})}" if search_query else "/"),
         total_tool_count=len(all_tools),
+        category_count=len(CATEGORIES),
         result_count=len(tools),
         categories=category_cards(all_tools, get_locale()),
         popular_tools=sort_tools(all_tools, "popular")[:6],
@@ -1097,11 +1126,15 @@ def categories_directory(locale=None):
         return response
     current_locale = get_locale()
     all_tools = load_tools()
+    cards = category_cards(all_tools, current_locale)
     title = "Kategoriler" if current_locale == "tr" else "Categories"
     description = ("AtlasFind araçlarını kullanım alanına göre keşfedin." if current_locale == "tr" else "Explore AtlasFind tools by purpose and category.")
     crumbs = build_breadcrumbs([(("Ana Sayfa" if current_locale == "tr" else "Home"), "/"), (title, "/categories")])
     return render_template(
-        "categories.html", categories=category_cards(all_tools, current_locale), active_page="categories",
+        "categories.html", categories=cards, active_page="categories",
+        category_total=len(cards),
+        subcategory_total=len({tool.get("subcategory") for tool in all_tools if tool.get("subcategory")}),
+        tool_total=len(all_tools),
         title=title, description=description,
         seo=page_seo(title, description, "/categories"), breadcrumbs=crumbs,
         schemas=[breadcrumb_schema(crumbs)],
@@ -1121,7 +1154,7 @@ def category_page(slug, locale=None):
     categories_label = "Kategoriler" if current_locale == "tr" else "Categories"
     crumbs = build_breadcrumbs([(home_label, "/"), (categories_label, "/categories"), (info["name"], f"/categories/{slug}")])
     context = discovery_context(items, info["name"], info["description"], "category")
-    context["category_landing"] = category_cards(items, current_locale)[list(CATEGORIES).index(slug)]
+    context["category_landing"] = category_landing_data(items, slug, current_locale)
     return render_template(
         "discovery.html", **context,
         active_page="categories", related_guides=related_guides,
@@ -1456,6 +1489,22 @@ def compare_tools(locale=None):
             continue
         selected_tools.append(tool)
 
+    category_mismatch_removed = False
+    comparison_category_slug = None
+    if selected_tools:
+        comparison_category_slug = category_slug(selected_tools[0].get("category", ""))
+        category_scoped_tools = [selected_tools[0]]
+        for tool in selected_tools[1:]:
+            if category_slug(tool.get("category", "")) == comparison_category_slug:
+                category_scoped_tools.append(tool)
+            else:
+                category_mismatch_removed = True
+        selected_tools = category_scoped_tools
+
+    current_locale = get_locale()
+    all_comparison_tools = sorted(load_tools(current_locale), key=lambda tool: str(tool.get("name", "")).casefold())
+    comparison_category = localized_category(comparison_category_slug, current_locale) if comparison_category_slug in CATEGORIES else None
+
     hide_common = request.args.get("hide_common") == "1"
     rows = build_comparison_rows(selected_tools) if len(selected_tools) >= 2 else []
     visible_rows = [row for row in rows if not (hide_common and row["common"])]
@@ -1466,7 +1515,6 @@ def compare_tools(locale=None):
     scored_tools.sort(key=lambda item: (item["match"], item["score"], item["tool"].get("rating", 0)), reverse=True)
     winner = scored_tools[0] if scored_tools else None
 
-    current_locale = get_locale()
     title = translate("compare.seo_title")
     description = translate("compare.seo_description")
     home_label = translate("common.home")
@@ -1480,7 +1528,10 @@ def compare_tools(locale=None):
         comparison_rows=visible_rows,
         all_rows=rows,
         hide_common=hide_common,
-        all_tools=sorted(load_tools(current_locale), key=lambda tool: str(tool.get("name", "")).casefold()),
+        all_tools=all_comparison_tools,
+        comparison_category_slug=comparison_category_slug,
+        comparison_category=comparison_category,
+        category_mismatch_removed=category_mismatch_removed,
         preferences=preferences,
         purpose_options=RECOMMENDATION_PURPOSES,
         preference_submitted=preference_submitted,

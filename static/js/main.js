@@ -179,15 +179,23 @@ function syncCompareToolOptions() {
         .map((select) => select.value)
         .filter(Boolean);
 
-    compareToolSelects.forEach((select) => {
+    const primaryOption = compareToolSelects[0]?.selectedOptions?.[0];
+    const primaryCategory = primaryOption?.dataset?.category || "";
+
+    compareToolSelects.forEach((select, selectIndex) => {
         Array.from(select.options).forEach((option) => {
             if (!option.value) {
                 option.disabled = false;
                 return;
             }
 
-            option.disabled = option.value !== select.value && selectedValues.includes(option.value);
+            const outsideCategory = selectIndex > 0 && primaryCategory && option.dataset.category !== primaryCategory;
+            option.hidden = outsideCategory;
+            option.disabled = outsideCategory || (option.value !== select.value && selectedValues.includes(option.value));
         });
+        if (selectIndex > 0 && select.value && select.selectedOptions[0]?.dataset.category !== primaryCategory) {
+            select.value = "";
+        }
     });
 }
 

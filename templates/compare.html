@@ -16,16 +16,18 @@
 
     {% if duplicate_removed %}<div class="inline-notice" role="status">{{ t("compare.duplicate_removed") }}</div>{% endif %}
     {% if invalid_slugs %}<div class="inline-notice inline-notice-warning" role="alert">{{ t("compare.invalid_removed") }}</div>{% endif %}
+    {% if category_mismatch_removed %}<div class="inline-notice inline-notice-warning" role="alert">{% if locale == 'tr' %}Farklı kategorideki araç kaldırıldı. Karşılaştırmalar aynı ana kategori içinde yapılır.{% else %}A tool from a different category was removed. Comparisons stay within one main category.{% endif %}</div>{% endif %}
+    {% if comparison_category %}<div class="comparison-scope"><strong>{{ comparison_category.name }}</strong><span>{% if locale == 'tr' %}Yalnızca bu kategorideki araçlar gösteriliyor.{% else %}Only tools in this category are shown.{% endif %}</span><a href="{{ localized_path('/categories/' ~ comparison_category.slug) }}">{% if locale == 'tr' %}Kategoriye git{% else %}View category{% endif %}</a></div>{% endif %}
 
     <form class="compare-picker compare-picker-advanced" method="GET" action="{{ localized_path('/compare') }}" data-loading-form>
         <div class="compare-picker-grid">
             {% for index in range(4) %}
             <label>
                 <span>{{ t("compare.tool_label", number=index + 1) }}{% if index > 1 %} <small>{{ t("common.optional") }}</small>{% endif %}</span>
-                <select name="tools" data-compare-tool-select {% if index < 2 %}required{% endif %}>
+                <select name="tools" data-compare-tool-select data-compare-index="{{ index }}" {% if index < 2 %}required{% endif %}>
                     <option value="">{{ t("compare.choose_tool") }}</option>
                     {% for item in all_tools %}
-                    <option value="{{ item.slug }}" {% if selected_slugs|length > index and selected_slugs[index] == item.slug %}selected{% elif item.slug in selected_slugs %}disabled{% endif %}>{{ item.name }}</option>
+                    <option value="{{ item.slug }}" data-category="{{ category_slug(item.category) }}" data-subcategory="{{ item.subcategory or '' }}" {% if selected_slugs|length > index and selected_slugs[index] == item.slug %}selected{% elif item.slug in selected_slugs %}disabled{% endif %}>{{ item.name }} · {{ item.subcategory or item.category }}</option>
                     {% endfor %}
                 </select>
             </label>

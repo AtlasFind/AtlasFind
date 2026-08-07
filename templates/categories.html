@@ -8,6 +8,12 @@
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
   </div>
+  <div class="category-detail-stats category-directory-summary">
+    <div><strong>{{ category_total }}</strong><span>{% if locale == 'tr' %}ana kategori{% else %}main categories{% endif %}</span></div>
+    <div><strong>{{ subcategory_total }}</strong><span>{% if locale == 'tr' %}benzersiz alt kategori{% else %}unique subcategories{% endif %}</span></div>
+    <div><strong>{{ tool_total }}</strong><span>{{ t('common.tools') }}</span></div>
+    <div><strong>EN / TR</strong><span>{% if locale == 'tr' %}iki dilde içerik{% else %}bilingual catalog{% endif %}</span></div>
+  </div>
   <div class="category-directory-grid">
     {% for category in categories %}
     <article class="category-directory-card">
