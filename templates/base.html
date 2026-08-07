@@ -90,6 +90,7 @@
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
+            <a href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
             <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
             <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
             <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>

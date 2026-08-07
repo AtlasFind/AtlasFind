@@ -60,6 +60,22 @@ CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").str
 
 
 PUBLIC_PAGES = {
+    "about": {
+        "en": {"title": "About AtlasFind", "description": "Why AtlasFind exists, how the project works and where it is heading.", "sections": [
+            ("Why we built AtlasFind", "AtlasFind was created to make software discovery less confusing. It brings tools from different fields into one independent catalog so visitors can explore, filter and compare options before choosing what fits their workflow."),
+            ("What the site provides", "The catalog organizes software by category and subcategory, presents practical product information, and offers contextual comparisons. AtlasFind does not sell the listed products and is not an official representative of their providers."),
+            ("A continuously developing demo", "AtlasFind is still a demo and public-beta project. Pages, descriptions, categories, logos, comparison rules and technical infrastructure are reviewed and improved continuously. Some information may be incomplete or change while the project develops."),
+            ("Independent and transparent", "The aim is to help people make a more informed first comparison without presenting paid placement as an objective recommendation. Important prices, features and availability should always be confirmed on the product's official website."),
+            ("Contact and feedback", "Incorrect information, missing tools, improvement ideas and collaboration requests can be sent to atlasfindd@gmail.com. Clear reports with a page link and official source help us improve the catalog faster."),
+        ]},
+        "tr": {"title": "AtlasFind Hakkında", "description": "AtlasFind'in neden kurulduğu, nasıl çalıştığı ve nereye doğru geliştiği.", "sections": [
+            ("AtlasFind'i neden kurduk?", "AtlasFind, yazılım keşfetmeyi daha anlaşılır hâle getirmek için kuruldu. Farklı alanlardaki araçları bağımsız bir katalogda bir araya getirerek ziyaretçilerin kendi çalışma biçimine uygun seçenekleri keşfetmesini, filtrelemesini ve karşılaştırmasını amaçlıyoruz."),
+            ("Sitede neler sunuyoruz?", "Yazılımları ana kategori ve alt kategorilere ayırıyor, pratik ürün bilgileri sunuyor ve aynı kullanım alanındaki araçların anlamlı biçimde karşılaştırılmasını sağlıyoruz. AtlasFind listelenen ürünleri satmaz ve bu firmaların resmî temsilcisi değildir."),
+            ("Sürekli gelişen bir demo", "AtlasFind hâlâ demo ve public beta aşamasındadır. Sayfalar, açıklamalar, kategoriler, logolar, karşılaştırma kuralları ve teknik altyapı sürekli kontrol edilip geliştirilmektedir. Proje gelişirken bazı bilgiler eksik kalabilir veya değişebilir."),
+            ("Bağımsız ve şeffaf yaklaşım", "Amacımız ücretli yerleşimleri tarafsız öneri gibi göstermeden, kullanıcıların daha bilinçli bir ilk karşılaştırma yapmasına yardımcı olmaktır. Önemli fiyat, özellik ve erişilebilirlik bilgileri her zaman ürünün resmî sitesinden doğrulanmalıdır."),
+            ("İletişim ve geri bildirim", "Yanlış bilgiler, eksik araçlar, geliştirme fikirleri ve iş birliği talepleri için atlasfindd@gmail.com adresinden bize ulaşabilirsiniz. Sayfa bağlantısı ve resmî kaynak içeren açık bildirimler kataloğu daha hızlı geliştirmemize yardımcı olur."),
+        ]},
+    },
     "privacy": {
         "en": {"title": "Privacy Policy", "description": "How AtlasFind handles technical data and protects visitor privacy.", "sections": [
             ("What we collect", "AtlasFind does not require a visitor account. The service may process standard server logs such as IP address, browser information, requested pages and timestamps for security, reliability and abuse prevention."),
@@ -1599,7 +1615,7 @@ def robots_txt():
 def sitemap_xml():
     from xml.sax.saxutils import escape
 
-    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
+    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
     base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
     base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORIES)
@@ -1627,6 +1643,11 @@ def sitemap_xml():
 @app.route("/<locale>/privacy", strict_slashes=False)
 def privacy(locale=None):
     return _public_page("privacy", locale)
+
+@app.route("/about", strict_slashes=False)
+@app.route("/<locale>/about", strict_slashes=False)
+def about(locale=None):
+    return _public_page("about", locale)
 
 @app.route("/terms", strict_slashes=False)
 @app.route("/<locale>/terms", strict_slashes=False)
