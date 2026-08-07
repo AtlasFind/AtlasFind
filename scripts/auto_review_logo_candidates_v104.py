@@ -65,6 +65,8 @@ MULTI_PRODUCT_HOSTS = {
     "atlassian.com",
     "zoho.com",
     "proton.me",
+    "github.com",
+    "githubassets.com",
 }
 
 CORPORATE_HOST_TOKENS = {
@@ -84,6 +86,8 @@ CORPORATE_HOST_TOKENS = {
     "atlassian.com": {"atlassian"},
     "zoho.com": {"zoho"},
     "proton.me": {"proton"},
+    "github.com": {"github"},
+    "githubassets.com": {"github"},
 }
 
 GENERIC_ASSET_NAMES = {

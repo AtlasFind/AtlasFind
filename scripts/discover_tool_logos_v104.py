@@ -54,6 +54,7 @@ def main() -> int:
         description="Discover logo candidates from all official URLs stored in the catalog."
     )
     parser.add_argument("--queue", default="data/branding/logo-queue.json")
+    parser.add_argument("--tools-file", help="Optional JSON tool list used instead of the public catalog.")
     parser.add_argument("--limit", type=int, default=25)
     parser.add_argument("--delay", type=float, default=0.35)
     parser.add_argument("--retry-errors", action="store_true")
@@ -62,7 +63,11 @@ def main() -> int:
 
     path = (ROOT / args.queue).resolve()
     payload = json.loads(path.read_text(encoding="utf-8"))
-    tools = {tool.get("slug"): tool for tool in load_catalog()}
+    if args.tools_file:
+        tool_rows = json.loads((ROOT / args.tools_file).read_text(encoding="utf-8"))
+    else:
+        tool_rows = load_catalog()
+    tools = {tool.get("slug"): tool for tool in tool_rows}
     allowed = {"pending"}
     if args.retry_errors:
         allowed.add("error")
