@@ -15802,7 +15802,7 @@
     "id": 446,
     "slug": "vlc",
     "name": "VLC",
-    "description": "VLC is a media players tool for individuals and teams that want a focused way to complete related digital tasks.",
+    "description": "VLC is a free and open-source multimedia player that plays local files, discs, webcams, devices, and network streams across desktop and mobile platforms.",
     "category": "Audio and Music",
     "tags": [
       "Media Players",
@@ -15816,37 +15816,39 @@
     "platforms": [
       "Windows",
       "macOS",
-      "Linux"
+      "Linux",
+      "Android",
+      "iOS"
     ],
     "open_source": true,
-    "offline": false,
+    "offline": true,
     "ai_powered": false,
     "pros": [
-      "Focused feature set for its category",
-      "Useful for common individual or team workflows",
-      "Official website available for current details"
+      "Plays a broad range of audio, video, disc, and streaming formats",
+      "Free, open source, and distributed without ads or user tracking",
+      "Available across major desktop and mobile operating systems"
     ],
     "cons": [
-      "Exact limits and pricing require verification",
-      "Feature availability may vary by platform"
+      "The interface prioritizes function over guided media-library workflows",
+      "Some advanced hardware, disc, or streaming behavior varies by operating system"
     ],
     "target_users": [
-      "Individuals exploring tools in this category",
-      "Teams comparing software options",
-      "Users who want an official product link"
+      "Users who need reliable playback for many media formats",
+      "People playing local files, discs, cameras, or network streams",
+      "Users who prefer free and open-source media software"
     ],
     "system_requirements": [
-      "Modern web browser or a supported desktop application",
-      "Internet connection for online features"
+      "A supported Windows, macOS, Linux, Android, or iOS device",
+      "Internet access is optional and only needed for network streams, metadata, or updates"
     ],
     "pricing_details": {
       "model": "Free",
-      "note": "Plan names, limits and regional prices may change; confirm current details on the official website."
+      "note": "VLC is free and open-source software. VideoLAN accepts optional donations but does not require a subscription."
     },
     "verification": {
-      "status": "pending",
-      "date": "2026-07-28",
-      "note": "Name, category and official domain were added for AtlasFind v0.9.0. Pricing, platform support and feature details should be confirmed on the official website."
+      "status": "verified",
+      "date": "2026-08-07",
+      "note": "Playback capabilities, supported platform families, free/open-source status, offline use, and the official cone artwork were checked against VideoLAN sources."
     },
     "pricing_type": "free",
     "minimum_ram_gb": 4,
@@ -15863,17 +15865,17 @@
       "free-tools"
     ],
     "freshness": {
-      "last_checked_at": "2026-07-28",
-      "last_updated_at": "2026-07-28",
-      "next_check_at": "2026-10-26",
-      "status": "review-due"
+      "last_checked_at": "2026-08-07",
+      "last_updated_at": "2026-08-07",
+      "next_check_at": "2026-11-05",
+      "status": "current"
     },
     "change_history": [
       {
-        "date": "2026-07-28",
+        "date": "2026-08-07",
         "type": "data-review",
-        "summary": "Catalog entry added for AtlasFind v0.9.0.",
-        "changes": []
+        "summary": "Replaced generic copy, corrected offline and platform data, and added verified official artwork and sources.",
+        "changes": ["description", "platforms", "offline", "pros", "cons", "target_users", "system_requirements", "verification", "branding", "sources"]
       }
     ],
     "price_history": [
@@ -15884,15 +15886,15 @@
         "note": "Initial catalog pricing model; verify current plans on the official website."
       }
     ],
-    "icon_url": "/static/icons/generated/vlc.svg",
-    "icon_source": "local-generated",
+    "icon_url": "/static/images/tools/vlc/logo.png",
+    "icon_source": "official-product-site",
     "icon_alt": "VLC icon",
     "icon_fallback_url": "/static/icons/generated/vlc.svg",
-    "quality_status": "review_due",
+    "quality_status": "verified",
     "quality_review": {
-      "scope": "dataset-audit",
-      "reviewed_at": "2026-07-28",
-      "note": "This listing was included in the automated data-quality audit and still requires an individual editorial review."
+      "scope": "individual-editorial-review",
+      "reviewed_at": "2026-08-07",
+      "note": "Product, platform, licensing, playback, and official artwork claims were checked against VideoLAN sources."
     },
     "icon_meta": {
       "fallback": "local-svg-monogram",
@@ -15903,7 +15905,24 @@
     },
     "aliases": [],
     "publication_status": "published",
-    "source_references": [],
+    "source_references": [
+      {
+        "label": "VLC official features",
+        "url": "https://www.videolan.org/vlc/features.html",
+        "checked_at": "2026-08-07",
+        "type": "official-homepage",
+        "claims": ["files and disc playback", "device and stream playback", "format support", "hardware decoding", "no ads or tracking"],
+        "domain": "videolan.org"
+      },
+      {
+        "label": "VideoLAN official VLC page",
+        "url": "https://www.videolan.org/vlc/",
+        "checked_at": "2026-08-07",
+        "type": "official-homepage",
+        "claims": ["free software", "open source", "desktop and mobile platforms"],
+        "domain": "videolan.org"
+      }
+    ],
     "rating_v103": {
       "status": "unreviewed",
       "overall_score": null,
@@ -16001,25 +16020,25 @@
     },
     "branding": {
       "logo": {
-        "status": "missing",
-        "local_path": null,
-        "source_url": null,
-        "source_type": null,
-        "original_format": null,
-        "served_format": null,
-        "width": null,
-        "height": null,
-        "aspect_ratio": null,
-        "file_size_bytes": null,
-        "checksum": null,
-        "transparent_background": null,
-        "supports_light_theme": null,
-        "supports_dark_theme": null,
-        "verified_at": null,
-        "verified_by": null,
-        "license_status": "unknown",
-        "attribution_required": null,
-        "notes": "Official logo verification required."
+        "status": "verified",
+        "local_path": "static/images/tools/vlc/logo.png",
+        "source_url": "https://images.videolan.org/images/largeVLC.png",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "png",
+        "width": 300,
+        "height": 300,
+        "aspect_ratio": "1:1",
+        "file_size_bytes": 78381,
+        "checksum": "0391ff9e2662410b7c04e86ad5e54a64365b50b5bfd42bbbebd8afe81804c39b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-07",
+        "verified_by": "atlasfind-editorial",
+        "license_status": "brand_usage_review_required",
+        "attribution_required": false,
+        "notes": "Official VLC cone artwork downloaded from the VideoLAN image host and visually verified."
       },
       "logo_light": null,
       "logo_dark": null,

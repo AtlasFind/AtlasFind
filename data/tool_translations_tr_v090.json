@@ -20358,41 +20358,41 @@
     "tool_id": 446,
     "locale": "tr",
     "name": "VLC",
-    "description": "VLC, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir media players aracıdır.",
+    "description": "VLC; yerel dosyaları, diskleri, web kameralarını, cihazları ve ağ yayınlarını masaüstü ve mobil platformlarda oynatan ücretsiz ve açık kaynaklı bir multimedya oynatıcıdır.",
     "subcategory": "Media Players",
     "pricing_summary": "Ücretsiz",
-    "pricing_notes": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın.",
+    "pricing_notes": "VLC ücretsiz ve açık kaynaklıdır. VideoLAN isteğe bağlı bağış kabul eder; abonelik gerektirmez.",
     "payload_json": {
-      "description": "VLC, ilgili dijital işleri daha düzenli tamamlamak isteyen bireyler ve ekipler için bir media players aracıdır.",
+      "description": "VLC; yerel dosyaları, diskleri, web kameralarını, cihazları ve ağ yayınlarını masaüstü ve mobil platformlarda oynatan ücretsiz ve açık kaynaklı bir multimedya oynatıcıdır.",
       "category": "Ses ve Müzik",
       "subcategory": "Media Players",
       "pricing": "Ücretsiz",
       "pros": [
-        "Kategorisine odaklanan özellik seti",
-        "Bireysel veya ekip iş akışlarında kullanılabilir",
-        "Güncel bilgiler için resmî site bağlantısı bulunur"
+        "Çok sayıda ses, video, disk ve yayın biçimini oynatır",
+        "Ücretsiz, açık kaynaklı, reklamsız ve kullanıcı takibi olmadan dağıtılır",
+        "Başlıca masaüstü ve mobil işletim sistemlerinde kullanılabilir"
       ],
       "cons": [
-        "Kesin sınırlar ve fiyatlandırma doğrulanmalıdır",
-        "Özellikler platforma göre değişebilir"
+        "Arayüz, yönlendirmeli medya kütüphanesi deneyiminden çok işlevselliğe odaklanır",
+        "Bazı gelişmiş donanım, disk veya yayın davranışları işletim sistemine göre değişir"
       ],
       "target_users": [
-        "Bu kategoride araç araştıran bireyler",
-        "Yazılım seçeneklerini karşılaştıran ekipler",
-        "Resmî ürün bağlantısına hızlı ulaşmak isteyen kullanıcılar"
+        "Birçok medya biçimi için güvenilir oynatma isteyen kullanıcılar",
+        "Yerel dosya, disk, kamera veya ağ yayını oynatan kişiler",
+        "Ücretsiz ve açık kaynaklı medya yazılımını tercih edenler"
       ],
       "system_requirements": [
-        "Modern bir web tarayıcısı veya desteklenen masaüstü uygulaması",
-        "Çevrim içi özellikler için internet bağlantısı"
+        "Desteklenen Windows, macOS, Linux, Android veya iOS cihazı",
+        "İnternet yalnızca ağ yayınları, meta veriler veya güncellemeler için gereklidir"
       ],
       "pricing_details": {
         "model": "Ücretsiz",
-        "note": "Paket adları, sınırlar ve bölgesel fiyatlar değişebilir; güncel bilgileri resmî web sitesinden doğrulayın."
+        "note": "VLC ücretsiz ve açık kaynaklıdır. VideoLAN isteğe bağlı bağış kabul eder; abonelik gerektirmez."
       },
       "verification": {
-        "status": "Katalog başlangıç incelemesi",
-        "date": "2026-07-28",
-        "note": "Ad, kategori ve resmî alan adı AtlasFind v0.9.0 için eklendi. Fiyatlandırma, platform desteği ve özellik ayrıntıları resmî web sitesinden doğrulanmalıdır."
+        "status": "Doğrulandı",
+        "date": "2026-08-07",
+        "note": "Oynatma özellikleri, platformlar, ücretsiz/açık kaynak durumu, çevrimdışı kullanım ve resmî koni görseli VideoLAN kaynaklarından kontrol edildi."
       },
       "change_history": [
         {
