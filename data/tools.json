@@ -2763,7 +2763,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 3436,
-        "checksum": "c5b0ad0fc0c6fd9c49131a972635e1aba4e65a0d0385c01d5be8735921d7ef8b",
+        "checksum": "3deea64464fde078ef514c4d6fefecdf035a919728efe83ead8779688d1b95e6",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -15875,7 +15875,18 @@
         "date": "2026-08-07",
         "type": "data-review",
         "summary": "Replaced generic copy, corrected offline and platform data, and added verified official artwork and sources.",
-        "changes": ["description", "platforms", "offline", "pros", "cons", "target_users", "system_requirements", "verification", "branding", "sources"]
+        "changes": [
+          "description",
+          "platforms",
+          "offline",
+          "pros",
+          "cons",
+          "target_users",
+          "system_requirements",
+          "verification",
+          "branding",
+          "sources"
+        ]
       }
     ],
     "price_history": [
@@ -15911,7 +15922,13 @@
         "url": "https://www.videolan.org/vlc/features.html",
         "checked_at": "2026-08-07",
         "type": "official-homepage",
-        "claims": ["files and disc playback", "device and stream playback", "format support", "hardware decoding", "no ads or tracking"],
+        "claims": [
+          "files and disc playback",
+          "device and stream playback",
+          "format support",
+          "hardware decoding",
+          "no ads or tracking"
+        ],
         "domain": "videolan.org"
       },
       {
@@ -15919,7 +15936,11 @@
         "url": "https://www.videolan.org/vlc/",
         "checked_at": "2026-08-07",
         "type": "official-homepage",
-        "claims": ["free software", "open source", "desktop and mobile platforms"],
+        "claims": [
+          "free software",
+          "open source",
+          "desktop and mobile platforms"
+        ],
         "domain": "videolan.org"
       }
     ],
@@ -22575,7 +22596,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 531,
-        "checksum": "090a9ce0283dc66359be584bd1db9227faf4f15fc666f261759852e2519c7c68",
+        "checksum": "83c20388bdf67b2d38ff8ad3101a0ce15f6046b23c04e40f1748bc428b465396",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -29810,7 +29831,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 1516,
-        "checksum": "f7b84b9576f55679ede29bb4b992b669bce5abe422dbd1f630aac41633d18790",
+        "checksum": "087856a7617f13f1e10d8627cdd95287b7c076f86f3f539838d37eb2b24de14e",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -51859,7 +51880,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 6346,
-        "checksum": "fa4581966b83b06cc38fa8651dc09fdaf6353c983036bbbf3bb3dbe84e0d5f8e",
+        "checksum": "738003e5de1e453d32d2c4fef5b8ecb1d4dece14a2d45e727a6fbbe2535fd844",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -54408,7 +54429,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 753,
-        "checksum": "f1f46ce572ca17d4b0a282da8d48350224ac06035271acfcfc67cc2b44be23f5",
+        "checksum": "9846cacf00b04416ab0de81e9836d84fb95b642d115ade9bf419ef2cd0de9644",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -71943,7 +71964,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 1933,
-        "checksum": "235e381ea3e1e2c46f12dd84b5e186b6b516e4899e1eb734c9e26830998da9c7",
+        "checksum": "c39730316daaf0db98081f718efd5d90fc40f8d37a41c1ab0148edf2f4ecf41c",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -80548,7 +80569,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 614,
-        "checksum": "75336f5ce72f8f1b89ce50411b72c9ddcdc7121ba24b1fce46cb29227c80fc16",
+        "checksum": "5144b7ce0dd63f7713b95a2a2eff47d8ce7de6e2a175aadd5e96f26e992d2cc7",
         "transparent_background": true,
         "supports_light_theme": false,
         "supports_dark_theme": false,
@@ -81935,7 +81956,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 23047,
-        "checksum": "26a60036d4a993a570c6948e56dfd62a74d5d02565589e75db3452f3f6ce79de",
+        "checksum": "edfd4540ee3e24954ac2288b221f1db7f16afc32596791a9472cc20816dfcc6f",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -82628,7 +82649,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 547,
-        "checksum": "ab2ec7527fbb3b9270d6c54ab15c8b86f6b39ac8a18c4cddf2910b90ee76ba65",
+        "checksum": "bdcbf16f94bb5aafffaac004518e171a1429d79cc14c21c550838a7553a2c760",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -86184,7 +86205,16 @@
         "date": "2026-08-07",
         "type": "data-review",
         "summary": "Replaced generic copy and incorrect freemium classification with verified ERP capabilities and quote-based pricing.",
-        "changes": ["description", "pricing", "pros", "cons", "target_users", "system_requirements", "verification", "sources"]
+        "changes": [
+          "description",
+          "pricing",
+          "pros",
+          "cons",
+          "target_users",
+          "system_requirements",
+          "verification",
+          "sources"
+        ]
       }
     ],
     "price_history": [
@@ -86220,7 +86250,14 @@
         "url": "https://www.netsuite.com/portal/assets/pdf/ds-netsuite-erp-emea.pdf",
         "checked_at": "2026-08-07",
         "type": "official-documentation",
-        "claims": ["cloud ERP", "financial management", "order management", "procurement", "inventory", "reporting"],
+        "claims": [
+          "cloud ERP",
+          "financial management",
+          "order management",
+          "procurement",
+          "inventory",
+          "reporting"
+        ],
         "domain": "netsuite.com"
       }
     ],
@@ -97795,7 +97832,18 @@
         "date": "2026-08-07",
         "type": "data-review",
         "summary": "Replaced generic copy and incorrect free/open-source classification with official-source product and pricing information.",
-        "changes": ["description", "pricing", "open_source", "ai_powered", "pros", "cons", "target_users", "system_requirements", "verification", "sources"]
+        "changes": [
+          "description",
+          "pricing",
+          "open_source",
+          "ai_powered",
+          "pros",
+          "cons",
+          "target_users",
+          "system_requirements",
+          "verification",
+          "sources"
+        ]
       }
     ],
     "price_history": [
@@ -97831,7 +97879,12 @@
         "url": "https://seranking.com/subscription.html",
         "checked_at": "2026-08-07",
         "type": "official-pricing",
-        "claims": ["paid plans", "14-day free trial", "plan limits", "Enterprise tier"],
+        "claims": [
+          "paid plans",
+          "14-day free trial",
+          "plan limits",
+          "Enterprise tier"
+        ],
         "domain": "seranking.com"
       },
       {
@@ -97839,7 +97892,13 @@
         "url": "https://seranking.com/features.html",
         "checked_at": "2026-08-07",
         "type": "official-homepage",
-        "claims": ["rank tracking", "website audit", "keyword research", "backlink analysis", "content tools"],
+        "claims": [
+          "rank tracking",
+          "website audit",
+          "keyword research",
+          "backlink analysis",
+          "content tools"
+        ],
         "domain": "seranking.com"
       }
     ],
@@ -106096,7 +106155,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 1221,
-        "checksum": "2a07cfb57b98ec9c83d71492e26c1eecc8d2cbbf6e982dec7de241d2841efada",
+        "checksum": "fe9820b596e3bbedb88c376b650e270e53eb8c1a1415026e2aa6373ce282d2fa",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -109560,7 +109619,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 1944,
-        "checksum": "7ab95de5a58b86a8edbb6ff2768881129ac6139993377bd09ffe176816dbd3d8",
+        "checksum": "e89fc02b41d73334fd98105377f1ae299bdbced5bc51e3fcd4ab7da3d3a1bd94",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -118103,7 +118162,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 4424,
-        "checksum": "406789fdab0730cdfd2213bf6e3d53af4840ec4641ca40a7d2c702831d4ac27a",
+        "checksum": "ca137dfe11513c724cc938c5bd028e367918401c32552c2eda129f13ca9901da",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -128690,7 +128749,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 2748,
-        "checksum": "76729d616114f6035e47649827d868c8d19e40f5a6aa096afa2e54b0f2ad32cb",
+        "checksum": "065a73577bf4e387a20977b0e75775ce0e3668603e71178b6350e7bca6624308",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
@@ -131019,7 +131078,7 @@
         "height": null,
         "aspect_ratio": "vector",
         "file_size_bytes": 1122,
-        "checksum": "7e36f7860850d525eac5fb00f6587a367803b0d9204d1f8d6b0c3cdd557f488f",
+        "checksum": "6be9a74fca8c549de160374c157ccda1490fb7291fcb889a7e99c845864616ed",
         "transparent_background": true,
         "supports_light_theme": true,
         "supports_dark_theme": true,
