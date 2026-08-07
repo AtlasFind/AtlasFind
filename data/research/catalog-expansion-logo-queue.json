@@ -10587,9 +10587,22 @@
       "slug": "lapce",
       "name": "Lapce",
       "official_url": "https://lapce.dev/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo_app.svg",
+          "source_page": "https://github.com/lapce/lapce/blob/master/extra/images/logo_app.svg",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://lap.dev/apple-touch-icon-precomposed.png",
           "source_page": "https://lap.dev/lapce/",
@@ -10747,7 +10760,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo_app.svg"
     },
     {
       "tool_id": 639,
@@ -17611,9 +17625,22 @@
       "slug": "bruno",
       "name": "Bruno",
       "official_url": "https://www.usebruno.com/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/usebruno/bruno/main/packages/bruno-electron/resources/icons/png/1024x1024.png",
+          "source_page": "https://github.com/usebruno/bruno/blob/main/packages/bruno-electron/resources/icons/png/1024x1024.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://www.usebruno.com/apple-touch-icon-precomposed.png",
           "source_page": "https://www.usebruno.com/",
@@ -17792,7 +17819,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/usebruno/bruno/main/packages/bruno-electron/resources/icons/png/1024x1024.png"
     },
     {
       "tool_id": 659,
@@ -20815,9 +20843,22 @@
       "slug": "appflowy",
       "name": "AppFlowy",
       "official_url": "https://appflowy.com/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/appflowy-io/appflowy/main/frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+          "source_page": "https://github.com/appflowy-io/appflowy/blob/main/frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://appflowy.com/apple-touch-icon-precomposed.png",
           "source_page": "https://appflowy.com/",
@@ -20992,7 +21033,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/appflowy-io/appflowy/main/frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png"
     },
     {
       "tool_id": 671,
@@ -21179,9 +21221,22 @@
       "slug": "triliumnext-notes",
       "name": "TriliumNext Notes",
       "official_url": "https://triliumnext.github.io/Docs/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/TriliumNext/Notes/develop/apps/desktop/electron-forge/app-icon/png/1024x1024.png",
+          "source_page": "https://github.com/TriliumNext/Notes/blob/develop/apps/desktop/electron-forge/app-icon/png/1024x1024.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://triliumnext.github.io/apple-touch-icon-precomposed.png",
           "source_page": "https://triliumnext.github.io/Docs/",
@@ -21409,7 +21464,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/TriliumNext/Notes/develop/apps/desktop/electron-forge/app-icon/png/1024x1024.png"
     },
     {
       "tool_id": 673,
@@ -27235,9 +27291,22 @@
       "slug": "cryptomator",
       "name": "Cryptomator",
       "official_url": "https://cryptomator.org/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/src/main/resources/img/logo128@2x.png",
+          "source_page": "https://github.com/cryptomator/cryptomator/blob/develop/src/main/resources/img/logo128@2x.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://cryptomator.org/apple-touch-icon-precomposed.png",
           "source_page": "https://cryptomator.org/",
@@ -27390,16 +27459,30 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/src/main/resources/img/logo128@2x.png"
     },
     {
       "tool_id": 694,
       "slug": "dangerzone",
       "name": "Dangerzone",
       "official_url": "https://dangerzone.rocks/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/freedomofpress/dangerzone/main/share/icon.png",
+          "source_page": "https://github.com/freedomofpress/dangerzone/blob/main/share/icon.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://dangerzone.rocks/apple-touch-icon-precomposed.png",
           "source_page": "https://dangerzone.rocks/",
@@ -27546,7 +27629,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/freedomofpress/dangerzone/main/share/icon.png"
     },
     {
       "tool_id": 695,
@@ -28254,9 +28338,22 @@
       "slug": "immich",
       "name": "Immich",
       "official_url": "https://immich.app/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/immich-app/immich/main/design/immich-logo.png",
+          "source_page": "https://github.com/immich-app/immich/blob/main/design/immich-logo.png",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://immich.app/apple-touch-icon-precomposed.png",
           "source_page": "https://immich.app/",
@@ -28409,7 +28506,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/immich-app/immich/main/design/immich-logo.png"
     },
     {
       "tool_id": 698,
@@ -29036,9 +29134,22 @@
       "slug": "actual-budget",
       "name": "Actual Budget",
       "official_url": "https://actualbudget.org/",
-      "status": "review",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
+        {
+          "url": "https://raw.githubusercontent.com/actualbudget/actual/master/packages/component-library/src/icons/logo/logo.svg",
+          "source_page": "https://github.com/actualbudget/actual/blob/master/packages/component-library/src/icons/logo/logo.svg",
+          "source_type": "official_source_repository",
+          "relation": "official-application-icon",
+          "score": 200,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-repository-audit",
+          "notes": "Product-specific application icon stored in the project's official upstream repository."
+        },
         {
           "url": "https://actualbudget.org/apple-touch-icon-precomposed.png",
           "source_page": "https://actualbudget.org/",
@@ -29213,7 +29324,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://raw.githubusercontent.com/actualbudget/actual/master/packages/component-library/src/icons/logo/logo.svg"
     }
   ]
 }

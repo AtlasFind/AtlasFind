@@ -5021,7 +5021,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lapce/logo.svg",
+        "source_url": "https://github.com/lapce/lapce/blob/master/extra/images/logo_app.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 4639,
+        "checksum": "4c4915da304cafeacfd3a7cacd6389d94ef1062db30b1f2ca3a805f3aac3d401",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo_app.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LA"
+      },
+      "version": 1,
+      "tool_slug": "lapce"
+    }
   },
   {
     "id": 639,
@@ -7714,7 +7747,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bruno/logo.webp",
+        "source_url": "https://github.com/usebruno/bruno/blob/main/packages/bruno-electron/resources/icons/png/1024x1024.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 59004,
+        "checksum": "b809f6a8fd69067781a206e2924cc5c3ff67fb665cbae99b87615c5c860b0bb0",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/usebruno/bruno/main/packages/bruno-electron/resources/icons/png/1024x1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BR"
+      },
+      "version": 1,
+      "tool_slug": "bruno"
+    }
   },
   {
     "id": 659,
@@ -9352,7 +9418,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/appflowy/logo.webp",
+        "source_url": "https://github.com/appflowy-io/appflowy/blob/main/frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 21532,
+        "checksum": "a5fc45dce5c3b9cb7c3dcbe33a355264ec03588becfb5f30e8fce8651f80ebc1",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/appflowy-io/appflowy/main/frontend/appflowy_flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AP"
+      },
+      "version": 1,
+      "tool_slug": "appflowy"
+    }
   },
   {
     "id": 671,
@@ -9605,7 +9704,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/triliumnext-notes/logo.webp",
+        "source_url": "https://github.com/TriliumNext/Notes/blob/develop/apps/desktop/electron-forge/app-icon/png/1024x1024.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 45354,
+        "checksum": "344e609664f9938cc6103e4418c12c1348d0b4328bd9c4691a25c76b3047b2b7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/TriliumNext/Notes/develop/apps/desktop/electron-forge/app-icon/png/1024x1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TN"
+      },
+      "version": 1,
+      "tool_slug": "triliumnext-notes"
+    }
   },
   {
     "id": 673,
@@ -12372,7 +12504,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cryptomator/logo.webp",
+        "source_url": "https://github.com/cryptomator/cryptomator/blob/develop/src/main/resources/img/logo128@2x.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 302,
+        "height": 256,
+        "aspect_ratio": "302:256",
+        "file_size_bytes": 11770,
+        "checksum": "4d8a19ed8b0988379222159166c21f794c98118209151be2a780d80317a89aa3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/src/main/resources/img/logo128@2x.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CR"
+      },
+      "version": 1,
+      "tool_slug": "cryptomator"
+    }
   },
   {
     "id": 694,
@@ -12482,7 +12647,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dangerzone/logo.webp",
+        "source_url": "https://github.com/freedomofpress/dangerzone/blob/main/share/icon.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1526,
+        "checksum": "6d0d70419138b13351471a91c5d8a6c7e8d67187e8a78ff5e91c160a60e8a6a6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/freedomofpress/dangerzone/main/share/icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DA"
+      },
+      "version": 1,
+      "tool_slug": "dangerzone"
+    }
   },
   {
     "id": 695,
@@ -12844,7 +13042,40 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/immich/logo.webp",
+        "source_url": "https://github.com/immich-app/immich/blob/main/design/immich-logo.png",
+        "source_type": "official_source_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1001,
+        "aspect_ratio": "1024:1001",
+        "file_size_bytes": 71768,
+        "checksum": "a031753bf4cc3ac84beecdf0c020386a903bc9c2f15d841f7dd55b72be533a89",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/immich-app/immich/main/design/immich-logo.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IM"
+      },
+      "version": 1,
+      "tool_slug": "immich"
+    }
   },
   {
     "id": 698,
@@ -13240,6 +13471,39 @@
           "category"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/actual-budget/logo.svg",
+        "source_url": "https://github.com/actualbudget/actual/blob/master/packages/component-library/src/icons/logo/logo.svg",
+        "source_type": "official_source_repository",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 1006,
+        "checksum": "cc7d1b8eb71512cff785206e34d532d60172d73ffbf1ab1bae39f0a84274e759",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific application icon stored in the project's official upstream repository.",
+        "asset_url": "https://raw.githubusercontent.com/actualbudget/actual/master/packages/component-library/src/icons/logo/logo.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AB"
+      },
+      "version": 1,
+      "tool_slug": "actual-budget"
+    }
   }
 ]
