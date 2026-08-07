@@ -3,6 +3,7 @@ from pathlib import Path
 from functools import lru_cache
 import os
 import secrets
+import uuid
 from urllib.parse import urlencode
 
 from tool_schema import validate_tools
@@ -15,11 +16,12 @@ from repositories.translations import localize_tool, localize_article, localize_
 from services.image_service import enrich_tool_branding
 from services.rating_service import enrich_tool_rating
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
+from repositories.admin import record_visit
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
 from security import (
-    add_security_headers, configure_logging, configure_security, enforce_api_rate_limit,
+    add_security_headers, client_ip, configure_logging, configure_security, enforce_api_rate_limit,
     enforce_safe_method, new_request_id, validate_request_host,
 )
 from taxonomy import CATEGORIES, category_slug, localized_category
@@ -954,6 +956,18 @@ def response_headers(response):
         response.headers["Cache-Control"] = "public, max-age=3600"
     elif request.method == "GET" and response.status_code == 200 and not request.path.startswith("/admin"):
         response.headers.setdefault("Cache-Control", "public, max-age=60, stale-while-revalidate=300")
+    if (request.method == "GET" and response.status_code == 200 and request.endpoint
+            and not request.path.startswith(("/admin", "/static/", "/api/"))
+            and request.path not in {"/robots.txt", "/sitemap.xml", "/favicon.ico"}
+            and "bot" not in request.headers.get("User-Agent", "").lower()):
+        visitor_id = session.get("visitor_id")
+        if not visitor_id:
+            visitor_id = uuid.uuid4().hex
+            session["visitor_id"] = visitor_id
+        country = "Local" if request.remote_addr in {"127.0.0.1", "::1"} else "Unknown"
+        if app.config.get("TRUST_PROXY_HEADERS"):
+            country = request.headers.get("CF-IPCountry") or request.headers.get("X-Country-Code") or country
+        record_visit(visitor_id, client_ip(), country, request.path, request.headers.get("User-Agent", ""))
     return add_security_headers(response)
 
 

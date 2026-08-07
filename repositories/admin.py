@@ -90,3 +90,101 @@ def dashboard_counts(path=DATABASE_PATH):
             "SELECT COUNT(*) count FROM tools WHERE json_extract(payload_json, '$.freshness.status') IN ('review-due','outdated')"
         ).fetchone()["count"]
     return {"tools": dict(tool_counts), "articles": dict(article_counts), "review_due": due}
+
+
+def get_dashboard_overview(path=DATABASE_PATH):
+    """Return the actionable dataset shown on the admin landing page."""
+    with connect_database(path) as connection:
+        counts = dashboard_counts(path)
+        taxonomy = connection.execute(
+            "SELECT (SELECT COUNT(*) FROM categories) AS categories, "
+            "(SELECT COUNT(*) FROM tags) AS tags"
+        ).fetchone()
+        images = connection.execute(
+            """SELECT COUNT(*) AS missing FROM tools
+               WHERE status != 'archived'
+                 AND COALESCE(json_extract(payload_json, '$.branding.logo.status'), 'missing')
+                     IN ('missing', 'broken', 'pending')"""
+        ).fetchone()
+        descriptions = connection.execute(
+            """SELECT COUNT(*) AS missing FROM tools
+               WHERE status != 'archived'
+                 AND length(trim(COALESCE(json_extract(payload_json, '$.description'), ''))) < 80"""
+        ).fetchone()
+        uncategorized = connection.execute(
+            """SELECT COUNT(*) AS missing FROM tools t LEFT JOIN categories c ON c.id=t.category_id
+               WHERE t.status != 'archived' AND (c.id IS NULL OR c.slug='uncategorized')"""
+        ).fetchone()
+        audit_total = connection.execute("SELECT COUNT(*) AS total FROM admin_audit_logs").fetchone()
+
+    todo_items = [
+        {"label": "Logo or image review", "description": "Tools without a verified visual asset", "count": int(images["missing"]), "tone": "critical" if images["missing"] else "success", "url": "/admin/images"},
+        {"label": "Short descriptions", "description": "Descriptions under 80 characters", "count": int(descriptions["missing"]), "tone": "warning" if descriptions["missing"] else "success", "url": "/admin/tools"},
+        {"label": "Uncategorized tools", "description": "Tools that need a clear category", "count": int(uncategorized["missing"]), "tone": "warning" if uncategorized["missing"] else "success", "url": "/admin/tools"},
+        {"label": "Content review due", "description": "Freshness checks that need attention", "count": int(counts["review_due"] or 0), "tone": "critical" if counts["review_due"] else "success", "url": "/admin/tools"},
+        {"label": "Draft content", "description": "Tools and articles not yet published", "count": int(counts["tools"]["draft"] or 0) + int(counts["articles"]["draft"] or 0), "tone": "neutral", "url": "/admin/tools"},
+    ]
+    return {
+        "counts": counts, "taxonomy": dict(taxonomy), "todo_items": todo_items,
+        "system_status": [
+            {"label": "Database", "detail": "Connected", "tone": "success"},
+            {"label": "Catalog", "detail": f"{counts['tools']['total'] or 0} tools indexed", "tone": "success"},
+            {"label": "Audit log", "detail": f"{audit_total['total'] or 0} events recorded", "tone": "success"},
+            {"label": "Content review", "detail": f"{counts['review_due'] or 0} items due", "tone": "warning" if counts["review_due"] else "success"},
+        ],
+    }
+
+
+def record_visit(visitor_id, ip_address, country_code, path, user_agent, database_path=DATABASE_PATH):
+    """Persist one successful public page view for the lightweight admin analytics."""
+    with transaction(database_path) as connection:
+        connection.execute(
+            """INSERT INTO visit_events(visitor_id, ip_address, country_code, path, user_agent)
+               VALUES (?, ?, ?, ?, ?)""",
+            (visitor_id[:80], ip_address[:120], country_code[:32], path[:500], user_agent[:500]),
+        )
+
+
+def get_traffic_overview(path=DATABASE_PATH):
+    """Return privacy-conscious visitor aggregates and recent diagnostics."""
+    with connect_database(path) as connection:
+        daily = connection.execute(
+            "SELECT COUNT(DISTINCT visitor_id) AS total FROM visit_events WHERE visited_at >= date('now')"
+        ).fetchone()["total"]
+        previous_daily = connection.execute(
+            """SELECT COUNT(DISTINCT visitor_id) AS total FROM visit_events
+               WHERE visited_at >= date('now', '-1 day') AND visited_at < date('now')"""
+        ).fetchone()["total"]
+        monthly = connection.execute(
+            "SELECT COUNT(DISTINCT visitor_id) AS total FROM visit_events WHERE visited_at >= datetime('now', '-30 days')"
+        ).fetchone()["total"]
+        previous_monthly = connection.execute(
+            """SELECT COUNT(DISTINCT visitor_id) AS total FROM visit_events
+               WHERE visited_at >= datetime('now', '-60 days') AND visited_at < datetime('now', '-30 days')"""
+        ).fetchone()["total"]
+        active = connection.execute(
+            "SELECT COUNT(DISTINCT visitor_id) AS total FROM visit_events WHERE visited_at >= datetime('now', '-5 minutes')"
+        ).fetchone()["total"]
+        countries = connection.execute(
+            """SELECT country_code, COUNT(DISTINCT visitor_id) AS visitors
+               FROM visit_events WHERE visited_at >= datetime('now', '-30 days')
+               GROUP BY country_code ORDER BY visitors DESC, country_code LIMIT 5"""
+        ).fetchall()
+        recent_visitors = connection.execute(
+            """SELECT ip_address, country_code, path, MAX(visited_at) AS visited_at
+               FROM visit_events GROUP BY visitor_id
+               ORDER BY visited_at DESC LIMIT 8"""
+        ).fetchall()
+
+    def change(current, previous):
+        if not previous:
+            return None if not current else 100
+        return round(((current - previous) / previous) * 100)
+
+    return {
+        "daily": int(daily or 0), "monthly": int(monthly or 0), "active": int(active or 0),
+        "daily_change": change(int(daily or 0), int(previous_daily or 0)),
+        "monthly_change": change(int(monthly or 0), int(previous_monthly or 0)),
+        "countries": [dict(row) for row in countries],
+        "recent_visitors": [dict(row) for row in recent_visitors],
+    }

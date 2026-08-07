@@ -10,7 +10,7 @@ from security import client_ip, enforce_admin_login_rate_limit
 from .forms import missing_article_fields, missing_tool_fields, parse_json_payload
 from .services import safe_next_url, validate_import_payload
 from repositories.admin import (
-    dashboard_counts, get_admin_by_username, get_recent_audit_logs, log_action,
+    get_dashboard_overview, get_admin_by_username, get_recent_audit_logs, get_traffic_overview, log_action,
     recent_failed_attempts, record_login_attempt,
 )
 from repositories.article_writer import get_article_for_admin, list_admin_articles, save_article
@@ -70,8 +70,9 @@ def logout():
 @admin_bp.route("")
 @login_required
 def dashboard():
+    overview = get_dashboard_overview()
     return render_template(
-        "admin/dashboard.html", counts=dashboard_counts(), logs=get_recent_audit_logs(12), active_admin="dashboard"
+        "admin/dashboard.html", logs=get_recent_audit_logs(8), traffic=get_traffic_overview(), active_admin="dashboard", **overview
     )
 
 
