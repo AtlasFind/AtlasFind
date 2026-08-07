@@ -20,6 +20,7 @@ ASSETS = {
     "redisinsight": ("RedisInsight/RedisInsight", "main", "redisinsight/ui/public/favicon-180x180.png"),
     "mumble": ("mumble-voip/mumble", "master", "icons/mumble_256x256.png"),
     "age": ("FiloSottile/age", "main", "logo/logo.svg"),
+    "simplewall": ("henrypp/simplewall", "master", "src/res/100.ico"),
 }
 
 OFFICIAL_SITE_ASSETS = {
@@ -29,6 +30,15 @@ OFFICIAL_SITE_ASSETS = {
     # Legacy slugs are intentionally retained so existing links remain stable.
     "timeular": "https://early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png",
     "revolt": "https://stoat.chat/favicon-stoat.svg",
+    "fan-control": "https://getfancontrol.com/favicon.svg",
+    "ringcentral": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/22/a8/8b/22a88b45-d382-189d-471d-ffe2a62e64f1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "masterclass": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/fa/69/d8fa695b-a39f-49b6-4e82-99565dffd117/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+    "mercury": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/80/e7/0080e73d-9e68-ca53-3d16-ce4152c623a5/AppIcon-Release-0-0-1x_U007ephone-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+    "endnote": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1d/b9/ce/1db9ce1a-5e88-1299-dcd5-375f61d5e1bd/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+}
+
+VERIFIED_PACKAGE_ASSETS = {
+    "winaero-tweaker": "https://cdn.jsdelivr.net/gh/dgalbraith/chocolatey-packages@9cecfce145d52fe2e4539dbe5b0ad47254b5620f/icons/winaero-tweaker.png",
 }
 
 
@@ -84,6 +94,28 @@ def main() -> None:
         )
         item["status"] = "approved"
         print(f"Approved official site icon: {slug}")
+    for slug, url in VERIFIED_PACKAGE_ASSETS.items():
+        item = by_slug[slug]
+        if item.get("status") == "imported":
+            continue
+        candidate = {"url": url}
+        item.setdefault("candidates", []).insert(0, candidate)
+        candidate.update(
+            {
+                "source_page": "https://community.chocolatey.org/packages/winaero-tweaker",
+                "source_type": "verified_package_mirror",
+                "relation": "packaged-application-icon",
+                "score": 175,
+                "requires_review": False,
+                "review_status": "approved",
+                "license_status": "brand_usage",
+                "product_relevance": "product_match",
+                "discovery_method": "manual-verified-package-audit",
+                "notes": "Application icon distributed by the moderated package entry; official download blocks automated retrieval.",
+            }
+        )
+        item["status"] = "approved"
+        print(f"Approved verified package icon: {slug}")
     QUEUE.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
