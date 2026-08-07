@@ -274,14 +274,7 @@ a {
     align-items: center;
     gap: 9px;
 }
-.nav-more-menu { position: relative; }
-.nav-more-menu summary { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); cursor: pointer; list-style: none; font-size: 1.45rem; line-height: 1; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
-.nav-more-menu summary::-webkit-details-marker { display: none; }
-.nav-more-menu summary:hover, .nav-more-menu[open] summary { border-color: rgba(124,92,255,.55); background: var(--surface-hover); transform: translateY(-1px); }
-.nav-more-dropdown { position: absolute; z-index: 120; top: calc(100% + .65rem); right: 0; display: grid; min-width: 210px; padding: .55rem; border: 1px solid var(--border); border-radius: 15px; background: var(--surface-solid); box-shadow: 0 22px 55px rgba(0,0,0,.34); }
-.nav-more-dropdown a { padding: .72rem .8rem; border-radius: 10px; color: var(--text-soft); text-decoration: none; white-space: nowrap; font-size: .9rem; font-weight: 700; }
-.nav-more-dropdown a:hover, .nav-more-dropdown a[aria-current="page"] { color: var(--text); background: var(--surface-hover); }
-@media(max-width:640px){.nav-more-menu summary{width:34px;height:34px;border-radius:10px}.nav-more-dropdown{position:fixed;top:70px;right:12px;left:12px;min-width:0}}
+.nav-utility-link { display: none; }
 
 
 .theme-button,
@@ -2679,6 +2672,8 @@ button:disabled { cursor: wait; opacity: .7; }
     }
     .nav-links.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
     .nav-links a { padding: 13px 14px; border-radius: 10px; }
+    .nav-links .nav-utility-link { display: block; }
+    .nav-links .nav-utility-start { margin-top: 7px; border-top: 1px solid var(--border); border-radius: 0 0 10px 10px; padding-top: 16px; }
     .nav-links a:hover { background: var(--surface-hover); }
     body.menu-open { overflow: hidden; }
     .compare-picker { grid-template-columns: 1fr; align-items: stretch; }
