@@ -59,6 +59,16 @@
 
             <div class="nav-actions">
                 {% include "components/language_switcher.html" %}
+                <details class="nav-more-menu">
+                    <summary aria-label="{{ t('nav.more') }}" title="{{ t('nav.more') }}"><span aria-hidden="true">⋮</span></summary>
+                    <div class="nav-more-dropdown">
+                        <a href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
+                        <a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}aria-current="page"{% endif %}>{{ t("footer.contact") }}</a>
+                        <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
+                        <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
+                        <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
+                    </div>
+                </details>
                 <button type="button" class="theme-button" id="themeButton" aria-label="{{ t('theme.light') }}" aria-pressed="false">
                     <span id="themeIcon" aria-hidden="true">☾</span>
                 </button>
@@ -90,7 +100,6 @@
             <a href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
-            <a href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
             <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
             <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
             <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>

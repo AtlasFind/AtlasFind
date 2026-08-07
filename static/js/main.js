@@ -61,6 +61,17 @@ const menuButton = document.getElementById("menuButton");
 const primaryNavigation = document.getElementById("primaryNavigation");
 const liveStatus = document.getElementById("liveStatus");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const navMoreMenu = document.querySelector(".nav-more-menu");
+
+document.addEventListener("click", (event) => {
+    if (navMoreMenu?.open && !navMoreMenu.contains(event.target)) navMoreMenu.removeAttribute("open");
+});
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navMoreMenu?.open) {
+        navMoreMenu.removeAttribute("open");
+        navMoreMenu.querySelector("summary")?.focus();
+    }
+});
 
 function updateThemeControl() {
     if (!themeButton || !themeIcon) return;
