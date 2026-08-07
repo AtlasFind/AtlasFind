@@ -23,8 +23,13 @@ def main() -> None:
 
     slugs = [item.get("slug") for item in candidates]
     existing_slugs = {item.get("slug") for item in catalog}
+    existing_websites = {str(item.get("website", "")).strip().rstrip("/").casefold() for item in catalog}
     duplicate_candidates = sorted(slug for slug, count in Counter(slugs).items() if count > 1)
     catalog_collisions = sorted(set(slugs).intersection(existing_slugs))
+    website_collisions = sorted(
+        item["slug"] for item in candidates
+        if str(item.get("official_url", "")).strip().rstrip("/").casefold() in existing_websites
+    )
 
     if len(candidates) != queue.get("target_total", 0) - queue.get("baseline_total", 0):
         errors.append("Candidate count does not match the declared expansion target")
@@ -32,6 +37,8 @@ def main() -> None:
         errors.append(f"Duplicate candidate slugs: {duplicate_candidates}")
     if catalog_collisions:
         errors.append(f"Candidates already present in the catalog: {catalog_collisions}")
+    if website_collisions:
+        errors.append(f"Candidate official websites already present in the catalog: {website_collisions}")
 
     for position, item in enumerate(candidates, start=1):
         for field in ("slug", "name", "category", "subcategory"):
