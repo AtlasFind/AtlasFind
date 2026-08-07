@@ -13,6 +13,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -30,6 +31,15 @@ STOP_FILE = ROOT / "data/research/catalog-worker.stop"
 TEMPLATE = ROOT / "templates/catalog_worker_dashboard.html"
 HOST, PORT = "127.0.0.1", 8765
 PROCESS: subprocess.Popen | None = None
+
+
+def start_worker() -> tuple[bool, str]:
+    global PROCESS
+    if PROCESS and PROCESS.poll() is None:
+        return False, "already_running"
+    STOP_FILE.unlink(missing_ok=True)
+    PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--cycle-minutes", "20"], cwd=ROOT)
+    return True, "started"
 
 
 def records_payload() -> dict:
@@ -70,6 +80,10 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self) -> None:
         global PROCESS
         path = urlparse(self.path).path
+        if path == "/api/start":
+            started, status = start_worker()
+            body = json.dumps({"ok": True, "started": started, "status": status}).encode("utf-8")
+            return self.send(200, body, "application/json; charset=utf-8")
         if path == "/api/stop":
             if PROCESS and PROCESS.poll() is None:
                 STOP_FILE.write_text("stop requested\n", encoding="utf-8")
@@ -117,7 +131,19 @@ def main() -> None:
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
     if args.start_worker:
-        PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--cycle-minutes", "20"], cwd=ROOT)
+        try:
+            request = Request(f"http://{HOST}:{PORT}/api/start", data=b"{}", method="POST",
+                              headers={"Content-Type": "application/json"})
+            with urlopen(request, timeout=3):
+                pass
+            if not args.no_browser:
+                webbrowser.open(f"http://{HOST}:{PORT}/")
+            print("Existing AtlasFind panel found; worker restart requested.")
+            return
+        except OSError:
+            pass
+    if args.start_worker:
+        start_worker()
     server = ThreadingHTTPServer((HOST, PORT), Handler)
     if not args.no_browser and os.environ.get("ATLASFIND_NO_BROWSER") != "1":
         threading.Timer(1.0, lambda: webbrowser.open(f"http://{HOST}:{PORT}/")).start()
