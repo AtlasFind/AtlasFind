@@ -1,8 +1,9 @@
 @echo off
 cd /d "%~dp0"
-echo AtlasFind gece katalog iscisi baslatiliyor...
-echo Adaylar otomatik yayinlanmaz; data\research kuyruğuna kaydedilir.
-python scripts\atlas_catalog_worker.py --hours 8 --max-candidates 300 --min-stars 500
+echo AtlasFind katalog paneli baslatiliyor...
+echo Tarayicinizda canli kontrol paneli acilacak.
+echo Isci siz durdurana kadar calisir ve adaylari otomatik yayinlamaz.
+python scripts\atlas_catalog_dashboard.py
 echo.
 echo Calisma tamamlandi. Pencereyi kapatmak icin bir tusa basin.
 pause >nul
