@@ -26,6 +26,9 @@ OFFICIAL_SITE_ASSETS = {
     "superlist": "https://framerusercontent.com/images/bI0E6AOBvqILIpkzDCXQ2HSjAFQ.png",
     "riverside": "https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/685be7dcd32275d383065e48_RS_favicon.png",
     "beehiiv": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png",
+    # Legacy slugs are intentionally retained so existing links remain stable.
+    "timeular": "https://early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png",
+    "revolt": "https://stoat.chat/favicon-stoat.svg",
 }
 
 

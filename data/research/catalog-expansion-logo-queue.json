@@ -1610,196 +1610,23 @@
     {
       "tool_id": 607,
       "slug": "timeular",
-      "name": "Timeular",
-      "official_url": "https://timeular.com/",
-      "status": "review",
+      "name": "EARLY",
+      "official_url": "https://early.app/",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
         {
-          "url": "https://early.app/apple-touch-icon-precomposed.png",
+          "url": "https://early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png",
           "source_page": "https://early.app/",
           "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://early.app/apple-touch-icon.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://early.app/favicon.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://early.app/favicon.svg",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://cdn-ilagpoj.nitrocdn.com/JWublJUvAMSMHONyXRSvKyoAJycKODtd/assets/images/optimized/rev-428fda9/early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "icon",
-          "score": 110,
-          "requires_review": true,
-          "declared_sizes": "192x192",
-          "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "unrelated_source",
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://early.app/favicon.ico",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 110,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://cdn-ilagpoj.nitrocdn.com/JWublJUvAMSMHONyXRSvKyoAJycKODtd/assets/images/optimized/rev-428fda9/early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-180x180.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "apple-touch-icon",
-          "score": 108,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "unrelated_source",
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://cdn-ilagpoj.nitrocdn.com/JWublJUvAMSMHONyXRSvKyoAJycKODtd/assets/images/optimized/rev-428fda9/early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-32x32.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "icon",
-          "score": 98,
-          "requires_review": true,
-          "declared_sizes": "32x32",
-          "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "unrelated_source",
-            "score",
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://early.app/wp-content/uploads/2025/02/EARLY_OG.png",
-          "source_page": "https://early.app/",
-          "source_type": "official_product_site",
-          "relation": "og:image",
-          "score": 78,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "html-meta",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "relation",
-            "score",
-            "product_name_not_present"
-          ]
+          "relation": "official-site-icon",
+          "score": 190,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-site-markup-audit",
+          "notes": "Product-specific icon explicitly published by the official product site."
         }
       ],
       "last_error": null,
@@ -1818,7 +1645,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png"
     },
     {
       "tool_id": 608,
@@ -23374,130 +23202,23 @@
     {
       "tool_id": 679,
       "slug": "revolt",
-      "name": "Revolt",
-      "official_url": "https://revolt.chat/",
-      "status": "review",
+      "name": "Stoat",
+      "official_url": "https://stoat.chat/",
+      "status": "imported",
       "attempts": 1,
       "candidates": [
-        {
-          "url": "https://stoat.chat/apple-touch-icon-precomposed.png",
-          "source_page": "https://stoat.chat/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://stoat.chat/apple-touch-icon.png",
-          "source_page": "https://stoat.chat/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
         {
           "url": "https://stoat.chat/favicon-stoat.svg",
           "source_page": "https://stoat.chat/",
           "source_type": "official_product_site",
-          "relation": "icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "html-link",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://stoat.chat/favicon.png",
-          "source_page": "https://stoat.chat/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://stoat.chat/favicon.svg",
-          "source_page": "https://stoat.chat/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 118,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
-        },
-        {
-          "url": "https://stoat.chat/favicon.ico",
-          "source_page": "https://stoat.chat/",
-          "source_type": "official_product_site",
-          "relation": "standard-endpoint-icon",
-          "score": 110,
-          "requires_review": true,
-          "declared_sizes": null,
-          "declared_purpose": null,
-          "discovery_method": "standard-endpoint",
-          "review_status": "pending",
-          "license_status": "unknown",
-          "supports_light_theme": null,
-          "supports_dark_theme": null,
-          "last_import_error": null,
-          "product_relevance": "product_name_not_present",
-          "auto_review_rejections": [
-            "product_name_not_present"
-          ]
+          "relation": "official-site-icon",
+          "score": 190,
+          "requires_review": false,
+          "review_status": "approved",
+          "license_status": "brand_usage",
+          "product_relevance": "product_match",
+          "discovery_method": "manual-official-site-markup-audit",
+          "notes": "Product-specific icon explicitly published by the official product site."
         }
       ],
       "last_error": null,
@@ -23510,7 +23231,8 @@
           "source_type": "official_product_site"
         }
       ],
-      "official_source_count": 1
+      "official_source_count": 1,
+      "imported_candidate_url": "https://stoat.chat/favicon-stoat.svg"
     },
     {
       "tool_id": 680,

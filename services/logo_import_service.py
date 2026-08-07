@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import re
 import shutil
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -130,7 +131,12 @@ def import_approved_logo(tool: dict, candidate: dict, *, verified_by: str, timeo
 
     if content_type == "image/svg+xml":
         temp_svg = folder / "source.svg"
-        temp_svg.write_bytes(body)
+        # A few official design tools export an external SVG 1.1 DOCTYPE even
+        # though the artwork itself is self-contained. Keep the untouched
+        # original backup, but remove the DTD from the web-served copy so no
+        # external entity resolution is possible.
+        served_body = re.sub(br"<!DOCTYPE\s+svg\s+PUBLIC\s+[^>]+>", b"", body, flags=re.I)
+        temp_svg.write_bytes(served_body)
         svg_errors = validate_svg(temp_svg)
         if svg_errors:
             temp_svg.unlink(missing_ok=True)

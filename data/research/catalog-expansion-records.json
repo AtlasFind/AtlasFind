@@ -839,8 +839,8 @@
   {
     "id": 607,
     "slug": "timeular",
-    "name": "Timeular",
-    "description": "Timeular is a time tracking tool for users evaluating software in the productivity category.",
+    "name": "EARLY",
+    "description": "EARLY is a time tracking tool for users evaluating software in the productivity category.",
     "category": "Productivity",
     "tags": [
       "Time Tracking",
@@ -851,7 +851,7 @@
     "pricing_type": "freemium",
     "rating": 0,
     "rating_source": "not-rated",
-    "website": "https://timeular.com/",
+    "website": "https://early.app/",
     "platforms": [
       "Windows",
       "macOS",
@@ -887,7 +887,7 @@
     "verification": {
       "status": "partially_verified",
       "date": "2026-08-07",
-      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+      "note": "Timeular officially became EARLY on 18 March 2025. Pricing and platform evidence remain under review."
     },
     "subcategory": "Time Tracking",
     "popularity_score": 25,
@@ -906,6 +906,16 @@
         "type": "data-review",
         "summary": "Staged for official-source editorial review.",
         "changes": []
+      },
+      {
+        "date": "2026-08-08",
+        "type": "identity-update",
+        "summary": "Timeular officially became EARLY on 18 March 2025.",
+        "changes": [
+          "name",
+          "website",
+          "aliases"
+        ]
       }
     ],
     "price_history": [],
@@ -917,7 +927,7 @@
     },
     "icon_url": "/static/icons/generated/timeular.svg",
     "icon_source": "local-generated",
-    "icon_alt": "Timeular icon",
+    "icon_alt": "EARLY icon",
     "icon_fallback_url": "/static/icons/generated/timeular.svg",
     "icon_meta": {
       "fallback": "local-svg-monogram",
@@ -926,23 +936,57 @@
       "lazy_load": true,
       "review_status": "staged"
     },
-    "aliases": [],
+    "aliases": [
+      "Timeular"
+    ],
     "publication_status": "pending_review",
     "source_references": [
       {
-        "label": "Timeular official website",
-        "url": "https://timeular.com/",
-        "type": "official-homepage",
-        "checked_at": "2026-08-07",
-        "domain": "timeular.com",
+        "label": "EARLY official rebrand announcement",
+        "url": "https://early.app/blog/timeular-is-now-early/",
+        "type": "official-announcement",
+        "checked_at": "2026-08-08",
+        "domain": "early.app",
         "claims": [
           "identity",
-          "website",
-          "description",
-          "category"
+          "name-change",
+          "website"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/timeular/logo.webp",
+        "source_url": "https://early.app/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2464,
+        "checksum": "624df5ef2b5042846e24c5eee7429c832c1bc0b0a82eadd4b1618aeebc775faf",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://early.app/wp-content/uploads/2025/09/cropped-cropped-EARLY-APP-ICON-DESKTOP-512PX-1-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EA"
+      },
+      "version": 1,
+      "tool_slug": "timeular"
+    }
   },
   {
     "id": 608,
@@ -10687,8 +10731,8 @@
   {
     "id": 679,
     "slug": "revolt",
-    "name": "Revolt",
-    "description": "Revolt is a community chat tool for users evaluating software in the communication category.",
+    "name": "Stoat",
+    "description": "Stoat is a community chat tool for users evaluating software in the communication category.",
     "category": "Communication",
     "tags": [
       "Community Chat",
@@ -10699,7 +10743,7 @@
     "pricing_type": "free",
     "rating": 0,
     "rating_source": "not-rated",
-    "website": "https://revolt.chat/",
+    "website": "https://stoat.chat/",
     "platforms": [
       "Windows",
       "macOS",
@@ -10735,7 +10779,7 @@
     "verification": {
       "status": "partially_verified",
       "date": "2026-08-07",
-      "note": "Identity, official website and taxonomy placement are confirmed; pricing and platform evidence remain under review."
+      "note": "Revolt officially changed its product name to Stoat in 2026. Pricing and platform evidence remain under review."
     },
     "subcategory": "Community Chat",
     "popularity_score": 25,
@@ -10756,6 +10800,16 @@
         "type": "data-review",
         "summary": "Staged for official-source editorial review.",
         "changes": []
+      },
+      {
+        "date": "2026-08-08",
+        "type": "identity-update",
+        "summary": "Revolt officially changed its product name to Stoat in 2026.",
+        "changes": [
+          "name",
+          "website",
+          "aliases"
+        ]
       }
     ],
     "price_history": [],
@@ -10767,7 +10821,7 @@
     },
     "icon_url": "/static/icons/generated/revolt.svg",
     "icon_source": "local-generated",
-    "icon_alt": "Revolt icon",
+    "icon_alt": "Stoat icon",
     "icon_fallback_url": "/static/icons/generated/revolt.svg",
     "icon_meta": {
       "fallback": "local-svg-monogram",
@@ -10776,23 +10830,57 @@
       "lazy_load": true,
       "review_status": "staged"
     },
-    "aliases": [],
+    "aliases": [
+      "Revolt"
+    ],
     "publication_status": "pending_review",
     "source_references": [
       {
-        "label": "Revolt official website",
-        "url": "https://revolt.chat/",
-        "type": "official-homepage",
-        "checked_at": "2026-08-07",
-        "domain": "revolt.chat",
+        "label": "Stoat official rebrand announcement",
+        "url": "https://stoat.chat/updates/policies-30-jun-2026",
+        "type": "official-announcement",
+        "checked_at": "2026-08-08",
+        "domain": "stoat.chat",
         "claims": [
           "identity",
-          "website",
-          "description",
-          "category"
+          "name-change",
+          "website"
         ]
       }
-    ]
+    ],
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/revolt/logo.svg",
+        "source_url": "https://stoat.chat/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 2060,
+        "checksum": "1aca9be29a2319cb2b28bcb42ad8b22da61665c9b6da7f716fb0c651bc8aa424",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-logo-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Product-specific icon explicitly published by the official product site.",
+        "asset_url": "https://stoat.chat/favicon-stoat.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "revolt"
+    }
   },
   {
     "id": 680,
