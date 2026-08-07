@@ -1,5 +1,6 @@
 const atlasI18n = window.ATLAS_I18N || {};
 const atlasT = (key, fallback) => atlasI18n[key] || fallback;
+const atlasLocalLogoExtensions = ["webp", "png", "jpg", "jpeg", "svg"];
 
 function showAtlasIconMonogram(img) {
     if (!img) return;
@@ -11,6 +12,14 @@ function showAtlasIconMonogram(img) {
 
 function tryAtlasIconFallback(img) {
     if (!img || img.dataset.iconFinished === "1") return;
+    const localBase = img.dataset.localLogoBase;
+    const localIndex = Number.parseInt(img.dataset.localLogoIndex || "-1", 10);
+    const nextLocalIndex = localIndex + 1;
+    if (localBase && nextLocalIndex < atlasLocalLogoExtensions.length) {
+        img.dataset.localLogoIndex = String(nextLocalIndex);
+        img.src = `${localBase}.${atlasLocalLogoExtensions[nextLocalIndex]}`;
+        return;
+    }
     const fallback = img.dataset.fallbackSrc;
     const fallbackAlreadyTried = img.dataset.fallbackTried === "1";
 
@@ -45,6 +54,12 @@ function initializeAtlasIcons(scope = document) {
         img.dataset.iconBound = "1";
         img.addEventListener("error", () => tryAtlasIconFallback(img));
         img.addEventListener("load", () => validateAtlasIcon(img));
+        if (img.dataset.localLogoBase && img.currentSrc.includes("/icons/generated/")) {
+            img.dataset.fallbackSrc = img.currentSrc || img.src;
+            img.dataset.localLogoIndex = "0";
+            img.src = `${img.dataset.localLogoBase}.webp`;
+            return;
+        }
         if (img.complete) validateAtlasIcon(img);
     });
 }

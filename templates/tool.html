@@ -6,7 +6,7 @@
 <section class="tool-detail-hero" id="overview">
     <div class="tool-detail-main">
         <div class="tool-detail-logo tool-icon-shell">
-            <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" width="88" height="88" data-atlas-icon>
+            <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} data-local-logo-base="{{ url_for('static', filename='images/tools/' ~ tool.slug ~ '/logo') }}" alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" width="88" height="88" data-atlas-icon>
             <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
         </div>
         <div class="tool-detail-title">
@@ -140,7 +140,7 @@
     <div class="section-heading"><div><span class="section-label">{{ t("tool.alternatives") }}</span><h2>{{ t("tool.alternatives_to", name=tool.name) }}</h2><p>{{ t("tool.alternatives_explanation") }}</p></div></div>
     {% if alternatives %}
     <div class="alternative-grid">{% for alternative in alternatives %}<article class="alternative-card">
-        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">{% set alt_rating = alternative.get('rating_v103', {}) %}{% if alt_rating.get('publishable') %}★ {{ alt_rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated') }}{% endif %}</strong></div>
+        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} data-local-logo-base="{{ url_for('static', filename='images/tools/' ~ alternative.slug ~ '/logo') }}" alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">{% set alt_rating = alternative.get('rating_v103', {}) %}{% if alt_rating.get('publishable') %}★ {{ alt_rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated') }}{% endif %}</strong></div>
         <p>{{ alternative.description }}</p>
         <div class="tool-tags"><span class="tag featured-tag">{{ alternative.pricing }}</span>{% if alternative.open_source %}<span class="tag">{{ t("tool.open_source") }}</span>{% endif %}{% if alternative.offline %}<span class="tag">{{ t("tool.offline") }}</span>{% endif %}</div>
         <div class="alternative-actions"><a href="{{ url_for('tool_detail', locale=locale, slug=alternative.slug) }}" class="secondary-button">{{ t("tool.explore") }}</a><a href="{{ url_for('compare_tools', locale=locale, left=tool.slug, right=alternative.slug) }}" class="primary-button">{{ t("tool.compare") }} <span aria-hidden="true">⇄</span></a></div>
