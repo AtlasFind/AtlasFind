@@ -15,8 +15,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
     <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
-    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg', v=app_version) }}">
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.svg', v=app_version) }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/atlasfind-duck-64.png', v=app_version) }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternate_urls.get('en') }}">
     {% block extra_head %}{% endblock %}
@@ -44,7 +44,7 @@
     <header class="site-header">
         <div class="navbar">
             <a href="{{ url_for('home') }}" class="logo" aria-label="AtlasFind {{ t('common.home') }}">
-                <span class="logo-icon" aria-hidden="true">A</span>
+                <img class="logo-avatar" src="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}" alt="" width="40" height="40">
                 <span class="logo-text">Atlas<span>Find</span></span>
             </a>
 
@@ -78,7 +78,7 @@
     <footer class="footer premium-footer">
         <div class="footer-brand">
             <a href="{{ url_for('home') }}" class="logo">
-                <span class="logo-icon" aria-hidden="true">A</span>
+                <img class="logo-avatar" src="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}" alt="" width="40" height="40" loading="lazy">
                 <span class="logo-text">Atlas<span>Find</span></span>
             </a>
             <p>{{ t("footer.tagline") }}</p>
