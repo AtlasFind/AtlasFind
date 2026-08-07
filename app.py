@@ -45,8 +45,10 @@ configure_security(app)
 configure_logging(app)
 apply_migrations()
 bootstrap_status = bootstrap_admin_from_environment(app.config["PRODUCTION"])
-if bootstrap_status == "created":
-    app.logger.warning("production_admin_bootstrapped")
+if bootstrap_status != "disabled":
+    # Never log credentials; this is solely a deployment diagnostic for hosts
+    # that do not provide an interactive shell on their free tier.
+    app.logger.warning("production_admin_bootstrap_status=%s", bootstrap_status)
 app.register_blueprint(admin_bp)
 
 APP_VERSION = "1.0.4"
