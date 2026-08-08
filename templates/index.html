@@ -285,7 +285,7 @@
             {% endif %}
 
             <div class="filter-toolbar">
-                <button type="button" class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+                <button type="button" class="filter-toggle" id="filterToggle" aria-expanded="{{ 'true' if active_filters else 'false' }}" aria-controls="filterPanel">
                     {{ t("filter.title") }} <span>⚙</span>
                 </button>
                 <div class="result-count" aria-live="polite">
@@ -294,7 +294,7 @@
                 </div>
             </div>
 
-            <form class="filter-panel" id="filterPanel" method="GET" action="{{ url_for('home') }}">
+            <form class="filter-panel home-filter-panel{% if active_filters %} is-open{% endif %}" id="filterPanel" method="GET" action="{{ url_for('home') }}">
                 {% if search_query %}<input type="hidden" name="q" value="{{ search_query }}">{% endif %}
                 <fieldset>
                     <legend>{{ t("filter.pricing") }}</legend>
@@ -437,7 +437,7 @@
                             <div class="tool-tags">
 
                                 <span class="tag featured-tag">
-                                    {{ t('catalog.price_' ~ tool.pricing|lower) }}
+                                    {{ t('catalog.price_' ~ tool.pricing_type) if tool.pricing_type in ['free','freemium','paid'] else tool.pricing }}
                                 </span>
 
                                 {% if tool.open_source %}

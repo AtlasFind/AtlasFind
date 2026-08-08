@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.8.1 - 2026-08-08
+
+- Restored the familiar ChatGPT, Claude, Gemini and Perplexity homepage order.
+- Collapsed advanced homepage filters behind a compact filter button.
+- Polished score badges, card spacing and localized pricing labels.
+- Verified the refreshed layout at desktop and mobile breakpoints.
+
 ## 1.8.0 - 2026-08-08
 
 - Added a deterministic AtlasFind catalog score to all 1,000 public tools.

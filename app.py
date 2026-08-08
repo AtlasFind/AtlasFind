@@ -69,7 +69,10 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.8.0"
+APP_VERSION = "1.8.1"
+HOME_FEATURED_SLUGS = (
+    "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
+)
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1128,9 +1131,17 @@ def home(locale=None):
     if search_query:
         ranked_tools, search_meta = rank_tools(all_tools, search_query)
     else:
+        featured_position = {slug: index for index, slug in enumerate(HOME_FEATURED_SLUGS)}
         ranked_tools = [
             {"tool": tool, "score": 0, "match": None, "reasons": []}
-            for tool in sorted(all_tools, key=lambda tool: tool.get("rating", 0), reverse=True)
+            for tool in sorted(
+                all_tools,
+                key=lambda tool: (
+                    featured_position.get(tool.get("slug"), len(HOME_FEATURED_SLUGS)),
+                    -float(tool.get("popularity_score", 0)),
+                    str(tool.get("name", "")).casefold(),
+                ),
+            )
         ]
 
     # Keep every result entry template-safe, including unsearched home-page cards.

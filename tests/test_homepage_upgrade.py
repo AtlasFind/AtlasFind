@@ -26,6 +26,14 @@ class HomepageUpgradeTests(unittest.TestCase):
         self.assertNotIn('href="/categories/design"', page)
         self.assertNotIn('href="/categories/video"', page)
 
+    def test_homepage_keeps_familiar_featured_order_and_compact_filters(self):
+        page = self.client.get("/tr/").get_data(as_text=True)
+        positions = [page.index(f">{name}<") for name in ("ChatGPT", "Claude", "Gemini", "Perplexity")]
+        self.assertEqual(positions, sorted(positions))
+        self.assertIn('class="filter-panel home-filter-panel"', page)
+        self.assertNotIn('class="filter-panel home-filter-panel is-open"', page)
+        self.assertNotIn("catalog.price_Ã¼cretsiz", page)
+
     def test_filtered_home_localizes_results(self):
         page = self.client.get("/tr/?pricing=free").get_data(as_text=True)
         self.assertIn("araçtan", page)
