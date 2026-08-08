@@ -709,5 +709,12 @@
   "auth.no_saved_tools_help": "Bir araç sayfasındaki yıldız düğmesine basarak listeni oluştur.",
   "compare.choose_category": "Önce karşılaştırma kategorisini seç",
   "compare.choose_category_placeholder": "Bir kategori seç",
-  "compare.show_category_tools": "Kategori araçlarını göster"
+  "compare.show_category_tools": "Kategori araçlarını göster",
+  "auth.view_public_profile": "Herkese açık profili gör",
+  "auth.public_member_profile": "AtlasFind kullanıcı profili",
+  "auth.public_profile_description": "{name} tarafından paylaşılan AtlasFind profili ve Araç Çantası.",
+  "auth.public_saved_tools": "Paylaşılan araçlar ({count})",
+  "auth.public_saved_tools_help": "Bu kullanıcının AtlasFind üzerinde kaydettiği ve herkese açık olarak paylaştığı araçlar.",
+  "auth.public_no_tools": "Henüz herkese açık araç yok",
+  "auth.public_no_tools_help": "Kullanıcı Araç Çantasına araç eklediğinde burada görünecek."
 }

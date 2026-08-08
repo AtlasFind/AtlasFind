@@ -51,7 +51,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.5.0", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.6.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -162,6 +162,30 @@ class UserAuthTests(unittest.TestCase):
         }, follow_redirects=True)
         profile = self.client.get("/tr/profile").get_data(as_text=True)
         self.assertNotIn("tool-bag-main\" href=\"/tr/tools/chatgpt", profile)
+
+    def test_only_public_verified_profiles_are_shareable(self):
+        _, verification_url = self.register()
+        profile = self.verify(verification_url).get_data(as_text=True)
+        self.client.post("/tr/profile", data={
+            "csrf_token": self.token(profile), "action": "profile",
+            "display_name": "Public Atlas", "bio": "Paylaşılan profil",
+            "country": "Türkiye", "website_url": "", "profile_visibility": "public",
+        }, follow_redirects=True)
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        self.client.post("/tr/tools/chatgpt/favorite", data={"csrf_token": self.token(profile), "saved": "1"})
+        public = self.client.get(f"/tr/u/{TEST_USERNAME}")
+        body = public.get_data(as_text=True)
+        self.assertEqual(public.status_code, 200)
+        self.assertIn("Public Atlas", body)
+        self.assertIn("ChatGPT", body)
+        self.assertNotIn(TEST_EMAIL, body)
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        self.client.post("/tr/profile", data={
+            "csrf_token": self.token(profile), "action": "profile",
+            "display_name": "Public Atlas", "bio": "", "country": "",
+            "website_url": "", "profile_visibility": "private",
+        })
+        self.assertEqual(self.client.get(f"/tr/u/{TEST_USERNAME}").status_code, 404)
 
 
 if __name__ == "__main__":

@@ -22,7 +22,7 @@ from repositories.user_reviews import aggregate_user_rating, anonymous_user_key,
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
-    create_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
+    create_user, get_public_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
     record_user_login, user_exists, set_verification_token, verify_user_email,
     update_user_password, update_user_profile,
     is_user_favorite, list_user_favorites, set_user_favorite,
@@ -66,7 +66,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.5.0"
+APP_VERSION = "1.6.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1928,6 +1928,23 @@ def user_profile(locale=None):
     tools_by_slug = {item.get("slug"): item for item in load_tools(get_locale())}
     favorite_tools = [{"tool": tools_by_slug[row["tool_slug"]], "saved_at": row["created_at"]} for row in favorite_rows if row["tool_slug"] in tools_by_slug]
     return render_template("auth/profile.html", profile_user=user, favorite_tools=favorite_tools, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
+
+
+@app.get("/u/<username>")
+@app.get("/<locale>/u/<username>")
+def public_user_profile(username, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    public_user = get_public_user(username[:30])
+    if not public_user:
+        abort(404)
+    favorite_rows = list_user_favorites(public_user["id"])
+    tools_by_slug = {item.get("slug"): item for item in load_tools(get_locale())}
+    favorite_tools = [tools_by_slug[row["tool_slug"]] for row in favorite_rows if row["tool_slug"] in tools_by_slug]
+    display_name = public_user["display_name"] or public_user["username"]
+    description = public_user["bio"] or translate("auth.public_profile_description", name=display_name)
+    canonical = f"/{get_locale()}/u/{public_user['username']}"
+    return render_template("auth/public_profile.html", public_user=public_user, favorite_tools=favorite_tools, active_page="public-profile", seo=page_seo(f"{display_name} | AtlasFind", description, canonical), breadcrumbs=[], schemas=[])
 
 
 @app.route("/privacy", strict_slashes=False)

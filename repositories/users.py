@@ -19,6 +19,16 @@ def get_user_for_login(identity, path=DATABASE_PATH):
         ).fetchone()
 
 
+def get_public_user(username, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            """SELECT id,username,display_name,bio,country,website_url,created_at
+               FROM user_accounts WHERE lower(username)=lower(?) AND is_active=1
+               AND email_verified=1 AND profile_visibility='public'""",
+            (username,),
+        ).fetchone()
+
+
 def create_user(username, email, password_hash, locale, path=DATABASE_PATH):
     with transaction(path) as connection:
         cursor = connection.execute(

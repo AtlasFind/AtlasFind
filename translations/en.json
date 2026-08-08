@@ -709,5 +709,12 @@
   "auth.no_saved_tools_help": "Use the star button on a tool page to build your list.",
   "compare.choose_category": "Choose a comparison category first",
   "compare.choose_category_placeholder": "Choose a category",
-  "compare.show_category_tools": "Show category tools"
+  "compare.show_category_tools": "Show category tools",
+  "auth.view_public_profile": "View public profile",
+  "auth.public_member_profile": "AtlasFind user profile",
+  "auth.public_profile_description": "AtlasFind profile and Tool Bag shared by {name}.",
+  "auth.public_saved_tools": "Shared tools ({count})",
+  "auth.public_saved_tools_help": "Tools this user saved and chose to share publicly on AtlasFind.",
+  "auth.public_no_tools": "No public tools yet",
+  "auth.public_no_tools_help": "Saved tools will appear here when the user adds them to their Tool Bag."
 }
