@@ -66,6 +66,7 @@
             </nav>
 
             <div class="nav-actions">
+                {% if current_user %}<a class="account-button account-button-user" href="{{ url_for('user_profile') }}" aria-label="{{ t('auth.profile') }}"><span>{{ current_user.username[:1]|upper }}</span><strong>{{ current_user.username }}</strong></a>{% else %}<a class="account-button" href="{{ url_for('user_login') }}">{{ t("auth.login") }}</a>{% endif %}
                 {% include "components/language_switcher.html" %}
                 <button type="button" class="theme-button" id="themeButton" aria-label="{{ t('theme.light') }}" aria-pressed="false">
                     <span id="themeIcon" aria-hidden="true">☾</span>

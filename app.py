@@ -2,9 +2,11 @@ from flask import Flask, render_template, request, abort, jsonify, Response, red
 from pathlib import Path
 from functools import lru_cache
 import os
+import re
 import secrets
 import uuid
 from urllib.parse import urlencode
+from werkzeug.security import check_password_hash, generate_password_hash
 
 from tool_schema import validate_tools
 from search_engine import alternative_queries, rank_tools, search_suggestions
@@ -18,12 +20,17 @@ from services.rating_service import enrich_tool_rating
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
+from repositories.users import (
+    create_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
+    record_user_login, user_exists,
+)
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
 from admin.bootstrap import bootstrap_admin_from_environment, reset_admin_password_from_environment
 from security import (
     add_security_headers, client_ip, configure_logging, configure_security, enforce_api_rate_limit,
+    enforce_user_auth_rate_limit,
     enforce_safe_method, new_request_id, validate_request_host,
 )
 from taxonomy import CATEGORIES, category_slug, localized_category
@@ -99,6 +106,7 @@ PUBLIC_PAGES = {
     "privacy": {
         "en": {"title": "Privacy Policy", "description": "How AtlasFind handles technical data and protects visitor privacy.", "sections": [
             ("What we collect", "AtlasFind does not require a visitor account. The service may process standard server logs such as IP address, browser information, requested pages and timestamps for security, reliability and abuse prevention."),
+            ("Account information", "When you create an optional account, AtlasFind stores your username, email address and a one-way password hash. Passwords are never stored as readable text. This information is used to provide and secure account features."),
             ("Cookies and local storage", "AtlasFind uses essential browser storage for interface preferences such as language, theme and cookie notice status. Advertising or analytics cookies are not enabled unless the policy is updated and consent is collected where required."),
             ("External websites", "Tool pages link to third-party websites. Their privacy practices and content are controlled by those providers, not AtlasFind."),
             ("Data retention", "Security and error logs are retained only as long as reasonably needed to operate and protect the service."),
@@ -106,6 +114,7 @@ PUBLIC_PAGES = {
         ]},
         "tr": {"title": "Gizlilik Politikası", "description": "AtlasFind'in teknik verileri nasıl işlediği ve ziyaretçi gizliliğini nasıl koruduğu.", "sections": [
             ("Topladığımız bilgiler", "AtlasFind ziyaretçi hesabı gerektirmez. Güvenlik, hizmet sürekliliği ve kötüye kullanımın önlenmesi amacıyla IP adresi, tarayıcı bilgisi, istenen sayfalar ve zaman bilgisi gibi standart sunucu kayıtları işlenebilir."),
+            ("Hesap bilgileri", "İsteğe bağlı bir hesap oluşturduğunuzda kullanıcı adı, e-posta adresi ve tek yönlü şifre özeti saklanır. Şifreler okunabilir metin olarak tutulmaz. Bu bilgiler hesap özelliklerini sunmak ve korumak için kullanılır."),
             ("Çerezler ve yerel depolama", "AtlasFind dil, tema ve çerez bildirimi tercihi gibi temel arayüz ayarları için gerekli tarayıcı depolamasını kullanır. Politika güncellenmeden ve gerektiğinde izin alınmadan reklam veya analiz çerezleri etkinleştirilmez."),
             ("Haricî siteler", "Araç sayfaları üçüncü taraf sitelere bağlantı verir. Bu sitelerin içerik ve gizlilik uygulamalarından AtlasFind sorumlu değildir."),
             ("Saklama süresi", "Güvenlik ve hata kayıtları yalnızca hizmeti işletmek ve korumak için makul ölçüde gerekli süre boyunca tutulur."),
@@ -1057,6 +1066,9 @@ def response_headers(response):
 
 @app.context_processor
 def inject_app_metadata():
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if session.get("user_id") and not user:
+        session.pop("user_id", None)
     return {
         "app_version": APP_VERSION,
         "adsense_publisher_id": ADSENSE_PUBLISHER_ID,
@@ -1069,6 +1081,7 @@ def inject_app_metadata():
         "localized_path": localized_path,
         "category_slug": category_slug,
         "alternate_urls": alternate_urls(request.path),
+        "current_user": user,
         "csp_nonce": getattr(g, "csp_nonce", ""),
         "js_i18n": {key: translate(key) for key in (
             "js.theme.dark", "js.theme.light", "js.menu.open", "js.menu.close",
@@ -1076,6 +1089,21 @@ def inject_app_metadata():
             "js.suggestion.tool", "js.suggestion.search"
         )},
     }
+
+
+def user_csrf_token():
+    token = session.get("user_csrf_token")
+    if not token:
+        token = secrets.token_urlsafe(32)
+        session["user_csrf_token"] = token
+    return token
+
+
+def validate_user_csrf():
+    supplied = str(request.form.get("csrf_token") or "")
+    expected = str(session.get("user_csrf_token") or "")
+    if not supplied or not expected or not secrets.compare_digest(supplied, expected):
+        abort(400)
 
 @app.route("/")
 @app.route("/<locale>/")
@@ -1691,6 +1719,92 @@ def sitemap_xml():
           ''.join(entries) + '</urlset>'
     return Response(xml, mimetype="application/xml")
 
+
+
+@app.route("/login", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/login", methods=["GET", "POST"], strict_slashes=False)
+def user_login(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if session.get("user_id") and get_user_by_id(session["user_id"]):
+        return redirect(url_for("user_profile"))
+    if request.method == "POST":
+        validate_user_csrf()
+        enforce_user_auth_rate_limit("login")
+        identity = request.form.get("identity", "").strip().lower()[:180]
+        password = request.form.get("password", "")[:256]
+        ip_address = client_ip()
+        if recent_failed_user_logins(identity, ip_address) >= 5:
+            abort(429)
+        user = get_user_for_login(identity)
+        valid = bool(user and check_password_hash(user["password_hash"], password))
+        record_user_login(identity, ip_address, valid, user["id"] if user else None)
+        if valid:
+            user_id = user["id"]
+            session.clear()
+            session["user_id"] = user_id
+            session["user_csrf_token"] = secrets.token_urlsafe(32)
+            session.permanent = True
+            return redirect(url_for("user_profile"))
+        flash(translate("auth.invalid_login"), "error")
+    return render_template("auth/login.html", user_csrf=user_csrf_token(), active_page="login", seo=page_seo(translate("auth.login"), translate("auth.login_description"), f"/{get_locale()}/login", robots="noindex,follow"), breadcrumbs=[])
+
+
+@app.route("/register", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/register", methods=["GET", "POST"], strict_slashes=False)
+def user_register(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if session.get("user_id") and get_user_by_id(session["user_id"]):
+        return redirect(url_for("user_profile"))
+    values = request.form if request.method == "POST" else {}
+    if request.method == "POST":
+        validate_user_csrf()
+        enforce_user_auth_rate_limit("register")
+        username = request.form.get("username", "").strip()[:30]
+        email = request.form.get("email", "").strip().lower()[:180]
+        password = request.form.get("password", "")[:256]
+        confirm = request.form.get("confirm_password", "")[:256]
+        username_valid = bool(re.fullmatch(r"[A-Za-z0-9_.]{3,30}", username))
+        email_valid = bool(re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email))
+        password_valid = len(password) >= 10 and any(c.islower() for c in password) and any(c.isupper() for c in password) and any(c.isdigit() for c in password)
+        if not username_valid or not email_valid:
+            flash(translate("auth.invalid_account_fields"), "error")
+        elif not password_valid:
+            flash(translate("auth.password_rules"), "error")
+        elif password != confirm:
+            flash(translate("auth.password_mismatch"), "error")
+        elif request.form.get("accept_terms") != "1":
+            flash(translate("auth.accept_terms_error"), "error")
+        elif user_exists(username, email):
+            flash(translate("auth.account_exists"), "error")
+        else:
+            user_id = create_user(username, email, generate_password_hash(password), get_locale())
+            session.clear()
+            session["user_id"] = user_id
+            session["user_csrf_token"] = secrets.token_urlsafe(32)
+            session.permanent = True
+            return redirect(url_for("user_profile", welcome=1))
+    return render_template("auth/register.html", user_csrf=user_csrf_token(), values=values, active_page="register", seo=page_seo(translate("auth.register"), translate("auth.register_description"), f"/{get_locale()}/register", robots="noindex,follow"), breadcrumbs=[])
+
+
+@app.post("/logout")
+@app.post("/<locale>/logout")
+def user_logout(locale=None):
+    validate_user_csrf()
+    session.clear()
+    return redirect(localized_path("/", locale or get_locale()))
+
+
+@app.route("/profile", strict_slashes=False)
+@app.route("/<locale>/profile", strict_slashes=False)
+def user_profile(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        return redirect(url_for("user_login"))
+    return render_template("auth/profile.html", profile_user=user, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
 
 
 @app.route("/privacy", strict_slashes=False)

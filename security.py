@@ -123,6 +123,7 @@ class SlidingWindowLimiter:
 
 login_limiter = SlidingWindowLimiter()
 api_limiter = SlidingWindowLimiter()
+user_auth_limiter = SlidingWindowLimiter()
 
 
 def enforce_admin_login_rate_limit(username: str) -> None:
@@ -144,6 +145,14 @@ def enforce_api_rate_limit() -> None:
     ip = client_ip()
     if not api_limiter.allow(f"api:{ip}", 60, 60):
         current_app.logger.warning("api_rate_limited ip=%s path=%s", ip, request.path)
+        abort(429)
+
+
+def enforce_user_auth_rate_limit(action: str) -> None:
+    ip = client_ip()
+    limit = 10 if action == "login" else 5
+    if not user_auth_limiter.allow(f"user-auth:{action}:{ip}", limit, 15 * 60):
+        current_app.logger.warning("user_auth_rate_limited action=%s ip=%s", action, ip)
         abort(429)
 
 
