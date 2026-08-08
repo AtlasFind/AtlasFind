@@ -6,13 +6,22 @@ def get_all_articles(path=DATABASE_PATH):
     if not path.exists():
         return []
     with connect_database(path) as connection:
-        rows = connection.execute("SELECT payload_json FROM articles WHERE COALESCE(status,'published')='published' ORDER BY published_at DESC, id").fetchall()
-    return [decode_payload(row) for row in rows]
+        rows = connection.execute("SELECT id,payload_json FROM articles WHERE COALESCE(status,'published')='published' ORDER BY published_at DESC, id").fetchall()
+    articles = []
+    for row in rows:
+        article = decode_payload(row)
+        article["id"] = row["id"]
+        articles.append(article)
+    return articles
 
 
 def get_article_by_slug(slug, path=DATABASE_PATH):
     if not path.exists():
         return None
     with connect_database(path) as connection:
-        row = connection.execute("SELECT payload_json FROM articles WHERE slug = ? AND COALESCE(status,'published')='published'", (slug,)).fetchone()
-    return decode_payload(row) if row else None
+        row = connection.execute("SELECT id,payload_json FROM articles WHERE slug = ? AND COALESCE(status,'published')='published'", (slug,)).fetchone()
+    if not row:
+        return None
+    article = decode_payload(row)
+    article["id"] = row["id"]
+    return article

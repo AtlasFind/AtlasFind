@@ -55,6 +55,10 @@ def main() -> None:
     sync_catalog_translations()
     from scripts.sync_expansion_translations import main as sync_expansion_translations
     sync_expansion_translations()
+    from scripts.sync_complete_turkish_translations import main as sync_complete_turkish_translations
+    sync_complete_turkish_translations()
+    from scripts.sync_complete_turkish_articles import main as sync_complete_turkish_articles
+    sync_complete_turkish_articles()
     count = tool_count()
     if count == 0:
         raise RuntimeError("Database bootstrap completed without any tools.")

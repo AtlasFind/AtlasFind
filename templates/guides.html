@@ -9,7 +9,7 @@
         <h1>{{ t("guides.title") }}</h1>
         <p>{{ t("guides.description") }}</p>
         <div class="article-stat-row">
-            <strong>{{ all_articles|length }} guides</strong>
+            <strong>{{ t('guides.count', count=all_articles|length) }}</strong>
             <span>{{ t("guides.data_linked") }}</span>
             <span>{{ t("guides.dates") }}</span>
         </div>
@@ -23,7 +23,7 @@
             <select name="type">
                 <option value="">{{ t("guides.all_types") }}</option>
                 {% for item in content_types %}
-                <option value="{{ item }}" {% if selected_type == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
+                <option value="{{ item }}" {% if selected_type == item %}selected{% endif %}>{{ content_type_labels.get(item, item|replace('-', ' ')|title) }}</option>
                 {% endfor %}
             </select>
         </label>
@@ -32,7 +32,7 @@
             <select name="category">
                 <option value="">{{ t("guides.all_categories") }}</option>
                 {% for item in article_categories %}
-                <option value="{{ item }}" {% if selected_category == item %}selected{% endif %}>{{ item|replace('-', ' ')|title }}</option>
+                <option value="{{ item }}" {% if selected_category == item %}selected{% endif %}>{{ article_category_labels.get(item, item|replace('-', ' ')|title) }}</option>
                 {% endfor %}
             </select>
         </label>
@@ -45,13 +45,13 @@
         {% for article in articles %}
         <article class="article-card">
             <div class="article-card-meta">
-                <span>{{ article.content_type|replace('-', ' ')|title }}</span>
-                <time datetime="{{ article.updated_at }}">Updated {{ article.updated_at }}</time>
+                <span>{{ content_type_labels.get(article.content_type, article.content_type|replace('-', ' ')|title) }}</span>
+                <time datetime="{{ article.updated_at }}">{{ t('guides.updated', date=article.updated_at) }}</time>
             </div>
             <h2><a href="{{ url_for('article_detail', slug=article.slug) }}">{{ article.title }}</a></h2>
             <p>{{ article.description }}</p>
             <div class="article-card-footer">
-                <span>{{ article.category|replace('-', ' ')|title }}</span>
+                <span>{{ article_category_labels.get(article.category, article.category|replace('-', ' ')|title) }}</span>
                 <a href="{{ url_for('article_detail', slug=article.slug) }}">{{ t("actions.read_guide") }}</a>
             </div>
         </article>

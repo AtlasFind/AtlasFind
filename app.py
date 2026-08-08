@@ -816,6 +816,17 @@ COLLECTION_INFO = {
     "editor-choice": {"name": "Editor Choices", "description": "Strong all-round tools selected by AtlasFind editorial rules."},
 }
 
+COLLECTION_INFO_TR = {
+    "free-tools": {"name": "Ücretsiz Araçlar", "description": "Tamamen ücretsiz fiyatlandırma modeline sahip araçlar."},
+    "open-source": {"name": "Açık Kaynak", "description": "Kaynak kodu incelenebilen ve geliştirilebilen yazılımlar."},
+    "low-end-pc": {"name": "Düşük Donanımlı Bilgisayarlar", "description": "Mütevazı donanımlara uygun, hafif araçlar."},
+    "students": {"name": "Öğrenciler İçin", "description": "Öğrenme ve öğrenci iş akışlarına uygun, erişilebilir araçlar."},
+    "editor-choice": {"name": "Editörün Seçtikleri", "description": "AtlasFind editoryal ölçütleriyle seçilen güçlü ve çok yönlü araçlar."},
+}
+
+def localized_collections(locale):
+    return COLLECTION_INFO_TR if locale == "tr" else COLLECTION_INFO
+
 def slugify_category(name):
     return category_slug(name)
 
@@ -1117,7 +1128,7 @@ def home(locale=None):
         popular_tools=sort_tools(all_tools, "popular")[:6],
         newest_tools=sort_tools(all_tools, "newest")[:6],
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
-        collections=COLLECTION_INFO,
+        collections=localized_collections(get_locale()),
         seo=page_seo(
             "Yazılımları Keşfet ve Karşılaştır" if get_locale() == "tr" else "Discover and Compare Software",
             "İhtiyacına, bütçene, platformuna ve bilgisayarına uygun yazılımları keşfet ve karşılaştır." if get_locale() == "tr" else "Discover, compare and find software that fits your workflow, platform, budget and hardware.",
@@ -1230,7 +1241,7 @@ def subcategory_page(category_slug_value, subcategory_slug, locale=None):
 def collection_page(slug, locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
-    info=COLLECTION_INFO.get(slug)
+    info=localized_collections(get_locale()).get(slug)
     if not info: abort(404)
     items=[t for t in load_tools() if slug in t.get("collections",[])]
     home_label = translate("common.home")
@@ -1269,6 +1280,15 @@ def guides(locale=None):
         selected_category=category,
         content_types=sorted({article.get("content_type") for article in articles}),
         article_categories=sorted({article.get("category") for article in articles}),
+        content_type_labels={
+            "best-tools": translate("guides.type.best_tools"), "alternatives": translate("guides.type.alternatives"),
+            "guide": translate("guides.type.guide"), "category-guide": translate("guides.type.category_guide"),
+        },
+        article_category_labels={
+            "design": translate("guides.category.design"), "video": translate("guides.category.video"),
+            "office": translate("guides.category.office"), "browser": translate("guides.category.browser"),
+            "education": translate("guides.category.education"),
+        },
         seo=page_seo(translate("guides.seo_title"), translate("guides.seo_description"), "/guides", robots="noindex,follow" if content_type or category else "index,follow"),
         breadcrumbs=(crumbs := build_breadcrumbs([(translate("common.home"), "/"), (translate("nav.guides"), "/guides")])),
         schemas=[breadcrumb_schema(crumbs)],
@@ -1700,7 +1720,7 @@ def _public_page(page_key, locale=None):
         "public_page.html", content=content, page_key=page_key, active_page=page_key,
         seo=page_seo(content["title"], content["description"], path),
         breadcrumbs=build_breadcrumbs([(translate("common.home"), url_for("home")), (content["title"], None)]),
-        schemas=[],
+        schemas=[], tool_total=len(load_tools()),
     )
 
 @app.route("/tool/<slug>")
