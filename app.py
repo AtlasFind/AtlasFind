@@ -19,6 +19,7 @@ from repositories.articles import get_all_articles, get_article_by_slug
 from repositories.translations import localize_tool, localize_article, localize_tools, localize_articles
 from services.image_service import enrich_tool_branding
 from services.rating_service import enrich_tool_rating
+from services.catalog_score_service import enrich_tool_catalog_score
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
@@ -68,7 +69,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.7.0"
+APP_VERSION = "1.8.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -187,7 +188,10 @@ def _normalize_tool_icons(tools):
 
 @lru_cache(maxsize=8)
 def _cached_tools(locale, database_version):
-    tools = [enrich_tool_rating(tool) for tool in _normalize_tool_icons(localize_tools(get_all_tools(), locale))]
+    tools = [
+        enrich_tool_catalog_score(enrich_tool_rating(tool))
+        for tool in _normalize_tool_icons(localize_tools(get_all_tools(), locale))
+    ]
     validation_errors = validate_tools(tools)
     if validation_errors:
         error_text = "\n".join(f"- {error}" for error in validation_errors)
@@ -1400,7 +1404,9 @@ def rating_methodology(locale=None):
 def tool_detail(slug, locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
-    tool = find_tool_by_slug(slug)
+    public_tools = load_tools(get_locale())
+    public_tool_map = {item.get("slug"): item for item in public_tools}
+    tool = public_tool_map.get(slug)
 
     if tool is None:
         abort(404)
@@ -1409,6 +1415,7 @@ def tool_detail(slug, locale=None):
         tool,
         limit=6
     )
+    alternatives = [public_tool_map.get(item.get("slug"), item) for item in alternatives]
 
     locale_code = get_locale()
     title = translate("tool.seo_title", name=tool.get("name", "Tool"))
@@ -1513,7 +1520,10 @@ def _comparison_value(tool, key):
         return ", ".join(value.upper() for value in values) or unknown
     if key == "rating":
         rating = tool.get("rating_v103") or {}
-        value = rating.get("overall_score")
+        if rating.get("publishable"):
+            value = rating.get("overall_score")
+        else:
+            value = (tool.get("catalog_score") or {}).get("score")
         return f"{value:.1f} / 10" if isinstance(value, (int, float)) else translate("tool.not_rated")
     if key == "target_users":
         return ", ".join(tool.get("target_users") or []) or unknown
@@ -1594,10 +1604,12 @@ def compare_tools(locale=None):
         unique_slugs.append(slug)
     unique_slugs = unique_slugs[:4]
 
+    current_locale = get_locale()
+    comparison_tool_map = {tool.get("slug"): tool for tool in load_tools(current_locale)}
     selected_tools = []
     invalid_slugs = []
     for slug in unique_slugs:
-        tool = find_tool_by_slug(slug, get_locale())
+        tool = comparison_tool_map.get(slug)
         if tool is None:
             invalid_slugs.append(slug)
             continue
@@ -1616,7 +1628,6 @@ def compare_tools(locale=None):
                 category_mismatch_removed = True
         selected_tools = category_scoped_tools
 
-    current_locale = get_locale()
     all_comparison_tools = sorted(
         [tool for tool in load_tools(current_locale) if comparison_category_slug and category_slug(tool.get("category", "")) == comparison_category_slug],
         key=lambda tool: str(tool.get("name", "")).casefold(),

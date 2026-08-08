@@ -17,6 +17,7 @@
             <h1>{{ tool.name }}</h1>
             <p>{{ tool.description }}</p>
             <div class="tool-detail-tags" aria-label="{{ t('tool.highlights') }}">
+                {% set catalog_score = tool.get('catalog_score', {}) %}<span class="detail-tag catalog-score-badge" title="{{ t('rating.catalog_score_tooltip') }}">★ {{ catalog_score.get('display_score', '—') }} / 10 · {{ t('rating.catalog_score_short') }}</span>
                 <span class="detail-tag">{{ tool.pricing }}</span>
                 {% if tool.open_source %}<span class="detail-tag">{{ t("tool.open_source") }}</span>{% endif %}
                 {% if tool.offline %}<span class="detail-tag">{{ t("tool.offline") }}</span>{% endif %}
@@ -83,6 +84,15 @@
             {% if tool.tags %}<div class="detail-platform-list">{% for tag in tool.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% else %}<p>{{ t("tool.not_reviewed") }}</p>{% endif %}
         </section>
 
+        <section class="detail-section detail-card catalog-score-card" id="catalog-score">
+            {% set catalog_score = tool.get('catalog_score', {}) %}
+            <div class="dual-rating-heading"><div><span class="section-label">{{ t('rating.catalog_score_short') }}</span><h2>{{ t('rating.catalog_score_title') }}</h2><p>{{ t('rating.catalog_score_description') }}</p></div><div class="rating-type-score"><strong>{{ catalog_score.get('display_score', '—') }}</strong><span>/10</span></div></div>
+            <div class="catalog-score-components">
+                {% for key in ['capability','accessibility','value','transparency','completeness'] %}<div class="score-row"><span>{{ t('rating.catalog_components.' ~ key) }}</span><strong>{{ catalog_score.get('components', {}).get(key, '—') }} / 10</strong></div>{% endfor %}
+            </div>
+            <p class="rating-empty-message">{{ t('rating.catalog_score_disclaimer') }} <a href="{{ url_for('rating_methodology', locale=locale) }}">{{ t('rating.learn_methodology') }}</a></p>
+        </section>
+
         <section class="detail-section detail-card change-history-card" id="history">
             <span class="section-label">{{ t("tool.change_history") }}</span>
             <h2>{{ t("tool.listing_updates") }}</h2>
@@ -145,7 +155,7 @@
     <div class="section-heading"><div><span class="section-label">{{ t("tool.alternatives") }}</span><h2>{{ t("tool.alternatives_to", name=tool.name) }}</h2><p>{{ t("tool.alternatives_explanation") }}</p></div></div>
     {% if alternatives %}
     <div class="alternative-grid">{% for alternative in alternatives %}<article class="alternative-card">
-        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} data-local-logo-base="{{ url_for('static', filename='images/tools/' ~ alternative.slug ~ '/logo') }}" alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">{% set alt_rating = alternative.get('rating_v103', {}) %}{% if alt_rating.get('publishable') %}★ {{ alt_rating.get('display_score') }} / 10{% else %}{{ t('rating.not_evaluated') }}{% endif %}</strong></div>
+        <div class="alternative-header"><div class="tool-logo tool-icon-shell"><img src="{{ alternative.icon_url }}"{% if alternative.icon_fallback_url %} data-fallback-src="{{ alternative.icon_fallback_url }}"{% endif %} data-local-logo-base="{{ url_for('static', filename='images/tools/' ~ alternative.slug ~ '/logo') }}" alt="{{ alternative.icon_alt or (alternative.name ~ ' icon') }}" loading="lazy" width="48" height="48" data-atlas-icon><span class="tool-icon-fallback" hidden aria-hidden="true">{{ alternative.name[:2]|upper }}</span></div><div><h3>{{ alternative.name }}</h3><span>{{ alternative.category }}</span></div><strong class="alternative-rating">{% set alt_rating = alternative.get('rating_v103', {}) %}{% set alt_catalog = alternative.get('catalog_score', {}) %}★ {{ alt_rating.get('display_score') if alt_rating.get('publishable') else alt_catalog.get('display_score', '—') }} / 10</strong></div>
         <p>{{ alternative.description }}</p>
         <div class="tool-tags"><span class="tag featured-tag">{{ alternative.pricing }}</span>{% if alternative.open_source %}<span class="tag">{{ t("tool.open_source") }}</span>{% endif %}{% if alternative.offline %}<span class="tag">{{ t("tool.offline") }}</span>{% endif %}</div>
         <div class="alternative-actions"><a href="{{ url_for('tool_detail', locale=locale, slug=alternative.slug) }}" class="secondary-button">{{ t("tool.explore") }}</a><a href="{{ url_for('compare_tools', locale=locale, left=tool.slug, right=alternative.slug) }}" class="primary-button">{{ t("tool.compare") }} <span aria-hidden="true">⇄</span></a></div>

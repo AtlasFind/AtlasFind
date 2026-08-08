@@ -414,13 +414,13 @@
                                         <span>{{ tool.category }}</span>
                                     </div>
 
-                                    {% set card_rating = tool.get('rating_v103', {}) %}
+                                    {% set card_rating = tool.get('rating_v103', {}) %}{% set catalog_score = tool.get('catalog_score', {}) %}
                                     <div class="rating rating-summary" aria-label="{{ t('rating.section_title') }}">
                                         {% if card_rating.get('publishable') %}
                                             <span aria-hidden="true">★</span>
                                             <strong>{{ card_rating.get('display_score') }}</strong><small>/10</small>
                                         {% else %}
-                                            <span class="rating-empty">{{ t('rating.not_evaluated_short') }}</span>
+                                            <span aria-hidden="true">★</span><strong>{{ catalog_score.get('display_score', '—') }}</strong><small>/10</small>
                                         {% endif %}
                                     </div>
 

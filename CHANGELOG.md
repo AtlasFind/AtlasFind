@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.8.0 - 2026-08-08
+
+- Added a deterministic AtlasFind catalog score to all 1,000 public tools.
+- Kept automated catalog, human-reviewed editor and community scores separate.
+- Added score breakdowns to tool details and scores to cards, sorting, filters and comparisons.
+- Added Turkish and English methodology disclosures plus automated coverage tests.
+
 ## v1.0.3 - Transparent Rating System
 
 - Replaced unverified legacy scores with a versioned, evidence-linked 10-point rating model.
