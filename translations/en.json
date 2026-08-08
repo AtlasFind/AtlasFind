@@ -657,5 +657,18 @@
   "auth.account_created_text": "Explore the catalog now and start saving tools in the next update.",
   "auth.member_since": "Member since",
   "auth.tool_bag": "My Tool Bag",
-  "auth.coming_soon": "Coming soon"
+  "auth.coming_soon": "Coming soon",
+  "auth.email_verification_help": "We will send a secure account activation link to this address.",
+  "auth.password_match_help": "Both passwords must match exactly.",
+  "auth.login_security_note": "Your username or email is securely matched against the password stored for your account.",
+  "auth.email_unverified": "Verify your email address before signing in.",
+  "auth.verify_email_title": "Verify your email address",
+  "auth.verify_email_description": "Your account was created. Open the link we sent to prove this email address belongs to you.",
+  "auth.verification_sent": "A verification link was sent to your email address.",
+  "auth.verification_delivery_failed": "The email could not be sent right now. Try resending it shortly.",
+  "auth.verify_invalid": "This verification link is invalid or expired. Request a new one.",
+  "auth.check_spam": "Check your spam and junk folders if the message is missing. The link is valid for 24 hours.",
+  "auth.resend": "Resend verification email",
+  "auth.resend_sent": "A new verification link was sent.",
+  "auth.back_login": "Back to sign in"
 }

@@ -657,5 +657,18 @@
   "auth.account_created_text": "Şimdi kataloğu keşfedebilir, sonraki güncellemede araçlarını kaydetmeye başlayabilirsin.",
   "auth.member_since": "Üyelik tarihi",
   "auth.tool_bag": "Araç Çantam",
-  "auth.coming_soon": "Yakında"
+  "auth.coming_soon": "Yakında",
+  "auth.email_verification_help": "Bu adrese hesabını etkinleştiren güvenli bir bağlantı göndereceğiz.",
+  "auth.password_match_help": "İki şifre tamamen aynı olmalıdır.",
+  "auth.login_security_note": "Kullanıcı adı veya e-posta, kayıtlı şifrenin güvenli özetiyle eşleştirilir.",
+  "auth.email_unverified": "Giriş yapmadan önce e-posta adresini doğrulamalısın.",
+  "auth.verify_email_title": "E-posta adresini doğrula",
+  "auth.verify_email_description": "Hesabın oluşturuldu. Sana gönderdiğimiz bağlantıyı açarak bu e-posta adresinin sana ait olduğunu doğrula.",
+  "auth.verification_sent": "Doğrulama bağlantısı e-posta adresine gönderildi.",
+  "auth.verification_delivery_failed": "E-posta şu anda gönderilemedi. Biraz sonra yeniden göndermeyi dene.",
+  "auth.verify_invalid": "Bu doğrulama bağlantısı geçersiz veya süresi dolmuş. Yeni bağlantı iste.",
+  "auth.check_spam": "Mesaj görünmüyorsa spam ve gereksiz klasörlerini de kontrol et. Bağlantı 24 saat geçerlidir.",
+  "auth.resend": "Doğrulama e-postasını yeniden gönder",
+  "auth.resend_sent": "Yeni doğrulama bağlantısı gönderildi.",
+  "auth.back_login": "Giriş sayfasına dön"
 }

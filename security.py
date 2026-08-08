@@ -62,6 +62,12 @@ def configure_security(app) -> None:
         ADMIN_LOGIN_LIMIT=int(os.environ.get("ATLASFIND_LOGIN_LIMIT", "5")),
         ADMIN_LOGIN_WINDOW=int(os.environ.get("ATLASFIND_LOGIN_WINDOW", "900")),
         SESSION_REFRESH_EACH_REQUEST=False,
+        SMTP_HOST=os.environ.get("ATLASFIND_SMTP_HOST", "").strip(),
+        SMTP_PORT=int(os.environ.get("ATLASFIND_SMTP_PORT", "465")),
+        SMTP_USER=os.environ.get("ATLASFIND_SMTP_USER", "").strip(),
+        SMTP_PASSWORD=os.environ.get("ATLASFIND_SMTP_PASSWORD", "").strip(),
+        SMTP_FROM=os.environ.get("ATLASFIND_SMTP_FROM", "").strip(),
+        SMTP_USE_SSL=env_bool("ATLASFIND_SMTP_USE_SSL", True),
         PREFERRED_URL_SCHEME="https" if https_enabled else "http",
     )
 

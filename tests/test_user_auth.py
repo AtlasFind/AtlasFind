@@ -1,5 +1,7 @@
 import re
 import unittest
+from unittest.mock import patch
+from urllib.parse import urlsplit
 
 from app import app
 from database import connect_database, transaction
@@ -30,37 +32,57 @@ class UserAuthTests(unittest.TestCase):
 
     def register(self):
         page = self.client.get("/tr/register").get_data(as_text=True)
-        return self.client.post("/tr/register", data={
-            "csrf_token": self.token(page), "username": TEST_USERNAME,
-            "email": TEST_EMAIL, "password": TEST_PASSWORD,
-            "confirm_password": TEST_PASSWORD, "accept_terms": "1",
-        }, follow_redirects=True)
+        with patch("app.send_verification_email", return_value=True) as sender:
+            response = self.client.post("/tr/register", data={
+                "csrf_token": self.token(page), "username": TEST_USERNAME,
+                "email": TEST_EMAIL, "password": TEST_PASSWORD,
+                "confirm_password": TEST_PASSWORD, "accept_terms": "1",
+            }, follow_redirects=True)
+        return response, sender.call_args.args[2]
 
-    def test_register_creates_hashed_account_and_profile_session(self):
-        response = self.register()
+    def verify(self, url):
+        parts = urlsplit(url)
+        return self.client.get(parts.path + "?" + parts.query, follow_redirects=True)
+
+    def test_register_requires_email_verification_and_hashes_password(self):
+        response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("Hesabın başarıyla oluşturuldu", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.2.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
-        self.assertIsNotNone(row)
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
-        self.assertTrue(row["password_hash"].startswith(("scrypt:", "pbkdf2:")))
+        self.assertEqual(row["email_verified"], 0)
+        self.assertTrue(row["verification_token_hash"])
+        verified = self.verify(verification_url)
+        self.assertIn(TEST_USERNAME, verified.get_data(as_text=True))
+        with connect_database() as connection:
+            row = connection.execute("SELECT email_verified FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
+        self.assertEqual(row["email_verified"], 1)
 
-    def test_logout_and_login_with_email(self):
+    def test_unverified_account_cannot_login(self):
         self.register()
-        profile = self.client.get("/tr/profile").get_data(as_text=True)
-        self.client.post("/tr/logout", data={"csrf_token": self.token(profile)})
         login_page = self.client.get("/tr/login").get_data(as_text=True)
         response = self.client.post("/tr/login", data={
             "csrf_token": self.token(login_page), "identity": TEST_EMAIL,
             "password": TEST_PASSWORD,
         }, follow_redirects=True)
-        self.assertIn(TEST_USERNAME, response.get_data(as_text=True))
+        self.assertIn("doğrulamalısın", response.get_data(as_text=True))
 
-    def test_profile_requires_login_and_csrf_is_enforced(self):
-        response = self.client.get("/tr/profile")
-        self.assertEqual(response.status_code, 302)
-        self.assertIn("/tr/login", response.headers["Location"])
+    def test_verified_user_login_checks_registered_password(self):
+        _, verification_url = self.register()
+        profile = self.verify(verification_url).get_data(as_text=True)
+        self.client.post("/tr/logout", data={"csrf_token": self.token(profile)})
+        login_page = self.client.get("/tr/login").get_data(as_text=True)
+        bad = self.client.post("/tr/login", data={"csrf_token": self.token(login_page), "identity": TEST_USERNAME, "password": "WrongPassword1"}, follow_redirects=True)
+        self.assertNotIn(TEST_USERNAME, bad.get_data(as_text=True))
+        login_page = self.client.get("/tr/login").get_data(as_text=True)
+        good = self.client.post("/tr/login", data={"csrf_token": self.token(login_page), "identity": TEST_USERNAME, "password": TEST_PASSWORD}, follow_redirects=True)
+        self.assertIn(TEST_USERNAME, good.get_data(as_text=True))
+
+    def test_invalid_verification_link_and_csrf_are_rejected(self):
+        self.register()
+        response = self.client.get("/tr/verify-email?token=wrong", follow_redirects=True)
+        self.assertIn("geçersiz", response.get_data(as_text=True))
         response = self.client.post("/tr/register", data={"csrf_token": "invalid"})
         self.assertEqual(response.status_code, 400)
 

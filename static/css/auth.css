@@ -1,0 +1,5 @@
+.auth-alert.success{border-color:rgba(52,211,153,.4);background:rgba(52,211,153,.08)}
+.auth-security-note{margin:0;color:var(--text-muted);font-size:.8rem;line-height:1.5}
+.auth-mail-icon{display:grid;place-items:center;width:72px;height:72px;margin:0 auto 1rem;border:1px solid rgba(139,92,246,.5);border-radius:22px;background:linear-gradient(135deg,rgba(124,92,255,.3),rgba(14,165,233,.2));font-size:2rem}
+.auth-email-target{margin:1.25rem 0;padding:1rem;border:1px solid var(--border);border-radius:12px;background:var(--surface-solid);font-weight:850;text-align:center;letter-spacing:.03em}
+.auth-verify{text-align:center}

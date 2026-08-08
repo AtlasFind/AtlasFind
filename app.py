@@ -4,6 +4,7 @@ from functools import lru_cache
 import os
 import re
 import secrets
+import hashlib
 import uuid
 from urllib.parse import urlencode
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -22,8 +23,9 @@ from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
     create_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
-    record_user_login, user_exists,
+    record_user_login, user_exists, set_verification_token, verify_user_email,
 )
+from services.email_service import send_verification_email
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -62,7 +64,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.0.8"
+APP_VERSION = "1.2.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1737,8 +1739,13 @@ def user_login(locale=None):
         if recent_failed_user_logins(identity, ip_address) >= 5:
             abort(429)
         user = get_user_for_login(identity)
-        valid = bool(user and check_password_hash(user["password_hash"], password))
+        password_valid = bool(user and check_password_hash(user["password_hash"], password))
+        valid = bool(password_valid and user["email_verified"])
         record_user_login(identity, ip_address, valid, user["id"] if user else None)
+        if password_valid and not user["email_verified"]:
+            session["pending_verification_user_id"] = user["id"]
+            flash(translate("auth.email_unverified"), "error")
+            return redirect(url_for("check_email"))
         if valid:
             user_id = user["id"]
             session.clear()
@@ -1780,12 +1787,61 @@ def user_register(locale=None):
             flash(translate("auth.account_exists"), "error")
         else:
             user_id = create_user(username, email, generate_password_hash(password), get_locale())
+            token = secrets.token_urlsafe(32)
+            set_verification_token(user_id, hashlib.sha256(token.encode()).hexdigest())
+            delivered = send_verification_email(email, username, url_for("verify_email", token=token, _external=True), get_locale())
             session.clear()
-            session["user_id"] = user_id
+            session["pending_verification_user_id"] = user_id
             session["user_csrf_token"] = secrets.token_urlsafe(32)
             session.permanent = True
-            return redirect(url_for("user_profile", welcome=1))
+            flash(translate("auth.verification_sent") if delivered else translate("auth.verification_delivery_failed"), "success" if delivered else "error")
+            return redirect(url_for("check_email"))
     return render_template("auth/register.html", user_csrf=user_csrf_token(), values=values, active_page="register", seo=page_seo(translate("auth.register"), translate("auth.register_description"), f"/{get_locale()}/register", robots="noindex,follow"), breadcrumbs=[])
+
+
+@app.get("/verify-email")
+@app.get("/<locale>/verify-email")
+def verify_email(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    token = request.args.get("token", "")[:256]
+    user_id = verify_user_email(hashlib.sha256(token.encode()).hexdigest()) if token else None
+    if not user_id:
+        flash(translate("auth.verify_invalid"), "error")
+        return redirect(url_for("check_email"))
+    session.clear()
+    session["user_id"] = user_id
+    session["user_csrf_token"] = secrets.token_urlsafe(32)
+    session.permanent = True
+    return redirect(url_for("user_profile", verified=1))
+
+
+@app.get("/check-email")
+@app.get("/<locale>/check-email")
+def check_email(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session.get("pending_verification_user_id")) if session.get("pending_verification_user_id") else None
+    if not user:
+        return redirect(url_for("user_login"))
+    name, domain = user["email"].split("@", 1)
+    masked_email = f"{name[:2]}{'*' * max(2, len(name)-2)}@{domain}"
+    return render_template("auth/check_email.html", pending_user=user, masked_email=masked_email, user_csrf=user_csrf_token(), active_page="register", seo=page_seo(translate("auth.verify_email_title"), translate("auth.verify_email_description"), f"/{get_locale()}/check-email", robots="noindex,nofollow"), breadcrumbs=[])
+
+
+@app.post("/resend-verification")
+@app.post("/<locale>/resend-verification")
+def resend_verification(locale=None):
+    validate_user_csrf()
+    enforce_user_auth_rate_limit("register")
+    user = get_user_by_id(session.get("pending_verification_user_id")) if session.get("pending_verification_user_id") else None
+    if not user:
+        return redirect(url_for("user_login"))
+    token = secrets.token_urlsafe(32)
+    set_verification_token(user["id"], hashlib.sha256(token.encode()).hexdigest())
+    delivered = send_verification_email(user["email"], user["username"], url_for("verify_email", token=token, _external=True), user["locale"])
+    flash(translate("auth.resend_sent") if delivered else translate("auth.verification_delivery_failed"), "success" if delivered else "error")
+    return redirect(url_for("check_email"))
 
 
 @app.post("/logout")
