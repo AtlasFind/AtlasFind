@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.3 - 2026-08-08
+
+- Moved every header navigation link into the single three-dot menu.
+- Reduced the default header to brand, account, language, theme and menu controls.
+- Moved Useful Collections below the main tools and category discovery sections.
+
 ## 1.8.2 - 2026-08-08
 
 - Restored the single three-dot utility menu on desktop and mobile.

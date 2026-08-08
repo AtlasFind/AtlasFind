@@ -176,27 +176,6 @@
         {% set ad_format = 'leaderboard' %}
         {% include 'partials/ad_slot.html' %}
 
-        <section class="section discovery-hub" id="discovery-hub">
-            <div class="section-container">
-                <div class="section-heading">
-                    <div>
-                        <span class="section-label">{{ t("home.collections.eyebrow") }}</span>
-                        <h2>{{ t("home.collections.title") }}</h2>
-                    </div>
-                </div>
-                <div class="collection-grid">
-                    {% for slug, info in collections.items() %}
-                    <a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}">
-                        <h3>{{ info.name }}</h3>
-                        <p>{{ info.description }}</p>
-                        <span>{{ t("actions.explore") }} →</span>
-                    </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-
-
         <section class="trust-section">
 
             <p>
@@ -728,6 +707,27 @@
 
             </div>
 
+        </section>
+
+
+        <section class="section discovery-hub" id="discovery-hub">
+            <div class="section-container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">{{ t("home.collections.eyebrow") }}</span>
+                        <h2>{{ t("home.collections.title") }}</h2>
+                    </div>
+                </div>
+                <div class="collection-grid">
+                    {% for slug, info in collections.items() %}
+                    <a class="collection-card" href="{{ url_for('collection_page', slug=slug) }}">
+                        <h3>{{ info.name }}</h3>
+                        <p>{{ info.description }}</p>
+                        <span>{{ t("actions.explore") }} →</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
         </section>
 
 

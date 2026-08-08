@@ -56,15 +56,6 @@
                 <span class="logo-text">Atlas<span>Find</span></span>
             </a>
 
-            <nav class="nav-links" id="primaryNavigation" aria-label="{{ t('nav.primary') }}">
-                <a href="{{ url_for('home') }}#discover" {% if active_page == 'home' %}aria-current="page"{% endif %}>{{ t("nav.discover") }}</a>
-                <a href="{{ url_for('tools_directory') }}" {% if active_page == 'tools' %}aria-current="page"{% endif %}>{{ t("nav.tools") }}</a>
-                <a href="{{ url_for('categories_directory') }}" {% if active_page == 'categories' %}aria-current="page"{% endif %}>{{ t("nav.categories") }}</a>
-                <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>{{ t("nav.recommend") }}</a>
-                <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>{{ t("nav.guides") }}</a>
-                <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>{{ t("nav.compare") }}</a>
-            </nav>
-
             <div class="nav-actions">
                 {% if current_user %}<a class="account-button account-button-user" href="{{ url_for('user_profile') }}" aria-label="{{ t('auth.profile') }}"><span>{{ current_user.username[:1]|upper }}</span><strong>{{ current_user.username }}</strong></a>{% else %}<a class="account-button" href="{{ url_for('user_login') }}">{{ t("auth.login") }}</a>{% endif %}
                 {% include "components/language_switcher.html" %}

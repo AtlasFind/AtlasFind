@@ -39,8 +39,14 @@ class HomepageUpgradeTests(unittest.TestCase):
         self.assertEqual(page.count('id="menuButton"'), 1)
         self.assertEqual(page.count('id="moreNavigation"'), 1)
         self.assertIn('aria-controls="moreNavigation"', page)
+        self.assertNotIn('id="primaryNavigation"', page)
         self.assertIn("Hakkımızda", page)
         self.assertIn("Puanlama", page)
+
+    def test_collections_are_below_core_discovery_sections(self):
+        page = self.client.get("/tr/").get_data(as_text=True)
+        self.assertLess(page.index('id="tools"'), page.index('id="discovery-hub"'))
+        self.assertLess(page.index('id="categories"'), page.index('id="discovery-hub"'))
 
     def test_filtered_home_localizes_results(self):
         page = self.client.get("/tr/?pricing=free").get_data(as_text=True)

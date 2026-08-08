@@ -54,7 +54,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.8.2", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.8.3", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
