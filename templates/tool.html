@@ -136,6 +136,10 @@
     </aside>
 </section>
 
+{% set ad_placement = 'tool-detail-footer' %}
+{% set ad_format = 'leaderboard' %}
+{% include 'partials/ad_slot.html' %}
+
 <section class="alternatives-section" id="alternatives">
     <div class="section-heading"><div><span class="section-label">{{ t("tool.alternatives") }}</span><h2>{{ t("tool.alternatives_to", name=tool.name) }}</h2><p>{{ t("tool.alternatives_explanation") }}</p></div></div>
     {% if alternatives %}

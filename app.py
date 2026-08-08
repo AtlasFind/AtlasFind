@@ -1109,11 +1109,6 @@ def home(locale=None):
         search_meta.get("detected_needs", []),
     ) if search_query and not tools else []
 
-    popular_tools = sort_tools(all_tools, "popular")[:6]
-    newest_tools = sort_tools(all_tools, "newest")[:6]
-    editor_tools = [tool for tool in sort_tools(all_tools, "rating") if tool.get("editor_choice")][:6]
-    spotlight_tools = editor_tools or [tool for tool in popular_tools if tool.get("quality_status") == "verified"][:6] or popular_tools
-
     return render_template(
         "index.html",
         tools=tools,
@@ -1130,10 +1125,9 @@ def home(locale=None):
         category_count=len(CATEGORIES),
         result_count=len(tools),
         categories=category_cards(all_tools, get_locale()),
-        popular_tools=popular_tools,
-        newest_tools=newest_tools,
-        editor_tools=editor_tools,
-        spotlight_tools=spotlight_tools,
+        popular_tools=sort_tools(all_tools, "popular")[:6],
+        newest_tools=sort_tools(all_tools, "newest")[:6],
+        editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
         collections=localized_collections(get_locale()),
         seo=page_seo(
             "Yazılımları Keşfet ve Karşılaştır" if get_locale() == "tr" else "Discover and Compare Software",

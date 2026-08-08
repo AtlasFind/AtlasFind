@@ -172,43 +172,9 @@
 
         </section>
 
-        {% if not search_query and not active_filters %}
-        <section class="section home-showcase" aria-labelledby="home-showcase-title">
-            <div class="section-container">
-                <div class="section-heading home-showcase-heading">
-                    <div>
-                        <span class="section-label">{{ t("home.showcase.eyebrow") }}</span>
-                        <h2 id="home-showcase-title">{{ t("home.showcase.title") }}</h2>
-                        <p>{{ t("home.showcase.description") }}</p>
-                    </div>
-                    <a href="{{ url_for('tools_directory') }}" class="view-all">{{ t("actions.view_all_tools") }} <span>→</span></a>
-                </div>
-                <div class="home-showcase-grid">
-                    {% for title_key, hint_key, items in [
-                        ('home.showcase.popular', 'home.showcase.popular_hint', popular_tools),
-                        ('home.showcase.newest', 'home.showcase.newest_hint', newest_tools),
-                        ('home.showcase.verified', 'home.showcase.verified_hint', spotlight_tools)
-                    ] %}
-                    <article class="showcase-column">
-                        <header><div><h3>{{ t(title_key) }}</h3><p>{{ t(hint_key) }}</p></div><span>0{{ loop.index }}</span></header>
-                        <div class="showcase-list">
-                            {% for tool in items[:3] %}
-                            <a class="showcase-tool" href="{{ url_for('tool_detail', slug=tool.slug) }}">
-                                <span class="showcase-icon tool-icon-shell">
-                                    <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="" width="42" height="42" data-atlas-icon>
-                                    <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
-                                </span>
-                                <span class="showcase-copy"><strong>{{ tool.name }}</strong><small>{{ tool.category }}</small></span>
-                                <span aria-hidden="true">→</span>
-                            </a>
-                            {% endfor %}
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        {% endif %}
+        {% set ad_placement = 'home-leaderboard' %}
+        {% set ad_format = 'leaderboard' %}
+        {% include 'partials/ad_slot.html' %}
 
         <section class="section discovery-hub" id="discovery-hub">
             <div class="section-container">
@@ -528,6 +494,12 @@
                             </div>
 
                         </article>
+
+                        {% if loop.index == 3 %}
+                            {% set ad_placement = 'home-catalog-inline' %}
+                            {% set ad_format = 'inline' %}
+                            {% include 'partials/ad_slot.html' %}
+                        {% endif %}
 
                     {% endfor %}
 
