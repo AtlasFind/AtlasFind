@@ -9712,5 +9712,2531 @@
       "version": 1,
       "tool_slug": "invoice-ninja"
     }
+  },
+  {
+    "id": 889,
+    "slug": "grocy",
+    "name": "grocy",
+    "description": "ERP beyond your fridge. Groceries & household management solution for your home.",
+    "purpose": "ERP beyond your fridge. Groceries & household management solution for your home.",
+    "features": [
+      "Business Tools",
+      "Resource Planning",
+      "Inventory Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Resource Planning",
+      "Inventory Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://grocy.info/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/grocy/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "grocy official logo",
+    "icon_fallback_url": "/static/icons/generated/grocy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "G",
+      "domain": "grocy.info",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "2a7ff075a3baa93bdc6092bb574112bf8878a6c829986cba5403e9d1225956c3",
+      "source_url": "https://github.com/grocy/grocy"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "grocy official website",
+        "url": "https://grocy.info/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "grocy.info",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "grocy official source code",
+        "url": "https://github.com/grocy/grocy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9363,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Resource Planning",
+        "Inventory Management"
+      ],
+      "source_record": "grocy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/grocy/logo.webp",
+        "source_url": "https://github.com/grocy/grocy",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2386,
+        "checksum": "2a7ff075a3baa93bdc6092bb574112bf8878a6c829986cba5403e9d1225956c3",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/44542094?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GR"
+      },
+      "version": 1,
+      "tool_slug": "grocy"
+    }
+  },
+  {
+    "id": 890,
+    "slug": "prestashop",
+    "name": "PrestaShop",
+    "description": "Fully scalable e-commerce solution.",
+    "purpose": "Fully scalable e-commerce solution.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.prestashop.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: OSL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/prestashop/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "PrestaShop official logo",
+    "icon_fallback_url": "/static/icons/generated/prestashop.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "prestashop.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c9b04a0bca998b5eaabc872f8f0cca68b334e36b51be8afb0ad43a24f9681410",
+      "source_url": "https://github.com/PrestaShop/PrestaShop"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "PrestaShop official website",
+        "url": "https://www.prestashop.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "prestashop.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "PrestaShop official source code",
+        "url": "https://github.com/PrestaShop/PrestaShop",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9185,
+      "licenses": [
+        "OSL-3.0"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "prestashop.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/prestashop/logo.webp",
+        "source_url": "https://github.com/PrestaShop/PrestaShop",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2014,
+        "checksum": "c9b04a0bca998b5eaabc872f8f0cca68b334e36b51be8afb0ad43a24f9681410",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/2815696?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PR"
+      },
+      "version": 1,
+      "tool_slug": "prestashop"
+    }
+  },
+  {
+    "id": 893,
+    "slug": "ghostfolio",
+    "name": "Ghostfolio",
+    "description": "Wealth management software to keep track of stocks, ETFs and cryptocurrencies.",
+    "purpose": "Wealth management software to keep track of stocks, ETFs and cryptocurrencies.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ghostfol.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/ghostfolio/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Ghostfolio official logo",
+    "icon_fallback_url": "/static/icons/generated/ghostfolio.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "G",
+      "domain": "ghostfol.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "d4a5d5480d81e0c0f69f4a1a6bf11ee41fd2b2ad4312b46254b62897076993a3",
+      "source_url": "https://github.com/ghostfolio/ghostfolio"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Ghostfolio official website",
+        "url": "https://ghostfol.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "ghostfol.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Ghostfolio official source code",
+        "url": "https://github.com/ghostfolio/ghostfolio",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9087,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "ghostfolio.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ghostfolio/logo.webp",
+        "source_url": "https://github.com/ghostfolio/ghostfolio",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2164,
+        "checksum": "d4a5d5480d81e0c0f69f4a1a6bf11ee41fd2b2ad4312b46254b62897076993a3",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/82473144?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GH"
+      },
+      "version": 1,
+      "tool_slug": "ghostfolio"
+    }
+  },
+  {
+    "id": 896,
+    "slug": "frappe-hr",
+    "name": "Frappe HR",
+    "description": "Complete HRMS solution with over 13 different modules right from employee management, onboarding, leaves, to payroll, taxation, and more.",
+    "purpose": "Complete HRMS solution with over 13 different modules right from employee management, onboarding, leaves, to payroll, taxation, and more.",
+    "features": [
+      "Business Tools",
+      "Human Resources Management (HRM)"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Human Resources Management (HRM)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://frappe.io/hr",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/frappe-hr/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Frappe HR official logo",
+    "icon_fallback_url": "/static/icons/generated/frappe-hr.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FH",
+      "domain": "frappe.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "a47b8fab6104769b7d3938ce74eb85896a51b1bf9a76e19e5b4e7220fa62f9b2",
+      "source_url": "https://github.com/frappe/hrms"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Frappe HR official website",
+        "url": "https://frappe.io/hr",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "frappe.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Frappe HR official source code",
+        "url": "https://github.com/frappe/hrms",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8532,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Human Resources Management (HRM)"
+      ],
+      "source_record": "frappe-hr.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/frappe-hr/logo.webp",
+        "source_url": "https://github.com/frappe/hrms",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 340,
+        "checksum": "a47b8fab6104769b7d3938ce74eb85896a51b1bf9a76e19e5b4e7220fa62f9b2",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/836974?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FH"
+      },
+      "version": 1,
+      "tool_slug": "frappe-hr"
+    }
+  },
+  {
+    "id": 897,
+    "slug": "sylius",
+    "name": "Sylius",
+    "description": "Symfony2 powered open source full-stack platform for eCommerce.",
+    "purpose": "Symfony2 powered open source full-stack platform for eCommerce.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://sylius.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/sylius/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Sylius official logo",
+    "icon_fallback_url": "/static/icons/generated/sylius.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "sylius.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f01baf364d71cde9e9eed5c3980ed1b0c5295b645e2c75bb7fe2664c4f6bd2f1",
+      "source_url": "https://github.com/Sylius/Sylius"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Sylius official website",
+        "url": "https://sylius.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "sylius.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Sylius official source code",
+        "url": "https://github.com/Sylius/Sylius",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8510,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "sylius.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/sylius/logo.webp",
+        "source_url": "https://github.com/Sylius/Sylius",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 6560,
+        "checksum": "f01baf364d71cde9e9eed5c3980ed1b0c5295b645e2c75bb7fe2664c4f6bd2f1",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/719423?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SY"
+      },
+      "version": 1,
+      "tool_slug": "sylius"
+    }
+  },
+  {
+    "id": 899,
+    "slug": "wallos",
+    "name": "Wallos",
+    "description": "Lightweight personal subscription tracker with statistics and optional notifications.",
+    "purpose": "Lightweight personal subscription tracker with statistics and optional notifications.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://wallosapp.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/wallos/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Wallos official logo",
+    "icon_fallback_url": "/static/icons/generated/wallos.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "wallosapp.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "e3022e6114e2c24231e7d9df269533f6ccefdedc55d7493c16c5d537a50a527b",
+      "source_url": "https://github.com/ellite/wallos"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Wallos official website",
+        "url": "https://wallosapp.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "wallosapp.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Wallos official source code",
+        "url": "https://github.com/ellite/wallos",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8327,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "wallos.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wallos/logo.webp",
+        "source_url": "https://github.com/ellite/wallos",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 11488,
+        "checksum": "e3022e6114e2c24231e7d9df269533f6ccefdedc55d7493c16c5d537a50a527b",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/3831180?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WA"
+      },
+      "version": 1,
+      "tool_slug": "wallos"
+    }
+  },
+  {
+    "id": 900,
+    "slug": "vendure",
+    "name": "Vendure",
+    "description": "A headless commerce framework.",
+    "purpose": "A headless commerce framework.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.vendure.io",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/vendure/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Vendure official logo",
+    "icon_fallback_url": "/static/icons/generated/vendure.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "V",
+      "domain": "vendure.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f134538fc44ec8cfcb305b364426c5612149b9fafd7c94f7a830e21815075c90",
+      "source_url": "https://github.com/vendurehq/vendure"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Vendure official website",
+        "url": "https://www.vendure.io",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "vendure.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Vendure official source code",
+        "url": "https://github.com/vendurehq/vendure",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8302,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "vendure.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/vendure/logo.webp",
+        "source_url": "https://github.com/vendurehq/vendure",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2924,
+        "checksum": "f134538fc44ec8cfcb305b364426c5612149b9fafd7c94f7a830e21815075c90",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/39629390?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "VE"
+      },
+      "version": 1,
+      "tool_slug": "vendure"
+    }
+  },
+  {
+    "id": 901,
+    "slug": "opencart",
+    "name": "OpenCart",
+    "description": "Shopping cart solution.",
+    "purpose": "Shopping cart solution.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.opencart.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/opencart/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "OpenCart official logo",
+    "icon_fallback_url": "/static/icons/generated/opencart.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "O",
+      "domain": "opencart.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "e5bf937d009b59442b9bb78d2eb04d36e0cad9da1e123704748d1f1d5d01b813",
+      "source_url": "https://github.com/opencart/opencart"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "OpenCart official website",
+        "url": "https://www.opencart.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "opencart.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "OpenCart official source code",
+        "url": "https://github.com/opencart/opencart",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8174,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "opencart.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/opencart/logo.webp",
+        "source_url": "https://github.com/opencart/opencart",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 53,
+        "height": 53,
+        "aspect_ratio": "53:53",
+        "file_size_bytes": 670,
+        "checksum": "e5bf937d009b59442b9bb78d2eb04d36e0cad9da1e123704748d1f1d5d01b813",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/214225?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OP"
+      },
+      "version": 1,
+      "tool_slug": "opencart"
+    }
+  },
+  {
+    "id": 902,
+    "slug": "btcpay-server",
+    "name": "BTCPay Server",
+    "description": "Bitcoin and other cryptocurrencies payment processor.",
+    "purpose": "Bitcoin and other cryptocurrencies payment processor.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://btcpayserver.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/btcpay-server/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "BTCPay Server official logo",
+    "icon_fallback_url": "/static/icons/generated/btcpay-server.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "BS",
+      "domain": "btcpayserver.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8f7a905d3c10c70fef916dab8536c409144ae8e071873f0a3e14f85e83c6a885",
+      "source_url": "https://github.com/btcpayserver/btcpayserver"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "BTCPay Server official website",
+        "url": "https://btcpayserver.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "btcpayserver.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "BTCPay Server official source code",
+        "url": "https://github.com/btcpayserver/btcpayserver",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7696,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "btcpay-server.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/btcpay-server/logo.webp",
+        "source_url": "https://github.com/btcpayserver/btcpayserver",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2908,
+        "checksum": "8f7a905d3c10c70fef916dab8536c409144ae8e071873f0a3e14f85e83c6a885",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/31132886?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BS"
+      },
+      "version": 1,
+      "tool_slug": "btcpay-server"
+    }
+  },
+  {
+    "id": 905,
+    "slug": "dolibarr",
+    "name": "Dolibarr",
+    "description": "Modern CRM software package to manage your company or foundation activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...).",
+    "purpose": "Modern CRM software package to manage your company or foundation activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...).",
+    "features": [
+      "Business Tools",
+      "Resource Planning",
+      "Customer Relationship Management (CRM)"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Resource Planning",
+      "Customer Relationship Management (CRM)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.dolibarr.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/dolibarr/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Dolibarr official logo",
+    "icon_fallback_url": "/static/icons/generated/dolibarr.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dolibarr.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "467893e9de4133ce5832a50ed0d014405f0cd0833488c8645c444bb284547bfc",
+      "source_url": "https://github.com/Dolibarr/dolibarr"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dolibarr official website",
+        "url": "https://www.dolibarr.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "dolibarr.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Dolibarr official source code",
+        "url": "https://github.com/Dolibarr/dolibarr",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7494,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Resource Planning",
+        "Customer Relationship Management (CRM)"
+      ],
+      "source_record": "dolibarr.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dolibarr/logo.webp",
+        "source_url": "https://github.com/Dolibarr/dolibarr",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2144,
+        "checksum": "467893e9de4133ce5832a50ed0d014405f0cd0833488c8645c444bb284547bfc",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/877491?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "dolibarr"
+    }
+  },
+  {
+    "id": 910,
+    "slug": "inventree",
+    "name": "Inventree",
+    "description": "Inventory management system which provides intuitive parts management and stock control.",
+    "purpose": "Inventory management system which provides intuitive parts management and stock control.",
+    "features": [
+      "Business Tools",
+      "Inventory Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Inventory Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docs.inventree.org/en/latest/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/inventree/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Inventree official logo",
+    "icon_fallback_url": "/static/icons/generated/inventree.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "I",
+      "domain": "docs.inventree.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8d77c4a6c1f941328b8c194f3a8ed105d63f530890c2f0caf2f437156bdd9891",
+      "source_url": "https://github.com/inventree/InvenTree"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Inventree official website",
+        "url": "https://docs.inventree.org/en/latest/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docs.inventree.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Inventree official source code",
+        "url": "https://github.com/inventree/InvenTree",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7355,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Inventory Management"
+      ],
+      "source_record": "inventree.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/inventree/logo.webp",
+        "source_url": "https://github.com/inventree/InvenTree",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 8230,
+        "checksum": "8d77c4a6c1f941328b8c194f3a8ed105d63f530890c2f0caf2f437156bdd9891",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/26612639?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IN"
+      },
+      "version": 1,
+      "tool_slug": "inventree"
+    }
+  },
+  {
+    "id": 916,
+    "slug": "homebox-sysadminsmedia",
+    "name": "HomeBox (SysAdminsMedia)",
+    "description": "Inventory and organization system built for the home user.",
+    "purpose": "Inventory and organization system built for the home user.",
+    "features": [
+      "Business Tools",
+      "Inventory Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Inventory Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://homebox.software/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/homebox-sysadminsmedia/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "HomeBox (SysAdminsMedia) official logo",
+    "icon_fallback_url": "/static/icons/generated/homebox-sysadminsmedia.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HS",
+      "domain": "homebox.software",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "6c93302575038b53a397d98bc82da689933c98667ed27e717a5321073c667b19",
+      "source_url": "https://github.com/sysadminsmedia/homebox"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "HomeBox (SysAdminsMedia) official website",
+        "url": "https://homebox.software/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "homebox.software",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "HomeBox (SysAdminsMedia) official source code",
+        "url": "https://github.com/sysadminsmedia/homebox",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6695,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Inventory Management"
+      ],
+      "source_record": "homebox-sysadminsmedia.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/homebox-sysadminsmedia/logo.webp",
+        "source_url": "https://github.com/sysadminsmedia/homebox",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 5078,
+        "checksum": "6c93302575038b53a397d98bc82da689933c98667ed27e717a5321073c667b19",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/151488376?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HS"
+      },
+      "version": 1,
+      "tool_slug": "homebox-sysadminsmedia"
+    }
+  },
+  {
+    "id": 921,
+    "slug": "octobot",
+    "name": "OctoBot",
+    "description": "Cryptocurrency trading bot.",
+    "purpose": "Cryptocurrency trading bot.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.octobot.cloud/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/octobot/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "OctoBot official logo",
+    "icon_fallback_url": "/static/icons/generated/octobot.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "O",
+      "domain": "octobot.cloud",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c06390a0ae3a02317b667a294b7eb57188f5836f92ee3b782dc5e169e1e63973",
+      "source_url": "https://github.com/Drakkar-Software/OctoBot"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "OctoBot official website",
+        "url": "https://www.octobot.cloud/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "octobot.cloud",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "OctoBot official source code",
+        "url": "https://github.com/Drakkar-Software/OctoBot",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6296,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "octobot.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/octobot/logo.webp",
+        "source_url": "https://github.com/Drakkar-Software/OctoBot",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 7346,
+        "checksum": "c06390a0ae3a02317b667a294b7eb57188f5836f92ee3b782dc5e169e1e63973",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/38042178?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OC"
+      },
+      "version": 1,
+      "tool_slug": "octobot"
+    }
+  },
+  {
+    "id": 932,
+    "slug": "kill-bill",
+    "name": "Kill Bill",
+    "description": "Subscription billing & payments platform. Have access to real-time analytics and financial reports.",
+    "purpose": "Subscription billing & payments platform. Have access to real-time analytics and financial reports.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://killbill.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/kill-bill/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Kill Bill official logo",
+    "icon_fallback_url": "/static/icons/generated/kill-bill.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "KB",
+      "domain": "killbill.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "cf5091d340a05e7e1a8714055c9624a7be8a135a365c2b02d429f08e11b27aa0",
+      "source_url": "https://github.com/killbill/killbill"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Kill Bill official website",
+        "url": "https://killbill.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "killbill.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Kill Bill official source code",
+        "url": "https://github.com/killbill/killbill",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5656,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "kill-bill.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/kill-bill/logo.webp",
+        "source_url": "https://github.com/killbill/killbill",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 3156,
+        "checksum": "cf5091d340a05e7e1a8714055c9624a7be8a135a365c2b02d429f08e11b27aa0",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/2446739?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KB"
+      },
+      "version": 1,
+      "tool_slug": "kill-bill"
+    }
   }
 ]

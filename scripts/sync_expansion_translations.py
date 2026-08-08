@@ -14,6 +14,7 @@ from database import transaction
 RECORDS = [
     ROOT / "data/research/catalog-expansion-records.json",
     ROOT / "data/research/manual-expansion-850-records.json",
+    ROOT / "data/research/manual-expansion-1000-records.json",
 ]
 
 

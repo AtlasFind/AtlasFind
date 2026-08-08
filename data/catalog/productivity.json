@@ -11525,5 +11525,2529 @@
       "version": 1,
       "tool_slug": "heimdall"
     }
+  },
+  {
+    "id": 851,
+    "slug": "cal-diy",
+    "name": "Cal.diy",
+    "description": "Online appointment scheduling system.",
+    "purpose": "Online appointment scheduling system.",
+    "features": [
+      "Productivity Tools",
+      "Booking and Scheduling"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Booking and Scheduling"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://cal.diy/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 47,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/cal-diy/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Cal.diy official logo",
+    "icon_fallback_url": "/static/icons/generated/cal-diy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "CD",
+      "domain": "cal.diy",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "0374d815b0757d3ca667758cb16d2b79555cf86bb4a6e35711f86ab5c0780917",
+      "source_url": "https://github.com/calcom/cal.diy"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Cal.diy official website",
+        "url": "https://cal.diy/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "cal.diy",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Cal.diy official source code",
+        "url": "https://github.com/calcom/cal.diy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 47328,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Booking and Scheduling"
+      ],
+      "source_record": "cal.diy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cal-diy/logo.webp",
+        "source_url": "https://github.com/calcom/cal.diy",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4332,
+        "checksum": "0374d815b0757d3ca667758cb16d2b79555cf86bb4a6e35711f86ab5c0780917",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/79145102?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CD"
+      },
+      "version": 1,
+      "tool_slug": "cal-diy"
+    }
+  },
+  {
+    "id": 860,
+    "slug": "wekan",
+    "name": "Wekan",
+    "description": "Open-source Trello-like kanban.",
+    "purpose": "Open-source Trello-like kanban.",
+    "features": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://wekan.github.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 21,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/wekan/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Wekan official logo",
+    "icon_fallback_url": "/static/icons/generated/wekan.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "wekan.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "ce2b9da52128d3b361237d14fc617868f51c3ec1b878cf6e531e3d872fecb610",
+      "source_url": "https://github.com/wekan/wekan"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Wekan official website",
+        "url": "https://wekan.github.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "wekan.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Wekan official source code",
+        "url": "https://github.com/wekan/wekan",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 21021,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "source_record": "wekan.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wekan/logo.webp",
+        "source_url": "https://github.com/wekan/wekan",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 150,
+        "height": 150,
+        "aspect_ratio": "150:150",
+        "file_size_bytes": 2330,
+        "checksum": "ce2b9da52128d3b361237d14fc617868f51c3ec1b878cf6e531e3d872fecb610",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/11725037?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WE"
+      },
+      "version": 1,
+      "tool_slug": "wekan"
+    }
+  },
+  {
+    "id": 894,
+    "slug": "solidtime",
+    "name": "solidtime",
+    "description": "Modern time tracking application for freelancers and agencies.",
+    "purpose": "Modern time tracking application for freelancers and agencies.",
+    "features": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.solidtime.io",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/solidtime/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "solidtime official logo",
+    "icon_fallback_url": "/static/icons/generated/solidtime.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "solidtime.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "df7d21941b9ac0f3e6e1d14d3e8bf0825bb310dfaafc45d88721a2ead47da943",
+      "source_url": "https://github.com/solidtime-io/solidtime"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "solidtime official website",
+        "url": "https://www.solidtime.io",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "solidtime.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "solidtime official source code",
+        "url": "https://github.com/solidtime-io/solidtime",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8846,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Time Tracking"
+      ],
+      "source_record": "solidtime.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/solidtime/logo.webp",
+        "source_url": "https://github.com/solidtime-io/solidtime",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 1658,
+        "checksum": "df7d21941b9ac0f3e6e1d14d3e8bf0825bb310dfaafc45d88721a2ead47da943",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/156823565?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SO"
+      },
+      "version": 1,
+      "tool_slug": "solidtime"
+    }
+  },
+  {
+    "id": 918,
+    "slug": "stackstorm",
+    "name": "StackStorm",
+    "description": "StackStorm (aka _IFTTT for Ops_) is event-driven automation for auto-remediation, security responses, troubleshooting, deployments, and more. Includes rules engine, workflow, 160 integration packs with 6000+ actions and ChatOps.",
+    "purpose": "StackStorm (aka _IFTTT for Ops_) is event-driven automation for auto-remediation, security responses, troubleshooting, deployments, and more. Includes rules engine, workflow, 160 integration packs with 6000+ actions and ChatOps.",
+    "features": [
+      "Productivity Tools",
+      "Automation"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Automation"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://stackstorm.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/stackstorm/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "StackStorm official logo",
+    "icon_fallback_url": "/static/icons/generated/stackstorm.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "stackstorm.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "e374031e30af0f4a99f26ceb40d48160dfb7c6f8ef627ffe100d4bc7aeb9cce8",
+      "source_url": "https://github.com/StackStorm/st2"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "StackStorm official website",
+        "url": "https://stackstorm.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "stackstorm.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "StackStorm official source code",
+        "url": "https://github.com/StackStorm/st2",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6515,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "source_record": "stackstorm.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/stackstorm/logo.webp",
+        "source_url": "https://github.com/StackStorm/st2",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4374,
+        "checksum": "e374031e30af0f4a99f26ceb40d48160dfb7c6f8ef627ffe100d4bc7aeb9cce8",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/4969009?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "stackstorm"
+    }
+  },
+  {
+    "id": 929,
+    "slug": "cronicle",
+    "name": "Cronicle",
+    "description": "Simple, distributed task scheduler and runner with a web based UI.",
+    "purpose": "Simple, distributed task scheduler and runner with a web based UI.",
+    "features": [
+      "Productivity Tools",
+      "Automation"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Automation"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://cronicle.net/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/cronicle/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Cronicle official logo",
+    "icon_fallback_url": "/static/icons/generated/cronicle.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "cronicle.net",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "a49e0432cbd11ffe462128ebf6f1d45ea890c28470e189bba03fce1715c00101",
+      "source_url": "https://github.com/jhuckaby/Cronicle"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Cronicle official website",
+        "url": "https://cronicle.net/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "cronicle.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Cronicle official source code",
+        "url": "https://github.com/jhuckaby/Cronicle",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5795,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "source_record": "cronicle.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/cronicle/logo.webp",
+        "source_url": "https://github.com/jhuckaby/Cronicle",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 7228,
+        "checksum": "a49e0432cbd11ffe462128ebf6f1d45ea890c28470e189bba03fce1715c00101",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/700765?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CR"
+      },
+      "version": 1,
+      "tool_slug": "cronicle"
+    }
+  },
+  {
+    "id": 935,
+    "slug": "kan",
+    "name": "Kan",
+    "description": "Flexible kanban app that helps you organise work, track progress, and deliver results (alternative to Trello).",
+    "purpose": "Flexible kanban app that helps you organise work, track progress, and deliver results (alternative to Trello).",
+    "features": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://kan.bn/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/kan/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Kan official logo",
+    "icon_fallback_url": "/static/icons/generated/kan.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "K",
+      "domain": "kan.bn",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "ef175d24375ce7d6d4434b2d9c2572b9d6bf2c0d72f047be0dfd8b61e32b19dd",
+      "source_url": "https://github.com/kanbn/kan"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Kan official website",
+        "url": "https://kan.bn/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "kan.bn",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Kan official source code",
+        "url": "https://github.com/kanbn/kan",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5318,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "source_record": "kan.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/kan/logo.webp",
+        "source_url": "https://github.com/kanbn/kan",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2820,
+        "checksum": "ef175d24375ce7d6d4434b2d9c2572b9d6bf2c0d72f047be0dfd8b61e32b19dd",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/142905364?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KA"
+      },
+      "version": 1,
+      "tool_slug": "kan"
+    }
+  },
+  {
+    "id": 936,
+    "slug": "rallly",
+    "name": "Rallly",
+    "description": "Create polls to vote on dates and times (alternative to Doodle).",
+    "purpose": "Create polls to vote on dates and times (alternative to Doodle).",
+    "features": [
+      "Productivity Tools",
+      "Booking and Scheduling",
+      "Polls and Events"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Booking and Scheduling",
+      "Polls and Events"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://rallly.co",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/rallly/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Rallly official logo",
+    "icon_fallback_url": "/static/icons/generated/rallly.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "rallly.co",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "0a9993222b90067d933ab8eb8d8b066da232b2adf8cfefe72affd88c05382077",
+      "source_url": "https://github.com/lukevella/rallly"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Rallly official website",
+        "url": "https://rallly.co",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "rallly.co",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Rallly official source code",
+        "url": "https://github.com/lukevella/rallly",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5206,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Booking and Scheduling",
+        "Polls and Events"
+      ],
+      "source_record": "rallly.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/rallly/logo.webp",
+        "source_url": "https://github.com/lukevella/rallly",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 20324,
+        "checksum": "0a9993222b90067d933ab8eb8d8b066da232b2adf8cfefe72affd88c05382077",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/676849?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RA"
+      },
+      "version": 1,
+      "tool_slug": "rallly"
+    }
+  },
+  {
+    "id": 945,
+    "slug": "vikunja",
+    "name": "Vikunja",
+    "description": "The to-do app to organize your life.",
+    "purpose": "The to-do app to organize your life.",
+    "features": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Task Management & To-do Lists"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://vikunja.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0, GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/vikunja/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Vikunja official logo",
+    "icon_fallback_url": "/static/icons/generated/vikunja.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "V",
+      "domain": "vikunja.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8ef63c53c0b7f5d29c437dff035cf9479f12d23009d96c3c1d6bfd137c2ee81e",
+      "source_url": "https://github.com/go-vikunja/vikunja"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Vikunja official website",
+        "url": "https://vikunja.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "vikunja.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Vikunja official source code",
+        "url": "https://github.com/go-vikunja/vikunja",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5002,
+      "licenses": [
+        "AGPL-3.0",
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "source_record": "vikunja.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/vikunja/logo.webp",
+        "source_url": "https://github.com/go-vikunja/vikunja",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4056,
+        "checksum": "8ef63c53c0b7f5d29c437dff035cf9479f12d23009d96c3c1d6bfd137c2ee81e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/41270016?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "VI"
+      },
+      "version": 1,
+      "tool_slug": "vikunja"
+    }
+  },
+  {
+    "id": 947,
+    "slug": "radicale",
+    "name": "Radicale",
+    "description": "Simple calendar and contact server with extremely low administrative overhead.",
+    "purpose": "Simple calendar and contact server with extremely low administrative overhead.",
+    "features": [
+      "Productivity Tools",
+      "Calendar & Contacts"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Calendar & Contacts"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://radicale.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/radicale/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Radicale official logo",
+    "icon_fallback_url": "/static/icons/generated/radicale.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "radicale.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "80e512ffeb83dd6aa2995dc708d8afdfaf93b6fd16f894ea621ab8a7879557ab",
+      "source_url": "https://github.com/Kozea/Radicale"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Radicale official website",
+        "url": "https://radicale.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "radicale.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Radicale official source code",
+        "url": "https://github.com/Kozea/Radicale",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4877,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Calendar & Contacts"
+      ],
+      "source_record": "radicale.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/radicale/logo.webp",
+        "source_url": "https://github.com/Kozea/Radicale",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 242,
+        "height": 242,
+        "aspect_ratio": "242:242",
+        "file_size_bytes": 3862,
+        "checksum": "80e512ffeb83dd6aa2995dc708d8afdfaf93b6fd16f894ea621ab8a7879557ab",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/870325?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RA"
+      },
+      "version": 1,
+      "tool_slug": "radicale"
+    }
+  },
+  {
+    "id": 948,
+    "slug": "kimai",
+    "name": "Kimai",
+    "description": "Track work time and print out a summary of your activities on demand.",
+    "purpose": "Track work time and print out a summary of your activities on demand.",
+    "features": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.kimai.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/kimai/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Kimai official logo",
+    "icon_fallback_url": "/static/icons/generated/kimai.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "K",
+      "domain": "kimai.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "0d1082fabe7947b685cd45bf272d9c837b85307deb17e7e6d5f379d8dc138e8c",
+      "source_url": "https://github.com/kimai/kimai"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Kimai official website",
+        "url": "https://www.kimai.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "kimai.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Kimai official source code",
+        "url": "https://github.com/kimai/kimai",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4870,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Time Tracking"
+      ],
+      "source_record": "kimai.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/kimai/logo.webp",
+        "source_url": "https://github.com/kimai/kimai",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 9588,
+        "checksum": "0d1082fabe7947b685cd45bf272d9c837b85307deb17e7e6d5f379d8dc138e8c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/981996?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KI"
+      },
+      "version": 1,
+      "tool_slug": "kimai"
+    }
+  },
+  {
+    "id": 950,
+    "slug": "homarr",
+    "name": "Homarr",
+    "description": "Sleek, modern dashboard with many integrations and web-based config.",
+    "purpose": "Sleek, modern dashboard with many integrations and web-based config.",
+    "features": [
+      "Productivity Tools",
+      "Personal Dashboards"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Personal Dashboards"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://homarr.dev",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/homarr/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Homarr official logo",
+    "icon_fallback_url": "/static/icons/generated/homarr.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "homarr.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "00b60d82af5db1ecd9a841cee840b835b35ac2476f06da037156256b54da3e0b",
+      "source_url": "https://github.com/homarr-labs/homarr"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Homarr official website",
+        "url": "https://homarr.dev",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "homarr.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Homarr official source code",
+        "url": "https://github.com/homarr-labs/homarr",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4499,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Personal Dashboards"
+      ],
+      "source_record": "homarr.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/homarr/logo.webp",
+        "source_url": "https://github.com/homarr-labs/homarr",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 100,
+        "height": 100,
+        "aspect_ratio": "100:100",
+        "file_size_bytes": 3568,
+        "checksum": "00b60d82af5db1ecd9a841cee840b835b35ac2476f06da037156256b54da3e0b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/153325344?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HO"
+      },
+      "version": 1,
+      "tool_slug": "homarr"
+    }
+  },
+  {
+    "id": 955,
+    "slug": "wakapi",
+    "name": "Wakapi",
+    "description": "Tracking tool for coding statistics, compatible with WakaTime.",
+    "purpose": "Tracking tool for coding statistics, compatible with WakaTime.",
+    "features": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Time Tracking"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://wakapi.dev/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/wakapi/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Wakapi official logo",
+    "icon_fallback_url": "/static/icons/generated/wakapi.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "wakapi.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "739c72cc2d122b994b89c86c731bdb28b1f1e33429edd63591c57ea1845e53ae",
+      "source_url": "https://github.com/muety/wakapi"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Wakapi official website",
+        "url": "https://wakapi.dev/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "wakapi.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Wakapi official source code",
+        "url": "https://github.com/muety/wakapi",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4398,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Time Tracking"
+      ],
+      "source_record": "wakapi.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/wakapi/logo.webp",
+        "source_url": "https://github.com/muety/wakapi",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 16394,
+        "checksum": "739c72cc2d122b994b89c86c731bdb28b1f1e33429edd63591c57ea1845e53ae",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/8978843?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WA"
+      },
+      "version": 1,
+      "tool_slug": "wakapi"
+    }
+  },
+  {
+    "id": 956,
+    "slug": "easy-appointments",
+    "name": "Easy!Appointments",
+    "description": "Allows your customers to book appointments with you via the web.",
+    "purpose": "Allows your customers to book appointments with you via the web.",
+    "features": [
+      "Productivity Tools",
+      "Booking and Scheduling"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Booking and Scheduling"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://easyappointments.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/easy-appointments/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Easy!Appointments official logo",
+    "icon_fallback_url": "/static/icons/generated/easy-appointments.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "EA",
+      "domain": "easyappointments.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "38a8206fb31bbb89dc67cddf23e1017db5544d0d9754b7d79413ba56e75a21ad",
+      "source_url": "https://github.com/alextselegidis/easyappointments"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Easy!Appointments official website",
+        "url": "https://easyappointments.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "easyappointments.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Easy!Appointments official source code",
+        "url": "https://github.com/alextselegidis/easyappointments",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4304,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Booking and Scheduling"
+      ],
+      "source_record": "easy!appointments.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/easy-appointments/logo.webp",
+        "source_url": "https://github.com/alextselegidis/easyappointments",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2606,
+        "checksum": "38a8206fb31bbb89dc67cddf23e1017db5544d0d9754b7d79413ba56e75a21ad",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/4527441?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EA"
+      },
+      "version": 1,
+      "tool_slug": "easy-appointments"
+    }
+  },
+  {
+    "id": 959,
+    "slug": "personal-management-system",
+    "name": "Personal Management System",
+    "description": "Organize the essentials of everyday life, everything from a simple to-do list, and notes up to payments, and schedules.",
+    "purpose": "Organize the essentials of everyday life, everything from a simple to-do list, and notes up to payments, and schedules.",
+    "features": [
+      "Productivity Tools",
+      "Personal Dashboards"
+    ],
+    "category": "Productivity",
+    "tags": [
+      "Productivity Tools",
+      "Personal Dashboards"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://volmarg.github.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on productivity tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for productivity tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Productivity Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/personal-management-system/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Personal Management System official logo",
+    "icon_fallback_url": "/static/icons/generated/personal-management-system.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PM",
+      "domain": "volmarg.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "fda7d2339b1c8d7a3d373a7a261fdb518d9c33a63ec3e76516b7dd35f18cec79",
+      "source_url": "https://github.com/Volmarg/personal-management-system"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Personal Management System official website",
+        "url": "https://volmarg.github.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "volmarg.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Personal Management System official source code",
+        "url": "https://github.com/Volmarg/personal-management-system",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4122,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Personal Dashboards"
+      ],
+      "source_record": "personal-management-system.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/personal-management-system/logo.webp",
+        "source_url": "https://github.com/Volmarg/personal-management-system",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 12398,
+        "checksum": "fda7d2339b1c8d7a3d373a7a261fdb518d9c33a63ec3e76516b7dd35f18cec79",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/37488679?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PM"
+      },
+      "version": 1,
+      "tool_slug": "personal-management-system"
+    }
   }
 ]

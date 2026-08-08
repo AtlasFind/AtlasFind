@@ -9307,5 +9307,905 @@
       "version": 1,
       "tool_slug": "ente"
     }
+  },
+  {
+    "id": 920,
+    "slug": "photoview",
+    "name": "Photoview",
+    "description": "Simple and user-friendly photo gallery for personal servers. It is made for photographers and aims to provide an easy and fast way to navigate directories, with thousands of high resolution photos.",
+    "purpose": "Simple and user-friendly photo gallery for personal servers. It is made for photographers and aims to provide an easy and fast way to navigate directories, with thousands of high resolution photos.",
+    "features": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "category": "Design and Graphics",
+    "tags": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://photoview.github.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on visual tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for visual tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Visual Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/photoview/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Photoview official logo",
+    "icon_fallback_url": "/static/icons/generated/photoview.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "photoview.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "52c0f0f8c3e18c7f57fd020a1b9df73bc9ee0e8b5a5851195fd5e409ff167378",
+      "source_url": "https://github.com/photoview/photoview"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Photoview official website",
+        "url": "https://photoview.github.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "photoview.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Photoview official source code",
+        "url": "https://github.com/photoview/photoview",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6496,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "source_record": "photoview.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/photoview/logo.webp",
+        "source_url": "https://github.com/photoview/photoview",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4068,
+        "checksum": "52c0f0f8c3e18c7f57fd020a1b9df73bc9ee0e8b5a5851195fd5e409ff167378",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/75802894?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PH"
+      },
+      "version": 1,
+      "tool_slug": "photoview"
+    }
+  },
+  {
+    "id": 958,
+    "slug": "lychee",
+    "name": "Lychee",
+    "description": "Grid and album based photo-management-system.",
+    "purpose": "Grid and album based photo-management-system.",
+    "features": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "category": "Design and Graphics",
+    "tags": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://lycheeorg.github.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on visual tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for visual tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Visual Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/lychee/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Lychee official logo",
+    "icon_fallback_url": "/static/icons/generated/lychee.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "lycheeorg.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "4af6e47967509c5b7313ae81186fe8d7247163e16f10e2e71eecff7044f1b381",
+      "source_url": "https://github.com/LycheeOrg/Lychee"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lychee official website",
+        "url": "https://lycheeorg.github.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "lycheeorg.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Lychee official source code",
+        "url": "https://github.com/LycheeOrg/Lychee",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 4255,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "source_record": "lychee.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lychee/logo.webp",
+        "source_url": "https://github.com/LycheeOrg/Lychee",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 12926,
+        "checksum": "4af6e47967509c5b7313ae81186fe8d7247163e16f10e2e71eecff7044f1b381",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/37916028?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LY"
+      },
+      "version": 1,
+      "tool_slug": "lychee"
+    }
+  },
+  {
+    "id": 964,
+    "slug": "piwigo",
+    "name": "Piwigo",
+    "description": "Photo gallery software for the web, built by an active community of users and developers.",
+    "purpose": "Photo gallery software for the web, built by an active community of users and developers.",
+    "features": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "category": "Design and Graphics",
+    "tags": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://piwigo.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on visual tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for visual tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Visual Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/piwigo/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Piwigo official logo",
+    "icon_fallback_url": "/static/icons/generated/piwigo.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "piwigo.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8d5578b957f5439d6f52675eced27f6c1fc3fbf76a7284f96a274d761ec71f0c",
+      "source_url": "https://github.com/Piwigo/Piwigo"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Piwigo official website",
+        "url": "https://piwigo.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "piwigo.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Piwigo official source code",
+        "url": "https://github.com/Piwigo/Piwigo",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 3836,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "source_record": "piwigo.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/piwigo/logo.webp",
+        "source_url": "https://github.com/Piwigo/Piwigo",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4306,
+        "checksum": "8d5578b957f5439d6f52675eced27f6c1fc3fbf76a7284f96a274d761ec71f0c",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/9326886?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PI"
+      },
+      "version": 1,
+      "tool_slug": "piwigo"
+    }
+  },
+  {
+    "id": 965,
+    "slug": "nextcloud-memories",
+    "name": "Nextcloud Memories",
+    "description": "Fast, modern and advanced photo management suite. Runs as a Nextcloud app.",
+    "purpose": "Fast, modern and advanced photo management suite. Runs as a Nextcloud app.",
+    "features": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "category": "Design and Graphics",
+    "tags": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://memories.gallery/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on visual tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for visual tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Visual Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/nextcloud-memories/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Nextcloud Memories official logo",
+    "icon_fallback_url": "/static/icons/generated/nextcloud-memories.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NM",
+      "domain": "memories.gallery",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c054a8a2c9957f464938ffdff0b6f585959ea9ef690b5c857e8d84fde4a96701",
+      "source_url": "https://github.com/pulsejet/memories"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Nextcloud Memories official website",
+        "url": "https://memories.gallery/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "memories.gallery",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Nextcloud Memories official source code",
+        "url": "https://github.com/pulsejet/memories",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 3816,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "source_record": "nextcloud-memories.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/nextcloud-memories/logo.webp",
+        "source_url": "https://github.com/pulsejet/memories",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 19530,
+        "checksum": "c054a8a2c9957f464938ffdff0b6f585959ea9ef690b5c857e8d84fde4a96701",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/10709794?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NM"
+      },
+      "version": 1,
+      "tool_slug": "nextcloud-memories"
+    }
+  },
+  {
+    "id": 997,
+    "slug": "pigallery-2",
+    "name": "PiGallery 2",
+    "description": "Directory-first photo gallery website, with a rich UI, optimised for running on low resource servers.",
+    "purpose": "Directory-first photo gallery website, with a rich UI, optimised for running on low resource servers.",
+    "features": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "category": "Design and Graphics",
+    "tags": [
+      "Visual Tools",
+      "Photo Galleries"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://bpatrik.github.io/pigallery2/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on visual tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for visual tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Visual Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/pigallery-2/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "PiGallery 2 official logo",
+    "icon_fallback_url": "/static/icons/generated/pigallery-2.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P2",
+      "domain": "bpatrik.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "275773ef5bfb6d2f1b461b6254bc58b859fc8953d384d2409892fb06cab3053d",
+      "source_url": "https://github.com/bpatrik/pigallery2"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "PiGallery 2 official website",
+        "url": "https://bpatrik.github.io/pigallery2/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "bpatrik.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "PiGallery 2 official source code",
+        "url": "https://github.com/bpatrik/pigallery2",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2251,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "source_record": "pigallery-2.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pigallery-2/logo.webp",
+        "source_url": "https://github.com/bpatrik/pigallery2",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 8914,
+        "checksum": "275773ef5bfb6d2f1b461b6254bc58b859fc8953d384d2409892fb06cab3053d",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/7512182?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "P2"
+      },
+      "version": 1,
+      "tool_slug": "pigallery-2"
+    }
   }
 ]

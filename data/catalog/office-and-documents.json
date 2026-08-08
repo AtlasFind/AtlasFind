@@ -11371,5 +11371,2165 @@
       "version": 1,
       "tool_slug": "cryptpad"
     }
+  },
+  {
+    "id": 862,
+    "slug": "docuseal",
+    "name": "Docuseal",
+    "description": "Create, fill, and sign digital documents (alternative to DocuSign).",
+    "purpose": "Create, fill, and sign digital documents (alternative to DocuSign).",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.docuseal.co",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/docuseal/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Docuseal official logo",
+    "icon_fallback_url": "/static/icons/generated/docuseal.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "docuseal.co",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "7a5c1fe5c47f12d50cf040b3835ce0da06067595da1d2662fefecf59cc4f2c71",
+      "source_url": "https://github.com/docusealco/docuseal"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Docuseal official website",
+        "url": "https://www.docuseal.co",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docuseal.co",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Docuseal official source code",
+        "url": "https://github.com/docusealco/docuseal",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 18220,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Document Management"
+      ],
+      "source_record": "docuseal.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/docuseal/logo.webp",
+        "source_url": "https://github.com/docusealco/docuseal",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 5456,
+        "checksum": "7a5c1fe5c47f12d50cf040b3835ce0da06067595da1d2662fefecf59cc4f2c71",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/138379721?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "docuseal"
+    }
+  },
+  {
+    "id": 908,
+    "slug": "draw-io",
+    "name": "draw.io",
+    "description": "Diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.",
+    "purpose": "Diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams.",
+    "features": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://draw.io",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/draw-io/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "draw.io official logo",
+    "icon_fallback_url": "/static/icons/generated/draw-io.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DI",
+      "domain": "draw.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "d88740c537d60e1e2582480ec6e78011c4519c83c7ca2df7e94d3a26bc926dd3",
+      "source_url": "https://github.com/jgraph/drawio"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "draw.io official website",
+        "url": "https://draw.io",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "draw.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "draw.io official source code",
+        "url": "https://github.com/jgraph/drawio",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7372,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors"
+      ],
+      "source_record": "draw.io.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/draw-io/logo.webp",
+        "source_url": "https://github.com/jgraph/drawio",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 3820,
+        "checksum": "d88740c537d60e1e2582480ec6e78011c4519c83c7ca2df7e94d3a26bc926dd3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/1769238?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DI"
+      },
+      "version": 1,
+      "tool_slug": "draw-io"
+    }
+  },
+  {
+    "id": 909,
+    "slug": "hedgedoc",
+    "name": "HedgeDoc",
+    "description": "Realtime collaborative markdown notes on all platforms, formerly known as CodiMD and HackMD CE.",
+    "purpose": "Realtime collaborative markdown notes on all platforms, formerly known as CodiMD and HackMD CE.",
+    "features": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://hedgedoc.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/hedgedoc/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "HedgeDoc official logo",
+    "icon_fallback_url": "/static/icons/generated/hedgedoc.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "hedgedoc.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5f79c563e6dce9164bda7079bd19219b1d8b0b5bfb44572d1aeff9ff47596a71",
+      "source_url": "https://github.com/hedgedoc/hedgedoc"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "HedgeDoc official website",
+        "url": "https://hedgedoc.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "hedgedoc.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "HedgeDoc official source code",
+        "url": "https://github.com/hedgedoc/hedgedoc",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7358,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors"
+      ],
+      "source_record": "hedgedoc.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/hedgedoc/logo.webp",
+        "source_url": "https://github.com/hedgedoc/hedgedoc",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 7186,
+        "checksum": "5f79c563e6dce9164bda7079bd19219b1d8b0b5bfb44572d1aeff9ff47596a71",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/67865462?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HE"
+      },
+      "version": 1,
+      "tool_slug": "hedgedoc"
+    }
+  },
+  {
+    "id": 915,
+    "slug": "opensign",
+    "name": "OpenSign",
+    "description": "Document signing software (alternative to DocuSign).",
+    "purpose": "Document signing software (alternative to DocuSign).",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.opensignlabs.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/opensign/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "OpenSign official logo",
+    "icon_fallback_url": "/static/icons/generated/opensign.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "O",
+      "domain": "opensignlabs.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "63672c193d8e6b04d592acca19e4b27b084b5ffe8c72d4ebdc13327b9a54f55b",
+      "source_url": "https://github.com/opensignlabs/opensign"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "OpenSign official website",
+        "url": "https://www.opensignlabs.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "opensignlabs.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "OpenSign official source code",
+        "url": "https://github.com/opensignlabs/opensign",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6783,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Document Management"
+      ],
+      "source_record": "opensign.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/opensign/logo.webp",
+        "source_url": "https://github.com/opensignlabs/opensign",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 724,
+        "checksum": "63672c193d8e6b04d592acca19e4b27b084b5ffe8c72d4ebdc13327b9a54f55b",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/146751146?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OP"
+      },
+      "version": 1,
+      "tool_slug": "opensign"
+    }
+  },
+  {
+    "id": 917,
+    "slug": "komga",
+    "name": "Komga",
+    "description": "Media server for comics/mangas/BDs with API and OPDS support, a modern web interface for exploring your libraries, as well as a web reader.",
+    "purpose": "Media server for comics/mangas/BDs with API and OPDS support, a modern web interface for exploring your libraries, as well as a web reader.",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://komga.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/komga/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Komga official logo",
+    "icon_fallback_url": "/static/icons/generated/komga.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "K",
+      "domain": "komga.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "6dd7d677c213d5b3ec4896a3e2eec4980047db431b4454e8c7a6586d27507363",
+      "source_url": "https://github.com/gotson/komga"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Komga official website",
+        "url": "https://komga.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "komga.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Komga official source code",
+        "url": "https://github.com/gotson/komga",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6531,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Document Management - E-books"
+      ],
+      "source_record": "komga.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/komga/logo.webp",
+        "source_url": "https://github.com/gotson/komga",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 12928,
+        "checksum": "6dd7d677c213d5b3ec4896a3e2eec4980047db431b4454e8c7a6586d27507363",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/2139133?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KO"
+      },
+      "version": 1,
+      "tool_slug": "komga"
+    }
+  },
+  {
+    "id": 928,
+    "slug": "livebook",
+    "name": "Livebook",
+    "description": "Realtime collaborative notebook app based on Markdown that supports running Elixir code snippets, TeX and Mermaid Diagrams. Easily deployed using Docker or Elixir.",
+    "purpose": "Realtime collaborative notebook app based on Markdown that supports running Elixir code snippets, TeX and Mermaid Diagrams. Easily deployed using Docker or Elixir.",
+    "features": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Note-taking & Editors"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://livebook.dev",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/livebook/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Livebook official logo",
+    "icon_fallback_url": "/static/icons/generated/livebook.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "livebook.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "6f059af52fa703c6c2891e654b27820a364dae8802fd267812d417db369b1847",
+      "source_url": "https://github.com/livebook-dev/livebook"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Livebook official website",
+        "url": "https://livebook.dev",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "livebook.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Livebook official source code",
+        "url": "https://github.com/livebook-dev/livebook",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5837,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors"
+      ],
+      "source_record": "livebook.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/livebook/logo.webp",
+        "source_url": "https://github.com/livebook-dev/livebook",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 4646,
+        "checksum": "6f059af52fa703c6c2891e654b27820a364dae8802fd267812d417db369b1847",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/87464290?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LI"
+      },
+      "version": 1,
+      "tool_slug": "livebook"
+    }
+  },
+  {
+    "id": 978,
+    "slug": "raneto",
+    "name": "Raneto",
+    "description": "Knowledgebase platform that uses static Markdown files.",
+    "purpose": "Knowledgebase platform that uses static Markdown files.",
+    "features": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://raneto.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/raneto/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Raneto official logo",
+    "icon_fallback_url": "/static/icons/generated/raneto.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "raneto.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f05bc3daeb9bbce38637b824cfad95fa5c8f3209bfb45bc06d30a3348c199121",
+      "source_url": "https://github.com/ryanlelek/Raneto"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Raneto official website",
+        "url": "https://raneto.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "raneto.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Raneto official source code",
+        "url": "https://github.com/ryanlelek/Raneto",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2899,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "source_record": "raneto.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/raneto/logo.webp",
+        "source_url": "https://github.com/ryanlelek/Raneto",
+        "source_type": "official_repository",
+        "original_format": "jpg",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 10018,
+        "checksum": "f05bc3daeb9bbce38637b824cfad95fa5c8f3209bfb45bc06d30a3348c199121",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/329460?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RA"
+      },
+      "version": 1,
+      "tool_slug": "raneto"
+    }
+  },
+  {
+    "id": 982,
+    "slug": "bookwyrm",
+    "name": "Bookwyrm",
+    "description": "Social network for tracking your reading, talking about books, writing reviews, and discovering what to read next.",
+    "purpose": "Social network for tracking your reading, talking about books, writing reviews, and discovering what to read next.",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://joinbookwyrm.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: ⊘ Proprietary. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/bookwyrm/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Bookwyrm official logo",
+    "icon_fallback_url": "/static/icons/generated/bookwyrm.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "joinbookwyrm.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "321a1f54f5b4c7b525d32d95842199f1d5599d2ace6b8ebdd0f91e07474ff95f",
+      "source_url": "https://github.com/bookwyrm-social/bookwyrm"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Bookwyrm official website",
+        "url": "https://joinbookwyrm.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "joinbookwyrm.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Bookwyrm official source code",
+        "url": "https://github.com/bookwyrm-social/bookwyrm",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2762,
+      "licenses": [
+        "⊘ Proprietary"
+      ],
+      "directory_tags": [
+        "Document Management - E-books"
+      ],
+      "source_record": "bookwyrm.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bookwyrm/logo.webp",
+        "source_url": "https://github.com/bookwyrm-social/bookwyrm",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 17714,
+        "checksum": "321a1f54f5b4c7b525d32d95842199f1d5599d2ace6b8ebdd0f91e07474ff95f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/82422242?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BO"
+      },
+      "version": 1,
+      "tool_slug": "bookwyrm"
+    }
+  },
+  {
+    "id": 987,
+    "slug": "stump",
+    "name": "Stump",
+    "description": "A fast, free and open source comics, manga and digital book server with OPDS support.",
+    "purpose": "A fast, free and open source comics, manga and digital book server with OPDS support.",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management - E-books"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.stumpapp.dev",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/stump/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Stump official logo",
+    "icon_fallback_url": "/static/icons/generated/stump.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "stumpapp.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "a66e8751c72088937b3ef74bc7bf9206b656c5daade6b1f4be491c3e45dd163f",
+      "source_url": "https://github.com/stumpapp/stump"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Stump official website",
+        "url": "https://www.stumpapp.dev",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "stumpapp.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Stump official source code",
+        "url": "https://github.com/stumpapp/stump",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2637,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Document Management - E-books"
+      ],
+      "source_record": "stump.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/stump/logo.webp",
+        "source_url": "https://github.com/stumpapp/stump",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 13460,
+        "checksum": "a66e8751c72088937b3ef74bc7bf9206b656c5daade6b1f4be491c3e45dd163f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/114969632?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "stump"
+    }
+  },
+  {
+    "id": 992,
+    "slug": "documize",
+    "name": "Documize",
+    "description": "Modern Docs + Wiki software with built-in workflow, single binary executable, just bring MySQL/Percona.",
+    "purpose": "Modern Docs + Wiki software with built-in workflow, single binary executable, just bring MySQL/Percona.",
+    "features": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://documize.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/documize/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Documize official logo",
+    "icon_fallback_url": "/static/icons/generated/documize.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "documize.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "65b825c1dd398e7cb9a739d7ac2b8ee499441be358d70bbd5d5d066f508c2987",
+      "source_url": "https://github.com/documize/community"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Documize official website",
+        "url": "https://documize.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "documize.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Documize official source code",
+        "url": "https://github.com/documize/community",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2415,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "source_record": "documize.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/documize/logo.webp",
+        "source_url": "https://github.com/documize/community",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 68,
+        "height": 68,
+        "aspect_ratio": "68:68",
+        "file_size_bytes": 1912,
+        "checksum": "65b825c1dd398e7cb9a739d7ac2b8ee499441be358d70bbd5d5d066f508c2987",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/7921789?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "documize"
+    }
+  },
+  {
+    "id": 996,
+    "slug": "docspell",
+    "name": "Docspell",
+    "description": "Auto-tagging document organizer and archive.",
+    "purpose": "Auto-tagging document organizer and archive.",
+    "features": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Document Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docspell.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/docspell/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Docspell official logo",
+    "icon_fallback_url": "/static/icons/generated/docspell.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "docspell.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "43570f42371fe9715b5c240235d46b40ee38d495413422b87682a04a823f286a",
+      "source_url": "https://github.com/eikek/docspell"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Docspell official website",
+        "url": "https://docspell.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docspell.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Docspell official source code",
+        "url": "https://github.com/eikek/docspell",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2290,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Document Management"
+      ],
+      "source_record": "docspell.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/docspell/logo.webp",
+        "source_url": "https://github.com/eikek/docspell",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 420,
+        "height": 420,
+        "aspect_ratio": "420:420",
+        "file_size_bytes": 1260,
+        "checksum": "43570f42371fe9715b5c240235d46b40ee38d495413422b87682a04a823f286a",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/701128?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DO"
+      },
+      "version": 1,
+      "tool_slug": "docspell"
+    }
+  },
+  {
+    "id": 999,
+    "slug": "zim",
+    "name": "Zim",
+    "description": "Graphical text editor used to maintain a collection of wiki pages. Each page can contain links to other pages, simple formatting and images.",
+    "purpose": "Graphical text editor used to maintain a collection of wiki pages. Each page can contain links to other pages, simple formatting and images.",
+    "features": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "category": "Office and Documents",
+    "tags": [
+      "Documents and Knowledge",
+      "Wikis"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://zim-wiki.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on documents and knowledge workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for documents and knowledge software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 1000 expansion review."
+    },
+    "subcategory": "Documents and Knowledge",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-1000-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/zim/logo.webp",
+    "icon_source": "official_repository",
+    "icon_alt": "Zim official logo",
+    "icon_fallback_url": "/static/icons/generated/zim.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "Z",
+      "domain": "zim-wiki.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5c5e347f170af7196532de53b75b114c5eb3c1fa646d5dd30d2d68f9ec5266f9",
+      "source_url": "https://github.com/zim-desktop-wiki/zim-desktop-wiki"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Zim official website",
+        "url": "https://zim-wiki.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "zim-wiki.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Zim official source code",
+        "url": "https://github.com/zim-desktop-wiki/zim-desktop-wiki",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 2194,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "source_record": "zim.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/zim/logo.webp",
+        "source_url": "https://github.com/zim-desktop-wiki/zim-desktop-wiki",
+        "source_type": "official_repository",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 2198,
+        "checksum": "5c5e347f170af7196532de53b75b114c5eb3c1fa646d5dd30d2d68f9ec5266f9",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-controlled-expansion-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://avatars.githubusercontent.com/u/28777934?s=256&v=4"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ZI"
+      },
+      "version": 1,
+      "tool_slug": "zim"
+    }
   }
 ]

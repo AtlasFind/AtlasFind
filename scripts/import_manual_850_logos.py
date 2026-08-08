@@ -44,7 +44,7 @@ def process(record: dict) -> tuple[dict, dict]:
         candidate = {**raw, "review_status": "approved", "license_status": "brand_usage",
                      "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion."}
         try:
-            branding = import_approved_logo(record, candidate, verified_by="atlasfind-850-controlled-review", timeout_seconds=20)
+            branding = import_approved_logo(record, candidate, verified_by="atlasfind-controlled-expansion-review", timeout_seconds=12)
             logo = branding["logo"]
             record["branding"] = branding
             record["icon_url"] = "/" + logo["local_path"]
@@ -63,7 +63,7 @@ def process(record: dict) -> tuple[dict, dict]:
 def main() -> None:
     records = json.loads(RECORDS.read_text(encoding="utf-8"))
     updated, results = {}, []
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=16) as executor:
         futures = {executor.submit(process, record): record["slug"] for record in records}
         for future in as_completed(futures):
             record, result = future.result()

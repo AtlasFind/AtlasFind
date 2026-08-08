@@ -38,13 +38,15 @@ def main() -> None:
     logo_audit = json.loads(LOGO_AUDIT.read_text(encoding="utf-8"))
     categories = set(json.loads(TAXONOMY.read_text(encoding="utf-8"))["values"])
 
-    if len(current) not in {700, 850}:
-        fail(f"expected the reviewed 700-tool base or an idempotent 850-tool rerun, found {len(current)}")
-    current = current[:700]
     if len(additions) != 150:
         fail(f"expected 150 staged tools, found {len(additions)}")
-    if [tool.get("id") for tool in additions] != list(range(701, 851)):
-        fail("staged IDs must be exactly 701..850")
+    base_count = additions[0].get("id", 0) - 1
+    target_count = base_count + 150
+    if len(current) not in {base_count, target_count}:
+        fail(f"expected the reviewed {base_count}-tool base or an idempotent {target_count}-tool rerun, found {len(current)}")
+    current = current[:base_count]
+    if [tool.get("id") for tool in additions] != list(range(base_count + 1, target_count + 1)):
+        fail(f"staged IDs must be exactly {base_count + 1}..{target_count}")
     if source_audit.get("checked") != 300 or source_audit.get("failed") != 0:
         fail("all 300 official website/repository checks must pass")
     if logo_audit.get("verified") != 150 or logo_audit.get("fallback") != 0:
@@ -74,11 +76,11 @@ def main() -> None:
         tool["verification"] = {
             "status": "verified",
             "date": date.today().isoformat(),
-            "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review.",
+            "note": f"Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind {target_count} expansion review.",
         }
         tool["quality_status"] = "verified"
         tool["quality_review"] = {
-            "scope": "manual-850-expansion",
+            "scope": f"manual-{target_count}-expansion",
             "reviewed_at": date.today().isoformat(),
             "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates.",
         }
@@ -88,7 +90,7 @@ def main() -> None:
     errors = validate_tools(merged)
     if errors:
         fail("schema errors: " + " | ".join(errors[:10]))
-    if len({tool["id"] for tool in merged}) != 850 or len({tool["slug"].casefold() for tool in merged}) != 850:
+    if len({tool["id"] for tool in merged}) != target_count or len({tool["slug"].casefold() for tool in merged}) != target_count:
         fail("merged catalog IDs/slugs are not unique")
 
     CATALOG.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -108,7 +110,7 @@ def main() -> None:
             fail(f"no category catalog file for {category}")
         rows = [tool for tool in merged if tool["category"] == category]
         (CATALOG_DIR / file_name).write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    manifest["record_count"] = 850
+    manifest["record_count"] = target_count
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"catalog_tools": len(merged), "added": len(additions), "logos_verified": 150,
                       "live_sources_passed": 300, "categories": len({tool['category'] for tool in merged})}))
