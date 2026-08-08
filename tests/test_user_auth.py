@@ -27,6 +27,7 @@ class UserAuthTests(unittest.TestCase):
     def cleanup(self):
         with transaction() as connection:
             connection.execute("DELETE FROM user_login_attempts WHERE identity IN (?,?)", (TEST_EMAIL, TEST_USERNAME))
+            connection.execute("DELETE FROM user_favorites WHERE user_id IN (SELECT id FROM user_accounts WHERE email=? OR username=?)", (TEST_EMAIL, TEST_USERNAME))
             connection.execute("DELETE FROM user_accounts WHERE email=? OR username=?", (TEST_EMAIL, TEST_USERNAME))
 
     @staticmethod
@@ -50,7 +51,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.3.0", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.4.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -135,6 +136,20 @@ class UserAuthTests(unittest.TestCase):
             row = connection.execute("SELECT display_name,profile_visibility FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertEqual(row["display_name"], "Atlas Tester")
         self.assertEqual(row["profile_visibility"], "public")
+
+    def test_verified_user_can_save_and_remove_a_tool(self):
+        _, verification_url = self.register()
+        profile = self.verify(verification_url).get_data(as_text=True)
+        self.client.post("/tr/tools/chatgpt/favorite", data={
+            "csrf_token": self.token(profile), "saved": "1",
+        }, follow_redirects=True)
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        self.assertIn("ChatGPT", profile)
+        self.client.post("/tr/tools/chatgpt/favorite", data={
+            "csrf_token": self.token(profile), "saved": "0",
+        }, follow_redirects=True)
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        self.assertNotIn("tool-bag-main\" href=\"/tr/tools/chatgpt", profile)
 
 
 if __name__ == "__main__":

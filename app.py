@@ -25,6 +25,7 @@ from repositories.users import (
     create_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
     record_user_login, user_exists, set_verification_token, verify_user_email,
     update_user_password, update_user_profile,
+    is_user_favorite, list_user_favorites, set_user_favorite,
 )
 from services.email_service import send_verification_email
 from database import DATABASE_PATH, apply_migrations
@@ -65,7 +66,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.3.0"
+APP_VERSION = "1.4.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1434,7 +1435,26 @@ def tool_detail(slug, locale=None):
         seo=page_seo(title, description, canonical_path),
         breadcrumbs=crumbs,
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
+        is_favorite=bool(session.get("user_id") and is_user_favorite(session["user_id"], slug)),
+        favorite_csrf=user_csrf_token(),
     )
+
+
+@app.post("/tools/<slug>/favorite")
+@app.post("/<locale>/tools/<slug>/favorite")
+def favorite_tool(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if not session.get("user_id") or not get_user_by_id(session["user_id"]):
+        flash(translate("auth.login_to_save"), "error")
+        return redirect(url_for("user_login", next=request.referrer or url_for("tool_detail", slug=slug)))
+    validate_user_csrf()
+    if find_tool_by_slug(slug) is None:
+        abort(404)
+    saved = request.form.get("saved") == "1"
+    set_user_favorite(session["user_id"], slug, saved)
+    flash(translate("auth.favorite_added") if saved else translate("auth.favorite_removed"), "success")
+    return redirect(url_for("tool_detail", slug=slug))
 
 
 @app.post("/tools/<slug>/rate")
@@ -1895,7 +1915,10 @@ def user_profile(locale=None):
                 flash(translate("auth.password_changed"), "success")
                 return redirect(url_for("user_profile", security=1))
         user = get_user_by_id(session["user_id"])
-    return render_template("auth/profile.html", profile_user=user, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
+    favorite_rows = list_user_favorites(user["id"])
+    tools_by_slug = {item.get("slug"): item for item in load_tools(get_locale())}
+    favorite_tools = [{"tool": tools_by_slug[row["tool_slug"]], "saved_at": row["created_at"]} for row in favorite_rows if row["tool_slug"] in tools_by_slug]
+    return render_template("auth/profile.html", profile_user=user, favorite_tools=favorite_tools, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
 
 
 @app.route("/privacy", strict_slashes=False)

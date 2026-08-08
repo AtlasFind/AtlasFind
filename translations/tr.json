@@ -696,5 +696,15 @@
   "auth.new_password": "Yeni şifre",
   "auth.current_password_error": "Mevcut şifren doğru değil.",
   "auth.password_changed": "Şifren güvenli biçimde değiştirildi.",
-  "auth.visit_website": "Web sitesini aç"
+  "auth.visit_website": "Web sitesini aç",
+  "auth.add_favorite": "Araç Çantama ekle",
+  "auth.remove_favorite": "Araç Çantamdan çıkar",
+  "auth.login_to_save": "Araçları kaydetmek için hesabına giriş yap.",
+  "auth.login_to_save_short": "Kaydetmek için giriş yap",
+  "auth.favorite_added": "Araç, Araç Çantana eklendi.",
+  "auth.favorite_removed": "Araç, Araç Çantandan çıkarıldı.",
+  "auth.saved_tools": "Kaydettiğin araçlar",
+  "auth.saved_tools_help": "Daha sonra incelemek veya karşılaştırmak istediğin araçlar.",
+  "auth.no_saved_tools": "Henüz kaydettiğin araç yok",
+  "auth.no_saved_tools_help": "Bir araç sayfasındaki yıldız düğmesine basarak listeni oluştur."
 }

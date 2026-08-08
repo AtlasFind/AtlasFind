@@ -143,3 +143,33 @@ def update_user_password(user_id, password_hash, path=DATABASE_PATH):
             "UPDATE user_accounts SET password_hash=? WHERE id=? AND is_active=1",
             (password_hash, int(user_id)),
         )
+
+
+def list_user_favorites(user_id, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            "SELECT tool_slug,created_at FROM user_favorites WHERE user_id=? ORDER BY created_at DESC",
+            (int(user_id),),
+        ).fetchall()
+
+
+def is_user_favorite(user_id, tool_slug, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            "SELECT 1 FROM user_favorites WHERE user_id=? AND tool_slug=?",
+            (int(user_id), tool_slug),
+        ).fetchone() is not None
+
+
+def set_user_favorite(user_id, tool_slug, saved, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        if saved:
+            connection.execute(
+                "INSERT OR IGNORE INTO user_favorites(user_id,tool_slug) VALUES (?,?)",
+                (int(user_id), tool_slug),
+            )
+        else:
+            connection.execute(
+                "DELETE FROM user_favorites WHERE user_id=? AND tool_slug=?",
+                (int(user_id), tool_slug),
+            )

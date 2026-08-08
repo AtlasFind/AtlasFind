@@ -696,5 +696,15 @@
   "auth.new_password": "New password",
   "auth.current_password_error": "Your current password is incorrect.",
   "auth.password_changed": "Your password was changed securely.",
-  "auth.visit_website": "Visit website"
+  "auth.visit_website": "Visit website",
+  "auth.add_favorite": "Add to Tool Bag",
+  "auth.remove_favorite": "Remove from Tool Bag",
+  "auth.login_to_save": "Sign in to save tools.",
+  "auth.login_to_save_short": "Sign in to save",
+  "auth.favorite_added": "The tool was added to your Tool Bag.",
+  "auth.favorite_removed": "The tool was removed from your Tool Bag.",
+  "auth.saved_tools": "Your saved tools",
+  "auth.saved_tools_help": "Tools you want to review or compare later.",
+  "auth.no_saved_tools": "No saved tools yet",
+  "auth.no_saved_tools_help": "Use the star button on a tool page to build your list."
 }
