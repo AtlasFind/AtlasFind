@@ -7,9 +7,42 @@
   <div class="public-page-grid">
     {% for heading, body in content.sections %}<article class="public-card"><h2>{{ heading }}</h2><p>{{ body }}</p></article>{% endfor %}
   </div>
-  {% if page_key == 'about' %}<div class="contact-email-card about-status-card"><div class="contact-email-copy"><span class="section-label">{{ "DEMO · PUBLIC BETA" }}</span><strong>{{ "AtlasFind birlikte gelişiyor" if locale == "tr" else "AtlasFind improves with its community" }}</strong><p>{{ "Bir hata, eksik araç veya geliştirme fikri gördüğünüzde bize yazabilirsiniz." if locale == "tr" else "Tell us when you find an error, a missing tool or an idea worth building." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div><div class="public-actions"><a class="primary-button" href="{{ url_for('tools_directory') }}">{{ "Araçları keşfet" if locale == "tr" else "Explore tools" }}</a><a class="secondary-button" href="{{ url_for('contact') }}">{{ t('footer.contact') }}</a></div>{% endif %}
-  {% if page_key == 'collaborate' %}<div class="collaboration-proof-grid"><div><strong>{{ tool_total }}</strong><span>{{ "incelenen araç" if locale == "tr" else "catalog tools" }}</span></div><div><strong>18</strong><span>{{ "ana kategori" if locale == "tr" else "main categories" }}</span></div><div><strong>159</strong><span>{{ "alt kategori" if locale == "tr" else "subcategories" }}</span></div><div><strong>TR / EN</strong><span>{{ "iki dilde platform" if locale == "tr" else "bilingual platform" }}</span></div></div><div class="contact-email-card collaboration-contact-card"><div class="contact-email-copy"><span class="section-label">{{ "İŞ BİRLİĞİ" if locale == "tr" else "COLLABORATE" }}</span><strong>{{ "Fikrini bize anlat" if locale == "tr" else "Tell us your idea" }}</strong><p>{{ "Kanalını, hedef kitleni ve düşündüğün çalışma biçimini kısaca paylaş." if locale == "tr" else "Share your channel, audience and the collaboration format you have in mind." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}?subject=AtlasFind%20Collaboration"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div><div class="public-actions"><a class="primary-button" href="mailto:{{ contact_email }}?subject=AtlasFind%20Collaboration">{{ "İş birliği için yaz" if locale == "tr" else "Start a collaboration" }}</a><a class="secondary-button" href="{{ url_for('about') }}">{{ t('footer.about') }}</a></div>{% endif %}
-  {% if page_key == 'contact' %}<div class="contact-email-card"><div class="contact-email-copy"><span class="section-label">{{ t('footer.contact') }}</span><strong>{{ "Bize e-posta gönderin" if locale == "tr" else "Send us an email" }}</strong><p>{{ "Hata bildirimleri, araç önerileri ve iş birliği talepleri için." if locale == "tr" else "For bug reports, tool suggestions and collaboration requests." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div><div class="public-actions"><a class="primary-button" href="{{ url_for('recommend') }}">{{ t("public.suggest_tool") }}</a><a class="secondary-button" href="https://github.com/AtlasFind/AtlasFind/issues" target="_blank" rel="noopener noreferrer">{{ t("public.github_issue") }}</a></div>{% endif %}
+
+  {% if page_key == 'about' %}
+  <div class="contact-email-card about-status-card"><div class="contact-email-copy"><span class="section-label">DEMO · PUBLIC BETA</span><strong>{{ "AtlasFind birlikte gelişiyor" if locale == "tr" else "AtlasFind improves with its community" }}</strong><p>{{ "Bir hata, eksik araç veya geliştirme fikri gördüğünüzde bize yazabilirsiniz." if locale == "tr" else "Tell us when you find an error, a missing tool or an idea worth building." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div>
+  <div class="public-actions"><a class="primary-button" href="{{ url_for('tools_directory') }}">{{ "Araçları keşfet" if locale == "tr" else "Explore tools" }}</a><a class="secondary-button" href="{{ url_for('contact') }}">{{ t('footer.contact') }}</a></div>
+  {% endif %}
+
+  {% if page_key == 'collaborate' %}
+  <div class="collaboration-proof-grid">
+    <div><strong>{{ tool_total }}+</strong><span>{{ "incelenen araç" if locale == "tr" else "catalog tools" }}</span></div>
+    <div><strong>18</strong><span>{{ "ana kategori" if locale == "tr" else "main categories" }}</span></div>
+    <div><strong>159</strong><span>{{ "alt kategori" if locale == "tr" else "subcategories" }}</span></div>
+    <div><strong>TR / EN</strong><span>{{ "iki dilde platform" if locale == "tr" else "bilingual platform" }}</span></div>
+  </div>
+
+  <section class="media-kit" aria-labelledby="media-kit-title">
+    <div class="media-kit-copy">
+      <span class="section-label">{{ "BASIN KİTİ" if locale == "tr" else "MEDIA KIT" }}</span>
+      <h2 id="media-kit-title">{{ "AtlasFind'i anlatmak için gereken her şey" if locale == "tr" else "Everything you need to introduce AtlasFind" }}</h2>
+      <p>{{ "Logo, kısa proje özeti ve doğru bağlantıları kullanarak AtlasFind hakkında içerik hazırlayabilirsiniz. Yayınlamadan önce sorularınız için bize ulaşabilirsiniz." if locale == "tr" else "Use the logo, concise project summary and official links when creating AtlasFind content. Contact us with any questions before publishing." }}</p>
+      <div class="media-kit-summary"><strong>{{ "Kısa tanıtım metni" if locale == "tr" else "Short description" }}</strong><p>{{ "AtlasFind, 1.000'den fazla yazılım ve dijital aracı keşfetmeyi, incelemeyi ve karşılaştırmayı kolaylaştıran bağımsız bir platformdur." if locale == "tr" else "AtlasFind is an independent platform that makes it easier to discover, review and compare more than 1,000 software and digital tools." }}</p></div>
+    </div>
+    <div class="media-kit-assets">
+      <div class="media-kit-logo"><img src="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}" alt="AtlasFind duck logo" width="128" height="128"></div>
+      <a class="secondary-button" href="{{ url_for('static', filename='images/atlasfind-duck-192.png') }}" download>{{ "Profil logosunu indir" if locale == "tr" else "Download profile logo" }}</a>
+      <a class="secondary-button" href="{{ url_for('static', filename='images/atlasfind-social.svg') }}" download>{{ "Sosyal paylaşım görselini indir" if locale == "tr" else "Download social artwork" }}</a>
+    </div>
+  </section>
+
+  <div class="contact-email-card collaboration-contact-card"><div class="contact-email-copy"><span class="section-label">{{ "İŞ BİRLİĞİ" if locale == "tr" else "COLLABORATE" }}</span><strong>{{ "Fikrini bize anlat" if locale == "tr" else "Tell us your idea" }}</strong><p>{{ "Kanalını, hedef kitleni ve düşündüğün çalışma biçimini kısaca paylaş." if locale == "tr" else "Share your channel, audience and the collaboration format you have in mind." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}?subject=AtlasFind%20Collaboration"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div>
+  <div class="public-actions"><a class="primary-button" href="mailto:{{ contact_email }}?subject=AtlasFind%20Collaboration">{{ "İş birliği için yaz" if locale == "tr" else "Start a collaboration" }}</a><a class="secondary-button" href="{{ url_for('about') }}">{{ t('footer.about') }}</a></div>
+  {% endif %}
+
+  {% if page_key == 'contact' %}
+  <div class="contact-email-card"><div class="contact-email-copy"><span class="section-label">{{ t('footer.contact') }}</span><strong>{{ "Bize e-posta gönderin" if locale == "tr" else "Send us an email" }}</strong><p>{{ "Hata bildirimleri, araç önerileri ve iş birliği talepleri için." if locale == "tr" else "For bug reports, tool suggestions and collaboration requests." }}</p></div><a class="contact-email-link" href="mailto:{{ contact_email }}"><span aria-hidden="true">✉</span><span>{{ contact_email }}</span></a></div>
+  <div class="public-actions"><a class="primary-button" href="{{ url_for('recommend') }}">{{ t("public.suggest_tool") }}</a><a class="secondary-button" href="https://github.com/AtlasFind/AtlasFind/issues" target="_blank" rel="noopener noreferrer">{{ t("public.github_issue") }}</a></div>
+  {% endif %}
   <p class="public-updated">{{ t("public.updated") }}</p>
 </section>
 {% endblock %}

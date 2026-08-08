@@ -63,7 +63,7 @@ CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").str
 PUBLIC_PAGES = {
     "collaborate": {
         "en": {"title": "Collaborate with AtlasFind", "description": "Partnership, creator and editorial collaboration opportunities with AtlasFind.", "sections": [
-            ("A focused software discovery platform", "AtlasFind is a bilingual software discovery and comparison platform covering 600 tools across 18 main categories and 159 subcategories. It helps visitors narrow broad software choices into relevant categories and meaningful comparisons."),
+            ("A focused software discovery platform", "AtlasFind is a bilingual software discovery and comparison platform covering more than 1,000 tools across 18 main categories and 159 subcategories. It helps visitors narrow broad software choices into relevant categories and meaningful comparisons."),
             ("Who we can work with", "We are open to hearing from creators, educators, software communities, independent developers, technology publications and brands whose work is relevant to software discovery, productivity and digital tools."),
             ("Possible collaboration formats", "Relevant formats may include an AtlasFind introduction, educational software guides, category-focused content, tool discovery campaigns, community feedback projects and clearly disclosed sponsored collaborations."),
             ("Editorial independence", "Payment or partnership does not guarantee a positive ranking, rating or recommendation. Sponsored activity must be clearly disclosed, and factual product claims should be supported by official sources."),
@@ -71,7 +71,7 @@ PUBLIC_PAGES = {
             ("Start a conversation", "Send a short introduction, your channel or project link, audience focus and collaboration idea to atlasfindd@gmail.com. We can then discuss whether the idea is relevant for both audiences."),
         ]},
         "tr": {"title": "AtlasFind ile İş Birliği", "description": "AtlasFind ile içerik üreticisi, yayın ve marka iş birliği fırsatları.", "sections": [
-            ("Odaklı bir yazılım keşif platformu", "AtlasFind; 18 ana kategori ve 159 alt kategoride 600 aracı kapsayan, Türkçe ve İngilizce çalışan bir yazılım keşif ve karşılaştırma platformudur. Ziyaretçilerin geniş yazılım seçeneklerini ilgili kategorilere ve anlamlı karşılaştırmalara indirmesine yardımcı olur."),
+            ("Odaklı bir yazılım keşif platformu", "AtlasFind; 18 ana kategori ve 159 alt kategoride 1.000'den fazla aracı kapsayan, Türkçe ve İngilizce çalışan bir yazılım keşif ve karşılaştırma platformudur. Ziyaretçilerin geniş yazılım seçeneklerini ilgili kategorilere ve anlamlı karşılaştırmalara indirmesine yardımcı olur."),
             ("Kimlerle çalışabiliriz?", "İçerik üreticileri, eğitimciler, yazılım toplulukları, bağımsız geliştiriciler, teknoloji yayınları ve yazılım keşfi, üretkenlik veya dijital araçlarla ilgili markalardan gelecek fikirleri değerlendirmeye açığız."),
             ("İş birliği biçimleri", "AtlasFind tanıtımı, eğitici yazılım rehberleri, kategori odaklı içerikler, araç keşif kampanyaları, topluluk geri bildirim projeleri ve açıkça belirtilen sponsorlu çalışmalar değerlendirilebilir."),
             ("Editoryal bağımsızlık", "Ödeme veya iş birliği; olumlu sıralama, puan ya da öneri garantisi vermez. Sponsorlu çalışmalar açıkça belirtilir ve ürünle ilgili önemli iddialar resmî kaynaklarla desteklenmelidir."),
