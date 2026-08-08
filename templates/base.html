@@ -63,13 +63,6 @@
                 <a href="{{ url_for('recommend') }}" {% if active_page == 'recommend' %}aria-current="page"{% endif %}>{{ t("nav.recommend") }}</a>
                 <a href="{{ url_for('guides') }}" {% if active_page == 'guides' %}aria-current="page"{% endif %}>{{ t("nav.guides") }}</a>
                 <a href="{{ url_for('compare_tools') }}" {% if active_page == 'compare' %}aria-current="page"{% endif %}>{{ t("nav.compare") }}</a>
-                <a class="nav-utility-link nav-utility-start" href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('rating_methodology', locale=locale) }}" {% if active_page == 'methodology' %}aria-current="page"{% endif %}>{{ t("rating.section_title") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('contact') }}" {% if active_page == 'contact' %}aria-current="page"{% endif %}>{{ t("footer.contact") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
-                <a class="nav-utility-link" href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
             </nav>
 
             <div class="nav-actions">
@@ -79,9 +72,24 @@
                     <span id="themeIcon" aria-hidden="true">☾</span>
                 </button>
                 <a href="{{ url_for('home') }}#tools" class="nav-cta">{{ t("nav.explore") }}</a>
-                <button type="button" class="menu-button" id="menuButton" aria-label="{{ t('menu.open') }}" aria-expanded="false" aria-controls="primaryNavigation">
-                    <span></span><span></span><span></span>
+                <button type="button" class="menu-button more-menu-button" id="menuButton" aria-label="{{ t('menu.open') }}" aria-expanded="false" aria-controls="moreNavigation">
+                    <span aria-hidden="true">•••</span>
                 </button>
+                <nav class="more-navigation" id="moreNavigation" aria-label="{{ t('nav.more') }}">
+                    <a class="more-primary-link" href="{{ url_for('home') }}#discover">{{ t("nav.discover") }}</a>
+                    <a class="more-primary-link" href="{{ url_for('tools_directory') }}">{{ t("nav.tools") }}</a>
+                    <a class="more-primary-link" href="{{ url_for('categories_directory') }}">{{ t("nav.categories") }}</a>
+                    <a class="more-primary-link" href="{{ url_for('recommend') }}">{{ t("nav.recommend") }}</a>
+                    <a class="more-primary-link" href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
+                    <a class="more-primary-link more-primary-last" href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
+                    <a href="{{ url_for('about') }}" {% if active_page == 'about' %}aria-current="page"{% endif %}>{{ t("footer.about") }}</a>
+                    <a href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
+                    <a href="{{ url_for('rating_methodology', locale=locale) }}" {% if active_page == 'methodology' %}aria-current="page"{% endif %}>{{ t("rating.section_title") }}</a>
+                    <a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}aria-current="page"{% endif %}>{{ t("footer.contact") }}</a>
+                    <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
+                    <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
+                    <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
+                </nav>
             </div>
         </div>
     </header>

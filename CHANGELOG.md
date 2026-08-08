@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.2 - 2026-08-08
+
+- Restored the single three-dot utility menu on desktop and mobile.
+- Moved About, Collaboration, Ratings, Contact and legal pages back into that menu.
+- Added outside-click and Escape closing behavior without horizontal overflow.
+
 ## 1.8.1 - 2026-08-08
 
 - Restored the familiar ChatGPT, Claude, Gemini and Perplexity homepage order.

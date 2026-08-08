@@ -34,6 +34,14 @@ class HomepageUpgradeTests(unittest.TestCase):
         self.assertNotIn('class="filter-panel home-filter-panel is-open"', page)
         self.assertNotIn("catalog.price_Ã¼cretsiz", page)
 
+    def test_header_has_one_more_menu_with_utility_links(self):
+        page = self.client.get("/tr/").get_data(as_text=True)
+        self.assertEqual(page.count('id="menuButton"'), 1)
+        self.assertEqual(page.count('id="moreNavigation"'), 1)
+        self.assertIn('aria-controls="moreNavigation"', page)
+        self.assertIn("Hakkımızda", page)
+        self.assertIn("Puanlama", page)
+
     def test_filtered_home_localizes_results(self):
         page = self.client.get("/tr/?pricing=free").get_data(as_text=True)
         self.assertIn("araçtan", page)

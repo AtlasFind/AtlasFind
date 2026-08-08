@@ -75,6 +75,7 @@ const searchInput = document.getElementById("searchInput");
 const heroVisual = document.getElementById("heroVisual");
 const menuButton = document.getElementById("menuButton");
 const primaryNavigation = document.getElementById("primaryNavigation");
+const moreNavigation = document.getElementById("moreNavigation");
 const liveStatus = document.getElementById("liveStatus");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -96,8 +97,8 @@ themeButton?.addEventListener("click", () => {
 });
 
 function closeMenu() {
-    if (!menuButton || !primaryNavigation) return;
-    primaryNavigation.classList.remove("is-open");
+    if (!menuButton || !moreNavigation) return;
+    moreNavigation.classList.remove("is-open");
     menuButton.classList.remove("is-open");
     menuButton.setAttribute("aria-expanded", "false");
     menuButton.setAttribute("aria-label", atlasT("js.menu.open", "Open navigation menu"));
@@ -105,14 +106,14 @@ function closeMenu() {
 }
 
 menuButton?.addEventListener("click", () => {
-    const isOpen = primaryNavigation?.classList.toggle("is-open") ?? false;
+    const isOpen = moreNavigation?.classList.toggle("is-open") ?? false;
     menuButton.classList.toggle("is-open", isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
     menuButton.setAttribute("aria-label", isOpen ? atlasT("js.menu.close", "Close navigation menu") : atlasT("js.menu.open", "Open navigation menu"));
     document.body.classList.toggle("menu-open", isOpen);
 });
 
-primaryNavigation?.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
+moreNavigation?.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
 
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") closeMenu();
@@ -125,8 +126,8 @@ document.addEventListener("keydown", event => {
 });
 
 document.addEventListener("click", event => {
-    if (!primaryNavigation?.classList.contains("is-open")) return;
-    if (!primaryNavigation.contains(event.target) && !menuButton?.contains(event.target)) closeMenu();
+    if (!moreNavigation?.classList.contains("is-open")) return;
+    if (!moreNavigation.contains(event.target) && !menuButton?.contains(event.target)) closeMenu();
 });
 
 if (heroVisual && !reducedMotion.matches) {
