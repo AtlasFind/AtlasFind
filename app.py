@@ -24,6 +24,7 @@ from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
     create_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
     record_user_login, user_exists, set_verification_token, verify_user_email,
+    update_user_password, update_user_profile,
 )
 from services.email_service import send_verification_email
 from database import DATABASE_PATH, apply_migrations
@@ -64,7 +65,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.2.1"
+APP_VERSION = "1.3.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1852,14 +1853,48 @@ def user_logout(locale=None):
     return redirect(localized_path("/", locale or get_locale()))
 
 
-@app.route("/profile", strict_slashes=False)
-@app.route("/<locale>/profile", strict_slashes=False)
+@app.route("/profile", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/profile", methods=["GET", "POST"], strict_slashes=False)
 def user_profile(locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
     user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
     if not user:
         return redirect(url_for("user_login"))
+    if request.method == "POST":
+        validate_user_csrf()
+        action = request.form.get("action", "profile")
+        if action == "profile":
+            display_name = request.form.get("display_name", "").strip()[:60]
+            bio = request.form.get("bio", "").strip()[:500]
+            country = request.form.get("country", "").strip()[:80]
+            website_url = request.form.get("website_url", "").strip()[:240]
+            visibility = request.form.get("profile_visibility", "private")
+            if visibility not in {"private", "public"}:
+                visibility = "private"
+            if website_url and not re.fullmatch(r"https?://[^\s]+", website_url):
+                flash(translate("auth.website_error"), "error")
+            else:
+                update_user_profile(user["id"], display_name, bio, country, website_url, visibility)
+                flash(translate("auth.profile_saved"), "success")
+                return redirect(url_for("user_profile", saved=1))
+        elif action == "password":
+            current_password = request.form.get("current_password", "")[:256]
+            new_password = request.form.get("new_password", "")[:256]
+            confirm_password = request.form.get("confirm_new_password", "")[:256]
+            account = get_user_for_login(user["email"])
+            password_valid = len(new_password) >= 10 and any(c.islower() for c in new_password) and any(c.isupper() for c in new_password) and any(c.isdigit() for c in new_password)
+            if not account or not check_password_hash(account["password_hash"], current_password):
+                flash(translate("auth.current_password_error"), "error")
+            elif not password_valid:
+                flash(translate("auth.password_rules"), "error")
+            elif new_password != confirm_password:
+                flash(translate("auth.password_mismatch"), "error")
+            else:
+                update_user_password(user["id"], generate_password_hash(new_password))
+                flash(translate("auth.password_changed"), "success")
+                return redirect(url_for("user_profile", security=1))
+        user = get_user_by_id(session["user_id"])
     return render_template("auth/profile.html", profile_user=user, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
 
 

@@ -34,6 +34,7 @@
     {% for schema in schemas or [] %}{% if schema %}<script type="application/ld+json" nonce="{{ csp_nonce }}">{{ json_ld(schema)|safe }}</script>{% endif %}{% endfor %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css', v=app_version) }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/auth.css', v=app_version) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css', v=app_version) }}">
 </head>
 <body>
     <a class="skip-link" href="#main-content">{{ t("access.skip") }}</a>

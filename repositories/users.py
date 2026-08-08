@@ -4,7 +4,9 @@ from database import DATABASE_PATH, connect_database, transaction
 def get_user_by_id(user_id, path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
-            "SELECT id,username,email,locale,email_verified,created_at,last_login_at FROM user_accounts WHERE id=? AND is_active=1",
+            """SELECT id,username,email,locale,email_verified,display_name,bio,country,website_url,
+               profile_visibility,profile_updated_at,created_at,last_login_at
+               FROM user_accounts WHERE id=? AND is_active=1""",
             (int(user_id),),
         ).fetchone()
 
@@ -124,3 +126,20 @@ def set_user_active(user_id, active, path=DATABASE_PATH):
             (int(bool(active)), int(user_id)),
         )
         return cursor.rowcount == 1
+
+
+def update_user_profile(user_id, display_name, bio, country, website_url, visibility, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        connection.execute(
+            """UPDATE user_accounts SET display_name=?,bio=?,country=?,website_url=?,
+               profile_visibility=?,profile_updated_at=CURRENT_TIMESTAMP WHERE id=? AND is_active=1""",
+            (display_name or None, bio or None, country or None, website_url or None, visibility, int(user_id)),
+        )
+
+
+def update_user_password(user_id, password_hash, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        connection.execute(
+            "UPDATE user_accounts SET password_hash=? WHERE id=? AND is_active=1",
+            (password_hash, int(user_id)),
+        )

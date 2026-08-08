@@ -50,7 +50,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.2.0", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.3.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -112,6 +112,29 @@ class UserAuthTests(unittest.TestCase):
         }, follow_redirects=True)
         self.assertIn("hatalı", response.get_data(as_text=True))
         self.assertNotIn(TEST_USERNAME, response.get_data(as_text=True))
+
+    def test_profile_details_and_password_can_be_updated_securely(self):
+        _, verification_url = self.register()
+        profile = self.verify(verification_url).get_data(as_text=True)
+        updated = self.client.post("/tr/profile", data={
+            "csrf_token": self.token(profile), "action": "profile",
+            "display_name": "Atlas Tester", "bio": "Araçları güvenle test eder.",
+            "country": "Türkiye", "website_url": "https://example.com",
+            "profile_visibility": "public",
+        }, follow_redirects=True)
+        body = updated.get_data(as_text=True)
+        self.assertIn("Atlas Tester", body)
+        self.assertIn("Araçları güvenle test eder", body)
+        changed = self.client.post("/tr/profile", data={
+            "csrf_token": self.token(body), "action": "password",
+            "current_password": TEST_PASSWORD, "new_password": "NewSecurePass456",
+            "confirm_new_password": "NewSecurePass456",
+        }, follow_redirects=True)
+        self.assertIn("güvenli biçimde değiştirildi", changed.get_data(as_text=True))
+        with connect_database() as connection:
+            row = connection.execute("SELECT display_name,profile_visibility FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
+        self.assertEqual(row["display_name"], "Atlas Tester")
+        self.assertEqual(row["profile_visibility"], "public")
 
 
 if __name__ == "__main__":
