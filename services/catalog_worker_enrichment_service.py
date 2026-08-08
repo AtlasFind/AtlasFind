@@ -25,6 +25,16 @@ FEATURE_HEADINGS = {"features", "key features", "highlights", "capabilities", "w
 INSTALL_HEADINGS = {"install", "installation", "downloads", "download", "requirements", "supported platforms"}
 
 
+def _heading_kind(heading: str) -> str:
+    normalized = re.sub(r"[^a-z0-9 ]+", " ", heading.casefold())
+    normalized = " ".join(normalized.split())
+    if any(token in normalized for token in FEATURE_HEADINGS):
+        return "features"
+    if any(token in normalized for token in INSTALL_HEADINGS):
+        return "install"
+    return "other"
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -63,7 +73,7 @@ def extract_readme_evidence(markdown: str) -> dict[str, Any]:
     purpose = ""
     # README prose commonly sits below the H1 product title, not before it.
     for heading, lines in sections.items():
-        if heading in FEATURE_HEADINGS or heading in INSTALL_HEADINGS:
+        if _heading_kind(heading) in {"features", "install"}:
             break
         for line in lines:
             cleaned = _clean_markdown(line)
@@ -75,7 +85,7 @@ def extract_readme_evidence(markdown: str) -> dict[str, Any]:
 
     features: list[dict[str, str]] = []
     for heading, lines in sections.items():
-        if heading not in FEATURE_HEADINGS:
+        if _heading_kind(heading) != "features":
             continue
         for line in lines:
             if not re.match(r"^(?:[-*+] |\d+[.)] )", line):
@@ -86,7 +96,10 @@ def extract_readme_evidence(markdown: str) -> dict[str, Any]:
             if len(features) == 12:
                 break
 
-    install_text = "\n".join("\n".join(lines) for heading, lines in sections.items() if heading in INSTALL_HEADINGS)
+    install_text = "\n".join("\n".join(lines) for heading, lines in sections.items() if _heading_kind(heading) == "install")
+    support_lines = "\n".join(line for lines in sections.values() for line in lines
+                              if re.search(r"\b(?:support(?:ed|s)?|available|download|install|runs? on)\b", line, re.I))
+    install_text += "\n" + support_lines
     platforms = [name for name, pattern in PLATFORM_PATTERNS.items() if re.search(pattern, install_text, re.I)]
     lower = markdown.casefold()
     pricing = None
@@ -115,6 +128,13 @@ def fetch_repository_evidence(repository: str) -> dict[str, Any]:
         raise ValueError("Unsupported README encoding")
     markdown = base64.b64decode(readme_response.get("content", ""), validate=False).decode("utf-8", errors="replace")
     evidence = extract_readme_evidence(markdown)
+    license_id = (metadata.get("license") or {}).get("spdx_id")
+    if license_id and str(license_id).upper() not in {"NOASSERTION", "OTHER"} and not evidence.get("pricing"):
+        evidence["pricing"] = {
+            "model": "Free",
+            "pricing_type": "free",
+            "evidence": f"Official repository declares the {license_id} open-source license.",
+        }
     evidence.update({
         "repository_checked_at": utc_now(),
         "repository_source_url": metadata.get("html_url"),
@@ -122,7 +142,7 @@ def fetch_repository_evidence(repository: str) -> dict[str, Any]:
         "default_branch": metadata.get("default_branch"),
         "archived": bool(metadata.get("archived")),
         "disabled": bool(metadata.get("disabled")),
-        "license": (metadata.get("license") or {}).get("spdx_id"),
+        "license": license_id,
         "latest_push_at": metadata.get("pushed_at"),
     })
     return evidence

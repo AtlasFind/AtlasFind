@@ -47,6 +47,11 @@ class CatalogWorkerRecordTests(unittest.TestCase):
         self.assertNotIn("opengraph.githubassets.com", record["icon_url"])
         self.assertEqual("local-generated", record["icon_source"])
 
+    def test_strong_topics_correct_the_discovery_category(self):
+        record = build_review_record(self.candidate(topics=["password-manager", "privacy"]), 701)
+        self.assertEqual("Cybersecurity", record["category"])
+        self.assertEqual("Security and Privacy", record["subcategory"])
+
 
 if __name__ == "__main__":
     unittest.main()

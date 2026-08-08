@@ -38,6 +38,10 @@ class CatalogWorkerEnrichmentTests(unittest.TestCase):
         evidence = extract_readme_evidence("# Tool\n\nA useful tool with enough description for reviewers.\n\n## Features\n```\n- fake command\n```\n![logo](x.png)")
         self.assertEqual([], evidence["features"])
 
+    def test_understands_decorated_feature_headings(self):
+        evidence = extract_readme_evidence("# Tool\n\nA useful application with a sufficiently detailed purpose statement.\n\n## ✨ Key Features\n- Secure local storage\n- Fast full-text search")
+        self.assertEqual(["Secure local storage", "Fast full-text search"], [item["text"] for item in evidence["features"]])
+
 
 if __name__ == "__main__":
     unittest.main()

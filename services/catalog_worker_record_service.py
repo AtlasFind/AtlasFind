@@ -27,6 +27,31 @@ CLAIM_NAMES = (
     "avatar",
 )
 
+CATEGORY_TOPIC_RULES = (
+    ({"security", "privacy", "cybersecurity", "password-manager", "vpn"}, "Cybersecurity", "Security and Privacy"),
+    ({"database", "developer-tools", "ide", "code-editor", "api-client"}, "Development", "Developer Tools"),
+    ({"design", "graphics", "image-editor", "drawing"}, "Design and Graphics", "Design Tools"),
+    ({"audio", "music", "podcast"}, "Audio and Music", "Audio Tools"),
+    ({"video", "animation", "screen-recorder"}, "Video and Animation", "Video Tools"),
+    ({"finance", "budget", "accounting", "invoice"}, "Finance and Business", "Finance Tools"),
+    ({"marketing", "seo", "analytics"}, "Marketing and SEO", "Marketing Tools"),
+    ({"browser", "internet"}, "Browsers and Internet", "Internet Tools"),
+    ({"cloud", "storage", "backup", "sync"}, "Cloud and Storage", "Storage and Sync"),
+    ({"chat", "communication", "messaging"}, "Communication", "Communication Tools"),
+    ({"game", "gaming", "launcher"}, "Gaming and Entertainment", "Gaming Tools"),
+    ({"education", "learning"}, "Education", "Learning Tools"),
+    ({"document", "notes", "note-taking", "office"}, "Office and Documents", "Document Tools"),
+    ({"hosting", "self-hosted", "server"}, "Web and Hosting", "Hosting Tools"),
+)
+
+
+def _classify_topics(topics: list[str], fallback_category: str, fallback_subcategory: str) -> tuple[str, str]:
+    normalized = {topic.casefold() for topic in topics}
+    for keywords, category, subcategory in CATEGORY_TOPIC_RULES:
+        if normalized & keywords:
+            return category, subcategory
+    return fallback_category, fallback_subcategory
+
 
 def _slugify(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value.casefold()).strip("-")
@@ -87,9 +112,12 @@ def build_review_record(candidate: dict[str, Any], tool_id: int, *, today: date 
     description = _clean_text(candidate.get("description_source_text"))
     website = _clean_text(candidate.get("official_url") or candidate.get("repository_url"))
     repository_url = _clean_text(candidate.get("repository_url"))
-    category = _clean_text(candidate.get("category_suggestion")) or "Other"
-    subcategory = _clean_text(candidate.get("subcategory_suggestion")) or "Needs Classification"
     topics = _unique_text(candidate.get("topics") or [])
+    category, subcategory = _classify_topics(
+        topics,
+        _clean_text(candidate.get("category_suggestion")) or "Other",
+        _clean_text(candidate.get("subcategory_suggestion")) or "Needs Classification",
+    )
     evidence = candidate.get("official_evidence") if isinstance(candidate.get("official_evidence"), dict) else {}
     evidence_features = [item.get("text") for item in evidence.get("features", []) if isinstance(item, dict)]
     evidence_platforms = _unique_text(evidence.get("platforms") or [])
