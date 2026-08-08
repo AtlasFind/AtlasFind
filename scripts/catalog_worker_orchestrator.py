@@ -6,6 +6,7 @@ import json
 import os
 import sys
 import time
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -26,6 +27,7 @@ RECORDS = ROOT / "data/research/catalog-worker-records.json"
 STATE = ROOT / "data/research/catalog-worker-state.json"
 TRUTH = ROOT / "data/research/catalog-worker-truth-report.json"
 STOP = ROOT / "data/research/catalog-worker.stop"
+LOG = ROOT / "logs/catalog-worker-orchestrator.log"
 
 
 def now() -> str:
@@ -51,6 +53,12 @@ def checkpoint(state: dict, phase: str, **updates: object) -> None:
 
 def should_stop() -> bool:
     return STOP.exists()
+
+
+def log(message: str) -> None:
+    LOG.parent.mkdir(parents=True, exist_ok=True)
+    with LOG.open("a", encoding="utf-8") as handle:
+        handle.write(f"[{now()}] {message}\n")
 
 
 def materialize(queue: dict, catalog: list[dict], state: dict) -> list[dict]:
@@ -121,7 +129,9 @@ def run_cycle(state: dict, *, offline: bool, enrichment_batch: int, logo_batch_s
     queue = load_queue()
     if not offline and not should_stop():
         checkpoint(state, "discovering")
-        discover_once(queue, per_query=10, min_stars=250, max_candidates=0)
+        page = int(state.get("cycles", 0)) % 10 + 1
+        discover_once(queue, per_query=10, min_stars=250, max_candidates=0, page=page)
+        checkpoint(state, "discovery_complete", discovery_page=page, queued=len(queue.get("items", [])))
     if not offline and not should_stop():
         enrich_batch(queue, state, enrichment_batch, pause)
     records = materialize(queue, catalog, state)
@@ -148,8 +158,20 @@ def main() -> None:
         STOP.unlink()
     state = load_state()
     while not should_stop():
-        run_cycle(state, offline=args.offline, enrichment_batch=max(1, args.enrichment_batch),
-                  logo_batch_size=max(1, args.logo_batch), pause=max(0.2, args.pause))
+        try:
+            run_cycle(state, offline=args.offline, enrichment_batch=max(1, args.enrichment_batch),
+                      logo_batch_size=max(1, args.logo_batch), pause=max(0.2, args.pause))
+        except Exception as exc:
+            state["errors"] = int(state.get("errors", 0)) + 1
+            checkpoint(state, "recovering_from_error", last_error=f"{type(exc).__name__}: {exc}")
+            log(f"Cycle recovered from {type(exc).__name__}: {exc}\n{traceback.format_exc()}")
+            if args.once or args.offline:
+                raise
+            for _ in range(6):
+                if should_stop():
+                    break
+                time.sleep(10)
+            continue
         if args.once or args.offline:
             break
         for _ in range(max(1, args.cycle_minutes) * 6):

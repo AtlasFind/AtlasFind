@@ -90,7 +90,7 @@ def load_queue() -> dict:
     return queue
 
 
-def discover_once(queue: dict, *, per_query: int, min_stars: int, max_candidates: int) -> int:
+def discover_once(queue: dict, *, per_query: int, min_stars: int, max_candidates: int, page: int = 1) -> int:
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     known_slugs = {tool["slug"] for tool in catalog}
     known_domains = {domain(tool["website"]) for tool in catalog}
@@ -103,7 +103,7 @@ def discover_once(queue: dict, *, per_query: int, min_stars: int, max_candidates
         try:
             result = github_get(
                 "/search/repositories",
-                {"q": f'{query} stars:>={min_stars} archived:false fork:false', "sort": "stars", "order": "desc", "per_page": per_query},
+                {"q": f'{query} stars:>={min_stars} archived:false fork:false', "sort": "stars", "order": "desc", "per_page": per_query, "page": max(1, page)},
             )
         except HTTPError as exc:
             stats["errors"] += 1
@@ -111,7 +111,7 @@ def discover_once(queue: dict, *, per_query: int, min_stars: int, max_candidates
             if exc.code in {403, 429}:
                 time.sleep(65)
             continue
-        except (URLError, TimeoutError, json.JSONDecodeError) as exc:
+        except (URLError, TimeoutError, OSError, json.JSONDecodeError) as exc:
             stats["errors"] += 1
             log(f"Search error for {query}: {exc}")
             continue
