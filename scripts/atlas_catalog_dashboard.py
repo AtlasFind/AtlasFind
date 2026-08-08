@@ -38,7 +38,7 @@ def start_worker() -> tuple[bool, str]:
     if PROCESS and PROCESS.poll() is None:
         return False, "already_running"
     STOP_FILE.unlink(missing_ok=True)
-    PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--cycle-minutes", "20"], cwd=ROOT)
+    PROCESS = subprocess.Popen([sys.executable, str(WORKER), "--cycle-minutes", "2"], cwd=ROOT)
     return True, "started"
 
 

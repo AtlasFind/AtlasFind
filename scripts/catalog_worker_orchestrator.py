@@ -152,7 +152,7 @@ def main() -> None:
     parser.add_argument("--enrichment-batch", type=int, default=20)
     parser.add_argument("--logo-batch", type=int, default=10)
     parser.add_argument("--pause", type=float, default=2.0)
-    parser.add_argument("--cycle-minutes", type=int, default=30)
+    parser.add_argument("--cycle-minutes", type=int, default=2)
     args = parser.parse_args()
     if STOP.exists():
         STOP.unlink()
