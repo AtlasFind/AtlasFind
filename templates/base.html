@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/favorites.css', v=app_version) }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/quality.css', v=app_version) }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/public-profile.css', v=app_version) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/account-privacy.css', v=app_version) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flash.css', v=app_version) }}">
 </head>
 <body>
     <a class="skip-link" href="#main-content">{{ t("access.skip") }}</a>
@@ -85,6 +87,7 @@
     </header>
 
     <main id="main-content">
+        {% if active_page not in ['login','register','profile'] %}{% with messages=get_flashed_messages(with_categories=true) %}{% if messages %}<div class="global-flash-stack section-container" role="status">{% for category,message in messages %}<div class="auth-alert {{ category }}">{{ message }}</div>{% endfor %}</div>{% endif %}{% endwith %}{% endif %}
         {% include "components/breadcrumbs.html" %}
         {% block content %}{% endblock %}
     </main>

@@ -83,7 +83,7 @@
         <details class="filter-group" open>
           <summary>{{ t("catalog.category") }}</summary>
           <div class="filter-group-body">
-            <select name="category" data-auto-submit>
+            <select name="category" data-auto-submit aria-label="{{ t('catalog.category') }}">
               <option value="">{{ t("catalog.all_categories") }}</option>
               {% for item in categories %}<option value="{{ item }}" {% if filters.category==item %}selected{% endif %}>{{ item }}</option>{% endfor %}
             </select>
@@ -92,7 +92,7 @@
         <details class="filter-group" open>
           <summary>{{ t("common.subcategory") }}</summary>
           <div class="filter-group-body">
-            <select name="subcategory" data-auto-submit>
+            <select name="subcategory" data-auto-submit aria-label="{{ t('common.subcategory') }}">
               <option value="">{{ t("common.all_subcategories") }}</option>
               {% for item in subcategories %}<option value="{{ item }}" {% if subcategory==item %}selected{% endif %}>{{ item }}</option>{% endfor %}
             </select>
@@ -117,7 +117,7 @@
         <details class="filter-group">
           <summary>{{ t("catalog.rating") }}</summary>
           <div class="filter-group-body">
-            <select name="min_rating">
+            <select name="min_rating" aria-label="{{ t('catalog.rating') }}">
               <option value="">{{ t("filter.any") }}</option>
               {% for value in [4.5,4.0,3.5] %}<option value="{{ value }}" {% if filters.min_rating==value %}selected{% endif %}>{{ value }}+</option>{% endfor %}
             </select>

@@ -677,7 +677,7 @@
   "auth.profile_visibility": "Profil görünürlüğü",
   "auth.visibility_private": "Yalnızca bana özel",
   "auth.visibility_public": "Herkese açık",
-  "auth.visibility_help": "Herkese açık profil bağlantısı sonraki aşamada etkinleşecek.",
+  "auth.visibility_help": "Herkese açık seçersen profilin ve Araç Çantan paylaşılabilir bağlantında görünür.",
   "auth.profile_details": "Profil bilgileri",
   "auth.edit_profile": "Profilini düzenle",
   "auth.display_name": "Görünen ad",
@@ -716,5 +716,16 @@
   "auth.public_saved_tools": "Paylaşılan araçlar ({count})",
   "auth.public_saved_tools_help": "Bu kullanıcının AtlasFind üzerinde kaydettiği ve herkese açık olarak paylaştığı araçlar.",
   "auth.public_no_tools": "Henüz herkese açık araç yok",
-  "auth.public_no_tools_help": "Kullanıcı Araç Çantasına araç eklediğinde burada görünecek."
+  "auth.public_no_tools_help": "Kullanıcı Araç Çantasına araç eklediğinde burada görünecek.",
+  "auth.data_controls": "Gizlilik ve veri",
+  "auth.your_data": "Verilerini yönet",
+  "auth.data_controls_help": "Hesap ve Araç Çantası verilerinin bir kopyasını indirebilir veya hesabını kalıcı olarak silebilirsin.",
+  "auth.download_data": "Verilerimi indir",
+  "auth.delete_account": "Hesabı sil",
+  "auth.delete_account_warning": "Bu işlem geri alınamaz.",
+  "auth.delete_account_help": "Profilin, kişisel bilgilerin ve Araç Çantan silinir. Onaylamak için kullanıcı adın olan {username} metnini yaz.",
+  "auth.delete_confirmation": "Kullanıcı adını yazarak onayla",
+  "auth.delete_permanently": "Hesabımı kalıcı olarak sil",
+  "auth.delete_confirmation_error": "Hesap silme onayı kullanıcı adınla eşleşmiyor.",
+  "auth.account_deleted": "Hesabın ve kişisel verilerin kalıcı olarak silindi."
 }

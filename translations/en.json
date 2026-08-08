@@ -677,7 +677,7 @@
   "auth.profile_visibility": "Profile visibility",
   "auth.visibility_private": "Private to me",
   "auth.visibility_public": "Public",
-  "auth.visibility_help": "Public profile links will be enabled in the next stage.",
+  "auth.visibility_help": "When public, your profile and Tool Bag appear on your shareable link.",
   "auth.profile_details": "Profile details",
   "auth.edit_profile": "Edit your profile",
   "auth.display_name": "Display name",
@@ -716,5 +716,16 @@
   "auth.public_saved_tools": "Shared tools ({count})",
   "auth.public_saved_tools_help": "Tools this user saved and chose to share publicly on AtlasFind.",
   "auth.public_no_tools": "No public tools yet",
-  "auth.public_no_tools_help": "Saved tools will appear here when the user adds them to their Tool Bag."
+  "auth.public_no_tools_help": "Saved tools will appear here when the user adds them to their Tool Bag.",
+  "auth.data_controls": "Privacy and data",
+  "auth.your_data": "Manage your data",
+  "auth.data_controls_help": "Download a copy of your account and Tool Bag data, or permanently delete your account.",
+  "auth.download_data": "Download my data",
+  "auth.delete_account": "Delete account",
+  "auth.delete_account_warning": "This action cannot be undone.",
+  "auth.delete_account_help": "Your profile, personal details and Tool Bag will be deleted. Type your username, {username}, to confirm.",
+  "auth.delete_confirmation": "Confirm by typing your username",
+  "auth.delete_permanently": "Permanently delete my account",
+  "auth.delete_confirmation_error": "The deletion confirmation does not match your username.",
+  "auth.account_deleted": "Your account and personal data were permanently deleted."
 }

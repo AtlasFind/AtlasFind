@@ -19,6 +19,7 @@ class UserAuthTests(unittest.TestCase):
         with user_auth_limiter._lock:
             user_auth_limiter._events.clear()
         self.client = app.test_client()
+        self.deleted_user_id = None
         self.cleanup()
 
     def tearDown(self):
@@ -29,6 +30,8 @@ class UserAuthTests(unittest.TestCase):
             connection.execute("DELETE FROM user_login_attempts WHERE identity IN (?,?)", (TEST_EMAIL, TEST_USERNAME))
             connection.execute("DELETE FROM user_favorites WHERE user_id IN (SELECT id FROM user_accounts WHERE email=? OR username=?)", (TEST_EMAIL, TEST_USERNAME))
             connection.execute("DELETE FROM user_accounts WHERE email=? OR username=?", (TEST_EMAIL, TEST_USERNAME))
+            if self.deleted_user_id:
+                connection.execute("DELETE FROM user_accounts WHERE id=?", (self.deleted_user_id,))
 
     @staticmethod
     def token(page):
@@ -51,7 +54,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.6.0", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.7.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -186,6 +189,37 @@ class UserAuthTests(unittest.TestCase):
             "website_url": "", "profile_visibility": "private",
         })
         self.assertEqual(self.client.get(f"/tr/u/{TEST_USERNAME}").status_code, 404)
+
+    def test_account_export_excludes_secrets_and_deletion_anonymizes_data(self):
+        _, verification_url = self.register()
+        with connect_database() as connection:
+            self.deleted_user_id = connection.execute("SELECT id FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()["id"]
+        profile = self.verify(verification_url).get_data(as_text=True)
+        self.client.post("/tr/tools/chatgpt/favorite", data={"csrf_token": self.token(profile), "saved": "1"})
+        exported = self.client.get("/tr/account/export")
+        self.assertEqual(exported.status_code, 200)
+        self.assertIn("attachment", exported.headers["Content-Disposition"])
+        payload = exported.get_json()
+        self.assertEqual(payload["atlasfind_account"]["email"], TEST_EMAIL)
+        self.assertEqual(payload["saved_tools"][0]["tool_slug"], "chatgpt")
+        self.assertNotIn("password", exported.get_data(as_text=True).lower())
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        rejected = self.client.post("/tr/account/delete", data={
+            "csrf_token": self.token(profile), "current_password": "WrongPass123",
+            "confirmation": TEST_USERNAME,
+        }, follow_redirects=True)
+        self.assertIn("Mevcut şifren doğru değil", rejected.get_data(as_text=True))
+        profile = self.client.get("/tr/profile").get_data(as_text=True)
+        deleted = self.client.post("/tr/account/delete", data={
+            "csrf_token": self.token(profile), "current_password": TEST_PASSWORD,
+            "confirmation": TEST_USERNAME,
+        }, follow_redirects=True)
+        self.assertIn("kişisel verilerin kalıcı olarak silindi", deleted.get_data(as_text=True))
+        with connect_database() as connection:
+            row = connection.execute("SELECT username,email,is_active FROM user_accounts WHERE id=?", (self.deleted_user_id,)).fetchone()
+        self.assertIsNotNone(row)
+        self.assertEqual(row["is_active"], 0)
+        self.assertTrue(row["email"].endswith("@invalid.local"))
 
 
 if __name__ == "__main__":

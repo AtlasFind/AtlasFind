@@ -183,3 +183,20 @@ def set_user_favorite(user_id, tool_slug, saved, path=DATABASE_PATH):
                 "DELETE FROM user_favorites WHERE user_id=? AND tool_slug=?",
                 (int(user_id), tool_slug),
             )
+
+
+def anonymize_user_account(user_id, replacement_password_hash, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        user = connection.execute("SELECT username,email FROM user_accounts WHERE id=? AND is_active=1", (int(user_id),)).fetchone()
+        if not user:
+            return False
+        connection.execute("DELETE FROM user_favorites WHERE user_id=?", (int(user_id),))
+        connection.execute("DELETE FROM user_login_attempts WHERE lower(identity) IN (lower(?),lower(?))", (user["username"], user["email"]))
+        connection.execute(
+            """UPDATE user_accounts SET username=?,email=?,password_hash=?,locale='tr',is_active=0,
+               email_verified=0,verification_token_hash=NULL,verification_expires_at=NULL,
+               verification_sent_at=NULL,display_name=NULL,bio=NULL,country=NULL,website_url=NULL,
+               profile_visibility='private',profile_updated_at=CURRENT_TIMESTAMP,last_login_at=NULL WHERE id=?""",
+            (f"deleted_{int(user_id)}", f"deleted_{int(user_id)}@invalid.local", replacement_password_hash, int(user_id)),
+        )
+        return True

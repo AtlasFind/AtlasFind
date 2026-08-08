@@ -5,6 +5,7 @@ import os
 import re
 import secrets
 import hashlib
+import json
 import uuid
 from urllib.parse import urlencode
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -26,6 +27,7 @@ from repositories.users import (
     record_user_login, user_exists, set_verification_token, verify_user_email,
     update_user_password, update_user_profile,
     is_user_favorite, list_user_favorites, set_user_favorite,
+    anonymize_user_account,
 )
 from services.email_service import send_verification_email
 from database import DATABASE_PATH, apply_migrations
@@ -66,7 +68,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.6.0"
+APP_VERSION = "1.7.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1945,6 +1947,42 @@ def public_user_profile(username, locale=None):
     description = public_user["bio"] or translate("auth.public_profile_description", name=display_name)
     canonical = f"/{get_locale()}/u/{public_user['username']}"
     return render_template("auth/public_profile.html", public_user=public_user, favorite_tools=favorite_tools, active_page="public-profile", seo=page_seo(f"{display_name} | AtlasFind", description, canonical), breadcrumbs=[], schemas=[])
+
+
+@app.get("/account/export")
+@app.get("/<locale>/account/export")
+def export_user_account(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        return redirect(url_for("user_login"))
+    favorites = [dict(row) for row in list_user_favorites(user["id"])]
+    public_fields = {key: user[key] for key in ("username", "email", "locale", "email_verified", "display_name", "bio", "country", "website_url", "profile_visibility", "created_at", "last_login_at")}
+    body = json.dumps({"atlasfind_account": public_fields, "saved_tools": favorites}, ensure_ascii=False, indent=2)
+    return Response(body, mimetype="application/json", headers={"Content-Disposition": f'attachment; filename="atlasfind-{user["username"]}-data.json"', "Cache-Control": "no-store"})
+
+
+@app.post("/account/delete")
+@app.post("/<locale>/account/delete")
+def delete_user_account(locale=None):
+    validate_user_csrf()
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        return redirect(url_for("user_login"))
+    password = request.form.get("current_password", "")[:256]
+    confirmation = request.form.get("confirmation", "").strip()
+    account = get_user_for_login(user["email"])
+    if not account or not check_password_hash(account["password_hash"], password):
+        flash(translate("auth.current_password_error"), "error")
+        return redirect(url_for("user_profile", danger=1))
+    if confirmation != user["username"]:
+        flash(translate("auth.delete_confirmation_error"), "error")
+        return redirect(url_for("user_profile", danger=1))
+    anonymize_user_account(user["id"], generate_password_hash(secrets.token_urlsafe(48)))
+    session.clear()
+    flash(translate("auth.account_deleted"), "success")
+    return redirect(localized_path("/", locale or get_locale()))
 
 
 @app.route("/privacy", strict_slashes=False)
