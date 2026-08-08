@@ -1,7 +1,7 @@
 import re
 import unittest
 from unittest.mock import patch
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlsplit
 
 from app import app
 from database import connect_database, transaction
@@ -54,7 +54,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.8.3", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.9.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -128,6 +128,53 @@ class UserAuthTests(unittest.TestCase):
         }, follow_redirects=True)
         self.assertIn("hatalı", response.get_data(as_text=True))
         self.assertNotIn(TEST_USERNAME, response.get_data(as_text=True))
+
+    def test_password_reset_is_single_use_and_changes_login_password(self):
+        _, verification_url = self.register()
+        self.verify(verification_url)
+        with self.client.session_transaction() as session_data:
+            session_data.clear()
+        page = self.client.get("/tr/forgot-password").get_data(as_text=True)
+        with patch("app.send_password_reset_email", return_value=True) as sender:
+            response = self.client.post("/tr/forgot-password", data={
+                "csrf_token": self.token(page), "email": TEST_EMAIL,
+            }, follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        reset_url = sender.call_args.args[2]
+        parts = urlsplit(reset_url)
+        token = parse_qs(parts.query)["token"][0]
+        reset_page = self.client.get(parts.path + "?" + parts.query).get_data(as_text=True)
+        changed = self.client.post(parts.path, data={
+            "csrf_token": self.token(reset_page), "token": token,
+            "password": "ReplacementPass456", "confirm_password": "ReplacementPass456",
+        }, follow_redirects=True)
+        self.assertEqual(changed.status_code, 200)
+        reused_page = self.client.get(parts.path + "?" + parts.query).get_data(as_text=True)
+        reused = self.client.post(parts.path, data={
+            "csrf_token": self.token(reused_page), "token": token,
+            "password": "AnotherValidPass789", "confirm_password": "AnotherValidPass789",
+        }, follow_redirects=True)
+        self.assertIn("geçersiz", reused.get_data(as_text=True).lower())
+        login_page = self.client.get("/tr/login").get_data(as_text=True)
+        old_login = self.client.post("/tr/login", data={
+            "csrf_token": self.token(login_page), "identity": TEST_EMAIL, "password": TEST_PASSWORD,
+        }, follow_redirects=True)
+        self.assertIn("hatalı", old_login.get_data(as_text=True).lower())
+        login_page = self.client.get("/tr/login").get_data(as_text=True)
+        new_login = self.client.post("/tr/login", data={
+            "csrf_token": self.token(login_page), "identity": TEST_EMAIL, "password": "ReplacementPass456",
+        }, follow_redirects=True)
+        self.assertIn(TEST_USERNAME, new_login.get_data(as_text=True))
+
+    def test_password_reset_does_not_reveal_unknown_email(self):
+        page = self.client.get("/tr/forgot-password").get_data(as_text=True)
+        with patch("app.send_password_reset_email") as sender:
+            response = self.client.post("/tr/forgot-password", data={
+                "csrf_token": self.token(page), "email": "unknown-account@example.com",
+            }, follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(sender.called)
+        self.assertIn("kayıtlıysa", response.get_data(as_text=True).lower())
 
     def test_profile_details_and_password_can_be_updated_securely(self):
         _, verification_url = self.register()

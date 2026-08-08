@@ -23,6 +23,18 @@ services:
         value: /opt/render/project/src/storage/atlasfind.db
       - key: ATLASFIND_SECRET_KEY
         generateValue: true
+      - key: ATLASFIND_SMTP_HOST
+        value: smtp.gmail.com
+      - key: ATLASFIND_SMTP_PORT
+        value: "465"
+      - key: ATLASFIND_SMTP_USER
+        value: atlasfindd@gmail.com
+      - key: ATLASFIND_SMTP_PASSWORD
+        sync: false
+      - key: ATLASFIND_SMTP_FROM
+        value: AtlasFind <atlasfindd@gmail.com>
+      - key: ATLASFIND_SMTP_USE_SSL
+        value: "1"
       - key: PYTHON_VERSION
         value: 3.13.5
     disk:

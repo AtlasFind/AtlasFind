@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.0 - 2026-08-08
+
+- Completed the persistent user registration, email verification and secure login flow.
+- Added one-hour, single-use password reset links with account-enumeration protection.
+- Added Turkish and English forgot/reset password screens and transactional emails.
+- Added production Gmail SMTP environment wiring without storing secrets in source control.
+
 ## 1.8.3 - 2026-08-08
 
 - Moved every header navigation link into the single three-dot menu.

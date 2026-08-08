@@ -19,6 +19,14 @@ def get_user_for_login(identity, path=DATABASE_PATH):
         ).fetchone()
 
 
+def get_user_by_email(email, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            "SELECT * FROM user_accounts WHERE is_active=1 AND lower(email)=lower(?)",
+            (email,),
+        ).fetchone()
+
+
 def get_public_user(username, path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
@@ -155,6 +163,33 @@ def update_user_password(user_id, password_hash, path=DATABASE_PATH):
         )
 
 
+def set_password_reset_token(user_id, token_hash, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        connection.execute(
+            """UPDATE user_accounts SET password_reset_token_hash=?,
+               password_reset_expires_at=datetime('now', '+1 hour'),
+               password_reset_sent_at=CURRENT_TIMESTAMP WHERE id=? AND is_active=1""",
+            (token_hash, int(user_id)),
+        )
+
+
+def consume_password_reset_token(token_hash, password_hash, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        user = connection.execute(
+            """SELECT id FROM user_accounts WHERE password_reset_token_hash=?
+               AND password_reset_expires_at >= CURRENT_TIMESTAMP AND is_active=1""",
+            (token_hash,),
+        ).fetchone()
+        if not user:
+            return None
+        connection.execute(
+            """UPDATE user_accounts SET password_hash=?,password_reset_token_hash=NULL,
+               password_reset_expires_at=NULL,password_reset_sent_at=NULL WHERE id=?""",
+            (password_hash, user["id"]),
+        )
+        return user["id"]
+
+
 def list_user_favorites(user_id, path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
@@ -195,7 +230,8 @@ def anonymize_user_account(user_id, replacement_password_hash, path=DATABASE_PAT
         connection.execute(
             """UPDATE user_accounts SET username=?,email=?,password_hash=?,locale='tr',is_active=0,
                email_verified=0,verification_token_hash=NULL,verification_expires_at=NULL,
-               verification_sent_at=NULL,display_name=NULL,bio=NULL,country=NULL,website_url=NULL,
+               verification_sent_at=NULL,password_reset_token_hash=NULL,password_reset_expires_at=NULL,
+               password_reset_sent_at=NULL,display_name=NULL,bio=NULL,country=NULL,website_url=NULL,
                profile_visibility='private',profile_updated_at=CURRENT_TIMESTAMP,last_login_at=NULL WHERE id=?""",
             (f"deleted_{int(user_id)}", f"deleted_{int(user_id)}@invalid.local", replacement_password_hash, int(user_id)),
         )

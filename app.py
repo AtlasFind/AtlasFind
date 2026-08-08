@@ -24,13 +24,13 @@ from repositories.user_reviews import aggregate_user_rating, anonymous_user_key,
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
-    create_user, get_public_user, get_user_by_id, get_user_for_login, recent_failed_user_logins,
+    create_user, get_public_user, get_user_by_email, get_user_by_id, get_user_for_login, recent_failed_user_logins,
     record_user_login, user_exists, set_verification_token, verify_user_email,
-    update_user_password, update_user_profile,
+    update_user_password, update_user_profile, set_password_reset_token, consume_password_reset_token,
     is_user_favorite, list_user_favorites, set_user_favorite,
     anonymize_user_account,
 )
-from services.email_service import send_verification_email
+from services.email_service import send_password_reset_email, send_verification_email
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -69,7 +69,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.8.3"
+APP_VERSION = "1.9.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1809,6 +1809,59 @@ def user_login(locale=None):
             return redirect(next_url or url_for("user_profile"))
         flash(translate("auth.invalid_login"), "error")
     return render_template("auth/login.html", user_csrf=user_csrf_token(), next_url=next_url, active_page="login", seo=page_seo(translate("auth.login"), translate("auth.login_description"), f"/{get_locale()}/login", robots="noindex,follow"), breadcrumbs=[])
+
+
+@app.route("/forgot-password", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/forgot-password", methods=["GET", "POST"], strict_slashes=False)
+def forgot_password(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    if request.method == "POST":
+        validate_user_csrf()
+        enforce_user_auth_rate_limit("password-reset")
+        email = request.form.get("email", "").strip().lower()[:180]
+        user = get_user_by_email(email) if re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email) else None
+        if user:
+            token = secrets.token_urlsafe(32)
+            set_password_reset_token(user["id"], hashlib.sha256(token.encode()).hexdigest())
+            send_password_reset_email(
+                user["email"], user["username"],
+                url_for("reset_password", token=token, _external=True), user["locale"],
+            )
+        # Deliberately identical for known and unknown addresses.
+        flash(translate("auth.reset_request_complete"), "success")
+        return redirect(url_for("forgot_password"))
+    return render_template("auth/forgot_password.html", user_csrf=user_csrf_token(), active_page="login", seo=page_seo(translate("auth.forgot_password"), translate("auth.forgot_password_description"), f"/{get_locale()}/forgot-password", robots="noindex,nofollow"), breadcrumbs=[])
+
+
+@app.route("/reset-password", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/reset-password", methods=["GET", "POST"], strict_slashes=False)
+def reset_password(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    token = (request.form.get("token", "") if request.method == "POST" else request.args.get("token", ""))[:256]
+    if not token:
+        flash(translate("auth.reset_invalid"), "error")
+        return redirect(url_for("forgot_password"))
+    if request.method == "POST":
+        validate_user_csrf()
+        enforce_user_auth_rate_limit("password-reset")
+        password = request.form.get("password", "")[:256]
+        confirm = request.form.get("confirm_password", "")[:256]
+        password_valid = len(password) >= 10 and any(c.islower() for c in password) and any(c.isupper() for c in password) and any(c.isdigit() for c in password)
+        if not password_valid:
+            flash(translate("auth.password_rules"), "error")
+        elif password != confirm:
+            flash(translate("auth.password_mismatch"), "error")
+        else:
+            user_id = consume_password_reset_token(hashlib.sha256(token.encode()).hexdigest(), generate_password_hash(password))
+            if not user_id:
+                flash(translate("auth.reset_invalid"), "error")
+                return redirect(url_for("forgot_password"))
+            session.clear()
+            flash(translate("auth.reset_success"), "success")
+            return redirect(url_for("user_login"))
+    return render_template("auth/reset_password.html", token=token, user_csrf=user_csrf_token(), active_page="login", seo=page_seo(translate("auth.reset_password"), translate("auth.reset_password_description"), f"/{get_locale()}/reset-password", robots="noindex,nofollow"), breadcrumbs=[])
 
 
 @app.route("/register", methods=["GET", "POST"], strict_slashes=False)
