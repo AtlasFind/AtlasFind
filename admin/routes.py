@@ -13,6 +13,7 @@ from repositories.admin import (
     get_dashboard_overview, get_admin_by_username, get_recent_audit_logs, get_traffic_overview, log_action,
     recent_failed_attempts, record_login_attempt,
 )
+from repositories.collaborations import list_inquiries, set_inquiry_status
 from repositories.article_writer import get_article_for_admin, list_admin_articles, save_article
 from repositories.taxonomy_writer import add_category, add_tag, list_taxonomies
 from repositories.tool_writer import archive_tool, get_tool_for_admin, list_admin_tools, save_tool
@@ -316,3 +317,18 @@ def import_tools():
 @login_required
 def audit():
     return render_template("admin/audit_log.html", logs=get_recent_audit_logs(200), active_admin="audit")
+
+
+@admin_bp.route("/collaborations", methods=["GET", "POST"])
+@login_required
+def collaborations():
+    if request.method == "POST":
+        validate_csrf()
+        inquiry_id = request.form.get("inquiry_id", "")
+        status = request.form.get("status", "")
+        if inquiry_id.isdigit() and set_inquiry_status(int(inquiry_id), status):
+            admin = current_admin()
+            log_action(admin["id"], "update", "collaboration", inquiry_id, f"Collaboration marked {status}")
+            flash("İş birliği talebi güncellendi.", "success")
+        return redirect(url_for("admin.collaborations"))
+    return render_template("admin/collaborations.html", inquiries=list_inquiries(), active_admin="collaborations")

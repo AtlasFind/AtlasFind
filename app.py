@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context, session
+from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context, session, flash
 from pathlib import Path
 from functools import lru_cache
 import os
@@ -17,6 +17,7 @@ from services.image_service import enrich_tool_branding
 from services.rating_service import enrich_tool_rating
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from repositories.admin import record_visit
+from repositories.collaborations import create_inquiry, recent_inquiry_count
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -1702,9 +1703,36 @@ def privacy(locale=None):
 def about(locale=None):
     return _public_page("about", locale)
 
-@app.route("/collaborate", strict_slashes=False)
-@app.route("/<locale>/collaborate", strict_slashes=False)
+@app.route("/collaborate", methods=["GET", "POST"], strict_slashes=False)
+@app.route("/<locale>/collaborate", methods=["GET", "POST"], strict_slashes=False)
 def collaborate(locale=None):
+    if request.method == "POST":
+        if locale is None:
+            return _locale_redirect(locale)
+        expected = str(session.get("collaboration_csrf") or "")
+        supplied = str(request.form.get("csrf_token") or "")
+        if not expected or not secrets.compare_digest(expected, supplied):
+            abort(400)
+        if request.form.get("company_website", "").strip():
+            return redirect(url_for("collaborate", locale=get_locale(), submitted=1))
+        ip_address = client_ip()
+        if recent_inquiry_count(ip_address) >= 5:
+            abort(429)
+        name = request.form.get("name", "").strip()[:120]
+        email = request.form.get("email", "").strip().lower()[:180]
+        channel_url = request.form.get("channel_url", "").strip()[:500]
+        inquiry_type = request.form.get("inquiry_type", "feedback").strip()
+        message = request.form.get("message", "").strip()[:3000]
+        valid_types = {"creator", "promotion", "feedback", "brand", "other"}
+        if not name or "@" not in email or len(message) < 20 or inquiry_type not in valid_types:
+            flash(translate("collab.form_error"), "error")
+            return _public_page("collaborate", locale, form_values=request.form), 400
+        if channel_url and not channel_url.startswith(("https://", "http://")):
+            flash(translate("collab.url_error"), "error")
+            return _public_page("collaborate", locale, form_values=request.form), 400
+        create_inquiry(name, email, channel_url, inquiry_type, message, get_locale(), ip_address)
+        session["collaboration_csrf"] = secrets.token_urlsafe(32)
+        return redirect(url_for("collaborate", locale=get_locale(), submitted=1))
     return _public_page("collaborate", locale)
 
 @app.route("/terms", strict_slashes=False)
@@ -1722,16 +1750,21 @@ def cookies(locale=None):
 def contact(locale=None):
     return _public_page("contact", locale)
 
-def _public_page(page_key, locale=None):
+def _public_page(page_key, locale=None, form_values=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
     content = PUBLIC_PAGES[page_key][get_locale()]
     path = f"/{get_locale()}/{page_key}"
+    collaboration_csrf = session.get("collaboration_csrf")
+    if page_key == "collaborate" and not collaboration_csrf:
+        collaboration_csrf = secrets.token_urlsafe(32)
+        session["collaboration_csrf"] = collaboration_csrf
     return render_template(
         "public_page.html", content=content, page_key=page_key, active_page=page_key,
         seo=page_seo(content["title"], content["description"], path),
         breadcrumbs=build_breadcrumbs([(translate("common.home"), url_for("home")), (content["title"], None)]),
-        schemas=[], tool_total=len(load_tools()),
+        schemas=[], tool_total=len(load_tools()), collaboration_csrf=collaboration_csrf,
+        form_values=form_values or {}, collaboration_submitted=request.args.get("submitted") == "1",
     )
 
 @app.route("/tool/<slug>")
