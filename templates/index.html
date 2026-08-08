@@ -124,6 +124,13 @@
                     <a href="{{ url_for('home', system_level='light') }}">{{ t("filter.lightweight") }}</a>
                 </div>
 
+                <div class="hero-proof" aria-label="{{ t('home.proof.label') }}">
+                    <span><strong>{{ total_tool_count }}+</strong> {{ t("home.proof.tools") }}</span>
+                    <span><strong>{{ category_count }}</strong> {{ t("home.proof.categories") }}</span>
+                    <span><strong>TR / EN</strong> {{ t("home.proof.languages") }}</span>
+                    <span class="hero-proof-verified"><i aria-hidden="true"></i>{{ t("home.proof.verified") }}</span>
+                </div>
+
             </div>
 
 
@@ -164,6 +171,44 @@
             </div>
 
         </section>
+
+        {% if not search_query and not active_filters %}
+        <section class="section home-showcase" aria-labelledby="home-showcase-title">
+            <div class="section-container">
+                <div class="section-heading home-showcase-heading">
+                    <div>
+                        <span class="section-label">{{ t("home.showcase.eyebrow") }}</span>
+                        <h2 id="home-showcase-title">{{ t("home.showcase.title") }}</h2>
+                        <p>{{ t("home.showcase.description") }}</p>
+                    </div>
+                    <a href="{{ url_for('tools_directory') }}" class="view-all">{{ t("actions.view_all_tools") }} <span>→</span></a>
+                </div>
+                <div class="home-showcase-grid">
+                    {% for title_key, hint_key, items in [
+                        ('home.showcase.popular', 'home.showcase.popular_hint', popular_tools),
+                        ('home.showcase.newest', 'home.showcase.newest_hint', newest_tools),
+                        ('home.showcase.verified', 'home.showcase.verified_hint', spotlight_tools)
+                    ] %}
+                    <article class="showcase-column">
+                        <header><div><h3>{{ t(title_key) }}</h3><p>{{ t(hint_key) }}</p></div><span>0{{ loop.index }}</span></header>
+                        <div class="showcase-list">
+                            {% for tool in items[:3] %}
+                            <a class="showcase-tool" href="{{ url_for('tool_detail', slug=tool.slug) }}">
+                                <span class="showcase-icon tool-icon-shell">
+                                    <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="" width="42" height="42" data-atlas-icon>
+                                    <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
+                                </span>
+                                <span class="showcase-copy"><strong>{{ tool.name }}</strong><small>{{ tool.category }}</small></span>
+                                <span aria-hidden="true">→</span>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
 
         <section class="section discovery-hub" id="discovery-hub">
             <div class="section-container">
@@ -269,7 +314,7 @@
             {% if did_correct %}
             <div class="search-correction" role="status">
                 {{ t("home.results.showing") }} <a href="/?q={{ corrected_query|urlencode }}">{{ corrected_query }}</a>.
-                <span>Your original search was “{{ search_query }}”.</span>
+                <span>{{ t("home.results.original", query=search_query) }}</span>
             </div>
             {% endif %}
 
@@ -278,8 +323,8 @@
                     {{ t("filter.title") }} <span>⚙</span>
                 </button>
                 <div class="result-count" aria-live="polite">
-                    <strong>{{ result_count }}</strong> of {{ total_tool_count }} tools
-                    {% if search_query %} for “{{ search_query }}”{% endif %}
+                    {{ t("home.results.count", count=result_count, total=total_tool_count) }}
+                    {% if search_query %} {{ t("home.results.query", query=search_query) }}{% endif %}
                 </div>
             </div>
 
@@ -287,7 +332,7 @@
                 {% if search_query %}<input type="hidden" name="q" value="{{ search_query }}">{% endif %}
                 <fieldset>
                     <legend>{{ t("filter.pricing") }}</legend>
-                    {% for value, label in [('free','Free'),('freemium','Freemium'),('paid','Paid')] %}
+                    {% for value, label in [('free',t('catalog.price_free')),('freemium',t('catalog.price_freemium')),('paid',t('catalog.price_paid'))] %}
                     <label><input type="checkbox" name="pricing" value="{{ value }}" {% if value in filters.pricing %}checked{% endif %}> {{ label }}</label>
                     {% endfor %}
                 </fieldset>
@@ -312,7 +357,7 @@
                             {% for value in [2,4,8,16] %}<option value="{{ value }}" {% if filters.max_ram == value %}selected{% endif %}>{{ value }} GB</option>{% endfor %}
                         </select>
                     </label>
-                    {% for value, label in [('light','Light'),('medium','Medium'),('heavy','Heavy')] %}
+                    {% for value, label in [('light',t('filter.system_light')),('medium',t('filter.system_medium')),('heavy',t('filter.system_heavy'))] %}
                     <label><input type="checkbox" name="system_level" value="{{ value }}" {% if value in filters.system_levels %}checked{% endif %}> {{ label }}</label>
                     {% endfor %}
                 </fieldset>
@@ -426,7 +471,7 @@
                             <div class="tool-tags">
 
                                 <span class="tag featured-tag">
-                                    {{ tool.pricing }}
+                                    {{ t('catalog.price_' ~ tool.pricing|lower) }}
                                 </span>
 
                                 {% if tool.open_source %}
@@ -659,7 +704,7 @@
                 </a>
 
 
-                <a href="/categories/design" class="category-card category-design">
+                <a href="{{ localized_path('/categories/design-and-graphics') }}" class="category-card category-design">
 
                     <div class="category-content">
                         <span>02</span>
@@ -693,7 +738,7 @@
                 </a>
 
 
-                <a href="/categories/video" class="category-card category-video">
+                <a href="{{ localized_path('/categories/video-and-animation') }}" class="category-card category-video">
 
                     <div class="category-content">
                         <span>04</span>
