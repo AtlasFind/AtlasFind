@@ -51,7 +51,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.4.0", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.5.0", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -82,6 +82,18 @@ class UserAuthTests(unittest.TestCase):
         login_page = self.client.get("/tr/login").get_data(as_text=True)
         good = self.client.post("/tr/login", data={"csrf_token": self.token(login_page), "identity": TEST_USERNAME, "password": TEST_PASSWORD}, follow_redirects=True)
         self.assertIn(TEST_USERNAME, good.get_data(as_text=True))
+
+    def test_login_returns_user_to_safe_requested_page(self):
+        _, verification_url = self.register()
+        profile = self.verify(verification_url).get_data(as_text=True)
+        self.client.post("/tr/logout", data={"csrf_token": self.token(profile)})
+        login_page = self.client.get("/tr/login?next=/tr/tools/chatgpt").get_data(as_text=True)
+        response = self.client.post("/tr/login", data={
+            "csrf_token": self.token(login_page), "next": "/tr/tools/chatgpt",
+            "identity": TEST_EMAIL, "password": TEST_PASSWORD,
+        })
+        self.assertEqual(response.status_code, 302)
+        self.assertTrue(response.headers["Location"].endswith("/tr/tools/chatgpt"))
 
     def test_invalid_verification_link_and_csrf_are_rejected(self):
         self.register()

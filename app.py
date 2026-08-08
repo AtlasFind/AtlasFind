@@ -66,7 +66,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.4.0"
+APP_VERSION = "1.5.0"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
@@ -1602,7 +1602,8 @@ def compare_tools(locale=None):
         selected_tools.append(tool)
 
     category_mismatch_removed = False
-    comparison_category_slug = None
+    requested_category_slug = request.args.get("category", "").strip()
+    comparison_category_slug = requested_category_slug if requested_category_slug in CATEGORIES else None
     if selected_tools:
         comparison_category_slug = category_slug(selected_tools[0].get("category", ""))
         category_scoped_tools = [selected_tools[0]]
@@ -1614,8 +1615,12 @@ def compare_tools(locale=None):
         selected_tools = category_scoped_tools
 
     current_locale = get_locale()
-    all_comparison_tools = sorted(load_tools(current_locale), key=lambda tool: str(tool.get("name", "")).casefold())
+    all_comparison_tools = sorted(
+        [tool for tool in load_tools(current_locale) if comparison_category_slug and category_slug(tool.get("category", "")) == comparison_category_slug],
+        key=lambda tool: str(tool.get("name", "")).casefold(),
+    )
     comparison_category = localized_category(comparison_category_slug, current_locale) if comparison_category_slug in CATEGORIES else None
+    category_options = sorted((localized_category(slug, current_locale) for slug in CATEGORIES), key=lambda item: item["name"].casefold())
 
     hide_common = request.args.get("hide_common") == "1"
     rows = build_comparison_rows(selected_tools) if len(selected_tools) >= 2 else []
@@ -1643,6 +1648,7 @@ def compare_tools(locale=None):
         all_tools=all_comparison_tools,
         comparison_category_slug=comparison_category_slug,
         comparison_category=comparison_category,
+        category_options=category_options,
         category_mismatch_removed=category_mismatch_removed,
         preferences=preferences,
         purpose_options=RECOMMENDATION_PURPOSES,
@@ -1749,8 +1755,11 @@ def sitemap_xml():
 def user_login(locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
+    next_url = request.form.get("next", "") if request.method == "POST" else request.args.get("next", "")
+    if not next_url.startswith("/") or next_url.startswith("//"):
+        next_url = ""
     if session.get("user_id") and get_user_by_id(session["user_id"]):
-        return redirect(url_for("user_profile"))
+        return redirect(next_url or url_for("user_profile"))
     if request.method == "POST":
         validate_user_csrf()
         enforce_user_auth_rate_limit("login")
@@ -1773,9 +1782,9 @@ def user_login(locale=None):
             session["user_id"] = user_id
             session["user_csrf_token"] = secrets.token_urlsafe(32)
             session.permanent = True
-            return redirect(url_for("user_profile"))
+            return redirect(next_url or url_for("user_profile"))
         flash(translate("auth.invalid_login"), "error")
-    return render_template("auth/login.html", user_csrf=user_csrf_token(), active_page="login", seo=page_seo(translate("auth.login"), translate("auth.login_description"), f"/{get_locale()}/login", robots="noindex,follow"), breadcrumbs=[])
+    return render_template("auth/login.html", user_csrf=user_csrf_token(), next_url=next_url, active_page="login", seo=page_seo(translate("auth.login"), translate("auth.login_description"), f"/{get_locale()}/login", robots="noindex,follow"), breadcrumbs=[])
 
 
 @app.route("/register", methods=["GET", "POST"], strict_slashes=False)
