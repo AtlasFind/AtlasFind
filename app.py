@@ -55,6 +55,7 @@ if password_reset_status != "disabled":
 app.register_blueprint(admin_bp)
 
 APP_VERSION = "1.0.8"
+ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 
@@ -1034,13 +1035,13 @@ def response_headers(response):
     """Apply caching policy and production security headers."""
     if request.path.startswith("/static/"):
         response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
-    elif request.path in {"/robots.txt", "/sitemap.xml"}:
+    elif request.path in {"/robots.txt", "/sitemap.xml", "/ads.txt"}:
         response.headers["Cache-Control"] = "public, max-age=3600"
     elif request.method == "GET" and response.status_code == 200 and not request.path.startswith("/admin"):
         response.headers.setdefault("Cache-Control", "public, max-age=60, stale-while-revalidate=300")
     if (request.method == "GET" and response.status_code == 200 and request.endpoint
             and not request.path.startswith(("/admin", "/static/", "/api/"))
-            and request.path not in {"/robots.txt", "/sitemap.xml", "/favicon.ico"}
+            and request.path not in {"/robots.txt", "/sitemap.xml", "/ads.txt", "/favicon.ico"}
             and "bot" not in request.headers.get("User-Agent", "").lower()):
         visitor_id = session.get("visitor_id")
         if not visitor_id:
@@ -1057,6 +1058,7 @@ def response_headers(response):
 def inject_app_metadata():
     return {
         "app_version": APP_VERSION,
+        "adsense_publisher_id": ADSENSE_PUBLISHER_ID,
         "site_url": SITE_URL,
         "contact_email": CONTACT_EMAIL,
         "json_ld": json_ld,
@@ -1651,6 +1653,15 @@ def robots_txt():
         "",
     ])
     return Response(body, mimetype="text/plain")
+
+
+@app.route("/ads.txt")
+def ads_txt():
+    publisher_number = ADSENSE_PUBLISHER_ID.removeprefix("ca-")
+    return Response(
+        f"google.com, {publisher_number}, DIRECT, f08c47fec0942fa0\n",
+        mimetype="text/plain",
+    )
 
 
 @app.route("/sitemap.xml")
