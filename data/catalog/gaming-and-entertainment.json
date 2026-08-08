@@ -6703,5 +6703,1093 @@
       "version": 1,
       "tool_slug": "bottles"
     }
+  },
+  {
+    "id": 751,
+    "slug": "mindustry",
+    "name": "Mindustry",
+    "description": "Factorio-like tower defense game. Build production chains to gather more resources, and build complex facilities.",
+    "purpose": "Factorio-like tower defense game. Build production chains to gather more resources, and build complex facilities.",
+    "features": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://mindustrygame.github.io/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 28,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/mindustry/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Mindustry official logo",
+    "icon_fallback_url": "/static/icons/generated/mindustry.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "mindustrygame.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "ddfecd42ffb43baad9c7932a0ca6082adfa3e38e8777ea6643bd9d70f7e24814",
+      "source_url": "https://mindustrygame.github.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mindustry official website",
+        "url": "https://mindustrygame.github.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "mindustrygame.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Mindustry official source code",
+        "url": "https://github.com/Anuken/Mindustry",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 28528,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "source_record": "mindustry.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mindustry/logo.webp",
+        "source_url": "https://mindustrygame.github.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1814,
+        "checksum": "ddfecd42ffb43baad9c7932a0ca6082adfa3e38e8777ea6643bd9d70f7e24814",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://mindustrygame.github.io/icon.b09ad385.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MI"
+      },
+      "version": 1,
+      "tool_slug": "mindustry"
+    }
+  },
+  {
+    "id": 778,
+    "slug": "lila",
+    "name": "Lila",
+    "description": "Ad-less chess server powering lichess.org, with official iOS and Android client apps.",
+    "purpose": "Ad-less chess server powering lichess.org, with official iOS and Android client apps.",
+    "features": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://lichess.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/lila/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Lila official logo",
+    "icon_fallback_url": "/static/icons/generated/lila.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "lichess.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "6e7b18085d3c15f024a29c7a1e5a841fb75808b1d08c641798fd4d99674e2d1d",
+      "source_url": "https://lichess.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lila official website",
+        "url": "https://lichess.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "lichess.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Lila official source code",
+        "url": "https://github.com/lichess-org/lila",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 18554,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "source_record": "lila.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lila/logo.webp",
+        "source_url": "https://lichess.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1024,
+        "height": 1024,
+        "aspect_ratio": "1024:1024",
+        "file_size_bytes": 22168,
+        "checksum": "6e7b18085d3c15f024a29c7a1e5a841fb75808b1d08c641798fd4d99674e2d1d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://lichess1.org/assets/logo/lichess-favicon-1024.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LI"
+      },
+      "version": 1,
+      "tool_slug": "lila"
+    }
+  },
+  {
+    "id": 806,
+    "slug": "luanti",
+    "name": "Luanti",
+    "description": "Voxel game engine (formerly Minetest). Play one of our many games, mod a game to your liking, make your own game, or play on a multiplayer server.",
+    "purpose": "Voxel game engine (formerly Minetest). Play one of our many games, mod a game to your liking, make your own game, or play on a multiplayer server.",
+    "features": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.luanti.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: LGPL-2.1, MIT, Zlib. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/luanti/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Luanti official logo",
+    "icon_fallback_url": "/static/icons/generated/luanti.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "luanti.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "ca52b3050a1a209bff5ab2b87762670dcdf39b170ae6f252edb86bd6a800b621",
+      "source_url": "https://www.luanti.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Luanti official website",
+        "url": "https://www.luanti.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "luanti.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Luanti official source code",
+        "url": "https://github.com/luanti-org/luanti",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 13419,
+      "licenses": [
+        "LGPL-2.1",
+        "MIT",
+        "Zlib"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "source_record": "luanti.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/luanti/logo.webp",
+        "source_url": "https://www.luanti.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 5792,
+        "checksum": "ca52b3050a1a209bff5ab2b87762670dcdf39b170ae6f252edb86bd6a800b621",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.luanti.org/media/favicon/144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LU"
+      },
+      "version": 1,
+      "tool_slug": "luanti"
+    }
+  },
+  {
+    "id": 811,
+    "slug": "romm",
+    "name": "RomM",
+    "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
+    "purpose": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
+    "features": [
+      "Games and Entertainment",
+      "Games - Administrative Utilities & Control Panels"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games - Administrative Utilities & Control Panels"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://romm.app/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/romm/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "RomM official logo",
+    "icon_fallback_url": "/static/icons/generated/romm.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "romm.app",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "bddba3aca61c4f654732a83f686e311af040a180f496f3ef72266a764bd0e8c3",
+      "source_url": "https://romm.app/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "RomM official website",
+        "url": "https://romm.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "romm.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "RomM official source code",
+        "url": "https://github.com/rommapp/romm",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 11965,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Games - Administrative Utilities & Control Panels"
+      ],
+      "source_record": "romm.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/romm/logo.webp",
+        "source_url": "https://romm.app/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2818,
+        "checksum": "bddba3aca61c4f654732a83f686e311af040a180f496f3ef72266a764bd0e8c3",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://romm.app/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RO"
+      },
+      "version": 1,
+      "tool_slug": "romm"
+    }
+  },
+  {
+    "id": 832,
+    "slug": "pterodactyl",
+    "name": "Pterodactyl",
+    "description": "Management panel for game servers, with an intuitive UI for end users.",
+    "purpose": "Management panel for game servers, with an intuitive UI for end users.",
+    "features": [
+      "Games and Entertainment",
+      "Games - Administrative Utilities & Control Panels"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games - Administrative Utilities & Control Panels"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://pterodactyl.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/pterodactyl/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Pterodactyl official logo",
+    "icon_fallback_url": "/static/icons/generated/pterodactyl.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "pterodactyl.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "1ad1165a7b9a60c059b4ca86c5a753e8cc86dc90c54aecb2ab8f6775097666a7",
+      "source_url": "https://pterodactyl.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Pterodactyl official website",
+        "url": "https://pterodactyl.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "pterodactyl.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Pterodactyl official source code",
+        "url": "https://github.com/pterodactyl/panel",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9114,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Games - Administrative Utilities & Control Panels"
+      ],
+      "source_record": "pterodactyl.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pterodactyl/logo.webp",
+        "source_url": "https://pterodactyl.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 7118,
+        "checksum": "1ad1165a7b9a60c059b4ca86c5a753e8cc86dc90c54aecb2ab8f6775097666a7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://pterodactyl.io/favicons/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PT"
+      },
+      "version": 1,
+      "tool_slug": "pterodactyl"
+    }
+  },
+  {
+    "id": 837,
+    "slug": "openttd",
+    "name": "OpenTTD",
+    "description": "Transport tycoon simulation game.",
+    "purpose": "Transport tycoon simulation game.",
+    "features": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "category": "Gaming and Entertainment",
+    "tags": [
+      "Games and Entertainment",
+      "Games"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.openttd.org/",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on games and entertainment workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for games and entertainment software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Games and Entertainment",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/openttd/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "OpenTTD official logo",
+    "icon_fallback_url": "/static/icons/generated/openttd.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "O",
+      "domain": "openttd.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "d000a8923d9b4e2c8170ad6b263e262856ac4f03daa308e68575f5a4e1a4856f",
+      "source_url": "https://www.openttd.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "OpenTTD official website",
+        "url": "https://www.openttd.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "openttd.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "OpenTTD official source code",
+        "url": "https://github.com/OpenTTD/OpenTTD",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8149,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "source_record": "openttd.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/openttd/logo.webp",
+        "source_url": "https://www.openttd.org/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 926,
+        "checksum": "d000a8923d9b4e2c8170ad6b263e262856ac4f03daa308e68575f5a4e1a4856f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.openttd.org/static/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OP"
+      },
+      "version": 1,
+      "tool_slug": "openttd"
+    }
   }
 ]

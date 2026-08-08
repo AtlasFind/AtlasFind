@@ -9237,5 +9237,545 @@
       "version": 1,
       "tool_slug": "riverside"
     }
+  },
+  {
+    "id": 748,
+    "slug": "srs",
+    "name": "SRS",
+    "description": "A simple, high efficiency and real-time video server, supports RTMP, WebRTC, HLS, HTTP-FLV and SRT.",
+    "purpose": "A simple, high efficiency and real-time video server, supports RTMP, WebRTC, HLS, HTTP-FLV and SRT.",
+    "features": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "category": "Video and Animation",
+    "tags": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ossrs.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on video tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for video tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Video Tools",
+    "popularity_score": 29,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/srs/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "SRS official logo",
+    "icon_fallback_url": "/static/icons/generated/srs.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "ossrs.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "272bc741bfe549b2663f32019ce7ec4ecf19e953f529da3e9aefc3d424666edb",
+      "source_url": "https://ossrs.io/lts/en-us/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "SRS official website",
+        "url": "https://ossrs.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "ossrs.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "SRS official source code",
+        "url": "https://github.com/ossrs/srs",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 29105,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "source_record": "srs.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/srs/logo.webp",
+        "source_url": "https://ossrs.io/lts/en-us/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1248,
+        "checksum": "272bc741bfe549b2663f32019ce7ec4ecf19e953f529da3e9aefc3d424666edb",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://ossrs.io/lts/en-us/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SR"
+      },
+      "version": 1,
+      "tool_slug": "srs"
+    }
+  },
+  {
+    "id": 792,
+    "slug": "peertube",
+    "name": "PeerTube",
+    "description": "Decentralized video streaming platform using P2P (BitTorrent) directly in the web browser.",
+    "purpose": "Decentralized video streaming platform using P2P (BitTorrent) directly in the web browser.",
+    "features": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "category": "Video and Animation",
+    "tags": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://joinpeertube.org/en/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on video tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for video tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Video Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/peertube/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "PeerTube official logo",
+    "icon_fallback_url": "/static/icons/generated/peertube.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "joinpeertube.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "bbe2f5443b8ac6075943c465eb65fb1e60d0bb74522543c8047e7eb6580ad866",
+      "source_url": "https://joinpeertube.org/en/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "PeerTube official website",
+        "url": "https://joinpeertube.org/en/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "joinpeertube.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "PeerTube official source code",
+        "url": "https://github.com/Chocobozzz/PeerTube",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15236,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "source_record": "peertube.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/peertube/logo.webp",
+        "source_url": "https://joinpeertube.org/en/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 2586,
+        "checksum": "bbe2f5443b8ac6075943c465eb65fb1e60d0bb74522543c8047e7eb6580ad866",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://joinpeertube.org/img/icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PE"
+      },
+      "version": 1,
+      "tool_slug": "peertube"
+    }
+  },
+  {
+    "id": 813,
+    "slug": "owncast",
+    "name": "Owncast",
+    "description": "Decentralized single-user live video streaming and chat server for running your own live streams similar in style to the large mainstream options.",
+    "purpose": "Decentralized single-user live video streaming and chat server for running your own live streams similar in style to the large mainstream options.",
+    "features": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "category": "Video and Animation",
+    "tags": [
+      "Video Tools",
+      "Media Streaming - Video Streaming"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://owncast.online/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on video tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for video tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Video Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/owncast/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Owncast official logo",
+    "icon_fallback_url": "/static/icons/generated/owncast.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "O",
+      "domain": "owncast.online",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c688b9aaead262628e0b2f1c0dce35ef6c9d0f248724f9fdc29d5464e8e74cb6",
+      "source_url": "https://owncast.online/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Owncast official website",
+        "url": "https://owncast.online/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "owncast.online",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Owncast official source code",
+        "url": "https://github.com/owncast/owncast",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 11445,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "source_record": "owncast.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/owncast/logo.webp",
+        "source_url": "https://owncast.online/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 1000,
+        "height": 1000,
+        "aspect_ratio": "1000:1000",
+        "file_size_bytes": 39324,
+        "checksum": "c688b9aaead262628e0b2f1c0dce35ef6c9d0f248724f9fdc29d5464e8e74cb6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://owncast.online/images/owncast-logo-1000x1000.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OW"
+      },
+      "version": 1,
+      "tool_slug": "owncast"
+    }
   }
 ]

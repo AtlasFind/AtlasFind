@@ -11,11 +11,17 @@ sys.path.insert(0, str(ROOT))
 
 from database import transaction
 
-RECORDS = ROOT / "data/research/catalog-expansion-records.json"
+RECORDS = [
+    ROOT / "data/research/catalog-expansion-records.json",
+    ROOT / "data/research/manual-expansion-850-records.json",
+]
 
 
 def main() -> None:
-    tools = json.loads(RECORDS.read_text(encoding="utf-8"))
+    tools = []
+    for path in RECORDS:
+        if path.exists():
+            tools.extend(json.loads(path.read_text(encoding="utf-8")))
     with transaction() as connection:
         for tool in tools:
             pricing = {"free": "Ücretsiz", "freemium": "Ücretsiz + Ücretli", "paid": "Ücretli"}[tool["pricing_type"]]

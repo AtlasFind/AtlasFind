@@ -10182,5 +10182,1805 @@
       "version": 1,
       "tool_slug": "age"
     }
+  },
+  {
+    "id": 712,
+    "slug": "pi-hole",
+    "name": "Pi-hole",
+    "description": "Blackhole for Internet advertisements with a GUI for management and monitoring.",
+    "purpose": "Blackhole for Internet advertisements with a GUI for management and monitoring.",
+    "features": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://pi-hole.net/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: EUPL-1.2. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 60,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/pi-hole/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Pi-hole official logo",
+    "icon_fallback_url": "/static/icons/generated/pi-hole.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PH",
+      "domain": "pi-hole.net",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "a3d66325791b3e2d9dcd35e349b893809aa25408cfc681cad43750c0ba281fd0",
+      "source_url": "https://pi-hole.net/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Pi-hole official website",
+        "url": "https://pi-hole.net/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "pi-hole.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Pi-hole official source code",
+        "url": "https://github.com/pi-hole/pi-hole",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 60239,
+      "licenses": [
+        "EUPL-1.2"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "source_record": "pi-hole.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/pi-hole/logo.webp",
+        "source_url": "https://pi-hole.net/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 7614,
+        "checksum": "a3d66325791b3e2d9dcd35e349b893809aa25408cfc681cad43750c0ba281fd0",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/cropped-Vortex-R-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PH"
+      },
+      "version": 1,
+      "tool_slug": "pi-hole"
+    }
+  },
+  {
+    "id": 733,
+    "slug": "adguard-home",
+    "name": "AdGuard Home",
+    "description": "User-friendly ads & trackers blocking DNS server.",
+    "purpose": "User-friendly ads & trackers blocking DNS server.",
+    "features": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://adguard.com/en/adguard-home/overview.html",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 35,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/adguard-home/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "AdGuard Home official logo",
+    "icon_fallback_url": "/static/icons/generated/adguard-home.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "AH",
+      "domain": "adguard.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "cb73063359455e9cc86997f32d9754f45f897ebe2d4b363400a294d063841c9c",
+      "source_url": "https://adguard.com/en/adguard-home/overview.html"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "AdGuard Home official website",
+        "url": "https://adguard.com/en/adguard-home/overview.html",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "adguard.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "AdGuard Home official source code",
+        "url": "https://github.com/AdguardTeam/AdGuardHome",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 35973,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "source_record": "adguard-home.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/adguard-home/logo.webp",
+        "source_url": "https://adguard.com/en/adguard-home/overview.html",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4216,
+        "checksum": "cb73063359455e9cc86997f32d9754f45f897ebe2d4b363400a294d063841c9c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://st2.adguardcdn.com/favicons/adguard/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AH"
+      },
+      "version": 1,
+      "tool_slug": "adguard-home"
+    }
+  },
+  {
+    "id": 812,
+    "slug": "myip",
+    "name": "MyIP",
+    "description": "All in one IP Toolbox. Easy to check what's your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability and more.",
+    "purpose": "All in one IP Toolbox. Easy to check what's your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability and more.",
+    "features": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ipcheck.ing",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/myip/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "MyIP official logo",
+    "icon_fallback_url": "/static/icons/generated/myip.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "ipcheck.ing",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "985daf3a3a3de5aa86c3e2653f6b1ab29090df07b46d3a70943a6de8ba7c77aa",
+      "source_url": "https://ipcheck.ing"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "MyIP official website",
+        "url": "https://ipcheck.ing",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "ipcheck.ing",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "MyIP official source code",
+        "url": "https://github.com/jason5ng32/MyIP",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 11498,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "source_record": "myip.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/myip/logo.webp",
+        "source_url": "https://ipcheck.ing",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 4818,
+        "checksum": "985daf3a3a3de5aa86c3e2653f6b1ab29090df07b46d3a70943a6de8ba7c77aa",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://ipcheck.ing/logos/ios-logo-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MY"
+      },
+      "version": 1,
+      "tool_slug": "myip"
+    }
+  },
+  {
+    "id": 819,
+    "slug": "imgproxy",
+    "name": "imgproxy",
+    "description": "Fast and secure standalone server for resizing and converting remote images.",
+    "purpose": "Fast and secure standalone server for resizing and converting remote images.",
+    "features": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://imgproxy.net/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/imgproxy/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "imgproxy official logo",
+    "icon_fallback_url": "/static/icons/generated/imgproxy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "I",
+      "domain": "imgproxy.net",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "7e840d384e1ac626cb2910e548f5e86fbd1bcb1841ae60cbdc6cd07728dda568",
+      "source_url": "https://imgproxy.net/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "imgproxy official website",
+        "url": "https://imgproxy.net/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "imgproxy.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "imgproxy official source code",
+        "url": "https://github.com/imgproxy/imgproxy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10997,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "source_record": "imgproxy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/imgproxy/logo.webp",
+        "source_url": "https://imgproxy.net/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2040,
+        "checksum": "7e840d384e1ac626cb2910e548f5e86fbd1bcb1841ae60cbdc6cd07728dda568",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://imgproxy.net/icon-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IM"
+      },
+      "version": 1,
+      "tool_slug": "imgproxy"
+    }
+  },
+  {
+    "id": 830,
+    "slug": "technitium-dns-server",
+    "name": "Technitium DNS Server",
+    "description": "Authoritative/recursive DNS server with ad blocking functionality.",
+    "purpose": "Authoritative/recursive DNS server with ad blocking functionality.",
+    "features": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://technitium.com/dns/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/technitium-dns-server/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Technitium DNS Server official logo",
+    "icon_fallback_url": "/static/icons/generated/technitium-dns-server.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "TD",
+      "domain": "technitium.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f10911ba60bc86113119d581464f3823e19fb74d0c0601c9080965338aa2c96c",
+      "source_url": "https://technitium.com/dns/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Technitium DNS Server official website",
+        "url": "https://technitium.com/dns/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "technitium.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Technitium DNS Server official source code",
+        "url": "https://github.com/TechnitiumSoftware/DnsServer",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9449,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "source_record": "technitium-dns-server.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/technitium-dns-server/logo.webp",
+        "source_url": "https://technitium.com/dns/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 820,
+        "checksum": "f10911ba60bc86113119d581464f3823e19fb74d0c0601c9080965338aa2c96c",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://technitium.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TD"
+      },
+      "version": 1,
+      "tool_slug": "technitium-dns-server"
+    }
+  },
+  {
+    "id": 838,
+    "slug": "iodine",
+    "name": "iodine",
+    "description": "IPv4 over DNS tunnel solution, enabling you to start up a socks5 proxy listener.",
+    "purpose": "IPv4 over DNS tunnel solution, enabling you to start up a socks5 proxy listener.",
+    "features": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://code.kryo.se/iodine/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: ISC. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/iodine/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "iodine official logo",
+    "icon_fallback_url": "/static/icons/generated/iodine.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "I",
+      "domain": "code.kryo.se",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "04c57b89d10cdb6a668bb3f3ff9f69adf498ae203a739b04a8ceac18bd3aaed5",
+      "source_url": "https://code.kryo.se/iodine/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "iodine official website",
+        "url": "https://code.kryo.se/iodine/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "code.kryo.se",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "iodine official source code",
+        "url": "https://github.com/yarrick/iodine",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7943,
+      "licenses": [
+        "ISC"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "source_record": "iodine.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/iodine/logo.webp",
+        "source_url": "https://code.kryo.se/iodine/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 304,
+        "checksum": "04c57b89d10cdb6a668bb3f3ff9f69adf498ae203a739b04a8ceac18bd3aaed5",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://code.kryo.se/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IO"
+      },
+      "version": 1,
+      "tool_slug": "iodine"
+    }
+  },
+  {
+    "id": 843,
+    "slug": "netalertx",
+    "name": "NetAlertX",
+    "description": "Network intruder and presence detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+    "purpose": "Network intruder and presence detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+    "features": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://netalertx.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/netalertx/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "NetAlertX official logo",
+    "icon_fallback_url": "/static/icons/generated/netalertx.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "netalertx.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "82a9c409a6d8d277fe15178b31517c6ffd38ec71e18ee9e27947881542d5ff3d",
+      "source_url": "https://netalertx.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "NetAlertX official website",
+        "url": "https://netalertx.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "netalertx.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "NetAlertX official source code",
+        "url": "https://github.com/netalertx/NetAlertX",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6885,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "source_record": "netalertx.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/netalertx/logo.webp",
+        "source_url": "https://netalertx.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 9822,
+        "checksum": "82a9c409a6d8d277fe15178b31517c6ffd38ec71e18ee9e27947881542d5ff3d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://netalertx.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NE"
+      },
+      "version": 1,
+      "tool_slug": "netalertx"
+    }
+  },
+  {
+    "id": 844,
+    "slug": "blocky",
+    "name": "blocky",
+    "description": "Fast and lightweight DNS proxy as ad-blocker for local network with many features (alternative to Pi-hole).",
+    "purpose": "Fast and lightweight DNS proxy as ad-blocker for local network with many features (alternative to Pi-hole).",
+    "features": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "DNS"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://0xerr0r.github.io/blocky/latest/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/blocky/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "blocky official logo",
+    "icon_fallback_url": "/static/icons/generated/blocky.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "0xerr0r.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f2000e58e74207a92fce9de4299c21e95ad52d597815867010e8fe135b70227e",
+      "source_url": "https://0xerr0r.github.io/blocky/latest/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "blocky official website",
+        "url": "https://0xerr0r.github.io/blocky/latest/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "0xerr0r.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "blocky official source code",
+        "url": "https://github.com/0xERR0R/blocky",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6843,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "source_record": "blocky.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/blocky/logo.webp",
+        "source_url": "https://0xerr0r.github.io/blocky/latest/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 988,
+        "checksum": "f2000e58e74207a92fce9de4299c21e95ad52d597815867010e8fe135b70227e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://0xerr0r.github.io/blocky/latest/assets/images/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BL"
+      },
+      "version": 1,
+      "tool_slug": "blocky"
+    }
+  },
+  {
+    "id": 847,
+    "slug": "outline-server",
+    "name": "Outline Server",
+    "description": "A proxy server that runs a Shadowsocks instance for each access key and a REST API to manage the access keys.",
+    "purpose": "A proxy server that runs a Shadowsocks instance for each access key and a REST API to manage the access keys.",
+    "features": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Proxy"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://getoutline.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/outline-server/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Outline Server official logo",
+    "icon_fallback_url": "/static/icons/generated/outline-server.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "OS",
+      "domain": "getoutline.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "59ecd2479723312d67b0e8995717472435617bca35661e1a7cc6fb29f14c40f5",
+      "source_url": "https://getoutline.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Outline Server official website",
+        "url": "https://getoutline.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "getoutline.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Outline Server official source code",
+        "url": "https://github.com/OutlineFoundation/outline-server",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6243,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "source_record": "outline-server.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/outline-server/logo.webp",
+        "source_url": "https://getoutline.org/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 508,
+        "checksum": "59ecd2479723312d67b0e8995717472435617bca35661e1a7cc6fb29f14c40f5",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://getoutline.org/img/outline-favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "OS"
+      },
+      "version": 1,
+      "tool_slug": "outline-server"
+    }
+  },
+  {
+    "id": 849,
+    "slug": "speedtest-tracker",
+    "name": "Speedtest Tracker",
+    "description": "Monitor the performance and uptime of your internet connection.",
+    "purpose": "Monitor the performance and uptime of your internet connection.",
+    "features": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "category": "Cybersecurity",
+    "tags": [
+      "Security and Network Tools",
+      "Network Utilities"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docs.speedtest-tracker.dev/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on security and network tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for security and network tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Security and Network Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/speedtest-tracker/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Speedtest Tracker official logo",
+    "icon_fallback_url": "/static/icons/generated/speedtest-tracker.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "ST",
+      "domain": "docs.speedtest-tracker.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f55d2b750de3c2466a285472ba5abfe0289305e86a60711b24ada7fc8303ceb4",
+      "source_url": "https://docs.speedtest-tracker.dev/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Speedtest Tracker official website",
+        "url": "https://docs.speedtest-tracker.dev/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docs.speedtest-tracker.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Speedtest Tracker official source code",
+        "url": "https://github.com/alexjustesen/speedtest-tracker",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5881,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "source_record": "speedtest-tracker.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/speedtest-tracker/logo.webp",
+        "source_url": "https://docs.speedtest-tracker.dev/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1762,
+        "checksum": "f55d2b750de3c2466a285472ba5abfe0289305e86a60711b24ada7fc8303ceb4",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://docs.speedtest-tracker.dev/~gitbook/icon?size=medium&theme=dark&border=false"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ST"
+      },
+      "version": 1,
+      "tool_slug": "speedtest-tracker"
+    }
   }
 ]

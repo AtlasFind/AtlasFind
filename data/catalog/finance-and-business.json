@@ -7192,5 +7192,2525 @@
       "version": 1,
       "tool_slug": "actual-budget"
     }
+  },
+  {
+    "id": 716,
+    "slug": "twenty",
+    "name": "Twenty",
+    "description": "A modern CRM offering the flexibility of open source, advanced features, and a sleek design.",
+    "purpose": "A modern CRM offering the flexibility of open source, advanced features, and a sleek design.",
+    "features": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://twenty.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 54,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/twenty/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Twenty official logo",
+    "icon_fallback_url": "/static/icons/generated/twenty.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "twenty.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "bfa2643265fad058aafd68685909e5760202b62090c846182101e71437a45f5b",
+      "source_url": "https://twenty.com"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Twenty official website",
+        "url": "https://twenty.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "twenty.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Twenty official source code",
+        "url": "https://github.com/twentyhq/twenty",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 54467,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "source_record": "twenty.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/twenty/logo.webp",
+        "source_url": "https://twenty.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 2758,
+        "checksum": "bfa2643265fad058aafd68685909e5760202b62090c846182101e71437a45f5b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://twenty.com/favicon.ico?favicon.32uhsgd5leeaf.ico?dpl=dpl-a284ef27-30563895726-1"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TW"
+      },
+      "version": 1,
+      "tool_slug": "twenty"
+    }
+  },
+  {
+    "id": 723,
+    "slug": "hyperswitch",
+    "name": "HyperSwitch",
+    "description": "Payment switch to make payments fast, reliable and affordable. Connect with multiple payment processors and route traffic effortlessly, all with a single API integration.",
+    "purpose": "Payment switch to make payments fast, reliable and affordable. Connect with multiple payment processors and route traffic effortlessly, all with a single API integration.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://hyperswitch.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 43,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/hyperswitch/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "HyperSwitch official logo",
+    "icon_fallback_url": "/static/icons/generated/hyperswitch.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "H",
+      "domain": "hyperswitch.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "54f9dc3ea86dc30b464559ad409e9ecdfae429db71c9a6815f585803b03851ea",
+      "source_url": "https://hyperswitch.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "HyperSwitch official website",
+        "url": "https://hyperswitch.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "hyperswitch.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "HyperSwitch official source code",
+        "url": "https://github.com/juspay/hyperswitch",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 43416,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "hyperswitch.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/hyperswitch/logo.webp",
+        "source_url": "https://hyperswitch.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 142,
+        "height": 143,
+        "aspect_ratio": "142:143",
+        "file_size_bytes": 3946,
+        "checksum": "54f9dc3ea86dc30b464559ad409e9ecdfae429db71c9a6815f585803b03851ea",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://hyperswitch.io/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HY"
+      },
+      "version": 1,
+      "tool_slug": "hyperswitch"
+    }
+  },
+  {
+    "id": 734,
+    "slug": "medusajs",
+    "name": "MedusaJs",
+    "description": "Headless commerce engine that enables developers to create amazing digital commerce experiences.",
+    "purpose": "Headless commerce engine that enables developers to create amazing digital commerce experiences.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://medusajs.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 35,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/medusajs/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "MedusaJs official logo",
+    "icon_fallback_url": "/static/icons/generated/medusajs.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "medusajs.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "2ab92590ee73a520341493672f550ec639ad11ab1a03df5d5f493e8dd9a93e5c",
+      "source_url": "https://medusajs.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "MedusaJs official website",
+        "url": "https://medusajs.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "medusajs.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "MedusaJs official source code",
+        "url": "https://github.com/medusajs/medusa",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 35640,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "medusajs.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/medusajs/logo.webp",
+        "source_url": "https://medusajs.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 374,
+        "checksum": "2ab92590ee73a520341493672f550ec639ad11ab1a03df5d5f493e8dd9a93e5c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://medusajs.com/favicon.png?v=2"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ME"
+      },
+      "version": 1,
+      "tool_slug": "medusajs"
+    }
+  },
+  {
+    "id": 755,
+    "slug": "bagisto",
+    "name": "Bagisto",
+    "description": "Leading Laravel open source e-commerce framework with multi-inventory sources, taxation, localization, dropshipping and more exciting features.",
+    "purpose": "Leading Laravel open source e-commerce framework with multi-inventory sources, taxation, localization, dropshipping and more exciting features.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://bagisto.com/en/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 27,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/bagisto/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Bagisto official logo",
+    "icon_fallback_url": "/static/icons/generated/bagisto.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "bagisto.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "1532890bf4a7d89fbd1858b3ea97dcac07e7522ec2dcbf71d8f1b538e143899d",
+      "source_url": "https://bagisto.com/en/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Bagisto official website",
+        "url": "https://bagisto.com/en/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "bagisto.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Bagisto official source code",
+        "url": "https://github.com/bagisto/bagisto",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 27951,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "bagisto.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bagisto/logo.webp",
+        "source_url": "https://bagisto.com/en/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1196,
+        "checksum": "1532890bf4a7d89fbd1858b3ea97dcac07e7522ec2dcbf71d8f1b538e143899d",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://bagisto.com/wp-content/themes/bagisto/images/icon-144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BA"
+      },
+      "version": 1,
+      "tool_slug": "bagisto"
+    }
+  },
+  {
+    "id": 760,
+    "slug": "monica",
+    "name": "Monica",
+    "description": "Personal relationship manager, and a new kind of CRM to organize interactions with your friends and family.",
+    "purpose": "Personal relationship manager, and a new kind of CRM to organize interactions with your friends and family.",
+    "features": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://monicahq.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 24,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/monica/logo.svg",
+    "icon_source": "official_product_site",
+    "icon_alt": "Monica official logo",
+    "icon_fallback_url": "/static/icons/generated/monica.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "monicahq.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "b7f57cc535d6b41fa3317760600b780132010c318b66b37c72c0ec0e95867ada",
+      "source_url": "https://monicahq.com/en/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Monica official website",
+        "url": "https://monicahq.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "monicahq.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Monica official source code",
+        "url": "https://github.com/monicahq/monica",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 24980,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "source_record": "monica.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/monica/logo.svg",
+        "source_url": "https://monicahq.com/en/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 2720,
+        "checksum": "b7f57cc535d6b41fa3317760600b780132010c318b66b37c72c0ec0e95867ada",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://monicahq.com/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MO"
+      },
+      "version": 1,
+      "tool_slug": "monica"
+    }
+  },
+  {
+    "id": 761,
+    "slug": "firefly-iii",
+    "name": "Firefly III",
+    "description": "Firefly III is a modern financial manager. It helps you to keep track of your money and make budget forecasts. It supports credit cards, has an advanced rule engine and can import data from many banks.",
+    "purpose": "Firefly III is a modern financial manager. It helps you to keep track of your money and make budget forecasts. It supports credit cards, has an advanced rule engine and can import data from many banks.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://firefly-iii.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 24,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/firefly-iii/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Firefly III official logo",
+    "icon_fallback_url": "/static/icons/generated/firefly-iii.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "FI",
+      "domain": "firefly-iii.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "6c718867456e9fb878c0c8beccba828d68da9418162bb3db17f5286fcbed09e9",
+      "source_url": "https://firefly-iii.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Firefly III official website",
+        "url": "https://firefly-iii.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "firefly-iii.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Firefly III official source code",
+        "url": "https://github.com/firefly-iii/firefly-iii",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 24253,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "firefly-iii.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/firefly-iii/logo.webp",
+        "source_url": "https://firefly-iii.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2948,
+        "checksum": "6c718867456e9fb878c0c8beccba828d68da9418162bb3db17f5286fcbed09e9",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://firefly-iii.org/assets/favicon/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FI"
+      },
+      "version": 1,
+      "tool_slug": "firefly-iii"
+    }
+  },
+  {
+    "id": 762,
+    "slug": "krayin",
+    "name": "Krayin",
+    "description": "CRM solution for SMEs and Enterprises for complete customer lifecycle management.",
+    "purpose": "CRM solution for SMEs and Enterprises for complete customer lifecycle management.",
+    "features": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Customer Relationship Management (CRM)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://krayincrm.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 23,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/krayin/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Krayin official logo",
+    "icon_fallback_url": "/static/icons/generated/krayin.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "K",
+      "domain": "krayincrm.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "ccf13fd4352363f6ea890921bebf0b3602138fda651291f541e25f261664fd4a",
+      "source_url": "https://krayincrm.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Krayin official website",
+        "url": "https://krayincrm.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "krayincrm.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Krayin official source code",
+        "url": "https://github.com/krayin/laravel-crm",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 23643,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "source_record": "krayin.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/krayin/logo.webp",
+        "source_url": "https://krayincrm.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 3306,
+        "checksum": "ccf13fd4352363f6ea890921bebf0b3602138fda651291f541e25f261664fd4a",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://krayincrm.com/wp-content/themes/krayincrm/images/favicon/apple-icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KR"
+      },
+      "version": 1,
+      "tool_slug": "krayin"
+    }
+  },
+  {
+    "id": 765,
+    "slug": "saleor",
+    "name": "Saleor",
+    "description": "Django based open-sourced e-commerce storefront.",
+    "purpose": "Django based open-sourced e-commerce storefront.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://saleor.io",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: BSD-3-Clause. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 23,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/saleor/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Saleor official logo",
+    "icon_fallback_url": "/static/icons/generated/saleor.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "S",
+      "domain": "saleor.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "3107949cfd518db4462b453ecf876a175d261378008f41292192694164c5a191",
+      "source_url": "https://saleor.io"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Saleor official website",
+        "url": "https://saleor.io",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "saleor.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Saleor official source code",
+        "url": "https://github.com/saleor/saleor",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 23190,
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "saleor.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/saleor/logo.webp",
+        "source_url": "https://saleor.io",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 2874,
+        "checksum": "3107949cfd518db4462b453ecf876a175d261378008f41292192694164c5a191",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://saleor.io/apple-touch-icon-dark.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SA"
+      },
+      "version": 1,
+      "tool_slug": "saleor"
+    }
+  },
+  {
+    "id": 790,
+    "slug": "spree-commerce",
+    "name": "Spree Commerce",
+    "description": "Spree is a complete, modular & API-driven open source e-commerce solution for Ruby on Rails.",
+    "purpose": "Spree is a complete, modular & API-driven open source e-commerce solution for Ruby on Rails.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://spreecommerce.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: BSD-3-Clause. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/spree-commerce/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Spree Commerce official logo",
+    "icon_fallback_url": "/static/icons/generated/spree-commerce.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SC",
+      "domain": "spreecommerce.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "2aca67577fd39c2817c948e00e3a374f7f51d85d08ef5a2cb242cf7302c5b815",
+      "source_url": "https://spreecommerce.org"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Spree Commerce official website",
+        "url": "https://spreecommerce.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "spreecommerce.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Spree Commerce official source code",
+        "url": "https://github.com/spree/spree",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15607,
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "spree-commerce.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/spree-commerce/logo.webp",
+        "source_url": "https://spreecommerce.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 2186,
+        "checksum": "2aca67577fd39c2817c948e00e3a374f7f51d85d08ef5a2cb242cf7302c5b815",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://spreecommerce.org/wp-content/uploads/2024/07/cropped-Logo-Symbol-Black-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SC"
+      },
+      "version": 1,
+      "tool_slug": "spree-commerce"
+    }
+  },
+  {
+    "id": 821,
+    "slug": "woocommerce",
+    "name": "WooCommerce",
+    "description": "WordPress based e-commerce solution.",
+    "purpose": "WordPress based e-commerce solution.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://woocommerce.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/woocommerce/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "WooCommerce official logo",
+    "icon_fallback_url": "/static/icons/generated/woocommerce.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "W",
+      "domain": "woocommerce.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "aa2e79adba6450cff4f68848c4c5bad0a9f39cea160bf4f97de3796c5fdb2b0f",
+      "source_url": "https://woocommerce.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "WooCommerce official website",
+        "url": "https://woocommerce.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "woocommerce.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "WooCommerce official source code",
+        "url": "https://github.com/woocommerce/woocommerce",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10450,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "woocommerce.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/woocommerce/logo.webp",
+        "source_url": "https://woocommerce.com/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 5128,
+        "checksum": "aa2e79adba6450cff4f68848c4c5bad0a9f39cea160bf4f97de3796c5fdb2b0f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://woocommerce.com/wp-content/uploads/2024/12/cropped-logo-w-favicon.png?w=192"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "WO"
+      },
+      "version": 1,
+      "tool_slug": "woocommerce"
+    }
+  },
+  {
+    "id": 822,
+    "slug": "lago",
+    "name": "Lago",
+    "description": "Metering and usage-based billing.",
+    "purpose": "Metering and usage-based billing.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.getlago.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/lago/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Lago official logo",
+    "icon_fallback_url": "/static/icons/generated/lago.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "getlago.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "63f6bd92b4b0b5485e1b92986fab5ea1377cd9964f011e95e246ab45699bf410",
+      "source_url": "https://getlago.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lago official website",
+        "url": "https://www.getlago.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "getlago.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Lago official source code",
+        "url": "https://github.com/getlago/lago",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10307,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "lago.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lago/logo.webp",
+        "source_url": "https://getlago.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1360,
+        "checksum": "63f6bd92b4b0b5485e1b92986fab5ea1377cd9964f011e95e246ab45699bf410",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://getlago.com/favicon/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LA"
+      },
+      "version": 1,
+      "tool_slug": "lago"
+    }
+  },
+  {
+    "id": 824,
+    "slug": "evershop",
+    "name": "EverShop",
+    "description": "E-commerce platform with essential commerce features. Modular architecture and fully customizable.",
+    "purpose": "E-commerce platform with essential commerce features. Modular architecture and fully customizable.",
+    "features": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "E-commerce"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://evershop.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/evershop/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "EverShop official logo",
+    "icon_fallback_url": "/static/icons/generated/evershop.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "E",
+      "domain": "evershop.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c9049fcf27760ac23bf8c5bdd93cc5ca5e1281d3185cce428e087cb18b4af867",
+      "source_url": "https://evershop.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "EverShop official website",
+        "url": "https://evershop.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "evershop.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "EverShop official source code",
+        "url": "https://github.com/evershopcommerce/evershop",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10213,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "source_record": "evershop.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/evershop/logo.webp",
+        "source_url": "https://evershop.io/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 2744,
+        "checksum": "c9049fcf27760ac23bf8c5bdd93cc5ca5e1281d3185cce428e087cb18b4af867",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://evershop.io/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EV"
+      },
+      "version": 1,
+      "tool_slug": "evershop"
+    }
+  },
+  {
+    "id": 825,
+    "slug": "akaunting",
+    "name": "Akaunting",
+    "description": "Accounting software designed for small businesses and freelancers.",
+    "purpose": "Accounting software designed for small businesses and freelancers.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://akaunting.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: BUSL-1.1. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/akaunting/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Akaunting official logo",
+    "icon_fallback_url": "/static/icons/generated/akaunting.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "A",
+      "domain": "akaunting.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "b9a6ff2add31c799fa955bde70554dfb76096e403cb7fb8af5fbcbe9f4b8a618",
+      "source_url": "https://akaunting.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Akaunting official website",
+        "url": "https://akaunting.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "akaunting.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Akaunting official source code",
+        "url": "https://github.com/akaunting/akaunting",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10039,
+      "licenses": [
+        "BUSL-1.1"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "akaunting.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/akaunting/logo.webp",
+        "source_url": "https://akaunting.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 128,
+        "height": 128,
+        "aspect_ratio": "128:128",
+        "file_size_bytes": 3290,
+        "checksum": "b9a6ff2add31c799fa955bde70554dfb76096e403cb7fb8af5fbcbe9f4b8a618",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://assets.akaunting.com/site/img/logo/akaunting-logo.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AK"
+      },
+      "version": 1,
+      "tool_slug": "akaunting"
+    }
+  },
+  {
+    "id": 827,
+    "slug": "invoice-ninja",
+    "name": "Invoice Ninja",
+    "description": "Powerful tool to invoice clients online.",
+    "purpose": "Powerful tool to invoice clients online.",
+    "features": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "category": "Finance and Business",
+    "tags": [
+      "Business Tools",
+      "Money, Budgeting & Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.invoiceninja.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on business tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for business tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Elastic-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Business Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/invoice-ninja/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Invoice Ninja official logo",
+    "icon_fallback_url": "/static/icons/generated/invoice-ninja.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IN",
+      "domain": "invoiceninja.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "950e85e22d54b01aa96884355ea4684e88fe43c9e27883a65decc5b76c8a0d1f",
+      "source_url": "https://www.invoiceninja.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Invoice Ninja official website",
+        "url": "https://www.invoiceninja.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "invoiceninja.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Invoice Ninja official source code",
+        "url": "https://github.com/invoiceninja/invoiceninja",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 9978,
+      "licenses": [
+        "Elastic-2.0"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "source_record": "invoice-ninja.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/invoice-ninja/logo.webp",
+        "source_url": "https://www.invoiceninja.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3138,
+        "checksum": "950e85e22d54b01aa96884355ea4684e88fe43c9e27883a65decc5b76c8a0d1f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.invoiceninja.org/wp-content/uploads/2026/04/cropped-logo-small-1-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IN"
+      },
+      "version": 1,
+      "tool_slug": "invoice-ninja"
+    }
   }
 ]

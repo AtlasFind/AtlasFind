@@ -14,6 +14,9 @@
     <div><strong>{{ tool_total }}</strong><span>{{ t('common.tools') }}</span></div>
     <div><strong>EN / TR</strong><span>{% if locale == 'tr' %}iki dilde içerik{% else %}bilingual catalog{% endif %}</span></div>
   </div>
+  <p class="category-directory-freshness">
+    {% if locale == 'tr' %}Kategori ve alt kategori sayıları güncel {{ tool_total }} araçlık katalogdan otomatik hesaplanır.{% else %}Category and subcategory counts are calculated automatically from the current {{ tool_total }}-tool catalog.{% endif %}
+  </p>
   <div class="category-directory-grid">
     {% for category in categories %}
     <article class="category-directory-card">

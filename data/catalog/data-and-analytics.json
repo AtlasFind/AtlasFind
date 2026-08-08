@@ -6479,5 +6479,2168 @@
       "version": 1,
       "tool_slug": "dagster"
     }
+  },
+  {
+    "id": 708,
+    "slug": "nocodb",
+    "name": "NocoDB",
+    "description": "No-code platform that turns any database into a smart spreadsheet (alternative to Airtable and Smartsheet).",
+    "purpose": "No-code platform that turns any database into a smart spreadsheet (alternative to Airtable and Smartsheet).",
+    "features": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.nocodb.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: SUL-1.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 64,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/nocodb/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "NocoDB official logo",
+    "icon_fallback_url": "/static/icons/generated/nocodb.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "nocodb.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "efe26fce275da4e70552e5a11d73cda506fb942bcd341707184e6ba246f6480f",
+      "source_url": "https://www.nocodb.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "NocoDB official website",
+        "url": "https://www.nocodb.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "nocodb.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "NocoDB official source code",
+        "url": "https://github.com/nocodb/nocodb",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 64440,
+      "licenses": [
+        "SUL-1.0"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "source_record": "nocodb.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/nocodb/logo.webp",
+        "source_url": "https://www.nocodb.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 970,
+        "checksum": "efe26fce275da4e70552e5a11d73cda506fb942bcd341707184e6ba246f6480f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://cdn.nocodb.com/marketing-site/20260807064237/images/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NO"
+      },
+      "version": 1,
+      "tool_slug": "nocodb"
+    }
+  },
+  {
+    "id": 730,
+    "slug": "posthog",
+    "name": "PostHog",
+    "description": "Product analytics, session recording, feature flagging and a/b testing that you can self-host (alternative to Mixpanel, Amplitude, Heap, HotJar, Optimizely).",
+    "purpose": "Product analytics, session recording, feature flagging and a/b testing that you can self-host (alternative to Mixpanel, Amplitude, Heap, HotJar, Optimizely).",
+    "features": [
+      "Data Tools",
+      "Analytics",
+      "Software Development - Feature Toggle"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Analytics",
+      "Software Development - Feature Toggle"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://posthog.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 37,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/posthog/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "PostHog official logo",
+    "icon_fallback_url": "/static/icons/generated/posthog.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "posthog.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c3524825b96ef9c3f2d690102e9aa7bd99f230c880539487a185a83405569327",
+      "source_url": "https://posthog.com"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "PostHog official website",
+        "url": "https://posthog.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "posthog.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "PostHog official source code",
+        "url": "https://github.com/posthog/posthog",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 37548,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Analytics",
+        "Software Development - Feature Toggle"
+      ],
+      "source_record": "posthog.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/posthog/logo.webp",
+        "source_url": "https://posthog.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 1774,
+        "checksum": "c3524825b96ef9c3f2d690102e9aa7bd99f230c880539487a185a83405569327",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://posthog.com/icons/icon-144x144.png?v=6e5ac8d4a5b381b5caa29396fbf7c955"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PO"
+      },
+      "version": 1,
+      "tool_slug": "posthog"
+    }
+  },
+  {
+    "id": 737,
+    "slug": "postiz",
+    "name": "Postiz",
+    "description": "Schedule posts, track the performance of your content, and manage all your social media accounts in one place (Alternative to Buffer, Hootsuite, Sprout Social).",
+    "purpose": "Schedule posts, track the performance of your content, and manage all your social media accounts in one place (Alternative to Buffer, Hootsuite, Sprout Social).",
+    "features": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://postiz.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 34,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/postiz/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Postiz official logo",
+    "icon_fallback_url": "/static/icons/generated/postiz.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "P",
+      "domain": "postiz.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "0720576db0b8295c32e399bd00116a7105acd94cedd31e4d68bf7c79469e952a",
+      "source_url": "https://postiz.com"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Postiz official website",
+        "url": "https://postiz.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "postiz.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Postiz official source code",
+        "url": "https://github.com/gitroomhq/postiz-app",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 34390,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "source_record": "postiz.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/postiz/logo.webp",
+        "source_url": "https://postiz.com",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1588,
+        "checksum": "0720576db0b8295c32e399bd00116a7105acd94cedd31e4d68bf7c79469e952a",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://postiz.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PO"
+      },
+      "version": 1,
+      "tool_slug": "postiz"
+    }
+  },
+  {
+    "id": 739,
+    "slug": "netron",
+    "name": "Netron",
+    "description": "Visualizer for neural network and machine learning models.",
+    "purpose": "Visualizer for neural network and machine learning models.",
+    "features": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://netron.app/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 33,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/netron/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Netron official logo",
+    "icon_fallback_url": "/static/icons/generated/netron.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "netron.app",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "90b6d628d85e44224e4708825d66f2a4469cc10d7458c86c3658e9280534017e",
+      "source_url": "https://netron.app/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Netron official website",
+        "url": "https://netron.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "netron.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Netron official source code",
+        "url": "https://github.com/lutzroeder/netron",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 33323,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "source_record": "netron.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/netron/logo.webp",
+        "source_url": "https://netron.app/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 256,
+        "aspect_ratio": "256:256",
+        "file_size_bytes": 14460,
+        "checksum": "90b6d628d85e44224e4708825d66f2a4469cc10d7458c86c3658e9280534017e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://netron.app/icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NE"
+      },
+      "version": 1,
+      "tool_slug": "netron"
+    }
+  },
+  {
+    "id": 766,
+    "slug": "chartdb",
+    "name": "ChartDB",
+    "description": "Database diagrams editor that allows you to visualize and design your DB with a single query.",
+    "purpose": "Database diagrams editor that allows you to visualize and design your DB with a single query.",
+    "features": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://chartdb.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 22,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/chartdb/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "ChartDB official logo",
+    "icon_fallback_url": "/static/icons/generated/chartdb.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "chartdb.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f284c26f4742dc458de7727e3ad6477eb229dc1ef7e94608303b0cc18b5c0676",
+      "source_url": "https://chartdb.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "ChartDB official website",
+        "url": "https://chartdb.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "chartdb.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "ChartDB official source code",
+        "url": "https://github.com/chartdb/chartdb",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 22696,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "source_record": "chartdb.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/chartdb/logo.webp",
+        "source_url": "https://chartdb.io/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 992,
+        "checksum": "f284c26f4742dc458de7727e3ad6477eb229dc1ef7e94608303b0cc18b5c0676",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://chartdb.io/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CH"
+      },
+      "version": 1,
+      "tool_slug": "chartdb"
+    }
+  },
+  {
+    "id": 798,
+    "slug": "bytebase",
+    "name": "Bytebase",
+    "description": "Safe database schema change and version control for DevOps teams, supports MySQL, PostgreSQL, TiDB, ClickHouse, and Snowflake.",
+    "purpose": "Safe database schema change and version control for DevOps teams, supports MySQL, PostgreSQL, TiDB, ClickHouse, and Snowflake.",
+    "features": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.bytebase.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/bytebase/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Bytebase official logo",
+    "icon_fallback_url": "/static/icons/generated/bytebase.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "B",
+      "domain": "bytebase.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "c8f675d3f1386a68daa8ef71cd86a73b3ccb7145150ac4a35ba87ec03c3047b4",
+      "source_url": "https://www.bytebase.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Bytebase official website",
+        "url": "https://www.bytebase.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "bytebase.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Bytebase official source code",
+        "url": "https://github.com/bytebase/bytebase",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 14356,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "source_record": "bytebase.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/bytebase/logo.webp",
+        "source_url": "https://www.bytebase.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 3582,
+        "checksum": "c8f675d3f1386a68daa8ef71cd86a73b3ccb7145150ac4a35ba87ec03c3047b4",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.bytebase.com/favicon/favicon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "BY"
+      },
+      "version": 1,
+      "tool_slug": "bytebase"
+    }
+  },
+  {
+    "id": 802,
+    "slug": "druid",
+    "name": "Druid",
+    "description": "Distributed, column-oriented, real-time analytics data store.",
+    "purpose": "Distributed, column-oriented, real-time analytics data store.",
+    "features": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://druid.apache.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/druid/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Druid official logo",
+    "icon_fallback_url": "/static/icons/generated/druid.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "druid.apache.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "53283613f8654efc5b1196dd82140aba17974c516b950a83c526a24f77c0098e",
+      "source_url": "https://druid.apache.org"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Druid official website",
+        "url": "https://druid.apache.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "druid.apache.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Druid official source code",
+        "url": "https://github.com/apache/druid",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 14042,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "source_record": "druid.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/druid/logo.webp",
+        "source_url": "https://druid.apache.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 740,
+        "checksum": "53283613f8654efc5b1196dd82140aba17974c516b950a83c526a24f77c0098e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://druid.apache.org/img/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DR"
+      },
+      "version": 1,
+      "tool_slug": "druid"
+    }
+  },
+  {
+    "id": 808,
+    "slug": "rybbit",
+    "name": "Rybbit",
+    "description": "Web and products analytics that is easy to setup and more intuitive (alternative to Google Analytics).",
+    "purpose": "Web and products analytics that is easy to setup and more intuitive (alternative to Google Analytics).",
+    "features": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Analytics"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://rybbit.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/rybbit/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Rybbit official logo",
+    "icon_fallback_url": "/static/icons/generated/rybbit.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "rybbit.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "4cfa4830f0c450f55dbc0ddf4331cc98a3d6972c27c4e0d120946d6d896d9ed4",
+      "source_url": "https://rybbit.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Rybbit official website",
+        "url": "https://rybbit.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "rybbit.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Rybbit official source code",
+        "url": "https://github.com/rybbit-io/rybbit",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 12588,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "source_record": "rybbit.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/rybbit/logo.webp",
+        "source_url": "https://rybbit.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 950,
+        "height": 950,
+        "aspect_ratio": "950:950",
+        "file_size_bytes": 20714,
+        "checksum": "4cfa4830f0c450f55dbc0ddf4331cc98a3d6972c27c4e0d120946d6d896d9ed4",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://rybbit.com/apple-icon.png?apple-icon.3-gwj-wdrfosn.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RY"
+      },
+      "version": 1,
+      "tool_slug": "rybbit"
+    }
+  },
+  {
+    "id": 816,
+    "slug": "datasette",
+    "name": "Datasette",
+    "description": "Explore and publish data with easy import and export and database management.",
+    "purpose": "Explore and publish data with easy import and export and database management.",
+    "features": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://datasette.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/datasette/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Datasette official logo",
+    "icon_fallback_url": "/static/icons/generated/datasette.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "datasette.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "75c546284f6c8b7e78df5a90c4b0c249b8b1a3aca6ed4f73f6626fb649d0ff4e",
+      "source_url": "https://datasette.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Datasette official website",
+        "url": "https://datasette.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "datasette.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Datasette official source code",
+        "url": "https://github.com/simonw/datasette",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 11366,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "source_record": "datasette.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/datasette/logo.webp",
+        "source_url": "https://datasette.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 840,
+        "checksum": "75c546284f6c8b7e78df5a90c4b0c249b8b1a3aca6ed4f73f6626fb649d0ff4e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://datasette.io/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DA"
+      },
+      "version": 1,
+      "tool_slug": "datasette"
+    }
+  },
+  {
+    "id": 826,
+    "slug": "dawarich",
+    "name": "Dawarich",
+    "description": "Visualize your location history, track your movements, and analyze your travel patterns with complete privacy and control (alternative to Google Timeline a.k.a. Google Location History).",
+    "purpose": "Visualize your location history, track your movements, and analyze your travel patterns with complete privacy and control (alternative to Google Timeline a.k.a. Google Location History).",
+    "features": [
+      "Data Tools",
+      "Maps and Global Positioning System (GPS)"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Maps and Global Positioning System (GPS)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://dawarich.app/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/dawarich/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Dawarich official logo",
+    "icon_fallback_url": "/static/icons/generated/dawarich.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "dawarich.app",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8c8a22fb8dc6fe9fc2cec9c2225fd56af13616361d16166245cff47b4048ba4a",
+      "source_url": "https://dawarich.app/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Dawarich official website",
+        "url": "https://dawarich.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "dawarich.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Dawarich official source code",
+        "url": "https://github.com/Freika/dawarich",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 10034,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Maps and Global Positioning System (GPS)"
+      ],
+      "source_record": "dawarich.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/dawarich/logo.webp",
+        "source_url": "https://dawarich.app/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 6376,
+        "checksum": "8c8a22fb8dc6fe9fc2cec9c2225fd56af13616361d16166245cff47b4048ba4a",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://dawarich.app/img/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DA"
+      },
+      "version": 1,
+      "tool_slug": "dawarich"
+    }
+  },
+  {
+    "id": 845,
+    "slug": "evidence",
+    "name": "Evidence",
+    "description": "Code-based BI tool. Write reports using SQL and markdown and they render as a website.",
+    "purpose": "Code-based BI tool. Write reports using SQL and markdown and they render as a website.",
+    "features": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Database Management"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://evidence.dev",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/evidence/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Evidence official logo",
+    "icon_fallback_url": "/static/icons/generated/evidence.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "E",
+      "domain": "evidence.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "3b3752ab787787f30fe231ac1de722f2c20373200bdd264063dcd7d352689180",
+      "source_url": "https://evidence.dev"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Evidence official website",
+        "url": "https://evidence.dev",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "evidence.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Evidence official source code",
+        "url": "https://github.com/evidence-dev/evidence",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6832,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "source_record": "evidence.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/evidence/logo.webp",
+        "source_url": "https://evidence.dev",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3872,
+        "checksum": "3b3752ab787787f30fe231ac1de722f2c20373200bdd264063dcd7d352689180",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://evidence.dev/icon-192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EV"
+      },
+      "version": 1,
+      "tool_slug": "evidence"
+    }
+  },
+  {
+    "id": 846,
+    "slug": "graphhopper",
+    "name": "GraphHopper",
+    "description": "Fast routing library and server using OpenStreetMap.",
+    "purpose": "Fast routing library and server using OpenStreetMap.",
+    "features": [
+      "Data Tools",
+      "Maps and Global Positioning System (GPS)"
+    ],
+    "category": "Data and Analytics",
+    "tags": [
+      "Data Tools",
+      "Maps and Global Positioning System (GPS)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://graphhopper.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on data tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for data tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Data Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/graphhopper/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "GraphHopper official logo",
+    "icon_fallback_url": "/static/icons/generated/graphhopper.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "G",
+      "domain": "graphhopper.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "9379c495001ab0e2cebd95d66c956b24d48426ea6bcfd237cd412c63485288ba",
+      "source_url": "https://www.graphhopper.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "GraphHopper official website",
+        "url": "https://graphhopper.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "graphhopper.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "GraphHopper official source code",
+        "url": "https://github.com/graphhopper/graphhopper",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 6619,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Maps and Global Positioning System (GPS)"
+      ],
+      "source_record": "graphhopper.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/graphhopper/logo.webp",
+        "source_url": "https://www.graphhopper.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 9438,
+        "checksum": "9379c495001ab0e2cebd95d66c956b24d48426ea6bcfd237cd412c63485288ba",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.graphhopper.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GR"
+      },
+      "version": 1,
+      "tool_slug": "graphhopper"
+    }
   }
 ]

@@ -7778,5 +7778,2525 @@
       "version": 1,
       "tool_slug": "dokku"
     }
+  },
+  {
+    "id": 706,
+    "slug": "caddy",
+    "name": "Caddy",
+    "description": "Powerful, enterprise-ready, open source web server with automatic HTTPS.",
+    "purpose": "Powerful, enterprise-ready, open source web server with automatic HTTPS.",
+    "features": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://caddyserver.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 74,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/caddy/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Caddy official logo",
+    "icon_fallback_url": "/static/icons/generated/caddy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "caddyserver.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "eb165cdc849e7e669a736eb0360b46c30e97641ebdd663aca671302007f6e901",
+      "source_url": "https://caddyserver.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Caddy official website",
+        "url": "https://caddyserver.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "caddyserver.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Caddy official source code",
+        "url": "https://github.com/caddyserver/caddy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 74743,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "source_record": "caddy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/caddy/logo.webp",
+        "source_url": "https://caddyserver.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 188,
+        "height": 176,
+        "aspect_ratio": "188:176",
+        "file_size_bytes": 9728,
+        "checksum": "eb165cdc849e7e669a736eb0360b46c30e97641ebdd663aca671302007f6e901",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://caddyserver.com/resources/images/favicon.png?v=1a6bbd7"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CA"
+      },
+      "version": 1,
+      "tool_slug": "caddy"
+    }
+  },
+  {
+    "id": 707,
+    "slug": "revealjs",
+    "name": "revealjs",
+    "description": "Framework for easily creating beautiful presentations using HTML.",
+    "purpose": "Framework for easily creating beautiful presentations using HTML.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://revealjs.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 72,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/revealjs/logo.svg",
+    "icon_source": "official_product_site",
+    "icon_alt": "revealjs official logo",
+    "icon_fallback_url": "/static/icons/generated/revealjs.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "R",
+      "domain": "revealjs.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5171eb0afd52b8f975fcd84524f04e9696a8cb759fa4f90927ef0742a16b8d84",
+      "source_url": "https://revealjs.com"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "revealjs official website",
+        "url": "https://revealjs.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "revealjs.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "revealjs official source code",
+        "url": "https://github.com/hakimel/reveal.js",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 72092,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "revealjs.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/revealjs/logo.svg",
+        "source_url": "https://revealjs.com",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 731,
+        "checksum": "5171eb0afd52b8f975fcd84524f04e9696a8cb759fa4f90927ef0742a16b8d84",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://revealjs.com/images/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RE"
+      },
+      "version": 1,
+      "tool_slug": "revealjs"
+    }
+  },
+  {
+    "id": 709,
+    "slug": "traefik",
+    "name": "Traefik",
+    "description": "HTTP reverse proxy and load balancer that makes deploying microservices easy.",
+    "purpose": "HTTP reverse proxy and load balancer that makes deploying microservices easy.",
+    "features": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://traefik.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 64,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/traefik/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Traefik official logo",
+    "icon_fallback_url": "/static/icons/generated/traefik.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "traefik.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "4a53ab62b6426d4641dac54ee6659d108756c8f9836b8077649dc57ff79bccfc",
+      "source_url": "https://traefik.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Traefik official website",
+        "url": "https://traefik.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "traefik.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Traefik official source code",
+        "url": "https://github.com/traefik/traefik",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 64328,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "source_record": "traefik.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/traefik/logo.webp",
+        "source_url": "https://traefik.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 126,
+        "height": 144,
+        "aspect_ratio": "126:144",
+        "file_size_bytes": 2124,
+        "checksum": "4a53ab62b6426d4641dac54ee6659d108756c8f9836b8077649dc57ff79bccfc",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://traefik.io/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TR"
+      },
+      "version": 1,
+      "tool_slug": "traefik"
+    }
+  },
+  {
+    "id": 721,
+    "slug": "payload-cms",
+    "name": "Payload CMS",
+    "description": "Developer-first headless CMS and application framework.",
+    "purpose": "Developer-first headless CMS and application framework.",
+    "features": [
+      "Web Platforms",
+      "Content Management Systems (CMS)"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Content Management Systems (CMS)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://payloadcms.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 44,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/payload-cms/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Payload CMS official logo",
+    "icon_fallback_url": "/static/icons/generated/payload-cms.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "PC",
+      "domain": "payloadcms.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "9a0fb4751a90c81ded0ceffb6bfcf9c9f0e1badd670cbecdf00d420c7c13dd2b",
+      "source_url": "https://payloadcms.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Payload CMS official website",
+        "url": "https://payloadcms.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "payloadcms.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Payload CMS official source code",
+        "url": "https://github.com/payloadcms/payload",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 44042,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Content Management Systems (CMS)"
+      ],
+      "source_record": "payload-cms.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/payload-cms/logo.webp",
+        "source_url": "https://payloadcms.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 4526,
+        "checksum": "9a0fb4751a90c81ded0ceffb6bfcf9c9f0e1badd670cbecdf00d420c7c13dd2b",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://payloadcms.com/apple-icon.png?ecf0fe126546bd55"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "PC"
+      },
+      "version": 1,
+      "tool_slug": "payload-cms"
+    }
+  },
+  {
+    "id": 726,
+    "slug": "reactive-resume",
+    "name": "Reactive Resume",
+    "description": "One-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.",
+    "purpose": "One-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://rxresu.me/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 40,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/reactive-resume/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Reactive Resume official logo",
+    "icon_fallback_url": "/static/icons/generated/reactive-resume.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "RR",
+      "domain": "rxresu.me",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "88dabbf313df0f383888acdd976d129bcbf45dcdffb4a1245ad3698e4e743bc7",
+      "source_url": "https://rxresu.me/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Reactive Resume official website",
+        "url": "https://rxresu.me/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "rxresu.me",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Reactive Resume official source code",
+        "url": "https://github.com/AmruthPillai/Reactive-Resume",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 40123,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "reactive-resume.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/reactive-resume/logo.webp",
+        "source_url": "https://rxresu.me/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 512,
+        "height": 512,
+        "aspect_ratio": "512:512",
+        "file_size_bytes": 5466,
+        "checksum": "88dabbf313df0f383888acdd976d129bcbf45dcdffb4a1245ad3698e4e743bc7",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://rxresu.me/maskable-icon-512x512.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "RR"
+      },
+      "version": 1,
+      "tool_slug": "reactive-resume"
+    }
+  },
+  {
+    "id": 731,
+    "slug": "casaos",
+    "name": "CasaOS",
+    "description": "Simple, easy-to-use, elegant Home Cloud system.",
+    "purpose": "Simple, easy-to-use, elegant Home Cloud system.",
+    "features": [
+      "Web Platforms",
+      "Self-hosting Solutions"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Self-hosting Solutions"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://casaos.zimaspace.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 37,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/casaos/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "CasaOS official logo",
+    "icon_fallback_url": "/static/icons/generated/casaos.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "casaos.zimaspace.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "93364db4c0169ac24606ea6c5d5c69c5106f9d820a47ce2b6ec0dd10f75b665e",
+      "source_url": "https://casaos.zimaspace.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "CasaOS official website",
+        "url": "https://casaos.zimaspace.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "casaos.zimaspace.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "CasaOS official source code",
+        "url": "https://github.com/IceWhaleTech/CasaOS",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 37003,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Self-hosting Solutions"
+      ],
+      "source_record": "casaos.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/casaos/logo.webp",
+        "source_url": "https://casaos.zimaspace.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 5902,
+        "checksum": "93364db4c0169ac24606ea6c5d5c69c5106f9d820a47ce2b6ec0dd10f75b665e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://casaos.zimaspace.com/favicon/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CA"
+      },
+      "version": 1,
+      "tool_slug": "casaos"
+    }
+  },
+  {
+    "id": 738,
+    "slug": "nginx-proxy-manager",
+    "name": "Nginx Proxy Manager",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface.",
+    "purpose": "Docker container for managing Nginx proxy hosts with a simple, powerful interface.",
+    "features": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://nginxproxymanager.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 33,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/nginx-proxy-manager/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Nginx Proxy Manager official logo",
+    "icon_fallback_url": "/static/icons/generated/nginx-proxy-manager.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NP",
+      "domain": "nginxproxymanager.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "bf59b79076e8a3ec5836e103ba0617992c7f3c09acb84d474c7dabfe50ab1064",
+      "source_url": "https://nginxproxymanager.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Nginx Proxy Manager official website",
+        "url": "https://nginxproxymanager.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "nginxproxymanager.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Nginx Proxy Manager official source code",
+        "url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 33803,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "source_record": "nginx-proxy-manager.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/nginx-proxy-manager/logo.webp",
+        "source_url": "https://nginxproxymanager.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 12622,
+        "checksum": "bf59b79076e8a3ec5836e103ba0617992c7f3c09acb84d474c7dabfe50ab1064",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://nginxproxymanager.com/icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NP"
+      },
+      "version": 1,
+      "tool_slug": "nginx-proxy-manager"
+    }
+  },
+  {
+    "id": 745,
+    "slug": "nginx",
+    "name": "NGINX",
+    "description": "HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy server.",
+    "purpose": "HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy server.",
+    "features": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Web Platforms",
+      "Web Servers"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://nginx.org/en/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on web platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for web platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: BSD-2-Clause. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Web Platforms",
+    "popularity_score": 31,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/nginx/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "NGINX official logo",
+    "icon_fallback_url": "/static/icons/generated/nginx.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "nginx.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5776b149874b37cf06f291ee1a0905b545359e3b6c751648b390c7c479f1f0a6",
+      "source_url": "https://nginx.org/en/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "NGINX official website",
+        "url": "https://nginx.org/en/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "nginx.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "NGINX official source code",
+        "url": "https://github.com/nginx/nginx",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 31360,
+      "licenses": [
+        "BSD-2-Clause"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "source_record": "nginx.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/nginx/logo.webp",
+        "source_url": "https://nginx.org/en/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1282,
+        "checksum": "5776b149874b37cf06f291ee1a0905b545359e3b6c751648b390c7c479f1f0a6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://nginx.org/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NG"
+      },
+      "version": 1,
+      "tool_slug": "nginx"
+    }
+  },
+  {
+    "id": 750,
+    "slug": "infisical-community-edition",
+    "name": "Infisical Community Edition",
+    "description": "Platform for secrets, certificates, and privileged access management.",
+    "purpose": "Platform for secrets, certificates, and privileged access management.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://infisical.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 28,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/infisical-community-edition/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Infisical Community Edition official logo",
+    "icon_fallback_url": "/static/icons/generated/infisical-community-edition.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "IC",
+      "domain": "infisical.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "390ff504edfa21102da932c29e34f53a063e2428044213c1c30ba685e11b0682",
+      "source_url": "https://infisical.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Infisical Community Edition official website",
+        "url": "https://infisical.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "infisical.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Infisical Community Edition official source code",
+        "url": "https://github.com/Infisical/infisical",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 28611,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "infisical-community-edition.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/infisical-community-edition/logo.webp",
+        "source_url": "https://infisical.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 626,
+        "checksum": "390ff504edfa21102da932c29e34f53a063e2428044213c1c30ba685e11b0682",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://infisical.com/infisical.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "IC"
+      },
+      "version": 1,
+      "tool_slug": "infisical-community-edition"
+    }
+  },
+  {
+    "id": 769,
+    "slug": "neko",
+    "name": "Neko",
+    "description": "Virtual browser that runs in docker and uses WebRTC.",
+    "purpose": "Virtual browser that runs in docker and uses WebRTC.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://neko.m1k1o.net",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 21,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/neko/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Neko official logo",
+    "icon_fallback_url": "/static/icons/generated/neko.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "neko.m1k1o.net",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "daa0beaf090899e306b2d21a54cd6f541f7d7ac14851f1227c10ec8be571cf9d",
+      "source_url": "https://neko.m1k1o.net"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Neko official website",
+        "url": "https://neko.m1k1o.net",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "neko.m1k1o.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Neko official source code",
+        "url": "https://github.com/m1k1o/neko",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 21883,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "neko.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/neko/logo.webp",
+        "source_url": "https://neko.m1k1o.net",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 1658,
+        "checksum": "daa0beaf090899e306b2d21a54cd6f541f7d7ac14851f1227c10ec8be571cf9d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://neko.m1k1o.net/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NE"
+      },
+      "version": 1,
+      "tool_slug": "neko"
+    }
+  },
+  {
+    "id": 773,
+    "slug": "kodi",
+    "name": "Kodi",
+    "description": "Multimedia/Entertainment center, formerly known as XBMC. Runs on Android, BSD, Linux, macOS, iOS and Windows.",
+    "purpose": "Multimedia/Entertainment center, formerly known as XBMC. Runs on Android, BSD, Linux, macOS, iOS and Windows.",
+    "features": [
+      "Self-Hosted Applications",
+      "Media Streaming - Multimedia Streaming"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Media Streaming - Multimedia Streaming"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://kodi.tv/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 21,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/kodi/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Kodi official logo",
+    "icon_fallback_url": "/static/icons/generated/kodi.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "K",
+      "domain": "kodi.tv",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "30700ad76993f36f2c3c8d4ddbebdfd7ccc82fe06141ec1ad97c6bd77eeda84d",
+      "source_url": "https://kodi.tv/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Kodi official website",
+        "url": "https://kodi.tv/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "kodi.tv",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Kodi official source code",
+        "url": "https://github.com/xbmc/xbmc",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 21064,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Media Streaming - Multimedia Streaming"
+      ],
+      "source_record": "kodi.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/kodi/logo.webp",
+        "source_url": "https://kodi.tv/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 4020,
+        "checksum": "30700ad76993f36f2c3c8d4ddbebdfd7ccc82fe06141ec1ad97c6bd77eeda84d",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://kodi.tv/icons/icon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "KO"
+      },
+      "version": 1,
+      "tool_slug": "kodi"
+    }
+  },
+  {
+    "id": 774,
+    "slug": "teleport",
+    "name": "Teleport",
+    "description": "Certificate authority and access plane for SSH, Kubernetes, web applications, and databases.",
+    "purpose": "Certificate authority and access plane for SSH, Kubernetes, web applications, and databases.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://goteleport.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/teleport/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Teleport official logo",
+    "icon_fallback_url": "/static/icons/generated/teleport.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "goteleport.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "2dd1427af4789616c56386fce98978ccfbece028f9205d7e15e4e4d68b9bf0a5",
+      "source_url": "https://goteleport.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Teleport official website",
+        "url": "https://goteleport.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "goteleport.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Teleport official source code",
+        "url": "https://github.com/gravitational/teleport",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 20779,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "teleport.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/teleport/logo.webp",
+        "source_url": "https://goteleport.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 4040,
+        "checksum": "2dd1427af4789616c56386fce98978ccfbece028f9205d7e15e4e4d68b9bf0a5",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://goteleport.com/static/192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TE"
+      },
+      "version": 1,
+      "tool_slug": "teleport"
+    }
+  },
+  {
+    "id": 775,
+    "slug": "mediamtx",
+    "name": "MediaMTX",
+    "description": "Ready-to-use, zero-dependency real-time media server and proxy to publish, read, record, playback and route video/audio streams over SRT, WebRTC, RTSP, RTMP, HLS, MPEG-TS, RTP.",
+    "purpose": "Ready-to-use, zero-dependency real-time media server and proxy to publish, read, record, playback and route video/audio streams over SRT, WebRTC, RTSP, RTMP, HLS, MPEG-TS, RTP.",
+    "features": [
+      "Self-Hosted Applications",
+      "Media Streaming - Multimedia Streaming"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Media Streaming - Multimedia Streaming"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://mediamtx.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/mediamtx/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "MediaMTX official logo",
+    "icon_fallback_url": "/static/icons/generated/mediamtx.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "mediamtx.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "035d11d9550653f51a5ecf5d2b24cef238226f666e1542507f7ac40f3e1169ca",
+      "source_url": "https://mediamtx.org"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "MediaMTX official website",
+        "url": "https://mediamtx.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "mediamtx.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "MediaMTX official source code",
+        "url": "https://github.com/bluenviron/mediamtx",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 19746,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Media Streaming - Multimedia Streaming"
+      ],
+      "source_record": "mediamtx.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mediamtx/logo.webp",
+        "source_url": "https://mediamtx.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 3038,
+        "checksum": "035d11d9550653f51a5ecf5d2b24cef238226f666e1542507f7ac40f3e1169ca",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://mediamtx.org/favicons-4057801f/android-chrome-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ME"
+      },
+      "version": 1,
+      "tool_slug": "mediamtx"
+    }
+  },
+  {
+    "id": 785,
+    "slug": "libre-translate",
+    "name": "Libre Translate",
+    "description": "Machine Translation API.",
+    "purpose": "Machine Translation API.",
+    "features": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "category": "Web and Hosting",
+    "tags": [
+      "Self-Hosted Applications",
+      "Miscellaneous"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://libretranslate.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on self-hosted applications workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for self-hosted applications software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Self-Hosted Applications",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/libre-translate/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Libre Translate official logo",
+    "icon_fallback_url": "/static/icons/generated/libre-translate.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "LT",
+      "domain": "libretranslate.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "740750cfa861b1078193ff1bcbae15e526f4899b3ac47038871d81c731dc2ff7",
+      "source_url": "https://libretranslate.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Libre Translate official website",
+        "url": "https://libretranslate.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "libretranslate.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Libre Translate official source code",
+        "url": "https://github.com/LibreTranslate/LibreTranslate",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15928,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "source_record": "libre-translate.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/libre-translate/logo.webp",
+        "source_url": "https://libretranslate.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 254,
+        "height": 256,
+        "aspect_ratio": "254:256",
+        "file_size_bytes": 4446,
+        "checksum": "740750cfa861b1078193ff1bcbae15e526f4899b3ac47038871d81c731dc2ff7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://libretranslate.com/static/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LT"
+      },
+      "version": 1,
+      "tool_slug": "libre-translate"
+    }
   }
 ]

@@ -6719,5 +6719,1625 @@
       "version": 1,
       "tool_slug": "scrcpy"
     }
+  },
+  {
+    "id": 703,
+    "slug": "home-assistant",
+    "name": "Home Assistant",
+    "description": "Home automation platform.",
+    "purpose": "Home automation platform.",
+    "features": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://home-assistant.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 89,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/home-assistant/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Home Assistant official logo",
+    "icon_fallback_url": "/static/icons/generated/home-assistant.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "HA",
+      "domain": "home-assistant.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "0fd773e1e85d9ae82d3d9e357c5834f543a3581b69954d1f2c83e2662e6e52bc",
+      "source_url": "https://www.home-assistant.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Home Assistant official website",
+        "url": "https://home-assistant.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "home-assistant.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Home Assistant official source code",
+        "url": "https://github.com/home-assistant/core",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 89792,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "source_record": "home-assistant.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/home-assistant/logo.webp",
+        "source_url": "https://www.home-assistant.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 191,
+        "height": 192,
+        "aspect_ratio": "191:192",
+        "file_size_bytes": 5000,
+        "checksum": "0fd773e1e85d9ae82d3d9e357c5834f543a3581b69954d1f2c83e2662e6e52bc",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.home-assistant.io/images/favicon-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "HA"
+      },
+      "version": 1,
+      "tool_slug": "home-assistant"
+    }
+  },
+  {
+    "id": 736,
+    "slug": "frigate",
+    "name": "Frigate",
+    "description": "Monitor your security cameras with locally processed AI.",
+    "purpose": "Monitor your security cameras with locally processed AI.",
+    "features": [
+      "System and Device Tools",
+      "Video Surveillance"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Video Surveillance"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://frigate.video/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 34,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/frigate/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Frigate official logo",
+    "icon_fallback_url": "/static/icons/generated/frigate.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "F",
+      "domain": "frigate.video",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5d2242035b6be8adfca7343a2f2265cee9e2427be33d6a40b9dde1f603f1f3fb",
+      "source_url": "https://frigate.video/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Frigate official website",
+        "url": "https://frigate.video/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "frigate.video",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Frigate official source code",
+        "url": "https://github.com/blakeblackshear/frigate",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 34897,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Video Surveillance"
+      ],
+      "source_record": "frigate.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/frigate/logo.webp",
+        "source_url": "https://frigate.video/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1448,
+        "checksum": "5d2242035b6be8adfca7343a2f2265cee9e2427be33d6a40b9dde1f603f1f3fb",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://frigate.video/images/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FR"
+      },
+      "version": 1,
+      "tool_slug": "frigate"
+    }
+  },
+  {
+    "id": 764,
+    "slug": "node-red",
+    "name": "Node RED",
+    "description": "Browser-based flow editor that helps you wiring hardware devices, APIs and online services to create IoT solutions.",
+    "purpose": "Browser-based flow editor that helps you wiring hardware devices, APIs and online services to create IoT solutions.",
+    "features": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://nodered.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 23,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/node-red/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Node RED official logo",
+    "icon_fallback_url": "/static/icons/generated/node-red.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "NR",
+      "domain": "nodered.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "edabf3fa62557b014761bcdd9325bfe5f4e8240aea4519f3a68dc01e19626c1f",
+      "source_url": "https://nodered.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Node RED official website",
+        "url": "https://nodered.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "nodered.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Node RED official source code",
+        "url": "https://github.com/node-red/node-red",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 23502,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "source_record": "node-red.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/node-red/logo.webp",
+        "source_url": "https://nodered.org/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1326,
+        "checksum": "edabf3fa62557b014761bcdd9325bfe5f4e8240aea4519f3a68dc01e19626c1f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://nodered.org/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NR"
+      },
+      "version": 1,
+      "tool_slug": "node-red"
+    }
+  },
+  {
+    "id": 768,
+    "slug": "thingsboard",
+    "name": "Thingsboard",
+    "description": "Open-source IoT Platform - Device management, data collection, processing and visualization.",
+    "purpose": "Open-source IoT Platform - Device management, data collection, processing and visualization.",
+    "features": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://thingsboard.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 22,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/thingsboard/logo.svg",
+    "icon_source": "official_product_site",
+    "icon_alt": "Thingsboard official logo",
+    "icon_fallback_url": "/static/icons/generated/thingsboard.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "thingsboard.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "fa440b29023cf5275b6e4f7e9e98cb6bcc888414a7577ee610c5edac9259771e",
+      "source_url": "https://thingsboard.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Thingsboard official website",
+        "url": "https://thingsboard.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "thingsboard.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Thingsboard official source code",
+        "url": "https://github.com/thingsboard/thingsboard",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 22201,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "source_record": "thingsboard.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/thingsboard/logo.svg",
+        "source_url": "https://thingsboard.io/",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 2325,
+        "checksum": "fa440b29023cf5275b6e4f7e9e98cb6bcc888414a7577ee610c5edac9259771e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://thingsboard.io/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TH"
+      },
+      "version": 1,
+      "tool_slug": "thingsboard"
+    }
+  },
+  {
+    "id": 794,
+    "slug": "termix",
+    "name": "Termix",
+    "description": "Clientless web-based server management platform with SSH terminal, tunneling, and file editing capabilities.",
+    "purpose": "Clientless web-based server management platform with SSH terminal, tunneling, and file editing capabilities.",
+    "features": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docs.termix.site/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/termix/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Termix official logo",
+    "icon_fallback_url": "/static/icons/generated/termix.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "T",
+      "domain": "docs.termix.site",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8e686a4109eea7eecda525216d9d87bd3c65011a6ce21b4b8b06b6bcadd483a7",
+      "source_url": "https://docs.termix.site/install/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Termix official website",
+        "url": "https://docs.termix.site/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docs.termix.site",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Termix official source code",
+        "url": "https://github.com/Termix-SSH/Termix",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 14645,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "source_record": "termix.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/termix/logo.webp",
+        "source_url": "https://docs.termix.site/install/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 48,
+        "height": 48,
+        "aspect_ratio": "48:48",
+        "file_size_bytes": 748,
+        "checksum": "8e686a4109eea7eecda525216d9d87bd3c65011a6ce21b4b8b06b6bcadd483a7",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://docs.termix.site/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "TE"
+      },
+      "version": 1,
+      "tool_slug": "termix"
+    }
+  },
+  {
+    "id": 833,
+    "slug": "firezone",
+    "name": "Firezone",
+    "description": "Secure remote access gateway that supports the WireGuard protocol. It offers a Web GUI, 1-line install script, multi-factor auth (MFA), and SSO.",
+    "purpose": "Secure remote access gateway that supports the WireGuard protocol. It offers a Web GUI, 1-line install script, multi-factor auth (MFA), and SSO.",
+    "features": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.firezone.dev/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/firezone/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Firezone official logo",
+    "icon_fallback_url": "/static/icons/generated/firezone.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "F",
+      "domain": "firezone.dev",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "431d8668316dfd30db052c01f51697a439df9ee5ddc96edb85aa1155cf0fb8bd",
+      "source_url": "https://www.firezone.dev/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Firezone official website",
+        "url": "https://www.firezone.dev/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "firezone.dev",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Firezone official source code",
+        "url": "https://github.com/firezone/firezone",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 8992,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "source_record": "firezone.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/firezone/logo.webp",
+        "source_url": "https://www.firezone.dev/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 6194,
+        "checksum": "431d8668316dfd30db052c01f51697a439df9ee5ddc96edb85aa1155cf0fb8bd",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.firezone.dev/images/android-chrome-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FI"
+      },
+      "version": 1,
+      "tool_slug": "firezone"
+    }
+  },
+  {
+    "id": 841,
+    "slug": "evcc",
+    "name": "evcc",
+    "description": "Extensible Electric Vehicle Charge Controller and home energy management system.",
+    "purpose": "Extensible Electric Vehicle Charge Controller and home energy management system.",
+    "features": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Internet of Things (IoT)"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://evcc.io/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/evcc/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "evcc official logo",
+    "icon_fallback_url": "/static/icons/generated/evcc.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "E",
+      "domain": "evcc.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "eaaf59a4f01750e9c6f71a714fdd051afee10d3bc205075564a1c4ef16962f08",
+      "source_url": "https://evcc.io/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "evcc official website",
+        "url": "https://evcc.io/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "evcc.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "evcc official source code",
+        "url": "https://github.com/evcc-io/evcc",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7054,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "source_record": "evcc.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/evcc/logo.webp",
+        "source_url": "https://evcc.io/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 692,
+        "checksum": "eaaf59a4f01750e9c6f71a714fdd051afee10d3bc205075564a1c4ef16962f08",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://evcc.io/favicon-32x32.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "EV"
+      },
+      "version": 1,
+      "tool_slug": "evcc"
+    }
+  },
+  {
+    "id": 842,
+    "slug": "meshcentral",
+    "name": "MeshCentral",
+    "description": "Run your own web server to remotely manage and control computers on a local network or anywhere on the internet.",
+    "purpose": "Run your own web server to remotely manage and control computers on a local network or anywhere on the internet.",
+    "features": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Remote Access"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://meshcentral.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/meshcentral/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "MeshCentral official logo",
+    "icon_fallback_url": "/static/icons/generated/meshcentral.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "meshcentral.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "d23e7397272132493719a9c6a3e4714157bb3e564fdfcd215bdc96e03240983a",
+      "source_url": "https://meshcentral.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "MeshCentral official website",
+        "url": "https://meshcentral.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "meshcentral.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "MeshCentral official source code",
+        "url": "https://github.com/Ylianst/MeshCentral",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 7022,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "source_record": "meshcentral.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/meshcentral/logo.webp",
+        "source_url": "https://meshcentral.com/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 303,
+        "height": 303,
+        "aspect_ratio": "303:303",
+        "file_size_bytes": 12386,
+        "checksum": "d23e7397272132493719a9c6a3e4714157bb3e564fdfcd215bdc96e03240983a",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://meshcentral.com/favicon-303x303.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ME"
+      },
+      "version": 1,
+      "tool_slug": "meshcentral"
+    }
+  },
+  {
+    "id": 848,
+    "slug": "zoneminder",
+    "name": "Zoneminder",
+    "description": "Closed-circuit television (CCTV) software application which supports IP, USB and Analog cameras.",
+    "purpose": "Closed-circuit television (CCTV) software application which supports IP, USB and Analog cameras.",
+    "features": [
+      "System and Device Tools",
+      "Video Surveillance"
+    ],
+    "category": "System Utilities",
+    "tags": [
+      "System and Device Tools",
+      "Video Surveillance"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.zoneminder.com/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on system and device tools workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for system and device tools software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "System and Device Tools",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/zoneminder/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Zoneminder official logo",
+    "icon_fallback_url": "/static/icons/generated/zoneminder.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "Z",
+      "domain": "zoneminder.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "8aa8ea887a9be067d40914dbefc846d9be94f462788e0a592a6fb108d228be4b",
+      "source_url": "https://www.zoneminder.com/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Zoneminder official website",
+        "url": "https://www.zoneminder.com/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "zoneminder.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Zoneminder official source code",
+        "url": "https://github.com/ZoneMinder/ZoneMinder",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 5899,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Video Surveillance"
+      ],
+      "source_record": "zoneminder.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/zoneminder/logo.webp",
+        "source_url": "https://www.zoneminder.com/",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 126,
+        "height": 81,
+        "aspect_ratio": "126:81",
+        "file_size_bytes": 2976,
+        "checksum": "8aa8ea887a9be067d40914dbefc846d9be94f462788e0a592a6fb108d228be4b",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://zoneminder.com/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "ZO"
+      },
+      "version": 1,
+      "tool_slug": "zoneminder"
+    }
   }
 ]

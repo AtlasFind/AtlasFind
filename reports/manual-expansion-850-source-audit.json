@@ -1,0 +1,2708 @@
+{
+  "generated_at": "2026-08-08T08:07:51.780817+00:00",
+  "checked": 300,
+  "passed": 300,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "activepieces",
+      "kind": "repository",
+      "url": "https://github.com/activepieces/activepieces",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/activepieces/activepieces",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "activepieces",
+      "kind": "website",
+      "url": "https://www.activepieces.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.activepieces.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "activitywatch",
+      "kind": "repository",
+      "url": "https://github.com/ActivityWatch/activitywatch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ActivityWatch/activitywatch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "activitywatch",
+      "kind": "website",
+      "url": "https://activitywatch.net",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://activitywatch.net",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "adguard-home",
+      "kind": "repository",
+      "url": "https://github.com/AdguardTeam/AdGuardHome",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/AdguardTeam/AdGuardHome",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "adguard-home",
+      "kind": "website",
+      "url": "https://adguard.com/en/adguard-home/overview.html",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://adguard.com/en/adguard-home/overview.html",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "akaunting",
+      "kind": "repository",
+      "url": "https://github.com/akaunting/akaunting",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/akaunting/akaunting",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "akaunting",
+      "kind": "website",
+      "url": "https://akaunting.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://akaunting.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "answer",
+      "kind": "repository",
+      "url": "https://github.com/apache/answer",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/apache/answer",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "answer",
+      "kind": "website",
+      "url": "https://answer.apache.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://answer.apache.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "appwrite",
+      "kind": "repository",
+      "url": "https://github.com/appwrite/appwrite",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/appwrite/appwrite",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "appwrite",
+      "kind": "website",
+      "url": "https://appwrite.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://appwrite.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "archivebox",
+      "kind": "repository",
+      "url": "https://github.com/ArchiveBox/ArchiveBox",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ArchiveBox/ArchiveBox",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "archivebox",
+      "kind": "website",
+      "url": "https://archivebox.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://archivebox.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "audiobookshelf",
+      "kind": "repository",
+      "url": "https://github.com/advplyr/audiobookshelf",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/advplyr/audiobookshelf",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "audiobookshelf",
+      "kind": "website",
+      "url": "https://www.audiobookshelf.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://audiobookshelf.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "automatisch",
+      "kind": "repository",
+      "url": "https://github.com/automatisch/automatisch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/automatisch/automatisch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "automatisch",
+      "kind": "website",
+      "url": "https://automatisch.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://automatisch.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bagisto",
+      "kind": "repository",
+      "url": "https://github.com/bagisto/bagisto",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/bagisto/bagisto",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bagisto",
+      "kind": "website",
+      "url": "https://bagisto.com/en/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://bagisto.com/en/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bentopdf",
+      "kind": "repository",
+      "url": "https://github.com/alam00000/bentopdf",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/alam00000/bentopdf",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bentopdf",
+      "kind": "website",
+      "url": "https://bentopdf.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.bentopdf.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "blinko",
+      "kind": "repository",
+      "url": "https://github.com/blinkospace/blinko",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/blinkospace/blinko",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "blinko",
+      "kind": "website",
+      "url": "https://blinko.space/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://blinko.space/en",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "blocky",
+      "kind": "repository",
+      "url": "https://github.com/0xERR0R/blocky",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/0xERR0R/blocky",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "blocky",
+      "kind": "website",
+      "url": "https://0xerr0r.github.io/blocky/latest/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://0xerr0r.github.io/blocky/latest/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bytebase",
+      "kind": "repository",
+      "url": "https://github.com/bytebase/bytebase",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/bytebase/bytebase",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "bytebase",
+      "kind": "website",
+      "url": "https://www.bytebase.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.bytebase.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "caddy",
+      "kind": "repository",
+      "url": "https://github.com/caddyserver/caddy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/caddyserver/caddy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "caddy",
+      "kind": "website",
+      "url": "https://caddyserver.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://caddyserver.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "casaos",
+      "kind": "repository",
+      "url": "https://github.com/IceWhaleTech/CasaOS",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/IceWhaleTech/CasaOS",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "casaos",
+      "kind": "website",
+      "url": "https://casaos.zimaspace.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://casaos.zimaspace.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "changedetection-io",
+      "kind": "repository",
+      "url": "https://github.com/dgtlmoon/changedetection.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/dgtlmoon/changedetection.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "changedetection-io",
+      "kind": "website",
+      "url": "https://changedetection.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://changedetection.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "chartdb",
+      "kind": "repository",
+      "url": "https://github.com/chartdb/chartdb",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/chartdb/chartdb",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "chartdb",
+      "kind": "website",
+      "url": "https://chartdb.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://chartdb.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "chatwoot",
+      "kind": "repository",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/chatwoot/chatwoot",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "chatwoot",
+      "kind": "website",
+      "url": "https://www.chatwoot.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.chatwoot.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "cloudreve",
+      "kind": "repository",
+      "url": "https://github.com/cloudreve/cloudreve",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/cloudreve/cloudreve",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "cloudreve",
+      "kind": "website",
+      "url": "https://cloudreve.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cloudreve.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "composio",
+      "kind": "repository",
+      "url": "https://github.com/ComposioHQ/composio",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ComposioHQ/composio",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "composio",
+      "kind": "website",
+      "url": "https://composio.dev/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://composio.dev/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "cryptpad",
+      "kind": "repository",
+      "url": "https://github.com/cryptpad/cryptpad",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/cryptpad/cryptpad",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "cryptpad",
+      "kind": "website",
+      "url": "https://cryptpad.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cryptpad.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dashy",
+      "kind": "repository",
+      "url": "https://github.com/lissy93/dashy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/lissy93/dashy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dashy",
+      "kind": "website",
+      "url": "https://dashy.to/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dashy.to/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "datasette",
+      "kind": "repository",
+      "url": "https://github.com/simonw/datasette",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/simonw/datasette",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "datasette",
+      "kind": "website",
+      "url": "https://datasette.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://datasette.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dawarich",
+      "kind": "repository",
+      "url": "https://github.com/Freika/dawarich",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Freika/dawarich",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dawarich",
+      "kind": "website",
+      "url": "https://dawarich.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dawarich.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dify-ai",
+      "kind": "repository",
+      "url": "https://github.com/langgenius/dify",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/langgenius/dify",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "dify-ai",
+      "kind": "website",
+      "url": "https://dify.ai",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://dify.ai",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "discourse",
+      "kind": "repository",
+      "url": "https://github.com/discourse/discourse",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/discourse/discourse",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "discourse",
+      "kind": "website",
+      "url": "https://www.discourse.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.discourse.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docker-mailserver",
+      "kind": "repository",
+      "url": "https://github.com/docker-mailserver/docker-mailserver",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/docker-mailserver/docker-mailserver",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docker-mailserver",
+      "kind": "website",
+      "url": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docmost-community-edition",
+      "kind": "repository",
+      "url": "https://github.com/docmost/docmost",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/docmost/docmost",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docmost-community-edition",
+      "kind": "website",
+      "url": "https://docmost.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docmost.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docs",
+      "kind": "repository",
+      "url": "https://github.com/suitenumerique/docs",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/suitenumerique/docs",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "docs",
+      "kind": "website",
+      "url": "https://docs.numerique.gouv.fr/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.numerique.gouv.fr/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "documenso",
+      "kind": "repository",
+      "url": "https://github.com/documenso/documenso",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/documenso/documenso",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "documenso",
+      "kind": "website",
+      "url": "https://documenso.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://documenso.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "druid",
+      "kind": "repository",
+      "url": "https://github.com/apache/druid",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/apache/druid",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "druid",
+      "kind": "website",
+      "url": "https://druid.apache.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://druid.apache.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "elasticsearch",
+      "kind": "repository",
+      "url": "https://github.com/elastic/elasticsearch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/elastic/elasticsearch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "elasticsearch",
+      "kind": "website",
+      "url": "https://www.elastic.co/elasticsearch/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.elastic.co/elasticsearch/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "ente",
+      "kind": "repository",
+      "url": "https://github.com/ente/ente",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ente/ente",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "ente",
+      "kind": "website",
+      "url": "https://ente.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ente.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "etherpad",
+      "kind": "repository",
+      "url": "https://github.com/ether/etherpad",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ether/etherpad",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "etherpad",
+      "kind": "website",
+      "url": "https://etherpad.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://etherpad.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evcc",
+      "kind": "repository",
+      "url": "https://github.com/evcc-io/evcc",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/evcc-io/evcc",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evcc",
+      "kind": "website",
+      "url": "https://evcc.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://evcc.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evershop",
+      "kind": "repository",
+      "url": "https://github.com/evershopcommerce/evershop",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/evershopcommerce/evershop",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evershop",
+      "kind": "website",
+      "url": "https://evershop.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://evershop.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evidence",
+      "kind": "repository",
+      "url": "https://github.com/evidence-dev/evidence",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/evidence-dev/evidence",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "evidence",
+      "kind": "website",
+      "url": "https://evidence.dev",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://evidence.dev",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "filestash",
+      "kind": "repository",
+      "url": "https://github.com/mickael-kerjean/filestash",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/mickael-kerjean/filestash",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "filestash",
+      "kind": "website",
+      "url": "https://www.filestash.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.filestash.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "firefly-iii",
+      "kind": "repository",
+      "url": "https://github.com/firefly-iii/firefly-iii",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/firefly-iii/firefly-iii",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "firefly-iii",
+      "kind": "website",
+      "url": "https://firefly-iii.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://firefly-iii.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "firezone",
+      "kind": "repository",
+      "url": "https://github.com/firezone/firezone",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/firezone/firezone",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "firezone",
+      "kind": "website",
+      "url": "https://www.firezone.dev/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.firezone.dev/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "flarum",
+      "kind": "repository",
+      "url": "https://github.com/flarum/flarum",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/flarum/flarum",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "flarum",
+      "kind": "website",
+      "url": "https://flarum.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://flarum.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "freshrss",
+      "kind": "repository",
+      "url": "https://github.com/FreshRSS/FreshRSS",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/FreshRSS/FreshRSS",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "freshrss",
+      "kind": "website",
+      "url": "https://freshrss.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://freshrss.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "frigate",
+      "kind": "repository",
+      "url": "https://github.com/blakeblackshear/frigate",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/blakeblackshear/frigate",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "frigate",
+      "kind": "website",
+      "url": "https://frigate.video/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://frigate.video/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gogs",
+      "kind": "repository",
+      "url": "https://github.com/gogs/gogs",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gogs/gogs",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gogs",
+      "kind": "website",
+      "url": "https://gogs.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gogs.io/getting-started/introduction",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gotenberg",
+      "kind": "repository",
+      "url": "https://github.com/gotenberg/gotenberg",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gotenberg/gotenberg",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gotenberg",
+      "kind": "website",
+      "url": "https://gotenberg.dev",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gotenberg.dev",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gotify",
+      "kind": "repository",
+      "url": "https://github.com/gotify/server",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gotify/server",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "gotify",
+      "kind": "website",
+      "url": "https://gotify.net/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://gotify.net/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "graphhopper",
+      "kind": "repository",
+      "url": "https://github.com/graphhopper/graphhopper",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/graphhopper/graphhopper",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "graphhopper",
+      "kind": "website",
+      "url": "https://graphhopper.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.graphhopper.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "grist",
+      "kind": "repository",
+      "url": "https://github.com/gristlabs/grist-core",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gristlabs/grist-core",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "grist",
+      "kind": "website",
+      "url": "https://getgrist.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.getgrist.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "halo",
+      "kind": "repository",
+      "url": "https://github.com/halo-dev/halo",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/halo-dev/halo",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "halo",
+      "kind": "website",
+      "url": "https://www.halo.run",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.halo.run",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "harbor",
+      "kind": "repository",
+      "url": "https://github.com/goharbor/harbor",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/goharbor/harbor",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "harbor",
+      "kind": "website",
+      "url": "https://goharbor.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://goharbor.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "hasura",
+      "kind": "repository",
+      "url": "https://github.com/hasura/graphql-engine",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/hasura/graphql-engine",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "hasura",
+      "kind": "website",
+      "url": "https://hasura.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hasura.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "healthchecks",
+      "kind": "repository",
+      "url": "https://github.com/healthchecks/healthchecks",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/healthchecks/healthchecks",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "healthchecks",
+      "kind": "website",
+      "url": "https://healthchecks.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://healthchecks.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "heimdall",
+      "kind": "repository",
+      "url": "https://github.com/linuxserver/Heimdall",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/linuxserver/Heimdall",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "heimdall",
+      "kind": "website",
+      "url": "https://heimdall.site/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://heimdall.site/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "home-assistant",
+      "kind": "repository",
+      "url": "https://github.com/home-assistant/core",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/home-assistant/core",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "home-assistant",
+      "kind": "website",
+      "url": "https://home-assistant.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.home-assistant.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "huly",
+      "kind": "repository",
+      "url": "https://github.com/hcengineering/platform",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/hcengineering/platform",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "huly",
+      "kind": "website",
+      "url": "https://huly.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://huly.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "hyperswitch",
+      "kind": "repository",
+      "url": "https://github.com/juspay/hyperswitch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/juspay/hyperswitch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "hyperswitch",
+      "kind": "website",
+      "url": "https://hyperswitch.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://hyperswitch.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "imgproxy",
+      "kind": "repository",
+      "url": "https://github.com/imgproxy/imgproxy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/imgproxy/imgproxy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "imgproxy",
+      "kind": "website",
+      "url": "https://imgproxy.net/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://imgproxy.net/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "infisical-community-edition",
+      "kind": "repository",
+      "url": "https://github.com/Infisical/infisical",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Infisical/infisical",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "infisical-community-edition",
+      "kind": "website",
+      "url": "https://infisical.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://infisical.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "invoice-ninja",
+      "kind": "repository",
+      "url": "https://github.com/invoiceninja/invoiceninja",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/invoiceninja/invoiceninja",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "invoice-ninja",
+      "kind": "website",
+      "url": "https://www.invoiceninja.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.invoiceninja.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "iodine",
+      "kind": "repository",
+      "url": "https://github.com/yarrick/iodine",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/yarrick/iodine",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "iodine",
+      "kind": "website",
+      "url": "https://code.kryo.se/iodine/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://code.kryo.se/iodine/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kanboard",
+      "kind": "repository",
+      "url": "https://github.com/kanboard/kanboard",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/kanboard/kanboard",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kanboard",
+      "kind": "website",
+      "url": "https://kanboard.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://kanboard.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kavita",
+      "kind": "repository",
+      "url": "https://github.com/Kareadita/Kavita",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Kareadita/Kavita",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kavita",
+      "kind": "website",
+      "url": "https://www.kavitareader.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.kavitareader.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kestra",
+      "kind": "repository",
+      "url": "https://github.com/kestra-io/kestra",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/kestra-io/kestra",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kestra",
+      "kind": "website",
+      "url": "https://kestra.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://kestra.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "khoj",
+      "kind": "repository",
+      "url": "https://github.com/khoj-ai/khoj",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/khoj-ai/khoj",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "khoj",
+      "kind": "website",
+      "url": "https://khoj.dev/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://khoj.dev/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kodi",
+      "kind": "repository",
+      "url": "https://github.com/xbmc/xbmc",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/xbmc/xbmc",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kodi",
+      "kind": "website",
+      "url": "https://kodi.tv/",
+      "ok": true,
+      "status": 403,
+      "final_url": "https://kodi.tv/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "slug": "koel",
+      "kind": "repository",
+      "url": "https://github.com/koel/koel",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/koel/koel",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "koel",
+      "kind": "website",
+      "url": "https://koel.dev/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://koel.dev/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kong",
+      "kind": "repository",
+      "url": "https://github.com/Kong/kong",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Kong/kong",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kong",
+      "kind": "website",
+      "url": "https://konghq.com/kong/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://konghq.com/products/kong-gateway",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "krayin",
+      "kind": "repository",
+      "url": "https://github.com/krayin/laravel-crm",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/krayin/laravel-crm",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "krayin",
+      "kind": "website",
+      "url": "https://krayincrm.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://krayincrm.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kutt",
+      "kind": "repository",
+      "url": "https://github.com/thedevs-network/kutt",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/thedevs-network/kutt",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "kutt",
+      "kind": "website",
+      "url": "https://kutt.to",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://kutt.to",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lago",
+      "kind": "repository",
+      "url": "https://github.com/getlago/lago",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/getlago/lago",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lago",
+      "kind": "website",
+      "url": "https://www.getlago.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://getlago.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "langfuse",
+      "kind": "repository",
+      "url": "https://github.com/langfuse/langfuse",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/langfuse/langfuse",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "langfuse",
+      "kind": "website",
+      "url": "https://langfuse.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://langfuse.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lemmy",
+      "kind": "repository",
+      "url": "https://github.com/LemmyNet/lemmy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/LemmyNet/lemmy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lemmy",
+      "kind": "website",
+      "url": "https://join-lemmy.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://join-lemmy.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "leon",
+      "kind": "repository",
+      "url": "https://github.com/leon-ai/leon",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/leon-ai/leon",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "leon",
+      "kind": "website",
+      "url": "https://getleon.ai",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://getleon.ai",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "libre-translate",
+      "kind": "repository",
+      "url": "https://github.com/LibreTranslate/LibreTranslate",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/LibreTranslate/LibreTranslate",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "libre-translate",
+      "kind": "website",
+      "url": "https://libretranslate.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://libretranslate.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "librechat",
+      "kind": "repository",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/danny-avila/LibreChat",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "librechat",
+      "kind": "website",
+      "url": "https://www.librechat.ai",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.librechat.ai",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lila",
+      "kind": "repository",
+      "url": "https://github.com/lichess-org/lila",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/lichess-org/lila",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lila",
+      "kind": "website",
+      "url": "https://lichess.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://lichess.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "linkding",
+      "kind": "repository",
+      "url": "https://github.com/sissbruecker/linkding",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/sissbruecker/linkding",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "linkding",
+      "kind": "website",
+      "url": "https://linkding.link/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://linkding.link/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "listmonk",
+      "kind": "repository",
+      "url": "https://github.com/knadh/listmonk",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/knadh/listmonk",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "listmonk",
+      "kind": "website",
+      "url": "https://listmonk.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://listmonk.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lobehub",
+      "kind": "repository",
+      "url": "https://github.com/lobehub/lobehub",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/lobehub/lobehub",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "lobehub",
+      "kind": "website",
+      "url": "https://www.lobehub.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://lobehub.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "localai",
+      "kind": "repository",
+      "url": "https://github.com/mudler/LocalAI",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/mudler/LocalAI",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "localai",
+      "kind": "website",
+      "url": "https://localai.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://localai.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "luanti",
+      "kind": "repository",
+      "url": "https://github.com/luanti-org/luanti",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/luanti-org/luanti",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "luanti",
+      "kind": "website",
+      "url": "https://www.luanti.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.luanti.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mail-in-a-box",
+      "kind": "repository",
+      "url": "https://github.com/mail-in-a-box/mailinabox",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/mail-in-a-box/mailinabox",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mail-in-a-box",
+      "kind": "website",
+      "url": "https://mailinabox.email/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://mailinabox.email/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mastodon",
+      "kind": "repository",
+      "url": "https://github.com/mastodon/mastodon",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/mastodon/mastodon",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mastodon",
+      "kind": "website",
+      "url": "https://joinmastodon.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://joinmastodon.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mediamtx",
+      "kind": "repository",
+      "url": "https://github.com/bluenviron/mediamtx",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/bluenviron/mediamtx",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mediamtx",
+      "kind": "website",
+      "url": "https://mediamtx.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://mediamtx.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "medusajs",
+      "kind": "repository",
+      "url": "https://github.com/medusajs/medusa",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/medusajs/medusa",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "medusajs",
+      "kind": "website",
+      "url": "https://medusajs.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://medusajs.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "meilisearch",
+      "kind": "repository",
+      "url": "https://github.com/meilisearch/MeiliSearch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/meilisearch/MeiliSearch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "meilisearch",
+      "kind": "website",
+      "url": "https://www.meilisearch.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.meilisearch.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "memos",
+      "kind": "repository",
+      "url": "https://github.com/usememos/memos",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/usememos/memos",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "memos",
+      "kind": "website",
+      "url": "https://usememos.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://usememos.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "meshcentral",
+      "kind": "repository",
+      "url": "https://github.com/Ylianst/MeshCentral",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Ylianst/MeshCentral",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "meshcentral",
+      "kind": "website",
+      "url": "https://meshcentral.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://meshcentral.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mindustry",
+      "kind": "repository",
+      "url": "https://github.com/Anuken/Mindustry",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Anuken/Mindustry",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mindustry",
+      "kind": "website",
+      "url": "https://mindustrygame.github.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://mindustrygame.github.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "miniflux",
+      "kind": "repository",
+      "url": "https://github.com/miniflux/v2",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/miniflux/v2",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "miniflux",
+      "kind": "website",
+      "url": "https://miniflux.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://miniflux.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "monica",
+      "kind": "repository",
+      "url": "https://github.com/monicahq/monica",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/monicahq/monica",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "monica",
+      "kind": "website",
+      "url": "https://monicahq.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://monicahq.com/en/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mopidy",
+      "kind": "repository",
+      "url": "https://github.com/mopidy/mopidy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/mopidy/mopidy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "mopidy",
+      "kind": "website",
+      "url": "https://docs.mopidy.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.mopidy.com/stable/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "myip",
+      "kind": "repository",
+      "url": "https://github.com/jason5ng32/MyIP",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/jason5ng32/MyIP",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "myip",
+      "kind": "website",
+      "url": "https://ipcheck.ing",
+      "ok": true,
+      "status": 403,
+      "final_url": "https://ipcheck.ing",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "slug": "n8n",
+      "kind": "repository",
+      "url": "https://github.com/n8n-io/n8n",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/n8n-io/n8n",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "n8n",
+      "kind": "website",
+      "url": "https://n8n.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://n8n.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "neko",
+      "kind": "repository",
+      "url": "https://github.com/m1k1o/neko",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/m1k1o/neko",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "neko",
+      "kind": "website",
+      "url": "https://neko.m1k1o.net",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://neko.m1k1o.net",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "netalertx",
+      "kind": "repository",
+      "url": "https://github.com/netalertx/NetAlertX",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/netalertx/NetAlertX",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "netalertx",
+      "kind": "website",
+      "url": "https://netalertx.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://netalertx.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "netron",
+      "kind": "repository",
+      "url": "https://github.com/lutzroeder/netron",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/lutzroeder/netron",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "netron",
+      "kind": "website",
+      "url": "https://netron.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://netron.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "newsblur",
+      "kind": "repository",
+      "url": "https://github.com/samuelclay/NewsBlur",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/samuelclay/NewsBlur",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "newsblur",
+      "kind": "website",
+      "url": "https://www.newsblur.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.newsblur.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nginx",
+      "kind": "repository",
+      "url": "https://github.com/nginx/nginx",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/nginx/nginx",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nginx",
+      "kind": "website",
+      "url": "https://nginx.org/en/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nginx.org/en/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nginx-proxy-manager",
+      "kind": "repository",
+      "url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nginx-proxy-manager",
+      "kind": "website",
+      "url": "https://nginxproxymanager.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nginxproxymanager.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nocodb",
+      "kind": "repository",
+      "url": "https://github.com/nocodb/nocodb",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/nocodb/nocodb",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nocodb",
+      "kind": "website",
+      "url": "https://www.nocodb.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nocodb.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "node-red",
+      "kind": "repository",
+      "url": "https://github.com/node-red/node-red",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/node-red/node-red",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "node-red",
+      "kind": "website",
+      "url": "https://nodered.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nodered.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nodebb",
+      "kind": "repository",
+      "url": "https://github.com/NodeBB/NodeBB",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/NodeBB/NodeBB",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "nodebb",
+      "kind": "website",
+      "url": "https://nodebb.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://nodebb.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "novu",
+      "kind": "repository",
+      "url": "https://github.com/novuhq/novu/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/novuhq/novu/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "novu",
+      "kind": "website",
+      "url": "https://novu.co/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://novu.co/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "ntfy",
+      "kind": "repository",
+      "url": "https://github.com/binwiederhier/ntfy",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/binwiederhier/ntfy",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "ntfy",
+      "kind": "website",
+      "url": "https://ntfy.sh/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ntfy.sh/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "onyx-community-edition",
+      "kind": "repository",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/onyx-dot-app/onyx",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "onyx-community-edition",
+      "kind": "website",
+      "url": "https://onyx.app",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://onyx.app",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "openproject",
+      "kind": "repository",
+      "url": "https://github.com/opf/openproject",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/opf/openproject",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "openproject",
+      "kind": "website",
+      "url": "https://www.openproject.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.openproject.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "opensearch",
+      "kind": "repository",
+      "url": "https://github.com/opensearch-project/OpenSearch",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/opensearch-project/OpenSearch",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "opensearch",
+      "kind": "website",
+      "url": "https://opensearch.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://opensearch.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "openttd",
+      "kind": "repository",
+      "url": "https://github.com/OpenTTD/OpenTTD",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/OpenTTD/OpenTTD",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "openttd",
+      "kind": "website",
+      "url": "https://www.openttd.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.openttd.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "opik",
+      "kind": "repository",
+      "url": "https://github.com/comet-ml/opik",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/comet-ml/opik",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "opik",
+      "kind": "website",
+      "url": "https://www.comet.com/site/products/opik/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.comet.com/site/products/opik/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "outline",
+      "kind": "repository",
+      "url": "https://github.com/outline/outline",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/outline/outline",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "outline",
+      "kind": "website",
+      "url": "https://www.getoutline.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.getoutline.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "outline-server",
+      "kind": "repository",
+      "url": "https://github.com/OutlineFoundation/outline-server",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/OutlineFoundation/outline-server",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "outline-server",
+      "kind": "website",
+      "url": "https://getoutline.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://getoutline.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "owncast",
+      "kind": "repository",
+      "url": "https://github.com/owncast/owncast",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/owncast/owncast",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "owncast",
+      "kind": "website",
+      "url": "https://owncast.online/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://owncast.online/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "payload-cms",
+      "kind": "repository",
+      "url": "https://github.com/payloadcms/payload",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/payloadcms/payload",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "payload-cms",
+      "kind": "website",
+      "url": "https://payloadcms.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://payloadcms.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "peertube",
+      "kind": "repository",
+      "url": "https://github.com/Chocobozzz/PeerTube",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Chocobozzz/PeerTube",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "peertube",
+      "kind": "website",
+      "url": "https://joinpeertube.org/en/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://joinpeertube.org/en/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pi-hole",
+      "kind": "repository",
+      "url": "https://github.com/pi-hole/pi-hole",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/pi-hole/pi-hole",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pi-hole",
+      "kind": "website",
+      "url": "https://pi-hole.net/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pi-hole.net/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "plane",
+      "kind": "repository",
+      "url": "https://github.com/makeplane/plane",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/makeplane/plane",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "plane",
+      "kind": "website",
+      "url": "https://plane.so",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://plane.so",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "planka",
+      "kind": "repository",
+      "url": "https://github.com/plankanban/planka",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/plankanban/planka",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "planka",
+      "kind": "website",
+      "url": "https://planka.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://planka.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pocketbase",
+      "kind": "repository",
+      "url": "https://github.com/pocketbase/pocketbase",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/pocketbase/pocketbase",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pocketbase",
+      "kind": "website",
+      "url": "https://pocketbase.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pocketbase.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "posthog",
+      "kind": "repository",
+      "url": "https://github.com/posthog/posthog",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/posthog/posthog",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "posthog",
+      "kind": "website",
+      "url": "https://posthog.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://posthog.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "postiz",
+      "kind": "repository",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gitroomhq/postiz-app",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "postiz",
+      "kind": "website",
+      "url": "https://postiz.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://postiz.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pterodactyl",
+      "kind": "repository",
+      "url": "https://github.com/pterodactyl/panel",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/pterodactyl/panel",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "pterodactyl",
+      "kind": "website",
+      "url": "https://pterodactyl.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pterodactyl.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "puter",
+      "kind": "repository",
+      "url": "https://github.com/heyputer/puter",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/heyputer/puter",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "puter",
+      "kind": "website",
+      "url": "https://puter.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://puter.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "qloapps",
+      "kind": "repository",
+      "url": "https://github.com/Qloapps/QloApps",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Qloapps/QloApps",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "qloapps",
+      "kind": "website",
+      "url": "https://qloapps.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://qloapps.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "reactive-resume",
+      "kind": "repository",
+      "url": "https://github.com/AmruthPillai/Reactive-Resume",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/AmruthPillai/Reactive-Resume",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "reactive-resume",
+      "kind": "website",
+      "url": "https://rxresu.me/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://rxresu.me/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "revealjs",
+      "kind": "repository",
+      "url": "https://github.com/hakimel/reveal.js",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/hakimel/reveal.js",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "revealjs",
+      "kind": "website",
+      "url": "https://revealjs.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://revealjs.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "romm",
+      "kind": "repository",
+      "url": "https://github.com/rommapp/romm",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/rommapp/romm",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "romm",
+      "kind": "website",
+      "url": "https://romm.app/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://romm.app/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "rybbit",
+      "kind": "repository",
+      "url": "https://github.com/rybbit-io/rybbit",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/rybbit-io/rybbit",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "rybbit",
+      "kind": "website",
+      "url": "https://rybbit.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://rybbit.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "saleor",
+      "kind": "repository",
+      "url": "https://github.com/saleor/saleor",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/saleor/saleor",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "saleor",
+      "kind": "website",
+      "url": "https://saleor.io",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://saleor.io",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "speedtest-tracker",
+      "kind": "repository",
+      "url": "https://github.com/alexjustesen/speedtest-tracker",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/alexjustesen/speedtest-tracker",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "speedtest-tracker",
+      "kind": "website",
+      "url": "https://docs.speedtest-tracker.dev/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.speedtest-tracker.dev/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "spree-commerce",
+      "kind": "repository",
+      "url": "https://github.com/spree/spree",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/spree/spree",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "spree-commerce",
+      "kind": "website",
+      "url": "https://spreecommerce.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://spreecommerce.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "srs",
+      "kind": "repository",
+      "url": "https://github.com/ossrs/srs",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ossrs/srs",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "srs",
+      "kind": "website",
+      "url": "https://ossrs.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ossrs.io/lts/en-us/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "stalwart-mail-server",
+      "kind": "repository",
+      "url": "https://github.com/stalwartlabs/stalwart",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/stalwartlabs/stalwart",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "stalwart-mail-server",
+      "kind": "website",
+      "url": "https://stalw.art",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://stalw.art",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "super-productivity",
+      "kind": "repository",
+      "url": "https://github.com/super-productivity/super-productivity",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/super-productivity/super-productivity",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "super-productivity",
+      "kind": "website",
+      "url": "https://super-productivity.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://super-productivity.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tagspaces",
+      "kind": "repository",
+      "url": "https://github.com/tagspaces/tagspaces",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/tagspaces/tagspaces",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tagspaces",
+      "kind": "website",
+      "url": "https://www.tagspaces.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.tagspaces.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "technitium-dns-server",
+      "kind": "repository",
+      "url": "https://github.com/TechnitiumSoftware/DnsServer",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/TechnitiumSoftware/DnsServer",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "technitium-dns-server",
+      "kind": "website",
+      "url": "https://technitium.com/dns/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://technitium.com/dns/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "teleport",
+      "kind": "repository",
+      "url": "https://github.com/gravitational/teleport",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/gravitational/teleport",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "teleport",
+      "kind": "website",
+      "url": "https://goteleport.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://goteleport.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "termix",
+      "kind": "repository",
+      "url": "https://github.com/Termix-SSH/Termix",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Termix-SSH/Termix",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "termix",
+      "kind": "website",
+      "url": "https://docs.termix.site/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.termix.site/install/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "thingsboard",
+      "kind": "repository",
+      "url": "https://github.com/thingsboard/thingsboard",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/thingsboard/thingsboard",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "thingsboard",
+      "kind": "website",
+      "url": "https://thingsboard.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://thingsboard.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tiddlywiki",
+      "kind": "repository",
+      "url": "https://github.com/TiddlyWiki/TiddlyWiki5",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/TiddlyWiki/TiddlyWiki5",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tiddlywiki",
+      "kind": "website",
+      "url": "https://tiddlywiki.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://tiddlywiki.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "traefik",
+      "kind": "repository",
+      "url": "https://github.com/traefik/traefik",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/traefik/traefik",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "traefik",
+      "kind": "website",
+      "url": "https://traefik.io/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://traefik.io/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tube-archivist",
+      "kind": "repository",
+      "url": "https://github.com/tubearchivist/tubearchivist",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/tubearchivist/tubearchivist",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "tube-archivist",
+      "kind": "website",
+      "url": "https://tubearchivist.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://tubearchivist.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "twenty",
+      "kind": "repository",
+      "url": "https://github.com/twentyhq/twenty",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/twentyhq/twenty",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "twenty",
+      "kind": "website",
+      "url": "https://twenty.com",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://twenty.com",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "typesense",
+      "kind": "repository",
+      "url": "https://github.com/typesense/typesense",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/typesense/typesense",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "typesense",
+      "kind": "website",
+      "url": "https://typesense.org",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://typesense.org",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "uvdesk",
+      "kind": "repository",
+      "url": "https://github.com/uvdesk/community-skeleton",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/uvdesk/community-skeleton",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "uvdesk",
+      "kind": "website",
+      "url": "https://www.uvdesk.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.uvdesk.com/en/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "wiki-js",
+      "kind": "repository",
+      "url": "https://github.com/Requarks/wiki",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/Requarks/wiki",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "wiki-js",
+      "kind": "website",
+      "url": "https://js.wiki/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://js.wiki/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "woocommerce",
+      "kind": "repository",
+      "url": "https://github.com/woocommerce/woocommerce",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/woocommerce/woocommerce",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "woocommerce",
+      "kind": "website",
+      "url": "https://woocommerce.com/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://woocommerce.com/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "yourls",
+      "kind": "repository",
+      "url": "https://github.com/YOURLS/YOURLS",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/YOURLS/YOURLS",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "yourls",
+      "kind": "website",
+      "url": "https://yourls.org/",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://yourls.org/",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "zoneminder",
+      "kind": "repository",
+      "url": "https://github.com/ZoneMinder/ZoneMinder",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/ZoneMinder/ZoneMinder",
+      "content_type": "text/html"
+    },
+    {
+      "slug": "zoneminder",
+      "kind": "website",
+      "url": "https://www.zoneminder.com/",
+      "ok": true,
+      "status": 403,
+      "final_url": "https://www.zoneminder.com/",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

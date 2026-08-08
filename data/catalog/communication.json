@@ -7744,5 +7744,2526 @@
       "version": 1,
       "tool_slug": "threema"
     }
+  },
+  {
+    "id": 717,
+    "slug": "mastodon",
+    "name": "Mastodon",
+    "description": "Federated microblogging server.",
+    "purpose": "Federated microblogging server.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://joinmastodon.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 50,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/mastodon/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Mastodon official logo",
+    "icon_fallback_url": "/static/icons/generated/mastodon.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "M",
+      "domain": "joinmastodon.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "1d6f9da5eb382537fd6aab1cdf19c929775eb11a4790f1a6f6c7db6279d6af73",
+      "source_url": "https://joinmastodon.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mastodon official website",
+        "url": "https://joinmastodon.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "joinmastodon.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Mastodon official source code",
+        "url": "https://github.com/mastodon/mastodon",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 50177,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "mastodon.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mastodon/logo.webp",
+        "source_url": "https://joinmastodon.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 1090,
+        "checksum": "1d6f9da5eb382537fd6aab1cdf19c929775eb11a4790f1a6f6c7db6279d6af73",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://joinmastodon.org/_next/static/media/favicon-32x32.3a702fe9.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MA"
+      },
+      "version": 1,
+      "tool_slug": "mastodon"
+    }
+  },
+  {
+    "id": 720,
+    "slug": "discourse",
+    "name": "Discourse",
+    "description": "Advanced forum / community solution based on Ruby and JS.",
+    "purpose": "Advanced forum / community solution based on Ruby and JS.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.discourse.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 47,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/discourse/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Discourse official logo",
+    "icon_fallback_url": "/static/icons/generated/discourse.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "D",
+      "domain": "discourse.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "5efba40080b2a9fb2b177f505cbc74f092b674231e09d3016961bdb501c36204",
+      "source_url": "https://www.discourse.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Discourse official website",
+        "url": "https://www.discourse.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "discourse.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Discourse official source code",
+        "url": "https://github.com/discourse/discourse",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 47617,
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "discourse.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/discourse/logo.webp",
+        "source_url": "https://www.discourse.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 221,
+        "height": 221,
+        "aspect_ratio": "221:221",
+        "file_size_bytes": 5658,
+        "checksum": "5efba40080b2a9fb2b177f505cbc74f092b674231e09d3016961bdb501c36204",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.discourse.org/a/img/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DI"
+      },
+      "version": 1,
+      "tool_slug": "discourse"
+    }
+  },
+  {
+    "id": 729,
+    "slug": "novu",
+    "name": "Novu",
+    "description": "Notification infrastructure for developers.",
+    "purpose": "Notification infrastructure for developers.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://novu.co/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 39,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/novu/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Novu official logo",
+    "icon_fallback_url": "/static/icons/generated/novu.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "novu.co",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "99ea06eb49ba2fdb4b34526930ee4d56867b4b3493388d18d7d37bede58d6637",
+      "source_url": "https://novu.co/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Novu official website",
+        "url": "https://novu.co/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "novu.co",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Novu official source code",
+        "url": "https://github.com/novuhq/novu/",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 39464,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "source_record": "novu.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/novu/logo.webp",
+        "source_url": "https://novu.co/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 144,
+        "height": 144,
+        "aspect_ratio": "144:144",
+        "file_size_bytes": 6014,
+        "checksum": "99ea06eb49ba2fdb4b34526930ee4d56867b4b3493388d18d7d37bede58d6637",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://novu.co/favicon/favicon-144x144.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NO"
+      },
+      "version": 1,
+      "tool_slug": "novu"
+    }
+  },
+  {
+    "id": 735,
+    "slug": "chatwoot",
+    "name": "Chatwoot",
+    "description": "Customer communication platform (alternative to Intercom and Zendesk).",
+    "purpose": "Customer communication platform (alternative to Intercom and Zendesk).",
+    "features": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://www.chatwoot.com",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: ⊘ Proprietary. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 35,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/chatwoot/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Chatwoot official logo",
+    "icon_fallback_url": "/static/icons/generated/chatwoot.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "C",
+      "domain": "chatwoot.com",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "4099ddab73c9008bc2beb538ce2ed28c8a8e3bcbf92bc1fdd33233220fffc0ec",
+      "source_url": "https://www.chatwoot.com"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Chatwoot official website",
+        "url": "https://www.chatwoot.com",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "chatwoot.com",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Chatwoot official source code",
+        "url": "https://github.com/chatwoot/chatwoot",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 35591,
+      "licenses": [
+        "⊘ Proprietary"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "source_record": "chatwoot.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/chatwoot/logo.webp",
+        "source_url": "https://www.chatwoot.com",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4688,
+        "checksum": "4099ddab73c9008bc2beb538ce2ed28c8a8e3bcbf92bc1fdd33233220fffc0ec",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://www.chatwoot.com/favicon/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "CH"
+      },
+      "version": 1,
+      "tool_slug": "chatwoot"
+    }
+  },
+  {
+    "id": 740,
+    "slug": "ntfy",
+    "name": "ntfy",
+    "description": "Push notifications to phone or desktop using HTTP PUT/POST, with Android app, CLI and web app, similar to Pushover and Gotify.",
+    "purpose": "Push notifications to phone or desktop using HTTP PUT/POST, with Android app, CLI and web app, similar to Pushover and Gotify.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://ntfy.sh/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0, GPL-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 33,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/ntfy/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "ntfy official logo",
+    "icon_fallback_url": "/static/icons/generated/ntfy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "ntfy.sh",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "baf470dd3f7a89f0d530a794b5279ada0295e60da9c20ad1fd2c2501a8ba323f",
+      "source_url": "https://ntfy.sh/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "ntfy official website",
+        "url": "https://ntfy.sh/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "ntfy.sh",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "ntfy official source code",
+        "url": "https://github.com/binwiederhier/ntfy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 33249,
+      "licenses": [
+        "Apache-2.0",
+        "GPL-2.0"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "source_record": "ntfy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/ntfy/logo.webp",
+        "source_url": "https://ntfy.sh/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 192,
+        "height": 192,
+        "aspect_ratio": "192:192",
+        "file_size_bytes": 3660,
+        "checksum": "baf470dd3f7a89f0d530a794b5279ada0295e60da9c20ad1fd2c2501a8ba323f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://ntfy.sh/static/images/pwa-192x192.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NT"
+      },
+      "version": 1,
+      "tool_slug": "ntfy"
+    }
+  },
+  {
+    "id": 767,
+    "slug": "listmonk",
+    "name": "Listmonk",
+    "description": "High performance, self-hosted newsletter and mailing list manager with a modern dashboard.",
+    "purpose": "High performance, self-hosted newsletter and mailing list manager with a modern dashboard.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Email - Mailing Lists and Newsletters"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Email - Mailing Lists and Newsletters"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://listmonk.app/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 22,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/listmonk/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Listmonk official logo",
+    "icon_fallback_url": "/static/icons/generated/listmonk.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "listmonk.app",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "d9ed2912641f1c3f0ee7eb39dd0d598d3744575a703632b167e2b5eac9189514",
+      "source_url": "https://listmonk.app/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Listmonk official website",
+        "url": "https://listmonk.app/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "listmonk.app",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Listmonk official source code",
+        "url": "https://github.com/knadh/listmonk",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 22669,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Communication - Email - Mailing Lists and Newsletters"
+      ],
+      "source_record": "listmonk.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/listmonk/logo.webp",
+        "source_url": "https://listmonk.app/",
+        "source_type": "official_product_site",
+        "original_format": "webp",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 1422,
+        "checksum": "d9ed2912641f1c3f0ee7eb39dd0d598d3744575a703632b167e2b5eac9189514",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://listmonk.app/static/images/favicon.webp"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LI"
+      },
+      "version": 1,
+      "tool_slug": "listmonk"
+    }
+  },
+  {
+    "id": 777,
+    "slug": "docker-mailserver",
+    "name": "docker-mailserver",
+    "description": "Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container. Only configuration files, no SQL database.",
+    "purpose": "Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container. Only configuration files, no SQL database.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/docker-mailserver/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "docker-mailserver official logo",
+    "icon_fallback_url": "/static/icons/generated/docker-mailserver.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "DM",
+      "domain": "docker-mailserver.github.io",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "f1e1642607f97172d53f5e6f52f8f9db15732f007cdc58d3f738a5828a7a915e",
+      "source_url": "https://docker-mailserver.github.io/docker-mailserver/edge/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "docker-mailserver official website",
+        "url": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "docker-mailserver.github.io",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "docker-mailserver official source code",
+        "url": "https://github.com/docker-mailserver/docker-mailserver",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 18680,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "source_record": "docker-mailserver.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/docker-mailserver/logo.webp",
+        "source_url": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 926,
+        "checksum": "f1e1642607f97172d53f5e6f52f8f9db15732f007cdc58d3f738a5828a7a915e",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://docker-mailserver.github.io/docker-mailserver/edge/assets/logo/favicon-32x32.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "DM"
+      },
+      "version": 1,
+      "tool_slug": "docker-mailserver"
+    }
+  },
+  {
+    "id": 784,
+    "slug": "flarum",
+    "name": "Flarum",
+    "description": "Delightfully simple forums. Flarum is the next-generation forum software that makes online discussion fun again.",
+    "purpose": "Delightfully simple forums. Flarum is the next-generation forum software that makes online discussion fun again.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://flarum.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/flarum/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Flarum official logo",
+    "icon_fallback_url": "/static/icons/generated/flarum.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "F",
+      "domain": "flarum.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "38e1eed8a55acf0d61e702d72ab561d074ff30bd97e6319573f4bde3c522a2aa",
+      "source_url": "https://flarum.org"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Flarum official website",
+        "url": "https://flarum.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "flarum.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Flarum official source code",
+        "url": "https://github.com/flarum/flarum",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 16364,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "flarum.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/flarum/logo.webp",
+        "source_url": "https://flarum.org",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 1118,
+        "checksum": "38e1eed8a55acf0d61e702d72ab561d074ff30bd97e6319573f4bde3c522a2aa",
+        "transparent_background": false,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://flarum.org/apple-touch-icon.png?v=YAXePblQz9"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "FL"
+      },
+      "version": 1,
+      "tool_slug": "flarum"
+    }
+  },
+  {
+    "id": 788,
+    "slug": "gotify",
+    "name": "Gotify",
+    "description": "Notification server with Android and CLI clients (alternative to PushBullet).",
+    "purpose": "Notification server with Android and CLI clients (alternative to PushBullet).",
+    "features": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Custom Communication Systems"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://gotify.net/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: MIT. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/gotify/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Gotify official logo",
+    "icon_fallback_url": "/static/icons/generated/gotify.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "G",
+      "domain": "gotify.net",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "21c9951c793075d75c45d963eec6621e146a72868c4a18f07043213e3a2291a6",
+      "source_url": "https://gotify.net/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Gotify official website",
+        "url": "https://gotify.net/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "gotify.net",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Gotify official source code",
+        "url": "https://github.com/gotify/server",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15666,
+      "licenses": [
+        "MIT"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "source_record": "gotify.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/gotify/logo.webp",
+        "source_url": "https://gotify.net/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 956,
+        "checksum": "21c9951c793075d75c45d963eec6621e146a72868c4a18f07043213e3a2291a6",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://gotify.net/img/favicon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "GO"
+      },
+      "version": 1,
+      "tool_slug": "gotify"
+    }
+  },
+  {
+    "id": 789,
+    "slug": "answer",
+    "name": "Answer",
+    "description": "Knowledge-based community software. You can use it to quickly build your Q&A community for product technical support, customer support, user communication, and more.",
+    "purpose": "Knowledge-based community software. You can use it to quickly build your Q&A community for product technical support, customer support, user communication, and more.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://answer.apache.org",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: Apache-2.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/answer/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Answer official logo",
+    "icon_fallback_url": "/static/icons/generated/answer.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "A",
+      "domain": "answer.apache.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "74a4180a53d1304e2fe274d12c0df21ed57725a27e65c62004feb65b83521c30",
+      "source_url": "https://answer.apache.org"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Answer official website",
+        "url": "https://answer.apache.org",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "answer.apache.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Answer official source code",
+        "url": "https://github.com/apache/answer",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15635,
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "answer.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/answer/logo.webp",
+        "source_url": "https://answer.apache.org",
+        "source_type": "official_product_site",
+        "original_format": "ico",
+        "served_format": "webp",
+        "width": 32,
+        "height": 32,
+        "aspect_ratio": "32:32",
+        "file_size_bytes": 756,
+        "checksum": "74a4180a53d1304e2fe274d12c0df21ed57725a27e65c62004feb65b83521c30",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://answer.apache.org/img/favicon.ico"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "AN"
+      },
+      "version": 1,
+      "tool_slug": "answer"
+    }
+  },
+  {
+    "id": 791,
+    "slug": "mail-in-a-box",
+    "name": "Mail-in-a-Box",
+    "description": "Turns any Ubuntu server into a fully functional mail server with one command.",
+    "purpose": "Turns any Ubuntu server into a fully functional mail server with one command.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://mailinabox.email/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: CC0-1.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/mail-in-a-box/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Mail-in-a-Box official logo",
+    "icon_fallback_url": "/static/icons/generated/mail-in-a-box.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "MI",
+      "domain": "mailinabox.email",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "7c90312dfecc329008170834f4437da17527d36967d47abe10094c7f27d18c5c",
+      "source_url": "https://mailinabox.email/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Mail-in-a-Box official website",
+        "url": "https://mailinabox.email/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "mailinabox.email",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Mail-in-a-Box official source code",
+        "url": "https://github.com/mail-in-a-box/mailinabox",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15384,
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "source_record": "mail-in-a-box.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/mail-in-a-box/logo.webp",
+        "source_url": "https://mailinabox.email/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 256,
+        "height": 134,
+        "aspect_ratio": "256:134",
+        "file_size_bytes": 4126,
+        "checksum": "7c90312dfecc329008170834f4437da17527d36967d47abe10094c7f27d18c5c",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://mailinabox.email/static/logo_small.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "MI"
+      },
+      "version": 1,
+      "tool_slug": "mail-in-a-box"
+    }
+  },
+  {
+    "id": 793,
+    "slug": "nodebb",
+    "name": "NodeBB",
+    "description": "Forum software built for the modern web.",
+    "purpose": "Forum software built for the modern web.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://nodebb.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: GPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/nodebb/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "NodeBB official logo",
+    "icon_fallback_url": "/static/icons/generated/nodebb.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "N",
+      "domain": "nodebb.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "4aa587677fcc611938574b2d12a4d90476eba5f165345e959c2074e33bea73ec",
+      "source_url": "https://nodebb.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "NodeBB official website",
+        "url": "https://nodebb.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "nodebb.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "NodeBB official source code",
+        "url": "https://github.com/NodeBB/NodeBB",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 15182,
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "nodebb.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/nodebb/logo.webp",
+        "source_url": "https://nodebb.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 180,
+        "height": 180,
+        "aspect_ratio": "180:180",
+        "file_size_bytes": 4924,
+        "checksum": "4aa587677fcc611938574b2d12a4d90476eba5f165345e959c2074e33bea73ec",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://nodebb.org/images/icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "NO"
+      },
+      "version": 1,
+      "tool_slug": "nodebb"
+    }
+  },
+  {
+    "id": 796,
+    "slug": "lemmy",
+    "name": "Lemmy",
+    "description": "Link aggregator for the fediverse (alternative to Reddit).",
+    "purpose": "Link aggregator for the fediverse (alternative to Reddit).",
+    "features": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Social Networks and Forums"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://join-lemmy.org/",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/lemmy/logo.webp",
+    "icon_source": "official_product_site",
+    "icon_alt": "Lemmy official logo",
+    "icon_fallback_url": "/static/icons/generated/lemmy.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "L",
+      "domain": "join-lemmy.org",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "71f79059f3615a6f1f5e448a77b8a9c5aa800f3ab2d38262c5adb65353b47446",
+      "source_url": "https://join-lemmy.org/"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Lemmy official website",
+        "url": "https://join-lemmy.org/",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "join-lemmy.org",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Lemmy official source code",
+        "url": "https://github.com/LemmyNet/lemmy",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 14538,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "source_record": "lemmy.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/lemmy/logo.webp",
+        "source_url": "https://join-lemmy.org/",
+        "source_type": "official_product_site",
+        "original_format": "png",
+        "served_format": "webp",
+        "width": 64,
+        "height": 64,
+        "aspect_ratio": "64:64",
+        "file_size_bytes": 2176,
+        "checksum": "71f79059f3615a6f1f5e448a77b8a9c5aa800f3ab2d38262c5adb65353b47446",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://join-lemmy.org/static/assets/icons/apple-touch-icon.png"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "LE"
+      },
+      "version": 1,
+      "tool_slug": "lemmy"
+    }
+  },
+  {
+    "id": 801,
+    "slug": "stalwart-mail-server",
+    "name": "Stalwart Mail Server",
+    "description": "All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide range of modern features.",
+    "purpose": "All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide range of modern features.",
+    "features": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "category": "Communication",
+    "tags": [
+      "Communication Platforms",
+      "Communication - Email - Complete Solutions"
+    ],
+    "pricing": "Free and open-source",
+    "pricing_type": "free",
+    "rating": 0,
+    "rating_source": "not-rated",
+    "website": "https://stalw.art",
+    "platforms": [
+      "Web",
+      "Linux"
+    ],
+    "open_source": true,
+    "offline": false,
+    "ai_powered": false,
+    "minimum_ram_gb": null,
+    "system_level": "unknown",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "pros": [
+      "Source code is publicly available",
+      "Can be self-hosted",
+      "Focused on communication platforms workflows"
+    ],
+    "cons": [
+      "Setup and maintenance requirements depend on the selected deployment method"
+    ],
+    "target_users": [
+      "Users looking for communication platforms software",
+      "Teams preferring self-hosted software"
+    ],
+    "system_requirements": [
+      "A supported server or container environment",
+      "A modern web browser for web-based access",
+      "See official documentation for version-specific requirements"
+    ],
+    "pricing_details": {
+      "model": "Free and open-source",
+      "note": "The source project is distributed under: AGPL-3.0. Hosting and third-party infrastructure may create separate costs."
+    },
+    "verification": {
+      "status": "verified",
+      "date": "2026-08-08",
+      "note": "Identity, official website, source repository, license, taxonomy and official logo passed the controlled AtlasFind 850 expansion review."
+    },
+    "subcategory": "Communication Platforms",
+    "popularity_score": 20,
+    "editor_choice": false,
+    "date_added": "2026-08-08",
+    "collections": [
+      "free-tools",
+      "open-source"
+    ],
+    "freshness": {
+      "last_checked_at": "2026-08-08",
+      "last_updated_at": "2026-08-08",
+      "next_check_at": "2026-11-06",
+      "status": "current"
+    },
+    "change_history": [
+      {
+        "date": "2026-08-08",
+        "type": "data-review",
+        "summary": "Added through the controlled AtlasFind 850-tool expansion review.",
+        "changes": [
+          "Official identity and source recorded",
+          "Taxonomy placement reviewed",
+          "Local icon fallback generated"
+        ]
+      }
+    ],
+    "price_history": [],
+    "quality_status": "verified",
+    "quality_review": {
+      "scope": "manual-850-expansion",
+      "reviewed_at": "2026-08-08",
+      "note": "Schema, duplicate identity/domain, 300 live sources, taxonomy and 150 local official logos passed release gates."
+    },
+    "icon_url": "/static/images/tools/stalwart-mail-server/logo.svg",
+    "icon_source": "official_product_site",
+    "icon_alt": "Stalwart Mail Server official logo",
+    "icon_fallback_url": "/static/icons/generated/stalwart-mail-server.svg",
+    "icon_meta": {
+      "fallback": "local-svg-monogram",
+      "initials": "SM",
+      "domain": "stalw.art",
+      "lazy_load": true,
+      "review_status": "verified",
+      "official_asset": true,
+      "checksum": "b041317f55404dcd1bcac42de1aac1df03c20742f5748ddf4828a5e4bcc0581f",
+      "source_url": "https://stalw.art"
+    },
+    "aliases": [],
+    "publication_status": "published",
+    "source_references": [
+      {
+        "label": "Stalwart Mail Server official website",
+        "url": "https://stalw.art",
+        "type": "official-homepage",
+        "checked_at": "2026-08-08",
+        "domain": "stalw.art",
+        "claims": [
+          "identity",
+          "website",
+          "description",
+          "category"
+        ]
+      },
+      {
+        "label": "Stalwart Mail Server official source code",
+        "url": "https://github.com/stalwartlabs/stalwart",
+        "type": "official-repository",
+        "checked_at": "2026-08-08",
+        "domain": "github.com",
+        "claims": [
+          "identity",
+          "open_source",
+          "license",
+          "features"
+        ]
+      }
+    ],
+    "manual_expansion_meta": {
+      "stars_at_selection": 14058,
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "source_record": "stalwart-mail-server.yml"
+    },
+    "branding": {
+      "logo": {
+        "status": "verified",
+        "local_path": "static/images/tools/stalwart-mail-server/logo.svg",
+        "source_url": "https://stalw.art",
+        "source_type": "official_product_site",
+        "original_format": "svg",
+        "served_format": "svg",
+        "width": null,
+        "height": null,
+        "aspect_ratio": "vector",
+        "file_size_bytes": 572,
+        "checksum": "b041317f55404dcd1bcac42de1aac1df03c20742f5748ddf4828a5e4bcc0581f",
+        "transparent_background": true,
+        "supports_light_theme": true,
+        "supports_dark_theme": true,
+        "verified_at": "2026-08-08",
+        "verified_by": "atlasfind-850-controlled-review",
+        "license_status": "brand_usage",
+        "attribution_required": false,
+        "notes": "Imported from an asset declared by the official product website during the controlled AtlasFind 850 expansion.",
+        "asset_url": "https://stalw.art/favicon.svg"
+      },
+      "logo_light": null,
+      "logo_dark": null,
+      "icon": null,
+      "fallback": {
+        "type": "initials",
+        "value": "SM"
+      },
+      "version": 1,
+      "tool_slug": "stalwart-mail-server"
+    }
   }
 ]

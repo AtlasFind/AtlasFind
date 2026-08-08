@@ -1,0 +1,3337 @@
+{
+  "version": 1,
+  "status": "manual_shortlist_pending_official_review",
+  "created_at": "2026-08-08T07:56:47.674668+00:00",
+  "count": 150,
+  "replaced_logo_failures": [
+    "adminer",
+    "anubis",
+    "beets",
+    "cal-diy",
+    "countly-community-edition",
+    "docuseal",
+    "emqx",
+    "filebrowser",
+    "goatcounter",
+    "mindsdb",
+    "opencloud",
+    "owncloud",
+    "pangolin",
+    "paperless-ngx",
+    "passbolt",
+    "photoview",
+    "postal",
+    "rsshub",
+    "safeline",
+    "tasmota",
+    "tiny-file-manager",
+    "tinyproxy",
+    "tooljet",
+    "unison",
+    "wagtail",
+    "wekan",
+    "zincsearch"
+  ],
+  "category_counts": {
+    "Artificial Intelligence": 5,
+    "Audio and Music": 3,
+    "Browsers and Internet": 8,
+    "Cloud and Storage": 7,
+    "Communication": 14,
+    "Cybersecurity": 10,
+    "Data and Analytics": 12,
+    "Design and Graphics": 1,
+    "Development": 14,
+    "Finance and Business": 14,
+    "Gaming and Entertainment": 6,
+    "Marketing and SEO": 2,
+    "Office and Documents": 14,
+    "Productivity": 14,
+    "System Utilities": 9,
+    "Video and Animation": 3,
+    "Web and Hosting": 14
+  },
+  "candidates": [
+    {
+      "slug": "n8n",
+      "name": "n8n",
+      "description_source_text": "Free node based Workflow Automation Tool. Easily automate tasks across different services.",
+      "official_url": "https://n8n.io/",
+      "source_code_url": "https://github.com/n8n-io/n8n",
+      "licenses": [
+        "Apache-2.0",
+        "Commons-Clause"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 199737,
+      "updated_at": "2026-08-07",
+      "source_record": "n8n.yml"
+    },
+    {
+      "slug": "dify-ai",
+      "name": "Dify.ai",
+      "description_source_text": "Build, test and deploy LLM applications.",
+      "official_url": "https://dify.ai",
+      "source_code_url": "https://github.com/langgenius/dify",
+      "licenses": [
+        "Apache-2.0",
+        "Commons-Clause"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Low Code"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 151722,
+      "updated_at": "2026-08-07",
+      "source_record": "dify.ai.yml"
+    },
+    {
+      "slug": "home-assistant",
+      "name": "Home Assistant",
+      "description_source_text": "Home automation platform.",
+      "official_url": "https://home-assistant.io/",
+      "source_code_url": "https://github.com/home-assistant/core",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 89792,
+      "updated_at": "2026-08-07",
+      "source_record": "home-assistant.yml"
+    },
+    {
+      "slug": "lobehub",
+      "name": "LobeHub",
+      "description_source_text": "Modern design AI chat framework supporting multiple AI providers, one click install MCP Marketplace and Artifacts / Thinking.",
+      "official_url": "https://www.lobehub.com",
+      "source_code_url": "https://github.com/lobehub/lobehub",
+      "licenses": [
+        "⊘ Proprietary"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Generative Artificial Intelligence (GenAI)"
+      ],
+      "category": "Artificial Intelligence",
+      "subcategory": "AI Applications",
+      "stars": 81394,
+      "updated_at": "2026-08-07",
+      "source_record": "lobehub.yml"
+    },
+    {
+      "slug": "elasticsearch",
+      "name": "ElasticSearch",
+      "description_source_text": "Distributed, RESTful search and analytics engine.",
+      "official_url": "https://www.elastic.co/elasticsearch/",
+      "source_code_url": "https://github.com/elastic/elasticsearch",
+      "licenses": [
+        "SSPL-1.0"
+      ],
+      "technology_platforms": [
+        "Java"
+      ],
+      "directory_tags": [
+        "Search Engines"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 77807,
+      "updated_at": "2026-08-07",
+      "source_record": "elasticsearch.yml"
+    },
+    {
+      "slug": "caddy",
+      "name": "Caddy",
+      "description_source_text": "Powerful, enterprise-ready, open source web server with automatic HTTPS.",
+      "official_url": "https://caddyserver.com/",
+      "source_code_url": "https://github.com/caddyserver/caddy",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "deb",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 74743,
+      "updated_at": "2026-08-07",
+      "source_record": "caddy.yml"
+    },
+    {
+      "slug": "revealjs",
+      "name": "revealjs",
+      "description_source_text": "Framework for easily creating beautiful presentations using HTML.",
+      "official_url": "https://revealjs.com",
+      "source_code_url": "https://github.com/hakimel/reveal.js",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Javascript"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 72092,
+      "updated_at": "2026-05-21",
+      "source_record": "revealjs.yml"
+    },
+    {
+      "slug": "nocodb",
+      "name": "NocoDB",
+      "description_source_text": "No-code platform that turns any database into a smart spreadsheet (alternative to Airtable and Smartsheet).",
+      "official_url": "https://www.nocodb.com/",
+      "source_code_url": "https://github.com/nocodb/nocodb",
+      "licenses": [
+        "SUL-1.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 64440,
+      "updated_at": "2026-08-07",
+      "source_record": "nocodb.yml"
+    },
+    {
+      "slug": "traefik",
+      "name": "Traefik",
+      "description_source_text": "HTTP reverse proxy and load balancer that makes deploying microservices easy.",
+      "official_url": "https://traefik.io/",
+      "source_code_url": "https://github.com/traefik/traefik",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 64328,
+      "updated_at": "2026-08-04",
+      "source_record": "traefik.yml"
+    },
+    {
+      "slug": "memos",
+      "name": "Memos",
+      "description_source_text": "Knowledge base that works with a SQLite db file.",
+      "official_url": "https://usememos.com/",
+      "source_code_url": "https://github.com/usememos/memos",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Go"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 62087,
+      "updated_at": "2026-08-07",
+      "source_record": "memos.yml"
+    },
+    {
+      "slug": "pocketbase",
+      "name": "PocketBase",
+      "description_source_text": "Backend for your next SaaS and Mobile app in one file.",
+      "official_url": "https://pocketbase.io/",
+      "source_code_url": "https://github.com/pocketbase/pocketbase",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Low Code"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 60546,
+      "updated_at": "2026-07-29",
+      "source_record": "pocketbase.yml"
+    },
+    {
+      "slug": "pi-hole",
+      "name": "Pi-hole",
+      "description_source_text": "Blackhole for Internet advertisements with a GUI for management and monitoring.",
+      "official_url": "https://pi-hole.net/",
+      "source_code_url": "https://github.com/pi-hole/pi-hole",
+      "licenses": [
+        "EUPL-1.2"
+      ],
+      "technology_platforms": [
+        "Shell",
+        "PHP",
+        "Docker"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 60239,
+      "updated_at": "2026-07-06",
+      "source_record": "pi-hole.yml"
+    },
+    {
+      "slug": "meilisearch",
+      "name": "MeiliSearch",
+      "description_source_text": "Ultra relevant, instant and typo-tolerant full-text search API.",
+      "official_url": "https://www.meilisearch.com",
+      "source_code_url": "https://github.com/meilisearch/MeiliSearch",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Rust",
+        "Docker",
+        "deb"
+      ],
+      "directory_tags": [
+        "Search Engines"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 58902,
+      "updated_at": "2026-08-06",
+      "source_record": "meilisearch.yml"
+    },
+    {
+      "slug": "appwrite",
+      "name": "Appwrite",
+      "description_source_text": "End to end backend server for web, native, and mobile developers 🚀.",
+      "official_url": "https://appwrite.io",
+      "source_code_url": "https://github.com/appwrite/appwrite",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Low Code"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 56799,
+      "updated_at": "2026-08-07",
+      "source_record": "appwrite.yml"
+    },
+    {
+      "slug": "plane",
+      "name": "Plane",
+      "description_source_text": "Track issues, epics, and product roadmaps in the simplest way possible (alternative to JIRA, Linear and Height).",
+      "official_url": "https://plane.so",
+      "source_code_url": "https://github.com/makeplane/plane",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Project Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 55693,
+      "updated_at": "2026-08-04",
+      "source_record": "plane.yml"
+    },
+    {
+      "slug": "twenty",
+      "name": "Twenty",
+      "description_source_text": "A modern CRM offering the flexibility of open source, advanced features, and a sleek design.",
+      "official_url": "https://twenty.com",
+      "source_code_url": "https://github.com/twentyhq/twenty",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 54467,
+      "updated_at": "2026-08-07",
+      "source_record": "twenty.yml"
+    },
+    {
+      "slug": "mastodon",
+      "name": "Mastodon",
+      "description_source_text": "Federated microblogging server.",
+      "official_url": "https://joinmastodon.org/",
+      "source_code_url": "https://github.com/mastodon/mastodon",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Ruby"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 50177,
+      "updated_at": "2026-08-07",
+      "source_record": "mastodon.yml"
+    },
+    {
+      "slug": "localai",
+      "name": "LocalAI",
+      "description_source_text": "Run your AI models locally and generate images and audio (alternative to OpenAI and Claude).",
+      "official_url": "https://localai.io/",
+      "source_code_url": "https://github.com/mudler/LocalAI",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Generative Artificial Intelligence (GenAI)"
+      ],
+      "category": "Artificial Intelligence",
+      "subcategory": "AI Applications",
+      "stars": 48312,
+      "updated_at": "2026-08-07",
+      "source_record": "localai.yml"
+    },
+    {
+      "slug": "gogs",
+      "name": "Gogs",
+      "description_source_text": "Painless self-hosted Git Service written in Go.",
+      "official_url": "https://gogs.io/",
+      "source_code_url": "https://github.com/gogs/gogs",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go"
+      ],
+      "directory_tags": [
+        "Software Development - Project Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 47724,
+      "updated_at": "2026-08-06",
+      "source_record": "gogs.yml"
+    },
+    {
+      "slug": "discourse",
+      "name": "Discourse",
+      "description_source_text": "Advanced forum / community solution based on Ruby and JS.",
+      "official_url": "https://www.discourse.org/",
+      "source_code_url": "https://github.com/discourse/discourse",
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 47617,
+      "updated_at": "2026-08-07",
+      "source_record": "discourse.yml"
+    },
+    {
+      "slug": "payload-cms",
+      "name": "Payload CMS",
+      "description_source_text": "Developer-first headless CMS and application framework.",
+      "official_url": "https://payloadcms.com/",
+      "source_code_url": "https://github.com/payloadcms/payload",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Content Management Systems (CMS)"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 44042,
+      "updated_at": "2026-08-07",
+      "source_record": "payload-cms.yml"
+    },
+    {
+      "slug": "kong",
+      "name": "Kong",
+      "description_source_text": "Microservice API Gateway and Platform.",
+      "official_url": "https://konghq.com/kong/",
+      "source_code_url": "https://github.com/Kong/kong",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Lua",
+        "Docker",
+        "K8S",
+        "deb"
+      ],
+      "directory_tags": [
+        "Software Development - API Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 43947,
+      "updated_at": "2026-08-04",
+      "source_record": "kong.yml"
+    },
+    {
+      "slug": "hyperswitch",
+      "name": "HyperSwitch",
+      "description_source_text": "Payment switch to make payments fast, reliable and affordable. Connect with multiple payment processors and route traffic effortlessly, all with a single API integration.",
+      "official_url": "https://hyperswitch.io/",
+      "source_code_url": "https://github.com/juspay/hyperswitch",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Rust"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 43416,
+      "updated_at": "2026-08-07",
+      "source_record": "hyperswitch.yml"
+    },
+    {
+      "slug": "puter",
+      "name": "Puter",
+      "description_source_text": "Web-based operating system designed to be feature-rich, exceptionally fast, and highly extensible.",
+      "official_url": "https://puter.com/",
+      "source_code_url": "https://github.com/heyputer/puter",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "File Transfer & Synchronization",
+        "Remote Access"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 43001,
+      "updated_at": "2026-08-07",
+      "source_record": "puter.yml"
+    },
+    {
+      "slug": "librechat",
+      "name": "LibreChat",
+      "description_source_text": "Enhanced ChatGPT-compatible AI chat interface supporting multiple AI providers, with multi-user auth, message search, and plugin support.",
+      "official_url": "https://www.librechat.ai",
+      "source_code_url": "https://github.com/danny-avila/LibreChat",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Generative Artificial Intelligence (GenAI)"
+      ],
+      "category": "Artificial Intelligence",
+      "subcategory": "AI Applications",
+      "stars": 41772,
+      "updated_at": "2026-08-06",
+      "source_record": "librechat.yml"
+    },
+    {
+      "slug": "reactive-resume",
+      "name": "Reactive Resume",
+      "description_source_text": "One-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.",
+      "official_url": "https://rxresu.me/",
+      "source_code_url": "https://github.com/AmruthPillai/Reactive-Resume",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 40123,
+      "updated_at": "2026-07-31",
+      "source_record": "reactive-resume.yml"
+    },
+    {
+      "slug": "outline",
+      "name": "Outline",
+      "description_source_text": "Extensible wiki for your team.",
+      "official_url": "https://www.getoutline.com/",
+      "source_code_url": "https://github.com/outline/outline",
+      "licenses": [
+        "BUSL-1.1"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 40031,
+      "updated_at": "2026-08-07",
+      "source_record": "outline.yml"
+    },
+    {
+      "slug": "halo",
+      "name": "Halo",
+      "description_source_text": "A powerful and easy-to-use website building tool (documentation in Chinese).",
+      "official_url": "https://www.halo.run",
+      "source_code_url": "https://github.com/halo-dev/halo",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Java",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Low Code"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 39485,
+      "updated_at": "2026-08-07",
+      "source_record": "halo.yml"
+    },
+    {
+      "slug": "novu",
+      "name": "Novu",
+      "description_source_text": "Notification infrastructure for developers.",
+      "official_url": "https://novu.co/",
+      "source_code_url": "https://github.com/novuhq/novu/",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 39464,
+      "updated_at": "2026-08-07",
+      "source_record": "novu.yml"
+    },
+    {
+      "slug": "posthog",
+      "name": "PostHog",
+      "description_source_text": "Product analytics, session recording, feature flagging and a/b testing that you can self-host (alternative to Mixpanel, Amplitude, Heap, HotJar, Optimizely).",
+      "official_url": "https://posthog.com",
+      "source_code_url": "https://github.com/posthog/posthog",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Python"
+      ],
+      "directory_tags": [
+        "Analytics",
+        "Software Development - Feature Toggle"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 37548,
+      "updated_at": "2026-08-07",
+      "source_record": "posthog.yml"
+    },
+    {
+      "slug": "casaos",
+      "name": "CasaOS",
+      "description_source_text": "Simple, easy-to-use, elegant Home Cloud system.",
+      "official_url": "https://casaos.zimaspace.com/",
+      "source_code_url": "https://github.com/IceWhaleTech/CasaOS",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Self-hosting Solutions"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 37003,
+      "updated_at": "2025-08-06",
+      "source_record": "casaos.yml"
+    },
+    {
+      "slug": "khoj",
+      "name": "Khoj",
+      "description_source_text": "Your AI second brain. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI.",
+      "official_url": "https://khoj.dev/",
+      "source_code_url": "https://github.com/khoj-ai/khoj",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Generative Artificial Intelligence (GenAI)"
+      ],
+      "category": "Artificial Intelligence",
+      "subcategory": "AI Applications",
+      "stars": 36381,
+      "updated_at": "2026-08-02",
+      "source_record": "khoj.yml"
+    },
+    {
+      "slug": "adguard-home",
+      "name": "AdGuard Home",
+      "description_source_text": "User-friendly ads & trackers blocking DNS server.",
+      "official_url": "https://adguard.com/en/adguard-home/overview.html",
+      "source_code_url": "https://github.com/AdguardTeam/AdGuardHome",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 35973,
+      "updated_at": "2026-08-06",
+      "source_record": "adguard-home.yml"
+    },
+    {
+      "slug": "medusajs",
+      "name": "MedusaJs",
+      "description_source_text": "Headless commerce engine that enables developers to create amazing digital commerce experiences.",
+      "official_url": "https://medusajs.com/",
+      "source_code_url": "https://github.com/medusajs/medusa",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 35640,
+      "updated_at": "2026-08-07",
+      "source_record": "medusajs.yml"
+    },
+    {
+      "slug": "chatwoot",
+      "name": "Chatwoot",
+      "description_source_text": "Customer communication platform (alternative to Intercom and Zendesk).",
+      "official_url": "https://www.chatwoot.com",
+      "source_code_url": "https://github.com/chatwoot/chatwoot",
+      "licenses": [
+        "⊘ Proprietary"
+      ],
+      "technology_platforms": [
+        "Ruby",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 35591,
+      "updated_at": "2026-08-07",
+      "source_record": "chatwoot.yml"
+    },
+    {
+      "slug": "frigate",
+      "name": "Frigate",
+      "description_source_text": "Monitor your security cameras with locally processed AI.",
+      "official_url": "https://frigate.video/",
+      "source_code_url": "https://github.com/blakeblackshear/frigate",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Python",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Video Surveillance"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 34897,
+      "updated_at": "2026-08-05",
+      "source_record": "frigate.yml"
+    },
+    {
+      "slug": "postiz",
+      "name": "Postiz",
+      "description_source_text": "Schedule posts, track the performance of your content, and manage all your social media accounts in one place (Alternative to Buffer, Hootsuite, Sprout Social).",
+      "official_url": "https://postiz.com",
+      "source_code_url": "https://github.com/gitroomhq/postiz-app",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 34390,
+      "updated_at": "2026-08-07",
+      "source_record": "postiz.yml"
+    },
+    {
+      "slug": "nginx-proxy-manager",
+      "name": "Nginx Proxy Manager",
+      "description_source_text": "Docker container for managing Nginx proxy hosts with a simple, powerful interface.",
+      "official_url": "https://nginxproxymanager.com/",
+      "source_code_url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 33803,
+      "updated_at": "2026-06-10",
+      "source_record": "nginx-proxy-manager.yml"
+    },
+    {
+      "slug": "netron",
+      "name": "Netron",
+      "description_source_text": "Visualizer for neural network and machine learning models.",
+      "official_url": "https://netron.app/",
+      "source_code_url": "https://github.com/lutzroeder/netron",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 33323,
+      "updated_at": "2026-08-07",
+      "source_record": "netron.yml"
+    },
+    {
+      "slug": "ntfy",
+      "name": "ntfy",
+      "description_source_text": "Push notifications to phone or desktop using HTTP PUT/POST, with Android app, CLI and web app, similar to Pushover and Gotify.",
+      "official_url": "https://ntfy.sh/",
+      "source_code_url": "https://github.com/binwiederhier/ntfy",
+      "licenses": [
+        "Apache-2.0",
+        "GPL-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 33249,
+      "updated_at": "2026-08-04",
+      "source_record": "ntfy.yml"
+    },
+    {
+      "slug": "changedetection-io",
+      "name": "changedetection.io",
+      "description_source_text": "Stay up-to-date with web-site content changes.",
+      "official_url": "https://changedetection.io/",
+      "source_code_url": "https://github.com/dgtlmoon/changedetection.io",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 32978,
+      "updated_at": "2026-08-04",
+      "source_record": "changedetection.io.yml"
+    },
+    {
+      "slug": "langfuse",
+      "name": "Langfuse",
+      "description_source_text": "LLM engineering platform for model tracing, prompt management, and application evaluation. Langfuse helps teams collaboratively debug, analyze, and iterate on their LLM applications such as chatbots or AI agents.",
+      "official_url": "https://langfuse.com",
+      "source_code_url": "https://github.com/langfuse/langfuse",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - IDE & Tools"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 32712,
+      "updated_at": "2026-08-07",
+      "source_record": "langfuse.yml"
+    },
+    {
+      "slug": "hasura",
+      "name": "Hasura",
+      "description_source_text": "Fast, instant realtime GraphQL APIs on Postgres with fine grained access control, also trigger webhooks on database events.",
+      "official_url": "https://hasura.io",
+      "source_code_url": "https://github.com/hasura/graphql-engine",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Haskell",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Software Development - API Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 32081,
+      "updated_at": "2026-08-03",
+      "source_record": "hasura.yml"
+    },
+    {
+      "slug": "onyx-community-edition",
+      "name": "Onyx Community Edition",
+      "description_source_text": "Chat UI that works with any LLM. It comes loaded with advanced features like agents, web search, RAG, MCP, deep research, Connectors to 40+ knowledge sources, and more.",
+      "official_url": "https://onyx.app",
+      "source_code_url": "https://github.com/onyx-dot-app/onyx",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Generative Artificial Intelligence (GenAI)"
+      ],
+      "category": "Artificial Intelligence",
+      "subcategory": "AI Applications",
+      "stars": 31489,
+      "updated_at": "2026-08-07",
+      "source_record": "onyx-community-edition.yml"
+    },
+    {
+      "slug": "nginx",
+      "name": "NGINX",
+      "description_source_text": "HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy server.",
+      "official_url": "https://nginx.org/en/",
+      "source_code_url": "https://github.com/nginx/nginx",
+      "licenses": [
+        "BSD-2-Clause"
+      ],
+      "technology_platforms": [
+        "C",
+        "deb",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Web Servers"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Web Platforms",
+      "stars": 31360,
+      "updated_at": "2026-08-07",
+      "source_record": "nginx.yml"
+    },
+    {
+      "slug": "composio",
+      "name": "Composio",
+      "description_source_text": "Integration platform for AI agents & LLMs with support for 250+ apps and custom tools.",
+      "official_url": "https://composio.dev/",
+      "source_code_url": "https://github.com/ComposioHQ/composio",
+      "licenses": [
+        "Elastic-2.0"
+      ],
+      "technology_platforms": [
+        "Python"
+      ],
+      "directory_tags": [
+        "Software Development - API Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 29573,
+      "updated_at": "2026-08-07",
+      "source_record": "composio.yml"
+    },
+    {
+      "slug": "harbor",
+      "name": "Harbor",
+      "description_source_text": "Cloud native image registry that stores, signs, and scans content.",
+      "official_url": "https://goharbor.io/",
+      "source_code_url": "https://github.com/goharbor/harbor",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "File Transfer - Object Storage & File Servers"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 29111,
+      "updated_at": "2026-08-07",
+      "source_record": "harbor.yml"
+    },
+    {
+      "slug": "srs",
+      "name": "SRS",
+      "description_source_text": "A simple, high efficiency and real-time video server, supports RTMP, WebRTC, HLS, HTTP-FLV and SRT.",
+      "official_url": "https://ossrs.io/",
+      "source_code_url": "https://github.com/ossrs/srs",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "C++"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "category": "Video and Animation",
+      "subcategory": "Video Tools",
+      "stars": 29105,
+      "updated_at": "2026-08-07",
+      "source_record": "srs.yml"
+    },
+    {
+      "slug": "wiki-js",
+      "name": "Wiki.js",
+      "description_source_text": "Modern, lightweight and powerful wiki app using Git and Markdown.",
+      "official_url": "https://js.wiki/",
+      "source_code_url": "https://github.com/Requarks/wiki",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 28727,
+      "updated_at": "2026-05-01",
+      "source_record": "wiki.js.yml"
+    },
+    {
+      "slug": "infisical-community-edition",
+      "name": "Infisical Community Edition",
+      "description_source_text": "Platform for secrets, certificates, and privileged access management.",
+      "official_url": "https://infisical.com/",
+      "source_code_url": "https://github.com/Infisical/infisical",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S",
+        "deb"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 28611,
+      "updated_at": "2026-08-07",
+      "source_record": "infisical-community-edition.yml"
+    },
+    {
+      "slug": "mindustry",
+      "name": "Mindustry",
+      "description_source_text": "Factorio-like tower defense game. Build production chains to gather more resources, and build complex facilities.",
+      "official_url": "https://mindustrygame.github.io/",
+      "source_code_url": "https://github.com/Anuken/Mindustry",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Java"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 28528,
+      "updated_at": "2026-08-07",
+      "source_record": "mindustry.yml"
+    },
+    {
+      "slug": "cloudreve",
+      "name": "Cloudreve",
+      "description_source_text": "File management and sharing system, supports multiple storage providers.",
+      "official_url": "https://cloudreve.org/",
+      "source_code_url": "https://github.com/cloudreve/cloudreve",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Go"
+      ],
+      "directory_tags": [
+        "File Transfer & Synchronization"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 28484,
+      "updated_at": "2026-08-02",
+      "source_record": "cloudreve.yml"
+    },
+    {
+      "slug": "ente",
+      "name": "Ente",
+      "description_source_text": "An end-to-end encrypted photo-sharing platform (alternative to Google Photos, Apple Photos).",
+      "official_url": "https://ente.com/",
+      "source_code_url": "https://github.com/ente/ente",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs",
+        "Go"
+      ],
+      "directory_tags": [
+        "Photo Galleries"
+      ],
+      "category": "Design and Graphics",
+      "subcategory": "Visual Tools",
+      "stars": 28200,
+      "updated_at": "2026-08-07",
+      "source_record": "ente.yml"
+    },
+    {
+      "slug": "archivebox",
+      "name": "ArchiveBox",
+      "description_source_text": "Create HTML & screenshot archives of sites from your bookmarks, browsing history, RSS feeds, or other sources (alternative to Wayback Machine).",
+      "official_url": "https://archivebox.io/",
+      "source_code_url": "https://github.com/ArchiveBox/ArchiveBox",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Archiving and Digital Preservation (DP)"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 28079,
+      "updated_at": "2026-08-05",
+      "source_record": "archivebox.yml"
+    },
+    {
+      "slug": "bagisto",
+      "name": "Bagisto",
+      "description_source_text": "Leading Laravel open source e-commerce framework with multi-inventory sources, taxation, localization, dropshipping and more exciting features.",
+      "official_url": "https://bagisto.com/en/",
+      "source_code_url": "https://github.com/bagisto/bagisto",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 27951,
+      "updated_at": "2026-08-07",
+      "source_record": "bagisto.yml"
+    },
+    {
+      "slug": "kestra",
+      "name": "Kestra",
+      "description_source_text": "Event-driven, language-agnostic platform to create, schedule, and monitor workflows. In code. Coordinate data pipelines and tasks such as ETL and ELT.",
+      "official_url": "https://kestra.io",
+      "source_code_url": "https://github.com/kestra-io/kestra",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 27574,
+      "updated_at": "2026-08-07",
+      "source_record": "kestra.yml"
+    },
+    {
+      "slug": "huly",
+      "name": "Huly",
+      "description_source_text": "All-in-one project management platform (alternative to Linear, Jira, Slack, Notion, Motion).",
+      "official_url": "https://huly.io",
+      "source_code_url": "https://github.com/hcengineering/platform",
+      "licenses": [
+        "EPL-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Software Development - Project Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 27256,
+      "updated_at": "2026-08-04",
+      "source_record": "huly.yml"
+    },
+    {
+      "slug": "typesense",
+      "name": "Typesense",
+      "description_source_text": "Blazing fast, typo-tolerant open source search engine optimized for developer happiness and ease of use.",
+      "official_url": "https://typesense.org",
+      "source_code_url": "https://github.com/typesense/typesense",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "C++",
+        "Docker",
+        "K8S",
+        "deb"
+      ],
+      "directory_tags": [
+        "Search Engines"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 26408,
+      "updated_at": "2026-08-05",
+      "source_record": "typesense.yml"
+    },
+    {
+      "slug": "dashy",
+      "name": "Dashy",
+      "description_source_text": "Feature-rich homepage for your homelab, with easy YAML configuration.",
+      "official_url": "https://dashy.to/",
+      "source_code_url": "https://github.com/lissy93/dashy",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Personal Dashboards"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 26140,
+      "updated_at": "2026-08-07",
+      "source_record": "dashy.yml"
+    },
+    {
+      "slug": "monica",
+      "name": "Monica",
+      "description_source_text": "Personal relationship manager, and a new kind of CRM to organize interactions with your friends and family.",
+      "official_url": "https://monicahq.com/",
+      "source_code_url": "https://github.com/monicahq/monica",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 24980,
+      "updated_at": "2025-08-30",
+      "source_record": "monica.yml"
+    },
+    {
+      "slug": "firefly-iii",
+      "name": "Firefly III",
+      "description_source_text": "Firefly III is a modern financial manager. It helps you to keep track of your money and make budget forecasts. It supports credit cards, has an advanced rule engine and can import data from many banks.",
+      "official_url": "https://firefly-iii.org/",
+      "source_code_url": "https://github.com/firefly-iii/firefly-iii",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 24253,
+      "updated_at": "2026-08-07",
+      "source_record": "firefly-iii.yml"
+    },
+    {
+      "slug": "krayin",
+      "name": "Krayin",
+      "description_source_text": "CRM solution for SMEs and Enterprises for complete customer lifecycle management.",
+      "official_url": "https://krayincrm.com/",
+      "source_code_url": "https://github.com/krayin/laravel-crm",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Customer Relationship Management (CRM)"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 23643,
+      "updated_at": "2026-08-07",
+      "source_record": "krayin.yml"
+    },
+    {
+      "slug": "activepieces",
+      "name": "Activepieces",
+      "description_source_text": "No-code business automation tool like Zapier or Tray. For example, you can send a Slack notification for each new Trello card.",
+      "official_url": "https://www.activepieces.com",
+      "source_code_url": "https://github.com/activepieces/activepieces",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 23618,
+      "updated_at": "2026-08-07",
+      "source_record": "activepieces.yml"
+    },
+    {
+      "slug": "node-red",
+      "name": "Node RED",
+      "description_source_text": "Browser-based flow editor that helps you wiring hardware devices, APIs and online services to create IoT solutions.",
+      "official_url": "https://nodered.org/",
+      "source_code_url": "https://github.com/node-red/node-red",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 23502,
+      "updated_at": "2026-07-30",
+      "source_record": "node-red.yml"
+    },
+    {
+      "slug": "saleor",
+      "name": "Saleor",
+      "description_source_text": "Django based open-sourced e-commerce storefront.",
+      "official_url": "https://saleor.io",
+      "source_code_url": "https://github.com/saleor/saleor",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Python"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 23190,
+      "updated_at": "2026-08-06",
+      "source_record": "saleor.yml"
+    },
+    {
+      "slug": "chartdb",
+      "name": "ChartDB",
+      "description_source_text": "Database diagrams editor that allows you to visualize and design your DB with a single query.",
+      "official_url": "https://chartdb.io/",
+      "source_code_url": "https://github.com/chartdb/chartdb",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 22696,
+      "updated_at": "2026-04-11",
+      "source_record": "chartdb.yml"
+    },
+    {
+      "slug": "listmonk",
+      "name": "Listmonk",
+      "description_source_text": "High performance, self-hosted newsletter and mailing list manager with a modern dashboard.",
+      "official_url": "https://listmonk.app/",
+      "source_code_url": "https://github.com/knadh/listmonk",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Email - Mailing Lists and Newsletters"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 22669,
+      "updated_at": "2026-08-06",
+      "source_record": "listmonk.yml"
+    },
+    {
+      "slug": "thingsboard",
+      "name": "Thingsboard",
+      "description_source_text": "Open-source IoT Platform - Device management, data collection, processing and visualization.",
+      "official_url": "https://thingsboard.io/",
+      "source_code_url": "https://github.com/thingsboard/thingsboard",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Java",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 22201,
+      "updated_at": "2026-08-06",
+      "source_record": "thingsboard.yml"
+    },
+    {
+      "slug": "neko",
+      "name": "Neko",
+      "description_source_text": "Virtual browser that runs in docker and uses WebRTC.",
+      "official_url": "https://neko.m1k1o.net",
+      "source_code_url": "https://github.com/m1k1o/neko",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Go"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 21883,
+      "updated_at": "2026-08-07",
+      "source_record": "neko.yml"
+    },
+    {
+      "slug": "docmost-community-edition",
+      "name": "docmost Community Edition",
+      "description_source_text": "Collaborative wiki and documentation software (alternative to Confluence, Notion).",
+      "official_url": "https://docmost.com/",
+      "source_code_url": "https://github.com/docmost/docmost",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 21286,
+      "updated_at": "2026-08-06",
+      "source_record": "docmost-community-edition.yml"
+    },
+    {
+      "slug": "opik",
+      "name": "Opik",
+      "description_source_text": "Evaluate, test, and ship LLM applications with a suite of observability tools to calibrate language model outputs across your dev and production lifecycle.",
+      "official_url": "https://www.comet.com/site/products/opik/",
+      "source_code_url": "https://github.com/comet-ml/opik",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Python"
+      ],
+      "directory_tags": [
+        "Software Development - API Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 21198,
+      "updated_at": "2026-08-07",
+      "source_record": "opik.yml"
+    },
+    {
+      "slug": "super-productivity",
+      "name": "Super Productivity",
+      "description_source_text": "Advanced todo list app with integrated timeboxing and time tracking capabilities. Integrates with Jira, GitHub, GitLab, Redmine and OpenProject.",
+      "official_url": "https://super-productivity.com",
+      "source_code_url": "https://github.com/super-productivity/super-productivity",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 21180,
+      "updated_at": "2026-08-07",
+      "source_record": "super-productivity.yml"
+    },
+    {
+      "slug": "kodi",
+      "name": "Kodi",
+      "description_source_text": "Multimedia/Entertainment center, formerly known as XBMC. Runs on Android, BSD, Linux, macOS, iOS and Windows.",
+      "official_url": "https://kodi.tv/",
+      "source_code_url": "https://github.com/xbmc/xbmc",
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "technology_platforms": [
+        "C++",
+        "deb"
+      ],
+      "directory_tags": [
+        "Media Streaming - Multimedia Streaming"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 21064,
+      "updated_at": "2026-08-07",
+      "source_record": "kodi.yml"
+    },
+    {
+      "slug": "teleport",
+      "name": "Teleport",
+      "description_source_text": "Certificate authority and access plane for SSH, Kubernetes, web applications, and databases.",
+      "official_url": "https://goteleport.com/",
+      "source_code_url": "https://github.com/gravitational/teleport",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 20779,
+      "updated_at": "2026-08-07",
+      "source_record": "teleport.yml"
+    },
+    {
+      "slug": "mediamtx",
+      "name": "MediaMTX",
+      "description_source_text": "Ready-to-use, zero-dependency real-time media server and proxy to publish, read, record, playback and route video/audio streams over SRT, WebRTC, RTSP, RTMP, HLS, MPEG-TS, RTP.",
+      "official_url": "https://mediamtx.org",
+      "source_code_url": "https://github.com/bluenviron/mediamtx",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Media Streaming - Multimedia Streaming"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 19746,
+      "updated_at": "2026-08-07",
+      "source_record": "mediamtx.yml"
+    },
+    {
+      "slug": "uvdesk",
+      "name": "UVDesk",
+      "description_source_text": "UVDesk community is a service oriented, event driven extensible opensource helpdesk system that can be used by your organization to provide efficient support to your clients effortlessly whichever way you imagine.",
+      "official_url": "https://www.uvdesk.com/",
+      "source_code_url": "https://github.com/uvdesk/community-skeleton",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Software Development - Project Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 19510,
+      "updated_at": "2025-10-01",
+      "source_record": "uvdesk.yml"
+    },
+    {
+      "slug": "docker-mailserver",
+      "name": "docker-mailserver",
+      "description_source_text": "Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container. Only configuration files, no SQL database.",
+      "official_url": "https://docker-mailserver.github.io/docker-mailserver/edge/",
+      "source_code_url": "https://github.com/docker-mailserver/docker-mailserver",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 18680,
+      "updated_at": "2026-08-03",
+      "source_record": "docker-mailserver.yml"
+    },
+    {
+      "slug": "lila",
+      "name": "Lila",
+      "description_source_text": "Ad-less chess server powering lichess.org, with official iOS and Android client apps.",
+      "official_url": "https://lichess.org/",
+      "source_code_url": "https://github.com/lichess-org/lila",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Scala"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 18554,
+      "updated_at": "2026-08-07",
+      "source_record": "lila.yml"
+    },
+    {
+      "slug": "activitywatch",
+      "name": "ActivityWatch",
+      "description_source_text": "Automatically track how you spend time on your devices.",
+      "official_url": "https://activitywatch.net",
+      "source_code_url": "https://github.com/ActivityWatch/activitywatch",
+      "licenses": [
+        "MPL-2.0"
+      ],
+      "technology_platforms": [
+        "Python"
+      ],
+      "directory_tags": [
+        "Time Tracking"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 18527,
+      "updated_at": "2026-08-06",
+      "source_record": "activitywatch.yml"
+    },
+    {
+      "slug": "etherpad",
+      "name": "Etherpad",
+      "description_source_text": "Highly customizable online editor providing collaborative editing in real-time.",
+      "official_url": "https://etherpad.org/",
+      "source_code_url": "https://github.com/ether/etherpad",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Office Suites"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 18479,
+      "updated_at": "2026-08-05",
+      "source_record": "etherpad.yml"
+    },
+    {
+      "slug": "leon",
+      "name": "Leon",
+      "description_source_text": "Personal assistant who can live on your server.",
+      "official_url": "https://getleon.ai",
+      "source_code_url": "https://github.com/leon-ai/leon",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 17419,
+      "updated_at": "2026-08-04",
+      "source_record": "leon.yml"
+    },
+    {
+      "slug": "koel",
+      "name": "koel",
+      "description_source_text": "Personal music streaming server that works.",
+      "official_url": "https://koel.dev/",
+      "source_code_url": "https://github.com/koel/koel",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Media Streaming - Audio Streaming"
+      ],
+      "category": "Audio and Music",
+      "subcategory": "Audio and Music Tools",
+      "stars": 17208,
+      "updated_at": "2026-07-25",
+      "source_record": "koel.yml"
+    },
+    {
+      "slug": "docs",
+      "name": "Docs",
+      "description_source_text": "Collaborative note taking, wiki and documentation platform that scales.",
+      "official_url": "https://docs.numerique.gouv.fr/",
+      "source_code_url": "https://github.com/suitenumerique/docs",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "K8S"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors",
+        "Knowledge Management Tools"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 16707,
+      "updated_at": "2026-08-07",
+      "source_record": "docs.yml"
+    },
+    {
+      "slug": "flarum",
+      "name": "Flarum",
+      "description_source_text": "Delightfully simple forums. Flarum is the next-generation forum software that makes online discussion fun again.",
+      "official_url": "https://flarum.org",
+      "source_code_url": "https://github.com/flarum/flarum",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 16364,
+      "updated_at": "2026-07-08",
+      "source_record": "flarum.yml"
+    },
+    {
+      "slug": "libre-translate",
+      "name": "Libre Translate",
+      "description_source_text": "Machine Translation API.",
+      "official_url": "https://libretranslate.com/",
+      "source_code_url": "https://github.com/LibreTranslate/LibreTranslate",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Python"
+      ],
+      "directory_tags": [
+        "Miscellaneous"
+      ],
+      "category": "Web and Hosting",
+      "subcategory": "Self-Hosted Applications",
+      "stars": 15928,
+      "updated_at": "2026-08-05",
+      "source_record": "libre-translate.yml"
+    },
+    {
+      "slug": "openproject",
+      "name": "OpenProject",
+      "description_source_text": "Manage your projects, tasks and goals. Collaborate via work packages and link them to your pull requests on Github.",
+      "official_url": "https://www.openproject.org",
+      "source_code_url": "https://github.com/opf/openproject",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Ruby",
+        "deb",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Software Development - Project Management"
+      ],
+      "category": "Development",
+      "subcategory": "Developer Tools",
+      "stars": 15791,
+      "updated_at": "2026-08-07",
+      "source_record": "openproject.yml"
+    },
+    {
+      "slug": "freshrss",
+      "name": "FreshRSS",
+      "description_source_text": "Self-hostable RSS feed aggregator.",
+      "official_url": "https://freshrss.org/",
+      "source_code_url": "https://github.com/FreshRSS/FreshRSS",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Feed Readers"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 15716,
+      "updated_at": "2026-08-07",
+      "source_record": "freshrss.yml"
+    },
+    {
+      "slug": "gotify",
+      "name": "Gotify",
+      "description_source_text": "Notification server with Android and CLI clients (alternative to PushBullet).",
+      "official_url": "https://gotify.net/",
+      "source_code_url": "https://github.com/gotify/server",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Custom Communication Systems"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 15666,
+      "updated_at": "2026-07-31",
+      "source_record": "gotify.yml"
+    },
+    {
+      "slug": "answer",
+      "name": "Answer",
+      "description_source_text": "Knowledge-based community software. You can use it to quickly build your Q&A community for product technical support, customer support, user communication, and more.",
+      "official_url": "https://answer.apache.org",
+      "source_code_url": "https://github.com/apache/answer",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Go"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 15635,
+      "updated_at": "2026-07-17",
+      "source_record": "answer.yml"
+    },
+    {
+      "slug": "spree-commerce",
+      "name": "Spree Commerce",
+      "description_source_text": "Spree is a complete, modular & API-driven open source e-commerce solution for Ruby on Rails.",
+      "official_url": "https://spreecommerce.org",
+      "source_code_url": "https://github.com/spree/spree",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "technology_platforms": [
+        "Ruby"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 15607,
+      "updated_at": "2026-08-07",
+      "source_record": "spree-commerce.yml"
+    },
+    {
+      "slug": "mail-in-a-box",
+      "name": "Mail-in-a-Box",
+      "description_source_text": "Turns any Ubuntu server into a fully functional mail server with one command.",
+      "official_url": "https://mailinabox.email/",
+      "source_code_url": "https://github.com/mail-in-a-box/mailinabox",
+      "licenses": [
+        "CC0-1.0"
+      ],
+      "technology_platforms": [
+        "Shell"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 15384,
+      "updated_at": "2026-05-24",
+      "source_record": "mail-in-a-box.yml"
+    },
+    {
+      "slug": "peertube",
+      "name": "PeerTube",
+      "description_source_text": "Decentralized video streaming platform using P2P (BitTorrent) directly in the web browser.",
+      "official_url": "https://joinpeertube.org/en/",
+      "source_code_url": "https://github.com/Chocobozzz/PeerTube",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "category": "Video and Animation",
+      "subcategory": "Video Tools",
+      "stars": 15236,
+      "updated_at": "2026-08-06",
+      "source_record": "peertube.yml"
+    },
+    {
+      "slug": "nodebb",
+      "name": "NodeBB",
+      "description_source_text": "Forum software built for the modern web.",
+      "official_url": "https://nodebb.org/",
+      "source_code_url": "https://github.com/NodeBB/NodeBB",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 15182,
+      "updated_at": "2026-08-07",
+      "source_record": "nodebb.yml"
+    },
+    {
+      "slug": "termix",
+      "name": "Termix",
+      "description_source_text": "Clientless web-based server management platform with SSH terminal, tunneling, and file editing capabilities.",
+      "official_url": "https://docs.termix.site/",
+      "source_code_url": "https://github.com/Termix-SSH/Termix",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 14645,
+      "updated_at": "2026-08-06",
+      "source_record": "termix.yml"
+    },
+    {
+      "slug": "bentopdf",
+      "name": "BentoPDF",
+      "description_source_text": "Powerful, privacy-first, client-side PDF toolkit that allows you to manipulate, edit, merge, and process PDF files directly in your browser.",
+      "official_url": "https://bentopdf.com",
+      "source_code_url": "https://github.com/alam00000/bentopdf",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Document Management"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 14550,
+      "updated_at": "2026-08-07",
+      "source_record": "bentopdf.yml"
+    },
+    {
+      "slug": "lemmy",
+      "name": "Lemmy",
+      "description_source_text": "Link aggregator for the fediverse (alternative to Reddit).",
+      "official_url": "https://join-lemmy.org/",
+      "source_code_url": "https://github.com/LemmyNet/lemmy",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Rust"
+      ],
+      "directory_tags": [
+        "Communication - Social Networks and Forums"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 14538,
+      "updated_at": "2026-08-06",
+      "source_record": "lemmy.yml"
+    },
+    {
+      "slug": "filestash",
+      "name": "Filestash",
+      "description_source_text": "Web file manager that lets you manage your data anywhere it is located: FTP, SFTP, WebDAV, Git, S3, Minio, Dropbox, or Google Drive.",
+      "official_url": "https://www.filestash.app/",
+      "source_code_url": "https://github.com/mickael-kerjean/filestash",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "File Transfer - Web-based File Managers"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 14451,
+      "updated_at": "2026-07-27",
+      "source_record": "filestash.yml"
+    },
+    {
+      "slug": "bytebase",
+      "name": "Bytebase",
+      "description_source_text": "Safe database schema change and version control for DevOps teams, supports MySQL, PostgreSQL, TiDB, ClickHouse, and Snowflake.",
+      "official_url": "https://www.bytebase.com/",
+      "source_code_url": "https://github.com/bytebase/bytebase",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S",
+        "Go"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 14356,
+      "updated_at": "2026-08-07",
+      "source_record": "bytebase.yml"
+    },
+    {
+      "slug": "documenso",
+      "name": "Documenso",
+      "description_source_text": "Digital document signing platform (alternative to DocuSign).",
+      "official_url": "https://documenso.com",
+      "source_code_url": "https://github.com/documenso/documenso",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Document Management"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 14293,
+      "updated_at": "2026-08-05",
+      "source_record": "documenso.yml"
+    },
+    {
+      "slug": "qloapps",
+      "name": "QloApps",
+      "description_source_text": "Customizable and intuitive web-based hotel reservation system and a booking engine.",
+      "official_url": "https://qloapps.com/",
+      "source_code_url": "https://github.com/Qloapps/QloApps",
+      "licenses": [
+        "OSL-3.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Booking and Scheduling"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 14211,
+      "updated_at": "2026-08-07",
+      "source_record": "qloapps.yml"
+    },
+    {
+      "slug": "stalwart-mail-server",
+      "name": "Stalwart Mail Server",
+      "description_source_text": "All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide range of modern features.",
+      "official_url": "https://stalw.art",
+      "source_code_url": "https://github.com/stalwartlabs/stalwart",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Rust",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Communication - Email - Complete Solutions"
+      ],
+      "category": "Communication",
+      "subcategory": "Communication Platforms",
+      "stars": 14058,
+      "updated_at": "2026-08-03",
+      "source_record": "stalwart-mail-server.yml"
+    },
+    {
+      "slug": "druid",
+      "name": "Druid",
+      "description_source_text": "Distributed, column-oriented, real-time analytics data store.",
+      "official_url": "https://druid.apache.org",
+      "source_code_url": "https://github.com/apache/druid",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Java",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 14042,
+      "updated_at": "2026-08-07",
+      "source_record": "druid.yml"
+    },
+    {
+      "slug": "automatisch",
+      "name": "Automatisch",
+      "description_source_text": "Business automation tool that lets you connect different services like Twitter, Slack, and more to automate your business processes (alternative to Zapier).",
+      "official_url": "https://automatisch.io",
+      "source_code_url": "https://github.com/automatisch/automatisch",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 13925,
+      "updated_at": "2026-01-15",
+      "source_record": "automatisch.yml"
+    },
+    {
+      "slug": "audiobookshelf",
+      "name": "Audiobookshelf",
+      "description_source_text": "Audiobook and podcast server. It streams all audio formats, keeps and syncs progress across devices. Comes with open-source apps for Android and iOS.",
+      "official_url": "https://www.audiobookshelf.org/",
+      "source_code_url": "https://github.com/advplyr/audiobookshelf",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "deb",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Media Streaming - Audio Streaming",
+        "Document Management - E-books"
+      ],
+      "category": "Audio and Music",
+      "subcategory": "Audio and Music Tools",
+      "stars": 13894,
+      "updated_at": "2026-08-03",
+      "source_record": "audiobookshelf.yml"
+    },
+    {
+      "slug": "opensearch",
+      "name": "OpenSearch",
+      "description_source_text": "Distributed and RESTful search engine.",
+      "official_url": "https://opensearch.org",
+      "source_code_url": "https://github.com/opensearch-project/OpenSearch",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Java",
+        "Docker",
+        "K8S",
+        "deb"
+      ],
+      "directory_tags": [
+        "Search Engines"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 13478,
+      "updated_at": "2026-08-07",
+      "source_record": "opensearch.yml"
+    },
+    {
+      "slug": "luanti",
+      "name": "Luanti",
+      "description_source_text": "Voxel game engine (formerly Minetest). Play one of our many games, mod a game to your liking, make your own game, or play on a multiplayer server.",
+      "official_url": "https://www.luanti.org/",
+      "source_code_url": "https://github.com/luanti-org/luanti",
+      "licenses": [
+        "LGPL-2.1",
+        "MIT",
+        "Zlib"
+      ],
+      "technology_platforms": [
+        "C++",
+        "Lua",
+        "deb"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 13419,
+      "updated_at": "2026-08-07",
+      "source_record": "luanti.yml"
+    },
+    {
+      "slug": "gotenberg",
+      "name": "Gotenberg",
+      "description_source_text": "Developer-friendly API to interact with powerful tools like Chromium and LibreOffice for converting numerous document formats (HTML, Markdown, Word, Excel, etc.) into PDF files, and more.",
+      "official_url": "https://gotenberg.dev",
+      "source_code_url": "https://github.com/gotenberg/gotenberg",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Document Management",
+        "Automation"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 12806,
+      "updated_at": "2026-08-07",
+      "source_record": "gotenberg.yml"
+    },
+    {
+      "slug": "rybbit",
+      "name": "Rybbit",
+      "description_source_text": "Web and products analytics that is easy to setup and more intuitive (alternative to Google Analytics).",
+      "official_url": "https://rybbit.com/",
+      "source_code_url": "https://github.com/rybbit-io/rybbit",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Analytics"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 12588,
+      "updated_at": "2026-08-07",
+      "source_record": "rybbit.yml"
+    },
+    {
+      "slug": "planka",
+      "name": "Planka",
+      "description_source_text": "Realtime kanban board for workgroups (alternative to Trello).",
+      "official_url": "https://planka.app/",
+      "source_code_url": "https://github.com/plankanban/planka",
+      "licenses": [
+        "⊘ Proprietary"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 12329,
+      "updated_at": "2026-08-07",
+      "source_record": "planka.yml"
+    },
+    {
+      "slug": "yourls",
+      "name": "YOURLS",
+      "description_source_text": "YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener. Features include password protection, URL customization, bookmarklets, statistics, API, plugins, jsonp.",
+      "official_url": "https://yourls.org/",
+      "source_code_url": "https://github.com/YOURLS/YOURLS",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "URL Shorteners"
+      ],
+      "category": "Marketing and SEO",
+      "subcategory": "Marketing Tools",
+      "stars": 12146,
+      "updated_at": "2026-08-07",
+      "source_record": "yourls.yml"
+    },
+    {
+      "slug": "romm",
+      "name": "RomM",
+      "description_source_text": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
+      "official_url": "https://romm.app/",
+      "source_code_url": "https://github.com/rommapp/romm",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Games - Administrative Utilities & Control Panels"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 11965,
+      "updated_at": "2026-08-07",
+      "source_record": "romm.yml"
+    },
+    {
+      "slug": "myip",
+      "name": "MyIP",
+      "description_source_text": "All in one IP Toolbox. Easy to check what's your IPs, IP geolocation, check for DNS leaks, examine WebRTC connections, speed test, ping test, MTR test, check website availability and more.",
+      "official_url": "https://ipcheck.ing",
+      "source_code_url": "https://github.com/jason5ng32/MyIP",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 11498,
+      "updated_at": "2026-07-30",
+      "source_record": "myip.yml"
+    },
+    {
+      "slug": "owncast",
+      "name": "Owncast",
+      "description_source_text": "Decentralized single-user live video streaming and chat server for running your own live streams similar in style to the large mainstream options.",
+      "official_url": "https://owncast.online/",
+      "source_code_url": "https://github.com/owncast/owncast",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming"
+      ],
+      "category": "Video and Animation",
+      "subcategory": "Video Tools",
+      "stars": 11445,
+      "updated_at": "2026-08-07",
+      "source_record": "owncast.yml"
+    },
+    {
+      "slug": "grist",
+      "name": "Grist",
+      "description_source_text": "Next-generation spreadsheet with relational structure, formula-based access control, and a portable, self-contained format (alternative to Airtable).",
+      "official_url": "https://getgrist.com/",
+      "source_code_url": "https://github.com/gristlabs/grist-core",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Office Suites"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 11431,
+      "updated_at": "2026-08-07",
+      "source_record": "grist.yml"
+    },
+    {
+      "slug": "kavita",
+      "name": "Kavita",
+      "description_source_text": "Cross-platform e-book/manga/comic/pdf server and web reader with user management, ratings and reviews, and metadata support.",
+      "official_url": "https://www.kavitareader.com/",
+      "source_code_url": "https://github.com/Kareadita/Kavita",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        ".NET",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Document Management - E-books"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 11430,
+      "updated_at": "2026-08-07",
+      "source_record": "kavita.yml"
+    },
+    {
+      "slug": "datasette",
+      "name": "Datasette",
+      "description_source_text": "Explore and publish data with easy import and export and database management.",
+      "official_url": "https://datasette.io/",
+      "source_code_url": "https://github.com/simonw/datasette",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 11366,
+      "updated_at": "2026-08-06",
+      "source_record": "datasette.yml"
+    },
+    {
+      "slug": "linkding",
+      "name": "linkding",
+      "description_source_text": "Minimal bookmark management with a fast and clean UI. Simple installation through Docker and can run on your Raspberry Pi.",
+      "official_url": "https://linkding.link/",
+      "source_code_url": "https://github.com/sissbruecker/linkding",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Bookmarks and Link Sharing"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 11017,
+      "updated_at": "2026-08-07",
+      "source_record": "linkding.yml"
+    },
+    {
+      "slug": "kutt",
+      "name": "Kutt",
+      "description_source_text": "Modern URL shortener with support for custom domains and custom URLs.",
+      "official_url": "https://kutt.to",
+      "source_code_url": "https://github.com/thedevs-network/kutt",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "URL Shorteners"
+      ],
+      "category": "Marketing and SEO",
+      "subcategory": "Marketing Tools",
+      "stars": 11014,
+      "updated_at": "2026-07-05",
+      "source_record": "kutt.yml"
+    },
+    {
+      "slug": "imgproxy",
+      "name": "imgproxy",
+      "description_source_text": "Fast and secure standalone server for resizing and converting remote images.",
+      "official_url": "https://imgproxy.net/",
+      "source_code_url": "https://github.com/imgproxy/imgproxy",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 10997,
+      "updated_at": "2026-08-06",
+      "source_record": "imgproxy.yml"
+    },
+    {
+      "slug": "blinko",
+      "name": "Blinko",
+      "description_source_text": "A personal note tool with AI features.",
+      "official_url": "https://blinko.space/",
+      "source_code_url": "https://github.com/blinkospace/blinko",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Note-taking & Editors"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 10850,
+      "updated_at": "2026-08-03",
+      "source_record": "blinko.yml"
+    },
+    {
+      "slug": "woocommerce",
+      "name": "WooCommerce",
+      "description_source_text": "WordPress based e-commerce solution.",
+      "official_url": "https://woocommerce.com/",
+      "source_code_url": "https://github.com/woocommerce/woocommerce",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 10450,
+      "updated_at": "2026-08-07",
+      "source_record": "woocommerce.yml"
+    },
+    {
+      "slug": "lago",
+      "name": "Lago",
+      "description_source_text": "Metering and usage-based billing.",
+      "official_url": "https://www.getlago.com/",
+      "source_code_url": "https://github.com/getlago/lago",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 10307,
+      "updated_at": "2026-07-27",
+      "source_record": "lago.yml"
+    },
+    {
+      "slug": "healthchecks",
+      "name": "Healthchecks",
+      "description_source_text": "Listen for pings and sends alerts when pings are late.",
+      "official_url": "https://healthchecks.io/",
+      "source_code_url": "https://github.com/healthchecks/healthchecks",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "technology_platforms": [
+        "Python",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Automation"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 10224,
+      "updated_at": "2026-08-07",
+      "source_record": "healthchecks.yml"
+    },
+    {
+      "slug": "evershop",
+      "name": "EverShop",
+      "description_source_text": "E-commerce platform with essential commerce features. Modular architecture and fully customizable.",
+      "official_url": "https://evershop.io/",
+      "source_code_url": "https://github.com/evershopcommerce/evershop",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "E-commerce"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 10213,
+      "updated_at": "2026-07-29",
+      "source_record": "evershop.yml"
+    },
+    {
+      "slug": "akaunting",
+      "name": "Akaunting",
+      "description_source_text": "Accounting software designed for small businesses and freelancers.",
+      "official_url": "https://akaunting.com/",
+      "source_code_url": "https://github.com/akaunting/akaunting",
+      "licenses": [
+        "BUSL-1.1"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 10039,
+      "updated_at": "2026-08-04",
+      "source_record": "akaunting.yml"
+    },
+    {
+      "slug": "dawarich",
+      "name": "Dawarich",
+      "description_source_text": "Visualize your location history, track your movements, and analyze your travel patterns with complete privacy and control (alternative to Google Timeline a.k.a. Google Location History).",
+      "official_url": "https://dawarich.app/",
+      "source_code_url": "https://github.com/Freika/dawarich",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Maps and Global Positioning System (GPS)"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 10034,
+      "updated_at": "2026-08-02",
+      "source_record": "dawarich.yml"
+    },
+    {
+      "slug": "invoice-ninja",
+      "name": "Invoice Ninja",
+      "description_source_text": "Powerful tool to invoice clients online.",
+      "official_url": "https://www.invoiceninja.org/",
+      "source_code_url": "https://github.com/invoiceninja/invoiceninja",
+      "licenses": [
+        "Elastic-2.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Money, Budgeting & Management"
+      ],
+      "category": "Finance and Business",
+      "subcategory": "Business Tools",
+      "stars": 9978,
+      "updated_at": "2026-08-07",
+      "source_record": "invoice-ninja.yml"
+    },
+    {
+      "slug": "kanboard",
+      "name": "Kanboard",
+      "description_source_text": "Simple visual task board.",
+      "official_url": "https://kanboard.org/",
+      "source_code_url": "https://github.com/kanboard/kanboard",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Task Management & To-do Lists"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 9776,
+      "updated_at": "2026-08-01",
+      "source_record": "kanboard.yml"
+    },
+    {
+      "slug": "miniflux",
+      "name": "Miniflux",
+      "description_source_text": "Minimalist news reader.",
+      "official_url": "https://miniflux.app/",
+      "source_code_url": "https://github.com/miniflux/v2",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "deb",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Feed Readers"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 9561,
+      "updated_at": "2026-08-05",
+      "source_record": "miniflux.yml"
+    },
+    {
+      "slug": "technitium-dns-server",
+      "name": "Technitium DNS Server",
+      "description_source_text": "Authoritative/recursive DNS server with ad blocking functionality.",
+      "official_url": "https://technitium.com/dns/",
+      "source_code_url": "https://github.com/TechnitiumSoftware/DnsServer",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "C#"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 9449,
+      "updated_at": "2026-07-11",
+      "source_record": "technitium-dns-server.yml"
+    },
+    {
+      "slug": "heimdall",
+      "name": "Heimdall",
+      "description_source_text": "Elegant solution to organise all your web applications.",
+      "official_url": "https://heimdall.site/",
+      "source_code_url": "https://github.com/linuxserver/Heimdall",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Personal Dashboards"
+      ],
+      "category": "Productivity",
+      "subcategory": "Productivity Tools",
+      "stars": 9291,
+      "updated_at": "2026-08-03",
+      "source_record": "heimdall.yml"
+    },
+    {
+      "slug": "pterodactyl",
+      "name": "Pterodactyl",
+      "description_source_text": "Management panel for game servers, with an intuitive UI for end users.",
+      "official_url": "https://pterodactyl.io/",
+      "source_code_url": "https://github.com/pterodactyl/panel",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "PHP"
+      ],
+      "directory_tags": [
+        "Games - Administrative Utilities & Control Panels"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 9114,
+      "updated_at": "2026-08-03",
+      "source_record": "pterodactyl.yml"
+    },
+    {
+      "slug": "firezone",
+      "name": "Firezone",
+      "description_source_text": "Secure remote access gateway that supports the WireGuard protocol. It offers a Web GUI, 1-line install script, multi-factor auth (MFA), and SSO.",
+      "official_url": "https://www.firezone.dev/",
+      "source_code_url": "https://github.com/firezone/firezone",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Elixir",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 8992,
+      "updated_at": "2026-08-07",
+      "source_record": "firezone.yml"
+    },
+    {
+      "slug": "tiddlywiki",
+      "name": "TiddlyWiki",
+      "description_source_text": "Reusable non-linear personal web notebook.",
+      "official_url": "https://tiddlywiki.com/",
+      "source_code_url": "https://github.com/TiddlyWiki/TiddlyWiki5",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Wikis"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 8622,
+      "updated_at": "2026-08-06",
+      "source_record": "tiddlywiki.yml"
+    },
+    {
+      "slug": "mopidy",
+      "name": "Mopidy",
+      "description_source_text": "Extensible music server. Offers a superset of the mpd API, as well as integration with 3rd party services like Spotify, SoundCloud etc.",
+      "official_url": "https://docs.mopidy.com/",
+      "source_code_url": "https://github.com/mopidy/mopidy",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Python",
+        "deb"
+      ],
+      "directory_tags": [
+        "Media Streaming - Audio Streaming"
+      ],
+      "category": "Audio and Music",
+      "subcategory": "Audio and Music Tools",
+      "stars": 8553,
+      "updated_at": "2026-07-29",
+      "source_record": "mopidy.yml"
+    },
+    {
+      "slug": "tube-archivist",
+      "name": "Tube Archivist",
+      "description_source_text": "Organize, search, and enjoy your YouTube collection. Subscribe, download, and track viewed content with metadata indexing and a user-friendly interface.",
+      "official_url": "https://tubearchivist.com/",
+      "source_code_url": "https://github.com/tubearchivist/tubearchivist",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Media Streaming - Video Streaming",
+        "Archiving and Digital Preservation (DP)"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 8342,
+      "updated_at": "2026-08-07",
+      "source_record": "tube-archivist.yml"
+    },
+    {
+      "slug": "openttd",
+      "name": "OpenTTD",
+      "description_source_text": "Transport tycoon simulation game.",
+      "official_url": "https://www.openttd.org/",
+      "source_code_url": "https://github.com/OpenTTD/OpenTTD",
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "technology_platforms": [
+        "C++",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Games"
+      ],
+      "category": "Gaming and Entertainment",
+      "subcategory": "Games and Entertainment",
+      "stars": 8149,
+      "updated_at": "2026-08-07",
+      "source_record": "openttd.yml"
+    },
+    {
+      "slug": "iodine",
+      "name": "iodine",
+      "description_source_text": "IPv4 over DNS tunnel solution, enabling you to start up a socks5 proxy listener.",
+      "official_url": "https://code.kryo.se/iodine/",
+      "source_code_url": "https://github.com/yarrick/iodine",
+      "licenses": [
+        "ISC"
+      ],
+      "technology_platforms": [
+        "C",
+        "deb"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 7943,
+      "updated_at": "2025-09-04",
+      "source_record": "iodine.yml"
+    },
+    {
+      "slug": "cryptpad",
+      "name": "CryptPad",
+      "description_source_text": "Collaboration suite built to enable collaboration, synchronizing changes to documents in real time.",
+      "official_url": "https://cryptpad.org",
+      "source_code_url": "https://github.com/cryptpad/cryptpad",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs",
+        "Docker"
+      ],
+      "directory_tags": [
+        "Office Suites"
+      ],
+      "category": "Office and Documents",
+      "subcategory": "Documents and Knowledge",
+      "stars": 7831,
+      "updated_at": "2026-05-26",
+      "source_record": "cryptpad.yml"
+    },
+    {
+      "slug": "newsblur",
+      "name": "NewsBlur",
+      "description_source_text": "Personal news reader that brings people together to talk about the world. A new sound of an old instrument.",
+      "official_url": "https://www.newsblur.com/",
+      "source_code_url": "https://github.com/samuelclay/NewsBlur",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Python"
+      ],
+      "directory_tags": [
+        "Feed Readers"
+      ],
+      "category": "Browsers and Internet",
+      "subcategory": "Internet Tools",
+      "stars": 7575,
+      "updated_at": "2026-08-05",
+      "source_record": "newsblur.yml"
+    },
+    {
+      "slug": "evcc",
+      "name": "evcc",
+      "description_source_text": "Extensible Electric Vehicle Charge Controller and home energy management system.",
+      "official_url": "https://evcc.io/",
+      "source_code_url": "https://github.com/evcc-io/evcc",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "deb",
+        "Docker",
+        "Go"
+      ],
+      "directory_tags": [
+        "Internet of Things (IoT)"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 7054,
+      "updated_at": "2026-08-07",
+      "source_record": "evcc.yml"
+    },
+    {
+      "slug": "meshcentral",
+      "name": "MeshCentral",
+      "description_source_text": "Run your own web server to remotely manage and control computers on a local network or anywhere on the internet.",
+      "official_url": "https://meshcentral.com/",
+      "source_code_url": "https://github.com/Ylianst/MeshCentral",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Remote Access"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 7022,
+      "updated_at": "2026-08-04",
+      "source_record": "meshcentral.yml"
+    },
+    {
+      "slug": "netalertx",
+      "name": "NetAlertX",
+      "description_source_text": "Network intruder and presence detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+      "official_url": "https://netalertx.com/",
+      "source_code_url": "https://github.com/netalertx/NetAlertX",
+      "licenses": [
+        "GPL-3.0"
+      ],
+      "technology_platforms": [
+        "Docker"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 6885,
+      "updated_at": "2026-08-07",
+      "source_record": "netalertx.yml"
+    },
+    {
+      "slug": "blocky",
+      "name": "blocky",
+      "description_source_text": "Fast and lightweight DNS proxy as ad-blocker for local network with many features (alternative to Pi-hole).",
+      "official_url": "https://0xerr0r.github.io/blocky/latest/",
+      "source_code_url": "https://github.com/0xERR0R/blocky",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Go",
+        "Docker"
+      ],
+      "directory_tags": [
+        "DNS"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 6843,
+      "updated_at": "2026-08-07",
+      "source_record": "blocky.yml"
+    },
+    {
+      "slug": "evidence",
+      "name": "Evidence",
+      "description_source_text": "Code-based BI tool. Write reports using SQL and markdown and they render as a website.",
+      "official_url": "https://evidence.dev",
+      "source_code_url": "https://github.com/evidence-dev/evidence",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Database Management"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 6832,
+      "updated_at": "2026-02-18",
+      "source_record": "evidence.yml"
+    },
+    {
+      "slug": "graphhopper",
+      "name": "GraphHopper",
+      "description_source_text": "Fast routing library and server using OpenStreetMap.",
+      "official_url": "https://graphhopper.com/",
+      "source_code_url": "https://github.com/graphhopper/graphhopper",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Java"
+      ],
+      "directory_tags": [
+        "Maps and Global Positioning System (GPS)"
+      ],
+      "category": "Data and Analytics",
+      "subcategory": "Data Tools",
+      "stars": 6619,
+      "updated_at": "2026-07-27",
+      "source_record": "graphhopper.yml"
+    },
+    {
+      "slug": "outline-server",
+      "name": "Outline Server",
+      "description_source_text": "A proxy server that runs a Shadowsocks instance for each access key and a REST API to manage the access keys.",
+      "official_url": "https://getoutline.org/",
+      "source_code_url": "https://github.com/OutlineFoundation/outline-server",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "Proxy"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 6243,
+      "updated_at": "2026-05-13",
+      "source_record": "outline-server.yml"
+    },
+    {
+      "slug": "zoneminder",
+      "name": "Zoneminder",
+      "description_source_text": "Closed-circuit television (CCTV) software application which supports IP, USB and Analog cameras.",
+      "official_url": "https://www.zoneminder.com/",
+      "source_code_url": "https://github.com/ZoneMinder/ZoneMinder",
+      "licenses": [
+        "GPL-2.0"
+      ],
+      "technology_platforms": [
+        "PHP",
+        "deb"
+      ],
+      "directory_tags": [
+        "Video Surveillance"
+      ],
+      "category": "System Utilities",
+      "subcategory": "System and Device Tools",
+      "stars": 5899,
+      "updated_at": "2026-08-07",
+      "source_record": "zoneminder.yml"
+    },
+    {
+      "slug": "speedtest-tracker",
+      "name": "Speedtest Tracker",
+      "description_source_text": "Monitor the performance and uptime of your internet connection.",
+      "official_url": "https://docs.speedtest-tracker.dev/",
+      "source_code_url": "https://github.com/alexjustesen/speedtest-tracker",
+      "licenses": [
+        "MIT"
+      ],
+      "technology_platforms": [
+        "Docker",
+        "K8S"
+      ],
+      "directory_tags": [
+        "Network Utilities"
+      ],
+      "category": "Cybersecurity",
+      "subcategory": "Security and Network Tools",
+      "stars": 5881,
+      "updated_at": "2026-08-04",
+      "source_record": "speedtest-tracker.yml"
+    },
+    {
+      "slug": "tagspaces",
+      "name": "TagSpaces",
+      "description_source_text": "TagSpaces is an offline, cross-platform file manager and organiser that also can function as a note taking app. The WebDAV version of the application can be installed on top of a WebDAV servers such as Nextcloud or ownCloud.",
+      "official_url": "https://www.tagspaces.org/",
+      "source_code_url": "https://github.com/tagspaces/tagspaces",
+      "licenses": [
+        "AGPL-3.0"
+      ],
+      "technology_platforms": [
+        "Nodejs"
+      ],
+      "directory_tags": [
+        "File Transfer - Web-based File Managers"
+      ],
+      "category": "Cloud and Storage",
+      "subcategory": "Storage and Sync",
+      "stars": 5223,
+      "updated_at": "2026-07-24",
+      "source_record": "tagspaces.yml"
+    }
+  ]
+}
