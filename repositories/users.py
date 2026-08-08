@@ -83,3 +83,44 @@ def verify_user_email(token_hash, path=DATABASE_PATH):
             (user["id"],),
         )
         return user["id"]
+
+
+def list_users(search="", status="all", path=DATABASE_PATH):
+    clauses, params = [], []
+    if search:
+        clauses.append("(lower(username) LIKE lower(?) OR lower(email) LIKE lower(?))")
+        term = f"%{search[:120]}%"
+        params.extend((term, term))
+    if status == "verified":
+        clauses.append("email_verified=1 AND is_active=1")
+    elif status == "unverified":
+        clauses.append("email_verified=0 AND is_active=1")
+    elif status == "disabled":
+        clauses.append("is_active=0")
+    where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+    with connect_database(path) as connection:
+        return connection.execute(
+            f"""SELECT id,username,email,locale,email_verified,is_active,created_at,last_login_at,
+                verification_sent_at FROM user_accounts {where} ORDER BY created_at DESC LIMIT 500""",
+            params,
+        ).fetchall()
+
+
+def user_account_counts(path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            """SELECT COUNT(*) total,
+               SUM(CASE WHEN email_verified=1 AND is_active=1 THEN 1 ELSE 0 END) verified,
+               SUM(CASE WHEN email_verified=0 AND is_active=1 THEN 1 ELSE 0 END) unverified,
+               SUM(CASE WHEN is_active=0 THEN 1 ELSE 0 END) disabled
+               FROM user_accounts"""
+        ).fetchone()
+
+
+def set_user_active(user_id, active, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        cursor = connection.execute(
+            "UPDATE user_accounts SET is_active=? WHERE id=?",
+            (int(bool(active)), int(user_id)),
+        )
+        return cursor.rowcount == 1

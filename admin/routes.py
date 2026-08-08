@@ -14,6 +14,7 @@ from repositories.admin import (
     recent_failed_attempts, record_login_attempt,
 )
 from repositories.collaborations import list_inquiries, set_inquiry_status
+from repositories.users import list_users, set_user_active, user_account_counts
 from repositories.article_writer import get_article_for_admin, list_admin_articles, save_article
 from repositories.taxonomy_writer import add_category, add_tag, list_taxonomies
 from repositories.tool_writer import archive_tool, get_tool_for_admin, list_admin_tools, save_tool
@@ -332,3 +333,22 @@ def collaborations():
             flash("İş birliği talebi güncellendi.", "success")
         return redirect(url_for("admin.collaborations"))
     return render_template("admin/collaborations.html", inquiries=list_inquiries(), active_admin="collaborations")
+
+
+@admin_bp.route("/users", methods=["GET", "POST"])
+@login_required
+def users():
+    if request.method == "POST":
+        validate_csrf()
+        user_id = request.form.get("user_id", "")
+        action = request.form.get("action", "")
+        if user_id.isdigit() and action in {"disable", "enable"} and set_user_active(int(user_id), action == "enable"):
+            admin = current_admin()
+            log_action(admin["id"], action, "user", user_id, f"User account {action}d")
+            flash("Kullanıcı hesabı güncellendi.", "success")
+        return redirect(url_for("admin.users", q=request.form.get("q", ""), status=request.form.get("status", "all")))
+    search = request.args.get("q", "").strip()[:120]
+    status = request.args.get("status", "all")
+    if status not in {"all", "verified", "unverified", "disabled"}:
+        status = "all"
+    return render_template("admin/users.html", users=list_users(search, status), counts=user_account_counts(), search=search, status=status, active_admin="users")

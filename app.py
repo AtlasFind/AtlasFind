@@ -64,7 +64,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.2.0"
+APP_VERSION = "1.2.1"
 ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
