@@ -68,6 +68,8 @@ def configure_security(app) -> None:
         SMTP_PASSWORD=os.environ.get("ATLASFIND_SMTP_PASSWORD", "").strip(),
         SMTP_FROM=os.environ.get("ATLASFIND_SMTP_FROM", "").strip(),
         SMTP_USE_SSL=env_bool("ATLASFIND_SMTP_USE_SSL", True),
+        RESEND_API_KEY=os.environ.get("ATLASFIND_RESEND_API_KEY", "").strip(),
+        RESEND_FROM=os.environ.get("ATLASFIND_RESEND_FROM", "").strip(),
         PREFERRED_URL_SCHEME="https" if https_enabled else "http",
     )
 

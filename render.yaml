@@ -35,6 +35,10 @@ services:
         value: AtlasFind <atlasfindd@gmail.com>
       - key: ATLASFIND_SMTP_USE_SSL
         value: "1"
+      - key: ATLASFIND_RESEND_API_KEY
+        sync: false
+      - key: ATLASFIND_RESEND_FROM
+        value: AtlasFind <hesap@updates.atlasfind.org>
       - key: PYTHON_VERSION
         value: 3.13.5
     disk:

@@ -1,12 +1,44 @@
 import smtplib
 import ssl
+import json
 from email.message import EmailMessage
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 from flask import current_app
 
 
 def _send_email(recipient, subject, body):
-    """Deliver a transactional message without logging credentials or content."""
+    """Deliver transactional mail over HTTPS when configured, with SMTP fallback."""
+    resend_api_key = current_app.config.get("RESEND_API_KEY", "")
+    resend_sender = current_app.config.get("RESEND_FROM", "")
+    if resend_api_key and resend_sender:
+        payload = json.dumps({
+            "from": resend_sender,
+            "to": [recipient],
+            "subject": subject,
+            "text": body,
+        }).encode("utf-8")
+        request = Request(
+            "https://api.resend.com/emails",
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {resend_api_key}",
+                "Content-Type": "application/json",
+                "User-Agent": "AtlasFind/1.9",
+            },
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=15) as response:
+                return 200 <= response.status < 300
+        except HTTPError as exc:
+            current_app.logger.error("transactional_email_api_failed status=%s", exc.code)
+            return False
+        except (OSError, URLError):
+            current_app.logger.exception("transactional_email_api_unreachable")
+            return False
+
     host = current_app.config.get("SMTP_HOST", "")
     user = current_app.config.get("SMTP_USER", "")
     password = current_app.config.get("SMTP_PASSWORD", "")

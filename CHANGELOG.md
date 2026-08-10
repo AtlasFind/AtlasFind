@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.1 - 2026-08-11
+
+- Added Resend HTTPS API delivery for verification and password-reset emails on Render Free.
+- Kept SMTP as a fallback for hosting plans that permit outbound mail ports.
+- Added safe API failure logging and transactional email tests.
+
 ## 1.9.0 - 2026-08-08
 
 - Completed the persistent user registration, email verification and secure login flow.
