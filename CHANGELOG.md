@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.9.3 - 2026-08-11
+
+- Enabled the verified Google AdSense loader on public discovery and catalog pages only.
+- Kept account, profile, administration, API and legal pages free of the advertising loader.
+- Added the Google-supported strict CSP only where AdSense runs while retaining the tighter policy elsewhere.
+- Updated privacy and cookie disclosures for Google CMP consent handling.
+- Replaced the old social preview artwork with the AtlasFind duck mascot and added Twitter image metadata.
+
 ## 1.9.2 - 2026-08-11
 
 - Changed email verification to a two-step GET-and-confirm flow so mail security scanners cannot consume one-time links before users open them.

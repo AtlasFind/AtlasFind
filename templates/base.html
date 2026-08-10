@@ -11,16 +11,19 @@
     <meta property="og:url" content="{{ seo.canonical if seo else request.base_url }}">
     <meta property="og:type" content="{{ seo.type if seo else 'website' }}">
     <meta property="og:site_name" content="AtlasFind">
-    <meta property="og:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-social.svg' }}">
+    <meta property="og:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-duck.png' }}">
+    <meta property="og:image:alt" content="AtlasFind ördek maskotu">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
     <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
+    <meta name="twitter:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-duck.png' }}">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/atlasfind-duck-64.png', v=app_version) }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternate_urls.get('en') }}">
     {% block extra_head %}{% endblock %}
     <meta name="google-adsense-account" content="{{ adsense_publisher_id }}">
+    {% if adsense_enabled %}<script nonce="{{ csp_nonce }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_publisher_id }}" crossorigin="anonymous"></script>{% endif %}
     <script nonce="{{ csp_nonce }}">
         (() => {
             const saved = localStorage.getItem("atlas-theme");

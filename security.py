@@ -22,6 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent
 LOG_DIR = BASE_DIR / "logs"
 PRODUCTION_ENVIRONMENTS = {"production", "prod"}
 
+ADSENSE_PUBLIC_ENDPOINTS = {
+    "home", "tools_directory", "categories_directory", "category_page",
+    "subcategory_page", "collection_page", "guides", "article_detail",
+    "recommend", "rating_methodology", "tool_detail", "compare_tools",
+}
+
+
+def adsense_allowed_for_request() -> bool:
+    """Keep advertising off account, administration, API and legal pages."""
+    return request.method == "GET" and request.endpoint in ADSENSE_PUBLIC_ENDPOINTS
+
 
 def env_bool(name: str, default: bool = False) -> bool:
     value = os.environ.get(name)
@@ -195,13 +206,29 @@ def add_security_headers(response):
     response.headers.setdefault("Origin-Agent-Cluster", "?1")
     response.headers.setdefault("X-Request-ID", getattr(g, "request_id", "-"))
     nonce = getattr(g, "csp_nonce", "")
-    script_policy = f"script-src 'self' 'nonce-{nonce}'" if nonce else "script-src 'self'"
+    adsense_enabled = adsense_allowed_for_request()
+    if adsense_enabled:
+        # Google's supported strict CSP lets the nonce-authorized AdSense loader
+        # create its own scripts while keeping object and framing restrictions.
+        script_policy = (
+            f"script-src 'self' 'nonce-{nonce}' 'unsafe-inline' 'unsafe-eval' "
+            "'strict-dynamic' https: http:"
+        )
+        base_policy = "base-uri 'none'"
+        connect_policy = "connect-src 'self' https:"
+        frame_policy = "frame-src https:; "
+    else:
+        script_policy = f"script-src 'self' 'nonce-{nonce}'" if nonce else "script-src 'self'"
+        base_policy = "base-uri 'self'"
+        connect_policy = "connect-src 'self'"
+        frame_policy = ""
     response.headers.setdefault(
         "Content-Security-Policy",
-        "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; "
+        f"default-src 'self'; {base_policy}; form-action 'self'; frame-ancestors 'none'; "
         "object-src 'none'; img-src 'self' data: https:; font-src 'self' data:; "
         "style-src 'self' 'unsafe-inline'; " + script_policy + "; "
-        "connect-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests",
+        + connect_policy + "; " + frame_policy
+        + "manifest-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests",
     )
     if current_app.config.get("SESSION_COOKIE_SECURE"):
         response.headers.setdefault(

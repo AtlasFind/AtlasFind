@@ -5,7 +5,7 @@ from i18n import localized_path, get_locale
 
 SITE_NAME = "AtlasFind"
 SITE_URL = os.environ.get("ATLASFIND_SITE_URL", "https://atlasfind.org").rstrip("/")
-DEFAULT_SOCIAL_IMAGE = os.environ.get("ATLASFIND_SOCIAL_IMAGE", f"{SITE_URL}/static/images/atlasfind-social.svg")
+DEFAULT_SOCIAL_IMAGE = os.environ.get("ATLASFIND_SOCIAL_IMAGE", f"{SITE_URL}/static/images/atlasfind-duck.png")
 
 
 def absolute_url(path="/"):

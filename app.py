@@ -38,7 +38,7 @@ from admin.bootstrap import bootstrap_admin_from_environment, reset_admin_passwo
 from security import (
     add_security_headers, client_ip, configure_logging, configure_security, enforce_api_rate_limit,
     enforce_user_auth_rate_limit,
-    enforce_safe_method, new_request_id, validate_request_host,
+    enforce_safe_method, new_request_id, validate_request_host, adsense_allowed_for_request,
 )
 from taxonomy import CATEGORIES, category_slug, localized_category
 from seo import (
@@ -69,7 +69,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.9.2"
+APP_VERSION = "1.9.3"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -117,7 +117,7 @@ PUBLIC_PAGES = {
         "en": {"title": "Privacy Policy", "description": "How AtlasFind handles technical data and protects visitor privacy.", "sections": [
             ("What we collect", "AtlasFind does not require a visitor account. The service may process standard server logs such as IP address, browser information, requested pages and timestamps for security, reliability and abuse prevention."),
             ("Account information", "When you create an optional account, AtlasFind stores your username, email address and a one-way password hash. Passwords are never stored as readable text. This information is used to provide and secure account features."),
-            ("Cookies and local storage", "AtlasFind uses essential browser storage for interface preferences such as language, theme and cookie notice status. Advertising or analytics cookies are not enabled unless the policy is updated and consent is collected where required."),
+            ("Cookies, local storage and advertising", "AtlasFind uses essential browser storage for interface preferences such as language, theme and cookie notice status. Public discovery pages may use Google AdSense. Where required, Google's certified consent platform asks for advertising consent before eligible advertising storage or personalization is used."),
             ("External websites", "Tool pages link to third-party websites. Their privacy practices and content are controlled by those providers, not AtlasFind."),
             ("Data retention", "Security and error logs are retained only as long as reasonably needed to operate and protect the service."),
             ("Contact", "Questions about privacy can be sent to the contact address shown on this page."),
@@ -125,7 +125,7 @@ PUBLIC_PAGES = {
         "tr": {"title": "Gizlilik Politikası", "description": "AtlasFind'in teknik verileri nasıl işlediği ve ziyaretçi gizliliğini nasıl koruduğu.", "sections": [
             ("Topladığımız bilgiler", "AtlasFind ziyaretçi hesabı gerektirmez. Güvenlik, hizmet sürekliliği ve kötüye kullanımın önlenmesi amacıyla IP adresi, tarayıcı bilgisi, istenen sayfalar ve zaman bilgisi gibi standart sunucu kayıtları işlenebilir."),
             ("Hesap bilgileri", "İsteğe bağlı bir hesap oluşturduğunuzda kullanıcı adı, e-posta adresi ve tek yönlü şifre özeti saklanır. Şifreler okunabilir metin olarak tutulmaz. Bu bilgiler hesap özelliklerini sunmak ve korumak için kullanılır."),
-            ("Çerezler ve yerel depolama", "AtlasFind dil, tema ve çerez bildirimi tercihi gibi temel arayüz ayarları için gerekli tarayıcı depolamasını kullanır. Politika güncellenmeden ve gerektiğinde izin alınmadan reklam veya analiz çerezleri etkinleştirilmez."),
+            ("Çerezler, yerel depolama ve reklam", "AtlasFind dil, tema ve çerez bildirimi tercihi gibi temel arayüz ayarları için gerekli tarayıcı depolamasını kullanır. Herkese açık keşif sayfalarında Google AdSense kullanılabilir. Gereken bölgelerde reklam depolaması veya kişiselleştirme etkinleşmeden önce Google'ın sertifikalı izin platformu kullanıcı tercihlerini toplar."),
             ("Haricî siteler", "Araç sayfaları üçüncü taraf sitelere bağlantı verir. Bu sitelerin içerik ve gizlilik uygulamalarından AtlasFind sorumlu değildir."),
             ("Saklama süresi", "Güvenlik ve hata kayıtları yalnızca hizmeti işletmek ve korumak için makul ölçüde gerekli süre boyunca tutulur."),
             ("İletişim", "Gizlilik soruları atlasfindd@gmail.com adresine gönderilebilir."),
@@ -148,14 +148,14 @@ PUBLIC_PAGES = {
         ]}
     },
     "cookies": {
-        "en": {"title": "Cookie Policy", "description": "Essential storage used by AtlasFind.", "sections": [
+        "en": {"title": "Cookie Policy", "description": "Browser storage and advertising choices used by AtlasFind.", "sections": [
             ("Essential preferences", "AtlasFind stores language, theme and cookie-notice choices in local storage so the interface works consistently."),
-            ("No advertising cookies yet", "The public beta does not intentionally set advertising or cross-site tracking cookies. This page will be updated before such technology is introduced."),
+            ("Advertising choices", "Public discovery pages may load Google AdSense. In regions where consent is required, Google's certified consent platform provides choices before eligible advertising storage or personalization is used. Account, profile and administration pages do not load the advertising script."),
             ("Managing storage", "You can clear AtlasFind site data from your browser settings. Doing so resets saved interface preferences."),
         ]},
-        "tr": {"title": "Çerez Politikası", "description": "AtlasFind tarafından kullanılan gerekli tarayıcı depolaması.", "sections": [
+        "tr": {"title": "Çerez Politikası", "description": "AtlasFind tarafından kullanılan tarayıcı depolaması ve reklam tercihleri.", "sections": [
             ("Gerekli tercihler", "AtlasFind arayüzün tutarlı çalışması için dil, tema ve çerez bildirimi tercihlerini yerel depolamada saklar."),
-            ("Henüz reklam çerezi yok", "Public beta sürümü bilerek reklam veya siteler arası takip çerezi yerleştirmez. Böyle bir teknoloji eklenmeden önce bu sayfa güncellenecektir."),
+            ("Reklam tercihleri", "Herkese açık keşif sayfaları Google AdSense yükleyebilir. İzin gereken bölgelerde uygun reklam depolaması veya kişiselleştirme kullanılmadan önce Google'ın sertifikalı izin platformu seçenek sunar. Hesap, profil ve yönetim sayfalarında reklam kodu yüklenmez."),
             ("Depolamayı yönetme", "Tarayıcı ayarlarından AtlasFind site verilerini silebilirsiniz. Bu işlem kayıtlı arayüz tercihlerini sıfırlar."),
         ]}
     },
@@ -1085,6 +1085,7 @@ def inject_app_metadata():
     return {
         "app_version": APP_VERSION,
         "adsense_publisher_id": ADSENSE_PUBLISHER_ID,
+        "adsense_enabled": adsense_allowed_for_request(),
         "site_url": SITE_URL,
         "contact_email": CONTACT_EMAIL,
         "json_ld": json_ld,
