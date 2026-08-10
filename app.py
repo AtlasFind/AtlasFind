@@ -24,7 +24,7 @@ from repositories.user_reviews import aggregate_user_rating, anonymous_user_key,
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
-    create_user, get_public_user, get_user_by_email, get_user_by_id, get_user_for_login, recent_failed_user_logins,
+    create_user, get_public_user, get_user_by_email, get_user_by_id, get_user_for_login, get_user_by_verification_token, recent_failed_user_logins,
     record_user_login, user_exists, set_verification_token, verify_user_email,
     update_user_password, update_user_profile, set_password_reset_token, consume_password_reset_token,
     is_user_favorite, list_user_favorites, set_user_favorite,
@@ -69,7 +69,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.9.1"
+APP_VERSION = "1.9.2"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1906,13 +1906,24 @@ def user_register(locale=None):
     return render_template("auth/register.html", user_csrf=user_csrf_token(), values=values, active_page="register", seo=page_seo(translate("auth.register"), translate("auth.register_description"), f"/{get_locale()}/register", robots="noindex,follow"), breadcrumbs=[])
 
 
-@app.get("/verify-email")
-@app.get("/<locale>/verify-email")
+@app.route("/verify-email", methods=["GET", "POST"])
+@app.route("/<locale>/verify-email", methods=["GET", "POST"])
 def verify_email(locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
     token = request.args.get("token", "")[:256]
-    user_id = verify_user_email(hashlib.sha256(token.encode()).hexdigest()) if token else None
+    token_hash = hashlib.sha256(token.encode()).hexdigest() if token else ""
+    candidate = get_user_by_verification_token(token_hash) if token_hash else None
+    if not candidate:
+        flash(translate("auth.verify_invalid"), "error")
+        return redirect(url_for("check_email"))
+    if request.method == "GET":
+        return render_template(
+            "auth/confirm_email.html", username=candidate["username"], token=token,
+            user_csrf=user_csrf_token(), active_page="register",
+            seo=page_seo(translate("auth.verify_email_title"), translate("auth.verify_email_description"), f"/{get_locale()}/verify-email", robots="noindex,nofollow"), breadcrumbs=[])
+    validate_user_csrf()
+    user_id = verify_user_email(token_hash)
     if not user_id:
         flash(translate("auth.verify_invalid"), "error")
         return redirect(url_for("check_email"))

@@ -49,12 +49,18 @@ class UserAuthTests(unittest.TestCase):
 
     def verify(self, url):
         parts = urlsplit(url)
-        return self.client.get(parts.path + "?" + parts.query, follow_redirects=True)
+        confirmation_url = parts.path + "?" + parts.query
+        confirmation = self.client.get(confirmation_url)
+        return self.client.post(
+            confirmation_url,
+            data={"csrf_token": self.token(confirmation.get_data(as_text=True))},
+            follow_redirects=True,
+        )
 
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.9.1", response.get_data(as_text=True))
+        self.assertIn("auth.css?v=1.9.2", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)
@@ -74,6 +80,20 @@ class UserAuthTests(unittest.TestCase):
             "password": TEST_PASSWORD,
         }, follow_redirects=True)
         self.assertIn("doğrulamalısın", response.get_data(as_text=True))
+
+    def test_email_link_preview_does_not_consume_verification_token(self):
+        _, verification_url = self.register()
+        parts = urlsplit(verification_url)
+        preview = self.client.get(parts.path + "?" + parts.query)
+        self.assertEqual(preview.status_code, 200)
+        self.assertIn('method="post"', preview.get_data(as_text=True))
+        with connect_database() as connection:
+            row = connection.execute(
+                "SELECT email_verified,verification_token_hash FROM user_accounts WHERE email=?",
+                (TEST_EMAIL,),
+            ).fetchone()
+        self.assertEqual(row["email_verified"], 0)
+        self.assertTrue(row["verification_token_hash"])
 
     def test_verified_user_login_checks_registered_password(self):
         _, verification_url = self.register()

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.2 - 2026-08-11
+
+- Changed email verification to a two-step GET-and-confirm flow so mail security scanners cannot consume one-time links before users open them.
+
 ## 1.9.1 - 2026-08-11
 
 - Added Resend HTTPS API delivery for verification and password-reset emails on Render Free.

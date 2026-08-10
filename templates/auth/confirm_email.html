@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}{{ t("auth.verify_email_title") }} · AtlasFind{% endblock %}{% block content %}
+<section class="auth-shell"><div class="auth-card auth-verify"><div class="auth-brand"><div class="auth-mail-icon" aria-hidden="true">✓</div><span class="section-label">ATLASFIND</span><h1>{{ t("auth.confirm_email_title") }}</h1><p>{{ t("auth.confirm_email_description") }}</p></div>
+<div class="auth-email-target">{{ username }}</div>
+<form class="auth-form" method="post" action="{{ url_for('verify_email', token=token) }}"><input type="hidden" name="csrf_token" value="{{ user_csrf }}"><button class="primary-button" type="submit">{{ t("auth.confirm_email_action") }}</button></form>
+</div></section>
+{% endblock %}

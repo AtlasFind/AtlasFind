@@ -88,6 +88,16 @@ def set_verification_token(user_id, token_hash, path=DATABASE_PATH):
         )
 
 
+def get_user_by_verification_token(token_hash, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            """SELECT id,username,email FROM user_accounts
+               WHERE verification_token_hash=?
+               AND verification_expires_at >= CURRENT_TIMESTAMP AND is_active=1""",
+            (token_hash,),
+        ).fetchone()
+
+
 def verify_user_email(token_hash, path=DATABASE_PATH):
     with transaction(path) as connection:
         user = connection.execute(
