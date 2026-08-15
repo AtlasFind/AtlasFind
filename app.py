@@ -76,7 +76,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "2.0.1"
+APP_VERSION = "2.0.2"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -85,6 +85,7 @@ ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 GOOGLE_ANALYTICS_ID = os.getenv("ATLASFIND_GOOGLE_ANALYTICS_ID", "G-WSZDHG9CN9").strip()
 COMMUNITY_ENABLED = os.getenv("ATLASFIND_COMMUNITY_ENABLED", "0").strip().lower() in {"1", "true", "yes", "on"}
+HOUSE_ADS_ENABLED = os.getenv("ATLASFIND_HOUSE_ADS_ENABLED", "0").strip().lower() in {"1", "true", "yes", "on"}
 
 COMMUNITY_ENDPOINTS = {
     "favorite_tool", "post_tool_comment", "delete_tool_comment", "like_tool_comment", "rate_tool",
@@ -1276,6 +1277,7 @@ def inject_app_metadata():
         "app_version": APP_VERSION,
         "adsense_publisher_id": ADSENSE_PUBLISHER_ID,
         "adsense_enabled": adsense_allowed_for_request(),
+        "house_ads_enabled": HOUSE_ADS_ENABLED,
         "site_url": SITE_URL,
         "contact_email": CONTACT_EMAIL,
         "google_analytics_id": GOOGLE_ANALYTICS_ID,

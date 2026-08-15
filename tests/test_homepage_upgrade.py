@@ -8,16 +8,15 @@ class HomepageUpgradeTests(unittest.TestCase):
         app.config.update(TESTING=True)
         self.client = app.test_client()
 
-    def test_homepage_has_trust_and_ad_inventory_in_both_languages(self):
-        for locale, ad_label in (("tr", "Reklam · Sponsorlu alan"), ("en", "Advertisement · Sponsored space")):
+    def test_homepage_has_trust_without_empty_house_ads_in_both_languages(self):
+        for locale in ("tr", "en"):
             response = self.client.get(f"/{locale}/")
             self.assertEqual(response.status_code, 200)
             page = response.get_data(as_text=True)
             self.assertIn('class="hero-proof hero-confidence-line"', page)
             self.assertNotIn('class="home-showcase-grid"', page)
-            self.assertIn('data-ad-placement="home-leaderboard"', page)
-            self.assertIn('data-ad-placement="home-catalog-inline"', page)
-            self.assertIn(ad_label, page)
+            self.assertNotIn('data-ad-placement="home-leaderboard"', page)
+            self.assertNotIn('data-ad-placement="home-catalog-inline"', page)
 
     def test_category_cards_use_canonical_localized_links(self):
         page = self.client.get("/tr/").get_data(as_text=True)
@@ -55,10 +54,9 @@ class HomepageUpgradeTests(unittest.TestCase):
         self.assertIn("Ücretsiz", page)
         self.assertIn("Hafif", page)
 
-    def test_tool_detail_has_disclosed_ad_inventory(self):
+    def test_tool_detail_hides_empty_house_ad_inventory(self):
         page = self.client.get("/tr/tools/chatgpt").get_data(as_text=True)
-        self.assertIn('data-ad-placement="tool-detail-footer"', page)
-        self.assertIn("Reklam · Sponsorlu alan", page)
+        self.assertNotIn('data-ad-placement="tool-detail-footer"', page)
         self.assertIn('href="/tr/collaborate"', page)
 
 

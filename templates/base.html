@@ -20,9 +20,9 @@
     <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
     <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
     <meta name="twitter:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-duck.png' }}">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='images/atlasfind-duck-64.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ url_for('static', filename='images/favicon-48.png') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/atlasfind-duck-192.png') }}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest', v=app_version) }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}

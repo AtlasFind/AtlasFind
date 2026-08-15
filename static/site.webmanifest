@@ -9,14 +9,20 @@
   "theme_color": "#7c5cff",
   "icons": [
     {
+      "src": "/static/images/favicon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/static/images/atlasfind-duck-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/static/images/atlasfind-duck.png",
-      "sizes": "1254x1254",
+      "src": "/static/images/atlasfind-duck-512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }

@@ -1,8 +1,8 @@
-<aside class="ad-slot ad-slot-{{ ad_format|default('leaderboard') }}" data-ad-placement="{{ ad_placement }}" aria-label="{{ t('ads.label') }}">
+{% if house_ads_enabled %}<aside class="ad-slot ad-slot-{{ ad_format|default('leaderboard') }}" data-ad-placement="{{ ad_placement }}" aria-label="{{ t('ads.label') }}">
     <div class="ad-slot-copy">
         <span>{{ t("ads.label") }}</span>
         <strong>{{ t("ads.available_title") }}</strong>
         <small>{{ t("ads.available_description") }}</small>
     </div>
     <a href="{{ url_for('collaborate') }}">{{ t("ads.collaborate") }} <span aria-hidden="true">→</span></a>
-</aside>
+</aside>{% endif %}
