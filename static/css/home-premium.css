@@ -13,6 +13,8 @@ html[data-theme="light"] .hero-discovery-panel{border-color:rgba(99,102,241,.18)
 .discovery-panel-head h2,.discovery-tool,.discovery-match-card{color:#f8fafc}
 .light-theme .hero-discovery-panel{border-color:rgba(99,102,241,.18);background:linear-gradient(155deg,rgba(255,255,255,.96),rgba(244,247,255,.93));box-shadow:0 30px 80px rgba(30,41,59,.14)}
 .light-theme .discovery-panel-head h2,.light-theme .discovery-tool,.light-theme .discovery-match-card{color:#111827}
+.light-theme .discovery-panel-count{color:#5b21b6;background:rgba(124,58,237,.1)}
+.light-theme .discovery-match-card span{color:#6d28d9}
 .light-theme .discovery-tool{background:rgba(255,255,255,.7)}
 .light-theme .discovery-tool:hover{background:rgba(139,92,246,.08)}
 .light-theme .home-signal-panel{background:linear-gradient(120deg,rgba(139,92,246,.06),rgba(255,255,255,.9),rgba(14,165,233,.04));box-shadow:0 20px 55px rgba(30,41,59,.08)}
