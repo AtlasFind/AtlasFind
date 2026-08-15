@@ -69,7 +69,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.9.5"
+APP_VERSION = "1.10.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -921,6 +921,75 @@ AI_SEO_LANDINGS = {
         },
         "filter": "downloadable",
     },
+    "offline-ai-tools": {
+        "en": {
+            "title": "Best Offline AI Tools",
+            "description": "Compare AI tools that can work offline or run models locally for more control, privacy and reliable access.",
+            "intro": "Offline AI tools process some or all work on your own device. They can be useful when internet access is limited, sensitive files should stay local or cloud subscriptions are not a good fit. Model size, memory use and hardware support still vary widely.",
+            "criteria": ["Verified offline capability rather than a desktop app alone", "Clear operating-system and hardware requirements", "Useful local workflows for chat, coding, writing or media"],
+            "faq": [
+                {"question": "Can AI work completely without internet?", "answer": "Yes. Local model runners and some specialist applications can work without internet after models and required files are downloaded. Cloud-only features will still need a connection."},
+                {"question": "Is offline AI more private?", "answer": "Local processing can reduce the amount of data sent to third parties, but privacy still depends on the application, telemetry settings and how files are stored."},
+            ],
+        },
+        "tr": {
+            "title": "En İyi Çevrimdışı Yapay Zekâ Araçları",
+            "description": "Daha fazla kontrol, gizlilik ve kesintisiz erişim için çevrimdışı çalışan veya modelleri yerel olarak çalıştıran AI araçlarını karşılaştırın.",
+            "intro": "Çevrimdışı yapay zekâ araçları işlemlerin bir bölümünü veya tamamını kendi cihazınızda gerçekleştirir. İnternetin sınırlı olduğu, hassas dosyaların yerelde kalması gereken veya bulut aboneliğinin uygun olmadığı durumlarda kullanışlıdır. Model boyutu ve donanım ihtiyacı araca göre değişir.",
+            "criteria": ["Yalnızca masaüstü uygulaması değil, doğrulanmış çevrimdışı kullanım", "Açık işletim sistemi ve donanım gereksinimleri", "Sohbet, kodlama, yazma veya medya için faydalı yerel iş akışı"],
+            "faq": [
+                {"question": "Yapay zekâ tamamen internetsiz çalışabilir mi?", "answer": "Evet. Yerel model çalıştırıcıları ve bazı uzman uygulamalar, gerekli model dosyaları indirildikten sonra internetsiz çalışabilir. Buluta bağlı özellikler için bağlantı gerekir."},
+                {"question": "Çevrimdışı AI daha gizli midir?", "answer": "Yerel işlem, üçüncü taraflara gönderilen veriyi azaltabilir; ancak gizlilik uygulamanın telemetri ayarlarına ve dosyaları nasıl sakladığına da bağlıdır."},
+            ],
+        },
+        "filter": "offline",
+    },
+    "ai-tools-for-students": {
+        "en": {
+            "title": "Best AI Tools for Students",
+            "description": "Find useful AI tools for students to research, explain concepts, write, study and organize schoolwork responsibly.",
+            "intro": "The most useful student AI tools support learning rather than replacing it. This list prioritizes accessible products with free starting options, clear use cases and features for research, explanations, writing, organization and study support.",
+            "criteria": ["A free or affordable starting option", "Practical value for research, explanation and organization", "Clear limitations that encourage verification and responsible use"],
+            "faq": [
+                {"question": "Which AI tool is best for students?", "answer": "A general assistant is useful for explanations and brainstorming, while research tools help find sources and specialist tools support coding, languages or note-taking. The best choice depends on the assignment."},
+                {"question": "Can students use AI for homework?", "answer": "Use depends on school and course rules. AI is safest as a tutor, brainstorming partner or editing aid; verify claims, cite original sources and do not submit generated work as your own."},
+            ],
+        },
+        "tr": {
+            "title": "Öğrenciler İçin En İyi Yapay Zekâ Araçları",
+            "description": "Araştırma, konu anlatımı, yazma, ders çalışma ve okul işlerini düzenlemek için faydalı AI araçlarını keşfedin.",
+            "intro": "Öğrenciler için en faydalı yapay zekâ araçları öğrenmenin yerine geçmek yerine onu destekler. Bu liste ücretsiz başlangıç seçeneği bulunan; araştırma, açıklama, yazma, düzenleme ve ders çalışma süreçlerine yardımcı araçlara öncelik verir.",
+            "criteria": ["Ücretsiz veya erişilebilir başlangıç seçeneği", "Araştırma, açıklama ve düzenleme için gerçek fayda", "Doğrulamayı ve sorumlu kullanımı teşvik eden açık sınırlar"],
+            "faq": [
+                {"question": "Öğrenciler için en iyi yapay zekâ hangisi?", "answer": "Genel asistanlar konu açıklama ve fikir üretmede; araştırma araçları kaynak bulmada; uzman araçlar ise kodlama, dil veya not tutmada faydalıdır. En iyi seçim ödeve göre değişir."},
+                {"question": "Ödevlerde yapay zekâ kullanılabilir mi?", "answer": "Bu, okul ve ders kurallarına bağlıdır. AI'ı öğretmen, fikir ortağı veya düzenleme yardımcısı gibi kullanın; bilgileri doğrulayın, asıl kaynakları belirtin ve üretilen çalışmayı kendiniz yazmış gibi sunmayın."},
+            ],
+        },
+        "filter": "students",
+    },
+    "privacy-focused-ai-tools": {
+        "en": {
+            "title": "Best Privacy-Focused AI Tools",
+            "description": "Compare privacy-focused AI tools with local processing, offline support or open-source options.",
+            "intro": "Privacy-focused AI is not one single feature. Local processing, offline support, open-source code, clear retention policies and account controls all matter. This list highlights tools with stronger catalog signals in those areas, but you should still review current policies before using sensitive data.",
+            "criteria": ["Local, offline or open-source capability", "Clear control over files, history and account data", "A practical workflow without unnecessary data sharing"],
+            "faq": [
+                {"question": "What makes an AI tool privacy focused?", "answer": "Useful signals include local processing, optional telemetry, clear retention controls, encryption and transparent data policies. No single badge guarantees complete privacy."},
+                {"question": "Should I upload confidential documents to AI tools?", "answer": "Only after checking your organization rules and the provider's current data terms. For highly sensitive work, prefer approved local tools and minimize the data you provide."},
+            ],
+        },
+        "tr": {
+            "title": "Gizlilik Odaklı En İyi Yapay Zekâ Araçları",
+            "description": "Yerel işlem, çevrimdışı destek veya açık kaynak seçenekleri sunan gizlilik odaklı AI araçlarını karşılaştırın.",
+            "intro": "Gizlilik odaklı yapay zekâ tek bir özellikten ibaret değildir. Yerel işlem, çevrimdışı destek, açık kaynak kodu, saklama politikaları ve hesap kontrolleri birlikte değerlendirilmelidir. Bu liste bu alanlarda daha güçlü katalog sinyalleri bulunan araçları öne çıkarır.",
+            "criteria": ["Yerel, çevrimdışı veya açık kaynak kullanım", "Dosyalar, geçmiş ve hesap verileri üzerinde açık kontrol", "Gereksiz veri paylaşmadan kullanılabilen pratik iş akışı"],
+            "faq": [
+                {"question": "Bir AI aracını gizlilik odaklı yapan nedir?", "answer": "Yerel işlem, isteğe bağlı telemetri, açık saklama kontrolleri, şifreleme ve şeffaf veri politikaları önemli sinyallerdir. Tek bir etiket eksiksiz gizlilik garantisi vermez."},
+                {"question": "Gizli belgeleri yapay zekâ araçlarına yüklemeli miyim?", "answer": "Yalnızca kurum kurallarını ve sağlayıcının güncel veri koşullarını kontrol ettikten sonra. Çok hassas işler için onaylı yerel araçları tercih edin ve paylaştığınız veriyi en aza indirin."},
+            ],
+        },
+        "filter": "privacy",
+    },
 }
 
 
@@ -939,6 +1008,12 @@ def ai_landing_tools(slug):
     elif mode == "downloadable":
         desktop = {"windows", "macos", "linux"}
         tools = [tool for tool in tools if desktop.intersection({normalize_platform(value) for value in tool.get("platforms", [])})]
+    elif mode == "offline":
+        tools = [tool for tool in tools if tool.get("offline")]
+    elif mode == "students":
+        tools = [tool for tool in tools if tool.get("pricing_type") in {"free", "freemium"}]
+    elif mode == "privacy":
+        tools = [tool for tool in tools if tool.get("offline") or tool.get("open_source")]
     return tools
 
 def localized_collections(locale):
@@ -1416,6 +1491,12 @@ def collection_page(slug, locale=None):
 @app.route("/<locale>/best-free-ai-tools", defaults={"landing_slug": "best-free-ai-tools"})
 @app.route("/downloadable-ai-tools", defaults={"landing_slug": "downloadable-ai-tools"})
 @app.route("/<locale>/downloadable-ai-tools", defaults={"landing_slug": "downloadable-ai-tools"})
+@app.route("/offline-ai-tools", defaults={"landing_slug": "offline-ai-tools"})
+@app.route("/<locale>/offline-ai-tools", defaults={"landing_slug": "offline-ai-tools"})
+@app.route("/ai-tools-for-students", defaults={"landing_slug": "ai-tools-for-students"})
+@app.route("/<locale>/ai-tools-for-students", defaults={"landing_slug": "ai-tools-for-students"})
+@app.route("/privacy-focused-ai-tools", defaults={"landing_slug": "privacy-focused-ai-tools"})
+@app.route("/<locale>/privacy-focused-ai-tools", defaults={"landing_slug": "privacy-focused-ai-tools"})
 def ai_seo_landing(landing_slug, locale=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
@@ -1726,13 +1807,62 @@ def _localized_recommendation_result(result):
     return {**result, "tool": tool, "reasons": reasons, "concerns": concerns}
 
 
+COMPARISON_LANDINGS = {
+    "chatgpt-vs-claude": {
+        "tools": ["chatgpt", "claude"],
+        "en": {
+            "title": "ChatGPT vs Claude: Features, Pricing and Best Use Cases",
+            "description": "Compare ChatGPT and Claude across pricing, platforms, strengths, limitations and practical use cases.",
+            "intro": "ChatGPT and Claude are capable general AI assistants, but their best fit can differ by workflow. Use the catalog comparison below to evaluate supported platforms, pricing and practical strengths, then apply your own priorities with the fit calculator.",
+            "verdict": "Choose based on the work you repeat most often: test both with the same real prompt, verify current plan limits and avoid treating benchmark reputation as a substitute for your own workflow.",
+            "faq": [{"question": "Is ChatGPT better than Claude?", "answer": "Neither is universally better. Output quality, tools, limits and integrations vary by task and plan, so compare them with your own documents and prompts."}],
+        },
+        "tr": {
+            "title": "ChatGPT vs Claude: Özellik, Fiyat ve Kullanım Karşılaştırması",
+            "description": "ChatGPT ve Claude'u fiyat, platform, güçlü yönler, sınırlamalar ve gerçek kullanım alanları açısından karşılaştırın.",
+            "intro": "ChatGPT ve Claude güçlü genel amaçlı AI asistanlarıdır; ancak en uygun seçenek iş akışına göre değişir. Aşağıdaki katalog karşılaştırmasında platformları, fiyatlandırmayı ve güçlü yönleri inceleyip uyum hesaplayıcıyla kendi önceliklerinizi değerlendirebilirsiniz.",
+            "verdict": "En sık yaptığınız işe göre seçim yapın: iki aracı aynı gerçek komutla deneyin, güncel plan sınırlarını kontrol edin ve genel ünü kendi iş akışınızın önüne koymayın.",
+            "faq": [{"question": "ChatGPT mi Claude mu daha iyi?", "answer": "Hiçbiri her konuda mutlak biçimde daha iyi değildir. Çıktı kalitesi, araçlar, sınırlar ve entegrasyonlar göreve ve plana göre değişir; kendi belge ve komutlarınızla deneyin."}],
+        },
+    },
+    "canva-vs-figma": {
+        "tools": ["canva", "figma"],
+        "en": {"title": "Canva vs Figma: Which Design Tool Fits You?", "description": "Compare Canva and Figma for visual content, interface design, collaboration, pricing and platforms.", "intro": "Canva focuses on fast visual content and templates, while Figma is commonly used for collaborative interface and product design. The right choice depends on whether speed and ready-made assets or structured design workflows matter more.", "verdict": "Start with Canva for quick branded content and broad template workflows; evaluate Figma when interface systems, prototypes and detailed team collaboration are central.", "faq": [{"question": "Is Canva or Figma better for beginners?", "answer": "Canva is usually quicker for template-based content. Figma has a steeper learning curve but gives more control for interface and product design."}]},
+        "tr": {"title": "Canva vs Figma: Hangi Tasarım Aracı Size Uygun?", "description": "Canva ve Figma'yı görsel içerik, arayüz tasarımı, iş birliği, fiyat ve platform açısından karşılaştırın.", "intro": "Canva hızlı görsel içerik ve şablonlara; Figma ise ortak arayüz ve ürün tasarımına odaklanır. Doğru seçim, hazır içerik hızıyla yapılandırılmış tasarım iş akışından hangisinin daha önemli olduğuna bağlıdır.", "verdict": "Hızlı markalı içerik ve şablonlar için Canva ile başlayın; arayüz sistemleri, prototipler ve ayrıntılı ekip çalışması merkezdeyse Figma'yı değerlendirin.", "faq": [{"question": "Yeni başlayanlar için Canva mı Figma mı?", "answer": "Şablon tabanlı içerikte Canva genellikle daha hızlıdır. Figma'nın öğrenme eğrisi daha yüksektir ancak arayüz ve ürün tasarımında daha fazla kontrol sağlar."}]},
+    },
+    "gemini-vs-perplexity": {
+        "tools": ["gemini", "perplexity"],
+        "en": {"title": "Gemini vs Perplexity: AI Assistant or Research Tool?", "description": "Compare Gemini and Perplexity for research, answers, platforms, pricing and everyday AI work.", "intro": "Gemini is positioned as a broad assistant within Google's ecosystem, while Perplexity emphasizes answer-oriented research and source discovery. Compare both around the type of questions you ask and the sources you need to verify.", "verdict": "Favor a broad ecosystem assistant for mixed daily tasks; favor a research-first workflow when discovering and checking sources is the main job. Always open and verify important citations.", "faq": [{"question": "Is Gemini or Perplexity better for research?", "answer": "Perplexity is designed around source-led research, while Gemini can be useful across broader assistant tasks. Research quality still depends on checking the original sources."}]},
+        "tr": {"title": "Gemini vs Perplexity: AI Asistanı mı Araştırma Aracı mı?", "description": "Gemini ve Perplexity'yi araştırma, yanıtlar, platformlar, fiyat ve günlük AI kullanımı açısından karşılaştırın.", "intro": "Gemini, Google ekosistemi içinde geniş kapsamlı bir asistan olarak konumlanırken Perplexity yanıt odaklı araştırma ve kaynak keşfini öne çıkarır. İkisini sorduğunuz soru türü ve doğrulamanız gereken kaynaklara göre karşılaştırın.", "verdict": "Karma günlük görevler için geniş ekosistemli bir asistanı; kaynak bulma ve kontrol etme ana işinizse araştırma odaklı akışı tercih edin. Önemli kaynakları mutlaka açıp doğrulayın.", "faq": [{"question": "Araştırma için Gemini mi Perplexity mi?", "answer": "Perplexity kaynak odaklı araştırma için tasarlanmıştır; Gemini ise daha geniş asistan görevlerinde faydalı olabilir. Araştırmanın kalitesi yine asıl kaynakları kontrol etmenize bağlıdır."}]},
+    },
+    "photoshop-vs-gimp": {
+        "tools": ["adobe-photoshop", "gimp"],
+        "en": {"title": "Photoshop vs GIMP: Paid or Free Image Editor?", "description": "Compare Adobe Photoshop and GIMP for pricing, platforms, offline use, features and learning curve.", "intro": "Photoshop is a commercial industry-standard image editor, while GIMP is a free and open-source alternative. Your decision usually comes down to budget, required professional workflows, plugin compatibility and collaboration needs.", "verdict": "Choose GIMP when a free, open-source offline editor covers your needs. Consider Photoshop when specific professional workflows, ecosystem compatibility or team standards justify the subscription.", "faq": [{"question": "Can GIMP replace Photoshop?", "answer": "GIMP can cover many photo-editing and graphic tasks, but exact workflow, file compatibility and advanced feature requirements determine whether it is a complete replacement for you."}]},
+        "tr": {"title": "Photoshop vs GIMP: Ücretli mi Ücretsiz Görsel Editör mü?", "description": "Adobe Photoshop ve GIMP'i fiyat, platform, çevrimdışı kullanım, özellik ve öğrenme eğrisi açısından karşılaştırın.", "intro": "Photoshop ticari ve sektör standardı bir görsel editörken GIMP ücretsiz ve açık kaynaklı bir alternatiftir. Karar çoğunlukla bütçe, gerekli profesyonel iş akışı, dosya uyumluluğu ve ekip ihtiyaçlarına bağlıdır.", "verdict": "Ücretsiz, açık kaynaklı ve çevrimdışı bir editör ihtiyaçlarınızı karşılıyorsa GIMP'i seçin. Belirli profesyonel akışlar, ekosistem uyumluluğu veya ekip standartları aboneliği haklı çıkarıyorsa Photoshop'u değerlendirin.", "faq": [{"question": "GIMP Photoshop'un yerini tutar mı?", "answer": "GIMP birçok fotoğraf düzenleme ve grafik işini yapabilir; ancak dosya uyumluluğu, ileri özellikler ve kendi iş akışınız tam bir alternatif olup olmadığını belirler."}]},
+    },
+    "cursor-vs-vscode": {
+        "tools": ["cursor", "visual-studio-code"],
+        "en": {"title": "Cursor vs VS Code: Which Code Editor Should You Use?", "description": "Compare Cursor and Visual Studio Code for AI coding, extensions, pricing, platforms and developer workflows.", "intro": "Cursor builds AI-assisted coding into an editor based on the VS Code ecosystem, while Visual Studio Code offers a broad extension platform and flexible setup. Compare how much built-in AI assistance you want against control, familiarity and cost.", "verdict": "Try Cursor when integrated AI editing is central to your workflow. Choose VS Code when you prefer a flexible general editor, existing extensions and control over which AI services you add.", "faq": [{"question": "Is Cursor better than VS Code for coding?", "answer": "Cursor may feel faster for AI-heavy workflows, while VS Code remains highly flexible and widely supported. The best choice depends on how often you use AI and which extensions you require."}]},
+        "tr": {"title": "Cursor vs VS Code: Hangi Kod Editörünü Kullanmalısınız?", "description": "Cursor ve Visual Studio Code'u AI kodlama, eklentiler, fiyat, platform ve geliştirici iş akışları açısından karşılaştırın.", "intro": "Cursor, VS Code ekosistemini temel alan editöre AI destekli kodlamayı yerleştirir; Visual Studio Code ise geniş eklenti platformu ve esnek kurulum sunar. Yerleşik AI yardımına duyduğunuz ihtiyacı kontrol, alışkanlık ve maliyetle birlikte değerlendirin.", "verdict": "Entegre AI düzenleme işinizin merkezindeyse Cursor'u deneyin. Esnek genel editör, mevcut eklentiler ve ekleyeceğiniz AI hizmetleri üzerinde kontrol istiyorsanız VS Code'u seçin.", "faq": [{"question": "Kodlama için Cursor mı VS Code mu daha iyi?", "answer": "Cursor AI ağırlıklı akışlarda daha hızlı hissettirebilir; VS Code ise çok esnek ve yaygın desteklidir. En iyi seçim AI'ı ne sıklıkta kullandığınıza ve ihtiyaç duyduğunuz eklentilere bağlıdır."}]},
+    },
+}
+
+
 @app.route("/compare")
 @app.route("/<locale>/compare")
-def compare_tools(locale=None):
+@app.route("/compare/<preset_slug>")
+@app.route("/<locale>/compare/<preset_slug>")
+def compare_tools(locale=None, preset_slug=None):
     if (response := _locale_redirect(locale)) is not None:
         return response
 
-    requested_slugs = [slug.strip() for slug in request.args.getlist("tools") if slug and slug.strip()]
+    current_locale = get_locale()
+    comparison_config = COMPARISON_LANDINGS.get(preset_slug) if preset_slug else None
+    if preset_slug and comparison_config is None:
+        abort(404)
+    comparison_landing = ({**comparison_config[current_locale if current_locale == "tr" else "en"], "slug": preset_slug} if comparison_config else None)
+
+    requested_slugs = list(comparison_config["tools"]) if comparison_config else [slug.strip() for slug in request.args.getlist("tools") if slug and slug.strip()]
     if not requested_slugs:
         requested_slugs = [request.args.get("left", "").strip(), request.args.get("right", "").strip()]
         requested_slugs = [slug for slug in requested_slugs if slug]
@@ -1746,7 +1876,6 @@ def compare_tools(locale=None):
         unique_slugs.append(slug)
     unique_slugs = unique_slugs[:4]
 
-    current_locale = get_locale()
     comparison_tool_map = {tool.get("slug"): tool for tool in load_tools(current_locale)}
     selected_tools = []
     invalid_slugs = []
@@ -1787,11 +1916,18 @@ def compare_tools(locale=None):
     scored_tools.sort(key=lambda item: (item["match"], item["score"], item["tool"].get("rating", 0)), reverse=True)
     winner = scored_tools[0] if scored_tools else None
 
-    title = translate("compare.seo_title")
-    description = translate("compare.seo_description")
+    title = comparison_landing["title"] if comparison_landing else translate("compare.seo_title")
+    description = comparison_landing["description"] if comparison_landing else translate("compare.seo_description")
     home_label = translate("common.home")
     compare_label = translate("nav.compare")
-    crumbs = build_breadcrumbs([(home_label, "/"), (compare_label, "/compare")])
+    crumb_items = [(home_label, "/"), (compare_label, "/compare")]
+    if comparison_landing:
+        crumb_items.append((comparison_landing["title"], f"/compare/{preset_slug}"))
+    crumbs = build_breadcrumbs(crumb_items)
+    related_comparisons = [
+        {"slug": slug, **config[current_locale if current_locale == "tr" else "en"]}
+        for slug, config in COMPARISON_LANDINGS.items() if slug != preset_slug
+    ]
 
     return render_template(
         "compare.html",
@@ -1812,9 +1948,11 @@ def compare_tools(locale=None):
         winner=winner,
         duplicate_removed=duplicate_removed,
         invalid_slugs=invalid_slugs,
-        seo=page_seo(title, description, "/compare", robots="noindex,follow"),
+        comparison_landing=comparison_landing,
+        related_comparisons=related_comparisons,
+        seo=page_seo(title, description, f"/compare/{preset_slug}" if preset_slug else "/compare", robots="index,follow" if comparison_landing else "noindex,follow"),
         breadcrumbs=crumbs,
-        schemas=[breadcrumb_schema(crumbs)],
+        schemas=[item for item in [breadcrumb_schema(crumbs), faq_schema(comparison_landing["faq"] if comparison_landing else [])] if item],
     )
 
 
@@ -1883,6 +2021,7 @@ def sitemap_xml():
 
     base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/collaborate", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
     base_urls.extend((f"/{slug}", "2026-08-15") for slug in AI_SEO_LANDINGS)
+    base_urls.extend((f"/compare/{slug}", "2026-08-15") for slug in COMPARISON_LANDINGS)
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
     base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
     base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORIES)

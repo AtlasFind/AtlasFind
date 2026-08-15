@@ -6,8 +6,8 @@
     <div class="comparison-title">
         <span class="section-label">{{ t("compare.eyebrow") }}</span>
         {% if selected_tools|length >= 2 %}
-            <h1>{{ selected_tools|map(attribute='name')|join(' vs ') }}</h1>
-            <p>{{ t("compare.description") }}</p>
+            <h1>{{ comparison_landing.title if comparison_landing else selected_tools|map(attribute='name')|join(' vs ') }}</h1>
+            <p>{{ comparison_landing.description if comparison_landing else t("compare.description") }}</p>
         {% else %}
             <h1>{{ t("compare.title") }}</h1>
             <p>{{ t("compare.intro") }}</p>
@@ -45,6 +45,14 @@
     {% endif %}
 
     {% if selected_tools|length >= 2 %}
+    {% if comparison_landing %}
+    <section class="comparison-editorial-intro">
+        <span class="section-label">{% if locale == 'tr' %}Hızlı değerlendirme{% else %}Quick assessment{% endif %}</span>
+        <p>{{ comparison_landing.intro }}</p>
+        <div><strong>{% if locale == 'tr' %}Kısa karar{% else %}Bottom line{% endif %}</strong><span>{{ comparison_landing.verdict }}</span></div>
+    </section>
+    {% endif %}
+
     <div class="comparison-utility-bar">
         <p>{{ t("compare.summary", tools=selected_tools|length, rows=comparison_rows|length) }}</p>
         <button type="button" class="secondary-button" id="copyComparisonLink" data-copy-success="{{ t('actions.link_copied') }}">{{ t("actions.copy_link") }}</button>
@@ -117,12 +125,34 @@
         <div class="comparison-score-list">{% for result in scored_tools %}<div><strong>{{ result.tool.name }}</strong><span>{{ result.match }}%</span></div>{% endfor %}</div>
         {% endif %}
     </section>
+
+    {% if comparison_landing %}
+    <section class="comparison-seo-footer">
+        <div class="comparison-faq">
+            <span class="section-label">{% if locale == 'tr' %}Sık sorulan soru{% else %}Frequently asked{% endif %}</span>
+            <h2>{% if locale == 'tr' %}Karar vermeden önce{% else %}Before you decide{% endif %}</h2>
+            {% for item in comparison_landing.faq %}<details><summary>{{ item.question }}</summary><p>{{ item.answer }}</p></details>{% endfor %}
+        </div>
+        <div class="comparison-related">
+            <span class="section-label">{% if locale == 'tr' %}Diğer karşılaştırmalar{% else %}More comparisons{% endif %}</span>
+            <div>{% for item in related_comparisons %}<a href="{{ localized_path('/compare/' ~ item.slug) }}"><strong>{{ item.title }}</strong><span>→</span></a>{% endfor %}</div>
+        </div>
+    </section>
+    {% endif %}
     {% else %}
     <div class="empty-results premium-empty-state">
         <div class="empty-icon" aria-hidden="true">⇄</div>
         <h2>{{ t("compare.empty_title") }}</h2>
         <p>{{ t("compare.empty_description") }}</p>
     </div>
+    {% endif %}
+
+    {% if not comparison_landing and related_comparisons %}
+    <section class="comparison-related comparison-curated-list">
+        <span class="section-label">{% if locale == 'tr' %}Popüler karşılaştırmalar{% else %}Popular comparisons{% endif %}</span>
+        <h2>{% if locale == 'tr' %}Hazır karşılaştırmalardan başla{% else %}Start with a curated comparison{% endif %}</h2>
+        <div>{% for item in related_comparisons %}<a href="{{ localized_path('/compare/' ~ item.slug) }}"><strong>{{ item.title }}</strong><span>→</span></a>{% endfor %}</div>
+    </section>
     {% endif %}
 </section>
 {% endblock %}
