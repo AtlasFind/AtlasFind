@@ -32,7 +32,7 @@
     <a href="#strengths">{{ t("tool.pros_cons") }}</a>
     <a href="#requirements">{{ t("tool.requirements") }}</a>
     <a href="#history">{{ t("tool.change_history") }}</a>
-    <a href="#discussion">{% if locale == 'tr' %}Yorumlar{% else %}Discussion{% endif %}</a>
+    {% if community_enabled %}<a href="#discussion">{% if locale == 'tr' %}Yorumlar{% else %}Discussion{% endif %}</a>{% endif %}
     <a href="#alternatives">{{ t("tool.alternatives") }}</a>
 </nav>
 
@@ -41,7 +41,7 @@
         <div class="tool-detail-actions">
             <a href="{{ tool.website }}" target="_blank" rel="noopener noreferrer" class="primary-button">{{ t("tool.visit_official") }} <span aria-hidden="true">↗</span></a>
             <a href="{{ url_for('compare_tools', locale=locale, left=tool.slug) }}" class="secondary-button">{{ t("tool.compare_tool") }} <span aria-hidden="true">⇄</span></a>
-            {% if current_user %}<form class="favorite-form" method="post" action="{{ url_for('favorite_tool', slug=tool.slug) }}"><input type="hidden" name="csrf_token" value="{{ favorite_csrf }}"><input type="hidden" name="saved" value="{{ '0' if is_favorite else '1' }}"><button class="secondary-button favorite-button {{ 'is-saved' if is_favorite }}" type="submit"><span aria-hidden="true">{{ '★' if is_favorite else '☆' }}</span> {{ t('auth.remove_favorite') if is_favorite else t('auth.add_favorite') }}</button></form>{% else %}<a class="secondary-button" href="{{ url_for('user_login', next=url_for('tool_detail', slug=tool.slug)) }}">☆ {{ t('auth.login_to_save_short') }}</a>{% endif %}
+            {% if community_enabled %}{% if current_user %}<form class="favorite-form" method="post" action="{{ url_for('favorite_tool', slug=tool.slug) }}"><input type="hidden" name="csrf_token" value="{{ favorite_csrf }}"><input type="hidden" name="saved" value="{{ '0' if is_favorite else '1' }}"><button class="secondary-button favorite-button {{ 'is-saved' if is_favorite }}" type="submit"><span aria-hidden="true">{{ '★' if is_favorite else '☆' }}</span> {{ t('auth.remove_favorite') if is_favorite else t('auth.add_favorite') }}</button></form>{% else %}<a class="secondary-button" href="{{ url_for('user_login', next=url_for('tool_detail', slug=tool.slug)) }}">☆ {{ t('auth.login_to_save_short') }}</a>{% endif %}{% endif %}
             <a href="#alternatives" class="secondary-button">{{ t("tool.view_alternatives") }} <span aria-hidden="true">↓</span></a>
         </div>
 
@@ -103,7 +103,7 @@
             {% if freshness.price_history %}<details class="price-history"><summary>{{ t("tool.pricing_history") }}</summary>{% for entry in freshness.price_history %}<div class="price-history-entry"><time datetime="{{ entry.date }}">{{ entry.date }}</time><strong>{{ entry.old_value }} → {{ entry.new_value }}</strong><p>{{ entry.note }}</p></div>{% endfor %}</details>{% endif %}
         </section>
 
-        <section class="detail-section detail-card community-rating-card community-rating-simple" id="rating">
+        {% if community_enabled %}<section class="detail-section detail-card community-rating-card community-rating-simple" id="rating">
             {% set rating = tool.get('rating_v103', {}) %}
             {% set user_rating = rating.get('user_rating', {}) %}
             <div class="dual-rating-heading">
@@ -126,9 +126,9 @@
                     <button type="submit" class="primary-button">{{ t('rating.submit_score') }}</button>
                 </div>
             </form>
-        </section>
+        </section>{% endif %}
 
-        <section class="detail-section detail-card discussion-card" id="discussion">
+        {% if community_enabled %}<section class="detail-section detail-card discussion-card" id="discussion">
             <div class="discussion-heading">
                 <div><span class="section-label">{% if locale == 'tr' %}Topluluk tartışması{% else %}Community discussion{% endif %}</span><h2>{% if locale == 'tr' %}{{ tool.name }} hakkında ne düşünüyorsun?{% else %}What do you think about {{ tool.name }}?{% endif %}</h2><p>{% if locale == 'tr' %}Deneyimini paylaş, sorulara yanıt ver ve diğer üyelere yardımcı ol.{% else %}Share your experience, answer questions and help other members.{% endif %}</p></div>
                 <span class="discussion-count">{{ discussion_comments|length }} {% if locale == 'tr' %}konu{% else %}threads{% endif %}</span>
@@ -162,7 +162,7 @@
                 </article>
                 {% else %}<div class="discussion-empty"><strong>{% if locale == 'tr' %}İlk yorumu sen yap{% else %}Start the conversation{% endif %}</strong><p>{% if locale == 'tr' %}Bu araç hakkında henüz topluluk yorumu bulunmuyor.{% else %}No community discussion has been posted for this tool yet.{% endif %}</p></div>{% endfor %}
             </div>
-        </section>
+        </section>{% endif %}
     </div>
 
     <aside class="tool-score-panel">

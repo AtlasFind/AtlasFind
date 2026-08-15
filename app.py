@@ -76,7 +76,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.14.0"
+APP_VERSION = "1.15.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -84,6 +84,14 @@ ADSENSE_PUBLISHER_ID = "ca-pub-7183165697400406"
 
 CONTACT_EMAIL = os.getenv("ATLASFIND_CONTACT_EMAIL", "atlasfindd@gmail.com").strip() or "atlasfindd@gmail.com"
 GOOGLE_ANALYTICS_ID = os.getenv("ATLASFIND_GOOGLE_ANALYTICS_ID", "G-WSZDHG9CN9").strip()
+COMMUNITY_ENABLED = os.getenv("ATLASFIND_COMMUNITY_ENABLED", "0").strip().lower() in {"1", "true", "yes", "on"}
+
+COMMUNITY_ENDPOINTS = {
+    "favorite_tool", "post_tool_comment", "delete_tool_comment", "like_tool_comment", "rate_tool",
+    "user_login", "forgot_password", "reset_password", "user_register", "verify_email",
+    "check_email", "resend_verification", "user_logout", "user_avatar", "user_profile",
+    "public_user_profile", "export_user_account", "delete_user_account",
+}
 
 
 PUBLIC_PAGES = {
@@ -1228,6 +1236,13 @@ def _locale_redirect(locale):
     return redirect(target, code=301)
 
 
+@app.before_request
+def disable_temporary_community_features():
+    """Keep account-backed features unreachable while storage is ephemeral."""
+    if not COMMUNITY_ENABLED and request.endpoint in COMMUNITY_ENDPOINTS:
+        abort(404)
+
+
 @app.after_request
 def response_headers(response):
     """Apply caching policy and production security headers."""
@@ -1254,7 +1269,7 @@ def response_headers(response):
 
 @app.context_processor
 def inject_app_metadata():
-    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    user = get_user_by_id(session["user_id"]) if COMMUNITY_ENABLED and session.get("user_id") else None
     if session.get("user_id") and not user:
         session.pop("user_id", None)
     return {
@@ -1272,6 +1287,7 @@ def inject_app_metadata():
         "category_slug": category_slug,
         "alternate_urls": alternate_urls(request.path),
         "current_user": user,
+        "community_enabled": COMMUNITY_ENABLED,
         "csp_nonce": getattr(g, "csp_nonce", ""),
         "js_i18n": {key: translate(key) for key in (
             "js.theme.dark", "js.theme.light", "js.menu.open", "js.menu.close",
@@ -1658,7 +1674,7 @@ def tool_detail(slug, locale=None):
     ])
 
     rating_payload = dict(tool.get("rating_v103") or {})
-    rating_payload["user_rating"] = aggregate_user_rating(slug)
+    rating_payload["user_rating"] = aggregate_user_rating(slug) if COMMUNITY_ENABLED else {}
     tool = {**tool, "rating_v103": rating_payload}
     rating_csrf_token = session.get("rating_csrf_token")
     if not rating_csrf_token:
@@ -1674,10 +1690,10 @@ def tool_detail(slug, locale=None):
         seo=page_seo(title, description, canonical_path),
         breadcrumbs=crumbs,
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
-        is_favorite=bool(session.get("user_id") and is_user_favorite(session["user_id"], slug)),
+        is_favorite=bool(COMMUNITY_ENABLED and session.get("user_id") and is_user_favorite(session["user_id"], slug)),
         favorite_csrf=user_csrf_token(),
-        discussion_comments=list_tool_comments(slug, session.get("user_id")),
-        discussion_state=(get_discussion_state(session["user_id"]) if session.get("user_id") else None),
+        discussion_comments=(list_tool_comments(slug, session.get("user_id")) if COMMUNITY_ENABLED else []),
+        discussion_state=(get_discussion_state(session["user_id"]) if COMMUNITY_ENABLED and session.get("user_id") else None),
         discussion_csrf=user_csrf_token(),
     )
 
