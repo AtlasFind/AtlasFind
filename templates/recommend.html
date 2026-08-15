@@ -46,7 +46,8 @@
             <label>
                 <span>{{ t("recommend.budget") }}</span>
                 <select name="budget">
-                    {% for value, label in [('any','Any budget'),('free','Free only'),('freemium','Free or freemium'),('paid','Paid tools are acceptable')] %}
+                    {% set option_labels = {'any': ('Bütçe fark etmez' if locale == 'tr' else 'Any budget'), 'free': ('Yalnızca ücretsiz' if locale == 'tr' else 'Free only'), 'freemium': ('Ücretsiz veya freemium' if locale == 'tr' else 'Free or freemium'), 'paid': ('Ücretli olabilir' if locale == 'tr' else 'Paid tools are acceptable')} %}
+                    {% for value, label in option_labels.items() %}
                     <option value="{{ value }}" {% if preferences.budget == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
@@ -55,7 +56,8 @@
             <label>
                 <span>{{ t("recommend.hardware") }}</span>
                 <select name="hardware">
-                    {% for value, label in [('any','Any hardware'),('light','Low-end / older computer'),('medium','Mid-range computer'),('heavy','High-end computer')] %}
+                    {% set option_labels = {'any': ('Donanım fark etmez' if locale == 'tr' else 'Any hardware'), 'light': ('Düşük sistem / eski bilgisayar' if locale == 'tr' else 'Low-end / older computer'), 'medium': ('Orta seviye bilgisayar' if locale == 'tr' else 'Mid-range computer'), 'heavy': ('Güçlü bilgisayar' if locale == 'tr' else 'High-end computer')} %}
+                    {% for value, label in option_labels.items() %}
                     <option value="{{ value }}" {% if preferences.hardware == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
@@ -64,7 +66,8 @@
             <label>
                 <span>{{ t("recommend.experience") }}</span>
                 <select name="experience">
-                    {% for value, label in [('any','Any experience'),('beginner','Beginner'),('intermediate','Intermediate'),('advanced','Advanced')] %}
+                    {% set option_labels = {'any': ('Deneyim fark etmez' if locale == 'tr' else 'Any experience'), 'beginner': ('Başlangıç' if locale == 'tr' else 'Beginner'), 'intermediate': ('Orta seviye' if locale == 'tr' else 'Intermediate'), 'advanced': ('İleri seviye' if locale == 'tr' else 'Advanced')} %}
+                    {% for value, label in option_labels.items() %}
                     <option value="{{ value }}" {% if preferences.experience == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
@@ -73,7 +76,8 @@
             <label>
                 <span>{{ t("recommend.privacy") }}</span>
                 <select name="privacy">
-                    {% for value, label in [('any','No special preference'),('standard','Standard'),('privacy-first','Privacy-first'),('open-source','{{ t("status.open_source") }} preferred')] %}
+                    {% set option_labels = {'any': ('Özel tercih yok' if locale == 'tr' else 'No special preference'), 'standard': ('Standart' if locale == 'tr' else 'Standard'), 'privacy-first': ('Gizlilik öncelikli' if locale == 'tr' else 'Privacy-first'), 'open-source': ('Açık kaynak tercih edilir' if locale == 'tr' else 'Open source preferred')} %}
+                    {% for value, label in option_labels.items() %}
                     <option value="{{ value }}" {% if preferences.privacy == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
@@ -95,16 +99,33 @@
                 <span class="section-kicker">{{ t("recommend.transparent") }}</span>
                 <h2 id="recommend-results-title">{{ t("recommend.results") }}</h2>
             </div>
-            <span>{{ recommendations|length }} ranked tools</span>
+            <span>{{ recommendations|length }} {% if locale == 'tr' %}eşleşen araç{% else %}matched tools{% endif %}</span>
         </div>
+
+        {% if recommendations %}
+        <div class="recommend-shortlist">
+            <div class="recommend-shortlist-winner">
+                <span>{% if locale == 'tr' %}En güçlü eşleşme{% else %}Strongest match{% endif %}</span>
+                <strong>{{ recommendations[0].tool.name }} · %{{ recommendations[0].match }}</strong>
+                <small>{% if locale == 'tr' %}Öneriler, seçtiğin ihtiyaçlara göre şeffaf biçimde puanlandı.{% else %}Recommendations are transparently scored against your selected needs.{% endif %}</small>
+            </div>
+            <div class="recommend-shortlist-actions">
+                {% if recommendations|length > 1 %}<a class="primary-button" href="{{ url_for('compare_tools', left=recommendations[0].tool.slug, right=recommendations[1].tool.slug) }}">{% if locale == 'tr' %}İlk ikiyi karşılaştır{% else %}Compare top two{% endif %} <span aria-hidden="true">⇄</span></a>{% endif %}
+                <button type="button" class="secondary-button" id="shareRecommendationResults" data-shared="{% if locale == 'tr' %}Bağlantı kopyalandı{% else %}Link copied{% endif %}">{% if locale == 'tr' %}Sonuçları paylaş{% else %}Share results{% endif %} <span aria-hidden="true">↗</span></button>
+            </div>
+        </div>
+        {% endif %}
 
         <div class="recommend-grid">
             {% for item in recommendations %}
             <article class="recommend-card">
                 <div class="recommend-card-top">
-                    <div>
-                        <span class="tool-category">{{ item.tool.category }}</span>
-                        <h3><a href="{{ url_for('tool_detail', slug=item.tool.slug) }}">{{ item.tool.name }}</a></h3>
+                    <div class="recommend-card-identity">
+                        <img src="{{ item.tool.icon_url }}" alt="" width="48" height="48" loading="lazy">
+                        <div>
+                            <span class="tool-category">{{ item.tool.category }}</span>
+                            <h3><a href="{{ url_for('tool_detail', slug=item.tool.slug) }}">{{ item.tool.name }}</a></h3>
+                        </div>
                     </div>
                     <div class="recommend-match" aria-label="{{ item.match }} percent match">{{ item.match }}%</div>
                 </div>

@@ -188,6 +188,31 @@ copyComparisonLink?.addEventListener("click", async () => {
     window.setTimeout(() => { copyComparisonLink.textContent = originalText; }, 1800);
 });
 
+const shareRecommendationResults = document.getElementById("shareRecommendationResults");
+shareRecommendationResults?.addEventListener("click", async () => {
+    const originalText = shareRecommendationResults.textContent;
+    const payload = {
+        title: document.title,
+        text: document.documentElement.lang === "tr"
+            ? "AtlasFind bana uygun araçları sıraladı."
+            : "AtlasFind ranked the best tools for my needs.",
+        url: window.location.href
+    };
+    try {
+        if (navigator.share) {
+            await navigator.share(payload);
+        } else {
+            await navigator.clipboard.writeText(payload.url);
+            shareRecommendationResults.textContent = shareRecommendationResults.dataset.shared || atlasT("js.copy.success", "Link copied");
+            window.setTimeout(() => { shareRecommendationResults.textContent = originalText; }, 1800);
+        }
+    } catch (error) {
+        if (error?.name !== "AbortError") {
+            window.prompt(atlasT("js.copy.prompt", "Copy this link:"), payload.url);
+        }
+    }
+});
+
 
 const compareToolSelects = Array.from(document.querySelectorAll("[data-compare-tool-select]"));
 const compareMoreTools = document.getElementById("compareMoreTools");
