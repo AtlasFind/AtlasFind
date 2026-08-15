@@ -124,51 +124,49 @@
                     <a href="{{ url_for('home', system_level='light') }}">{{ t("filter.lightweight") }}</a>
                 </div>
 
-                <div class="hero-proof" aria-label="{{ t('home.proof.label') }}">
+                <div class="hero-confidence-line" aria-label="{{ t('home.proof.label') }}">
+                    <span><i aria-hidden="true"></i>{{ t("home.proof.verified") }}</span>
+                    <span aria-hidden="true">•</span>
                     <span><strong>{{ total_tool_count }}+</strong> {{ t("home.proof.tools") }}</span>
-                    <span><strong>{{ category_count }}</strong> {{ t("home.proof.categories") }}</span>
-                    <span><strong>TR / EN</strong> {{ t("home.proof.languages") }}</span>
-                    <span class="hero-proof-verified"><i aria-hidden="true"></i>{{ t("home.proof.verified") }}</span>
                 </div>
 
             </div>
 
 
-            <div class="hero-visual" id="heroVisual">
-
-                <div class="visual-orbit orbit-one"></div>
-                <div class="visual-orbit orbit-two"></div>
-
-                {% for tool in popular_tools[:4] %}
-                <a class="floating-card floating-card-{{ ['one', 'two', 'three', 'four'][loop.index0] }}" href="{{ url_for('tool_detail', slug=tool.slug) }}">
-                    <div class="floating-logo tool-icon-shell">
-                        <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="" width="39" height="39" data-atlas-icon>
-                        <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
-                    </div>
+            <aside class="hero-discovery-panel" aria-label="{{ t('home.match.title') }}">
+                <div class="discovery-panel-glow" aria-hidden="true"></div>
+                <header class="discovery-panel-head">
                     <div>
-                        <strong>{{ tool.name }}</strong>
-                        <span>{{ tool.category }}</span>
+                        <span class="live-indicator"><i aria-hidden="true"></i>{% if locale == 'tr' %}Canlı katalog{% else %}Live catalog{% endif %}</span>
+                        <h2>{% if locale == 'tr' %}Bugün keşfetmeye değer{% else %}Worth discovering today{% endif %}</h2>
                     </div>
-                    <small aria-hidden="true">→</small>
-                </a>
-                {% endfor %}
+                    <span class="discovery-panel-count">{{ total_tool_count }}+</span>
+                </header>
 
-
-                <div class="visual-center">
-
-                    <div class="visual-center-icon">
-                        A
-                    </div>
-
-                    <strong>{{ t("home.match.title") }}</strong>
-
-                    <span>
-                        {{ t("home.match.subtitle") }}
-                    </span>
-
+                <div class="discovery-tool-grid">
+                    {% for tool in popular_tools[:4] %}
+                    <a class="discovery-tool" href="{{ url_for('tool_detail', slug=tool.slug) }}">
+                        <div class="discovery-tool-logo tool-icon-shell">
+                            <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} alt="" width="44" height="44" data-atlas-icon>
+                            <span class="tool-icon-fallback" hidden aria-hidden="true">{{ tool.name[:2]|upper }}</span>
+                        </div>
+                        <div><strong>{{ tool.name }}</strong><span>{{ tool.category }}</span></div>
+                        <small aria-hidden="true">↗</small>
+                    </a>
+                    {% endfor %}
                 </div>
 
-            </div>
+                <a class="discovery-match-card" href="{{ url_for('recommend') }}">
+                    <img src="{{ url_for('static', filename='images/atlasfind-duck-64.png') }}" alt="" width="54" height="54">
+                    <div><span>{% if locale == 'tr' %}Akıllı eşleştirme{% else %}Smart matching{% endif %}</span><strong>{{ t("home.match.title") }}</strong><small>{{ t("home.match.subtitle") }}</small></div>
+                    <b aria-hidden="true">→</b>
+                </a>
+
+                <footer class="discovery-panel-foot">
+                    <span><i aria-hidden="true"></i>{% if locale == 'tr' %}Bağımsız katalog{% else %}Independent catalog{% endif %}</span>
+                    <span>{% if locale == 'tr' %}Her gün güncellenir{% else %}Updated daily{% endif %}</span>
+                </footer>
+            </aside>
 
         </section>
 
@@ -176,46 +174,19 @@
         {% set ad_format = 'leaderboard' %}
         {% include 'partials/ad_slot.html' %}
 
-        <section class="trust-section">
-
-            <p>
-                {{ t("home.platform_eyebrow") }}
-            </p>
-
-            <div class="platform-row">
-                <span>Windows</span>
-                <span>macOS</span>
-                <span>Linux</span>
-                <span>Android</span>
-                <span>iOS</span>
-                <span>Web</span>
+        <section class="home-signal-panel" aria-label="{{ t('home.proof.label') }}">
+            <div class="signal-platforms">
+                <div><span class="section-kicker">{% if locale == 'tr' %}Tüm cihazların için{% else %}For every device{% endif %}</span><strong>{{ t("home.platform_eyebrow") }}</strong></div>
+                <div class="platform-row">
+                    {% for platform in ['Windows','macOS','Linux','Android','iOS','Web'] %}<span><i aria-hidden="true"></i>{{ platform }}</span>{% endfor %}
+                </div>
             </div>
-
-        </section>
-
-
-        <section class="stats-section">
-
-            <div class="stat-item">
-                <strong>{{ total_tool_count }}+</strong>
-                <span>{{ t("home.stats.listed_tools") }}</span>
+            <div class="signal-stats">
+                <div class="signal-stat"><strong>{{ total_tool_count }}+</strong><span>{{ t("home.stats.listed_tools") }}</span></div>
+                <div class="signal-stat"><strong>{{ category_count }}</strong><span>{{ t("home.stats.categories") }}</span></div>
+                <div class="signal-stat"><strong>EN / TR</strong><span>{{ t("home.stats.languages") }}</span></div>
+                <div class="signal-stat"><strong>100%</strong><span>{{ t("home.stats.independent") }}</span></div>
             </div>
-
-            <div class="stat-item">
-                <strong>{{ category_count }}</strong>
-                <span>{{ t("home.stats.categories") }}</span>
-            </div>
-
-            <div class="stat-item">
-                <strong>EN / TR</strong>
-                <span>{{ t("home.stats.languages") }}</span>
-            </div>
-
-            <div class="stat-item">
-                <strong>100%</strong>
-                <span>{{ t("home.stats.independent") }}</span>
-            </div>
-
         </section>
 
 
