@@ -312,17 +312,13 @@ const cookieAccept = document.getElementById("cookieAccept");
 const cookieReject = document.getElementById("cookieReject");
 const analyticsConsentKey = "atlas-analytics-consent";
 function loadGoogleAnalytics() {
-    const measurementId = window.ATLAS_GA_ID;
-    if (!measurementId || window.dataLayer) return;
-    window.dataLayer = [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag("js", new Date());
-    window.gtag("consent", "default", { analytics_storage: "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
-    window.gtag("config", measurementId, { anonymize_ip: true });
-    const tag = document.createElement("script");
-    tag.async = true;
-    tag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
-    document.head.appendChild(tag);
+    if (typeof window.gtag !== "function") return;
+    window.gtag("consent", "update", {
+        analytics_storage: "granted",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+    });
 }
 const analyticsConsent = localStorage.getItem(analyticsConsentKey);
 if (analyticsConsent === "granted") loadGoogleAnalytics();

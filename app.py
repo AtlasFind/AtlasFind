@@ -151,13 +151,13 @@ PUBLIC_PAGES = {
     "cookies": {
         "en": {"title": "Cookie Policy", "description": "Browser storage, optional analytics and advertising choices used by AtlasFind.", "sections": [
             ("Essential preferences", "AtlasFind stores language, theme and cookie-notice choices in local storage so the interface works consistently."),
-            ("Optional analytics", "If you select Allow analytics, AtlasFind loads Google Analytics to measure page visits and interactions. The Google tag is not loaded when you select Essential only."),
+            ("Optional analytics", "Google Consent Mode starts with analytics storage denied. If you select Allow analytics, AtlasFind enables Google Analytics storage to measure page visits and interactions. If you select Essential only, analytics storage remains denied."),
             ("Advertising choices", "Public discovery pages may load Google AdSense. In regions where consent is required, Google's certified consent platform provides choices before eligible advertising storage or personalization is used. Account, profile and administration pages do not load the advertising script."),
             ("Managing storage", "You can clear AtlasFind site data from your browser settings. Doing so resets saved interface preferences."),
         ]},
         "tr": {"title": "Çerez Politikası", "description": "AtlasFind tarafından kullanılan tarayıcı depolaması, isteğe bağlı analiz ve reklam tercihleri.", "sections": [
             ("Gerekli tercihler", "AtlasFind arayüzün tutarlı çalışması için dil, tema ve çerez bildirimi tercihlerini yerel depolamada saklar."),
-            ("İsteğe bağlı analiz", "Analitiğe izin ver seçeneğini seçerseniz AtlasFind sayfa ziyaretlerini ve etkileşimleri ölçmek için Google Analytics'i yükler. Yalnızca gerekli seçildiğinde Google etiketi yüklenmez."),
+            ("İsteğe bağlı analiz", "Google İzin Modu analiz depolaması reddedilmiş olarak başlar. Analitiğe izin ver seçeneğini seçerseniz AtlasFind sayfa ziyaretlerini ve etkileşimleri ölçmek için Google Analytics depolamasını etkinleştirir. Yalnızca gerekli seçildiğinde analiz depolaması reddedilmiş kalır."),
             ("Reklam tercihleri", "Herkese açık keşif sayfaları Google AdSense yükleyebilir. İzin gereken bölgelerde uygun reklam depolaması veya kişiselleştirme kullanılmadan önce Google'ın sertifikalı izin platformu seçenek sunar. Hesap, profil ve yönetim sayfalarında reklam kodu yüklenmez."),
             ("Depolamayı yönetme", "Tarayıcı ayarlarından AtlasFind site verilerini silebilirsiniz. Bu işlem kayıtlı arayüz tercihlerini sıfırlar."),
         ]}

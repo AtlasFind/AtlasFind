@@ -26,6 +26,22 @@
     {% block extra_head %}{% endblock %}
     <meta name="google-adsense-account" content="{{ adsense_publisher_id }}">
     {% if adsense_enabled %}<script nonce="{{ csp_nonce }}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_publisher_id }}" crossorigin="anonymous"></script>{% endif %}
+    {% if google_analytics_id %}
+    <script nonce="{{ csp_nonce }}">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("consent", "default", {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            wait_for_update: 500
+        });
+        gtag("js", new Date());
+        gtag("config", {{ google_analytics_id|tojson }}, { anonymize_ip: true });
+    </script>
+    <script nonce="{{ csp_nonce }}" async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_id|urlencode }}"></script>
+    {% endif %}
     <script nonce="{{ csp_nonce }}">
         (() => {
             const saved = localStorage.getItem("atlas-theme");
@@ -130,7 +146,7 @@
         </div>
     </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
-    <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }}; window.ATLAS_GA_ID = {{ google_analytics_id|tojson }};</script>
+    <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }};</script>
     <script nonce="{{ csp_nonce }}" src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
     {% block scripts %}{% endblock %}
 </body>
