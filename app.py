@@ -851,6 +851,96 @@ COLLECTION_INFO_TR = {
     "editor-choice": {"name": "Editörün Seçtikleri", "description": "AtlasFind editoryal ölçütleriyle seçilen güçlü ve çok yönlü araçlar."},
 }
 
+AI_SEO_LANDINGS = {
+    "best-ai-tools": {
+        "en": {
+            "title": "Best AI Tools",
+            "description": "Compare the best AI tools for writing, research, coding, image generation and everyday work.",
+            "intro": "The best AI tool depends on the job. This list brings together highly rated AI assistants, creative tools and specialist software so you can compare pricing, platforms and practical fit instead of relying on one universal winner.",
+            "criteria": ["Useful results for a clearly defined task", "Transparent pricing and platform availability", "Strong catalog score, usability and maintained product information"],
+            "faq": [
+                {"question": "What is the best AI tool?", "answer": "There is no single best option for every task. General assistants suit broad work, while specialist tools can be better for coding, images, research or local AI."},
+                {"question": "How are these AI tools selected?", "answer": "AtlasFind filters its AI-powered catalog and orders tools using catalog signals such as usefulness, popularity and maintained product data. Always confirm current features on the official website."},
+            ],
+        },
+        "tr": {
+            "title": "En İyi Yapay Zekâ Araçları",
+            "description": "Yazma, araştırma, kodlama, görsel üretme ve günlük işler için en iyi yapay zekâ araçlarını karşılaştırın.",
+            "intro": "En iyi yapay zekâ aracı, yapmak istediğiniz işe göre değişir. Bu liste; fiyat, platform ve kullanım amacını karşılaştırabilmeniz için güçlü AI asistanlarını, yaratıcı araçları ve uzman yazılımları bir araya getirir.",
+            "criteria": ["Belirli bir işte faydalı ve tutarlı sonuçlar", "Açık fiyatlandırma ve platform bilgisi", "Güçlü katalog puanı, kullanılabilirlik ve güncel ürün verileri"],
+            "faq": [
+                {"question": "En iyi yapay zekâ hangisi?", "answer": "Her iş için tek bir en iyi seçenek yoktur. Genel asistanlar geniş kullanım sunarken kodlama, görsel üretme, araştırma veya yerel AI için uzman araçlar daha uygun olabilir."},
+                {"question": "Bu yapay zekâ araçları nasıl seçiliyor?", "answer": "AtlasFind, AI destekli kataloğunu filtreler ve araçları fayda, popülerlik ve güncel ürün verileri gibi katalog sinyalleriyle sıralar. Güncel özellikleri resmî siteden doğrulayın."},
+            ],
+        },
+        "filter": "all",
+    },
+    "best-free-ai-tools": {
+        "en": {
+            "title": "Best Free AI Tools",
+            "description": "Discover the best free AI tools and AI products with useful free plans for writing, coding, images and research.",
+            "intro": "Free AI can mean fully free software, open-source software or a commercial product with a limited free plan. This page includes those no-cost starting points and labels pricing clearly so you can distinguish a permanent free tool from a freemium service.",
+            "criteria": ["A usable free or freemium starting plan", "Enough free functionality to evaluate real work", "Clear limits, supported platforms and upgrade path"],
+            "faq": [
+                {"question": "Are these AI tools completely free?", "answer": "Some are fully free or open source; others are freemium and limit usage, models or exports. Check the pricing label and official plan before relying on a tool."},
+                {"question": "What is the best free AI for beginners?", "answer": "A general AI assistant with a free plan is usually the easiest starting point. Choose a specialist tool when your main need is coding, image generation, research or offline use."},
+            ],
+        },
+        "tr": {
+            "title": "En İyi Ücretsiz Yapay Zekâ Araçları",
+            "description": "Yazma, kodlama, görsel üretme ve araştırma için en iyi ücretsiz AI araçlarını ve kullanışlı ücretsiz planları keşfedin.",
+            "intro": "Ücretsiz yapay zekâ; tamamen ücretsiz veya açık kaynaklı bir yazılımı ya da sınırlı ücretsiz plan sunan ticari bir ürünü ifade edebilir. Bu sayfa ücretsiz başlangıç seçeneklerini bir araya getirir ve fiyatlandırma türlerini açıkça gösterir.",
+            "criteria": ["Kullanılabilir ücretsiz veya freemium başlangıç planı", "Gerçek bir işi deneyebilecek kadar ücretsiz özellik", "Açık kullanım sınırları, platformlar ve yükseltme seçenekleri"],
+            "faq": [
+                {"question": "Bu yapay zekâ araçları tamamen ücretsiz mi?", "answer": "Bazıları tamamen ücretsiz veya açık kaynaklıdır; bazıları ise kullanım, model ya da dışa aktarma sınırı olan freemium araçlardır. Kullanmadan önce fiyat etiketini ve resmî planı kontrol edin."},
+                {"question": "Yeni başlayanlar için en iyi ücretsiz AI hangisi?", "answer": "Ücretsiz plan sunan genel bir AI asistanı çoğu kişi için en kolay başlangıçtır. Kodlama, görsel üretme, araştırma veya çevrimdışı kullanım için uzman bir araç seçebilirsiniz."},
+            ],
+        },
+        "filter": "free",
+    },
+    "downloadable-ai-tools": {
+        "en": {
+            "title": "Best Downloadable AI Tools",
+            "description": "Find AI tools you can download for Windows, macOS or Linux, including local and offline AI software.",
+            "intro": "Downloadable AI tools offer native desktop apps or local model workflows instead of browser-only access. Some still require an internet connection, while offline-capable tools can keep more processing on your device. Check system requirements before installing large models.",
+            "criteria": ["A desktop download or supported local installation", "Clear Windows, macOS or Linux compatibility", "Offline capability and hardware needs shown where known"],
+            "faq": [
+                {"question": "Can downloaded AI tools work offline?", "answer": "Some can, especially local model runners, but a desktop app does not automatically mean offline support. Check the Offline badge and official requirements."},
+                {"question": "Do local AI tools need a powerful computer?", "answer": "Requirements vary by model and workload. Smaller models may run on modest hardware, while larger models often need more memory and a capable GPU."},
+            ],
+        },
+        "tr": {
+            "title": "İndirilebilir En İyi Yapay Zekâ Araçları",
+            "description": "Windows, macOS veya Linux için indirebileceğiniz yerel ve çevrimdışı yapay zekâ araçlarını keşfedin.",
+            "intro": "İndirilebilir yapay zekâ araçları yalnızca tarayıcıda çalışmak yerine masaüstü uygulaması veya yerel model kurulumu sunar. Bazıları internet bağlantısı isterken çevrimdışı araçlar işlemlerin daha büyük bölümünü cihazınızda tutabilir. Büyük modelleri kurmadan önce sistem gereksinimlerini kontrol edin.",
+            "criteria": ["Masaüstü indirmesi veya desteklenen yerel kurulum", "Açık Windows, macOS veya Linux uyumluluğu", "Biliniyorsa çevrimdışı çalışma ve donanım gereksinimleri"],
+            "faq": [
+                {"question": "İndirilen yapay zekâ araçları internetsiz çalışır mı?", "answer": "Özellikle yerel model çalıştırıcılarının bazıları internetsiz çalışabilir; ancak masaüstü uygulaması olması otomatik olarak çevrimdışı olduğu anlamına gelmez. Çevrimdışı etiketini ve resmî gereksinimleri kontrol edin."},
+                {"question": "Yerel yapay zekâ için güçlü bilgisayar gerekir mi?", "answer": "Gereksinimler modele ve yapılan işe göre değişir. Küçük modeller mütevazı donanımda çalışabilirken büyük modeller daha fazla bellek ve güçlü bir ekran kartı isteyebilir."},
+            ],
+        },
+        "filter": "downloadable",
+    },
+}
+
+
+def localized_ai_landings(locale):
+    return {
+        slug: {**config[locale if locale == "tr" else "en"], "slug": slug}
+        for slug, config in AI_SEO_LANDINGS.items()
+    }
+
+
+def ai_landing_tools(slug):
+    tools = [tool for tool in load_tools() if tool.get("ai_powered")]
+    mode = AI_SEO_LANDINGS[slug]["filter"]
+    if mode == "free":
+        tools = [tool for tool in tools if tool.get("pricing_type") in {"free", "freemium"}]
+    elif mode == "downloadable":
+        desktop = {"windows", "macos", "linux"}
+        tools = [tool for tool in tools if desktop.intersection({normalize_platform(value) for value in tool.get("platforms", [])})]
+    return tools
+
 def localized_collections(locale):
     return COLLECTION_INFO_TR if locale == "tr" else COLLECTION_INFO
 
@@ -1270,6 +1360,7 @@ def category_page(slug, locale=None):
     return render_template(
         "discovery.html", **context,
         active_page="categories", related_guides=related_guides,
+        ai_seo_landings=(list(localized_ai_landings(current_locale).values()) if slug == "artificial-intelligence" else []),
         seo=page_seo((f"En İyi {info['name']} Araçları" if current_locale == "tr" else f"Best {info['name']} Tools"), info["description"], f"/categories/{slug}"),
         breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
     )
@@ -1316,6 +1407,35 @@ def collection_page(slug, locale=None):
         active_page="categories", related_guides=[],
         seo=page_seo(info["name"], info["description"], f"/collections/{slug}"),
         breadcrumbs=crumbs, schemas=[breadcrumb_schema(crumbs)],
+    )
+
+
+@app.route("/best-ai-tools", defaults={"landing_slug": "best-ai-tools"})
+@app.route("/<locale>/best-ai-tools", defaults={"landing_slug": "best-ai-tools"})
+@app.route("/best-free-ai-tools", defaults={"landing_slug": "best-free-ai-tools"})
+@app.route("/<locale>/best-free-ai-tools", defaults={"landing_slug": "best-free-ai-tools"})
+@app.route("/downloadable-ai-tools", defaults={"landing_slug": "downloadable-ai-tools"})
+@app.route("/<locale>/downloadable-ai-tools", defaults={"landing_slug": "downloadable-ai-tools"})
+def ai_seo_landing(landing_slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    current_locale = get_locale()
+    landing = localized_ai_landings(current_locale)[landing_slug]
+    items = ai_landing_tools(landing_slug)
+    crumbs = build_breadcrumbs([
+        (translate("common.home"), "/"),
+        (localized_category("artificial-intelligence", current_locale)["name"], "/categories/artificial-intelligence"),
+        (landing["title"], f"/{landing_slug}"),
+    ])
+    related_landings = [item for slug, item in localized_ai_landings(current_locale).items() if slug != landing_slug]
+    return render_template(
+        "discovery.html",
+        **discovery_context(items, landing["title"], landing["description"], "ai-seo-landing"),
+        active_page="categories", related_guides=[], seo_landing=landing,
+        ai_seo_landings=related_landings,
+        seo=page_seo(landing["title"], landing["description"], f"/{landing_slug}"),
+        breadcrumbs=crumbs,
+        schemas=[breadcrumb_schema(crumbs), faq_schema(landing["faq"])],
     )
 
 
@@ -1762,6 +1882,7 @@ def sitemap_xml():
     from xml.sax.saxutils import escape
 
     base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/collaborate", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
+    base_urls.extend((f"/{slug}", "2026-08-15") for slug in AI_SEO_LANDINGS)
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
     base_urls.extend((f"/guides/{article.get('slug')}", article.get('updated_at') or article.get('published_at')) for article in load_articles(DEFAULT_LOCALE))
     base_urls.extend((f"/categories/{slug}", None) for slug in CATEGORIES)

@@ -15,6 +15,19 @@
     <div class="catalog-summary"><strong>{{ pagination.total }}</strong><span>{{ t("catalog.tools_listed") }}</span></div>
   </div>
 </section>
+{% if seo_landing %}
+<section class="section-container seo-landing-overview">
+  <div class="seo-landing-copy">
+    <span class="eyebrow">AtlasFind AI</span>
+    <h2>{% if locale == 'tr' %}Bu liste neyi kapsıyor?{% else %}What this list covers{% endif %}</h2>
+    <p>{{ seo_landing.intro }}</p>
+  </div>
+  <div class="seo-criteria-card">
+    <h2>{% if locale == 'tr' %}Seçim ölçütleri{% else %}Selection criteria{% endif %}</h2>
+    <ul>{% for item in seo_landing.criteria %}<li>{{ item }}</li>{% endfor %}</ul>
+  </div>
+</section>
+{% endif %}
 {% if category_landing %}
 <section class="section-container category-detail-overview">
   <div class="category-detail-stats">
@@ -192,4 +205,16 @@
     </div>
   </div>
 </section>
+{% if seo_landing and seo_landing.faq %}
+<section class="section-container seo-faq-section">
+  <div class="section-heading"><span class="eyebrow">FAQ</span><h2>{% if locale == 'tr' %}Sık sorulan sorular{% else %}Frequently asked questions{% endif %}</h2></div>
+  <div class="seo-faq-list">{% for item in seo_landing.faq %}<details><summary>{{ item.question }}</summary><p>{{ item.answer }}</p></details>{% endfor %}</div>
+</section>
+{% endif %}
+{% if ai_seo_landings %}
+<section class="section-container seo-related-landings">
+  <div class="section-heading"><span class="eyebrow">AtlasFind AI</span><h2>{% if locale == 'tr' %}Diğer yapay zekâ listeleri{% else %}More AI tool lists{% endif %}</h2></div>
+  <div class="seo-landing-links">{% for item in ai_seo_landings %}<a href="{{ localized_path('/' ~ item.slug) }}"><strong>{{ item.title }}</strong><span>{{ item.description }}</span></a>{% endfor %}</div>
+</section>
+{% endif %}
 {% endblock %}
