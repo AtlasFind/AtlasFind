@@ -1,0 +1,44 @@
+name: AtlasFind quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ATLASFIND_DATABASE_PATH: ${{ runner.temp }}/atlasfind-test.db
+      ATLASFIND_COMMUNITY_ENABLED: "1"
+      ATLASFIND_ENV: development
+      PYTHONWARNINGS: ignore
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Bootstrap clean database
+        run: python scripts/bootstrap_database.py
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Validate JavaScript syntax
+        run: node --check static/js/main.js
+      - name: Validate production configuration
+        run: |
+          python scripts/validate_security.py
+          python scripts/validate_deployment.py
+          python scripts/validate_content.py
+          python scripts/test_search.py
+          python scripts/test_recommendations.py

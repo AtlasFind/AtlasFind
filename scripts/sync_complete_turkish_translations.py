@@ -148,20 +148,88 @@ def unique(values):
     return list(dict.fromkeys(value for value in values if value))
 
 
+CURATED_DESCRIPTIONS = {
+    "chatgpt": "ChatGPT; yazma, kodlama, araştırma, görsel üretimi ve dosya analizi gibi bilgi işlerini tek bir yapay zekâ asistanında birleştirir.",
+    "claude": "Claude; uzun belgelerle çalışma, metin yazma, analiz, araştırma ve kodlama görevlerine odaklanan Anthropic yapay zekâ asistanıdır.",
+    "gemini": "Gemini; metin, görsel, araştırma ve üretkenlik görevlerini Google hizmetleriyle birlikte yürütebilen çok kipli bir yapay zekâ asistanıdır.",
+    "perplexity": "Perplexity, yanıtlarını kaynak bağlantılarıyla destekleyen; web araştırması ve güncel bilgi araması için tasarlanmış yapay zekâ destekli bir arama aracıdır.",
+    "visual-studio-code": "Visual Studio Code; eklenti desteği, hata ayıklama, Git araçları ve bütünleşik terminal sunan ücretsiz, açık kaynaklı bir kod düzenleyicisidir.",
+    "canva": "Canva; sosyal medya görselleri, sunumlar, belgeler ve videolar hazırlamak için şablonlarla çalışan çevrim içi bir tasarım platformudur.",
+    "adobe-photoshop": "Adobe Photoshop; fotoğraf düzenleme, görsel birleştirme, piksel tabanlı tasarım ve üretken yapay zekâ araçları sunan profesyonel bir görüntü editörüdür.",
+    "gimp": "GIMP; fotoğraf düzenleme, katmanlı tasarım ve görsel işleme için Windows, macOS ve Linux üzerinde çalışan ücretsiz, açık kaynaklı bir editördür.",
+    "ollama": "Ollama, desteklenen büyük dil modellerini kullanıcının kendi bilgisayarında indirip çevrim dışı çalıştırmasını kolaylaştıran açık kaynaklı bir yerel yapay zekâ aracıdır.",
+    "open-webui": "Open WebUI; yerel veya uzak yapay zekâ modellerini sohbet arayüzünden kullanmak için kendi sunucunda barındırılabilen açık kaynaklı bir web uygulamasıdır.",
+    "cursor": "Cursor; kod tamamlama, proje içi soru-cevap ve yapay zekâ destekli düzenleme özelliklerini masaüstü kod editöründe bir araya getirir.",
+    "n8n": "n8n; farklı uygulama ve servisleri görsel iş akışlarıyla bağlayarak tekrarlanan görevleri otomatikleştiren, kendi sunucunda da çalıştırılabilen bir otomasyon platformudur.",
+}
+
+LEGACY_DESCRIPTION_MARKERS = (
+    "alanındaki işleri düzenlemeye ve yürütmeye yardımcı olan",
+    "ilgili dijital işleri daha düzenli tamamlamak isteyen",
+    "iş akışlarına odaklanan bir",
+)
+
+
+def should_replace_translation(existing) -> bool:
+    """Replace only missing or known generated copy; preserve editorial work."""
+    if not existing:
+        return True
+    description = str(existing["description"] or "").strip()
+    if not description:
+        return True
+    try:
+        payload = json.loads(existing["payload_json"] or "{}")
+    except (TypeError, ValueError, json.JSONDecodeError):
+        payload = {}
+    source = str(payload.get("translation_source") or "")
+    if source.startswith("generated-") or source in {"complete-template-v1", "expansion-template-v1"}:
+        return True
+    return any(marker in description.lower() for marker in LEGACY_DESCRIPTION_MARKERS)
+
+
+def merge_missing(defaults, existing):
+    """Recursively preserve editorial values while filling absent fields."""
+    if not isinstance(defaults, dict) or not isinstance(existing, dict):
+        return existing if existing not in (None, "", [], {}) else defaults
+    merged = dict(defaults)
+    for key, value in existing.items():
+        merged[key] = merge_missing(defaults.get(key), value) if key in defaults else value
+    return merged
+
+
+def natural_description(tool: dict, category: str, subcategory: str, features: list[str]) -> str:
+    curated = CURATED_DESCRIPTIONS.get(str(tool.get("slug") or ""))
+    if curated:
+        return curated
+    name = tool["name"]
+    capabilities = unique([*features, *[tr_label(value) for value in (tool.get("tags") or [])]])[:4]
+    capability_text = ", ".join(value.lower() for value in capabilities)
+    platform_text = ", ".join(tool.get("platforms") or [])
+    variants = (
+        f"{name}; {capability_text} özelliklerini bir araya getiren bir {subcategory.lower()} çözümüdür.",
+        f"{name}, {subcategory.lower()} ihtiyaçları için {capability_text} işlevleri sunan bir {category.lower()} aracıdır.",
+        f"{name}; {capability_text} çalışmalarına odaklanan, {category.lower()} kategorisinde yer alan bir yazılımdır.",
+        f"{name}, {capability_text} görevlerini yürütmek için geliştirilen bir {subcategory.lower()} aracıdır.",
+    )
+    description = variants[int(tool.get("id") or 0) % len(variants)]
+    if platform_text:
+        description += f" {platform_text} platformlarında kullanılabilir."
+    if tool.get("offline"):
+        description += " Desteklenen kurulumlarda internet bağlantısı olmadan da çalışabilir."
+    if tool.get("open_source"):
+        description += " Kaynak kodu açıktır ve uygun altyapıda kullanıcı tarafından barındırılabilir."
+    return description
+
+
 def payload_for(tool: dict) -> dict:
     name = tool["name"]
     category = CATEGORY_TR.get(tool.get("category"), tr_label(tool.get("category")))
     subcategory = tr_label(tool.get("subcategory"))
-    open_note = (
-        "Açık kaynaklı yapısı sayesinde kaynak kodu incelenebilir ve desteklenen kurulum yöntemleriyle kendi altyapında barındırılabilir."
-        if tool.get("open_source") else
-        "Kullanılabilir özellikler ve hizmet koşulları seçilen plana ve platforma göre değişebilir."
-    )
-    description = f"{name}, {subcategory.lower()} alanındaki işleri düzenlemeye ve yürütmeye yardımcı olan bir {category.lower()} aracıdır. {open_note}"
     base_features = tool.get("features") or tool.get("tags") or []
     features = unique([tr_label(value) for value in base_features])[:6]
     if len(features) < 3:
         features = unique([*features, f"{subcategory} odaklı çalışma akışı", "Bireysel ve ekip kullanımına uygun yapı", "Resmî ürün ve proje kaynaklarına erişim"])
+    description = natural_description(tool, category, subcategory, features)
     tags = unique([tr_label(value) for value in (tool.get("tags") or [])] + features)[:8]
     price = pricing(tool)
     price_note = (
@@ -188,7 +256,8 @@ def payload_for(tool: dict) -> dict:
         "system_requirements": unique(requirements),
         "pricing_details": {"model": price, "note": price_note, "summary": price, "notes": price_note},
         "verification": {"status": "Doğrulandı", "date": (tool.get("verification") or {}).get("date"), "note": "Kimlik, resmî web sitesi, kategori, kaynak bağlantıları ve araç simgesi AtlasFind tarafından kontrol edildi. Değişebilen bilgiler için resmî kaynağı inceleyin."},
-        "quality_review": {"scope": "tam-turkce-yama", "reviewed_at": (tool.get("quality_review") or {}).get("reviewed_at"), "note": "Türkçe görünen alanlar; açıklama, amaç, kategori, alt kategori, özellikler, etiketler, fiyatlandırma, artılar, eksiler, hedef kullanıcılar ve gereksinimler düzeyinde incelendi."},
+        "quality_review": {"scope": "generated-catalog-fallback-v2", "reviewed_at": (tool.get("quality_review") or {}).get("reviewed_at"), "note": "Türkçe katalog alanları kaynak kayıttaki kategori, özellik, platform ve lisans bilgilerinden üretildi; editoryal metinler bu işlem sırasında korunur."},
+        "translation_source": "curated-v1" if tool.get("slug") in CURATED_DESCRIPTIONS else "generated-catalog-fallback-v2",
         "change_history": [{"date": entry.get("date"), "type": entry.get("type", "data-review"), "summary": "Araç kaydı ve Türkçe içerik gözden geçirildi.", "changes": ["Türkçe alanlar tamamlandı"]} for entry in (tool.get("change_history") or [])],
         "price_history": [{**entry, "old_value": tr_label(entry.get("old_value")), "new_value": tr_label(entry.get("new_value")), "note": "Fiyatlandırma kaydı editoryal inceleme sırasında güncellendi; güncel planları resmî siteden doğrulayın."} for entry in (tool.get("price_history") or [])],
         "icon_alt": f"{name} resmî simgesi",
@@ -197,19 +266,42 @@ def payload_for(tool: dict) -> dict:
 
 def main() -> None:
     tools = load_published_catalog(validate=True)
+    updated = 0
+    preserved = 0
     with transaction() as connection:
         for tool in tools:
+            existing = connection.execute(
+                "SELECT name,description,subcategory,pricing_summary,pricing_notes,payload_json "
+                "FROM tool_translations WHERE tool_id=? AND locale='tr'",
+                (tool["id"],),
+            ).fetchone()
             payload = payload_for(tool)
+            replace = should_replace_translation(existing)
+            if existing and not replace:
+                try:
+                    existing_payload = json.loads(existing["payload_json"] or "{}")
+                except (TypeError, ValueError, json.JSONDecodeError):
+                    existing_payload = {}
+                payload = merge_missing(payload, existing_payload)
+                payload["description"] = existing["description"]
+                payload["purpose"] = existing_payload.get("purpose") or existing["description"]
+                payload["translation_source"] = existing_payload.get("translation_source") or "editorial-preserved-v1"
+                preserved += 1
             details = payload["pricing_details"]
             connection.execute(
                 """INSERT INTO tool_translations(tool_id,locale,name,description,subcategory,pricing_summary,pricing_notes,payload_json)
                    VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(tool_id,locale) DO UPDATE SET
                    name=excluded.name,description=excluded.description,subcategory=excluded.subcategory,
                    pricing_summary=excluded.pricing_summary,pricing_notes=excluded.pricing_notes,payload_json=excluded.payload_json""",
-                (tool["id"], "tr", tool["name"], payload["description"], payload["subcategory"],
-                 details["model"], details["note"], json.dumps(payload, ensure_ascii=False)),
+                (tool["id"], "tr", (existing["name"] if existing and not replace and existing["name"] else tool["name"]),
+                 payload["description"],
+                 (existing["subcategory"] if existing and not replace and existing["subcategory"] else payload["subcategory"]),
+                 (existing["pricing_summary"] if existing and not replace and existing["pricing_summary"] else details["model"]),
+                 (existing["pricing_notes"] if existing and not replace and existing["pricing_notes"] else details["note"]),
+                 json.dumps(payload, ensure_ascii=False)),
             )
-    print(f"Complete Turkish payloads synchronized: {len(tools)}/{len(tools)}")
+            updated += int(replace)
+    print(f"Turkish payloads synchronized: {updated} generated, {preserved} editorial records preserved and completed")
 
 
 if __name__ == "__main__":

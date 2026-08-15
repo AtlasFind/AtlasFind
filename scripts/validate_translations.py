@@ -35,10 +35,7 @@ print(f'Validation successful: {len(SUPPORTED_LOCALES)} locales and {len(base_ke
 
 
 def validate_complete_turkish_content():
-    import sqlite3
-    from pathlib import Path
-    db = Path(__file__).resolve().parents[1] / "database" / "atlasfind.db"
-    with sqlite3.connect(db) as con:
+    with connect_database() as con:
         total = con.execute("SELECT COUNT(*) FROM tools WHERE COALESCE(status,'published')='published'").fetchone()[0]
         tr = con.execute("SELECT COUNT(*) FROM tool_translations WHERE locale='tr' AND TRIM(COALESCE(description,''))<>''").fetchone()[0]
     if tr != total:

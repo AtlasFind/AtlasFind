@@ -5,7 +5,7 @@ AtlasFind is a bilingual software discovery and comparison directory built with 
 **Production domain:** https://atlasfind.org  
 **Contact:** atlasfindd@gmail.com
 
-> Release status: v1.0.0 code and deployment package. Run `py scripts\validate_release_v100.py` in the target environment before switching production traffic.
+> Release status: AtlasFind v2.1.0. Production starts through `scripts/start_production.py`, which prepares persistent data and then replaces itself with Gunicorn.
 
 # AtlasFind
 
