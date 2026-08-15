@@ -131,7 +131,7 @@
     </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
     <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }}; window.ATLAS_GA_ID = {{ google_analytics_id|tojson }};</script>
-    <script src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
+    <script nonce="{{ csp_nonce }}" src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>
