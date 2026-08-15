@@ -417,6 +417,72 @@ document.addEventListener("click", (event) => {
     if (!event.target.closest(".compare-combobox")) closeCompareComboboxes();
 });
 
+// Account-free browsing history: stored only in the visitor's browser.
+const recentToolsStorageKey = "atlasfind-recent-tools-v1";
+const historyTool = document.querySelector("[data-history-tool]");
+const recentToolsSection = document.getElementById("recentToolsSection");
+const recentToolsGrid = document.getElementById("recentToolsGrid");
+const clearRecentTools = document.getElementById("clearRecentTools");
+
+function readRecentTools() {
+    try {
+        const value = JSON.parse(localStorage.getItem(recentToolsStorageKey) || "[]");
+        return Array.isArray(value) ? value.slice(0, 6) : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+if (historyTool) {
+    const current = {
+        slug: historyTool.dataset.toolSlug,
+        name: historyTool.dataset.toolName,
+        category: historyTool.dataset.toolCategory,
+        icon: historyTool.dataset.toolIcon,
+        url: historyTool.dataset.toolUrl
+    };
+    if (current.slug && current.name && current.url) {
+        const recent = readRecentTools().filter((item) => item?.slug !== current.slug);
+        recent.unshift(current);
+        try { localStorage.setItem(recentToolsStorageKey, JSON.stringify(recent.slice(0, 6))); } catch (error) { /* Storage may be unavailable. */ }
+    }
+}
+
+function renderRecentTools() {
+    if (!recentToolsSection || !recentToolsGrid) return;
+    const recent = readRecentTools();
+    recentToolsGrid.replaceChildren();
+    recentToolsSection.hidden = recent.length === 0;
+    recent.forEach((item) => {
+        const link = document.createElement("a");
+        link.className = "recent-tool-card";
+        link.href = item.url;
+        const image = document.createElement("img");
+        image.src = item.icon;
+        image.alt = "";
+        image.width = 46;
+        image.height = 46;
+        image.loading = "lazy";
+        const copy = document.createElement("span");
+        const name = document.createElement("strong");
+        name.textContent = item.name;
+        const category = document.createElement("small");
+        category.textContent = item.category || "";
+        copy.append(name, category);
+        const arrow = document.createElement("b");
+        arrow.textContent = "→";
+        arrow.setAttribute("aria-hidden", "true");
+        link.append(image, copy, arrow);
+        recentToolsGrid.append(link);
+    });
+}
+
+clearRecentTools?.addEventListener("click", () => {
+    try { localStorage.removeItem(recentToolsStorageKey); } catch (error) { /* Storage may be unavailable. */ }
+    renderRecentTools();
+});
+renderRecentTools();
+
 
 // v0.3.0 smart search suggestions
 const searchSuggestions = document.getElementById("searchSuggestions");

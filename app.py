@@ -76,7 +76,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.16.0"
+APP_VERSION = "1.17.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1395,6 +1395,17 @@ def home(locale=None):
 def search_suggestions_api():
     query = request.args.get("q", "").strip()[:160]
     return jsonify(search_suggestions(load_tools(), query))
+
+
+@app.get("/surprise")
+@app.get("/<locale>/surprise")
+def surprise_tool(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    candidates = sort_tools(load_tools(), "rating")[:250]
+    if not candidates:
+        return redirect(url_for("tools_directory"))
+    return redirect(url_for("tool_detail", slug=secrets.choice(candidates)["slug"]), code=302)
 
 
 

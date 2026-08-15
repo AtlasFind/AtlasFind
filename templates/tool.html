@@ -3,7 +3,7 @@
 {% block title %}{{ t("tool.seo_title", name=tool.name) }}{% endblock %}
 {% block description %}{{ t("tool.seo_description", name=tool.name) }}{% endblock %}
 {% block content %}
-<section class="tool-detail-hero" id="overview">
+<section class="tool-detail-hero" id="overview" data-history-tool data-tool-slug="{{ tool.slug }}" data-tool-name="{{ tool.name }}" data-tool-category="{{ tool.category }}" data-tool-icon="{{ tool.icon_url }}" data-tool-url="{{ url_for('tool_detail', slug=tool.slug) }}">
     <div class="tool-detail-main">
         <div class="tool-detail-logo tool-icon-shell">
             <img src="{{ tool.icon_url }}"{% if tool.icon_fallback_url %} data-fallback-src="{{ tool.icon_fallback_url }}"{% endif %} data-local-logo-base="{{ url_for('static', filename='images/tools/' ~ tool.slug ~ '/logo') }}" alt="{{ tool.icon_alt or (tool.name ~ ' icon') }}" width="88" height="88" data-atlas-icon>

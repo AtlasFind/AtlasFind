@@ -122,6 +122,7 @@
                     <a href="{{ url_for('home', offline=1) }}">{{ t("filter.offline") }}</a>
                     <a href="{{ url_for('home', ai=1) }}">{{ t("filter.ai") }}</a>
                     <a href="{{ url_for('home', system_level='light') }}">{{ t("filter.lightweight") }}</a>
+                    <a class="surprise-filter" href="{{ url_for('surprise_tool') }}"><span aria-hidden="true">✦</span> {% if locale == 'tr' %}Beni şaşırt{% else %}Surprise me{% endif %}</a>
                 </div>
 
                 <div class="hero-confidence-line" aria-label="{{ t('home.proof.label') }}">
@@ -698,6 +699,16 @@
                     </a>
                     {% endfor %}
                 </div>
+            </div>
+        </section>
+
+        <section class="section recent-tools-section" id="recentToolsSection" hidden>
+            <div class="section-container">
+                <div class="section-heading recent-tools-heading">
+                    <div><span class="section-label">{% if locale == 'tr' %}KALDIĞIN YERDEN{% else %}PICK UP WHERE YOU LEFT OFF{% endif %}</span><h2>{% if locale == 'tr' %}Son baktığın araçlar{% else %}Recently viewed tools{% endif %}</h2><p>{% if locale == 'tr' %}Bu liste yalnızca bu cihazda saklanır; hesap gerekmez.{% else %}This list stays only on this device—no account required.{% endif %}</p></div>
+                    <button type="button" id="clearRecentTools">{% if locale == 'tr' %}Temizle{% else %}Clear{% endif %}</button>
+                </div>
+                <div class="recent-tools-grid" id="recentToolsGrid"></div>
             </div>
         </section>
 
