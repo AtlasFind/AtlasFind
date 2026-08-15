@@ -306,11 +306,29 @@ document.addEventListener("click", event => {
 });
 
 
-// v0.8.1 essential-storage notice
+// Analytics is loaded only after explicit visitor consent.
 const cookieNotice = document.getElementById("cookieNotice");
 const cookieAccept = document.getElementById("cookieAccept");
-if (cookieNotice && localStorage.getItem("atlas-cookie-notice") !== "accepted") cookieNotice.hidden = false;
-cookieAccept?.addEventListener("click", () => { localStorage.setItem("atlas-cookie-notice", "accepted"); cookieNotice.hidden = true; });
+const cookieReject = document.getElementById("cookieReject");
+const analyticsConsentKey = "atlas-analytics-consent";
+function loadGoogleAnalytics() {
+    const measurementId = window.ATLAS_GA_ID;
+    if (!measurementId || window.dataLayer) return;
+    window.dataLayer = [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("consent", "default", { analytics_storage: "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
+    window.gtag("config", measurementId, { anonymize_ip: true });
+    const tag = document.createElement("script");
+    tag.async = true;
+    tag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+    document.head.appendChild(tag);
+}
+const analyticsConsent = localStorage.getItem(analyticsConsentKey);
+if (analyticsConsent === "granted") loadGoogleAnalytics();
+else if (cookieNotice && analyticsConsent === null) cookieNotice.hidden = false;
+cookieAccept?.addEventListener("click", () => { localStorage.setItem(analyticsConsentKey, "granted"); cookieNotice.hidden = true; loadGoogleAnalytics(); });
+cookieReject?.addEventListener("click", () => { localStorage.setItem(analyticsConsentKey, "denied"); cookieNotice.hidden = true; });
 
 // v0.9.2 catalog filters and view preference
 const catalogRoot = document.querySelector("[data-catalog-root]");

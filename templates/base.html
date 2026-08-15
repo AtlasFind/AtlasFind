@@ -17,8 +17,10 @@
     <meta name="twitter:title" content="{{ seo.title if seo else self.title()|striptags }}">
     <meta name="twitter:description" content="{{ seo.description if seo else self.description()|striptags }}">
     <meta name="twitter:image" content="{{ seo.image if seo else site_url ~ '/static/images/atlasfind-duck.png' }}">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/atlasfind-duck-64.png', v=app_version) }}">
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/atlasfind-duck-192.png', v=app_version) }}">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='images/atlasfind-duck-64.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/atlasfind-duck-192.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternate_urls.get('en') }}">
     {% block extra_head %}{% endblock %}
@@ -122,10 +124,13 @@
 
     <div class="cookie-notice" id="cookieNotice" hidden role="dialog" aria-label="{{ t('footer.cookies') }}">
         <p>{{ t("cookie.message") }} <a href="{{ url_for('cookies') }}">{{ t("cookie.learn") }}</a></p>
-        <button type="button" id="cookieAccept">{{ t("cookie.accept") }}</button>
+        <div class="cookie-actions">
+            <button type="button" class="cookie-secondary" id="cookieReject">{{ t("cookie.reject") }}</button>
+            <button type="button" id="cookieAccept">{{ t("cookie.accept") }}</button>
+        </div>
     </div>
     <div class="sr-only" id="liveStatus" aria-live="polite"></div>
-    <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }};</script>
+    <script nonce="{{ csp_nonce }}">window.ATLAS_I18N = {{ js_i18n|tojson }}; window.ATLAS_GA_ID = {{ google_analytics_id|tojson }};</script>
     <script src="{{ url_for('static', filename='js/main.js', v=app_version) }}"></script>
     {% block scripts %}{% endblock %}
 </body>

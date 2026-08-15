@@ -19,6 +19,8 @@ services:
         value: https://atlasfind.org
       - key: ATLASFIND_CONTACT_EMAIL
         value: atlasfindd@gmail.com
+      - key: ATLASFIND_GOOGLE_ANALYTICS_ID
+        value: G-WSZDHG9CN9
       - key: ATLASFIND_DATABASE_PATH
         value: /opt/render/project/src/storage/atlasfind.db
       - key: ATLASFIND_SECRET_KEY

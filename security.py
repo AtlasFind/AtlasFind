@@ -218,9 +218,9 @@ def add_security_headers(response):
         connect_policy = "connect-src 'self' https:"
         frame_policy = "frame-src https:; "
     else:
-        script_policy = f"script-src 'self' 'nonce-{nonce}'" if nonce else "script-src 'self'"
+        script_policy = f"script-src 'self' 'nonce-{nonce}' https://www.googletagmanager.com" if nonce else "script-src 'self' https://www.googletagmanager.com"
         base_policy = "base-uri 'self'"
-        connect_policy = "connect-src 'self'"
+        connect_policy = "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com"
         frame_policy = ""
     response.headers.setdefault(
         "Content-Security-Policy",
