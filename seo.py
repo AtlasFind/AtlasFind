@@ -76,9 +76,19 @@ def software_schema(tool):
         "operatingSystem": ", ".join(tool.get("platforms") or []),
         "url": absolute_url(localized_path(f"/tools/{tool.get('slug','')}", get_locale()))
     }
-    rating = tool.get("rating")
-    if isinstance(rating, (int, float)):
-        data["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": rating, "bestRating": 5, "ratingCount": 1}
+    # The AtlasFind catalog score is an automated catalog-quality signal, not
+    # an aggregate of user reviews. Exposing it as AggregateRating can create
+    # misleading review stars and used to put 10-point values on a 5-point
+    # scale. Keep the score machine-readable without claiming it is a review.
+    catalog_score = (tool.get("catalog_score") or {}).get("score")
+    if isinstance(catalog_score, (int, float)) and not isinstance(catalog_score, bool) and 0 <= catalog_score <= 10:
+        data["additionalProperty"] = {
+            "@type": "PropertyValue",
+            "name": "AtlasFind catalog score",
+            "value": catalog_score,
+            "minValue": 0,
+            "maxValue": 10,
+        }
     website = tool.get("website")
     if website:
         data["sameAs"] = website
