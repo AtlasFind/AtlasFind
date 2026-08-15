@@ -76,7 +76,10 @@ def contains_phrase(query: str, phrase: str) -> bool:
 
 def detect_search_needs(search_query: str) -> list[str]:
     query = normalize_text(search_query)
-    return [name for name, phrases in INTENT_KEYWORDS.items() if any(contains_phrase(query, phrase) for phrase in phrases)]
+    needs = [name for name, phrases in INTENT_KEYWORDS.items() if any(contains_phrase(query, phrase) for phrase in phrases)]
+    if "offline" in needs and "ai" in needs and "local_ai" not in needs:
+        needs.append("local_ai")
+    return needs
 
 
 def _catalog_signature(tools: Iterable[dict]) -> tuple:
@@ -188,7 +191,7 @@ def _intent_score(tool: dict, needs: list[str]) -> tuple[int, list[str], int]:
         if photo_match: score += 34; reasons.append("Photo-editing focus matches the query")
         else: penalties += 32
     if "video_editing" in needs:
-        if category == "video": score += 52; reasons.append("Video-editing focus matches the query")
+        if "video" in category: score += 52; reasons.append("Video-editing focus matches the query")
         elif "video" in tags: score += 28
         else: penalties += 30
     if "code_editor" in needs:
@@ -198,13 +201,16 @@ def _intent_score(tool: dict, needs: list[str]) -> tuple[int, list[str], int]:
             reasons.append("Development features match the query")
         else: penalties += 28
     if "browser" in needs:
-        if category == "browser": score += 70; reasons.append("Browser category matches the query")
+        browser_match = "browser" in category or "browser" in tags or "browser" in _field_text(tool, "subcategory")
+        if browser_match: score += 90; reasons.append("Browser category matches the query")
         else: penalties += 120
     if "local_ai" in needs:
-        if tool.get("offline"): score += 48
-        else: penalties += 18
-        if "local" in tags or "local ai" in tags: score += 38
-        if tool.get("offline") or "local" in tags: reasons.append("Local/offline AI capabilities match the query")
+        local_marker = "local" in tags or "local ai" in tags or "local ai" in _field_text(tool, "subcategory")
+        local_ai_match = bool(tool.get("ai_powered") and tool.get("offline") and local_marker)
+        if local_ai_match: score += 92
+        else: penalties += 55
+        if local_marker: score += 48
+        if local_ai_match or "local" in tags: reasons.append("Local/offline AI capabilities match the query")
     if "alternative" in needs:
         tool_name = _field_text(tool, "name")
         if tool_name and tool_name in normalize_text(" ".join(tokenize(tool_name))):

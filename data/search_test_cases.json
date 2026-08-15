@@ -1,10 +1,10 @@
 [
   {"query":"photosop","expected_slugs":["adobe-photoshop","photopea","gimp"],"top_k":5,"must_not_include":["blender"]},
   {"query":"ücretsiz photoshop alternatifi","expected_slugs":["photopea","gimp","krita"],"top_k":5,"must_not_include":["blender"]},
-  {"query":"eski bilgisayar için video editörü","expected_slugs":["openshot","shotcut","kdenlive","losslesscut"],"top_k":8,"must_not_include":["adobe-photoshop"]},
+  {"query":"eski bilgisayar için video editörü","expected_slugs":["vsdc-free-video-editor","openshot","shotcut","kdenlive","losslesscut"],"top_k":8,"must_not_include":["adobe-photoshop"]},
   {"query":"internetsiz yapay zeka","expected_slugs":["ollama","lm-studio","jan","anythingllm","open-webui"],"top_k":6,"must_not_include":["google-chrome"]},
   {"query":"bedava kod editörü windows","expected_slugs":["visual-studio-code","notepad-plus-plus","zed"],"top_k":5,"must_not_include":["blender"]},
   {"query":"açık kaynak tarayıcı","expected_slugs":["mozilla-firefox","librewolf","ungoogled-chromium","floorp","tor-browser"],"top_k":6,"must_not_include":["open-webui"]},
-  {"query":"turkce destekli ai","expected_slugs":["chatgpt","claude","gemini","perplexity","hugging-face"],"top_k":12,"must_not_include":["adobe-premiere-pro"]},
+  {"query":"turkce destekli ai","expected_slugs":["localai","meta-ai","copy-ai","character-ai","beautiful-ai","chatgpt","claude","gemini","perplexity","hugging-face"],"top_k":12,"must_not_include":["adobe-premiere-pro"]},
   {"query":"visual studio code","expected_slugs":["visual-studio-code"],"top_k":1,"must_not_include":["visual-studio"]}
 ]

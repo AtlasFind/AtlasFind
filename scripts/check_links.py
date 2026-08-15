@@ -11,7 +11,10 @@ paths += [f"/collections/{s}" for s in COLLECTION_INFO]
 errors=[]
 with app.test_client() as client:
     for path in paths:
-        response=client.get(path)
+        # Public, non-localized URLs intentionally redirect to the visitor's
+        # language. Follow that canonical redirect so this check validates the
+        # destination page instead of reporting healthy 301 responses as errors.
+        response=client.get(path, follow_redirects=True)
         if response.status_code != 200:
             errors.append(f'{path}: {response.status_code}')
 if errors:

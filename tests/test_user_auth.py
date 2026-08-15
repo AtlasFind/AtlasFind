@@ -3,7 +3,7 @@ import unittest
 from unittest.mock import patch
 from urllib.parse import parse_qs, urlsplit
 
-from app import app
+from app import APP_VERSION, app
 from database import connect_database, transaction
 from security import user_auth_limiter
 
@@ -60,7 +60,7 @@ class UserAuthTests(unittest.TestCase):
     def test_register_requires_email_verification_and_hashes_password(self):
         response, verification_url = self.register()
         self.assertEqual(response.status_code, 200)
-        self.assertIn("auth.css?v=1.9.3", response.get_data(as_text=True))
+        self.assertIn(f"auth.css?v={APP_VERSION}", response.get_data(as_text=True))
         with connect_database() as connection:
             row = connection.execute("SELECT * FROM user_accounts WHERE email=?", (TEST_EMAIL,)).fetchone()
         self.assertNotEqual(row["password_hash"], TEST_PASSWORD)

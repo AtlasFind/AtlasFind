@@ -1,0 +1,24 @@
+{
+  "name": "AtlasFind — Software Discovery & Comparison",
+  "short_name": "AtlasFind",
+  "description": "Discover, evaluate and compare software and AI tools in English and Turkish.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#090b14",
+  "theme_color": "#7c5cff",
+  "icons": [
+    {
+      "src": "/static/images/atlasfind-duck-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/images/atlasfind-duck.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

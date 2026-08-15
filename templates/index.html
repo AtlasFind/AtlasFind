@@ -125,7 +125,7 @@
                     <a class="surprise-filter" href="{{ url_for('surprise_tool') }}"><span aria-hidden="true">✦</span> {% if locale == 'tr' %}Beni şaşırt{% else %}Surprise me{% endif %}</a>
                 </div>
 
-                <div class="hero-confidence-line" aria-label="{{ t('home.proof.label') }}">
+                <div class="hero-proof hero-confidence-line" aria-label="{{ t('home.proof.label') }}">
                     <span><i aria-hidden="true"></i>{{ t("home.proof.verified") }}</span>
                     <span aria-hidden="true">•</span>
                     <span><strong>{{ total_tool_count }}+</strong> {{ t("home.proof.tools") }}</span>

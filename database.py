@@ -10,6 +10,7 @@ DATABASE_PATH = Path(_database_env).expanduser().resolve() if _database_env else
 DATABASE_DIR = DATABASE_PATH.parent
 SCHEMA_PATH = DATABASE_ASSETS_DIR / "schema.sql"
 MIGRATIONS_DIR = DATABASE_ASSETS_DIR / "migrations"
+SYNC_MANAGED_MIGRATIONS = {"004_turkish_content"}
 
 
 def connect_database(path=DATABASE_PATH):
@@ -60,6 +61,12 @@ def apply_migrations(path=DATABASE_PATH):
         for migration_path in sorted(MIGRATIONS_DIR.glob("*.sql")):
             name = migration_path.stem
             if name in completed:
+                continue
+            # Translation seed rows from the original catalog use historical
+            # numeric IDs. Bootstrap's sync scripts now own this data.
+            if name in SYNC_MANAGED_MIGRATIONS:
+                connection.execute("INSERT INTO schema_migrations(name) VALUES (?)", (name,))
+                applied.append(name)
                 continue
             connection.executescript(migration_path.read_text(encoding="utf-8"))
             connection.execute("INSERT INTO schema_migrations(name) VALUES (?)", (name,))

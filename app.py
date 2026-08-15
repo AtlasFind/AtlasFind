@@ -76,7 +76,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.17.0"
+APP_VERSION = "2.0.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )

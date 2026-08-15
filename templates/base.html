@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="AtlasFind">
+    <meta name="theme-color" content="#090b14" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8f7ff" media="(prefers-color-scheme: light)">
     <meta name="description" content="{{ seo.description if seo else self.description()|striptags }}">
     <meta name="robots" content="{{ seo.robots if seo else self.robots()|striptags }}">
     <link rel="canonical" href="{{ seo.canonical if seo else self.canonical()|striptags }}">
@@ -21,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='images/atlasfind-duck-64.png') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='images/atlasfind-duck-192.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest', v=app_version) }}">
     {% for code, href in alternate_urls.items() %}<link rel="alternate" hreflang="{{ code }}" href="{{ site_url }}{{ href }}">{% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternate_urls.get('en') }}">
     {% block extra_head %}{% endblock %}

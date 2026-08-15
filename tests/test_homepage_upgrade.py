@@ -13,7 +13,7 @@ class HomepageUpgradeTests(unittest.TestCase):
             response = self.client.get(f"/{locale}/")
             self.assertEqual(response.status_code, 200)
             page = response.get_data(as_text=True)
-            self.assertIn('class="hero-proof"', page)
+            self.assertIn('class="hero-proof hero-confidence-line"', page)
             self.assertNotIn('class="home-showcase-grid"', page)
             self.assertIn('data-ad-placement="home-leaderboard"', page)
             self.assertIn('data-ad-placement="home-catalog-inline"', page)
