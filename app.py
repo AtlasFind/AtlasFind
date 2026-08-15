@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, abort, jsonify, Response, redirect, g, url_for, has_request_context, session, flash, send_from_directory
 from pathlib import Path
+from io import BytesIO
 from functools import lru_cache
 import os
 import re
@@ -9,6 +10,7 @@ import json
 import uuid
 from urllib.parse import urlencode
 from werkzeug.security import check_password_hash, generate_password_hash
+from PIL import Image, UnidentifiedImageError
 
 from tool_schema import validate_tools
 from search_engine import alternative_queries, rank_tools, search_suggestions
@@ -23,7 +25,7 @@ from services.catalog_score_service import enrich_tool_catalog_score
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
 from repositories.discussions import (
     apply_discussion_violation, create_tool_comment, delete_own_comment,
-    get_discussion_state, list_tool_comments, recent_comment_count,
+    get_discussion_state, list_tool_comments, recent_comment_count, toggle_comment_like,
 )
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
@@ -32,7 +34,7 @@ from repositories.users import (
     record_user_login, user_exists, set_verification_token, verify_user_email,
     update_user_password, update_user_profile, set_password_reset_token, consume_password_reset_token,
     is_user_favorite, list_user_favorites, set_user_favorite,
-    anonymize_user_account,
+    anonymize_user_account, get_user_avatar, get_user_reputation, set_user_avatar,
 )
 from services.email_service import send_password_reset_email, send_verification_email
 from services.discussion_moderation import contains_prohibited_language
@@ -74,7 +76,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.12.0"
+APP_VERSION = "1.13.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1674,7 +1676,7 @@ def tool_detail(slug, locale=None):
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
         is_favorite=bool(session.get("user_id") and is_user_favorite(session["user_id"], slug)),
         favorite_csrf=user_csrf_token(),
-        discussion_comments=list_tool_comments(slug),
+        discussion_comments=list_tool_comments(slug, session.get("user_id")),
         discussion_state=(get_discussion_state(session["user_id"]) if session.get("user_id") else None),
         discussion_csrf=user_csrf_token(),
     )
@@ -1755,6 +1757,20 @@ def delete_tool_comment(slug, comment_id, locale=None):
     if not delete_own_comment(comment_id, user["id"], slug):
         abort(404)
     flash("Yorum silindi." if get_locale() == "tr" else "Comment deleted.", "success")
+    return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+
+
+@app.post("/tools/<slug>/comments/<int:comment_id>/like")
+@app.post("/<locale>/tools/<slug>/comments/<int:comment_id>/like")
+def like_tool_comment(slug, comment_id, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        return redirect(url_for("user_login", next=url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion"))
+    validate_user_csrf()
+    if toggle_comment_like(comment_id, user["id"]) is None:
+        abort(404)
     return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
 
 
@@ -2310,6 +2326,14 @@ def user_logout(locale=None):
     return redirect(localized_path("/", locale or get_locale()))
 
 
+@app.get("/user-avatar/<int:user_id>")
+def user_avatar(user_id):
+    avatar = get_user_avatar(user_id)
+    if not avatar or not avatar["avatar_data"]:
+        abort(404)
+    return Response(avatar["avatar_data"], mimetype=avatar["avatar_mime"] or "image/webp", headers={"Cache-Control": "public,max-age=3600", "X-Content-Type-Options": "nosniff"})
+
+
 @app.route("/profile", methods=["GET", "POST"], strict_slashes=False)
 @app.route("/<locale>/profile", methods=["GET", "POST"], strict_slashes=False)
 def user_profile(locale=None):
@@ -2321,7 +2345,32 @@ def user_profile(locale=None):
     if request.method == "POST":
         validate_user_csrf()
         action = request.form.get("action", "profile")
-        if action == "profile":
+        if action == "avatar":
+            upload = request.files.get("avatar")
+            raw = upload.read(2_000_001) if upload and upload.filename else b""
+            if not raw or len(raw) > 2_000_000:
+                flash("Profil fotoğrafı 2 MB'den küçük olmalıdır." if get_locale() == "tr" else "Profile images must be smaller than 2 MB.", "error")
+            else:
+                try:
+                    Image.MAX_IMAGE_PIXELS = 20_000_000
+                    image = Image.open(BytesIO(raw))
+                    image.verify()
+                    image = Image.open(BytesIO(raw))
+                    image.thumbnail((512, 512))
+                    if image.mode not in {"RGB", "RGBA"}:
+                        image = image.convert("RGBA" if "transparency" in image.info else "RGB")
+                    output = BytesIO()
+                    image.save(output, format="WEBP", quality=86, method=6)
+                    set_user_avatar(user["id"], output.getvalue(), "image/webp")
+                    flash("Profil fotoğrafı güncellendi." if get_locale() == "tr" else "Profile image updated.", "success")
+                    return redirect(url_for("user_profile", avatar=1))
+                except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError):
+                    flash("Geçerli bir PNG, JPG veya WebP görseli seçin." if get_locale() == "tr" else "Choose a valid PNG, JPG or WebP image.", "error")
+        elif action == "remove_avatar":
+            set_user_avatar(user["id"], None, None)
+            flash("Profil fotoğrafı kaldırıldı." if get_locale() == "tr" else "Profile image removed.", "success")
+            return redirect(url_for("user_profile", avatar=0))
+        elif action == "profile":
             display_name = request.form.get("display_name", "").strip()[:60]
             bio = request.form.get("bio", "").strip()[:500]
             country = request.form.get("country", "").strip()[:80]
@@ -2355,7 +2404,7 @@ def user_profile(locale=None):
     favorite_rows = list_user_favorites(user["id"])
     tools_by_slug = {item.get("slug"): item for item in load_tools(get_locale())}
     favorite_tools = [{"tool": tools_by_slug[row["tool_slug"]], "saved_at": row["created_at"]} for row in favorite_rows if row["tool_slug"] in tools_by_slug]
-    return render_template("auth/profile.html", profile_user=user, favorite_tools=favorite_tools, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
+    return render_template("auth/profile.html", profile_user=user, reputation=get_user_reputation(user["id"]), favorite_tools=favorite_tools, user_csrf=user_csrf_token(), active_page="profile", seo=page_seo(translate("auth.profile"), translate("auth.profile_description"), f"/{get_locale()}/profile", robots="noindex,nofollow"), breadcrumbs=[])
 
 
 @app.get("/u/<username>")
@@ -2372,7 +2421,7 @@ def public_user_profile(username, locale=None):
     display_name = public_user["display_name"] or public_user["username"]
     description = public_user["bio"] or translate("auth.public_profile_description", name=display_name)
     canonical = f"/{get_locale()}/u/{public_user['username']}"
-    return render_template("auth/public_profile.html", public_user=public_user, favorite_tools=favorite_tools, active_page="public-profile", seo=page_seo(f"{display_name} | AtlasFind", description, canonical), breadcrumbs=[], schemas=[])
+    return render_template("auth/public_profile.html", public_user=public_user, reputation=get_user_reputation(public_user["id"]), favorite_tools=favorite_tools, active_page="public-profile", seo=page_seo(f"{display_name} | AtlasFind", description, canonical), breadcrumbs=[], schemas=[])
 
 
 @app.get("/account/export")
@@ -2384,8 +2433,8 @@ def export_user_account(locale=None):
     if not user:
         return redirect(url_for("user_login"))
     favorites = [dict(row) for row in list_user_favorites(user["id"])]
-    public_fields = {key: user[key] for key in ("username", "email", "locale", "email_verified", "display_name", "bio", "country", "website_url", "profile_visibility", "created_at", "last_login_at")}
-    body = json.dumps({"atlasfind_account": public_fields, "saved_tools": favorites}, ensure_ascii=False, indent=2)
+    public_fields = {key: user[key] for key in ("username", "email", "locale", "email_verified", "display_name", "bio", "country", "website_url", "profile_visibility", "created_at", "last_login_at", "custom_rank", "staff_badge", "has_avatar")}
+    body = json.dumps({"atlasfind_account": public_fields, "reputation": get_user_reputation(user["id"]), "saved_tools": favorites}, ensure_ascii=False, indent=2)
     return Response(body, mimetype="application/json", headers={"Content-Disposition": f'attachment; filename="atlasfind-{user["username"]}-data.json"', "Cache-Control": "no-store"})
 
 

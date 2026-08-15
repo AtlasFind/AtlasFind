@@ -1,24 +1,31 @@
 from database import DATABASE_PATH, connect_database, transaction
 
 
-def list_tool_comments(tool_slug, limit=100, path=DATABASE_PATH):
+def list_tool_comments(tool_slug, viewer_user_id=None, limit=100, path=DATABASE_PATH):
     with connect_database(path) as connection:
         rows = connection.execute(
             """SELECT c.id,c.tool_slug,c.user_id,c.parent_id,c.body,c.status,c.created_at,c.updated_at,
-                      u.username,u.display_name,u.profile_visibility
+                      u.username,u.display_name,u.profile_visibility,u.custom_rank,u.staff_badge,
+                      CASE WHEN u.avatar_data IS NOT NULL THEN 1 ELSE 0 END AS has_avatar,
+                      (SELECT COUNT(*) FROM tool_comment_likes l WHERE l.comment_id=c.id) AS like_count,
+                      (SELECT COUNT(*) FROM tool_comments uc WHERE uc.user_id=u.id AND uc.status='visible') AS author_comment_count,
+                      (SELECT COUNT(*) FROM tool_comment_likes ul JOIN tool_comments uc ON uc.id=ul.comment_id WHERE uc.user_id=u.id AND uc.status='visible') AS author_like_count,
+                      EXISTS(SELECT 1 FROM tool_comment_likes l WHERE l.comment_id=c.id AND l.user_id=?) AS viewer_liked
                FROM tool_comments c
                JOIN user_accounts u ON u.id=c.user_id AND u.is_active=1
                WHERE c.tool_slug=? AND c.status IN ('visible','deleted')
                ORDER BY CASE WHEN c.parent_id IS NULL THEN c.created_at ELSE
                    (SELECT created_at FROM tool_comments p WHERE p.id=c.parent_id) END DESC,
                    c.parent_id IS NOT NULL, c.created_at ASC LIMIT ?""",
-            (tool_slug, int(limit)),
+            (int(viewer_user_id or 0), tool_slug, int(limit)),
         ).fetchall()
     parents, replies = [], {}
     for row in rows:
         item = dict(row)
         item["author_name"] = item.get("display_name") or item.get("username")
         item["profile_public"] = item.get("profile_visibility") == "public"
+        score = int(item.get("author_comment_count") or 0) + int(item.get("author_like_count") or 0) * 5
+        item["author_rank"] = item.get("custom_rank") or ("Atlas Ustası" if score >= 400 else "Uzman" if score >= 150 else "Kaşif" if score >= 50 else "Katılımcı" if score >= 10 else "Yeni Üye")
         if item.get("parent_id") is None:
             item["replies"] = []
             parents.append(item)
@@ -27,6 +34,19 @@ def list_tool_comments(tool_slug, limit=100, path=DATABASE_PATH):
     for parent in parents:
         parent["replies"] = replies.get(parent["id"], [])
     return parents
+
+
+def toggle_comment_like(comment_id, user_id, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        comment = connection.execute("SELECT id FROM tool_comments WHERE id=? AND status='visible'", (int(comment_id),)).fetchone()
+        if not comment:
+            return None
+        existing = connection.execute("SELECT 1 FROM tool_comment_likes WHERE comment_id=? AND user_id=?", (int(comment_id), int(user_id))).fetchone()
+        if existing:
+            connection.execute("DELETE FROM tool_comment_likes WHERE comment_id=? AND user_id=?", (int(comment_id), int(user_id)))
+            return False
+        connection.execute("INSERT INTO tool_comment_likes(comment_id,user_id) VALUES (?,?)", (int(comment_id), int(user_id)))
+        return True
 
 
 def get_discussion_state(user_id, path=DATABASE_PATH):

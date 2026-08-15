@@ -5,7 +5,8 @@ def get_user_by_id(user_id, path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
             """SELECT id,username,email,locale,email_verified,display_name,bio,country,website_url,
-               profile_visibility,profile_updated_at,created_at,last_login_at
+               profile_visibility,profile_updated_at,created_at,last_login_at,
+               CASE WHEN avatar_data IS NOT NULL THEN 1 ELSE 0 END AS has_avatar,custom_rank,staff_badge
                FROM user_accounts WHERE id=? AND is_active=1""",
             (int(user_id),),
         ).fetchone()
@@ -30,7 +31,8 @@ def get_user_by_email(email, path=DATABASE_PATH):
 def get_public_user(username, path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
-            """SELECT id,username,display_name,bio,country,website_url,created_at
+            """SELECT id,username,display_name,bio,country,website_url,created_at,
+               CASE WHEN avatar_data IS NOT NULL THEN 1 ELSE 0 END AS has_avatar,custom_rank,staff_badge
                FROM user_accounts WHERE lower(username)=lower(?) AND is_active=1
                AND email_verified=1 AND profile_visibility='public'""",
             (username,),
@@ -131,7 +133,7 @@ def list_users(search="", status="all", path=DATABASE_PATH):
     with connect_database(path) as connection:
         return connection.execute(
             f"""SELECT id,username,email,locale,email_verified,is_active,created_at,last_login_at,
-                verification_sent_at FROM user_accounts {where} ORDER BY created_at DESC LIMIT 500""",
+                verification_sent_at,custom_rank,staff_badge FROM user_accounts {where} ORDER BY created_at DESC LIMIT 500""",
             params,
         ).fetchall()
 
@@ -154,6 +156,48 @@ def set_user_active(user_id, active, path=DATABASE_PATH):
             (int(bool(active)), int(user_id)),
         )
         return cursor.rowcount == 1
+
+
+def set_user_identity_badges(user_id, custom_rank, staff_badge, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        cursor = connection.execute(
+            "UPDATE user_accounts SET custom_rank=?,staff_badge=? WHERE id=?",
+            (custom_rank or None, staff_badge or None, int(user_id)),
+        )
+        return cursor.rowcount == 1
+
+
+def set_user_avatar(user_id, avatar_data, avatar_mime, path=DATABASE_PATH):
+    with transaction(path) as connection:
+        connection.execute(
+            "UPDATE user_accounts SET avatar_data=?,avatar_mime=?,profile_updated_at=CURRENT_TIMESTAMP WHERE id=? AND is_active=1",
+            (avatar_data, avatar_mime, int(user_id)),
+        )
+
+
+def get_user_avatar(user_id, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        return connection.execute(
+            "SELECT avatar_data,avatar_mime,profile_updated_at FROM user_accounts WHERE id=? AND is_active=1",
+            (int(user_id),),
+        ).fetchone()
+
+
+def get_user_reputation(user_id, path=DATABASE_PATH):
+    with connect_database(path) as connection:
+        row = connection.execute(
+            """SELECT u.custom_rank,u.staff_badge,
+                      (SELECT COUNT(*) FROM tool_comments c WHERE c.user_id=u.id AND c.status='visible') AS comments,
+                      (SELECT COUNT(*) FROM tool_comment_likes l JOIN tool_comments c ON c.id=l.comment_id
+                       WHERE c.user_id=u.id AND c.status='visible') AS likes
+               FROM user_accounts u WHERE u.id=?""",
+            (int(user_id),),
+        ).fetchone()
+    if not row:
+        return {"comments": 0, "likes": 0, "score": 0, "rank": "Yeni Üye"}
+    score = int(row["comments"] or 0) + int(row["likes"] or 0) * 5
+    rank = "Atlas Ustası" if score >= 400 else "Uzman" if score >= 150 else "Kaşif" if score >= 50 else "Katılımcı" if score >= 10 else "Yeni Üye"
+    return {"comments": int(row["comments"] or 0), "likes": int(row["likes"] or 0), "score": score, "rank": row["custom_rank"] or rank, "staff_badge": row["staff_badge"]}
 
 
 def update_user_profile(user_id, display_name, bio, country, website_url, visibility, path=DATABASE_PATH):
@@ -236,6 +280,7 @@ def anonymize_user_account(user_id, replacement_password_hash, path=DATABASE_PAT
         if not user:
             return False
         connection.execute("DELETE FROM user_favorites WHERE user_id=?", (int(user_id),))
+        connection.execute("DELETE FROM tool_comment_likes WHERE user_id=?", (int(user_id),))
         connection.execute("DELETE FROM tool_comments WHERE user_id=?", (int(user_id),))
         connection.execute("DELETE FROM discussion_moderation_events WHERE user_id=?", (int(user_id),))
         connection.execute("DELETE FROM user_discussion_sanctions WHERE user_id=?", (int(user_id),))
@@ -245,7 +290,8 @@ def anonymize_user_account(user_id, replacement_password_hash, path=DATABASE_PAT
                email_verified=0,verification_token_hash=NULL,verification_expires_at=NULL,
                verification_sent_at=NULL,password_reset_token_hash=NULL,password_reset_expires_at=NULL,
                password_reset_sent_at=NULL,display_name=NULL,bio=NULL,country=NULL,website_url=NULL,
-               profile_visibility='private',profile_updated_at=CURRENT_TIMESTAMP,last_login_at=NULL WHERE id=?""",
+               profile_visibility='private',profile_updated_at=CURRENT_TIMESTAMP,last_login_at=NULL,
+               avatar_data=NULL,avatar_mime=NULL,custom_rank=NULL,staff_badge=NULL WHERE id=?""",
             (f"deleted_{int(user_id)}", f"deleted_{int(user_id)}@invalid.local", replacement_password_hash, int(user_id)),
         )
         return True

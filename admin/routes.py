@@ -14,7 +14,7 @@ from repositories.admin import (
     recent_failed_attempts, record_login_attempt,
 )
 from repositories.collaborations import list_inquiries, set_inquiry_status
-from repositories.users import list_users, set_user_active, user_account_counts
+from repositories.users import list_users, set_user_active, set_user_identity_badges, user_account_counts
 from repositories.article_writer import get_article_for_admin, list_admin_articles, save_article
 from repositories.taxonomy_writer import add_category, add_tag, list_taxonomies
 from repositories.tool_writer import archive_tool, get_tool_for_admin, list_admin_tools, save_tool
@@ -346,6 +346,13 @@ def users():
             admin = current_admin()
             log_action(admin["id"], action, "user", user_id, f"User account {action}d")
             flash("Kullanıcı hesabı güncellendi.", "success")
+        elif user_id.isdigit() and action == "identity":
+            custom_rank = request.form.get("custom_rank", "").strip()[:40]
+            staff_badge = request.form.get("staff_badge", "").strip()[:40]
+            if set_user_identity_badges(int(user_id), custom_rank, staff_badge):
+                admin = current_admin()
+                log_action(admin["id"], "update_identity", "user", user_id, "User rank and staff badge updated")
+                flash("Kullanıcı rütbesi ve rozeti güncellendi.", "success")
         return redirect(url_for("admin.users", q=request.form.get("q", ""), status=request.form.get("status", "all")))
     search = request.args.get("q", "").strip()[:120]
     status = request.args.get("status", "all")
