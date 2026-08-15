@@ -190,6 +190,31 @@ copyComparisonLink?.addEventListener("click", async () => {
 
 
 const compareToolSelects = Array.from(document.querySelectorAll("[data-compare-tool-select]"));
+const compareMoreTools = document.getElementById("compareMoreTools");
+const optionalCompareFields = Array.from(document.querySelectorAll(".compare-tool-optional"));
+
+function setOptionalCompareFields(open, clearValues = false) {
+    optionalCompareFields.forEach((field) => {
+        field.hidden = !open;
+        if (!open && clearValues) {
+            const select = field.querySelector("select");
+            if (select) select.value = "";
+        }
+    });
+    if (compareMoreTools) {
+        compareMoreTools.setAttribute("aria-expanded", String(open));
+        const icon = compareMoreTools.querySelector("span");
+        const label = compareMoreTools.querySelector("b");
+        if (icon) icon.textContent = open ? "−" : "+";
+        if (label) label.textContent = open ? compareMoreTools.dataset.closeLabel : compareMoreTools.dataset.openLabel;
+    }
+}
+
+compareMoreTools?.addEventListener("click", () => {
+    const nextState = compareMoreTools.getAttribute("aria-expanded") !== "true";
+    setOptionalCompareFields(nextState, !nextState);
+    syncCompareToolOptions();
+});
 
 function syncCompareToolOptions() {
     const selectedValues = compareToolSelects
