@@ -32,6 +32,7 @@
     <a href="#strengths">{{ t("tool.pros_cons") }}</a>
     <a href="#requirements">{{ t("tool.requirements") }}</a>
     <a href="#history">{{ t("tool.change_history") }}</a>
+    <a href="#discussion">{% if locale == 'tr' %}Yorumlar{% else %}Discussion{% endif %}</a>
     <a href="#alternatives">{{ t("tool.alternatives") }}</a>
 </nav>
 
@@ -125,6 +126,42 @@
                     <button type="submit" class="primary-button">{{ t('rating.submit_score') }}</button>
                 </div>
             </form>
+        </section>
+
+        <section class="detail-section detail-card discussion-card" id="discussion">
+            <div class="discussion-heading">
+                <div><span class="section-label">{% if locale == 'tr' %}Topluluk tartışması{% else %}Community discussion{% endif %}</span><h2>{% if locale == 'tr' %}{{ tool.name }} hakkında ne düşünüyorsun?{% else %}What do you think about {{ tool.name }}?{% endif %}</h2><p>{% if locale == 'tr' %}Deneyimini paylaş, sorulara yanıt ver ve diğer üyelere yardımcı ol.{% else %}Share your experience, answer questions and help other members.{% endif %}</p></div>
+                <span class="discussion-count">{{ discussion_comments|length }} {% if locale == 'tr' %}konu{% else %}threads{% endif %}</span>
+            </div>
+
+            {% if current_user %}
+                {% if discussion_state and discussion_state.is_banned %}
+                <div class="discussion-ban-notice" role="alert"><strong>{% if locale == 'tr' %}Sohbet yasağı aktif{% else %}Discussion ban active{% endif %}</strong><span>{% if locale == 'tr' %}{{ discussion_state.banned_until }} UTC tarihine kadar yeni yorum gönderemezsin.{% else %}You cannot post until {{ discussion_state.banned_until }} UTC.{% endif %}</span></div>
+                {% else %}
+                <form class="discussion-compose" method="post" action="{{ url_for('post_tool_comment', locale=locale, slug=tool.slug) }}">
+                    <input type="hidden" name="csrf_token" value="{{ discussion_csrf }}">
+                    <label for="discussion-body">{% if locale == 'tr' %}Fikrini paylaş{% else %}Join the discussion{% endif %}</label>
+                    <textarea id="discussion-body" name="body" minlength="3" maxlength="1500" required placeholder="{% if locale == 'tr' %}Aracı nasıl kullandın? Güçlü veya zayıf bulduğun yönleri yaz…{% else %}How did you use it? Share what worked well or could improve…{% endif %}"></textarea>
+                    <div><small>{% if locale == 'tr' %}Saygılı ve konuya bağlı kal. Küfür ve hakaret sohbet yasağıyla sonuçlanır.{% else %}Stay respectful and on topic. Abusive language results in a discussion ban.{% endif %}</small><button class="primary-button" type="submit">{% if locale == 'tr' %}Yayınla{% else %}Post comment{% endif %}</button></div>
+                </form>
+                {% endif %}
+            {% else %}
+                <div class="discussion-login"><div><strong>{% if locale == 'tr' %}Tartışmaya katıl{% else %}Join the discussion{% endif %}</strong><span>{% if locale == 'tr' %}Yorum yazmak ve yanıt vermek için hesabına giriş yap.{% else %}Sign in to comment and reply.{% endif %}</span></div><a class="primary-button" href="{{ url_for('user_login', next=url_for('tool_detail', locale=locale, slug=tool.slug) ~ '#discussion') }}">{% if locale == 'tr' %}Giriş yap{% else %}Sign in{% endif %}</a></div>
+            {% endif %}
+
+            <div class="discussion-list">
+                {% for comment in discussion_comments %}
+                <article class="discussion-thread">
+                    <div class="discussion-avatar" aria-hidden="true">{{ comment.author_name[:1]|upper }}</div>
+                    <div class="discussion-content">
+                        <header><div>{% if comment.profile_public %}<a href="{{ url_for('public_profile', username=comment.username) }}">{{ comment.author_name }}</a>{% else %}<strong>{{ comment.author_name }}</strong>{% endif %}<time datetime="{{ comment.created_at }}">{{ comment.created_at }} UTC</time></div>{% if current_user and current_user.id == comment.user_id and comment.status == 'visible' %}<form method="post" action="{{ url_for('delete_tool_comment', locale=locale, slug=tool.slug, comment_id=comment.id) }}"><input type="hidden" name="csrf_token" value="{{ discussion_csrf }}"><button type="submit">{% if locale == 'tr' %}Sil{% else %}Delete{% endif %}</button></form>{% endif %}</header>
+                        {% if comment.status == 'deleted' %}<p class="discussion-deleted">{% if locale == 'tr' %}Bu yorum sahibi tarafından silindi.{% else %}This comment was deleted by its author.{% endif %}</p>{% else %}<p>{{ comment.body }}</p>{% endif %}
+                        {% if current_user and not (discussion_state and discussion_state.is_banned) and comment.status == 'visible' %}<details class="discussion-reply-box"><summary>{% if locale == 'tr' %}Yanıtla{% else %}Reply{% endif %}</summary><form method="post" action="{{ url_for('post_tool_comment', locale=locale, slug=tool.slug) }}"><input type="hidden" name="csrf_token" value="{{ discussion_csrf }}"><input type="hidden" name="parent_id" value="{{ comment.id }}"><textarea name="body" minlength="3" maxlength="1500" required></textarea><button class="secondary-button" type="submit">{% if locale == 'tr' %}Yanıtı yayınla{% else %}Post reply{% endif %}</button></form></details>{% endif %}
+                        {% if comment.replies %}<div class="discussion-replies">{% for reply in comment.replies %}<article><div class="discussion-avatar" aria-hidden="true">{{ reply.author_name[:1]|upper }}</div><div><header><div>{% if reply.profile_public %}<a href="{{ url_for('public_profile', username=reply.username) }}">{{ reply.author_name }}</a>{% else %}<strong>{{ reply.author_name }}</strong>{% endif %}<time datetime="{{ reply.created_at }}">{{ reply.created_at }} UTC</time></div>{% if current_user and current_user.id == reply.user_id and reply.status == 'visible' %}<form method="post" action="{{ url_for('delete_tool_comment', locale=locale, slug=tool.slug, comment_id=reply.id) }}"><input type="hidden" name="csrf_token" value="{{ discussion_csrf }}"><button type="submit">{% if locale == 'tr' %}Sil{% else %}Delete{% endif %}</button></form>{% endif %}</header>{% if reply.status == 'deleted' %}<p class="discussion-deleted">{% if locale == 'tr' %}Bu yanıt silindi.{% else %}This reply was deleted.{% endif %}</p>{% else %}<p>{{ reply.body }}</p>{% endif %}</div></article>{% endfor %}</div>{% endif %}
+                    </div>
+                </article>
+                {% else %}<div class="discussion-empty"><strong>{% if locale == 'tr' %}İlk yorumu sen yap{% else %}Start the conversation{% endif %}</strong><p>{% if locale == 'tr' %}Bu araç hakkında henüz topluluk yorumu bulunmuyor.{% else %}No community discussion has been posted for this tool yet.{% endif %}</p></div>{% endfor %}
+            </div>
         </section>
     </div>
 

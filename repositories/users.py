@@ -236,6 +236,9 @@ def anonymize_user_account(user_id, replacement_password_hash, path=DATABASE_PAT
         if not user:
             return False
         connection.execute("DELETE FROM user_favorites WHERE user_id=?", (int(user_id),))
+        connection.execute("DELETE FROM tool_comments WHERE user_id=?", (int(user_id),))
+        connection.execute("DELETE FROM discussion_moderation_events WHERE user_id=?", (int(user_id),))
+        connection.execute("DELETE FROM user_discussion_sanctions WHERE user_id=?", (int(user_id),))
         connection.execute("DELETE FROM user_login_attempts WHERE lower(identity) IN (lower(?),lower(?))", (user["username"], user["email"]))
         connection.execute(
             """UPDATE user_accounts SET username=?,email=?,password_hash=?,locale='tr',is_active=0,

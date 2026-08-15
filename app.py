@@ -21,6 +21,10 @@ from services.image_service import enrich_tool_branding
 from services.rating_service import enrich_tool_rating
 from services.catalog_score_service import enrich_tool_catalog_score
 from repositories.user_reviews import aggregate_user_rating, anonymous_user_key, upsert_review
+from repositories.discussions import (
+    apply_discussion_violation, create_tool_comment, delete_own_comment,
+    get_discussion_state, list_tool_comments, recent_comment_count,
+)
 from repositories.admin import record_visit
 from repositories.collaborations import create_inquiry, recent_inquiry_count
 from repositories.users import (
@@ -31,6 +35,7 @@ from repositories.users import (
     anonymize_user_account,
 )
 from services.email_service import send_password_reset_email, send_verification_email
+from services.discussion_moderation import contains_prohibited_language
 from database import DATABASE_PATH, apply_migrations
 from i18n import DEFAULT_LOCALE, SUPPORTED_LOCALES, get_locale, translate, localized_path, alternate_urls
 from admin import admin_bp
@@ -69,7 +74,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "1.10.0"
+APP_VERSION = "1.11.0"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1669,6 +1674,9 @@ def tool_detail(slug, locale=None):
         schemas=[software_schema(tool), breadcrumb_schema(crumbs)],
         is_favorite=bool(session.get("user_id") and is_user_favorite(session["user_id"], slug)),
         favorite_csrf=user_csrf_token(),
+        discussion_comments=list_tool_comments(slug),
+        discussion_state=(get_discussion_state(session["user_id"]) if session.get("user_id") else None),
+        discussion_csrf=user_csrf_token(),
     )
 
 
@@ -1687,6 +1695,67 @@ def favorite_tool(slug, locale=None):
     set_user_favorite(session["user_id"], slug, saved)
     flash(translate("auth.favorite_added") if saved else translate("auth.favorite_removed"), "success")
     return redirect(url_for("tool_detail", slug=slug))
+
+
+@app.post("/tools/<slug>/comments")
+@app.post("/<locale>/tools/<slug>/comments")
+def post_tool_comment(slug, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        flash("Yorum yapmak için giriş yapmalısınız." if get_locale() == "tr" else "Sign in to join the discussion.", "error")
+        return redirect(url_for("user_login", next=url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion"))
+    validate_user_csrf()
+    if find_tool_by_slug(slug) is None:
+        abort(404)
+
+    state = get_discussion_state(user["id"])
+    if state and state["is_banned"]:
+        message = (f"Sohbet yasağınız {state['banned_until']} UTC tarihine kadar devam ediyor."
+                   if get_locale() == "tr" else f"Your discussion ban remains active until {state['banned_until']} UTC.")
+        flash(message, "error")
+        return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+
+    body = " ".join(str(request.form.get("body") or "").split())
+    if len(body) < 3 or len(body) > 1500:
+        flash("Yorum 3–1500 karakter olmalıdır." if get_locale() == "tr" else "Comments must be 3–1500 characters.", "error")
+        return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+    if recent_comment_count(user["id"]) >= 8:
+        flash("Çok hızlı yorum gönderiyorsunuz. Birkaç dakika bekleyin." if get_locale() == "tr" else "You are posting too quickly. Please wait a few minutes.", "error")
+        return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+    if contains_prohibited_language(body):
+        sanction = apply_discussion_violation(user["id"], slug, "prohibited_language", body)
+        duration = sanction["hours"]
+        message = (f"Yorum yayınlanmadı. Hakaret veya küfür nedeniyle {duration} saat sohbet yasağı uygulandı."
+                   if get_locale() == "tr" else f"Comment blocked. A {duration}-hour discussion ban was applied for abusive language.")
+        flash(message, "error")
+        return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+
+    parent_raw = str(request.form.get("parent_id") or "").strip()
+    try:
+        parent_id = int(parent_raw) if parent_raw else None
+    except ValueError:
+        abort(400)
+    if create_tool_comment(slug, user["id"], body, parent_id) is None:
+        abort(400)
+    flash("Yorumunuz yayınlandı." if get_locale() == "tr" else "Your comment is now live.", "success")
+    return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
+
+
+@app.post("/tools/<slug>/comments/<int:comment_id>/delete")
+@app.post("/<locale>/tools/<slug>/comments/<int:comment_id>/delete")
+def delete_tool_comment(slug, comment_id, locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    user = get_user_by_id(session["user_id"]) if session.get("user_id") else None
+    if not user:
+        abort(401)
+    validate_user_csrf()
+    if not delete_own_comment(comment_id, user["id"], slug):
+        abort(404)
+    flash("Yorum silindi." if get_locale() == "tr" else "Comment deleted.", "success")
+    return redirect(url_for("tool_detail", locale=get_locale(), slug=slug) + "#discussion")
 
 
 @app.post("/tools/<slug>/rate")
