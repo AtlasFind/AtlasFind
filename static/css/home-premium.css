@@ -8,3 +8,11 @@ html[data-theme="light"] .hero-discovery-panel{border-color:rgba(99,102,241,.18)
 @media(max-width:1050px){.hero{min-height:0;grid-template-columns:1fr;padding-top:7.5rem;gap:3rem}.hero-content{max-width:760px;margin-inline:auto;text-align:center}.hero-confidence-line{justify-content:center}.hero-discovery-panel{width:min(760px,100%);margin-inline:auto;text-align:left}.signal-platforms{align-items:flex-start;flex-direction:column}.signal-platforms .platform-row{justify-content:flex-start}}
 @media(max-width:700px){.hero{padding-bottom:3rem}.discovery-tool-grid{grid-template-columns:1fr}.home-signal-panel{width:calc(100% - 2rem);border-radius:21px}.signal-platforms{padding:1.15rem}.signal-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.signal-stat:nth-child(2):after{display:none}.signal-stat:nth-child(-n+2){border-bottom:1px solid rgba(148,163,184,.14)}}
 @media(max-width:520px){.hero{width:calc(100% - 1.25rem);padding-top:6.6rem}.hero-discovery-panel{padding:.72rem;border-radius:23px}.discovery-panel-head{padding:.4rem .35rem .85rem}.discovery-panel-head h2{font-size:1.25rem}.discovery-match-card{grid-template-columns:46px minmax(0,1fr) 32px;padding:.75rem}.discovery-match-card img{width:46px;height:46px}.discovery-match-card b{width:32px;height:32px}.discovery-panel-foot{align-items:flex-start;flex-direction:column;gap:.38rem}.signal-platforms .platform-row{gap:.38rem}.signal-platforms .platform-row span{padding:.43rem .55rem}.signal-stat{padding:1.1rem .7rem}.quick-filters{justify-content:center}}
+
+/* Theme contrast correction */
+.discovery-panel-head h2,.discovery-tool,.discovery-match-card{color:#f8fafc}
+.light-theme .hero-discovery-panel{border-color:rgba(99,102,241,.18);background:linear-gradient(155deg,rgba(255,255,255,.96),rgba(244,247,255,.93));box-shadow:0 30px 80px rgba(30,41,59,.14)}
+.light-theme .discovery-panel-head h2,.light-theme .discovery-tool,.light-theme .discovery-match-card{color:#111827}
+.light-theme .discovery-tool{background:rgba(255,255,255,.7)}
+.light-theme .discovery-tool:hover{background:rgba(139,92,246,.08)}
+.light-theme .home-signal-panel{background:linear-gradient(120deg,rgba(139,92,246,.06),rgba(255,255,255,.9),rgba(14,165,233,.04));box-shadow:0 20px 55px rgba(30,41,59,.08)}
