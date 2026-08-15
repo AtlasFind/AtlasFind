@@ -192,6 +192,141 @@ copyComparisonLink?.addEventListener("click", async () => {
 const compareToolSelects = Array.from(document.querySelectorAll("[data-compare-tool-select]"));
 const compareMoreTools = document.getElementById("compareMoreTools");
 const optionalCompareFields = Array.from(document.querySelectorAll(".compare-tool-optional"));
+const compareSelectEnhancers = new Map();
+
+function splitCompareOptionLabel(label) {
+    const parts = label.split(" · ");
+    return { name: parts.shift() || label, detail: parts.join(" · ") };
+}
+
+function closeCompareComboboxes(except = null) {
+    compareSelectEnhancers.forEach((enhancer) => {
+        if (enhancer !== except) enhancer.close();
+    });
+}
+
+function enhanceCompareSelect(select) {
+    const root = document.createElement("div");
+    root.className = "compare-combobox";
+
+    const trigger = document.createElement("button");
+    trigger.type = "button";
+    trigger.className = "compare-combobox-trigger";
+    trigger.setAttribute("aria-haspopup", "listbox");
+    trigger.setAttribute("aria-expanded", "false");
+
+    const panel = document.createElement("div");
+    panel.className = "compare-combobox-panel";
+    panel.hidden = true;
+
+    const search = document.createElement("input");
+    search.type = "search";
+    search.className = "compare-combobox-search";
+    search.placeholder = document.documentElement.lang === "tr" ? "Araç ara…" : "Search tools…";
+    search.autocomplete = "off";
+    search.setAttribute("aria-label", search.placeholder);
+
+    const results = document.createElement("div");
+    results.className = "compare-combobox-options";
+    results.setAttribute("role", "listbox");
+    panel.append(search, results);
+    root.append(trigger, panel);
+    select.classList.add("is-enhanced");
+    select.insertAdjacentElement("afterend", root);
+
+    function updateTrigger() {
+        const selected = select.selectedOptions[0];
+        const label = selected?.textContent?.trim() || "";
+        const parts = splitCompareOptionLabel(label);
+        trigger.replaceChildren();
+        const text = document.createElement("span");
+        const name = document.createElement("strong");
+        name.textContent = parts.name;
+        text.append(name);
+        if (parts.detail) {
+            const detail = document.createElement("small");
+            detail.textContent = parts.detail;
+            text.append(detail);
+        }
+        const chevron = document.createElement("i");
+        chevron.setAttribute("aria-hidden", "true");
+        trigger.append(text, chevron);
+        trigger.classList.toggle("is-placeholder", !select.value);
+    }
+
+    function renderOptions() {
+        const query = search.value.trim().toLocaleLowerCase(document.documentElement.lang || undefined);
+        results.replaceChildren();
+        const available = Array.from(select.options).filter((option) => {
+            if (option.hidden || (option.disabled && option.value !== select.value)) return false;
+            return !query || option.textContent.toLocaleLowerCase(document.documentElement.lang || undefined).includes(query);
+        });
+        available.forEach((option) => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "compare-combobox-option";
+            button.setAttribute("role", "option");
+            button.setAttribute("aria-selected", String(option.value === select.value));
+            const parts = splitCompareOptionLabel(option.textContent.trim());
+            const name = document.createElement("strong");
+            name.textContent = parts.name;
+            button.append(name);
+            if (parts.detail) {
+                const detail = document.createElement("small");
+                detail.textContent = parts.detail;
+                button.append(detail);
+            }
+            button.addEventListener("click", () => {
+                select.value = option.value;
+                select.dispatchEvent(new Event("change", { bubbles: true }));
+                close();
+                trigger.focus();
+            });
+            results.append(button);
+        });
+        if (!available.length) {
+            const empty = document.createElement("p");
+            empty.className = "compare-combobox-empty";
+            empty.textContent = document.documentElement.lang === "tr" ? "Eşleşen araç bulunamadı." : "No matching tools found.";
+            results.append(empty);
+        }
+    }
+
+    function open() {
+        closeCompareComboboxes(enhancer);
+        panel.hidden = false;
+        trigger.setAttribute("aria-expanded", "true");
+        root.classList.add("is-open");
+        search.value = "";
+        renderOptions();
+        window.setTimeout(() => search.focus(), 0);
+    }
+
+    function close() {
+        panel.hidden = true;
+        trigger.setAttribute("aria-expanded", "false");
+        root.classList.remove("is-open");
+    }
+
+    const enhancer = { root, trigger, panel, search, updateTrigger, renderOptions, open, close };
+    trigger.addEventListener("click", () => panel.hidden ? open() : close());
+    search.addEventListener("input", renderOptions);
+    root.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            close();
+            trigger.focus();
+        }
+    });
+    compareSelectEnhancers.set(select, enhancer);
+    updateTrigger();
+}
+
+function refreshCompareComboboxes() {
+    compareSelectEnhancers.forEach((enhancer) => {
+        enhancer.updateTrigger();
+        if (!enhancer.panel.hidden) enhancer.renderOptions();
+    });
+}
 
 function setOptionalCompareFields(open, clearValues = false) {
     optionalCompareFields.forEach((field) => {
@@ -214,6 +349,7 @@ compareMoreTools?.addEventListener("click", () => {
     const nextState = compareMoreTools.getAttribute("aria-expanded") !== "true";
     setOptionalCompareFields(nextState, !nextState);
     syncCompareToolOptions();
+    refreshCompareComboboxes();
 });
 
 function syncCompareToolOptions() {
@@ -242,10 +378,19 @@ function syncCompareToolOptions() {
 }
 
 compareToolSelects.forEach((select) => {
-    select.addEventListener("change", syncCompareToolOptions);
+    enhanceCompareSelect(select);
+    select.addEventListener("change", () => {
+        syncCompareToolOptions();
+        refreshCompareComboboxes();
+    });
 });
 
 syncCompareToolOptions();
+refreshCompareComboboxes();
+
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".compare-combobox")) closeCompareComboboxes();
+});
 
 
 // v0.3.0 smart search suggestions
