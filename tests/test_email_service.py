@@ -5,7 +5,7 @@ from urllib.error import HTTPError
 
 from flask import Flask
 
-from services.email_service import send_verification_email
+from services.email_service import send_inquiry_notification, send_verification_email
 
 
 class _Response:
@@ -54,6 +54,22 @@ class TransactionalEmailTests(unittest.TestCase):
                 "uye@example.com", "uye", "https://atlasfind.org/verify-email?token=test", "tr"
             )
         self.assertFalse(delivered)
+
+    @patch("services.email_service.urlopen", return_value=_Response())
+    def test_inquiry_notification_targets_team_and_sets_reply_to(self, mocked_urlopen):
+        with self.app.app_context():
+            delivered = send_inquiry_notification(
+                "atlasfindd@gmail.com", 42, "Test Visitor", "visitor@example.com", "",
+                "feedback", "Arama sonuçlarında bir sorun gördüm.", "tr",
+            )
+
+        self.assertTrue(delivered)
+        request = mocked_urlopen.call_args.args[0]
+        payload = json.loads(request.data.decode("utf-8"))
+        self.assertEqual(payload["to"], ["atlasfindd@gmail.com"])
+        self.assertEqual(payload["reply_to"], "visitor@example.com")
+        self.assertIn("#42", payload["subject"])
+        self.assertIn("Arama sonuçlarında", payload["text"])
 
 
 if __name__ == "__main__":

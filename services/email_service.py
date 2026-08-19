@@ -8,17 +8,20 @@ from urllib.request import Request, urlopen
 from flask import current_app
 
 
-def _send_email(recipient, subject, body):
+def _send_email(recipient, subject, body, reply_to=None):
     """Deliver transactional mail over HTTPS when configured, with SMTP fallback."""
     resend_api_key = current_app.config.get("RESEND_API_KEY", "")
     resend_sender = current_app.config.get("RESEND_FROM", "")
     if resend_api_key and resend_sender:
-        payload = json.dumps({
+        payload_data = {
             "from": resend_sender,
             "to": [recipient],
             "subject": subject,
             "text": body,
-        }).encode("utf-8")
+        }
+        if reply_to:
+            payload_data["reply_to"] = reply_to
+        payload = json.dumps(payload_data).encode("utf-8")
         request = Request(
             "https://api.resend.com/emails",
             data=payload,
@@ -51,6 +54,8 @@ def _send_email(recipient, subject, body):
     message["From"] = sender
     message["To"] = recipient
     message["Subject"] = subject
+    if reply_to:
+        message["Reply-To"] = reply_to
     message.set_content(body)
     port = int(current_app.config.get("SMTP_PORT", 465))
     try:
@@ -93,3 +98,31 @@ def send_password_reset_email(recipient, username, reset_url, locale="tr"):
                 f"{reset_url}\n\nThis link is valid for one hour and can only be used once. "
                 "Ignore this message if you did not request it.")
     return _send_email(recipient, subject, body)
+
+
+def send_inquiry_notification(
+    recipient, inquiry_id, name, sender_email, channel_url, inquiry_type, message, locale="tr"
+):
+    """Notify the AtlasFind team about a saved public contact request."""
+    type_labels = {
+        "creator": "İçerik üreticisi iş birliği",
+        "promotion": "Tanıtım veya reklam",
+        "feedback": "Site incelemesi ve geri bildirim",
+        "brand": "Marka ortaklığı",
+        "other": "Diğer",
+    }
+    type_label = type_labels.get(inquiry_type, "Diğer")
+    subject = f"[AtlasFind #{int(inquiry_id)}] {type_label}"
+    body = (
+        "AtlasFind sitesinden yeni bir mesaj geldi.\n\n"
+        f"Talep numarası: {int(inquiry_id)}\n"
+        f"Ad / kanal: {name}\n"
+        f"E-posta: {sender_email}\n"
+        f"Konu: {type_label}\n"
+        f"Dil: {locale}\n"
+        f"Kanal / profil: {channel_url or '-'}\n\n"
+        "Mesaj:\n"
+        f"{message}\n\n"
+        "Bu e-postayı yanıtladığınızda cevap doğrudan formu gönderen kişiye gider."
+    )
+    return _send_email(recipient, subject, body, reply_to=sender_email)
