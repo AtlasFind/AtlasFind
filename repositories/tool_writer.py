@@ -51,6 +51,11 @@ def save_tool(payload, status="draft", tool_id=None, path=DATABASE_PATH):
     payload.setdefault("system_requirements", [])
     payload.setdefault("change_history", [])
     payload.setdefault("price_history", [])
+    payload.setdefault("is_featured", False)
+    payload.setdefault("is_sponsored", False)
+    payload.setdefault("featured_until", None)
+    payload.setdefault("sponsor_plan", None)
+    payload.setdefault("affiliate_url", None)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with transaction(path) as connection:
         category_id = _category_id(connection, payload.get("category"))
@@ -81,6 +86,11 @@ def save_tool(payload, status="draft", tool_id=None, path=DATABASE_PATH):
                    archived_at=CASE WHEN ?='archived' THEN CURRENT_TIMESTAMP ELSE NULL END,updated_at=CURRENT_TIMESTAMP WHERE id=?""",
                 values + (status, status, tool_id),
             )
+        connection.execute(
+            """UPDATE tools SET is_featured=?,is_sponsored=?,featured_until=?,sponsor_plan=?,affiliate_url=? WHERE id=?""",
+            (int(bool(payload.get("is_featured"))), int(bool(payload.get("is_sponsored"))),
+             payload.get("featured_until"), payload.get("sponsor_plan"), payload.get("affiliate_url"), tool_id),
+        )
         _sync_relations(connection, tool_id, payload)
     return tool_id
 

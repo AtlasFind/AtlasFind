@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="advertise-hero"><div class="section-container"><span class="eyebrow">{{ t('advertise.eyebrow') }}</span><h1>{{ t('advertise.title') }}</h1><p>{{ t('advertise.intro') }}</p></div></section>
+<section class="section-container advertise-plans" aria-labelledby="advertise-plans-title"><div class="section-heading"><h2 id="advertise-plans-title">{{ t('advertise.plans') }}</h2></div><div class="advertise-plan-grid">
+{% for key,price,duration in [('featured','9','7'),('homepage','19','7'),('category','29','30')] %}<article class="advertise-plan"><span class="sponsored-badge">{{ t('monetization.sponsored') }}</span><h3>{{ t('advertise.' ~ key ~ '.title') }}</h3><p class="advertise-price"><strong>${{ price }}</strong><span>{{ duration }} {{ t('advertise.days') }}</span></p><ul>{% for item in t('advertise.' ~ key ~ '.features').split('|') %}<li>{{ item }}</li>{% endfor %}</ul></article>{% endfor %}
+</div><div class="advertise-disclosure"><strong>{{ t('advertise.independence') }}</strong><a class="primary-button" href="{{ url_for('contact') }}">{{ t('advertise.contact') }}</a></div></section>
+{% endblock %}

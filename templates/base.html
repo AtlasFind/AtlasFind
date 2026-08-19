@@ -135,6 +135,7 @@
             <a href="{{ url_for('guides') }}">{{ t("nav.guides") }}</a>
             <a href="{{ url_for('compare_tools') }}">{{ t("nav.compare") }}</a>
             <a href="{{ url_for('collaborate') }}" {% if active_page == 'collaborate' %}aria-current="page"{% endif %}>{{ t("footer.collaborate") }}</a>
+            <a href="{{ url_for('advertise') }}" {% if active_page == 'advertise' %}aria-current="page"{% endif %}>{{ t("footer.advertise") }}</a>
             <a href="{{ url_for('privacy') }}">{{ t("footer.privacy") }}</a>
             <a href="{{ url_for('terms') }}">{{ t("footer.terms") }}</a>
             <a href="{{ url_for('cookies') }}">{{ t("footer.cookies") }}</a>
@@ -142,7 +143,7 @@
             <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>
             <a href="https://github.com/AtlasFind/AtlasFind" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <span class="copyright">© 2026 AtlasFind · v{{ app_version }}</span>
+        <p class="affiliate-disclosure">{{ t("footer.affiliate_disclosure") }}</p><span class="copyright">© 2026 AtlasFind · v{{ app_version }}</span>
     </footer>
 
     <div class="cookie-notice" id="cookieNotice" hidden role="dialog" aria-label="{{ t('footer.cookies') }}">

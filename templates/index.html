@@ -191,6 +191,7 @@
         </section>
 
 
+        {% if featured_tools %}<section class="home-sponsored section-container" aria-labelledby="featured-software-title"><div class="section-heading"><span class="sponsored-badge">{{ t('monetization.sponsored') }}</span><h2 id="featured-software-title">{{ t('monetization.featured_software') }}</h2><p>{{ t('monetization.featured_description') }}</p></div><div class="sponsored-tool-grid">{% for tool in featured_tools %}<a href="{{ url_for('tool_detail', slug=tool.slug) }}"><strong>{{ tool.name }}</strong><span>{{ tool.description }}</span></a>{% endfor %}</div></section>{% endif %}
         <section class="tools-section" id="tools">
 
             <div class="section-heading">

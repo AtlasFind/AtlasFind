@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 
 from flask import Blueprint, current_app, flash, redirect, render_template, request, session, url_for
 from i18n import translate
@@ -103,6 +104,23 @@ def tool_form(tool_id=None):
         if error:
             flash(error, "error")
         else:
+            parsed["is_featured"] = request.form.get("is_featured") == "1"
+            parsed["is_sponsored"] = request.form.get("is_sponsored") == "1"
+            parsed["featured_until"] = request.form.get("featured_until", "").strip() or None
+            parsed["sponsor_plan"] = request.form.get("sponsor_plan", "").strip()[:80] or None
+            parsed["affiliate_url"] = request.form.get("affiliate_url", "").strip()[:500] or None
+            affiliate = urlsplit(parsed["affiliate_url"]) if parsed["affiliate_url"] else None
+            if affiliate and (affiliate.scheme not in {"http", "https"} or not affiliate.netloc):
+                flash("Affiliate URL must use http:// or https://.", "error")
+                payload = parsed
+                return render_template("admin/tool_form.html", record=record, payload_json=json.dumps(payload, ensure_ascii=False, indent=2), monetization=payload, status=status, missing=missing_tool_fields(payload), active_admin="tools"), 400
+            if parsed["featured_until"]:
+                try:
+                    datetime.fromisoformat(parsed["featured_until"])
+                except ValueError:
+                    flash("Featured Until must be a valid date.", "error")
+                    payload = parsed
+                    return render_template("admin/tool_form.html", record=record, payload_json=json.dumps(payload, ensure_ascii=False, indent=2), monetization=payload, status=status, missing=missing_tool_fields(payload), active_admin="tools"), 400
             missing = missing_tool_fields(parsed)
             if status == "published" and missing:
                 flash(translate("flash.cannot_publish", fields=", ".join(missing)), "error")
@@ -117,7 +135,7 @@ def tool_form(tool_id=None):
         payload = parsed or payload
     return render_template(
         "admin/tool_form.html", record=record, payload_json=json.dumps(payload, ensure_ascii=False, indent=2),
-        status=(record["status"] if record else "draft"), missing=missing_tool_fields(payload), active_admin="tools"
+        status=(record["status"] if record else "draft"), monetization=payload, missing=missing_tool_fields(payload), active_admin="tools"
     )
 
 

@@ -52,6 +52,7 @@
 </section>
 {% endif %}
 <section class="section-container discovery-layout catalog-layout" data-catalog-root>
+  {% if sponsored_tools %}<section class="sponsored-strip" aria-label="{{ t('monetization.sponsored') }}"><div class="section-heading"><span class="sponsored-badge">{{ t('monetization.sponsored') }}</span><h2>{{ t('monetization.featured_software') }}</h2><p>{{ t('monetization.featured_description') }}</p></div><div class="sponsored-tool-grid">{% for tool in sponsored_tools %}<a href="{{ url_for('tool_detail', slug=tool.slug) }}"><strong>{{ tool.name }}</strong><span>{{ tool.description }}</span></a>{% endfor %}</div></section>{% endif %}
   <div class="catalog-toolbar">
     <button class="filter-toggle" id="filterToggle" type="button" aria-controls="filterPanel" aria-expanded="false">
       {{ t("catalog.filters") }}{% if active_filter_count %} <span class="filter-count">{{ active_filter_count }}</span>{% endif %}

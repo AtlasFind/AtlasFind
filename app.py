@@ -8,7 +8,8 @@ import secrets
 import hashlib
 import json
 import uuid
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
+from datetime import date
 from werkzeug.security import check_password_hash, generate_password_hash
 from PIL import Image, UnidentifiedImageError
 
@@ -1286,6 +1287,7 @@ def inject_app_metadata():
         "supported_locales": SUPPORTED_LOCALES,
         "t": translate,
         "localized_path": localized_path,
+        "tool_outbound_url": tool_outbound_url,
         "category_slug": category_slug,
         "alternate_urls": alternate_urls(request.path),
         "current_user": user,
@@ -1297,6 +1299,33 @@ def inject_app_metadata():
             "js.suggestion.tool", "js.suggestion.search"
         )},
     }
+
+
+def safe_http_url(value):
+    value = str(value or "").strip()
+    parsed = urlsplit(value)
+    return value if parsed.scheme in {"http", "https"} and parsed.netloc else None
+
+
+def tool_outbound_url(tool):
+    return safe_http_url(tool.get("affiliate_url")) or safe_http_url(tool.get("website")) or "#"
+
+
+def active_featured_tools(tools, *, sponsored_only=False, limit=6):
+    today = date.today()
+    active = []
+    for tool in tools:
+        if not tool.get("is_featured") or (sponsored_only and not tool.get("is_sponsored")):
+            continue
+        until = tool.get("featured_until")
+        if until:
+            try:
+                if date.fromisoformat(str(until)[:10]) < today:
+                    continue
+            except ValueError:
+                continue
+        active.append(tool)
+    return active[:limit]
 
 
 def user_csrf_token():
@@ -1381,6 +1410,7 @@ def home(locale=None):
         popular_tools=sort_tools(all_tools, "popular")[:6],
         newest_tools=sort_tools(all_tools, "newest")[:6],
         editor_tools=[t for t in sort_tools(all_tools, "rating") if t.get("editor_choice")][:6],
+        featured_tools=active_featured_tools(all_tools),
         collections=localized_collections(get_locale()),
         seo=page_seo(
             "Yazılımları Keşfet ve Karşılaştır" if get_locale() == "tr" else "Discover and Compare Software",
@@ -1468,6 +1498,7 @@ def category_page(slug, locale=None):
     crumbs = build_breadcrumbs([(home_label, "/"), (categories_label, "/categories"), (info["name"], f"/categories/{slug}")])
     context = discovery_context(items, info["name"], info["description"], "category")
     context["category_landing"] = category_landing_data(items, slug, current_locale)
+    context["sponsored_tools"] = active_featured_tools(items, sponsored_only=True, limit=4)
     return render_template(
         "discovery.html", **context,
         active_page="categories", related_guides=related_guides,
@@ -2133,7 +2164,7 @@ def ads_txt():
 def sitemap_xml():
     from xml.sax.saxutils import escape
 
-    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/collaborate", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
+    base_urls = [("/", None), ("/tools", None), ("/categories", None), ("/guides", None), ("/recommend", None), ("/about", None), ("/collaborate", None), ("/advertise", None), ("/privacy", None), ("/terms", None), ("/cookies", None), ("/contact", None)]
     base_urls.extend((f"/{slug}", "2026-08-15") for slug in AI_SEO_LANDINGS)
     base_urls.extend((f"/compare/{slug}", "2026-08-15") for slug in COMPARISON_LANDINGS)
     base_urls.extend((f"/tools/{tool.get('slug')}", (tool.get('freshness') or {}).get('last_updated_at') or tool.get('date_added')) for tool in load_tools(DEFAULT_LOCALE))
@@ -2545,6 +2576,20 @@ def cookies(locale=None):
 @app.route("/<locale>/contact", strict_slashes=False)
 def contact(locale=None):
     return _public_page("contact", locale)
+
+@app.route("/advertise", strict_slashes=False)
+@app.route("/<locale>/advertise", strict_slashes=False)
+def advertise(locale=None):
+    if (response := _locale_redirect(locale)) is not None:
+        return response
+    title = translate("advertise.seo_title")
+    description = translate("advertise.seo_description")
+    return render_template(
+        "advertise.html", active_page="advertise",
+        seo=page_seo(title, description, "/advertise"),
+        breadcrumbs=build_breadcrumbs([(translate("common.home"), url_for("home")), (title, None)]),
+        schemas=[],
+    )
 
 def _public_page(page_key, locale=None, form_values=None):
     if (response := _locale_redirect(locale)) is not None:
