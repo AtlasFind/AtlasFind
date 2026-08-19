@@ -2,9 +2,10 @@ import json
 from functools import lru_cache
 from pathlib import Path
 try:
-    from flask import g, request
+    from flask import g, has_request_context, request
 except ModuleNotFoundError:  # Validation scripts can run before Flask is installed.
     g = None
+    has_request_context = None
     request = None
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -25,7 +26,7 @@ def load_translations(locale):
 
 
 def get_locale():
-    if g is None or request is None:
+    if g is None or request is None or has_request_context is None or not has_request_context():
         return DEFAULT_LOCALE
     locale = getattr(g, 'locale', None)
     if locale in SUPPORTED_LOCALES:

@@ -33,6 +33,8 @@ jobs:
         run: python scripts/bootstrap_database.py
       - name: Run automated tests
         run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Audit sitemap routes
+        run: python scripts/audit_public_routes.py
       - name: Validate JavaScript syntax
         run: node --check static/js/main.js
       - name: Validate production configuration

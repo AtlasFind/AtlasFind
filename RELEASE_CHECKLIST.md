@@ -1,8 +1,8 @@
-# AtlasFind v1.0.0 Production Release Checklist
+# AtlasFind v2.1.1 Production Release Checklist
 
 ## Before deployment
 
-- [ ] Work from a clean `release/v1.0.0` or equivalent branch.
+- [ ] Work from a clean release branch or the protected `main` branch.
 - [ ] Set `ATLASFIND_ENV=production`.
 - [ ] Generate a unique `ATLASFIND_SECRET_KEY` of at least 32 characters.
 - [ ] Set `ATLASFIND_SITE_URL=https://atlasfind.org`.
@@ -11,12 +11,13 @@
 - [ ] Set `ATLASFIND_ALLOWED_HOSTS=atlasfind.org,www.atlasfind.org,.onrender.com`.
 - [ ] Confirm the persistent disk path is `/opt/render/project/src/storage/atlasfind.db`.
 - [ ] Download or create a database backup.
-- [ ] Run `py scripts\validate_release_v100.py` with Flask dependencies installed.
+- [ ] Run `py -m unittest discover -s tests -p "test_*.py"` with Flask dependencies installed.
+- [ ] Run the active security, deployment, content, SEO and localization validators.
 
 ## Smoke tests after deployment
 
-- [ ] `/health` returns 200 and version `1.0.0`.
-- [ ] `/ready` returns 200 with 600 tools, at least 1,200 translations and 18 categories.
+- [ ] `/health` returns 200 and version `2.1.1`.
+- [ ] `/ready` returns 200 with 1,000 tools, at least 2,000 translations and 18 categories.
 - [ ] `/tr/` and `/en/` load without console errors.
 - [ ] Tool catalog, search, filters and pagination work in both languages.
 - [ ] Category pages show equal counts in Turkish and English.

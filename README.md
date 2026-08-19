@@ -1,6 +1,6 @@
-# AtlasFind v1.0.0
+# AtlasFind v2.1.1
 
-AtlasFind is a bilingual software discovery and comparison directory built with Flask, SQLite, HTML, CSS and JavaScript. The v1.0.0 release contains 600 catalog entries, 18 canonical categories, Turkish and English interfaces, local icon fallbacks, search, filtering, pagination, comparison, recommendations, an admin panel, technical SEO, production hardening and Render deployment support.
+AtlasFind is a bilingual software discovery and comparison directory built with Flask, SQLite, HTML, CSS and JavaScript. The v2.1.1 release contains 1,000 catalog entries, 18 canonical categories, Turkish and English interfaces, local icon fallbacks, search, filtering, pagination, comparison, recommendations, an admin panel, technical SEO, production hardening and Render deployment support.
 
 **Production domain:** https://atlasfind.org  
 **Contact:** atlasfindd@gmail.com
@@ -15,7 +15,7 @@ AtlasFind is a Flask-based software discovery, recommendation, comparison and ed
 
 ## Current Version
 
-v1.0.0
+v2.1.1
 
 ## Current Features
 
@@ -171,7 +171,7 @@ See `docs/DEPLOYMENT.md` for environment variables, domain setup, HTTPS, persist
 
 ## v0.9.0 catalog
 
-The bundled catalog contains 600 tools. Validate it with `py scripts/validate_catalog_v090.py`. Contact email is configured with `ATLASFIND_CONTACT_EMAIL` and defaults to `atlasfindd@gmail.com`.
+The bundled catalog contains 1,000 tools. Validate it with `py scripts/validate_tools.py`. Contact email is configured with `ATLASFIND_CONTACT_EMAIL` and defaults to `atlasfindd@gmail.com`.
 
 
 ## v0.9.2 Professional Catalog Experience

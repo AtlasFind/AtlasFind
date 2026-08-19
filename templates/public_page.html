@@ -39,16 +39,16 @@
 
   {% if page_key in ('collaborate', 'contact') %}
   <section class="collaboration-form-card" aria-labelledby="collaboration-form-title">
-    <div class="collaboration-form-intro"><span class="section-label">{{ t("collab.form_eyebrow") }}</span><h2 id="collaboration-form-title">{{ t("collab.form_title") }}</h2><p>{{ t("collab.form_description") }}</p></div>
+    <div class="collaboration-form-intro"><span class="section-label">{{ t("contact.form_eyebrow") if page_key == 'contact' else t("collab.form_eyebrow") }}</span><h2 id="collaboration-form-title">{{ t("contact.form_title") if page_key == 'contact' else t("collab.form_title") }}</h2><p>{{ t("contact.form_description") if page_key == 'contact' else t("collab.form_description") }}</p></div>
     {% if collaboration_submitted %}<div class="collaboration-success" role="status"><strong>{{ t("collab.form_success_title") }}</strong><p>{{ t("collab.form_success_text") }}</p></div>{% else %}
     <form class="collaboration-form" method="post" action="{{ url_for(inquiry_form_endpoint) }}">
       <input type="hidden" name="csrf_token" value="{{ collaboration_csrf }}"><div class="form-honeypot" aria-hidden="true"><label>Website<input name="company_website" tabindex="-1" autocomplete="off"></label></div>
       <label>{{ t("collab.name") }}<input name="name" value="{{ form_values.get('name', '') }}" maxlength="120" required autocomplete="name"></label>
       <label>{{ t("collab.email") }}<input type="email" name="email" value="{{ form_values.get('email', '') }}" maxlength="180" required autocomplete="email"></label>
-      <label>{{ t("collab.channel") }}<input type="url" name="channel_url" value="{{ form_values.get('channel_url', '') }}" maxlength="500" placeholder="https://"></label>
+      <label>{{ t("contact.form_url") if page_key == 'contact' else t("collab.channel") }}<input type="url" name="channel_url" value="{{ form_values.get('channel_url', '') }}" maxlength="500" placeholder="https://"></label>
       <label>{{ t("collab.type") }}<select name="inquiry_type" required>{% for value, key in [('creator','collab.type_creator'),('promotion','collab.type_promotion'),('feedback','collab.type_feedback'),('brand','collab.type_brand'),('other','collab.type_other')] %}<option value="{{ value }}" {% if form_values.get('inquiry_type', default_inquiry_type) == value %}selected{% endif %}>{{ t(key) }}</option>{% endfor %}</select></label>
-      <label class="collaboration-message">{{ t("collab.message") }}<textarea name="message" minlength="20" maxlength="3000" required placeholder="{{ t('collab.message_placeholder') }}">{{ form_values.get('message', '') }}</textarea></label>
-      <div class="collaboration-form-footer"><small>{{ t("collab.privacy_note") }}</small><button class="primary-button" type="submit">{{ t("collab.submit") }}</button></div>
+      <label class="collaboration-message">{{ t("collab.message") }}<textarea name="message" minlength="20" maxlength="3000" required placeholder="{{ t('contact.form_message_placeholder') if page_key == 'contact' else t('collab.message_placeholder') }}">{{ form_values.get('message', '') }}</textarea></label>
+      <div class="collaboration-form-footer"><small>{{ t("collab.privacy_note") }}</small><button class="primary-button" type="submit">{{ t("contact.form_submit") if page_key == 'contact' else t("collab.submit") }}</button></div>
     </form>{% endif %}
   </section>
   {% endif %}

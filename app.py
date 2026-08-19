@@ -77,7 +77,7 @@ if password_reset_status != "disabled":
     app.logger.warning("production_admin_password_reset_status=%s", password_reset_status)
 app.register_blueprint(admin_bp)
 
-APP_VERSION = "2.1.0"
+APP_VERSION = "2.1.1"
 HOME_FEATURED_SLUGS = (
     "chatgpt", "claude", "gemini", "perplexity", "visual-studio-code", "canva",
 )
@@ -1254,7 +1254,8 @@ def response_headers(response):
         response.headers["Cache-Control"] = "public, max-age=3600"
     elif request.method == "GET" and response.status_code == 200 and not request.path.startswith("/admin"):
         response.headers.setdefault("Cache-Control", "public, max-age=60, stale-while-revalidate=300")
-    if (request.method == "GET" and response.status_code == 200 and request.endpoint
+    if (not app.config.get("TESTING")
+            and request.method == "GET" and response.status_code == 200 and request.endpoint
             and not request.path.startswith(("/admin", "/static/", "/api/"))
             and request.path not in {"/robots.txt", "/sitemap.xml", "/ads.txt", "/favicon.ico"}
             and "bot" not in request.headers.get("User-Agent", "").lower()):

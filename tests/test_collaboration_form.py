@@ -43,6 +43,8 @@ class CollaborationFormTests(unittest.TestCase):
         page = self.client.get("/tr/contact").get_data(as_text=True)
         token = re.search(r'name="csrf_token" value="([^"]+)"', page).group(1)
         self.assertIn('value="feedback" selected', page)
+        self.assertIn("Bir hata veya geliştirme fikri paylaş", page)
+        self.assertIn("Geri bildirimi gönder", page)
 
         response = self.client.post(
             "/tr/contact",

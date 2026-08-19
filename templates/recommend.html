@@ -89,7 +89,7 @@
             <span><strong>{{ t("recommend.offline") }}</strong><small>{{ t("recommend.offline_help") }}</small></span>
         </label>
 
-        <button class="recommend-submit" type="submit" data-loading-text="Scoring tools…">{{ t("actions.get_recommendations") }}</button>
+        <button class="recommend-submit" type="submit" data-loading-text="{{ t('recommend.loading') }}">{{ t("actions.get_recommendations") }}</button>
     </form>
 
     {% if submitted %}
